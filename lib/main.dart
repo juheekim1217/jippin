@@ -1,125 +1,274 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
+import 'package:jippin/component/webNavbar.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:jippin/style/theme.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'dart:ui';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'package:jippin/pages/about.dart';
+import 'package:jippin/pages/home.dart';
+import 'package:jippin/pages/reviews.dart';
+import 'package:jippin/pages/submit_review.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Jippin',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Jippin Main'),
-    );
+  try {
+    await dotenv.load(
+        fileName:
+            ".env"); // This works for assets if configured properly in pubspec.yaml
+  } catch (e) {
+    print("Error loading .env file: $e");
   }
+  String supabaseUrl = dotenv.env['SUPABASE_URL']!;
+  String supabaseAnonKey = dotenv.env['SUPABASE_ANON_KEY']!;
+
+  await Supabase.initialize(
+    url: supabaseUrl,
+    anonKey: supabaseAnonKey,
+  );
+
+  runApp(MyApp());
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  _MyAppState createState() => _MyAppState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class _MyAppState extends State<MyApp> {
+  Locale? _locale = const Locale('en'); // Default fallback language
 
-  void _incrementCounter() {
+  @override
+  void initState() {
+    super.initState();
+    _setDefaultLocale();
+  }
+
+  void _setDefaultLocale() {
+    // Get the user's default locale
+    //Locale deviceLocale = WidgetsBinding.instance.window.locale;
+    Locale deviceLocale = PlatformDispatcher.instance.locale;
+    print("Device Locale: $deviceLocale");
+
+    // List of supported locales
+    const List<Locale> supportedLocales = [
+      Locale('en'), // English
+      Locale('ko'), // Korean
+    ];
+
+    // Check if the device's locale is supported
+    if (supportedLocales
+        .any((locale) => locale.languageCode == deviceLocale.languageCode)) {
+      _locale = deviceLocale; // Use the device's locale if supported
+    } else {
+      _locale = const Locale('en'); // Fallback to English if unsupported
+    }
+  }
+
+  void setLocale(Locale? locale) {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
+      _locale = locale;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+    TextTheme textTheme = createTextTheme(context, "Roboto", "Roboto");
+    MaterialTheme theme = MaterialTheme(textTheme);
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      locale: _locale,
+      localizationsDelegates: [
+        AppLocalizations.delegate, // Add this line
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('en'), // English
+        Locale('ko'), // Korean
+      ],
+      onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
+      theme: theme.lightHighContrast(),
+      darkTheme: theme.darkHighContrast(),
+      initialRoute: "/home",
+      routes: {
+        "/home": (context) =>
+            MainNavigation(currentIndex: 0, onChangeLanguage: setLocale),
+        "/reviews": (context) =>
+            MainNavigation(currentIndex: 1, onChangeLanguage: setLocale),
+        "/submit": (context) =>
+            MainNavigation(currentIndex: 2, onChangeLanguage: setLocale),
+        "/about": (context) =>
+            MainNavigation(currentIndex: 3, onChangeLanguage: setLocale),
+      },
+    );
+  }
+}
+
+class MainNavigation extends StatefulWidget {
+  final int currentIndex;
+  final ValueChanged<Locale?> onChangeLanguage;
+
+  const MainNavigation(
+      {Key? key, required this.currentIndex, required this.onChangeLanguage})
+      : super(key: key);
+
+  @override
+  _MainNavigationState createState() => _MainNavigationState();
+}
+
+class _MainNavigationState extends State<MainNavigation> {
+  late int _currentIndex;
+
+  // Web navigation
+  final List<Widget> _pages = [
+    HomePage(),
+    ReviewsPage(),
+    SubmitReviewPage(),
+    AboutPage(),
+  ];
+
+  // Android navigation
+  final List<BottomNavigationBarItem> _bottomnav = [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home),
+      label: 'Home',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.list),
+      label: 'Reviews',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.add),
+      label: 'Submit',
+    ),
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    _currentIndex = widget.currentIndex;
+  }
+
+  void _navigateTo(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final bool isAndroid = defaultTargetPlatform == TargetPlatform.android;
+    final double screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Users:',
+      appBar: isAndroid
+          ? AppBar(
+              title: Text('JIPPIN'),
+              actions: [
+                IconButton(onPressed: () => {}, icon: Icon(Icons.search)),
+                PopupMenuButton<String>(
+                  onSelected: (value) {
+                    // Handle menu item selection
+                    switch (value) {
+                      case 'Settings':
+                        // Navigate to settings
+                        print('Settings selected');
+                        break;
+                      case 'Help':
+                        // Navigate to help
+                        print('Help selected');
+                        break;
+                      case 'About':
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => AboutPage()),
+                        );
+                        break;
+                      case 'Logout':
+                        // Perform logout
+                        print('Logout selected');
+                        break;
+                    }
+                  },
+                  icon: const Icon(Icons.more_vert),
+                  itemBuilder: (BuildContext context) {
+                    return [
+                      const PopupMenuItem(
+                        value: 'Settings',
+                        child: Text('Settings'),
+                      ),
+                      const PopupMenuItem(
+                        value: 'Help',
+                        child: Text('Help'),
+                      ),
+                      const PopupMenuItem(
+                        value: 'About',
+                        child: Text('About'),
+                      ),
+                      const PopupMenuItem(
+                        value: 'Logout',
+                        child: Text('Logout'),
+                      ),
+                    ];
+                  },
+                ),
+              ],
+            )
+          : AdaptiveNavBar(
+              screenWidth: screenWidth,
+              logo: Row(
+                children: [
+                  Icon(Icons.home, size: 32, color: Colors.black),
+                  const SizedBox(width: 8),
+                  GestureDetector(
+                    onTap: () {
+                      _navigateTo(0);
+                    }, // Action when the title is clicked
+                    child: Text(AppLocalizations.of(context)!.appTitle,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18)),
+                  ),
+                ],
+              ),
+              navBarItems: [
+                NavBarItem(
+                    text: AppLocalizations.of(context)!.reviews,
+                    onTap: () => _navigateTo(1)),
+                if (screenWidth <= 600)
+                  NavBarItem(
+                      text: AppLocalizations.of(context)!.submitReview,
+                      onTap: () => _navigateTo(2)),
+                NavBarItem(
+                    text: AppLocalizations.of(context)!.about,
+                    onTap: () => _navigateTo(3)),
+              ],
+              onSubmitReview: () => _navigateTo(2),
+              // onLanguageChange: (String? language) {
+              //   if (language != null) {
+              //     print('Selected language: $language');
+              //   }
+              // },
+              // selectedLanguage: 'English',
+              onChangeLanguage: widget.onChangeLanguage,
+              currentLocale: Localizations.localeOf(context),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      body: _pages[_currentIndex],
+      bottomNavigationBar: isAndroid
+          ? BottomNavigationBar(
+              currentIndex: _currentIndex,
+              onTap: _navigateTo,
+              items: _bottomnav,
+            )
+          : null,
     );
   }
 }
