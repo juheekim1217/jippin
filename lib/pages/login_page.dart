@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/test/chat_page.dart';
-import 'package:jippin/utils/constants.dart';
+import 'package:jippin/style/constants.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class LoginPage extends StatefulWidget {

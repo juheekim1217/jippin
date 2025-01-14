@@ -387,12 +387,14 @@ class ColorFamily {
   final Color onColorContainer;
 }
 
-
 // Font styling
-TextTheme createTextTheme(BuildContext context, String bodyFontString, String displayFontString) {
+TextTheme createTextTheme(
+    BuildContext context, String bodyFontString, String displayFontString) {
   TextTheme baseTextTheme = Theme.of(context).textTheme;
-  TextTheme bodyTextTheme = GoogleFonts.getTextTheme(bodyFontString, baseTextTheme);
-  TextTheme displayTextTheme = GoogleFonts.getTextTheme(displayFontString, baseTextTheme);
+  TextTheme bodyTextTheme =
+      GoogleFonts.getTextTheme(bodyFontString, baseTextTheme);
+  TextTheme displayTextTheme =
+      GoogleFonts.getTextTheme(displayFontString, baseTextTheme);
   TextTheme textTheme = displayTextTheme.copyWith(
     bodyLarge: bodyTextTheme.bodyLarge,
     bodyMedium: bodyTextTheme.bodyMedium,
@@ -402,38 +404,4 @@ TextTheme createTextTheme(BuildContext context, String bodyFontString, String di
     labelSmall: bodyTextTheme.labelSmall,
   );
   return textTheme;
-}
-
-
-// Web layout container
-class WebContainer extends StatelessWidget {
-  final MaterialApp app;
-
-  const WebContainer({super.key, required this.app});
-
-  @override
-  Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    // Define the maximum width for the container
-    const double maxContentWidth = 1000;
-
-    return kIsWeb
-        ? Container(
-      color: MaterialTheme.lightScheme()
-          .surface, // Sets the background color
-      // child: FractionallySizedBox(
-      //   widthFactor: screenWidth < 1000 ? 1.0 : 1000 / screenWidth,
-      //   child: app,
-      // ),
-      alignment: Alignment.center,
-      child: ConstrainedBox(
-        constraints: BoxConstraints(
-          maxWidth: maxContentWidth,
-          minWidth: 0,
-        ),
-        child: app,
-      ),
-    )
-        : app;
-  }
 }

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:jippin/models/message.dart';
 import 'package:jippin/models/profile.dart';
-import 'package:jippin/utils/constants.dart';
+import 'package:jippin/style/constants.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:timeago/timeago.dart';
 
@@ -55,7 +55,7 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Chat test'),
+        title: const Text('Chat test'),
         leading: Icon(Icons.menu),
         actions: [
           IconButton(onPressed: () => {}, icon: Icon(Icons.search)),

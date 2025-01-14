@@ -81,3 +81,6 @@ extension ShowSnackBar on BuildContext {
     showSnackBar(message: message, backgroundColor: Colors.red);
   }
 }
+
+/// Simple sized box to space out form elements
+const int smallScreenWidth = 700;

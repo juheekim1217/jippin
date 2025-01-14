@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:jippin/component/webNavbar.dart';
+import 'package:jippin/style/constants.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:jippin/style/theme.dart';
@@ -172,7 +173,7 @@ class _MainNavigationState extends State<MainNavigation> {
     return Scaffold(
       appBar: isAndroid
           ? AppBar(
-              title: Text('JIPPIN'),
+              title: Text(AppLocalizations.of(context)!.appTitle),
               actions: [
                 IconButton(onPressed: () => {}, icon: Icon(Icons.search)),
                 PopupMenuButton<String>(
@@ -227,15 +228,21 @@ class _MainNavigationState extends State<MainNavigation> {
               screenWidth: screenWidth,
               logo: Row(
                 children: [
-                  Icon(Icons.home, size: 32, color: Colors.black),
+                  Icon(Icons.home, size: 32, color: Colors.black87),
                   const SizedBox(width: 8),
-                  GestureDetector(
-                    onTap: () {
-                      _navigateTo(0);
-                    }, // Action when the title is clicked
-                    child: Text(AppLocalizations.of(context)!.appTitle,
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 18)),
+                  MouseRegion(
+                    cursor:
+                        SystemMouseCursors.click, // Change cursor to pointer
+                    child: GestureDetector(
+                      onTap: () {
+                        _navigateTo(0);
+                      }, // Action when the title is clicked
+                      child: Text(AppLocalizations.of(context)!.appTitle,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              color: Colors.black87)),
+                    ),
                   ),
                 ],
               ),
@@ -243,7 +250,7 @@ class _MainNavigationState extends State<MainNavigation> {
                 NavBarItem(
                     text: AppLocalizations.of(context)!.reviews,
                     onTap: () => _navigateTo(1)),
-                if (screenWidth <= 600)
+                if (screenWidth <= smallScreenWidth)
                   NavBarItem(
                       text: AppLocalizations.of(context)!.submitReview,
                       onTap: () => _navigateTo(2)),
@@ -252,12 +259,6 @@ class _MainNavigationState extends State<MainNavigation> {
                     onTap: () => _navigateTo(3)),
               ],
               onSubmitReview: () => _navigateTo(2),
-              // onLanguageChange: (String? language) {
-              //   if (language != null) {
-              //     print('Selected language: $language');
-              //   }
-              // },
-              // selectedLanguage: 'English',
               onChangeLanguage: widget.onChangeLanguage,
               currentLocale: Localizations.localeOf(context),
             ),

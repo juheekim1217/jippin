@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:jippin/style/constants.dart';
 
 class AdaptiveNavBar extends StatelessWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -20,8 +21,10 @@ class AdaptiveNavBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    Color navbarBackgroundColor = Theme.of(context).scaffoldBackgroundColor;
+
     return AppBar(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      backgroundColor: navbarBackgroundColor,
       elevation: 0,
       titleSpacing: 16.0,
       title: Row(
@@ -29,11 +32,13 @@ class AdaptiveNavBar extends StatelessWidget implements PreferredSizeWidget {
           // Logo
           logo,
 
+          const SizedBox(width: 32),
+
           // Navigation items (only visible on larger screens)
-          if (screenWidth > 600)
+          if (screenWidth > smallScreenWidth)
             Expanded(
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: navBarItems.map((item) {
                   return TextButton(
                     onPressed: item.onTap,
@@ -41,39 +46,58 @@ class AdaptiveNavBar extends StatelessWidget implements PreferredSizeWidget {
                       item.text,
                       style: TextStyle(
                         fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black87,
                       ),
                     ),
                   );
                 }).toList(),
               ),
             ),
+
+          // Search Bar
+          if (screenWidth > smallScreenWidth + 200)
+            SizedBox(
+              height: 32, // Match the height of other menu items
+              width: 250,
+              child: TextField(
+                style: TextStyle(
+                  fontSize: 14, // Reduced text size
+                  color: Colors.black87, // Text color
+                ),
+                decoration: InputDecoration(
+                  hintText: AppLocalizations.of(context)!.search,
+                  suffixIcon: Icon(Icons.search, color: Colors.grey),
+                  contentPadding:
+                      const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
+                  // Adjust padding
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(24.0),
+                    borderSide: BorderSide(
+                        color: Colors.grey.shade400,
+                        width: 1.0), // Light grey border
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(24.0),
+                    borderSide: BorderSide(
+                        color: Colors.grey.shade300,
+                        width: 1.0), // Light grey border for non-focused state
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(24.0),
+                    borderSide: BorderSide(
+                        color: Colors.blue.shade300,
+                        width: 1.5), // Slightly thicker blue border on focus
+                  ),
+                  fillColor: Colors.grey.shade100,
+                  filled: true,
+                ),
+              ),
+            ),
         ],
       ),
       actions: [
-        // Language Dropdown
-        DropdownButtonHideUnderline(
-          child: DropdownButton<Locale>(
-              focusColor: Colors.transparent,
-              value: currentLocale,
-              onChanged: onChangeLanguage,
-              items: [
-                DropdownMenuItem(
-                  value: Locale('en'),
-                  child: Text('English'),
-                ),
-                DropdownMenuItem(
-                  value: Locale('ko'),
-                  child: Text('한국어'),
-                ),
-              ],
-              dropdownColor: Colors.white),
-        ),
-
-        const SizedBox(width: 16),
-
-        if (screenWidth > 600)
+        if (screenWidth > smallScreenWidth)
           // Submit a Review Button
           ElevatedButton(
             onPressed: onSubmitReview,
@@ -102,7 +126,61 @@ class AdaptiveNavBar extends StatelessWidget implements PreferredSizeWidget {
 
         const SizedBox(width: 16),
 
-        if (screenWidth <= 600)
+        // Language Dropdown
+        DropdownButtonHideUnderline(
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: navbarBackgroundColor, // Dropdown background color
+              borderRadius: BorderRadius.circular(16.0), // Rounded corners
+              border:
+                  Border.all(color: Colors.grey, width: 1), // Border styling
+            ),
+            child: SizedBox(
+              height: 32,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 14.0), // Inner padding
+                child: DropdownButton<Locale>(
+                  focusColor: Colors.transparent,
+                  // Disable default focus highlight
+                  value: currentLocale,
+                  onChanged: onChangeLanguage,
+                  icon:
+                      Icon(Icons.arrow_drop_down, size: 16, color: Colors.grey),
+                  // Customize dropdown icon
+                  items: [
+                    DropdownMenuItem(
+                      value: Locale('en'),
+                      child: Text(
+                        'English',
+                        style: TextStyle(fontSize: 14), // Smaller text size
+                      ),
+                    ),
+                    DropdownMenuItem(
+                      value: Locale('ko'),
+                      child: Text(
+                        '한국어',
+                        style: TextStyle(fontSize: 14), // Smaller text size
+                      ),
+                    ),
+                  ],
+                  dropdownColor: Colors.white,
+                  // Dropdown menu background
+                  borderRadius: BorderRadius.circular(16.0),
+                  // Rounded dropdown corners
+                  style: TextStyle(fontSize: 14, color: Colors.black),
+                  // Text style
+                  isDense: true, // Compact dropdown
+                ),
+              ),
+            ),
+          ),
+        ),
+
+        const SizedBox(width: 16),
+
+        // small screen more icon
+        if (screenWidth <= smallScreenWidth)
           PopupMenuButton<NavBarItem>(
             onSelected: (item) => item.onTap(),
             itemBuilder: (context) {
