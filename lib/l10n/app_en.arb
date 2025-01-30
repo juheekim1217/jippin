@@ -7,5 +7,16 @@
   "about": "About",
   "supportUs": "Support Us",
   "language": "Language",
-  "search": "Search"
+  "search": "Search",
+  "overallrating": "Overall Rating",
+  "trustworthiness": "Trustworthiness",
+  "price": "Price",
+  "location": "Location",
+  "condition": "Condition",
+  "safety": "Safety",
+  "type": "Type",
+  "occupiedYear": "Occupied Year",
+  "rent": "Rent",
+  "deposit": "Deposit",
+  "otherFees": "Other Fees"
 }

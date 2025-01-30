@@ -7,8 +7,10 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:jippin/style/theme.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
 import 'dart:ui';
 
+import 'locale_provider.dart';
 import 'package:jippin/pages/about.dart';
 import 'package:jippin/pages/home.dart';
 import 'package:jippin/pages/reviews.dart';
@@ -18,9 +20,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   try {
-    await dotenv.load(
-        fileName:
-            ".env"); // This works for assets if configured properly in pubspec.yaml
+    await dotenv.load(fileName: ".env"); // This works for assets if configured properly in pubspec.yaml
   } catch (e) {
     print("Error loading .env file: $e");
   }
@@ -32,83 +32,51 @@ Future<void> main() async {
     anonKey: supabaseAnonKey,
   );
 
-  runApp(MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => LocaleProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key});
 
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  Locale? _locale = const Locale('en'); // Default fallback language
-
-  @override
-  void initState() {
-    super.initState();
-    _setDefaultLocale();
-  }
-
-  void _setDefaultLocale() {
-    // Get the user's default locale
-    //Locale deviceLocale = WidgetsBinding.instance.window.locale;
-    Locale deviceLocale = PlatformDispatcher.instance.locale;
-    print("Device Locale: $deviceLocale");
-
-    // List of supported locales
-    const List<Locale> supportedLocales = [
-      Locale('en'), // English
-      Locale('ko'), // Korean
-    ];
-
-    // Check if the device's locale is supported
-    if (supportedLocales
-        .any((locale) => locale.languageCode == deviceLocale.languageCode)) {
-      _locale = deviceLocale; // Use the device's locale if supported
-    } else {
-      _locale = const Locale('en'); // Fallback to English if unsupported
-    }
-  }
-
-  void setLocale(Locale? locale) {
-    setState(() {
-      _locale = locale;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
+    final localeProvider = Provider.of<LocaleProvider>(context);
     TextTheme textTheme = createTextTheme(context, "Roboto", "Roboto");
     MaterialTheme theme = MaterialTheme(textTheme);
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      locale: _locale,
-      localizationsDelegates: [
+      locale: localeProvider.locale,
+      //_locale,
+      supportedLocales: const [
+        Locale('en'), // English
+        Locale('ko'), // Korean
+      ],
+      localizationsDelegates: const [
         AppLocalizations.delegate, // Add this line
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: [
-        Locale('en'), // English
-        Locale('ko'), // Korean
       ],
       onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
       theme: theme.lightHighContrast(),
       darkTheme: theme.darkHighContrast(),
       initialRoute: "/home",
       routes: {
-        "/home": (context) =>
-            MainNavigation(currentIndex: 0, onChangeLanguage: setLocale),
-        "/reviews": (context) =>
-            MainNavigation(currentIndex: 1, onChangeLanguage: setLocale),
-        "/submit": (context) =>
-            MainNavigation(currentIndex: 2, onChangeLanguage: setLocale),
-        "/about": (context) =>
-            MainNavigation(currentIndex: 3, onChangeLanguage: setLocale),
+        "/home": (context) => MainNavigation(currentIndex: 0),
+        "/reviews": (context) => MainNavigation(currentIndex: 1),
+        "/submit": (context) => MainNavigation(currentIndex: 2),
+        "/about": (context) => MainNavigation(currentIndex: 3),
       },
     );
   }
@@ -116,11 +84,8 @@ class _MyAppState extends State<MyApp> {
 
 class MainNavigation extends StatefulWidget {
   final int currentIndex;
-  final ValueChanged<Locale?> onChangeLanguage;
 
-  const MainNavigation(
-      {Key? key, required this.currentIndex, required this.onChangeLanguage})
-      : super(key: key);
+  const MainNavigation({Key? key, required this.currentIndex}) : super(key: key);
 
   @override
   _MainNavigationState createState() => _MainNavigationState();
@@ -231,36 +196,23 @@ class _MainNavigationState extends State<MainNavigation> {
                   Icon(Icons.home, size: 32, color: Colors.black87),
                   const SizedBox(width: 8),
                   MouseRegion(
-                    cursor:
-                        SystemMouseCursors.click, // Change cursor to pointer
+                    cursor: SystemMouseCursors.click, // Change cursor to pointer
                     child: GestureDetector(
                       onTap: () {
                         _navigateTo(0);
                       }, // Action when the title is clicked
-                      child: Text(AppLocalizations.of(context)!.appTitle,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                              color: Colors.black87)),
+                      child: Text(AppLocalizations.of(context)!.appTitle, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.black87)),
                     ),
                   ),
                 ],
               ),
               navBarItems: [
-                NavBarItem(
-                    text: AppLocalizations.of(context)!.reviews,
-                    onTap: () => _navigateTo(1)),
-                if (screenWidth <= smallScreenWidth)
-                  NavBarItem(
-                      text: AppLocalizations.of(context)!.submitReview,
-                      onTap: () => _navigateTo(2)),
-                NavBarItem(
-                    text: AppLocalizations.of(context)!.about,
-                    onTap: () => _navigateTo(3)),
+                NavBarItem(text: AppLocalizations.of(context)!.reviews, onTap: () => _navigateTo(1)),
+                if (screenWidth <= smallScreenWidth) NavBarItem(text: AppLocalizations.of(context)!.submitReview, onTap: () => _navigateTo(2)),
+                NavBarItem(text: AppLocalizations.of(context)!.about, onTap: () => _navigateTo(3)),
               ],
               onSubmitReview: () => _navigateTo(2),
-              onChangeLanguage: widget.onChangeLanguage,
-              currentLocale: Localizations.localeOf(context),
+              //currentLocale: Localizations.localeOf(context),
             ),
       body: _pages[_currentIndex],
       bottomNavigationBar: isAndroid

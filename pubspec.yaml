@@ -45,6 +45,7 @@ dependencies:
   go_router: ^8.0.0
   adaptive_navbar: ^0.0.3
   google_fonts: ^6.2.1
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:

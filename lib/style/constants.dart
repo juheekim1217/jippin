@@ -5,8 +5,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 final supabase = Supabase.instance.client;
 
 /// Simple preloader inside a Center widget
-const preloader =
-    Center(child: CircularProgressIndicator(color: Colors.orange));
+const preloader = Center(child: CircularProgressIndicator(color: Colors.orange));
 
 /// Simple sized box to space out form elements
 const formSpacer = SizedBox(width: 16, height: 16);
@@ -83,4 +82,6 @@ extension ShowSnackBar on BuildContext {
 }
 
 /// Simple sized box to space out form elements
-const int smallScreenWidth = 700;
+const int smallScreenWidth = 400;
+const int mediumScreenWidth = 700;
+const int largeScreenWidth = 1000;
