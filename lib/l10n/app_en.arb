@@ -7,7 +7,7 @@
   "about": "About",
   "supportUs": "Support Us",
   "language": "Language",
-  "search": "Search",
+  "search": "City, Neighbourhood, Address or Postal Code",
   "overallrating": "Overall Rating",
   "trustworthiness": "Trustworthiness",
   "price": "Price",
@@ -18,5 +18,7 @@
   "occupiedYear": "Occupied Year",
   "rent": "Rent",
   "deposit": "Deposit",
-  "otherFees": "Other Fees"
+  "otherFees": "Other Fees",
+  "address": "Address",
+  "realtor": "Realtor"
 }

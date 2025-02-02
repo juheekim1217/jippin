@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:jippin/models/message.dart';
 import 'package:jippin/models/profile.dart';
-import 'package:jippin/style/constants.dart';
+import 'package:jippin/constants.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:timeago/timeago.dart';
 
@@ -29,13 +29,7 @@ class _ChatPageState extends State<ChatPage> {
   @override
   void initState() {
     final myUserId = supabase.auth.currentUser!.id;
-    _messagesStream = supabase
-        .from('messages')
-        .stream(primaryKey: ['id'])
-        .order('created_at')
-        .map((maps) => maps
-            .map((map) => Message.fromMap(map: map, myUserId: myUserId))
-            .toList());
+    _messagesStream = supabase.from('messages').stream(primaryKey: ['id']).order('created_at').map((maps) => maps.map((map) => Message.fromMap(map: map, myUserId: myUserId)).toList());
     super.initState();
   }
 
@@ -43,8 +37,7 @@ class _ChatPageState extends State<ChatPage> {
     if (_profileCache[profileId] != null) {
       return;
     }
-    final data =
-        await supabase.from('profiles').select().eq('id', profileId).single();
+    final data = await supabase.from('profiles').select().eq('id', profileId).single();
     final profile = Profile.fromMap(data);
     setState(() {
       _profileCache[profileId] = profile;
@@ -198,9 +191,7 @@ class _ChatBubble extends StatelessWidget {
     List<Widget> chatContents = [
       if (!message.isMine)
         CircleAvatar(
-          child: profile == null
-              ? preloader
-              : Text(profile!.username.substring(0, 2)),
+          child: profile == null ? preloader : Text(profile!.username.substring(0, 2)),
         ),
       const SizedBox(width: 12),
       Flexible(
@@ -210,9 +201,7 @@ class _ChatBubble extends StatelessWidget {
             horizontal: 12,
           ),
           decoration: BoxDecoration(
-            color: message.isMine
-                ? Theme.of(context).primaryColor
-                : Colors.grey[300],
+            color: message.isMine ? Theme.of(context).primaryColor : Colors.grey[300],
             borderRadius: BorderRadius.circular(8),
           ),
           child: Text(message.content),
@@ -228,8 +217,7 @@ class _ChatBubble extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 18),
       child: Row(
-        mainAxisAlignment:
-            message.isMine ? MainAxisAlignment.end : MainAxisAlignment.start,
+        mainAxisAlignment: message.isMine ? MainAxisAlignment.end : MainAxisAlignment.start,
         children: chatContents,
       ),
     );

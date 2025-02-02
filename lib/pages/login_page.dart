@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/test/chat_page.dart';
-import 'package:jippin/style/constants.dart';
+import 'package:jippin/constants.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class LoginPage extends StatefulWidget {
@@ -28,8 +28,7 @@ class _LoginPageState extends State<LoginPage> {
         email: _emailController.text,
         password: _passwordController.text,
       );
-      Navigator.of(context)
-          .pushAndRemoveUntil(ChatPage.route(), (route) => false);
+      Navigator.of(context).pushAndRemoveUntil(ChatPage.route(), (route) => false);
     } on AuthException catch (error) {
       context.showErrorSnackBar(message: error.message);
     } catch (_) {

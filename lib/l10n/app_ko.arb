@@ -7,7 +7,7 @@
   "about": "소개",
   "supportUs": "후원하기",
   "language": "언어",
-  "search": "검색",
+  "search": "도시, 동네, 주소 또는 우편번호",
   "overallrating": "전체 평점",
   "trustworthiness": "신뢰성",
   "price": "가격",
@@ -18,5 +18,7 @@
   "occupiedYear": "거주연도",
   "rent": "월세",
   "deposit": "보증금",
-  "otherFees": "관리비"
+  "otherFees": "관리비",
+  "address": "주소",
+  "realtor": "부동산"
 }

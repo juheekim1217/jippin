@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/test/chat_page.dart';
 import 'package:jippin/pages/login_page.dart';
-import 'package:jippin/style/constants.dart';
+import 'package:jippin/constants.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -37,10 +37,8 @@ class _RegisterPageState extends State<RegisterPage> {
     final password = _passwordController.text;
     final username = _usernameController.text;
     try {
-      await supabase.auth.signUp(
-          email: email, password: password, data: {'username': username});
-      Navigator.of(context)
-          .pushAndRemoveUntil(ChatPage.route(), (route) => false);
+      await supabase.auth.signUp(email: email, password: password, data: {'username': username});
+      Navigator.of(context).pushAndRemoveUntil(ChatPage.route(), (route) => false);
     } on AuthException catch (error) {
       context.showErrorSnackBar(message: error.message);
     } catch (error) {
