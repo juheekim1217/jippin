@@ -89,6 +89,18 @@ class _ReviewsPageState extends State<ReviewsPage> {
     });
   }
 
+  void _applySortingReviews(String order) {
+    setState(() {
+      if (order == 'most_recent') {
+        filteredReviews.sort((a, b) => DateTime.parse(b["created_at"]).compareTo(DateTime.parse(a["created_at"])));
+      } else if (order == 'highest_rating') {
+        filteredReviews.sort((a, b) => b["overall_rating"].compareTo(a["overall_rating"]));
+      } else if (order == 'lowest_rating') {
+        filteredReviews.sort((a, b) => a["overall_rating"].compareTo(b["overall_rating"]));
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return GlobalScaffold(
@@ -302,7 +314,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                 ),
               ],
               onChanged: (value) {
-                // Handle sorting logic here
+                _applySortingReviews(value!); // Handle sorting logic here
               },
               hint: const Text('Most recent'),
             ),
