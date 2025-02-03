@@ -18,7 +18,21 @@ class CountryAutoCompleteTextField extends StatefulWidget {
 
 class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField> {
   List<String> myList = ["Collections", "Records", "Stream API"];
-  late TextEditingController textEditingController = TextEditingController();
+  late TextEditingController _controller = TextEditingController();
+  bool _isValidSelection = false;
+
+  @override
+  void initState() {
+    super.initState();
+    String? initialCountryName = getCountryName(widget.initialValue);
+    _controller.text = initialCountryName!;
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,21 +41,31 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField>
       width: widget.width,
       child: Autocomplete<String>(
         optionsBuilder: (TextEditingValue textEditingValue) {
-          if (textEditingValue.text == '') {
+          if (textEditingValue.text.isEmpty) {
             return const Iterable<String>.empty();
           }
-          // return myList.where((String options) {
-          //   return options.toLowerCase().contains(textEditingValue.text.toLowerCase());
-          // });
           return countries.where((country) => country["name"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((country) => country["name"]!);
         },
         onSelected: (String selection) {
+          String? selection_code = getCountryCode(selection);
           setState(() {
-            textEditingController.text = selection;
+            _controller.text = selection;
+            _isValidSelection = true; // Mark as valid selection
           });
+          widget.onChanged(selection_code);
         },
         fieldViewBuilder: (BuildContext context, TextEditingController textEditingController, FocusNode focusNode, VoidCallback onFieldSubmitted) {
-          textEditingController.text = textEditingController.text;
+          // Listen for focus changes
+          focusNode.addListener(() {
+            if (!focusNode.hasFocus && !_isValidSelection) {
+              FocusScope.of(context).unfocus(); // Remove focus first
+              // 🔥 Clear input if the user clicks outside without selecting from the dropdown
+              setState(() {
+                _controller.clear();
+              });
+            }
+          });
+          textEditingController.text = _controller.text;
           return Row(
             crossAxisAlignment: CrossAxisAlignment.center, // Align icon and text field properly
             children: [
@@ -53,6 +77,9 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField>
                   controller: textEditingController,
                   focusNode: focusNode,
                   onSubmitted: (String selection) => onFieldSubmitted(),
+                  onChanged: (value) {
+                    _isValidSelection = false; // Reset validation when user types manually
+                  },
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.black,
