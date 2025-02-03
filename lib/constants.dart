@@ -83,6 +83,19 @@ extension ShowSnackBar on BuildContext {
 }
 
 /// Simple sized box to space out form elements
-const int smallScreenWidth = 400;
-const int mediumScreenWidth = 700;
-const int largeScreenWidth = 1000;
+const int smallScreenWidth = 600; // Mobile
+const int mediumScreenWidth = 1024; // Tablet
+const int largeScreenWidth = 1440; // Desktop & Larger Screens
+
+// List of country options
+final List<Map<String, String>> countries = [
+  {"code": "AU", "name": "Australia"},
+  {"code": "CA", "name": "Canada"},
+  {"code": "UK", "name": "Ireland"},
+  {"code": "KR", "name": "South Korea"},
+  {"code": "NZ", "name": "New Zealand"},
+  {"code": "UK", "name": "United Kingdom"},
+  {"code": "US", "name": "United States"},
+  {"code": "JP", "name": "Japan"},
+  {"code": "Other", "name": "Other"},
+];

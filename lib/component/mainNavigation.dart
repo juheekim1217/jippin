@@ -163,6 +163,11 @@ class _MainNavigationState extends State<MainNavigation> {
                 if (screenWidth <= smallScreenWidth) NavBarItem(text: AppLocalizations.of(context)!.submitReview, onTap: () => _navigateTo(2)),
                 NavBarItem(text: AppLocalizations.of(context)!.about, onTap: () => _navigateTo(3)),
               ],
+              popupMenuItems: [
+                NavBarItem(text: AppLocalizations.of(context)!.reviews, onTap: () => _navigateTo(1)),
+                NavBarItem(text: AppLocalizations.of(context)!.submitReview, onTap: () => _navigateTo(2)),
+                NavBarItem(text: AppLocalizations.of(context)!.about, onTap: () => _navigateTo(3)),
+              ],
               onSubmitReview: () => _navigateTo(2),
               onSearch: (query) => _filterReviews(query),
             ),

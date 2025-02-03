@@ -5,11 +5,13 @@ import 'package:provider/provider.dart';
 import 'package:jippin/constants.dart';
 import 'package:jippin/locale_provider.dart';
 import 'package:jippin/component/navBarItem.dart';
+import 'package:jippin/component/countryDropdownTextField.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
   final Widget logo;
   final List<NavBarItem> navBarItems;
+  final List<NavBarItem> popupMenuItems;
   final VoidCallback onSubmitReview;
   final ValueChanged<String> onSearch;
 
@@ -18,6 +20,7 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
     required this.screenWidth,
     required this.logo,
     required this.navBarItems,
+    required this.popupMenuItems,
     required this.onSubmitReview,
     required this.onSearch,
   }) : super(key: key);
@@ -86,14 +89,31 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         children: [
           widget.logo,
           if (widget.screenWidth > largeScreenWidth) _buildMenuItems(),
+
+          // Centered
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                //if (widget.screenWidth > smallScreenWidth) _buildCountryDropdown(150),
+                if (widget.screenWidth > smallScreenWidth)
+                  CountryDropdownTextField(
+                    width: 170,
+                    initialValue: localeProvider.defaultCountry,
+                    onChanged: (String? newValue) {
+                      if (newValue != null) {
+                        localeProvider.setDefaultCountry(newValue);
+                      }
+                    },
+                  ),
+                if (widget.screenWidth > smallScreenWidth) _buildSearchBar(null),
+                if (widget.screenWidth <= smallScreenWidth) _buildSearchBarButton(),
+              ],
+            ),
+          ),
         ],
       ),
       actions: [
-        if (widget.screenWidth > smallScreenWidth) _buildCountryDropdown(),
-        //if (widget.screenWidth <= smallScreenWidth) _buildCountryDropdownButton(),
-        if (widget.screenWidth > mediumScreenWidth) _buildSearchBar(250),
-        if (widget.screenWidth > smallScreenWidth && widget.screenWidth <= mediumScreenWidth) _buildSearchBar(200),
-        if (widget.screenWidth <= smallScreenWidth) _buildSearchBarButton(),
         if (widget.screenWidth > largeScreenWidth) _buildSubmitButton(),
         if (widget.screenWidth > largeScreenWidth) _buildLanguageDropdown(localeProvider, currentLocale, navbarBackgroundColor),
         if (widget.screenWidth <= largeScreenWidth) _buildPopupMenuButton(),
@@ -119,11 +139,23 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
-  Widget _buildCountryDropdown() {
+  Widget _buildCountryDropdown(barWidth) {
     final localeProvider = Provider.of<LocaleProvider>(context);
+    // List of country options
+    final List<Map<String, String>> countries = [
+      {"code": "AU", "name": "Australia"},
+      {"code": "CA", "name": "Canada"},
+      {"code": "UK", "name": "Ireland"},
+      {"code": "KR", "name": "South Korea"},
+      {"code": "NZ", "name": "New Zealand"},
+      {"code": "UK", "name": "United Kingdom"},
+      {"code": "US", "name": "United States"},
+      {"code": "Other", "name": "Other"},
+    ];
+
     return SizedBox(
       height: 32, // Match the height of other menu items
-      width: 120,
+      width: barWidth,
       child: DropdownButtonHideUnderline(
         child: DecoratedBox(
           decoration: BoxDecoration(
@@ -131,10 +163,9 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             borderRadius: BorderRadius.circular(24.0), // Rounded corners
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 4.0),
             child: DropdownButton<String>(
               value: localeProvider.defaultCountry,
-              // ✅ Uses dynamically set default country
               onChanged: (String? newValue) {
                 if (newValue != null) {
                   localeProvider.setDefaultCountry(newValue);
@@ -142,47 +173,34 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
               },
               icon: Icon(Icons.arrow_drop_down, color: Colors.black87),
               // Dropdown arrow
-              items: [
-                DropdownMenuItem(
-                  value: "CA",
-                  child: Row(
-                    children: [
-                      Icon(Icons.location_on, color: Colors.black87), // Location icon
-                      const SizedBox(width: 4),
-                      Text(
-                        "Canada",
-                        style: TextStyle(fontSize: 14, color: Colors.black), // Text style
+              items: countries
+                  .map(
+                    (country) => DropdownMenuItem(
+                      value: country["code"],
+                      child: SizedBox(
+                        width: barWidth - 32, // Ensure text doesn't exceed the dropdown width
+                        child: Row(
+                          children: [
+                            Icon(Icons.location_on, color: Colors.black87),
+                            const SizedBox(width: 4),
+                            Expanded(
+                              child: Tooltip(
+                                message: country["name"], // Tooltip displays full name
+                                waitDuration: Duration(milliseconds: 500), // Optional: delay before showing
+                                child: Text(
+                                  country["name"]!,
+                                  style: TextStyle(fontSize: 14, color: Colors.black),
+                                  overflow: TextOverflow.ellipsis, // Truncate text with ellipsis
+                                  maxLines: 1, // Ensure text stays in one line
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ],
-                  ),
-                ),
-                DropdownMenuItem(
-                  value: "KR",
-                  child: Row(
-                    children: [
-                      Icon(Icons.location_on, color: Colors.black87), // Location icon
-                      const SizedBox(width: 4),
-                      Text(
-                        "Korea",
-                        style: TextStyle(fontSize: 14, color: Colors.black), // Text style
-                      ),
-                    ],
-                  ),
-                ),
-                DropdownMenuItem(
-                  value: "Other",
-                  child: Row(
-                    children: [
-                      Icon(Icons.location_on, color: Colors.black87), // Location icon
-                      const SizedBox(width: 4),
-                      Text(
-                        "Other",
-                        style: TextStyle(fontSize: 14, color: Colors.black), // Text style
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+                    ),
+                  )
+                  .toList(),
               dropdownColor: Colors.white,
               // Background color for dropdown menu
               borderRadius: BorderRadius.circular(12.0),
@@ -200,7 +218,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: SizedBox(
         height: 32, // Match the height of other menu items
-        width: barWidth,
+        width: barWidth ?? widget.screenWidth * 0.25,
         child: TextField(
           style: TextStyle(
             fontSize: 14, // Reduced text size
@@ -284,7 +302,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         onPressed: widget.onSubmitReview,
         style: ElevatedButton.styleFrom(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0), // Reduce internal padding
-          backgroundColor: Colors.grey[200], // Light gray background
+          backgroundColor: Colors.teal, //Colors.grey[200], // Light gray background
           elevation: 0, // Remove button shadow for a flat look
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24.0), // More rounded corners
@@ -293,11 +311,11 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         child: Row(
           mainAxisSize: MainAxisSize.min, // Ensure button size adjusts to content
           children: [
-            Icon(Icons.add, color: Colors.black), // Black icon
+            Icon(Icons.add, color: Colors.white), // Black icon
             const SizedBox(width: 2), // Space between icon and text
             Text(
               AppLocalizations.of(context)!.submitReview, // Use your desired text
-              style: const TextStyle(color: Colors.black), // Black text
+              style: const TextStyle(color: Colors.white), // Black text
             ),
           ],
         ),
@@ -347,7 +365,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                 ],
                 dropdownColor: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
-                style: TextStyle(fontSize: 14, color: Colors.black),
+                style: TextStyle(fontSize: 14, color: Colors.black87),
                 isDense: true, // Compact dropdown
               ),
             ),
@@ -363,7 +381,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
       child: PopupMenuButton<NavBarItem>(
         onSelected: (item) => item.onTap(),
         itemBuilder: (context) {
-          return widget.navBarItems.map((item) {
+          return widget.popupMenuItems.map((item) {
             return PopupMenuItem(
               value: item,
               child: Text(item.text),
