@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:jippin/utils.dart';
 import 'package:jippin/locale_provider.dart';
 import 'package:jippin/component/navBarItem.dart';
-import 'package:jippin/component/countryAutoCompleteTextField.dart';
+import 'package:jippin/component/countryAutoCompleteTextFieldTest.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -76,13 +76,13 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
   }
 
   // 🔹 Popup Search (For Small Screens)
-  void _showCountryDialog(BuildContext context) {
+  void _showCountryDialog(BuildContext context, localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
           title: Text("Select Country"),
-          content: _buildSearchDialogTextField(context),
+          content: _buildCountryDialogTextField(context, localeProvider, currentLocale, navbarBackgroundColor),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
@@ -131,7 +131,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         ],
       ),
       actions: [
-        if (widget.screenWidth <= smallScreenWidth) _builCountryButton(),
+        if (widget.screenWidth <= smallScreenWidth) _buildCountryButton(localeProvider, currentLocale, navbarBackgroundColor),
         if (widget.screenWidth <= smallScreenWidth) _buildSearchBarButton(),
         if (widget.screenWidth > mediumScreenWidth) _buildSubmitButton(),
         _buildLanguageDropdown(localeProvider, currentLocale, navbarBackgroundColor),
@@ -154,80 +154,6 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             ),
           );
         }).toList(),
-      ),
-    );
-  }
-
-  Widget _buildCountryDropdown(barWidth) {
-    final localeProvider = Provider.of<LocaleProvider>(context);
-    // List of country options
-    final List<Map<String, String>> countries = [
-      {"code": "AU", "name": "Australia"},
-      {"code": "CA", "name": "Canada"},
-      {"code": "UK", "name": "Ireland"},
-      {"code": "KR", "name": "South Korea"},
-      {"code": "NZ", "name": "New Zealand"},
-      {"code": "UK", "name": "United Kingdom"},
-      {"code": "US", "name": "United States"},
-      {"code": "Other", "name": "Other"},
-    ];
-
-    return SizedBox(
-      height: 32, // Match the height of other menu items
-      width: barWidth,
-      child: DropdownButtonHideUnderline(
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: Colors.grey.shade200, // Background color of the dropdown
-            borderRadius: BorderRadius.circular(24.0), // Rounded corners
-          ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 4.0),
-            child: DropdownButton<String>(
-              value: localeProvider.defaultCountry,
-              onChanged: (String? newValue) {
-                if (newValue != null) {
-                  localeProvider.setDefaultCountry(newValue);
-                }
-              },
-              icon: Icon(Icons.arrow_drop_down, color: Colors.black87),
-              // Dropdown arrow
-              items: countries
-                  .map(
-                    (country) => DropdownMenuItem(
-                      value: country["code"],
-                      child: SizedBox(
-                        width: barWidth - 32, // Ensure text doesn't exceed the dropdown width
-                        child: Row(
-                          children: [
-                            Icon(Icons.location_on, color: Colors.black87),
-                            const SizedBox(width: 4),
-                            Expanded(
-                              child: Tooltip(
-                                message: country["name"], // Tooltip displays full name
-                                waitDuration: Duration(milliseconds: 500), // Optional: delay before showing
-                                child: Text(
-                                  country["name"]!,
-                                  style: TextStyle(fontSize: 14, color: Colors.black),
-                                  overflow: TextOverflow.ellipsis, // Truncate text with ellipsis
-                                  maxLines: 1, // Ensure text stays in one line
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  )
-                  .toList(),
-              dropdownColor: Colors.white,
-              // Background color for dropdown menu
-              borderRadius: BorderRadius.circular(12.0),
-              // Rounded corners for dropdown
-              style: TextStyle(fontSize: 14, color: Colors.black), // Style for dropdown items
-            ),
-          ),
-        ),
       ),
     );
   }
@@ -305,13 +231,26 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
-  Widget _builCountryButton() {
+  // 🔹 Popup Country (For Small Screens) Text field widget
+  Widget _buildCountryDialogTextField(BuildContext context, localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
+    return CountryAutoCompleteTextField(
+      width: 150,
+      initialValue: localeProvider.defaultCountry,
+      onChanged: (String? newValue) {
+        if (newValue != null) {
+          localeProvider.setDefaultCountry(newValue);
+        }
+      },
+    );
+  }
+
+  Widget _buildCountryButton(localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
     return IconButton(
       padding: EdgeInsets.zero, // ✅ Removes default padding
       constraints: BoxConstraints(), // ✅ Prevents extra space
       icon: Icon(Icons.location_on, color: Colors.grey),
       onPressed: () {
-        _showCountryDialog(context);
+        _showCountryDialog(context, localeProvider, currentLocale, navbarBackgroundColor);
       },
     );
   }
