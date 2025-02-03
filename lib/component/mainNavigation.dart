@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:jippin/component/navBarItem.dart';
 import 'package:jippin/component/adaptiveNavBar.dart';
-import 'package:jippin/constants.dart';
+import 'package:jippin/utils.dart';
 
 import 'package:jippin/pages/about.dart';
 import 'package:jippin/pages/home.dart';
@@ -160,12 +160,13 @@ class _MainNavigationState extends State<MainNavigation> {
               ),
               navBarItems: [
                 NavBarItem(text: AppLocalizations.of(context)!.reviews, onTap: () => _navigateTo(1)),
-                if (screenWidth <= smallScreenWidth) NavBarItem(text: AppLocalizations.of(context)!.submitReview, onTap: () => _navigateTo(2)),
+                if (screenWidth <= smallScreenWidth) NavBarItem(text: AppLocalizations.of(context)!.writeReview, onTap: () => _navigateTo(2)),
                 NavBarItem(text: AppLocalizations.of(context)!.about, onTap: () => _navigateTo(3)),
               ],
               popupMenuItems: [
+                NavBarItem(text: AppLocalizations.of(context)!.home, onTap: () => _navigateTo(0)),
                 NavBarItem(text: AppLocalizations.of(context)!.reviews, onTap: () => _navigateTo(1)),
-                NavBarItem(text: AppLocalizations.of(context)!.submitReview, onTap: () => _navigateTo(2)),
+                NavBarItem(text: AppLocalizations.of(context)!.writeReview, onTap: () => _navigateTo(2)),
                 NavBarItem(text: AppLocalizations.of(context)!.about, onTap: () => _navigateTo(3)),
               ],
               onSubmitReview: () => _navigateTo(2),

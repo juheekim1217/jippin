@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/constants.dart';
+import 'package:jippin/utils.dart';
 
-class CountryDropdownTextField extends StatefulWidget {
+class CountryAutoCompleteTextField extends StatefulWidget {
   final double width;
   final Function(String?) onChanged;
   final String initialValue;
 
-  CountryDropdownTextField({
+  CountryAutoCompleteTextField({
     required this.width,
     required this.onChanged,
     required this.initialValue,
@@ -16,21 +16,9 @@ class CountryDropdownTextField extends StatefulWidget {
   _CountryDropdownTextFieldState createState() => _CountryDropdownTextFieldState();
 }
 
-class _CountryDropdownTextFieldState extends State<CountryDropdownTextField> {
+class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField> {
   final TextEditingController _controller = TextEditingController();
   bool _isValidSelection = false;
-
-  String? getCountryCode(String countryName) {
-    final country = countries.firstWhere((c) => c["name"] == countryName // Handle cases where the country isn't found
-        );
-    return country["code"];
-  }
-
-  String? getCountryName(String countryCode) {
-    final country = countries.firstWhere((c) => c["code"] == countryCode // Handle cases where the country isn't found
-        );
-    return country["name"];
-  }
 
   @override
   void initState() {

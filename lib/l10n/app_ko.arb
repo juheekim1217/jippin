@@ -1,7 +1,8 @@
 {
   "@@locale": "ko",
   "appTitle": "집핀",
-  "submitReview": "리뷰 작성하기",
+  "writeReview": "리뷰 작성하기",
+  "home": "홈",
   "reviews": "리뷰",
   "resources": "자료",
   "about": "소개",

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
-import 'package:jippin/constants.dart';
+import 'package:jippin/utils.dart';
 import 'package:jippin/locale_provider.dart';
 import 'package:jippin/component/navBarItem.dart';
-import 'package:jippin/component/countryDropdownTextField.dart';
+import 'package:jippin/component/countryAutoCompleteTextField.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -75,6 +75,25 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
+  // 🔹 Popup Search (For Small Screens)
+  void _showCountryDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text("Select Country"),
+          content: _buildSearchDialogTextField(context),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text("Close"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final localeProvider = Provider.of<LocaleProvider>(context);
@@ -95,10 +114,9 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                //if (widget.screenWidth > smallScreenWidth) _buildCountryDropdown(150),
                 if (widget.screenWidth > smallScreenWidth)
-                  CountryDropdownTextField(
-                    width: 170,
+                  CountryAutoCompleteTextField(
+                    width: 150,
                     initialValue: localeProvider.defaultCountry,
                     onChanged: (String? newValue) {
                       if (newValue != null) {
@@ -107,16 +125,17 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                     },
                   ),
                 if (widget.screenWidth > smallScreenWidth) _buildSearchBar(null),
-                if (widget.screenWidth <= smallScreenWidth) _buildSearchBarButton(),
               ],
             ),
           ),
         ],
       ),
       actions: [
-        if (widget.screenWidth > largeScreenWidth) _buildSubmitButton(),
-        if (widget.screenWidth > largeScreenWidth) _buildLanguageDropdown(localeProvider, currentLocale, navbarBackgroundColor),
-        if (widget.screenWidth <= largeScreenWidth) _buildPopupMenuButton(),
+        if (widget.screenWidth <= smallScreenWidth) _builCountryButton(),
+        if (widget.screenWidth <= smallScreenWidth) _buildSearchBarButton(),
+        if (widget.screenWidth > mediumScreenWidth) _buildSubmitButton(),
+        _buildLanguageDropdown(localeProvider, currentLocale, navbarBackgroundColor),
+        if (widget.screenWidth <= mediumScreenWidth) _buildPopupMenuButton(),
       ],
     );
   }
@@ -286,6 +305,17 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
+  Widget _builCountryButton() {
+    return IconButton(
+      padding: EdgeInsets.zero, // ✅ Removes default padding
+      constraints: BoxConstraints(), // ✅ Prevents extra space
+      icon: Icon(Icons.location_on, color: Colors.grey),
+      onPressed: () {
+        _showCountryDialog(context);
+      },
+    );
+  }
+
   Widget _buildSearchBarButton() {
     return IconButton(
       icon: Icon(Icons.search, color: Colors.grey),
@@ -314,7 +344,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             Icon(Icons.add, color: Colors.white), // Black icon
             const SizedBox(width: 2), // Space between icon and text
             Text(
-              AppLocalizations.of(context)!.submitReview, // Use your desired text
+              AppLocalizations.of(context)!.writeReview, // Use your desired text
               style: const TextStyle(color: Colors.white), // Black text
             ),
           ],
@@ -323,20 +353,27 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
-  Widget _buildLanguageDropdown(localeProvider, currentLocale, navbarBackgroundColor) {
+  Widget _buildLanguageDropdown(localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
+    double padding_right = 24.0;
+    double padding_inner = 8.0;
+    if (widget.screenWidth <= mediumScreenWidth) {
+      padding_right = 0.0;
+      padding_inner = 4.0;
+    }
+
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      padding: EdgeInsets.only(left: 0.0, right: padding_right),
       child: DropdownButtonHideUnderline(
         child: DecoratedBox(
           decoration: BoxDecoration(
-            color: navbarBackgroundColor, // Dropdown background color
+            //color: navbarBackgroundColor, // Dropdown background color
             borderRadius: BorderRadius.circular(16.0), // Rounded corners
-            border: Border.all(color: Colors.grey, width: 1), // Border styling
+            //border: Border.all(color: Colors.grey, width: 1), // Border styling
           ),
           child: SizedBox(
             height: 32,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 14.0), // Inner padding
+              padding: EdgeInsets.symmetric(horizontal: padding_inner), // Inner padding
               child: DropdownButton<Locale>(
                 focusColor: Colors.transparent,
                 value: currentLocale,
@@ -345,27 +382,17 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                     localeProvider.setLocale(newLocale); // Update locale
                   }
                 },
-                icon: Icon(Icons.arrow_drop_down, size: 16, color: Colors.grey),
+                icon: const Icon(Icons.arrow_drop_down, size: 16, color: Colors.grey),
                 // Customize dropdown icon
-                items: [
-                  DropdownMenuItem(
-                    value: Locale('en'),
-                    child: Text(
-                      'English',
-                      style: TextStyle(fontSize: 14), // Smaller text size
-                    ),
-                  ),
-                  DropdownMenuItem(
-                    value: Locale('ko'),
-                    child: Text(
-                      '한국어',
-                      style: TextStyle(fontSize: 14), // Smaller text size
-                    ),
-                  ),
-                ],
+                items: languages.map((lang) {
+                  return DropdownMenuItem(
+                    value: Locale(lang["locale"]!),
+                    child: Text(lang["label"]!, style: const TextStyle(fontSize: 14)),
+                  );
+                }).toList(),
                 dropdownColor: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
-                style: TextStyle(fontSize: 14, color: Colors.black87),
+                style: const TextStyle(fontSize: 14, color: Colors.black87),
                 isDense: true, // Compact dropdown
               ),
             ),

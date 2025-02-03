@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:country_picker/country_picker.dart';
 
 /// Supabase client
 final supabase = Supabase.instance.client;
@@ -16,52 +15,6 @@ const formPadding = EdgeInsets.symmetric(vertical: 20, horizontal: 16);
 
 /// Error message to display the user when unexpected error occurs.
 const unexpectedErrorMessage = 'Unexpected error occured.';
-
-/// Basic theme to change the look and feel of the app
-final appTheme = ThemeData.light().copyWith(
-  primaryColorDark: Colors.orange,
-  appBarTheme: const AppBarTheme(
-    elevation: 1,
-    backgroundColor: Colors.white,
-    iconTheme: IconThemeData(color: Colors.black),
-    titleTextStyle: TextStyle(
-      color: Colors.black,
-      fontSize: 18,
-    ),
-  ),
-  primaryColor: Colors.orange,
-  textButtonTheme: TextButtonThemeData(
-    style: TextButton.styleFrom(
-      foregroundColor: Colors.orange,
-    ),
-  ),
-  elevatedButtonTheme: ElevatedButtonThemeData(
-    style: ElevatedButton.styleFrom(
-      foregroundColor: Colors.white,
-      backgroundColor: Colors.orange,
-    ),
-  ),
-  inputDecorationTheme: InputDecorationTheme(
-    floatingLabelStyle: const TextStyle(
-      color: Colors.orange,
-    ),
-    border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
-        color: Colors.grey,
-        width: 2,
-      ),
-    ),
-    focusColor: Colors.orange,
-    focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
-        color: Colors.orange,
-        width: 2,
-      ),
-    ),
-  ),
-);
 
 /// Set of extension methods to easily display a snackbar
 extension ShowSnackBar on BuildContext {
@@ -87,11 +40,24 @@ const int smallScreenWidth = 600; // Mobile
 const int mediumScreenWidth = 1024; // Tablet
 const int largeScreenWidth = 1440; // Desktop & Larger Screens
 
+// Map of values to display text
+final Map<String, String> sortOptions = {
+  'most_recent': 'Most recent',
+  'highest_rating': 'Highest rating',
+  'lowest_rating': 'Lowest rating',
+};
+
+// List of available languages
+final List<Map<String, String>> languages = [
+  {"locale": 'en', "label": "English"},
+  {"locale": 'ko', "label": "한국어"},
+];
+
 // List of country options
 final List<Map<String, String>> countries = [
   {"code": "AU", "name": "Australia"},
   {"code": "CA", "name": "Canada"},
-  {"code": "UK", "name": "Ireland"},
+  {"code": "IE", "name": "Ireland"},
   {"code": "KR", "name": "South Korea"},
   {"code": "NZ", "name": "New Zealand"},
   {"code": "UK", "name": "United Kingdom"},
@@ -99,3 +65,15 @@ final List<Map<String, String>> countries = [
   {"code": "JP", "name": "Japan"},
   {"code": "Other", "name": "Other"},
 ];
+
+String? getCountryCode(String countryName) {
+  final country = countries.firstWhere((c) => c["name"] == countryName // Handle cases where the country isn't found
+      );
+  return country["code"];
+}
+
+String? getCountryName(String countryCode) {
+  final country = countries.firstWhere((c) => c["code"] == countryCode // Handle cases where the country isn't found
+      );
+  return country["name"];
+}

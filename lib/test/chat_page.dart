@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:jippin/models/message.dart';
 import 'package:jippin/models/profile.dart';
-import 'package:jippin/constants.dart';
+import 'package:jippin/utils.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:timeago/timeago.dart';
 

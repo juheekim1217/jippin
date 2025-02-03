@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jippin/style/GlobalScaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:jippin/constants.dart';
-import 'package:country_picker/country_picker.dart';
-import 'package:jippin/component/adaptiveNavBar.dart';
+import 'package:jippin/utils.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String searchQuery;
@@ -24,6 +22,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
   List<Map<String, dynamic>> filteredReviews = [];
   bool isLoading = true;
   String errorMessage = '';
+  String? selectedSort;
 
   @override
   void initState() {
@@ -160,7 +159,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
 
   Widget _buildOverallRatingSection(BuildContext context, List<Map<String, dynamic>> reviews) {
     if (reviews.isEmpty) {
-      return const Text("No reviews yet.");
+      return const Text("");
     }
 
     // Star rating counts (1-5)
@@ -202,72 +201,100 @@ class _ReviewsPageState extends State<ReviewsPage> {
     // Total reviews for histogram
     int totalReviews = starCounts.values.reduce((a, b) => a + b);
 
-    return Card(
-      elevation: 2,
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    String? countryName = getCountryName(widget.defaultCountry);
+    String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // 🌍 **Header Section Above the Card**
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // Overall Rating Display
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Icon(Icons.star, size: 40, color: Colors.amber),
-                const SizedBox(width: 8),
-                Text(
-                  overallRating.toStringAsFixed(2), // Display with 2 decimal places
-                  style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
             Text(
-              AppLocalizations.of(context)!.overallrating,
-              style: const TextStyle(fontSize: 16, color: Colors.grey),
-            ),
-            const SizedBox(height: 8),
-            Align(
-              alignment: Alignment.centerRight,
-              child: Text(
-                '${reviews.length} ' '${AppLocalizations.of(context)!.reviews}',
-                style: const TextStyle(fontSize: 12, color: Colors.grey),
+              "$countryName $searchQuery",
+              style: const TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 8),
-
-            // Histogram for star ratings
-            ...List.generate(5, (index) {
-              int starValue = 5 - index; // 5-star at the top, 1-star at the bottom
-              double percentage = totalReviews > 0 ? starCounts[starValue]! / totalReviews : 0.0;
-              return Row(
-                children: [
-                  Text('$starValue', style: const TextStyle(fontSize: 14)),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: LinearProgressIndicator(
-                      value: percentage,
-                      color: Colors.amber,
-                      backgroundColor: Colors.grey[300],
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Text('${starCounts[starValue]}', style: const TextStyle(fontSize: 14, color: Colors.grey)),
-                ],
-              );
-            }),
-
-            const SizedBox(height: 16),
-
-            // Categories Ratings
-            _buildRatingCategory(AppLocalizations.of(context)!.trustworthiness, avgTrust, Icons.check_circle_outline),
-            _buildRatingCategory(AppLocalizations.of(context)!.price, avgPrice, Icons.sell_outlined),
-            _buildRatingCategory(AppLocalizations.of(context)!.location, avgLocation, Icons.map_outlined),
-            _buildRatingCategory(AppLocalizations.of(context)!.condition, avgCondition, Icons.other_houses_outlined),
-            _buildRatingCategory(AppLocalizations.of(context)!.safety, avgSafety, Icons.shield_outlined),
           ],
         ),
-      ),
+        const SizedBox(height: 28),
+
+        // ⭐ **The Rating Card**
+        Card(
+          elevation: 4,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // ⭐ **Overall Rating Display**
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(Icons.star, size: 44, color: Colors.amber),
+                    const SizedBox(width: 8),
+                    Text(
+                      overallRating.toStringAsFixed(2), // Display with 2 decimal places
+                      style: const TextStyle(fontSize: 42, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Center(
+                  child: Text(
+                    AppLocalizations.of(context)!.overallrating,
+                    style: const TextStyle(fontSize: 16, color: Colors.grey),
+                  ),
+                ),
+                const SizedBox(height: 16),
+
+                // 📊 **Histogram for Star Ratings**
+                ...List.generate(5, (index) {
+                  int starValue = 5 - index; // 5-star at the top, 1-star at the bottom
+                  double percentage = totalReviews > 0 ? starCounts[starValue]! / totalReviews : 0.0;
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    child: Row(
+                      children: [
+                        Text('$starValue ★', style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: LinearProgressIndicator(
+                              value: percentage,
+                              minHeight: 8,
+                              color: Colors.amber,
+                              backgroundColor: Colors.grey[300],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Text('${starCounts[starValue]}', style: const TextStyle(fontSize: 14, color: Colors.grey)),
+                      ],
+                    ),
+                  );
+                }),
+
+                const SizedBox(height: 20),
+
+                // 📌 **Categories Ratings**
+                _buildRatingCategory(AppLocalizations.of(context)!.trustworthiness, avgTrust, Icons.check_circle_outline),
+                _buildRatingCategory(AppLocalizations.of(context)!.price, avgPrice, Icons.sell_outlined),
+                _buildRatingCategory(AppLocalizations.of(context)!.location, avgLocation, Icons.map_outlined),
+                _buildRatingCategory(AppLocalizations.of(context)!.condition, avgCondition, Icons.other_houses_outlined),
+                _buildRatingCategory(AppLocalizations.of(context)!.safety, avgSafety, Icons.shield_outlined),
+              ],
+            ),
+          ),
+        ),
+      ],
     );
   }
 
@@ -284,55 +311,135 @@ class _ReviewsPageState extends State<ReviewsPage> {
   }
 
   Widget _buildReviewsSection(BuildContext context, List<Map<String, dynamic>> reviews) {
+    String? countryName = getCountryName(widget.defaultCountry);
+    String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Reviews Section Header
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              '${reviews.length} reviews',
-              style: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            DropdownButton<String>(
-              items: const [
-                DropdownMenuItem(
-                  value: 'most_recent',
-                  child: Text('Most recent'),
+        // 📌 **Reviews Section Header**
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8.0),
+          child: Row(
+            children: [
+              if (reviews.isNotEmpty)
+                Expanded(
+                  child: Row(
+                    children: [
+                      const Icon(Icons.reviews, size: 22, color: Colors.blueAccent), // ✅ Add an icon for visibility
+                      const SizedBox(width: 6),
+                      Text(
+                        '${reviews.length} Reviews',
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                 ),
-                DropdownMenuItem(
-                  value: 'highest_rating',
-                  child: Text('Highest rating'),
+              if (reviews.isNotEmpty)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2), // ✅ Reduced padding
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.grey.shade300),
+                  ),
+                  child: DropdownButtonHideUnderline(
+                    child: DropdownButton<String>(
+                      value: selectedSort,
+                      focusColor: Colors.transparent,
+                      dropdownColor: Colors.white,
+                      isDense: true,
+                      // ✅ Reduces default height
+                      style: const TextStyle(fontSize: 14, color: Colors.black),
+
+                      // ✅ Reduced Dropdown height using buttonHeight
+                      iconSize: 18,
+                      // Reduce dropdown arrow size
+                      padding: EdgeInsets.zero,
+                      // ✅ Remove extra padding
+
+                      hint: Text(
+                        selectedSort != null ? sortOptions[selectedSort]! : 'Sort by',
+                        style: const TextStyle(color: Colors.black54),
+                      ),
+
+                      items: sortOptions.entries.map((entry) {
+                        return DropdownMenuItem(
+                          value: entry.key,
+                          child: Text(entry.value, style: const TextStyle(fontSize: 14)),
+                        );
+                      }).toList(),
+
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          selectedSort = newValue;
+                        });
+                        _applySortingReviews(newValue!);
+                      },
+                    ),
+                  ),
                 ),
-                DropdownMenuItem(
-                  value: 'lowest_rating',
-                  child: Text('Lowest rating'),
-                ),
-              ],
-              onChanged: (value) {
-                _applySortingReviews(value!); // Handle sorting logic here
-              },
-              hint: const Text('Most recent'),
-            ),
-          ],
+            ],
+          ),
         ),
 
         const SizedBox(height: 16),
 
-        // Reviews List
-        ListView.builder(
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          itemCount: reviews.length,
-          itemBuilder: (context, index) {
-            final review = reviews[index];
-            return _buildReviewCard(context, review);
-          },
-        ),
+        // 📌 **Handle Empty Reviews**
+        if (reviews.isEmpty)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "$countryName $searchQuery",
+                  style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black87),
+                ),
+                const SizedBox(height: 12),
+                const Icon(Icons.rate_review, size: 64, color: Colors.grey), // ✅ Larger icon
+                const SizedBox(height: 12),
+                const Text(
+                  'No reviews yet.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black54),
+                ),
+                const SizedBox(height: 6),
+                const Text(
+                  'Be the first to share your experience!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 16, color: Colors.black45),
+                ),
+                const SizedBox(height: 16),
+                ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/submit'); // ✅ Use your route name
+                  },
+                  icon: const Icon(Icons.add, size: 18),
+                  label: const Text("Write a Review"),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blueAccent,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+        // 📌 **Reviews List**
+        if (reviews.isNotEmpty)
+          ListView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: reviews.length,
+            itemBuilder: (context, index) {
+              final review = reviews[index];
+              return _buildReviewCard(context, review);
+            },
+          ),
       ],
     );
   }
