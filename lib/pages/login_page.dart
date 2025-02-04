@@ -4,7 +4,7 @@ import 'package:jippin/utils.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   static Route<void> route() {
     return MaterialPageRoute(builder: (context) => const LoginPage());

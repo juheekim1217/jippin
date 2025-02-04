@@ -5,7 +5,8 @@ import 'package:provider/provider.dart';
 import 'package:jippin/utils.dart';
 import 'package:jippin/locale_provider.dart';
 import 'package:jippin/component/navBarItem.dart';
-import 'package:jippin/component/countryAutoCompleteTextFieldTest.dart';
+import 'package:jippin/component/countryAutoCompleteTextField.dart';
+import 'package:jippin/component/addressAutocompleteField.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -16,14 +17,14 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final ValueChanged<String> onSearch;
 
   const AdaptiveNavBar({
-    Key? key,
+    super.key,
     required this.screenWidth,
     required this.logo,
     required this.navBarItems,
     required this.popupMenuItems,
     required this.onSubmitReview,
     required this.onSearch,
-  }) : super(key: key);
+  });
 
   @override
   _AdaptiveNavBarState createState() => _AdaptiveNavBarState();
@@ -158,13 +159,15 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
-  Widget _buildSearchBar(barWidth) {
+  Widget _buildSearchBar1(barWidth) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: SizedBox(
         height: 32, // Match the height of other menu items
         width: barWidth ?? widget.screenWidth * 0.25,
         child: TextField(
+          autofocus: false,
+          // Prevents unnecessary refocus
           style: TextStyle(
             fontSize: 14, // Reduced text size
             color: Colors.black87, // Text color
@@ -198,9 +201,22 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
+  Widget _buildSearchBar(barWidth) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      child: SizedBox(
+        //height: 20, // Increased height for better usability
+        width: 200,
+        child: AddressAutocompleteField(), // Only the address search field
+      ),
+    );
+  }
+
   // 🔹 Popup Search (For Small Screens) Text field widget
   Widget _buildSearchDialogTextField(BuildContext context) {
     return TextField(
+      autofocus: false,
+      // Prevents unnecessary refocus
       style: TextStyle(fontSize: 14, color: Colors.black87),
       decoration: InputDecoration(
         hintText: AppLocalizations.of(context)!.search,
@@ -293,15 +309,15 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
   }
 
   Widget _buildLanguageDropdown(localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
-    double padding_right = 24.0;
-    double padding_inner = 8.0;
+    double paddingRight = 24.0;
+    double paddingInner = 8.0;
     if (widget.screenWidth <= mediumScreenWidth) {
-      padding_right = 0.0;
-      padding_inner = 4.0;
+      paddingRight = 0.0;
+      paddingInner = 4.0;
     }
 
     return Padding(
-      padding: EdgeInsets.only(left: 0.0, right: padding_right),
+      padding: EdgeInsets.only(left: 0.0, right: paddingRight),
       child: DropdownButtonHideUnderline(
         child: DecoratedBox(
           decoration: BoxDecoration(
@@ -312,7 +328,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
           child: SizedBox(
             height: 32,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: padding_inner), // Inner padding
+              padding: EdgeInsets.symmetric(horizontal: paddingInner), // Inner padding
               child: DropdownButton<Locale>(
                 focusColor: Colors.transparent,
                 value: currentLocale,

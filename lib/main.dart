@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
-import 'dart:ui';
 
 import 'package:jippin/style/theme.dart';
 import 'package:jippin/locale_provider.dart';
@@ -22,10 +20,6 @@ Future<void> main() async {
   String supabaseUrl = dotenv.env['SUPABASE_URL']!;
   String supabaseAnonKey = dotenv.env['SUPABASE_ANON_KEY']!;
 
-  if (supabaseUrl == null || supabaseAnonKey == null) {
-    throw Exception("Supabase URL or API key is missing from .env file");
-  }
-
   await Supabase.initialize(
     url: supabaseUrl,
     anonKey: supabaseAnonKey,
@@ -40,7 +34,7 @@ Future<void> main() async {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key});
+  const MyApp({super.key});
 
   @override
   _MyAppState createState() => _MyAppState();

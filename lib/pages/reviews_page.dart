@@ -8,7 +8,7 @@ class ReviewsPage extends StatefulWidget {
   final String searchQuery;
   final String defaultCountry;
 
-  ReviewsPage({Key? key, required this.searchQuery, required this.defaultCountry}) : super(key: key);
+  const ReviewsPage({super.key, required this.searchQuery, required this.defaultCountry});
 
   @override
   _ReviewsPageState createState() => _ReviewsPageState();
@@ -51,11 +51,11 @@ class _ReviewsPageState extends State<ReviewsPage> {
           .select('*') // ✅ Fetch all columns, or specify only required ones
           .eq('country_code', widget.defaultCountry)
           .order('created_at', ascending: false);
-      print("_fetchAllReviews " + response.length.toString());
+      print("_fetchAllReviews ${response.length}");
       if (response.isEmpty) {
         setState(() {
           isLoading = false;
-          errorMessage = 'No reviews available';
+          _buildEmptyReviewsPage();
         });
         return;
       }
@@ -78,7 +78,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
   // Search filtering logic
   void _applySearchFilter(String query) {
     setState(() {
-      print("_applySearchFilter" + query);
+      print("_applySearchFilter$query");
       if (query.isEmpty) {
         filteredReviews = List.from(allReviews);
       } else {
@@ -386,48 +386,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
         const SizedBox(height: 16),
 
         // 📌 **Handle Empty Reviews**
-        if (reviews.isEmpty)
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  "$countryName $searchQuery",
-                  style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black87),
-                ),
-                const SizedBox(height: 12),
-                const Icon(Icons.rate_review, size: 64, color: Colors.grey), // ✅ Larger icon
-                const SizedBox(height: 12),
-                const Text(
-                  'No reviews yet.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black54),
-                ),
-                const SizedBox(height: 6),
-                const Text(
-                  'Be the first to share your experience!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 16, color: Colors.black45),
-                ),
-                const SizedBox(height: 16),
-                ElevatedButton.icon(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/submit'); // ✅ Use your route name
-                  },
-                  icon: const Icon(Icons.add, size: 18),
-                  label: const Text("Write a Review"),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blueAccent,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                  ),
-                ),
-              ],
-            ),
-          ),
+        if (reviews.isEmpty) _buildEmptyReviewsPage(),
 
         // 📌 **Reviews List**
         if (reviews.isNotEmpty)
@@ -441,6 +400,52 @@ class _ReviewsPageState extends State<ReviewsPage> {
             },
           ),
       ],
+    );
+  }
+
+  Widget _buildEmptyReviewsPage() {
+    String? countryName = getCountryName(widget.defaultCountry);
+    String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            "$countryName $searchQuery",
+            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black87),
+          ),
+          const SizedBox(height: 12),
+          const Icon(Icons.rate_review, size: 64, color: Colors.grey), // ✅ Larger icon
+          const SizedBox(height: 12),
+          const Text(
+            'No reviews yet.',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black54),
+          ),
+          const SizedBox(height: 6),
+          const Text(
+            'Be the first to share your experience!',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 16, color: Colors.black45),
+          ),
+          const SizedBox(height: 16),
+          ElevatedButton.icon(
+            onPressed: () {
+              Navigator.pushNamed(context, '/submit'); // ✅ Use your route name
+            },
+            icon: const Icon(Icons.add, size: 18),
+            label: const Text("Write a Review"),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blueAccent,
+              foregroundColor: Colors.white,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -469,16 +474,16 @@ class _ReviewsPageState extends State<ReviewsPage> {
     if (review['country_code'] == 'KR') {
       currency = '만원';
       address = address = '${review['postal_code']} ${review['country']} ' '${review['province'] != null ? '${review['province']} ' : ''}' '${review['city']} ${review['district']} ${review['street']}';
-      rent = '${review['rent'].toString()} ${currency}';
-      deposit = '${review['deposit'].toString()} ${currency}';
-      otherFees = '${review['other_fees'].toString()} ${currency}';
+      rent = '${review['rent'].toString()} $currency';
+      deposit = '${review['deposit'].toString()} $currency';
+      otherFees = '${review['other_fees'].toString()} $currency';
     } else {
       address = '${review['street']}, ${review['city']}, '
           '${review['province'] == null ? '' : '${review['province']}, '}'
           '${review['postal_code']}, ${review['country']}';
-      rent = '${currency} ${review['rent'].toString()} ';
-      deposit = '${currency} ${review['deposit'].toString()}';
-      otherFees = '${currency} ${review['other_fees'].toString()}';
+      rent = '$currency ${review['rent'].toString()} ';
+      deposit = '$currency ${review['deposit'].toString()}';
+      otherFees = '$currency ${review['other_fees'].toString()}';
     }
 
     return Card(

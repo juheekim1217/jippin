@@ -8,13 +8,13 @@ class GlobalScaffold extends StatelessWidget {
   //final Color? backgroundColor;
 
   const GlobalScaffold({
-    Key? key,
+    super.key,
     required this.body,
     //this.appBar,
     //this.floatingActionButton,
     //this.bottomNavigationBar,
     //this.backgroundColor,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

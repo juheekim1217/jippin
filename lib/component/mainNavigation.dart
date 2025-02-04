@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:jippin/component/navBarItem.dart';
@@ -17,7 +16,7 @@ class MainNavigation extends StatefulWidget {
   final int currentIndex;
   final localeProvider;
 
-  const MainNavigation({Key? key, required this.currentIndex, required this.localeProvider}) : super(key: key);
+  const MainNavigation({super.key, required this.currentIndex, required this.localeProvider});
 
   @override
   _MainNavigationState createState() => _MainNavigationState();
@@ -71,7 +70,7 @@ class _MainNavigationState extends State<MainNavigation> {
     setState(() {
       _currentIndex = 1; // move to Reviews page
       searchQuery = query; // Update search query
-      print("_filterReviews " + query);
+      print("_filterReviews $query");
     });
   }
 

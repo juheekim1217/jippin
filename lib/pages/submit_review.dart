@@ -3,6 +3,8 @@ import 'package:jippin/style/GlobalScaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SubmitReviewPage extends StatefulWidget {
+  const SubmitReviewPage({super.key});
+
   @override
   _SubmitReviewPageState createState() => _SubmitReviewPageState();
 }

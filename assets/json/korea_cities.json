@@ -1,0 +1,44 @@
+{
+  "cities": [
+    {
+      "name": {
+        "en": "Seoul",
+        "ko": "서울특별시"
+      },
+      "province": {
+        "en": "Seoul",
+        "ko": "서울특별시"
+      }
+    },
+    {
+      "name": {
+        "en": "Busan",
+        "ko": "부산광역시"
+      },
+      "province": {
+        "en": "Busan",
+        "ko": "부산광역시"
+      }
+    },
+    {
+      "name": {
+        "en": "Daegu",
+        "ko": "대구광역시"
+      },
+      "province": {
+        "en": "Daegu",
+        "ko": "대구광역시"
+      }
+    },
+    {
+      "name": {
+        "en": "Incheon",
+        "ko": "인천광역시"
+      },
+      "province": {
+        "en": "Incheon",
+        "ko": "인천광역시"
+      }
+    }
+  ]
+}
