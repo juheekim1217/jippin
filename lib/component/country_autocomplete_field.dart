@@ -15,7 +15,7 @@ class CountryAutoCompleteTextField extends StatefulWidget {
   });
 
   @override
-  _CountryDropdownTextFieldState createState() => _CountryDropdownTextFieldState();
+  State<CountryAutoCompleteTextField> createState() => _CountryDropdownTextFieldState();
 }
 
 class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField> {
@@ -89,7 +89,7 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField>
                       // Enter Key pressed
                       onFieldSubmitted: (String value) {
                         debugPrint('You just onFieldSubmitted $value');
-                        String? selectionCode = getCountryCode(value);
+                        //String? selectionCode = getCountryCode(value);
                         // ✅ Update controller directly without setState
                         ///if (selectionCode!.isEmpty) {
                         //textEditingController.clear();

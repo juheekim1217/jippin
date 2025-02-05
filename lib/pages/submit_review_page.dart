@@ -6,7 +6,7 @@ class SubmitReviewPage extends StatefulWidget {
   const SubmitReviewPage({super.key});
 
   @override
-  _SubmitReviewPageState createState() => _SubmitReviewPageState();
+  State<SubmitReviewPage> createState() => _SubmitReviewPageState();
 }
 
 class _SubmitReviewPageState extends State<SubmitReviewPage> {
@@ -39,6 +39,8 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
           'rating_safety': _ratingSafety,
         });
 
+        if (!mounted) return; // Ensure widget is still in the tree
+
         if (response.error == null) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Review Submitted: $_title')),
@@ -50,6 +52,8 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
           );
         }
       } catch (e) {
+        if (!mounted) return; // Prevent calling context if widget is disposed
+
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('An error occurred: $e')),
         );

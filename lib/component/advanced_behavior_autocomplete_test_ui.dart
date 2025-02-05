@@ -24,7 +24,8 @@ import 'custom/advanced_behavior_autocomplete.dart';
 
 // class HomePage extends StatelessWidget {HomePage({Key? key}) : super(key: key);
 class AutocompleteTest extends StatelessWidget {
-  AutocompleteTest({Key? key}) : super(key: key);
+  AutocompleteTest({super.key});
+
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   static const List<String> _emails = <String>['alice@example.com', 'bob@example.com', 'charlie123@gmail.com'];
 
@@ -39,8 +40,8 @@ class AutocompleteTest extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Text('Advanced Behavior Autocomplete supports the following:'),
-            const Text('1.  Selecting the highlighed item with the mouse, or by pressing ENTER or TAB.'),
-            const Text('    On selction focus is moved the next field.'),
+            const Text('1.  Selecting the highlighted item with the mouse, or by pressing ENTER or TAB.'),
+            const Text('    On selection focus is moved the next field.'),
             const Text('2.  Entering text, then pressing ENTER or TAB, focus will be moved to the next field.'),
             const Text('3.  This form demonstrates how to supply a fieldViewBuilder; this enables developers to'),
             const Text('    provide a TextFormField that has all the capabilities you are accustomed to, such as'),

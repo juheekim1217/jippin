@@ -6,14 +6,15 @@ class AddressAutocompleteField extends StatefulWidget {
   const AddressAutocompleteField({super.key});
 
   @override
-  _AddressAutocompleteFieldState createState() => _AddressAutocompleteFieldState();
+  State<AddressAutocompleteField> createState() => _AddressAutocompleteFieldState();
 }
 
 class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
   List<Map<String, dynamic>> cities = [];
   List<Map<String, dynamic>> filteredCities = [];
-  final TextEditingController _controller = TextEditingController();
-  final FocusNode _focusNode = FocusNode(); // ✅ Add focus node
+
+  // final TextEditingController _controller = TextEditingController();
+  // final FocusNode _focusNode = FocusNode(); // ✅ Add focus node
 
   @override
   void initState() {
@@ -31,15 +32,15 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
   }
 
   /// Filters cities based on user input
-  List<Map<String, dynamic>> _filterCities(String query) {
-    if (query.isEmpty) return [];
-    final lowerQuery = query.toLowerCase();
-    return cities.where((city) {
-      final cityNameKo = city["name"]["ko"].toLowerCase();
-      final cityNameEn = city["name"]["en"].toLowerCase();
-      return cityNameKo.contains(lowerQuery) || cityNameEn.contains(lowerQuery);
-    }).toList();
-  }
+  // List<Map<String, dynamic>> _filterCities(String query) {
+  //   if (query.isEmpty) return [];
+  //   final lowerQuery = query.toLowerCase();
+  //   return cities.where((city) {
+  //     final cityNameKo = city["name"]["ko"].toLowerCase();
+  //     final cityNameEn = city["name"]["en"].toLowerCase();
+  //     return cityNameKo.contains(lowerQuery) || cityNameEn.contains(lowerQuery);
+  //   }).toList();
+  // }
 
   @override
   Widget build(BuildContext context) {

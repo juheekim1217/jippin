@@ -14,7 +14,7 @@ const formSpacer = SizedBox(width: 16, height: 16);
 const formPadding = EdgeInsets.symmetric(vertical: 20, horizontal: 16);
 
 /// Error message to display the user when unexpected error occurs.
-const unexpectedErrorMessage = 'Unexpected error occured.';
+const unexpectedErrorMessage = 'Unexpected error occurred.';
 
 /// Set of extension methods to easily display a snackbar
 extension ShowSnackBar on BuildContext {

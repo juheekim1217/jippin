@@ -27,7 +27,7 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   });
 
   @override
-  _AdaptiveNavBarState createState() => _AdaptiveNavBarState();
+  State<AdaptiveNavBar> createState() => _AdaptiveNavBarState();
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
@@ -46,10 +46,10 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
   }
 
   // pass search user input to parent widget
-  void _handleSearch() {
-    FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
-    widget.onSearch(searchController.text);
-  }
+  // void _handleSearch() {
+  //   FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
+  //   widget.onSearch(searchController.text);
+  // }
 
   void _handleSearchDialog() {
     FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
@@ -177,7 +177,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
       // Prevents unnecessary refocus
       style: TextStyle(fontSize: 14, color: Colors.black87),
       decoration: InputDecoration(
-        hintText: AppLocalizations.of(context)!.search,
+        hintText: AppLocalizations.of(context).search,
         // Replace with localization if needed
         suffixIcon: IconButton(
           icon: Icon(Icons.search, color: Colors.grey),
@@ -257,7 +257,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             Icon(Icons.add, color: Colors.white), // Black icon
             const SizedBox(width: 2), // Space between icon and text
             Text(
-              AppLocalizations.of(context)!.writeReview, // Use your desired text
+              AppLocalizations.of(context).writeReview, // Use your desired text
               style: const TextStyle(color: Colors.white), // Black text
             ),
           ],

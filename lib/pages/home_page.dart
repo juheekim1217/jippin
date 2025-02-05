@@ -128,7 +128,7 @@ class HomePage extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 8),
       child: ListTile(
         leading: CircleAvatar(
-          backgroundColor: color.withOpacity(0.2),
+          backgroundColor: color.withAlpha(60),
           child: Icon(icon, color: color),
         ),
         title: Text(title, style: TextStyle(fontWeight: FontWeight.bold)),

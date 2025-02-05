@@ -11,7 +11,7 @@ class ReviewsPage extends StatefulWidget {
   const ReviewsPage({super.key, required this.searchQuery, required this.defaultCountry});
 
   @override
-  _ReviewsPageState createState() => _ReviewsPageState();
+  State<ReviewsPage> createState() => _ReviewsPageState();
 }
 
 class _ReviewsPageState extends State<ReviewsPage> {
@@ -248,7 +248,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                 const SizedBox(height: 8),
                 Center(
                   child: Text(
-                    AppLocalizations.of(context)!.overallrating,
+                    AppLocalizations.of(context).overallrating,
                     style: const TextStyle(fontSize: 16, color: Colors.grey),
                   ),
                 ),
@@ -285,11 +285,11 @@ class _ReviewsPageState extends State<ReviewsPage> {
                 const SizedBox(height: 20),
 
                 // 📌 **Categories Ratings**
-                _buildRatingCategory(AppLocalizations.of(context)!.trustworthiness, avgTrust, Icons.check_circle_outline),
-                _buildRatingCategory(AppLocalizations.of(context)!.price, avgPrice, Icons.sell_outlined),
-                _buildRatingCategory(AppLocalizations.of(context)!.location, avgLocation, Icons.map_outlined),
-                _buildRatingCategory(AppLocalizations.of(context)!.condition, avgCondition, Icons.other_houses_outlined),
-                _buildRatingCategory(AppLocalizations.of(context)!.safety, avgSafety, Icons.shield_outlined),
+                _buildRatingCategory(AppLocalizations.of(context).trustworthiness, avgTrust, Icons.check_circle_outline),
+                _buildRatingCategory(AppLocalizations.of(context).price, avgPrice, Icons.sell_outlined),
+                _buildRatingCategory(AppLocalizations.of(context).location, avgLocation, Icons.map_outlined),
+                _buildRatingCategory(AppLocalizations.of(context).condition, avgCondition, Icons.other_houses_outlined),
+                _buildRatingCategory(AppLocalizations.of(context).safety, avgSafety, Icons.shield_outlined),
               ],
             ),
           ),
@@ -311,8 +311,8 @@ class _ReviewsPageState extends State<ReviewsPage> {
   }
 
   Widget _buildReviewsSection(BuildContext context, List<Map<String, dynamic>> reviews) {
-    String? countryName = getCountryName(widget.defaultCountry);
-    String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
+    // String? countryName = getCountryName(widget.defaultCountry);
+    // String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -519,14 +519,14 @@ class _ReviewsPageState extends State<ReviewsPage> {
             Row(
               children: [
                 Tooltip(
-                  message: AppLocalizations.of(context)!.address,
+                  message: AppLocalizations.of(context).address,
                   child: Icon(Icons.location_on, size: 20, color: Colors.black87),
                 ),
                 const SizedBox(width: 8),
                 Flexible(
                   // Allows the text to wrap instead of overflowing
                   child: Text(
-                    address ?? "Unknown",
+                    address,
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
                     softWrap: true, // Enables wrapping
                   ),
@@ -542,7 +542,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                 child: Row(
                   children: [
                     Tooltip(
-                      message: AppLocalizations.of(context)!.realtor,
+                      message: AppLocalizations.of(context).realtor,
                       child: Icon(Icons.supervised_user_circle_outlined, size: 20, color: Colors.black87),
                     ),
                     const SizedBox(width: 8),
@@ -590,11 +590,11 @@ class _ReviewsPageState extends State<ReviewsPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       // Ratings Section
-                      _buildRatingRow(AppLocalizations.of(context)!.trustworthiness, review['rating_trust']),
-                      _buildRatingRow(AppLocalizations.of(context)!.price, review['rating_price']),
-                      _buildRatingRow(AppLocalizations.of(context)!.location, review['rating_location']),
-                      _buildRatingRow(AppLocalizations.of(context)!.condition, review['rating_condition']),
-                      _buildRatingRow(AppLocalizations.of(context)!.safety, review['rating_safety']),
+                      _buildRatingRow(AppLocalizations.of(context).trustworthiness, review['rating_trust']),
+                      _buildRatingRow(AppLocalizations.of(context).price, review['rating_price']),
+                      _buildRatingRow(AppLocalizations.of(context).location, review['rating_location']),
+                      _buildRatingRow(AppLocalizations.of(context).condition, review['rating_condition']),
+                      _buildRatingRow(AppLocalizations.of(context).safety, review['rating_safety']),
                     ],
                   ),
                 ),
@@ -605,11 +605,11 @@ class _ReviewsPageState extends State<ReviewsPage> {
             const SizedBox(height: 8),
             Divider(color: Colors.grey.shade300),
             const SizedBox(height: 8),
-            if (review['occupied_year'] != null) _buildRentDetailRow(AppLocalizations.of(context)!.occupiedYear, review['occupied_year'].toString()),
-            if (review['rental_type'] != null) _buildRentDetailRow(AppLocalizations.of(context)!.type, review['rental_type']),
-            if (review['deposit'] != null) _buildRentDetailRow(AppLocalizations.of(context)!.deposit, deposit),
-            if (review['rent'] != null) _buildRentDetailRow(AppLocalizations.of(context)!.rent, rent),
-            if (review['other_fees'] != null) _buildRentDetailRow(AppLocalizations.of(context)!.otherFees, otherFees),
+            if (review['occupied_year'] != null) _buildRentDetailRow(AppLocalizations.of(context).occupiedYear, review['occupied_year'].toString()),
+            if (review['rental_type'] != null) _buildRentDetailRow(AppLocalizations.of(context).type, review['rental_type']),
+            if (review['deposit'] != null) _buildRentDetailRow(AppLocalizations.of(context).deposit, deposit),
+            if (review['rent'] != null) _buildRentDetailRow(AppLocalizations.of(context).rent, rent),
+            if (review['other_fees'] != null) _buildRentDetailRow(AppLocalizations.of(context).otherFees, otherFees),
 
             // Title and Written Review section
             const SizedBox(height: 8),
@@ -678,7 +678,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
           // Value Column
           Expanded(
             child: Text(
-              value ?? 'Unknown',
+              value,
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.normal,

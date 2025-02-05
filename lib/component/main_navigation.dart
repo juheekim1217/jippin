@@ -20,7 +20,7 @@ class MainNavigation extends StatefulWidget {
   const MainNavigation({super.key, required this.currentIndex, required this.localeProvider});
 
   @override
-  _MainNavigationState createState() => _MainNavigationState();
+  State<MainNavigation> createState() => _MainNavigationState();
 }
 
 class _MainNavigationState extends State<MainNavigation> {
