@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
 
-class GlobalScaffold extends StatelessWidget {
+/// Global page layout scaffold
+class GlobalPageLayoutScaffold extends StatelessWidget {
   final Widget body;
-  //final PreferredSizeWidget? appBar;
-  //final Widget? floatingActionButton;
-  //final Widget? bottomNavigationBar;
-  //final Color? backgroundColor;
 
-  const GlobalScaffold({
+  const GlobalPageLayoutScaffold({
     super.key,
     required this.body,
-    //this.appBar,
-    //this.floatingActionButton,
-    //this.bottomNavigationBar,
-    //this.backgroundColor,
   });
 
   @override

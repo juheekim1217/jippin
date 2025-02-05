@@ -4,14 +4,14 @@ import 'package:flutter/foundation.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:jippin/component/navBarItem.dart';
-import 'package:jippin/component/adaptiveNavBar.dart';
+import 'package:jippin/component/nav_bar_item.dart';
+import 'package:jippin/component/adaptive_nav_bar.dart';
 import 'package:jippin/utility/utils.dart';
 
-import 'package:jippin/pages/about.dart';
-import 'package:jippin/pages/home.dart';
+import 'package:jippin/pages/about_page.dart';
+import 'package:jippin/pages/home_page.dart';
 import 'package:jippin/pages/reviews_page.dart';
-import 'package:jippin/pages/submit_review.dart';
+import 'package:jippin/pages/submit_review_page.dart';
 
 class MainNavigation extends StatefulWidget {
   final int currentIndex;
@@ -28,7 +28,7 @@ class _MainNavigationState extends State<MainNavigation> {
   String searchQuery = "";
 
   // Android navigation
-  final List<BottomNavigationBarItem> _bottomnav = [
+  final List<BottomNavigationBarItem> _mobileBottomNavigationBarList = [
     BottomNavigationBarItem(
       icon: Icon(Icons.home),
       label: 'Home',
@@ -177,7 +177,7 @@ class _MainNavigationState extends State<MainNavigation> {
           ? BottomNavigationBar(
               currentIndex: _currentIndex,
               onTap: _navigateTo,
-              items: _bottomnav,
+              items: _mobileBottomNavigationBarList,
             )
           : null,
     );

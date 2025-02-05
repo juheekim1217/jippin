@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/GlobalScaffold.dart';
-import 'package:jippin/component/advanced_behavior_auto_complete_test.dart';
+import 'package:jippin/utility/global_page_layout_scaffold.dart';
+import 'package:jippin/component/advanced_behavior_autocomplete_test_ui.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GlobalScaffold(
+    return GlobalPageLayoutScaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

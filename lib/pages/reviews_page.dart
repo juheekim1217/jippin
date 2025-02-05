@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/GlobalScaffold.dart';
+import 'package:jippin/utility/global_page_layout_scaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/utility/utils.dart';
@@ -102,7 +102,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
 
   @override
   Widget build(BuildContext context) {
-    return GlobalScaffold(
+    return GlobalPageLayoutScaffold(
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
           : errorMessage.isNotEmpty

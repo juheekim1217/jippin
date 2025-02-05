@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/GlobalScaffold.dart';
+import 'package:jippin/utility/global_page_layout_scaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SubmitReviewPage extends StatefulWidget {
@@ -59,7 +59,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
   @override
   Widget build(BuildContext context) {
-    return GlobalScaffold(
+    return GlobalPageLayoutScaffold(
       body: SingleChildScrollView(
         // Make the entire body scrollable
         padding: const EdgeInsets.all(16.0),

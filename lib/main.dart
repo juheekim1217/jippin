@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 
 import 'package:jippin/utility/theme.dart';
 import 'package:jippin/locale_provider.dart';
-import 'package:jippin/component/mainNavigation.dart';
+import 'package:jippin/component/main_navigation.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,10 +37,10 @@ class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
-  _MyAppState createState() => _MyAppState();
+  MyAppState createState() => MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     final localeProvider = Provider.of<LocaleProvider>(context);

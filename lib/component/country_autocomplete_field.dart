@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/utility/utils.dart';
-import 'package:jippin/component/advanced_behavior_auto_complete.dart';
+import 'package:jippin/component/custom/advanced_behavior_autocomplete.dart';
 
 class CountryAutoCompleteTextField extends StatefulWidget {
   final double width;

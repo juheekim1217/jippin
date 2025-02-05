@@ -4,9 +4,9 @@ import 'package:provider/provider.dart';
 
 import 'package:jippin/utility/utils.dart';
 import 'package:jippin/locale_provider.dart';
-import 'package:jippin/component/navBarItem.dart';
-import 'package:jippin/component/countryAutoCompleteTextField.dart';
-import 'package:jippin/component/addressAutocompleteField.dart';
+import 'package:jippin/component/nav_bar_item.dart';
+import 'package:jippin/component/country_autocomplete_field.dart';
+import 'package:jippin/component/address_autocomplete_field.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -155,48 +155,6 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             ),
           );
         }).toList(),
-      ),
-    );
-  }
-
-  Widget _buildSearchBar1(barWidth) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-      child: SizedBox(
-        height: 32, // Match the height of other menu items
-        width: barWidth ?? widget.screenWidth * 0.25,
-        child: TextField(
-          autofocus: false,
-          // Prevents unnecessary refocus
-          style: TextStyle(
-            fontSize: 14, // Reduced text size
-            color: Colors.black87, // Text color
-          ),
-          decoration: InputDecoration(
-            hintText: AppLocalizations.of(context)!.search,
-            suffixIcon: IconButton(
-              icon: Icon(Icons.search, color: Colors.grey, size: 18),
-              onPressed: _handleSearch, // 🔥 Trigger search on icon click
-            ),
-            contentPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24.0),
-              borderSide: BorderSide(color: Colors.grey.shade400, width: 1.0), // Light grey border
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24.0),
-              borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0), // Light grey border for non-focused state
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24.0),
-              borderSide: BorderSide(color: Colors.blue.shade300, width: 1.5), // Slightly thicker blue border on focus
-            ),
-            fillColor: Colors.grey.shade100,
-            filled: true,
-          ),
-          onSubmitted: (value) => _handleSearch(),
-          controller: searchController,
-        ),
       ),
     );
   }

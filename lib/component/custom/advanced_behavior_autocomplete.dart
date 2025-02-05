@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 class AdvancedBehaviorAutocomplete<T extends Object> extends StatelessWidget {
   const AdvancedBehaviorAutocomplete({
-    Key? key,
+    super.key,
     required this.optionsBuilder,
     this.validator,
     this.displayStringForOption = RawAutocomplete.defaultStringForOption,
@@ -14,7 +14,7 @@ class AdvancedBehaviorAutocomplete<T extends Object> extends StatelessWidget {
     this.optionsMaxHeight = 200.0,
     this.optionsViewBuilder,
     this.initialValue,
-  }) : super(key: key);
+  });
 
   final String? Function(String?)? validator;
 
@@ -475,9 +475,9 @@ class _AdvancedBehaviorRawAutocompleteState<T extends Object> extends State<Adva
 
 class _AutocompleteCallbackAction<T extends Intent> extends CallbackAction<T> {
   _AutocompleteCallbackAction({
-    required OnInvokeCallback<T> onInvoke,
+    required super.onInvoke,
     this.enabled = true,
-  }) : super(onInvoke: onInvoke);
+  });
 
   bool enabled;
 
