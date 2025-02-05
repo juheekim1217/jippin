@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+/// Set Locale(default language) and default country
 class LocaleProvider extends ChangeNotifier {
   Locale _locale = const Locale('en'); // Default language is English
   String _defaultCountry = 'CA'; // Default country
@@ -24,7 +25,7 @@ class LocaleProvider extends ChangeNotifier {
   void _setDefaultLocale() {
     // Get the user's default locale
     Locale deviceLocale = PlatformDispatcher.instance.locale;
-    print("Device Locale: $deviceLocale");
+    debugPrint("Device Locale: $deviceLocale");
     // Normalize locale to avoid issues like 'en_US' not matching 'en'
     if (deviceLocale.languageCode == 'en') {
       _locale = const Locale('en'); // Force it to 'en' only
@@ -33,19 +34,19 @@ class LocaleProvider extends ChangeNotifier {
     } else {
       _locale = const Locale('en'); // Fallback to English if unsupported
     }
-    print("_setDefaultLocale $_locale");
+    debugPrint("_setDefaultLocale $_locale");
     notifyListeners(); // Notify UI of the locale change
   }
 
   void setDefaultCountry(String country) {
     _defaultCountry = country;
-    print("setDefaultCountry $_defaultCountry");
+    debugPrint("setDefaultCountry $_defaultCountry");
     notifyListeners(); // Notify the UI about the change
   }
 
   void _setDefaultCountry() {
     _defaultCountry = getDefaultCountryForLocale(_locale.languageCode);
-    print("_setDefaultCountry $_defaultCountry");
+    debugPrint("_setDefaultCountry $_defaultCountry");
     notifyListeners();
   }
 

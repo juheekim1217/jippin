@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
-import 'package:jippin/utils.dart';
+import 'package:jippin/utility/utils.dart';
 import 'package:jippin/locale_provider.dart';
 import 'package:jippin/component/navBarItem.dart';
 import 'package:jippin/component/countryAutoCompleteTextField.dart';

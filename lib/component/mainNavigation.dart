@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:jippin/component/navBarItem.dart';
 import 'package:jippin/component/adaptiveNavBar.dart';
-import 'package:jippin/utils.dart';
+import 'package:jippin/utility/utils.dart';
 
 import 'package:jippin/pages/about.dart';
 import 'package:jippin/pages/home.dart';
@@ -14,7 +15,7 @@ import 'package:jippin/pages/submit_review.dart';
 
 class MainNavigation extends StatefulWidget {
   final int currentIndex;
-  final localeProvider;
+  final dynamic localeProvider;
 
   const MainNavigation({super.key, required this.currentIndex, required this.localeProvider});
 
@@ -70,7 +71,7 @@ class _MainNavigationState extends State<MainNavigation> {
     setState(() {
       _currentIndex = 1; // move to Reviews page
       searchQuery = query; // Update search query
-      print("_filterReviews $query");
+      debugPrint("_filterReviews $query");
     });
   }
 
@@ -82,7 +83,7 @@ class _MainNavigationState extends State<MainNavigation> {
     return Scaffold(
       appBar: isAndroid
           ? AppBar(
-              title: Text(AppLocalizations.of(context)!.appTitle),
+              title: Text(AppLocalizations.of(context).appTitle),
               actions: [
                 IconButton(onPressed: () => {}, icon: Icon(Icons.search)),
                 PopupMenuButton<String>(
@@ -91,11 +92,11 @@ class _MainNavigationState extends State<MainNavigation> {
                     switch (value) {
                       case 'Settings':
                         // Navigate to settings
-                        print('Settings selected');
+                        debugPrint('Settings selected');
                         break;
                       case 'Help':
                         // Navigate to help
-                        print('Help selected');
+                        debugPrint('Help selected');
                         break;
                       case 'About':
                         Navigator.push(
@@ -105,7 +106,7 @@ class _MainNavigationState extends State<MainNavigation> {
                         break;
                       case 'Logout':
                         // Perform logout
-                        print('Logout selected');
+                        debugPrint('Logout selected');
                         break;
                     }
                   },
@@ -146,7 +147,7 @@ class _MainNavigationState extends State<MainNavigation> {
                         _navigateTo(0);
                       }, // Action when the title is clicked
                       child: Text(
-                        AppLocalizations.of(context)!.appTitle,
+                        AppLocalizations.of(context).appTitle,
                         style: GoogleFonts.montserrat(
                           fontWeight: FontWeight.bold, // Correct syntax
                           fontSize: 18,
@@ -158,15 +159,15 @@ class _MainNavigationState extends State<MainNavigation> {
                 ],
               ),
               navBarItems: [
-                NavBarItem(text: AppLocalizations.of(context)!.reviews, onTap: () => _navigateTo(1)),
-                if (screenWidth <= smallScreenWidth) NavBarItem(text: AppLocalizations.of(context)!.writeReview, onTap: () => _navigateTo(2)),
-                NavBarItem(text: AppLocalizations.of(context)!.about, onTap: () => _navigateTo(3)),
+                NavBarItem(text: AppLocalizations.of(context).reviews, onTap: () => _navigateTo(1)),
+                if (screenWidth <= smallScreenWidth) NavBarItem(text: AppLocalizations.of(context).writeReview, onTap: () => _navigateTo(2)),
+                NavBarItem(text: AppLocalizations.of(context).about, onTap: () => _navigateTo(3)),
               ],
               popupMenuItems: [
-                NavBarItem(text: AppLocalizations.of(context)!.home, onTap: () => _navigateTo(0)),
-                NavBarItem(text: AppLocalizations.of(context)!.reviews, onTap: () => _navigateTo(1)),
-                NavBarItem(text: AppLocalizations.of(context)!.writeReview, onTap: () => _navigateTo(2)),
-                NavBarItem(text: AppLocalizations.of(context)!.about, onTap: () => _navigateTo(3)),
+                NavBarItem(text: AppLocalizations.of(context).home, onTap: () => _navigateTo(0)),
+                NavBarItem(text: AppLocalizations.of(context).reviews, onTap: () => _navigateTo(1)),
+                NavBarItem(text: AppLocalizations.of(context).writeReview, onTap: () => _navigateTo(2)),
+                NavBarItem(text: AppLocalizations.of(context).about, onTap: () => _navigateTo(3)),
               ],
               onSubmitReview: () => _navigateTo(2),
               onSearch: (query) => _filterReviews(query),

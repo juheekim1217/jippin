@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/style/GlobalScaffold.dart';
+import 'package:jippin/utility/GlobalScaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SubmitReviewPage extends StatefulWidget {

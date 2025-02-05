@@ -67,13 +67,23 @@ final List<Map<String, String>> countries = [
 ];
 
 String? getCountryCode(String countryName) {
-  final country = countries.firstWhere((c) => c["name"] == countryName // Handle cases where the country isn't found
-      );
-  return country["code"];
+  String? result = "";
+  try {
+    final country = countries.firstWhere((c) => c["name"] == countryName);
+    result = country["code"];
+  } catch (e) {
+    debugPrint(e.toString());
+  }
+  return result;
 }
 
 String? getCountryName(String countryCode) {
-  final country = countries.firstWhere((c) => c["code"] == countryCode // Handle cases where the country isn't found
-      );
-  return country["name"];
+  String? result = "";
+  try {
+    final country = countries.firstWhere((c) => c["code"] == countryCode);
+    result = country["name"];
+  } catch (e) {
+    debugPrint(e.toString());
+  }
+  return result;
 }

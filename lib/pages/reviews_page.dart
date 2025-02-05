@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/style/GlobalScaffold.dart';
+import 'package:jippin/utility/GlobalScaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:jippin/utils.dart';
+import 'package:jippin/gen/l10n/app_localizations.dart';
+import 'package:jippin/utility/utils.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String searchQuery;
@@ -51,7 +51,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
           .select('*') // ✅ Fetch all columns, or specify only required ones
           .eq('country_code', widget.defaultCountry)
           .order('created_at', ascending: false);
-      print("_fetchAllReviews ${response.length}");
+      debugPrint("_fetchAllReviews ${response.length}");
       if (response.isEmpty) {
         setState(() {
           isLoading = false;
@@ -78,7 +78,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
   // Search filtering logic
   void _applySearchFilter(String query) {
     setState(() {
-      print("_applySearchFilter$query");
+      debugPrint("_applySearchFilter$query");
       if (query.isEmpty) {
         filteredReviews = List.from(allReviews);
       } else {

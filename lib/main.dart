@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
-import 'package:jippin/style/theme.dart';
+import 'package:jippin/utility/theme.dart';
 import 'package:jippin/locale_provider.dart';
 import 'package:jippin/component/mainNavigation.dart';
 
@@ -15,7 +15,7 @@ Future<void> main() async {
   try {
     await dotenv.load(fileName: ".env"); // This works for assets if configured properly in pubspec.yaml
   } catch (e) {
-    print("Error loading .env file: $e");
+    debugPrint("Error loading .env file: $e");
   }
   String supabaseUrl = dotenv.env['SUPABASE_URL']!;
   String supabaseAnonKey = dotenv.env['SUPABASE_ANON_KEY']!;
@@ -55,13 +55,13 @@ class _MyAppState extends State<MyApp> {
         Locale('en'), // English
         Locale('ko'), // Korean
       ],
-      localizationsDelegates: const [
-        AppLocalizations.delegate, // Add this line
+      localizationsDelegates: [
+        AppLocalizations.delegate, // Generated localization
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
+      onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       theme: theme.lightHighContrast(),
       darkTheme: theme.darkHighContrast(),
       initialRoute: "/home",

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/style/GlobalScaffold.dart';
+import 'package:jippin/utility/GlobalScaffold.dart';
+import 'package:jippin/component/advanced_behavior_auto_complete_test.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -8,93 +9,91 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GlobalScaffold(
       body: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          AutocompleteTest(),
+          // Welcome header
+          Text(
+            "Hello, Renter!",
+            style: TextStyle(
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 16),
+          Text(
+            "JIPPIN helps you find the best rental experiences by connecting you with reliable landlord reviews and resources.",
+            style: TextStyle(fontSize: 16, color: Colors.grey[700]),
+          ),
+          SizedBox(height: 24),
+
+          // Quick Navigation Buttons
+          Text(
+            "Get Started:",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 16),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              // Welcome header
-              Text(
-                "Hello, Renter!",
-                style: TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 16),
-              Text(
-                "JIPPIN helps you find the best rental experiences by connecting you with reliable landlord reviews and resources.",
-                style: TextStyle(fontSize: 16, color: Colors.grey[700]),
-              ),
-              SizedBox(height: 24),
-
-              // Quick Navigation Buttons
-              Text(
-                "Get Started:",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 16),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  _buildNavigationButton(
-                    context,
-                    icon: Icons.list,
-                    label: "Browse Reviews",
-                    route: "/Reviews",
-                  ),
-                  _buildNavigationButton(
-                    context,
-                    icon: Icons.add,
-                    label: "Submit Review",
-                    route: "/Submit",
-                  ),
-                  _buildNavigationButton(
-                    context,
-                    icon: Icons.info,
-                    label: "About",
-                    route: "/About",
-                  ),
-                ],
-              ),
-              SizedBox(height: 32),
-
-              // Highlights section
-              Text(
-                "Why Choose JIPPIN?",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 16),
-              _buildFeatureCard(
+              _buildNavigationButton(
                 context,
-                title: "Verified Reviews",
-                description:
-                    "Read honest reviews from real tenants about their experiences.",
-                icon: Icons.verified,
-                color: Colors.blue,
+                icon: Icons.list,
+                label: "Browse Reviews",
+                route: "/Reviews",
               ),
-              _buildFeatureCard(
+              _buildNavigationButton(
                 context,
-                title: "Submit Your Story",
-                description:
-                    "Share your renting journey and help others make informed decisions.",
-                icon: Icons.share,
-                color: Colors.green,
+                icon: Icons.add,
+                label: "Submit Review",
+                route: "/Submit",
               ),
-              _buildFeatureCard(
+              _buildNavigationButton(
                 context,
-                title: "Community Support",
-                description:
-                    "Connect with renters like you to find trusted advice and support.",
-                icon: Icons.people,
-                color: Colors.orange,
+                icon: Icons.info,
+                label: "About",
+                route: "/About",
               ),
             ],
           ),
-        );
+          SizedBox(height: 32),
+
+          // Highlights section
+          Text(
+            "Why Choose JIPPIN?",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 16),
+          _buildFeatureCard(
+            context,
+            title: "Verified Reviews",
+            description: "Read honest reviews from real tenants about their experiences.",
+            icon: Icons.verified,
+            color: Colors.blue,
+          ),
+          _buildFeatureCard(
+            context,
+            title: "Submit Your Story",
+            description: "Share your renting journey and help others make informed decisions.",
+            icon: Icons.share,
+            color: Colors.green,
+          ),
+          _buildFeatureCard(
+            context,
+            title: "Community Support",
+            description: "Connect with renters like you to find trusted advice and support.",
+            icon: Icons.people,
+            color: Colors.orange,
+          ),
+        ],
+      ),
+    );
   }
 
   // Helper method to create navigation buttons
