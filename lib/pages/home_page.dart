@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/utility/global_page_layout_scaffold.dart';
-import 'package:jippin/component/advanced_behavior_autocomplete_test_ui.dart';
+import 'package:jippin/component/custom/advanced_behavior_autocomplete_test_ui.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

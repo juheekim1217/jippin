@@ -14,6 +14,7 @@ class AdvancedBehaviorAutocomplete<T extends Object> extends StatelessWidget {
     this.optionsMaxHeight = 200.0,
     this.optionsViewBuilder,
     this.initialValue,
+    this.moveFocusNext = true,
   });
 
   final String? Function(String?)? validator;
@@ -31,6 +32,8 @@ class AdvancedBehaviorAutocomplete<T extends Object> extends StatelessWidget {
   final double optionsMaxHeight;
 
   final TextEditingValue? initialValue;
+
+  final bool? moveFocusNext;
 
   static Widget _defaultFieldViewBuilder(BuildContext context, TextEditingController textEditingController, FocusNode focusNode, VoidCallback onFieldSubmitted) {
     return _AutocompleteField(
@@ -57,17 +60,12 @@ class AdvancedBehaviorAutocomplete<T extends Object> extends StatelessWidget {
             );
           },
       onSelected: onSelected,
+      moveFocusNext: moveFocusNext,
     );
   }
 }
 
 class _AutocompleteField extends StatelessWidget {
-  // const _AutocompleteField({
-  //   Key? key,
-  //   required this.focusNode,
-  //   required this.textEditingController,
-  //   required this.onFieldSubmitted,
-  // }) : super(key: key);
   const _AutocompleteField({
     required this.focusNode,
     required this.textEditingController,
@@ -100,13 +98,6 @@ class _AutocompleteField extends StatelessWidget {
 }
 
 class _AutocompleteOptions<T extends Object> extends StatelessWidget {
-  // const _AutocompleteOptions({
-  //   Key? key,
-  //   required this.displayStringForOption,
-  //   required this.onSelected,
-  //   required this.options,
-  //   required this.maxOptionsHeight,
-  // }) : super(key: key);
   const _AutocompleteOptions({
     super.key,
     required this.displayStringForOption,
@@ -137,7 +128,9 @@ class _AutocompleteOptions<T extends Object> extends StatelessWidget {
             itemBuilder: (BuildContext context, int index) {
               final T option = options.elementAt(index);
               return InkWell(
-                onTap: () {
+                //onTap: () {
+                onTapDown: (TapDownDetails details) {
+                  debugPrint('onTapDown');
                   onSelected(option);
                 },
                 child: Builder(builder: (BuildContext context) {
@@ -173,6 +166,7 @@ class AdvancedBehaviorRawAutocomplete<T extends Object> extends StatefulWidget {
     this.onSelected,
     this.textEditingController,
     this.initialValue,
+    this.moveFocusNext,
   })  : assert(
           fieldViewBuilder != null || (key != null && focusNode != null && textEditingController != null),
           'Pass in a fieldViewBuilder, or otherwise create a separate field and pass in the FocusNode, TextEditingController, and a key. Use the key with RawAutocomplete.onFieldSubmitted.',
@@ -198,6 +192,8 @@ class AdvancedBehaviorRawAutocomplete<T extends Object> extends StatefulWidget {
   final TextEditingController? textEditingController;
 
   final TextEditingValue? initialValue;
+
+  final bool? moveFocusNext;
 
   static void onFieldSubmitted<T extends Object>(GlobalKey key) {
     final _AdvancedBehaviorRawAutocompleteState<T> rawAutocomplete = key.currentState! as _AdvancedBehaviorRawAutocompleteState<T>;
@@ -260,14 +256,25 @@ class _AdvancedBehaviorRawAutocompleteState<T extends Object> extends State<Adva
     if (_options.isEmpty && _textEditingController.value.text.isNotEmpty) {
       _selection = _textEditingController.value.text as T;
       widget.onSelected?.call(_selection!);
-      _focusNode.nextFocus();
-      _focusNode.nextFocus();
+      if (widget.moveFocusNext!) {
+        _focusNode.nextFocus();
+        //_focusNode.nextFocus(); // move to second next focus
+        //FocusScope.of(context).requestFocus(nextFieldFocusNode); // manually setting the focus to the next field:
+      } else {
+        FocusScope.of(context).unfocus(); // This will close the keyboard but not move focus.
+      }
       return;
     }
 
     _select(_options.elementAt(_highlightedOptionIndex.value), selectedWithMouse: false);
-    _focusNode.nextFocus();
-    _focusNode.nextFocus();
+    if (widget.moveFocusNext!) {
+      _focusNode.nextFocus();
+      //_focusNode.nextFocus(); // move to second next focus
+      //FocusScope.of(context).requestFocus(nextFieldFocusNode); // manually setting the focus to the next field:
+    } else {
+      FocusScope.of(context).unfocus(); // This will close the keyboard but not move focus.
+    }
+    debugPrint("moveFocusNext ${widget.moveFocusNext}");
   }
 
   void _select(T nextSelection, {bool selectedWithMouse = true}) {
@@ -282,9 +289,7 @@ class _AdvancedBehaviorRawAutocompleteState<T extends Object> extends State<Adva
     );
     widget.onSelected?.call(_selection!);
     if (selectedWithMouse) {
-      Future.delayed(Duration(milliseconds: 100), () {
-        _focusNode.nextFocus(); // Delay focus change to avoid premature overlay closing
-      });
+      FocusScope.of(context).requestFocus(_focusNode); // Keep focus on the input field
     }
   }
 
@@ -325,23 +330,15 @@ class _AdvancedBehaviorRawAutocompleteState<T extends Object> extends State<Adva
             child: AutocompleteHighlightedOption(
                 highlightIndexNotifier: _highlightedOptionIndex,
                 child: Builder(builder: (BuildContext context) {
-                  //return widget.optionsViewBuilder(context, _select, _options);
-                  return MouseRegion(
-                    onEnter: (_) {
-                      _focusNode.requestFocus(); // Ensure focus is maintained while interacting with options
-                    },
-                    child: widget.optionsViewBuilder(context, _select, _options),
-                  );
+                  return widget.optionsViewBuilder(context, _select, _options);
                 })),
           );
         },
       );
       Overlay.of(context, rootOverlay: true).insert(_floatingOptions!);
     } else if (_floatingOptions != null) {
-      Future.delayed(Duration(milliseconds: 100), () {
-        _floatingOptions?.remove();
-        _floatingOptions = null;
-      });
+      _floatingOptions?.remove();
+      _floatingOptions = null;
     }
   }
 
@@ -431,14 +428,6 @@ class _AdvancedBehaviorRawAutocompleteState<T extends Object> extends State<Adva
 
   @override
   Widget build(BuildContext context) {
-    // _focusNode.onKey = (node, event) {
-    //   if (event.logicalKey == LogicalKeyboardKey.tab) {
-    //     if (_options.isNotEmpty) {
-    //       _select(_options.elementAt(_highlightedOptionIndex.value), selectedWithMouse: false);
-    //     }
-    //   }
-    //   return KeyEventResult.ignored;
-    // };
     _focusNode.onKeyEvent = (node, event) {
       if (event is KeyDownEvent) {
         if (event.logicalKey == LogicalKeyboardKey.tab) {

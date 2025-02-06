@@ -78,7 +78,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
   // Search filtering logic
   void _applySearchFilter(String query) {
     setState(() {
-      debugPrint("_applySearchFilter$query");
+      debugPrint("_applySearchFilter $query");
       if (query.isEmpty) {
         filteredReviews = List.from(allReviews);
       } else {
@@ -311,9 +311,6 @@ class _ReviewsPageState extends State<ReviewsPage> {
   }
 
   Widget _buildReviewsSection(BuildContext context, List<Map<String, dynamic>> reviews) {
-    // String? countryName = getCountryName(widget.defaultCountry);
-    // String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

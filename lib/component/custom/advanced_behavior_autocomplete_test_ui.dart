@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'custom/advanced_behavior_autocomplete.dart';
+import 'advanced_behavior_autocomplete.dart';
 
 // void main() {
 //   runApp(const AutocompleteSpike());
@@ -58,9 +58,7 @@ class AutocompleteTest extends StatelessWidget {
                   return option.toString().contains(textEditingValue.text.toLowerCase());
                 });
               },
-              onSelected: (String selection) {
-                debugPrint('You just selected $selection');
-              },
+              onSelected: (String selection) {},
 
               /// set this in your real apps initialValue: const TextEditingValue(text: 'Hi'),
               fieldViewBuilder: (

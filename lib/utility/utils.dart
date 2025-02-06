@@ -63,7 +63,16 @@ final List<Map<String, String>> countries = [
   {"code": "UK", "name": "United Kingdom"},
   {"code": "US", "name": "United States"},
   {"code": "JP", "name": "Japan"},
-  {"code": "Other", "name": "Other"},
+  {"code": "CN", "name": "China"},
+  {"code": "AU", "name": "호주"},
+  {"code": "CA", "name": "캐나다"},
+  {"code": "IE", "name": "아일랜드"},
+  {"code": "KR", "name": "대한민국"},
+  {"code": "NZ", "name": "뉴질랜드"},
+  {"code": "UK", "name": "영국"},
+  {"code": "US", "name": "미국"},
+  {"code": "JP", "name": "일본"},
+  {"code": "CN", "name": "중국"},
 ];
 
 String? getCountryCode(String countryName) {

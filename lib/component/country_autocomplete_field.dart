@@ -2,6 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:jippin/utility/utils.dart';
 import 'package:jippin/component/custom/advanced_behavior_autocomplete.dart';
 
+///Enter key
+// onChanged e
+// onFieldSubmitted e
+// onSelected South Korea
+// setDefaultCountry KR
+// _fetchAllReviews 10
+// _applySearchFilter
+//
+/// Tab Key
+// onChanged e
+// onSelected South Korea
+// setDefaultCountry KR
+// _fetchAllReviews 10
+// _applySearchFilter
+//
+//
+/// Mouse click
+// onChanged e
+// onSelected South Korea
+// setDefaultCountry KR
+// _fetchAllReviews 10
+// _applySearchFilter
+
 class CountryAutoCompleteTextField extends StatefulWidget {
   final double width;
   final Function(String?) onChanged;
@@ -20,22 +43,6 @@ class CountryAutoCompleteTextField extends StatefulWidget {
 
 class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  late final TextEditingController _controller = TextEditingController();
-
-  @override
-  void initState() {
-    super.initState();
-    // ✅ Set initial text after the first frame
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _controller.text = getCountryName(widget.initialValue) ?? "";
-    });
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -53,26 +60,30 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField>
           },
           // Tab key pressed
           onSelected: (String selection) {
-            debugPrint('You just onSelected $selection');
+            debugPrint('onSelected $selection');
             String? selectionCode = getCountryCode(selection);
             // ✅ Update controller directly without setState
-            if (selectionCode!.isEmpty) {
-              _controller.clear();
-            } else {
-              _controller.text = selection;
-              widget.onChanged(selectionCode);
-            }
+            // if (selectionCode!.isEmpty) {
+            //   _controller.clear();
+            // } else {
+            //   _controller.text = selection;
+            //   widget.onChanged(selectionCode);
+            // }
+            //_controller.text = selection;
+            widget.onChanged(selectionCode);
           },
 
+          moveFocusNext: false,
+
           /// set this in your real apps initialValue: const TextEditingValue(text: 'Hi'),
+          initialValue: TextEditingValue(text: getCountryName(widget.initialValue)!),
+
           fieldViewBuilder: (
             BuildContext context,
             TextEditingController textEditingController,
             FocusNode focusNode,
             VoidCallback onFieldSubmitted,
           ) {
-            //if (widget.initialValue.isNotEmpty) textEditingController.text = getCountryName(widget.initialValue)!;
-
             return Tooltip(
               message: textEditingController.text, // Shows full text on hover
               waitDuration: Duration(milliseconds: 500),
@@ -88,18 +99,11 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField>
                       controller: textEditingController,
                       // Enter Key pressed
                       onFieldSubmitted: (String value) {
-                        debugPrint('You just onFieldSubmitted $value');
-                        //String? selectionCode = getCountryCode(value);
-                        // ✅ Update controller directly without setState
-                        ///if (selectionCode!.isEmpty) {
-                        //textEditingController.clear();
-                        //} else {
+                        debugPrint('onFieldSubmitted $value');
                         onFieldSubmitted();
-                        //}
                       },
                       onChanged: (value) {
-                        debugPrint('You just onChanged $value');
-                        //_isValidSelection = false; // Reset validation when user types manually
+                        //debugPrint('onChanged $value');
                       },
                       validator: (value) {
                         if (value == null || value.isEmpty) {
@@ -107,8 +111,6 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteTextField>
                         }
                         return null;
                       },
-                      //initialValue: "test",
-                      //maxLength: 50,
                       style: TextStyle(
                         fontSize: 12,
                         color: Colors.black,
