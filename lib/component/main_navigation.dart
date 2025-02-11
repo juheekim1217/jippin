@@ -25,7 +25,7 @@ class MainNavigation extends StatefulWidget {
 
 class _MainNavigationState extends State<MainNavigation> {
   late int _currentIndex;
-  String searchQuery = "";
+  String _searchQuery = "";
 
   // Android navigation
   final List<BottomNavigationBarItem> _mobileBottomNavigationBarList = [
@@ -45,7 +45,7 @@ class _MainNavigationState extends State<MainNavigation> {
 
   List<Widget> get _pages => [
         HomePage(),
-        ReviewsPage(searchQuery: searchQuery, key: ValueKey(searchQuery), defaultCountry: widget.localeProvider.defaultCountry), // 🔥 Updates dynamically
+        ReviewsPage(key: ValueKey(_searchQuery), searchQuery: _searchQuery, defaultCountryCode: widget.localeProvider.defaultCountry, defaultCountryName: widget.localeProvider.defaultCountryName), // 🔥 Updates dynamically
         SubmitReviewPage(),
         AboutPage(),
       ];
@@ -70,7 +70,7 @@ class _MainNavigationState extends State<MainNavigation> {
   void _filterReviews(String query) {
     setState(() {
       _currentIndex = 1; // move to Reviews page
-      searchQuery = query; // Update search query
+      _searchQuery = query; // Update search query
       debugPrint("_filterReviews $query");
     });
   }

@@ -6,9 +6,10 @@ import 'package:jippin/utility/utils.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String searchQuery;
-  final String defaultCountry;
+  final String defaultCountryCode;
+  final String defaultCountryName;
 
-  const ReviewsPage({super.key, required this.searchQuery, required this.defaultCountry});
+  const ReviewsPage({super.key, required this.searchQuery, required this.defaultCountryCode, required this.defaultCountryName});
 
   @override
   State<ReviewsPage> createState() => _ReviewsPageState();
@@ -34,8 +35,13 @@ class _ReviewsPageState extends State<ReviewsPage> {
   @override
   void didUpdateWidget(covariant ReviewsPage oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (widget.defaultCountry != oldWidget.defaultCountry) {
+    if (widget.defaultCountryCode.isNotEmpty && widget.defaultCountryCode != oldWidget.defaultCountryCode) {
       _fetchAllReviews();
+    } else {
+      setState(() {
+        isLoading = false;
+        errorMessage = 'not valid country';
+      });
     }
     if (widget.searchQuery != oldWidget.searchQuery) {
       searchController.text = widget.searchQuery;
@@ -49,7 +55,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
       final response = await supabase
           .from('review')
           .select('*') // ✅ Fetch all columns, or specify only required ones
-          .eq('country_code', widget.defaultCountry)
+          .eq('country_code', widget.defaultCountryCode)
           .order('created_at', ascending: false);
       debugPrint("_fetchAllReviews ${response.length}");
       if (response.isEmpty) {
@@ -201,7 +207,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
     // Total reviews for histogram
     int totalReviews = starCounts.values.reduce((a, b) => a + b);
 
-    String? countryName = getCountryName(widget.defaultCountry);
+    String? countryName = widget.defaultCountryName;
     String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
 
     return Column(
@@ -401,7 +407,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
   }
 
   Widget _buildEmptyReviewsPage() {
-    String? countryName = getCountryName(widget.defaultCountry);
+    String? countryName = widget.defaultCountryName;
     String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16.0),

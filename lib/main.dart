@@ -4,6 +4,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:jippin/utility/theme.dart';
 import 'package:jippin/locale_provider.dart';
@@ -44,13 +45,18 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     final localeProvider = Provider.of<LocaleProvider>(context);
-    TextTheme textTheme = createTextTheme(context, "Roboto", "Roboto");
-    MaterialTheme theme = MaterialTheme(textTheme);
+
+    final TextTheme textTheme = GoogleFonts.notoSansKrTextTheme();
+    final MaterialTheme materialTheme = MaterialTheme(textTheme);
+    final ThemeData themeData = materialTheme.lightHighContrast();
+    // final ThemeData themeData = ThemeData(
+    //   textTheme: GoogleFonts.notoSansKrTextTheme(), // Apply NotoSansKR globally
+    //   scaffoldBackgroundColor: Colors.white, // Set background color here
+    // );
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       locale: localeProvider.locale,
-      //_locale,
       supportedLocales: const [
         Locale('en'), // English
         Locale('ko'), // Korean
@@ -62,8 +68,9 @@ class _MyAppState extends State<MyApp> {
         GlobalCupertinoLocalizations.delegate,
       ],
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
-      theme: theme.lightHighContrast(),
-      darkTheme: theme.darkHighContrast(),
+      //theme: theme.lightHighContrast(),
+      //darkTheme: theme.darkHighContrast(),
+      theme: themeData,
       initialRoute: "/home",
       routes: {
         "/home": (context) => MainNavigation(currentIndex: 0, localeProvider: localeProvider),

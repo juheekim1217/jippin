@@ -6,7 +6,6 @@ import 'package:jippin/utility/utils.dart';
 import 'package:jippin/locale_provider.dart';
 import 'package:jippin/component/nav_bar_item.dart';
 import 'package:jippin/component/country_autocomplete_field.dart';
-import 'package:jippin/component/address_autocomplete_field.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -46,10 +45,10 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
   }
 
   // pass search user input to parent widget
-  // void _handleSearch() {
-  //   FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
-  //   widget.onSearch(searchController.text);
-  // }
+  void _handleSearch() {
+    FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
+    widget.onSearch(searchController.text);
+  }
 
   void _handleSearchDialog() {
     FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
@@ -100,6 +99,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     final localeProvider = Provider.of<LocaleProvider>(context);
     Locale currentLocale = localeProvider.locale;
     Color navbarBackgroundColor = Theme.of(context).scaffoldBackgroundColor;
+    String initialCountryName = localeProvider.getDefaultCountryNameByLocale("");
 
     return AppBar(
       backgroundColor: navbarBackgroundColor,
@@ -116,12 +116,12 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 if (widget.screenWidth > smallScreenWidth)
-                  CountryAutoCompleteTextField(
-                    width: 150,
-                    initialValue: localeProvider.defaultCountry,
-                    onChanged: (String? newValue) {
+                  CountryAutoCompleteField(
+                    width: widget.screenWidth * 0.1,
+                    initialCountryName: initialCountryName,
+                    onChanged: (String? newValue, String? countryName) {
                       if (newValue != null) {
-                        localeProvider.setDefaultCountry(newValue);
+                        localeProvider.setDefaultCountry(newValue, countryName!);
                       }
                     },
                   ),
@@ -163,12 +163,54 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: SizedBox(
-        //height: 20, // Increased height for better usability
-        width: 200,
-        child: AddressAutocompleteField(), // Only the address search field
+        height: 32, // Match the height of other menu items
+        width: barWidth ?? widget.screenWidth * 0.25,
+        child: TextField(
+          autofocus: false,
+          // Prevents unnecessary refocus
+          style: TextStyle(
+            fontSize: 14, // Reduced text size
+            color: Colors.black87, // Text color
+          ),
+          decoration: InputDecoration(
+            hintText: AppLocalizations.of(context).search,
+            suffixIcon: IconButton(
+              icon: Icon(Icons.search, color: Colors.grey, size: 18),
+              onPressed: _handleSearch, // 🔥 Trigger search on icon click
+            ),
+            contentPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(24.0),
+              borderSide: BorderSide(color: Colors.grey.shade400, width: 1.0), // Light grey border
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(24.0),
+              borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0), // Light grey border for non-focused state
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(24.0),
+              borderSide: BorderSide(color: Colors.blue.shade300, width: 1.5), // Slightly thicker blue border on focus
+            ),
+            fillColor: Colors.grey.shade100,
+            filled: true,
+          ),
+          onSubmitted: (value) => _handleSearch(),
+          controller: searchController,
+        ),
       ),
     );
   }
+
+  // Widget _buildSearchBar(barWidth) {
+  //   return Padding(
+  //     padding: const EdgeInsets.symmetric(horizontal: 8.0),
+  //     child: SizedBox(
+  //       //height: 20, // Increased height for better usability
+  //       width: 200,
+  //       child: AddressAutocompleteField(), // Only the address search field
+  //     ),
+  //   );
+  // }
 
   // 🔹 Popup Search (For Small Screens) Text field widget
   Widget _buildSearchDialogTextField(BuildContext context) {
@@ -207,12 +249,13 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
 
   // 🔹 Popup Country (For Small Screens) Text field widget
   Widget _buildCountryDialogTextField(BuildContext context, localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
-    return CountryAutoCompleteTextField(
+    String initialCountryName = localeProvider.getDefaultCountryName("");
+    return CountryAutoCompleteField(
       width: 150,
-      initialValue: localeProvider.defaultCountry,
-      onChanged: (String? newValue) {
+      initialCountryName: initialCountryName,
+      onChanged: (String? newValue, String? countryName) {
         if (newValue != null) {
-          localeProvider.setDefaultCountry(newValue);
+          localeProvider.setDefaultCountry(newValue, countryName!);
         }
       },
     );

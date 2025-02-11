@@ -64,6 +64,9 @@ final List<Map<String, String>> countries = [
   {"code": "US", "name": "United States"},
   {"code": "JP", "name": "Japan"},
   {"code": "CN", "name": "China"},
+];
+
+final List<Map<String, String>> countriesKo = [
   {"code": "AU", "name": "호주"},
   {"code": "CA", "name": "캐나다"},
   {"code": "IE", "name": "아일랜드"},
@@ -78,7 +81,8 @@ final List<Map<String, String>> countries = [
 String? getCountryCode(String countryName) {
   String? result = "";
   try {
-    final country = countries.firstWhere((c) => c["name"] == countryName);
+    final combinedCountries = [...countries, ...countriesKo];
+    final country = combinedCountries.firstWhere((c) => c["name"] == countryName);
     result = country["code"];
   } catch (e) {
     debugPrint(e.toString());
@@ -86,10 +90,10 @@ String? getCountryCode(String countryName) {
   return result;
 }
 
-String? getCountryName(String countryCode) {
+String? getCountryName(String countryCode, String languageCode) {
   String? result = "";
   try {
-    final country = countries.firstWhere((c) => c["code"] == countryCode);
+    final country = languageCode == "en" ? countries.firstWhere((c) => c["code"] == countryCode) : countriesKo.firstWhere((c) => c["code"] == countryCode);
     result = country["name"];
   } catch (e) {
     debugPrint(e.toString());

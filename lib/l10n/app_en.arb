@@ -22,5 +22,8 @@
   "deposit": "Deposit",
   "otherFees": "Other Fees",
   "address": "Address",
-  "realtor": "Realtor"
+  "realtor": "Realtor",
+  "southKorea": "South Korea",
+  "canada": "Canada",
+  "selectCountry": "Select Country"
 }

@@ -232,6 +232,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Realtor'**
   String get realtor;
+
+  /// No description provided for @southKorea.
+  ///
+  /// In en, this message translates to:
+  /// **'South Korea'**
+  String get southKorea;
+
+  /// No description provided for @canada.
+  ///
+  /// In en, this message translates to:
+  /// **'Canada'**
+  String get canada;
+
+  /// No description provided for @selectCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Country'**
+  String get selectCountry;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

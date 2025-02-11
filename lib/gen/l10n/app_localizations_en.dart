@@ -76,4 +76,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get realtor => 'Realtor';
+
+  @override
+  String get southKorea => 'South Korea';
+
+  @override
+  String get canada => 'Canada';
+
+  @override
+  String get selectCountry => 'Select Country';
 }

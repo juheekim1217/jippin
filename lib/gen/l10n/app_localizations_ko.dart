@@ -76,4 +76,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get realtor => '부동산';
+
+  @override
+  String get southKorea => '대한민국';
+
+  @override
+  String get canada => '캐나다';
+
+  @override
+  String get selectCountry => '검색 국가';
 }
