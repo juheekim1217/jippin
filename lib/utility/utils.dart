@@ -54,7 +54,7 @@ final List<Map<String, String>> languages = [
 ];
 
 // List of country options
-final List<Map<String, String>> countries = [
+final List<Map<String, String>> countriesEn = [
   {"code": "AU", "name": "Australia"},
   {"code": "CA", "name": "Canada"},
   {"code": "IE", "name": "Ireland"},
@@ -81,7 +81,7 @@ final List<Map<String, String>> countriesKo = [
 String? getCountryCode(String countryName) {
   String? result = "";
   try {
-    final combinedCountries = [...countries, ...countriesKo];
+    final combinedCountries = [...countriesEn, ...countriesKo];
     final country = combinedCountries.firstWhere((c) => c["name"] == countryName);
     result = country["code"];
   } catch (e) {
@@ -93,10 +93,32 @@ String? getCountryCode(String countryName) {
 String? getCountryName(String countryCode, String languageCode) {
   String? result = "";
   try {
-    final country = languageCode == "en" ? countries.firstWhere((c) => c["code"] == countryCode) : countriesKo.firstWhere((c) => c["code"] == countryCode);
+    final country = languageCode == "en" ? countriesEn.firstWhere((c) => c["code"] == countryCode) : countriesKo.firstWhere((c) => c["code"] == countryCode);
     result = country["name"];
   } catch (e) {
     debugPrint(e.toString());
   }
   return result;
 }
+
+class Country {
+  final String code;
+  final String nameEn;
+  final String nameKo;
+
+  //final IconData icon;
+
+  Country(this.code, this.nameEn, this.nameKo);
+}
+
+final List<Country> countries = [
+  Country("AU", "Australia", "호주"),
+  Country("CA", "Canada", "캐나다"),
+  Country("IE", "Ireland", "아일랜드"),
+  Country("KR", "South Korea", "대한민국"),
+  Country("NZ", "New Zealand", "뉴질랜드"),
+  Country("UK", "United Kingdom", "영국"),
+  Country("US", "United States", "미국"),
+  Country("JP", "Japan", "일본"),
+  Country("CN", "China", "중국"),
+];

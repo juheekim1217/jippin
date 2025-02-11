@@ -5,7 +5,8 @@ import 'package:provider/provider.dart';
 import 'package:jippin/utility/utils.dart';
 import 'package:jippin/locale_provider.dart';
 import 'package:jippin/component/nav_bar_item.dart';
-import 'package:jippin/component/country_autocomplete_field.dart';
+import 'package:jippin/component/test/country_autocomplete_field.dart';
+import 'package:jippin/component/country_dropdown_search.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -116,14 +117,17 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 if (widget.screenWidth > smallScreenWidth)
-                  CountryAutoCompleteField(
+                  SizedBox(
+                    height: 32, // Match the height of other menu items
                     width: widget.screenWidth * 0.1,
-                    initialCountryName: initialCountryName,
-                    onChanged: (String? newValue, String? countryName) {
-                      if (newValue != null) {
-                        localeProvider.setDefaultCountry(newValue, countryName!);
-                      }
-                    },
+                    child: CountryDropdownSearch(
+                      initialCountryName: initialCountryName,
+                      onChanged: (String? newValue, String? countryName) {
+                        if (newValue != null) {
+                          //localeProvider.setDefaultCountry(newValue, countryName!);
+                        }
+                      },
+                    ),
                   ),
                 if (widget.screenWidth > smallScreenWidth) _buildSearchBar(null),
               ],
@@ -191,8 +195,8 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
               borderRadius: BorderRadius.circular(24.0),
               borderSide: BorderSide(color: Colors.blue.shade300, width: 1.5), // Slightly thicker blue border on focus
             ),
-            fillColor: Colors.grey.shade100,
-            filled: true,
+            //fillColor: Colors.grey.shade100,
+            //filled: true,
           ),
           onSubmitted: (value) => _handleSearch(),
           controller: searchController,

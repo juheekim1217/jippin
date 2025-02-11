@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/utility/global_page_layout_scaffold.dart';
 import 'package:jippin/component/custom/advanced_behavior_autocomplete_test_ui.dart';
+import 'package:jippin/component/country_dropdown_search.dart';
+import 'package:jippin/component/test/country_dropdown_menu.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,7 +13,20 @@ class HomePage extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AutocompleteTest(),
+          //AutocompleteTest(),
+          //DropdownMenuSample(),
+          SizedBox(
+            height: 32, // Match the height of other menu items
+            width: 200,
+            child: CountryDropdownSearch(
+              initialCountryName: "", //initialCountryName,
+              onChanged: (String? newValue, String? countryName) {
+                if (newValue != null) {
+                  //localeProvider.setDefaultCountry(newValue, countryName!);
+                }
+              },
+            ),
+          ),
           // Welcome header
           Text(
             "Hello, Renter!",

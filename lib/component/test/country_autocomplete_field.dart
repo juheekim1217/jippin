@@ -62,7 +62,7 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteField> {
               if (textEditingValue.text.isEmpty) {
                 return const Iterable<String>.empty();
               }
-              final combinedCountries = [...countries, ...countriesKo];
+              final combinedCountries = [...countriesEn, ...countriesKo];
               return combinedCountries.where((country) => country["name"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((country) => country["name"]!);
             },
             // Tab key pressed
@@ -127,39 +127,31 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteField> {
 
                           // Default border (when not focused)
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24.0),
-                            borderSide: BorderSide(
-                              color: Colors.grey, // 🔹 Change border color when not focused
-                              width: 1.5,
-                            ),
-                          ),
+                              borderRadius: BorderRadius.circular(24.0),
+                              borderSide: BorderSide(
+                                  color: Colors.grey, // 🔹 Change border color when not focused
+                                  width: 1.0)),
 
                           // Border when field is focused
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24.0),
-                            borderSide: BorderSide(
-                              color: Colors.blue, // 🔹 Change border color when focused
-                              width: 2.0,
-                            ),
-                          ),
+                              borderRadius: BorderRadius.circular(24.0),
+                              borderSide: BorderSide(
+                                  color: Colors.blue, // 🔹 Change border color when focused
+                                  width: 2.0)),
 
                           // Border when there's an error
                           errorBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24.0),
-                            borderSide: BorderSide(
-                              color: Colors.red, // 🔹 Change border color for error state
-                              width: 2.0,
-                            ),
-                          ),
+                              borderRadius: BorderRadius.circular(24.0),
+                              borderSide: BorderSide(
+                                  color: Colors.red, // 🔹 Change border color for error state
+                                  width: 2.0)),
 
                           // Border when user is typing but error is still there
                           focusedErrorBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24.0),
-                            borderSide: BorderSide(
-                              color: Colors.redAccent, // 🔹 Change border color for focused error
-                              width: 2.0,
-                            ),
-                          ),
+                              borderRadius: BorderRadius.circular(24.0),
+                              borderSide: BorderSide(
+                                  color: Colors.redAccent, // 🔹 Change border color for focused error
+                                  width: 2.0)),
                         ),
                       ),
                     ),

@@ -5,13 +5,11 @@ import 'package:jippin/utility/utils.dart';
 import 'package:jippin/component/custom/advanced_behavior_autocomplete.dart';
 
 class CountryDropdownSearch extends StatefulWidget {
-  final double width;
   final Function(String?, String?) onChanged;
   final String initialCountryName;
 
-  const CountryAutoCompleteField({
+  const CountryDropdownSearch({
     super.key,
-    required this.width,
     required this.onChanged,
     required this.initialCountryName,
   });
@@ -21,33 +19,75 @@ class CountryDropdownSearch extends StatefulWidget {
 }
 
 class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
-  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  TextEditingController _controller = TextEditingController();
+  final dropDownKey = GlobalKey<DropdownSearchState>();
+  final List<String> countryNamesEn = countries.map((country) => country.nameEn).toList();
+  final List<String> countryNamesKo = countries.map((country) => country.nameKo).toList();
+
+  Future<List<Country>> _onFind(BuildContext context, String query) {
+    return Future.value(countries.where((country) => country.nameEn.toLowerCase().contains(query.toLowerCase()) || country.nameKo.contains(query)).toList());
+  }
+
+  // void _onChanged(BuildContext context, Country? data) {
+  //   if (data != null) {
+  //     onChanged(data);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Searchable Dropdown Example')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: DropdownSearch<String>(
-          mode: Mode.MENU,
-          // You can change to Mode.BOTTOM_SHEET or Mode.DIALOG
+    return Theme(
+      data: Theme.of(context).copyWith(
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+      ),
+      child: DropdownSearch<Country>(
+        //mode: Mode.custom,
+        suffixProps: DropdownSuffixProps(
+          dropdownButtonProps: DropdownButtonProps(
+            iconClosed: Icon(Icons.arrow_drop_down, size: 18, color: Colors.black54),
+            iconOpened: Icon(Icons.arrow_drop_up, size: 18, color: Colors.black54),
+          ),
+        ),
+        key: dropDownKey,
+        selectedItem: countries.first,
+        // Optional: Set initial selection
+        items: (query, infiniteScrollProps) => _onFind(context, query),
+        // Use onFind for asynchronous data fetching
+        itemAsString: (Country country) => country.nameEn,
+        compareFn: (Country? item, Country? selectedItem) => item?.code == selectedItem?.code,
+        //onChanged: (data) => _onChanged(context, data),
+        // Display country names in English
+        decoratorProps: DropDownDecoratorProps(
+          baseStyle: TextStyle(
+            fontSize: 14, // Change selected item text size here
+            color: Colors.black87,
+            fontWeight: FontWeight.w500,
+          ),
+          decoration: InputDecoration(
+            suffixIcon: Visibility(visible: false, child: Icon(Icons.arrow_downward)),
+            //icon: Icon(Icons.location_on, color: Colors.black54),
+            labelText: AppLocalizations.of(context).selectCountry,
+            labelStyle: TextStyle(fontSize: 14, color: Colors.grey),
+            // Center text vertically inside the TextFormField
+            contentPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
+            hoverColor: Colors.transparent,
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(24.0), borderSide: BorderSide(color: Colors.grey.shade400, width: 1.0)),
+            // Default border (when not focused)
+            enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(24.0), borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0)),
+            // Border when field is focused
+            focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(24.0), borderSide: BorderSide(color: Colors.blue, width: 1.0)),
+          ),
+        ),
+        popupProps: PopupProps.dialog(
+          // Changed to dialog mode
           showSearchBox: true,
-          items: countries,
-          label: "Select Country",
-          hint: "Search and select a country",
-          validator: (value) => value == null ? "Required field" : null,
-          onChanged: (String? selectedCountry) {
-            if (selectedCountry != null) {
-              print("Selected: $selectedCountry");
-            }
-          },
-          selectedItem: "South Korea",
-          // Optional: Set an initial value
-          dropdownSearchDecoration: InputDecoration(
-            border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
-            contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          showSelectedItems: true,
+          searchFieldProps: TextFieldProps(
+            decoration: InputDecoration(
+              hintText: 'Search here...',
+              //border: OutlineInputBorder(),
+            ),
           ),
         ),
       ),
