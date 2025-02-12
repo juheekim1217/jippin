@@ -2,7 +2,6 @@ import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/utility/utils.dart';
-import 'package:jippin/component/custom/advanced_behavior_autocomplete.dart';
 
 class CountryDropdownSearch extends StatefulWidget {
   final Function(String?, String?) onChanged;
@@ -27,11 +26,12 @@ class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
     return Future.value(countries.where((country) => country.nameEn.toLowerCase().contains(query.toLowerCase()) || country.nameKo.contains(query)).toList());
   }
 
-  // void _onChanged(BuildContext context, Country? data) {
-  //   if (data != null) {
-  //     onChanged(data);
-  //   }
-  // }
+  void _onChanged(BuildContext context, Country? data) {
+    if (data != null) {
+      debugPrint('onSelected ${data.nameEn}');
+      widget.onChanged(data.code, data.nameEn);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +56,7 @@ class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
         // Use onFind for asynchronous data fetching
         itemAsString: (Country country) => country.nameEn,
         compareFn: (Country? item, Country? selectedItem) => item?.code == selectedItem?.code,
-        //onChanged: (data) => _onChanged(context, data),
+        onChanged: (data) => _onChanged(context, data),
         // Display country names in English
         decoratorProps: DropDownDecoratorProps(
           baseStyle: TextStyle(

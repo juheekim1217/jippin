@@ -124,7 +124,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                       initialCountryName: initialCountryName,
                       onChanged: (String? newValue, String? countryName) {
                         if (newValue != null) {
-                          //localeProvider.setDefaultCountry(newValue, countryName!);
+                          localeProvider.setDefaultCountry(newValue, countryName!);
                         }
                       },
                     ),
