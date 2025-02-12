@@ -15,18 +15,6 @@ class HomePage extends StatelessWidget {
         children: [
           //AutocompleteTest(),
           //DropdownMenuSample(),
-          SizedBox(
-            height: 32, // Match the height of other menu items
-            width: 200,
-            child: CountryDropdownSearch(
-              initialCountryName: "", //initialCountryName,
-              onChanged: (String? newValue, String? countryName) {
-                if (newValue != null) {
-                  //localeProvider.setDefaultCountry(newValue, countryName!);
-                }
-              },
-            ),
-          ),
           // Welcome header
           Text(
             "Hello, Renter!",

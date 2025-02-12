@@ -37,19 +37,20 @@ class _ReviewsPageState extends State<ReviewsPage> {
     super.didUpdateWidget(oldWidget);
     if (widget.defaultCountryCode.isNotEmpty && widget.defaultCountryCode != oldWidget.defaultCountryCode) {
       _fetchAllReviews();
-    } else {
-      setState(() {
-        isLoading = false;
-        errorMessage = 'not valid country';
-      });
     }
+    // else {
+    //   setState(() {
+    //     isLoading = false;
+    //     errorMessage = 'not valid country';
+    //   });
+    // }
     if (widget.searchQuery != oldWidget.searchQuery) {
       searchController.text = widget.searchQuery;
       _applySearchFilter(widget.searchQuery);
     }
   }
 
-  // Fetch reviews from Supabase
+  // Fetch reviews from Supabase by Selected Country
   Future<void> _fetchAllReviews() async {
     try {
       final response = await supabase
@@ -58,10 +59,11 @@ class _ReviewsPageState extends State<ReviewsPage> {
           .eq('country_code', widget.defaultCountryCode)
           .order('created_at', ascending: false);
       debugPrint("_fetchAllReviews ${response.length}");
+
       if (response.isEmpty) {
         setState(() {
           isLoading = false;
-          _buildEmptyReviewsPage();
+          filteredReviews = List.empty();
         });
         return;
       }

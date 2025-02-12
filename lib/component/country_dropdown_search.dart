@@ -6,12 +6,9 @@ import 'package:jippin/utility/utils.dart';
 class CountryDropdownSearch extends StatefulWidget {
   final Function(String?, String?) onChanged;
   final String initialCountryName;
+  final dynamic localeProvider;
 
-  const CountryDropdownSearch({
-    super.key,
-    required this.onChanged,
-    required this.initialCountryName,
-  });
+  const CountryDropdownSearch({super.key, required this.onChanged, required this.initialCountryName, required this.localeProvider});
 
   @override
   State<CountryDropdownSearch> createState() => _CountryDropdownSearchState();
@@ -19,17 +16,18 @@ class CountryDropdownSearch extends StatefulWidget {
 
 class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
   final dropDownKey = GlobalKey<DropdownSearchState>();
-  final List<String> countryNamesEn = countries.map((country) => country.nameEn).toList();
-  final List<String> countryNamesKo = countries.map((country) => country.nameKo).toList();
+
+  //final List<String> countryNamesEn = countries.map((country) => country.nameEn).toList();
+  //final List<String> countryNamesKo = countries.map((country) => country.nameKo).toList();
 
   Future<List<Country>> _onFind(BuildContext context, String query) {
     return Future.value(countries.where((country) => country.nameEn.toLowerCase().contains(query.toLowerCase()) || country.nameKo.contains(query)).toList());
   }
 
-  void _onChanged(BuildContext context, Country? data) {
+  void _onChanged(Country? data, String name) {
     if (data != null) {
-      debugPrint('onSelected ${data.nameEn}');
-      widget.onChanged(data.code, data.nameEn);
+      debugPrint('onSelected $name');
+      widget.onChanged(data.code, name);
     }
   }
 
@@ -50,13 +48,23 @@ class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
           ),
         ),
         key: dropDownKey,
-        selectedItem: countries.first,
+        selectedItem: countries.firstWhere((country) => country.nameEn == widget.initialCountryName || country.nameKo == widget.initialCountryName),
         // Optional: Set initial selection
         items: (query, infiniteScrollProps) => _onFind(context, query),
         // Use onFind for asynchronous data fetching
-        itemAsString: (Country country) => country.nameEn,
+        itemAsString: (Country country) => widget.localeProvider.locale.languageCode == "en" ? country.nameEn : country.nameKo,
         compareFn: (Country? item, Country? selectedItem) => item?.code == selectedItem?.code,
-        onChanged: (data) => _onChanged(context, data),
+        onChanged: (Country? selectedCountry) {
+          if (selectedCountry != null) {
+            String selectedName = widget.localeProvider.locale.languageCode == "en" ? selectedCountry.nameEn : selectedCountry.nameKo;
+
+            // Now you can use selectedName as the selected string
+            debugPrint("Selected Country: $selectedName");
+
+            // Call your custom logic if needed
+            _onChanged(selectedCountry, selectedName);
+          }
+        },
         // Display country names in English
         decoratorProps: DropDownDecoratorProps(
           baseStyle: TextStyle(

@@ -112,13 +112,13 @@ class Country {
 }
 
 final List<Country> countries = [
-  Country("AU", "Australia", "호주"),
   Country("CA", "Canada", "캐나다"),
-  Country("IE", "Ireland", "아일랜드"),
   Country("KR", "South Korea", "대한민국"),
+  Country("AU", "Australia", "호주"),
   Country("NZ", "New Zealand", "뉴질랜드"),
   Country("UK", "United Kingdom", "영국"),
   Country("US", "United States", "미국"),
+  Country("IE", "Ireland", "아일랜드"),
   Country("JP", "Japan", "일본"),
   Country("CN", "China", "중국"),
 ];

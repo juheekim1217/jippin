@@ -121,6 +121,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                     height: 32, // Match the height of other menu items
                     width: widget.screenWidth * 0.1,
                     child: CountryDropdownSearch(
+                      localeProvider: localeProvider,
                       initialCountryName: initialCountryName,
                       onChanged: (String? newValue, String? countryName) {
                         if (newValue != null) {
