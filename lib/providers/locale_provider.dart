@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/country.dart';
-import 'package:jippin/utility/language.dart';
+import 'package:jippin/models/country.dart';
+import 'package:jippin/models/language.dart';
 
 /// supported locales languageCode key value pair
 final Map<String, Locale> locales = {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/test/login_page.dart';
-import 'package:jippin/utility/constants.dart';
+import 'package:jippin/pages/test/login_page.dart';
+import 'package:jippin/utilities/constants.dart';
+import 'package:jippin/utilities/snackbar_helper.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class RegisterPage extends StatefulWidget {

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
-import 'package:jippin/utility/constants.dart';
-import 'package:jippin/locale_provider.dart';
-import 'package:jippin/utility/nav_bar_item.dart';
+import 'package:jippin/utilities/constants.dart';
+import 'package:jippin/providers/locale_provider.dart';
+import 'package:jippin/models/nav_bar_item.dart';
 import 'package:jippin/component/test/country_autocomplete_field.dart';
 import 'package:jippin/component/country_dropdown_search.dart';
-import 'package:jippin/utility/language.dart';
+import 'package:jippin/models/language.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/country.dart';
+import 'package:jippin/models/country.dart';
 
 class DropdownMenuSample extends StatefulWidget {
   const DropdownMenuSample({super.key});
@@ -23,8 +23,6 @@ class _DropdownMenuSampleState extends State<DropdownMenuSample> {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width - 16.0;
-
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(

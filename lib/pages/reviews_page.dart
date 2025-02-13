@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
-import 'package:jippin/utility/constants.dart';
+import 'package:jippin/utilities/constants.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String searchQuery;

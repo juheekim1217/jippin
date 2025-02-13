@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:jippin/utility/nav_bar_item.dart';
+import 'package:jippin/models/nav_bar_item.dart';
 import 'package:jippin/component/adaptive_nav_bar.dart';
-import 'package:jippin/utility/constants.dart';
+import 'package:jippin/utilities/constants.dart';
 import 'package:jippin/pages/about_page.dart';
 import 'package:jippin/pages/home_page.dart';
 import 'package:jippin/pages/reviews_page.dart';
@@ -76,17 +76,11 @@ class _MainNavigationState extends State<MainNavigation> {
                       case 'settings':
                         debugPrint('Settings selected');
                         break;
-                      case 'help':
-                        debugPrint('Help selected');
-                        break;
                       case 'about':
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => const AboutPage()),
                         );
-                        break;
-                      case 'logout':
-                        debugPrint('Logout selected');
                         break;
                     }
                   },
@@ -94,9 +88,7 @@ class _MainNavigationState extends State<MainNavigation> {
                   itemBuilder: (BuildContext context) {
                     return [
                       PopupMenuItem(value: 'settings', child: Text(local.popup_settings)),
-                      PopupMenuItem(value: 'help', child: Text(local.popup_help)),
                       PopupMenuItem(value: 'about', child: Text(local.popup_about)),
-                      PopupMenuItem(value: 'logout', child: Text(local.popup_logout)),
                     ];
                   },
                 ),

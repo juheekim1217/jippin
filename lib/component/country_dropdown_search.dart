@@ -1,7 +1,7 @@
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
-import 'package:jippin/utility/country.dart';
+import 'package:jippin/models/country.dart';
 
 class CountryDropdownSearch extends StatefulWidget {
   final Function(String?, String?) onChanged;

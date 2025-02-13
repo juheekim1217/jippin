@@ -6,8 +6,8 @@ import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:jippin/utility/theme.dart';
-import 'package:jippin/locale_provider.dart';
+import 'package:jippin/theme/theme.dart';
+import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/component/main_navigation.dart';
 
 Future<void> main() async {

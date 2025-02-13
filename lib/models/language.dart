@@ -1,5 +1,5 @@
 import 'dart:ui';
-import 'package:jippin/utility/country.dart';
+import 'package:jippin/models/country.dart';
 
 /// LanguageCode Key value pair
 final Map<String, Language> languages = {
