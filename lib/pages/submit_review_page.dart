@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/global_page_layout_scaffold.dart';
+import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:jippin/gen/l10n/app_localizations.dart';
 
 class SubmitReviewPage extends StatefulWidget {
   const SubmitReviewPage({super.key});
@@ -23,6 +24,8 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
   // Function to handle form submission and save review to Supabase
   Future<void> _submitReview() async {
+    final AppLocalizations local = AppLocalizations.of(context);
+
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save(); // Save the form values
 
@@ -43,19 +46,19 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
         if (response.error == null) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Review Submitted: $_title')),
+            SnackBar(content: Text('${local.submit_review_success}: $_title')),
           );
           _formKey.currentState!.reset(); // Reset form after submission
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: ${response.error!.message}')),
+            SnackBar(content: Text('${local.submit_review_error}: ${response.error!.message}')),
           );
         }
       } catch (e) {
         if (!mounted) return; // Prevent calling context if widget is disposed
 
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('An error occurred: $e')),
+          SnackBar(content: Text('${local.submit_review_error}:  $e')),
         );
       }
     }
@@ -63,119 +66,45 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations local = AppLocalizations.of(context);
+
     return GlobalPageLayoutScaffold(
       body: SingleChildScrollView(
-        // Make the entire body scrollable
         padding: const EdgeInsets.all(16.0),
         child: Form(
           key: _formKey,
           child: Column(
             children: [
-              // Title input field
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Review Title',
-                  border: OutlineInputBorder(),
-                ),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Please enter a title';
-                  }
-                  return null;
-                },
-                onSaved: (value) {
-                  _title = value!;
-                },
+              _buildTextField(
+                label: local.submit_review_review_title_label,
+                errorMessage: local.submit_review_review_title_error,
+                onSaved: (value) => _title = value!,
               ),
-              SizedBox(height: 16),
-
-              // Content input field
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Review Content',
-                  border: OutlineInputBorder(),
-                ),
-                maxLines: 5, // Allow multiline content
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Please enter some content for your review';
-                  }
-                  return null;
-                },
-                onSaved: (value) {
-                  _content = value!;
-                },
+              _buildTextField(
+                label: local.submit_review_review_content_label,
+                errorMessage: local.submit_review_review_content_error,
+                onSaved: (value) => _content = value!,
+                maxLines: 5,
               ),
-              SizedBox(height: 16),
-
-              // Landlord input field
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Landlord or Building Name',
-                  border: OutlineInputBorder(),
-                ),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Please enter the landlord or building name';
-                  }
-                  return null;
-                },
-                onSaved: (value) {
-                  _landlord = value!;
-                },
+              _buildTextField(
+                label: local.submit_review_landlord_label,
+                errorMessage: local.submit_review_landlord_error,
+                onSaved: (value) => _landlord = value!,
               ),
-              SizedBox(height: 16),
-
-              // Address input field
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Address or Location',
-                  border: OutlineInputBorder(),
-                ),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Please enter the address or location';
-                  }
-                  return null;
-                },
-                onSaved: (value) {
-                  _address = value!;
-                },
+              _buildTextField(
+                label: local.submit_review_address_label,
+                errorMessage: local.submit_review_address_error,
+                onSaved: (value) => _address = value!,
               ),
-              SizedBox(height: 16),
-
-              // Ratings (for Trust, Price, Location, Condition, and Safety)
-              _buildRatingField('Trustworthiness', (value) {
-                setState(() {
-                  _ratingTrust = value!;
-                });
-              }),
-              _buildRatingField('Price', (value) {
-                setState(() {
-                  _ratingPrice = value!;
-                });
-              }),
-              _buildRatingField('Location', (value) {
-                setState(() {
-                  _ratingLocation = value!;
-                });
-              }),
-              _buildRatingField('Condition', (value) {
-                setState(() {
-                  _ratingCondition = value!;
-                });
-              }),
-              _buildRatingField('Safety', (value) {
-                setState(() {
-                  _ratingSafety = value!;
-                });
-              }),
-              SizedBox(height: 16),
-
-              // Submit Button
+              _buildRatingField(local.submit_review_trustworthiness, (value) => _ratingTrust = value!),
+              _buildRatingField(local.submit_review_price, (value) => _ratingPrice = value!),
+              _buildRatingField(local.submit_review_location, (value) => _ratingLocation = value!),
+              _buildRatingField(local.submit_review_condition, (value) => _ratingCondition = value!),
+              _buildRatingField(local.submit_review_safety, (value) => _ratingSafety = value!),
+              const SizedBox(height: 16),
               ElevatedButton(
                 onPressed: _submitReview,
-                child: Text('Submit Review'),
+                child: Text(local.submit_review_submit_button),
               ),
             ],
           ),
@@ -184,23 +113,33 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
     );
   }
 
-  // Helper method to build the rating input fields
+  Widget _buildTextField({
+    required String label,
+    required String errorMessage,
+    required Function(String?) onSaved,
+    int maxLines = 1,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: TextFormField(
+        decoration: InputDecoration(
+          labelText: label,
+          border: OutlineInputBorder(),
+        ),
+        maxLines: maxLines,
+        validator: (value) => value == null || value.isEmpty ? errorMessage : null,
+        onSaved: onSaved,
+      ),
+    );
+  }
+
   Widget _buildRatingField(String label, Function(int?) onSaved) {
     return Row(
       children: [
-        Text(label, style: TextStyle(fontSize: 16)),
+        Text(label, style: const TextStyle(fontSize: 16)),
         Expanded(
           child: Slider(
-            value: (label == 'Trustworthiness'
-                    ? _ratingTrust
-                    : label == 'Price'
-                        ? _ratingPrice
-                        : label == 'Location'
-                            ? _ratingLocation
-                            : label == 'Condition'
-                                ? _ratingCondition
-                                : _ratingSafety)
-                .toDouble(),
+            value: _getRating(label).toDouble(),
             min: 0,
             max: 5,
             divisions: 5,
@@ -211,10 +150,20 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
             },
           ),
         ),
-        Text(
-            '${(label == 'Trustworthiness' ? _ratingTrust : label == 'Price' ? _ratingPrice : label == 'Location' ? _ratingLocation : label == 'Condition' ? _ratingCondition : _ratingSafety)}',
-            style: TextStyle(fontSize: 16)),
+        Text('${_getRating(label)}', style: const TextStyle(fontSize: 16)),
       ],
     );
+  }
+
+  int _getRating(String label) {
+    return label == "Trustworthiness"
+        ? _ratingTrust
+        : label == "Price"
+            ? _ratingPrice
+            : label == "Location"
+                ? _ratingLocation
+                : label == "Condition"
+                    ? _ratingCondition
+                    : _ratingSafety;
   }
 }

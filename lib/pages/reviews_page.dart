@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/global_page_layout_scaffold.dart';
+import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
-import 'package:jippin/utility/utils.dart';
+import 'package:jippin/utility/constants.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String searchQuery;
@@ -210,7 +210,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
     int totalReviews = starCounts.values.reduce((a, b) => a + b);
 
     String? countryName = widget.defaultCountryName;
-    String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
+    String? searchQuery = widget.searchQuery.isEmpty ? "" : "/ ${widget.searchQuery}";
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -319,6 +319,12 @@ class _ReviewsPageState extends State<ReviewsPage> {
   }
 
   Widget _buildReviewsSection(BuildContext context, List<Map<String, dynamic>> reviews) {
+    final Map<String, String> sortOptions = {
+      'most_recent': AppLocalizations.of(context).sort_most_recent,
+      'highest_rating': AppLocalizations.of(context).sort_highest_rating,
+      'lowest_rating': AppLocalizations.of(context).sort_lowest_rating,
+    };
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -334,7 +340,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                       const Icon(Icons.reviews, size: 22, color: Colors.blueAccent), // ✅ Add an icon for visibility
                       const SizedBox(width: 6),
                       Text(
-                        '${reviews.length} Reviews',
+                        '${reviews.length} ${AppLocalizations.of(context).reviews}',
                         style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -364,7 +370,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                       // ✅ Remove extra padding
 
                       hint: Text(
-                        selectedSort != null ? sortOptions[selectedSort]! : 'Sort by',
+                        selectedSort != null ? sortOptions[selectedSort]! : AppLocalizations.of(context).sortBy,
                         style: const TextStyle(color: Colors.black54),
                       ),
 
@@ -409,8 +415,10 @@ class _ReviewsPageState extends State<ReviewsPage> {
   }
 
   Widget _buildEmptyReviewsPage() {
+    final AppLocalizations local = AppLocalizations.of(context);
     String? countryName = widget.defaultCountryName;
-    String? searchQuery = widget.searchQuery.isEmpty ? "" : "- ${widget.searchQuery}";
+    String? searchQuery = widget.searchQuery.isEmpty ? "" : "/ ${widget.searchQuery}";
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16.0),
       child: Column(
@@ -424,16 +432,16 @@ class _ReviewsPageState extends State<ReviewsPage> {
           const SizedBox(height: 12),
           const Icon(Icons.rate_review, size: 64, color: Colors.grey), // ✅ Larger icon
           const SizedBox(height: 12),
-          const Text(
-            'No reviews yet.',
+          Text(
+            local.empty_reviews_no_reviews,
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black54),
+            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black54),
           ),
           const SizedBox(height: 6),
-          const Text(
-            'Be the first to share your experience!',
+          Text(
+            local.empty_reviews_be_first,
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 16, color: Colors.black45),
+            style: const TextStyle(fontSize: 16, color: Colors.black45),
           ),
           const SizedBox(height: 16),
           ElevatedButton.icon(
@@ -441,7 +449,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
               Navigator.pushNamed(context, '/submit'); // ✅ Use your route name
             },
             icon: const Icon(Icons.add, size: 18),
-            label: const Text("Write a Review"),
+            label: Text(local.empty_reviews_write_review),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.blueAccent,
               foregroundColor: Colors.white,
@@ -499,45 +507,50 @@ class _ReviewsPageState extends State<ReviewsPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Landlord section
-            Row(
-              children: [
-                Text(
-                  '${review['landlord'] ?? 'Unknown'}',
-                  // Title text
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                Spacer(),
-                if (review['fraud'] != null && review['fraud'])
+            if (review['landlord'] != null)
+              Row(
+                children: [
                   Tooltip(
-                    message: "This landlord has been reported for fraud or deception by the reviewer.",
-                    child: Icon(Icons.gavel, size: 30, color: Colors.red),
+                    message: AppLocalizations.of(context).landlord,
+                    child: Text(
+                      '${review['landlord']}',
+                      // Title text
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
                   ),
-              ],
-            ),
+                  Spacer(),
+                  if (review['fraud'] != null && review['fraud'])
+                    Tooltip(
+                      message: AppLocalizations.of(context).landlord_fraud,
+                      child: Icon(Icons.gavel, size: 30, color: Colors.red),
+                    ),
+                ],
+              ),
 
             // Address section
             const SizedBox(height: 4),
-            Row(
-              children: [
-                Tooltip(
-                  message: AppLocalizations.of(context).address,
-                  child: Icon(Icons.location_on, size: 20, color: Colors.black87),
-                ),
-                const SizedBox(width: 8),
-                Flexible(
-                  // Allows the text to wrap instead of overflowing
-                  child: Text(
-                    address,
-                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
-                    softWrap: true, // Enables wrapping
+            if (address.isNotEmpty)
+              Row(
+                children: [
+                  Tooltip(
+                    message: AppLocalizations.of(context).address,
+                    child: Icon(Icons.location_on, size: 20, color: Colors.black87),
                   ),
-                ),
-              ],
-            ),
+                  const SizedBox(width: 8),
+                  Flexible(
+                    // Allows the text to wrap instead of overflowing
+                    child: Text(
+                      address,
+                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
+                      softWrap: true, // Enables wrapping
+                    ),
+                  ),
+                ],
+              ),
 
             // Realtor section
             if (review['realtor'] != null)
@@ -552,7 +565,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      '${review['realtor'] ?? 'Unknown'}',
+                      '${review['realtor']}',
                       style: TextStyle(fontSize: 14, color: Colors.black87),
                     ),
                   ],
@@ -620,15 +633,17 @@ class _ReviewsPageState extends State<ReviewsPage> {
             const SizedBox(height: 8),
             Divider(color: Colors.grey.shade300),
             const SizedBox(height: 8),
-            Text(
-              review['title'] ?? 'No Title',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
+            if (review['title'] != null)
+              Text(
+                review['title'],
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
             const SizedBox(height: 8),
-            Text(
-              review['review'] ?? 'No review provided.',
-              style: TextStyle(fontSize: 16),
-            ),
+            if (review['review'] != null)
+              Text(
+                review['review'],
+                style: TextStyle(fontSize: 16),
+              ),
           ],
         ),
       ),

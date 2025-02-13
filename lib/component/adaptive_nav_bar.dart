@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
-import 'package:jippin/utility/utils.dart';
+import 'package:jippin/utility/constants.dart';
 import 'package:jippin/locale_provider.dart';
-import 'package:jippin/component/nav_bar_item.dart';
+import 'package:jippin/utility/nav_bar_item.dart';
 import 'package:jippin/component/test/country_autocomplete_field.dart';
 import 'package:jippin/component/country_dropdown_search.dart';
+import 'package:jippin/utility/language.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -36,7 +37,6 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
 class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
   final TextEditingController searchController = TextEditingController();
   final FocusNode searchFocusNode = FocusNode(); // ✅ Added for better focus handling
-  String selectedCountry = "Other"; // ✅ Default country
 
   @override
   void dispose() {
@@ -63,12 +63,12 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text("Search"),
+          title: Text(AppLocalizations.of(context).search),
           content: _buildSearchDialogTextField(context),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text("Close"),
+              child: Text(AppLocalizations.of(context).close),
             ),
           ],
         );
@@ -82,12 +82,12 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text("Select Country"),
+          title: Text(AppLocalizations.of(context).selectCountry),
           content: _buildCountryDialogTextField(context, localeProvider, currentLocale, navbarBackgroundColor),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text("Close"),
+              child: Text(AppLocalizations.of(context).close),
             ),
           ],
         );
@@ -100,7 +100,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     final localeProvider = Provider.of<LocaleProvider>(context);
     Locale currentLocale = localeProvider.locale;
     Color navbarBackgroundColor = Theme.of(context).scaffoldBackgroundColor;
-    String initialCountryName = localeProvider.getDefaultCountryNameByLocale("");
+    String initialCountryName = localeProvider.country.getCountryName(localeProvider.locale.languageCode);
 
     return AppBar(
       backgroundColor: navbarBackgroundColor,
@@ -125,7 +125,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                       initialCountryName: initialCountryName,
                       onChanged: (String? newValue, String? countryName) {
                         if (newValue != null) {
-                          localeProvider.setDefaultCountry(newValue, countryName!);
+                          localeProvider.setCountry(newValue, countryName!);
                         }
                       },
                     ),
@@ -178,7 +178,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             color: Colors.black87, // Text color
           ),
           decoration: InputDecoration(
-            hintText: AppLocalizations.of(context).search,
+            hintText: AppLocalizations.of(context).search_location,
             suffixIcon: IconButton(
               icon: Icon(Icons.search, color: Colors.grey, size: 18),
               onPressed: _handleSearch, // 🔥 Trigger search on icon click
@@ -224,7 +224,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
       // Prevents unnecessary refocus
       style: TextStyle(fontSize: 14, color: Colors.black87),
       decoration: InputDecoration(
-        hintText: AppLocalizations.of(context).search,
+        hintText: AppLocalizations.of(context).search_location,
         // Replace with localization if needed
         suffixIcon: IconButton(
           icon: Icon(Icons.search, color: Colors.grey),
@@ -254,7 +254,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
 
   // 🔹 Popup Country (For Small Screens) Text field widget
   Widget _buildCountryDialogTextField(BuildContext context, localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
-    String initialCountryName = localeProvider.getDefaultCountryName("");
+    String initialCountryName = localeProvider.defaultCountry.getCountryName(localeProvider.defaultLanguage.code);
     return CountryAutoCompleteField(
       width: 150,
       initialCountryName: initialCountryName,
@@ -335,20 +335,20 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             height: 32,
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: paddingInner), // Inner padding
-              child: DropdownButton<Locale>(
+              child: DropdownButton<Language>(
                 focusColor: Colors.transparent,
-                value: currentLocale,
-                onChanged: (Locale? newLocale) {
-                  if (newLocale != null) {
-                    localeProvider.setLocale(newLocale); // Update locale
+                value: localeProvider.language,
+                onChanged: (Language? newLanguage) {
+                  if (newLanguage != null) {
+                    localeProvider.setLanguage(newLanguage); // Update locale
                   }
                 },
                 icon: const Icon(Icons.arrow_drop_down, size: 16, color: Colors.grey),
                 // Customize dropdown icon
-                items: languages.map((lang) {
+                items: languages.values.map((language) {
                   return DropdownMenuItem(
-                    value: Locale(lang["locale"]!),
-                    child: Text(lang["label"]!, style: const TextStyle(fontSize: 14)),
+                    value: language, // Corrected: Directly use the locale property
+                    child: Text(language.label, style: const TextStyle(fontSize: 14)), // Corrected: Use language.label
                   );
                 }).toList(),
                 dropdownColor: Colors.white,

@@ -107,17 +107,17 @@ abstract class AppLocalizations {
   /// **'Home'**
   String get home;
 
-  /// No description provided for @writeReview.
-  ///
-  /// In en, this message translates to:
-  /// **'Write a Review'**
-  String get writeReview;
-
   /// No description provided for @reviews.
   ///
   /// In en, this message translates to:
   /// **'Reviews'**
   String get reviews;
+
+  /// No description provided for @writeReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a Review'**
+  String get writeReview;
 
   /// No description provided for @resources.
   ///
@@ -143,17 +143,77 @@ abstract class AppLocalizations {
   /// **'Language'**
   String get language;
 
-  /// No description provided for @countryPlaceholder.
+  /// No description provided for @popup_about.
   ///
   /// In en, this message translates to:
-  /// **'Country'**
-  String get countryPlaceholder;
+  /// **'About'**
+  String get popup_about;
+
+  /// No description provided for @popup_help.
+  ///
+  /// In en, this message translates to:
+  /// **'Help'**
+  String get popup_help;
+
+  /// No description provided for @popup_settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get popup_settings;
+
+  /// No description provided for @popup_logout.
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get popup_logout;
 
   /// No description provided for @search.
   ///
   /// In en, this message translates to:
-  /// **'City, Neighbourhood, Address or Postal Code'**
+  /// **'Search'**
   String get search;
+
+  /// No description provided for @search_here.
+  ///
+  /// In en, this message translates to:
+  /// **'Search here'**
+  String get search_here;
+
+  /// No description provided for @search_country.
+  ///
+  /// In en, this message translates to:
+  /// **'Find a Country'**
+  String get search_country;
+
+  /// No description provided for @search_location.
+  ///
+  /// In en, this message translates to:
+  /// **'City, Neighbourhood, Address or Postal Code'**
+  String get search_location;
+
+  /// No description provided for @sortBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by'**
+  String get sortBy;
+
+  /// No description provided for @sort_most_recent.
+  ///
+  /// In en, this message translates to:
+  /// **'Most recent'**
+  String get sort_most_recent;
+
+  /// No description provided for @sort_highest_rating.
+  ///
+  /// In en, this message translates to:
+  /// **'Highest rating'**
+  String get sort_highest_rating;
+
+  /// No description provided for @sort_lowest_rating.
+  ///
+  /// In en, this message translates to:
+  /// **'Lowest rating'**
+  String get sort_lowest_rating;
 
   /// No description provided for @overallrating.
   ///
@@ -221,6 +281,18 @@ abstract class AppLocalizations {
   /// **'Other Fees'**
   String get otherFees;
 
+  /// No description provided for @landlord.
+  ///
+  /// In en, this message translates to:
+  /// **'Landlord'**
+  String get landlord;
+
+  /// No description provided for @landlord_fraud.
+  ///
+  /// In en, this message translates to:
+  /// **'This landlord has been reported for fraud or deception by the reviewer.'**
+  String get landlord_fraud;
+
   /// No description provided for @address.
   ///
   /// In en, this message translates to:
@@ -233,23 +305,353 @@ abstract class AppLocalizations {
   /// **'Realtor'**
   String get realtor;
 
-  /// No description provided for @southKorea.
+  /// No description provided for @empty_reviews_no_reviews.
   ///
   /// In en, this message translates to:
-  /// **'South Korea'**
-  String get southKorea;
+  /// **'No reviews yet.'**
+  String get empty_reviews_no_reviews;
 
-  /// No description provided for @canada.
+  /// No description provided for @empty_reviews_be_first.
   ///
   /// In en, this message translates to:
-  /// **'Canada'**
-  String get canada;
+  /// **'Be the first to share your experience!'**
+  String get empty_reviews_be_first;
+
+  /// No description provided for @empty_reviews_write_review.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a Review'**
+  String get empty_reviews_write_review;
 
   /// No description provided for @selectCountry.
   ///
   /// In en, this message translates to:
   /// **'Select Country'**
   String get selectCountry;
+
+  /// No description provided for @close.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get close;
+
+  /// No description provided for @submit_review_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit a Review'**
+  String get submit_review_title;
+
+  /// No description provided for @submit_review_review_title_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Title'**
+  String get submit_review_review_title_label;
+
+  /// No description provided for @submit_review_review_title_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a title'**
+  String get submit_review_review_title_error;
+
+  /// No description provided for @submit_review_review_content_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Content'**
+  String get submit_review_review_content_label;
+
+  /// No description provided for @submit_review_review_content_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter some content for your review'**
+  String get submit_review_review_content_error;
+
+  /// No description provided for @submit_review_landlord_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Landlord or Building Name'**
+  String get submit_review_landlord_label;
+
+  /// No description provided for @submit_review_landlord_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter the landlord or building name'**
+  String get submit_review_landlord_error;
+
+  /// No description provided for @submit_review_address_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Address or Location'**
+  String get submit_review_address_label;
+
+  /// No description provided for @submit_review_address_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter the address or location'**
+  String get submit_review_address_error;
+
+  /// No description provided for @submit_review_trustworthiness.
+  ///
+  /// In en, this message translates to:
+  /// **'Trustworthiness'**
+  String get submit_review_trustworthiness;
+
+  /// No description provided for @submit_review_price.
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get submit_review_price;
+
+  /// No description provided for @submit_review_location.
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get submit_review_location;
+
+  /// No description provided for @submit_review_condition.
+  ///
+  /// In en, this message translates to:
+  /// **'Condition'**
+  String get submit_review_condition;
+
+  /// No description provided for @submit_review_safety.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety'**
+  String get submit_review_safety;
+
+  /// No description provided for @submit_review_submit_button.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Review'**
+  String get submit_review_submit_button;
+
+  /// No description provided for @submit_review_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Submitted'**
+  String get submit_review_success;
+
+  /// No description provided for @submit_review_error.
+  ///
+  /// In en, this message translates to:
+  /// **'An error occurred'**
+  String get submit_review_error;
+
+  /// No description provided for @home_intro1_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Hello, Renter!'**
+  String get home_intro1_title;
+
+  /// No description provided for @home_intro1_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'JIPPIN helps you find the best rental experiences by connecting you with reliable landlord reviews and resources.'**
+  String get home_intro1_desc;
+
+  /// No description provided for @home_intro2_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started:'**
+  String get home_intro2_title;
+
+  /// No description provided for @home_intro2_desc1.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse Reviews'**
+  String get home_intro2_desc1;
+
+  /// No description provided for @home_intro2_desc2.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Review'**
+  String get home_intro2_desc2;
+
+  /// No description provided for @home_intro2_desc3.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get home_intro2_desc3;
+
+  /// No description provided for @home_intro3_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Why Choose JIPPIN?'**
+  String get home_intro3_title;
+
+  /// No description provided for @home_intro3_desc1_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviews'**
+  String get home_intro3_desc1_title;
+
+  /// No description provided for @home_intro3_desc2_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Your Story'**
+  String get home_intro3_desc2_title;
+
+  /// No description provided for @home_intro3_desc3_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Community Support'**
+  String get home_intro3_desc3_title;
+
+  /// No description provided for @home_intro3_desc1.
+  ///
+  /// In en, this message translates to:
+  /// **'Read honest reviews from real tenants about their experiences.'**
+  String get home_intro3_desc1;
+
+  /// No description provided for @home_intro3_desc2.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your renting journey and help others make informed decisions.'**
+  String get home_intro3_desc2;
+
+  /// No description provided for @home_intro3_desc3.
+  ///
+  /// In en, this message translates to:
+  /// **'Connect with renters like you to find trusted advice and support.'**
+  String get home_intro3_desc3;
+
+  /// No description provided for @about_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Who we are?'**
+  String get about_title;
+
+  /// No description provided for @about_description.
+  ///
+  /// In en, this message translates to:
+  /// **'The Jippin Rent Review app helps tenants share their experiences with landlords and real estate agents, providing transparency and helping future renters make informed decisions.'**
+  String get about_description;
+
+  /// No description provided for @about_review_fields_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Fields and Rating Technique'**
+  String get about_review_fields_title;
+
+  /// No description provided for @about_trustworthiness_title.
+  ///
+  /// In en, this message translates to:
+  /// **'1. Trustworthiness Rating'**
+  String get about_trustworthiness_title;
+
+  /// No description provided for @about_trustworthiness_description.
+  ///
+  /// In en, this message translates to:
+  /// **'The Trustworthiness Rating reflects how reliable and honest the landlord or real estate agent is in their dealings. Rate the landlord/agent based on transparency, ethical practices, and whether promises are kept.'**
+  String get about_trustworthiness_description;
+
+  /// No description provided for @about_trustworthiness_1_star.
+  ///
+  /// In en, this message translates to:
+  /// **'1 Star: Very untrustworthy – Major issues with dishonesty or failure to follow through on promises.'**
+  String get about_trustworthiness_1_star;
+
+  /// No description provided for @about_trustworthiness_2_star.
+  ///
+  /// In en, this message translates to:
+  /// **'2 Stars: Untrustworthy – Some issues with transparency or reliability.'**
+  String get about_trustworthiness_2_star;
+
+  /// No description provided for @about_trustworthiness_3_star.
+  ///
+  /// In en, this message translates to:
+  /// **'3 Stars: Neutral – No major issues, but not particularly reliable.'**
+  String get about_trustworthiness_3_star;
+
+  /// No description provided for @about_trustworthiness_4_star.
+  ///
+  /// In en, this message translates to:
+  /// **'4 Stars: Trustworthy – Generally reliable, with few issues.'**
+  String get about_trustworthiness_4_star;
+
+  /// No description provided for @about_trustworthiness_5_star.
+  ///
+  /// In en, this message translates to:
+  /// **'5 Stars: Very trustworthy – Completely transparent and dependable in all dealings.'**
+  String get about_trustworthiness_5_star;
+
+  /// No description provided for @about_respect_title.
+  ///
+  /// In en, this message translates to:
+  /// **'2. Respect Rating'**
+  String get about_respect_title;
+
+  /// No description provided for @about_respect_description.
+  ///
+  /// In en, this message translates to:
+  /// **'The Respect Rating reflects how the landlord or real estate agent treats you. This includes politeness, attentiveness to concerns, and overall professionalism.'**
+  String get about_respect_description;
+
+  /// No description provided for @about_respect_1_star.
+  ///
+  /// In en, this message translates to:
+  /// **'1 Star: Very disrespectful – Rude or dismissive communication.'**
+  String get about_respect_1_star;
+
+  /// No description provided for @about_respect_2_star.
+  ///
+  /// In en, this message translates to:
+  /// **'2 Stars: Disrespectful – Occasional unprofessional behavior or lack of courtesy.'**
+  String get about_respect_2_star;
+
+  /// No description provided for @about_respect_3_star.
+  ///
+  /// In en, this message translates to:
+  /// **'3 Stars: Neutral – Adequate but not particularly respectful or disrespectful.'**
+  String get about_respect_3_star;
+
+  /// No description provided for @about_respect_4_star.
+  ///
+  /// In en, this message translates to:
+  /// **'4 Stars: Respectful – Generally polite and attentive, with minor issues.'**
+  String get about_respect_4_star;
+
+  /// No description provided for @about_respect_5_star.
+  ///
+  /// In en, this message translates to:
+  /// **'5 Stars: Very respectful – Always considerate, courteous, and professional.'**
+  String get about_respect_5_star;
+
+  /// No description provided for @about_additional_details_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Additional Review Details'**
+  String get about_additional_details_title;
+
+  /// No description provided for @about_additional_details_description.
+  ///
+  /// In en, this message translates to:
+  /// **'In addition to the Trustworthiness and Respect Ratings, users can leave comments to provide more context on their experiences. They can also answer the following optional questions:'**
+  String get about_additional_details_description;
+
+  /// No description provided for @about_question_contract_dispute.
+  ///
+  /// In en, this message translates to:
+  /// **'• Was there a contract dispute? – Indicate if you encountered any issues with the lease agreement.'**
+  String get about_question_contract_dispute;
+
+  /// No description provided for @about_question_accurate_info.
+  ///
+  /// In en, this message translates to:
+  /// **'• Did the landlord/agent provide accurate information? – Rate whether the information given was truthful and clear.'**
+  String get about_question_accurate_info;
+
+  /// No description provided for @about_question_discriminatory_behavior.
+  ///
+  /// In en, this message translates to:
+  /// **'• Did you experience any discriminatory behavior? – Optional, to assess how inclusive the landlord/agent was.'**
+  String get about_question_discriminatory_behavior;
+
+  /// No description provided for @about_contribute_message.
+  ///
+  /// In en, this message translates to:
+  /// **'By contributing to Rent Review, you’re helping other renters find reliable and respectful landlords and agents, creating a more transparent rental market for everyone.'**
+  String get about_contribute_message;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

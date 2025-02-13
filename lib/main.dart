@@ -45,22 +45,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     final localeProvider = Provider.of<LocaleProvider>(context);
-
     final TextTheme textTheme = GoogleFonts.notoSansKrTextTheme();
     final MaterialTheme materialTheme = MaterialTheme(textTheme);
-    final ThemeData themeData = materialTheme.lightHighContrast();
-    // final ThemeData themeData = ThemeData(
-    //   textTheme: GoogleFonts.notoSansKrTextTheme(), // Apply NotoSansKR globally
-    //   scaffoldBackgroundColor: Colors.white, // Set background color here
-    // );
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       locale: localeProvider.locale,
-      supportedLocales: const [
-        Locale('en'), // English
-        Locale('ko'), // Korean
-      ],
+      supportedLocales: locales.values,
       localizationsDelegates: [
         AppLocalizations.delegate, // Generated localization
         GlobalMaterialLocalizations.delegate,
@@ -68,9 +59,8 @@ class _MyAppState extends State<MyApp> {
         GlobalCupertinoLocalizations.delegate,
       ],
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
-      //theme: theme.lightHighContrast(),
-      //darkTheme: theme.darkHighContrast(),
-      theme: themeData,
+      theme: materialTheme.lightHighContrast(),
+      darkTheme: materialTheme.darkHighContrast(),
       initialRoute: "/home",
       routes: {
         "/home": (context) => MainNavigation(currentIndex: 0, localeProvider: localeProvider),

@@ -1,7 +1,7 @@
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
-import 'package:jippin/utility/utils.dart';
+import 'package:jippin/utility/country.dart';
 
 class CountryDropdownSearch extends StatefulWidget {
   final Function(String?, String?) onChanged;
@@ -17,11 +17,8 @@ class CountryDropdownSearch extends StatefulWidget {
 class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
   final dropDownKey = GlobalKey<DropdownSearchState>();
 
-  //final List<String> countryNamesEn = countries.map((country) => country.nameEn).toList();
-  //final List<String> countryNamesKo = countries.map((country) => country.nameKo).toList();
-
   Future<List<Country>> _onFind(BuildContext context, String query) {
-    return Future.value(countries.where((country) => country.nameEn.toLowerCase().contains(query.toLowerCase()) || country.nameKo.contains(query)).toList());
+    return Future.value(searchCountries(query));
   }
 
   void _onChanged(Country? data, String name) {
@@ -48,19 +45,16 @@ class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
           ),
         ),
         key: dropDownKey,
-        selectedItem: countries.firstWhere((country) => country.nameEn == widget.initialCountryName || country.nameKo == widget.initialCountryName),
+        selectedItem: getCountry(widget.initialCountryName),
         // Optional: Set initial selection
         items: (query, infiniteScrollProps) => _onFind(context, query),
-        // Use onFind for asynchronous data fetching
-        itemAsString: (Country country) => widget.localeProvider.locale.languageCode == "en" ? country.nameEn : country.nameKo,
+        itemAsString: (Country country) => country.getCountryName(widget.localeProvider.locale.languageCode),
         compareFn: (Country? item, Country? selectedItem) => item?.code == selectedItem?.code,
         onChanged: (Country? selectedCountry) {
           if (selectedCountry != null) {
-            String selectedName = widget.localeProvider.locale.languageCode == "en" ? selectedCountry.nameEn : selectedCountry.nameKo;
-
+            String selectedName = selectedCountry.getCountryName(widget.localeProvider.locale.languageCode);
             // Now you can use selectedName as the selected string
             debugPrint("Selected Country: $selectedName");
-
             // Call your custom logic if needed
             _onChanged(selectedCountry, selectedName);
           }
@@ -74,7 +68,6 @@ class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
           ),
           decoration: InputDecoration(
             suffixIcon: Visibility(visible: false, child: Icon(Icons.arrow_downward)),
-            //icon: Icon(Icons.location_on, color: Colors.black54),
             labelText: AppLocalizations.of(context).selectCountry,
             labelStyle: TextStyle(fontSize: 14, color: Colors.grey),
             // Center text vertically inside the TextFormField
@@ -93,7 +86,7 @@ class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
           showSelectedItems: true,
           searchFieldProps: TextFieldProps(
             decoration: InputDecoration(
-              hintText: 'Search here...',
+              hintText: AppLocalizations.of(context).search_country,
               //border: OutlineInputBorder(),
             ),
           ),

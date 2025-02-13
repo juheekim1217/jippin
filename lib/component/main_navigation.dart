@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'package:jippin/component/nav_bar_item.dart';
+import 'package:jippin/utility/nav_bar_item.dart';
 import 'package:jippin/component/adaptive_nav_bar.dart';
-import 'package:jippin/utility/utils.dart';
-
+import 'package:jippin/utility/constants.dart';
 import 'package:jippin/pages/about_page.dart';
 import 'package:jippin/pages/home_page.dart';
 import 'package:jippin/pages/reviews_page.dart';
@@ -27,25 +24,16 @@ class _MainNavigationState extends State<MainNavigation> {
   late int _currentIndex;
   String _searchQuery = "";
 
-  // Android navigation
-  final List<BottomNavigationBarItem> _mobileBottomNavigationBarList = [
-    BottomNavigationBarItem(
-      icon: Icon(Icons.home),
-      label: 'Home',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.list),
-      label: 'Reviews',
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.add),
-      label: 'Submit',
-    ),
-  ];
+  //final List<BottomNavigationBarItem> _mobileBottomNavigationBarList = [];
 
   List<Widget> get _pages => [
         HomePage(),
-        ReviewsPage(key: ValueKey(_searchQuery), searchQuery: _searchQuery, defaultCountryCode: widget.localeProvider.defaultCountry, defaultCountryName: widget.localeProvider.defaultCountryName), // 🔥 Updates dynamically
+        ReviewsPage(
+          key: ValueKey(_searchQuery),
+          searchQuery: _searchQuery,
+          defaultCountryCode: widget.localeProvider.country.code,
+          defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
+        ),
         SubmitReviewPage(),
         AboutPage(),
       ];
@@ -62,50 +50,42 @@ class _MainNavigationState extends State<MainNavigation> {
     });
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   void _filterReviews(String query) {
     setState(() {
-      _currentIndex = 1; // move to Reviews page
-      _searchQuery = query; // Update search query
+      _currentIndex = 1;
+      _searchQuery = query;
       debugPrint("_filterReviews $query");
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations local = AppLocalizations.of(context);
     final bool isAndroid = defaultTargetPlatform == TargetPlatform.android;
     final double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
       appBar: isAndroid
           ? AppBar(
-              title: Text(AppLocalizations.of(context).appTitle),
+              title: Text(local.appTitle),
               actions: [
-                IconButton(onPressed: () => {}, icon: Icon(Icons.search)),
+                IconButton(onPressed: () => {}, icon: const Icon(Icons.search)),
                 PopupMenuButton<String>(
                   onSelected: (value) {
-                    // Handle menu item selection
                     switch (value) {
-                      case 'Settings':
-                        // Navigate to settings
+                      case 'settings':
                         debugPrint('Settings selected');
                         break;
-                      case 'Help':
-                        // Navigate to help
+                      case 'help':
                         debugPrint('Help selected');
                         break;
-                      case 'About':
+                      case 'about':
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => AboutPage()),
+                          MaterialPageRoute(builder: (context) => const AboutPage()),
                         );
                         break;
-                      case 'Logout':
-                        // Perform logout
+                      case 'logout':
                         debugPrint('Logout selected');
                         break;
                     }
@@ -113,22 +93,10 @@ class _MainNavigationState extends State<MainNavigation> {
                   icon: const Icon(Icons.more_vert),
                   itemBuilder: (BuildContext context) {
                     return [
-                      const PopupMenuItem(
-                        value: 'Settings',
-                        child: Text('Settings'),
-                      ),
-                      const PopupMenuItem(
-                        value: 'Help',
-                        child: Text('Help'),
-                      ),
-                      const PopupMenuItem(
-                        value: 'About',
-                        child: Text('About'),
-                      ),
-                      const PopupMenuItem(
-                        value: 'Logout',
-                        child: Text('Logout'),
-                      ),
+                      PopupMenuItem(value: 'settings', child: Text(local.popup_settings)),
+                      PopupMenuItem(value: 'help', child: Text(local.popup_help)),
+                      PopupMenuItem(value: 'about', child: Text(local.popup_about)),
+                      PopupMenuItem(value: 'logout', child: Text(local.popup_logout)),
                     ];
                   },
                 ),
@@ -138,18 +106,16 @@ class _MainNavigationState extends State<MainNavigation> {
               screenWidth: screenWidth,
               logo: Row(
                 children: [
-                  Icon(Icons.home_filled, size: 24, color: Colors.black87),
+                  const Icon(Icons.home_filled, size: 24, color: Colors.black87),
                   const SizedBox(width: 8),
                   MouseRegion(
-                    cursor: SystemMouseCursors.click, // Change cursor to pointer
+                    cursor: SystemMouseCursors.click,
                     child: GestureDetector(
-                      onTap: () {
-                        _navigateTo(0);
-                      }, // Action when the title is clicked
+                      onTap: () => _navigateTo(0),
                       child: Text(
-                        AppLocalizations.of(context).appTitle,
+                        local.appTitle,
                         style: GoogleFonts.montserrat(
-                          fontWeight: FontWeight.bold, // Correct syntax
+                          fontWeight: FontWeight.bold,
                           fontSize: 18,
                           color: Colors.black87,
                         ),
@@ -159,15 +125,15 @@ class _MainNavigationState extends State<MainNavigation> {
                 ],
               ),
               navBarItems: [
-                NavBarItem(text: AppLocalizations.of(context).reviews, onTap: () => _navigateTo(1)),
-                if (screenWidth <= smallScreenWidth) NavBarItem(text: AppLocalizations.of(context).writeReview, onTap: () => _navigateTo(2)),
-                NavBarItem(text: AppLocalizations.of(context).about, onTap: () => _navigateTo(3)),
+                NavBarItem(text: local.reviews, onTap: () => _navigateTo(1)),
+                if (screenWidth <= smallScreenWidth) NavBarItem(text: local.writeReview, onTap: () => _navigateTo(2)),
+                NavBarItem(text: local.about, onTap: () => _navigateTo(3)),
               ],
               popupMenuItems: [
-                NavBarItem(text: AppLocalizations.of(context).home, onTap: () => _navigateTo(0)),
-                NavBarItem(text: AppLocalizations.of(context).reviews, onTap: () => _navigateTo(1)),
-                NavBarItem(text: AppLocalizations.of(context).writeReview, onTap: () => _navigateTo(2)),
-                NavBarItem(text: AppLocalizations.of(context).about, onTap: () => _navigateTo(3)),
+                NavBarItem(text: local.home, onTap: () => _navigateTo(0)),
+                NavBarItem(text: local.reviews, onTap: () => _navigateTo(1)),
+                NavBarItem(text: local.writeReview, onTap: () => _navigateTo(2)),
+                NavBarItem(text: local.about, onTap: () => _navigateTo(3)),
               ],
               onSubmitReview: () => _navigateTo(2),
               onSearch: (query) => _filterReviews(query),
@@ -177,7 +143,11 @@ class _MainNavigationState extends State<MainNavigation> {
           ? BottomNavigationBar(
               currentIndex: _currentIndex,
               onTap: _navigateTo,
-              items: _mobileBottomNavigationBarList,
+              items: [
+                BottomNavigationBarItem(icon: const Icon(Icons.home), label: local.home),
+                BottomNavigationBarItem(icon: const Icon(Icons.list), label: local.reviews),
+                BottomNavigationBarItem(icon: const Icon(Icons.add), label: local.writeReview),
+              ],
             )
           : null,
     );

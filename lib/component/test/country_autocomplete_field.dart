@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
-import 'package:jippin/utility/utils.dart';
 import 'package:jippin/component/custom/advanced_behavior_autocomplete.dart';
 
 ///Enter key
@@ -44,7 +43,8 @@ class CountryAutoCompleteField extends StatefulWidget {
 
 class _CountryDropdownTextFieldState extends State<CountryAutoCompleteField> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  TextEditingController _controller = TextEditingController();
+
+  //TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -59,23 +59,23 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteField> {
           key: formKey,
           child: AdvancedBehaviorAutocomplete<String>(
             optionsBuilder: (TextEditingValue textEditingValue) {
-              if (textEditingValue.text.isEmpty) {
-                return const Iterable<String>.empty();
-              }
-              final combinedCountries = [...countriesEn, ...countriesKo];
-              return combinedCountries.where((country) => country["name"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((country) => country["name"]!);
+              // if (textEditingValue.text.isEmpty) {
+              return const Iterable<String>.empty();
+              // }
+              //final combinedCountries = [...countriesEn, ...countriesKo];
+              //return combinedCountries.where((country) => country["name"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((country) => country["name"]!);
             },
             // Tab key pressed
             onSelected: (String selection) {
               debugPrint('onSelected $selection');
-              String? selectionCode = getCountryCode(selection);
+              //String? selectionCode = getCountryCode(selection);
               // ✅ Update controller directly without setState
-              if (selectionCode!.isEmpty) {
-                _controller.clear();
-              } else {
-                _controller.text = selection;
-                widget.onChanged(selectionCode, selection);
-              }
+              // if (selectionCode!.isEmpty) {
+              //   _controller.clear();
+              // } else {
+              //   _controller.text = selection;
+              //   widget.onChanged(selectionCode, selection);
+              // }
               //widget.onChanged(selectionCode, selection);
             },
             moveFocusNext: false,
@@ -86,7 +86,7 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteField> {
               FocusNode focusNode,
               VoidCallback onFieldSubmitted,
             ) {
-              _controller = textEditingController; // Assign the controller to _controller
+              //_controller = textEditingController; // Assign the controller to _controller
               return Tooltip(
                 message: textEditingController.text, // Shows full text on hover
                 waitDuration: Duration(milliseconds: 500),
@@ -165,3 +165,51 @@ class _CountryDropdownTextFieldState extends State<CountryAutoCompleteField> {
     );
   }
 }
+
+// List of country options
+// final List<Map<String, String>> countriesEn = [
+//   {"code": "AU", "name": "Australia"},
+//   {"code": "CA", "name": "Canada"},
+//   {"code": "IE", "name": "Ireland"},
+//   {"code": "KR", "name": "South Korea"},
+//   {"code": "NZ", "name": "New Zealand"},
+//   {"code": "UK", "name": "United Kingdom"},
+//   {"code": "US", "name": "United States"},
+//   {"code": "JP", "name": "Japan"},
+//   {"code": "CN", "name": "China"},
+// ];
+//
+// final List<Map<String, String>> countriesKo = [
+//   {"code": "AU", "name": "호주"},
+//   {"code": "CA", "name": "캐나다"},
+//   {"code": "IE", "name": "아일랜드"},
+//   {"code": "KR", "name": "대한민국"},
+//   {"code": "NZ", "name": "뉴질랜드"},
+//   {"code": "UK", "name": "영국"},
+//   {"code": "US", "name": "미국"},
+//   {"code": "JP", "name": "일본"},
+//   {"code": "CN", "name": "중국"},
+// ];
+//
+// String? getCountryCode(String countryName) {
+//   String? result = "";
+//   try {
+//     final combinedCountries = [...countriesEn, ...countriesKo];
+//     final country = combinedCountries.firstWhere((c) => c["name"] == countryName);
+//     result = country["code"];
+//   } catch (e) {
+//     debugPrint(e.toString());
+//   }
+//   return result;
+// }
+//
+// String? getCountryName(String countryCode, String languageCode) {
+//   String? result = "";
+//   try {
+//     final country = languageCode == "en" ? countriesEn.firstWhere((c) => c["code"] == countryCode) : countriesKo.firstWhere((c) => c["code"] == countryCode);
+//     result = country["name"];
+//   } catch (e) {
+//     debugPrint(e.toString());
+//   }
+//   return result;
+// }

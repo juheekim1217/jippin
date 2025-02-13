@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/utils.dart';
+import 'package:jippin/utility/country.dart';
 
 class DropdownMenuSample extends StatefulWidget {
   const DropdownMenuSample({super.key});
@@ -18,7 +18,7 @@ class _DropdownMenuSampleState extends State<DropdownMenuSample> {
   void initState() {
     super.initState();
     // Set initial selection
-    selectedMenu = countries.first;
+    selectedMenu = countries.values.first;
   }
 
   @override
@@ -48,7 +48,7 @@ class _DropdownMenuSampleState extends State<DropdownMenuSample> {
                 menuController.text = menu?.nameEn ?? ""; // Update the text field as well
               });
             },
-            dropdownMenuEntries: countries.map<DropdownMenuEntry<Country>>((Country menu) {
+            dropdownMenuEntries: countries.values.map<DropdownMenuEntry<Country>>((Country menu) {
               return DropdownMenuEntry<Country>(
                 value: menu,
                 label: menu.nameEn,

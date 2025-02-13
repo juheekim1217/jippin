@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:jippin/component/custom/advanced_behavior_autocomplete.dart';
+import 'package:jippin/gen/l10n/app_localizations.dart';
 
 class AddressAutocompleteField extends StatefulWidget {
   const AddressAutocompleteField({super.key});
@@ -14,8 +15,8 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
   List<Map<String, dynamic>> cities = [];
   List<Map<String, dynamic>> filteredCities = [];
 
-  final TextEditingController _controller = TextEditingController();
-  final FocusNode _focusNode = FocusNode(); // ✅ Add focus node
+  //final TextEditingController _controller = TextEditingController();
+  //final FocusNode _focusNode = FocusNode(); // ✅ Add focus node
 
   @override
   void initState() {
@@ -33,15 +34,15 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
   }
 
   /// Filters cities based on user input
-  List<Map<String, dynamic>> _filterCities(String query) {
-    if (query.isEmpty) return [];
-    final lowerQuery = query.toLowerCase();
-    return cities.where((city) {
-      final cityNameKo = city["name"]["ko"].toLowerCase();
-      final cityNameEn = city["name"]["en"].toLowerCase();
-      return cityNameKo.contains(lowerQuery) || cityNameEn.contains(lowerQuery);
-    }).toList();
-  }
+  // List<Map<String, dynamic>> _filterCities(String query) {
+  //   if (query.isEmpty) return [];
+  //   final lowerQuery = query.toLowerCase();
+  //   return cities.where((city) {
+  //     final cityNameKo = city["name"]["ko"].toLowerCase();
+  //     final cityNameEn = city["name"]["en"].toLowerCase();
+  //     return cityNameKo.contains(lowerQuery) || cityNameEn.contains(lowerQuery);
+  //   }).toList();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -93,18 +94,18 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
                       onChanged: (value) {
                         //debugPrint('onChanged $value');
                       },
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Required Entry';
-                        }
-                        return null;
-                      },
+                      // validator: (value) {
+                      //   if (value == null || value.isEmpty) {
+                      //     return 'Required Entry';
+                      //   }
+                      //   return null;
+                      // },
                       style: TextStyle(
                         fontSize: 12,
                         color: Colors.black,
                       ),
                       decoration: InputDecoration(
-                        labelText: "Select Country",
+                        labelText: AppLocalizations.of(context).search_location,
                         labelStyle: TextStyle(fontSize: 14, color: Colors.grey),
 
                         // Center text vertically inside the TextFormField

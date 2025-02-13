@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/global_page_layout_scaffold.dart';
-import 'package:jippin/component/custom/advanced_behavior_autocomplete_test_ui.dart';
-import 'package:jippin/component/country_dropdown_search.dart';
-import 'package:jippin/component/test/country_dropdown_menu.dart';
+import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
+import 'package:jippin/gen/l10n/app_localizations.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,7 +15,7 @@ class HomePage extends StatelessWidget {
           //DropdownMenuSample(),
           // Welcome header
           Text(
-            "Hello, Renter!",
+            AppLocalizations.of(context).home_intro1_title,
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
@@ -25,14 +23,14 @@ class HomePage extends StatelessWidget {
           ),
           SizedBox(height: 16),
           Text(
-            "JIPPIN helps you find the best rental experiences by connecting you with reliable landlord reviews and resources.",
+            AppLocalizations.of(context).home_intro1_desc,
             style: TextStyle(fontSize: 16, color: Colors.grey[700]),
           ),
           SizedBox(height: 24),
 
           // Quick Navigation Buttons
           Text(
-            "Get Started:",
+            AppLocalizations.of(context).home_intro2_title,
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -45,20 +43,20 @@ class HomePage extends StatelessWidget {
               _buildNavigationButton(
                 context,
                 icon: Icons.list,
-                label: "Browse Reviews",
-                route: "/Reviews",
+                label: AppLocalizations.of(context).home_intro2_desc1,
+                route: "/reviews",
               ),
               _buildNavigationButton(
                 context,
                 icon: Icons.add,
-                label: "Submit Review",
-                route: "/Submit",
+                label: AppLocalizations.of(context).home_intro2_desc2,
+                route: "/submit",
               ),
               _buildNavigationButton(
                 context,
                 icon: Icons.info,
-                label: "About",
-                route: "/About",
+                label: AppLocalizations.of(context).home_intro2_desc3,
+                route: "/about",
               ),
             ],
           ),
@@ -66,7 +64,7 @@ class HomePage extends StatelessWidget {
 
           // Highlights section
           Text(
-            "Why Choose JIPPIN?",
+            AppLocalizations.of(context).home_intro3_title,
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -75,22 +73,22 @@ class HomePage extends StatelessWidget {
           SizedBox(height: 16),
           _buildFeatureCard(
             context,
-            title: "Verified Reviews",
-            description: "Read honest reviews from real tenants about their experiences.",
+            title: AppLocalizations.of(context).home_intro3_desc1_title,
+            description: AppLocalizations.of(context).home_intro3_desc1,
             icon: Icons.verified,
             color: Colors.blue,
           ),
           _buildFeatureCard(
             context,
-            title: "Submit Your Story",
-            description: "Share your renting journey and help others make informed decisions.",
+            title: AppLocalizations.of(context).home_intro3_desc2_title,
+            description: AppLocalizations.of(context).home_intro3_desc2,
             icon: Icons.share,
             color: Colors.green,
           ),
           _buildFeatureCard(
             context,
-            title: "Community Support",
-            description: "Connect with renters like you to find trusted advice and support.",
+            title: AppLocalizations.of(context).home_intro3_desc3_title,
+            description: AppLocalizations.of(context).home_intro3_desc3,
             icon: Icons.people,
             color: Colors.orange,
           ),

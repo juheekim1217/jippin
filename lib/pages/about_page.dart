@@ -1,128 +1,193 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/global_page_layout_scaffold.dart';
+import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
+import 'package:jippin/gen/l10n/app_localizations.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations local = AppLocalizations.of(context);
+
     return GlobalPageLayoutScaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text(
-            'Welcome to Rent Review',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            _buildHeaderSection(context, local.about_title, local.about_description),
+            _buildSectionTitle(local.about_review_fields_title),
+            _buildReviewCriteriaSection(
+              context,
+              icon: Icons.shield_outlined,
+              title: local.about_trustworthiness_title,
+              description: local.about_trustworthiness_description,
+              ratingLabels: [
+                local.about_trustworthiness_1_star,
+                local.about_trustworthiness_2_star,
+                local.about_trustworthiness_3_star,
+                local.about_trustworthiness_4_star,
+                local.about_trustworthiness_5_star,
+              ],
             ),
-          ),
-          SizedBox(height: 10),
-          Text(
-            'The Rent Review app helps tenants share their experiences with landlords and real estate agents, providing transparency and helping future renters make informed decisions.',
-            style: TextStyle(fontSize: 16),
-          ),
-          SizedBox(height: 20),
-          Text(
-            'Review Fields and Rating Technique',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+            _buildReviewCriteriaSection(
+              context,
+              icon: Icons.emoji_people_outlined,
+              title: local.about_respect_title,
+              description: local.about_respect_description,
+              ratingLabels: [
+                local.about_respect_1_star,
+                local.about_respect_2_star,
+                local.about_respect_3_star,
+                local.about_respect_4_star,
+                local.about_respect_5_star,
+              ],
             ),
-          ),
-          SizedBox(height: 10),
-          Text(
-            '1. Trustworthiness Rating',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+            _buildAdditionalDetailsSection(local),
+            const SizedBox(height: 30),
+            _buildContributionMessage(local.about_contribute_message),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHeaderSection(BuildContext context, String title, String description) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          title,
+          style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 10),
+        Text(
+          description,
+          style: const TextStyle(fontSize: 16, color: Colors.black87),
+        ),
+        const SizedBox(height: 20),
+      ],
+    );
+  }
+
+  Widget _buildSectionTitle(String title) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Divider(thickness: 1),
+        const SizedBox(height: 15),
+        Text(
+          title,
+          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 10),
+      ],
+    );
+  }
+
+  Widget _buildReviewCriteriaSection(
+    BuildContext context, {
+    required IconData icon,
+    required String title,
+    required String description,
+    required List<String> ratingLabels,
+  }) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 15),
+        Row(
+          children: [
+            Icon(icon, size: 30, color: Colors.blueAccent),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Text(
+                title,
+                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Text(description, style: const TextStyle(fontSize: 16)),
+        _buildRatingList(ratingLabels),
+      ],
+    );
+  }
+
+  Widget _buildRatingList(List<String> ratings) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: ratings.map((rating) {
+        return Padding(
+          padding: const EdgeInsets.symmetric(vertical: 4),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Icon(Icons.star, size: 20, color: Colors.amber),
+              const SizedBox(width: 8),
+              Expanded(child: Text(rating, style: const TextStyle(fontSize: 16))),
+            ],
           ),
-          Text(
-            'The Trustworthiness Rating reflects how reliable and honest the landlord or real estate agent is in their dealings. Rate the landlord/agent based on transparency, ethical practices, and whether promises are kept.',
-            style: TextStyle(fontSize: 16),
-          ),
-          _buildRatingExplanation([
-            '1 Star: Very untrustworthy – Major issues with dishonesty or failure to follow through on promises.',
-            '2 Stars: Untrustworthy – Some issues with transparency or reliability.',
-            '3 Stars: Neutral – No major issues, but not particularly reliable.',
-            '4 Stars: Trustworthy – Generally reliable, with few issues.',
-            '5 Stars: Very trustworthy – Completely transparent and dependable in all dealings.',
-          ]),
-          SizedBox(height: 20),
-          Text(
-            '2. Respect Rating',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+        );
+      }).toList(),
+    );
+  }
+
+  Widget _buildAdditionalDetailsSection(AppLocalizations local) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _buildSectionTitle(local.about_additional_details_title),
+        Text(
+          local.about_additional_details_description,
+          style: const TextStyle(fontSize: 16),
+        ),
+        const SizedBox(height: 10),
+        _buildQuestionItem(Icons.assignment_late_outlined, local.about_question_contract_dispute),
+        _buildQuestionItem(Icons.info_outline, local.about_question_accurate_info),
+        _buildQuestionItem(Icons.gavel_outlined, local.about_question_discriminatory_behavior),
+      ],
+    );
+  }
+
+  Widget _buildQuestionItem(IconData icon, String text) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 5),
+      child: Row(
+        children: [
+          Icon(icon, size: 24, color: Colors.blueGrey),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              text,
+              style: const TextStyle(fontSize: 16),
             ),
-          ),
-          Text(
-            'The Respect Rating reflects how the landlord or real estate agent treats you. This includes politeness, attentiveness to concerns, and overall professionalism.',
-            style: TextStyle(fontSize: 16),
-          ),
-          _buildRatingExplanation([
-            '1 Star: Very disrespectful – Rude or dismissive communication.',
-            '2 Stars: Disrespectful – Occasional unprofessional behavior or lack of courtesy.',
-            '3 Stars: Neutral – Adequate but not particularly respectful or disrespectful.',
-            '4 Stars: Respectful – Generally polite and attentive, with minor issues.',
-            '5 Stars: Very respectful – Always considerate, courteous, and professional.',
-          ]),
-          SizedBox(height: 20),
-          Text(
-            'Additional Review Details',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          Text(
-            'In addition to the Trustworthiness and Respect Ratings, users can leave comments to provide more context on their experiences. They can also answer the following optional questions:',
-            style: TextStyle(fontSize: 16),
-          ),
-          _buildAdditionalReviewQuestions(),
-          SizedBox(height: 20),
-          Text(
-            'By contributing to Rent Review, you’re helping other renters find reliable and respectful landlords and agents, creating a more transparent rental market for everyone.',
-            style: TextStyle(fontSize: 16),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildRatingExplanation(List<String> explanations) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: explanations
-          .map((explanation) => Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4.0),
-                child: Text(
-                  explanation,
-                  style: TextStyle(fontSize: 16),
-                ),
-              ))
-          .toList(),
-    );
-  }
-
-  Widget _buildAdditionalReviewQuestions() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Text(
-          '• Was there a contract dispute? – Indicate if you encountered any issues with the lease agreement.',
-          style: TextStyle(fontSize: 16),
-        ),
-        Text(
-          '• Did the landlord/agent provide accurate information? – Rate whether the information given was truthful and clear.',
-          style: TextStyle(fontSize: 16),
-        ),
-        Text(
-          '• Did you experience any discriminatory behavior? – Optional, to assess how inclusive the landlord/agent was.',
-          style: TextStyle(fontSize: 16),
-        ),
-      ],
+  Widget _buildContributionMessage(String message) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.blueAccent.withAlpha(25),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Row(
+        children: [
+          const Icon(Icons.handshake_outlined, size: 30, color: Colors.blueAccent),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              message,
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blueAccent),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

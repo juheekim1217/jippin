@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jippin/utility/utils.dart';
+import 'package:jippin/utility/constants.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class LoginPage extends StatefulWidget {
