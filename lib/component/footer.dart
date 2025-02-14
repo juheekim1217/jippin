@@ -43,7 +43,7 @@ class AppFooter extends StatelessWidget {
                 child: Text(
                   localizations.appMission, // Use localization text
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.notoSansKr(fontSize: 14, color: Colors.black54),
+                  style: GoogleFonts.notoSansKr(fontSize: 12, color: Colors.black54),
                   softWrap: true, // Ensures wrapping
                 ),
               ),
@@ -53,7 +53,7 @@ class AppFooter extends StatelessWidget {
           // ⚖️ Copyright & Branding
           Text(
             "© 2025 JIPPIN. All rights reserved.",
-            style: GoogleFonts.notoSans(fontSize: 12, color: Colors.black54, fontWeight: FontWeight.bold),
+            style: GoogleFonts.notoSans(fontSize: 10, color: Colors.black54, fontWeight: FontWeight.bold),
           ),
         ],
       ),

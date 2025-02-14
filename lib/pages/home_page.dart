@@ -39,6 +39,10 @@ class _HomePageState extends State<HomePage> {
     super.dispose();
   }
 
+  void _handleSearch() {
+    widget.onSearchLandlord(searchController.text);
+  }
+
   // Fetch reviews from Supabase by Selected Country
   Future<void> _fetchRecentReviews() async {
     try {
@@ -140,6 +144,7 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: TextField(
             controller: searchController,
+            onSubmitted: (value) => _handleSearch(),
             decoration: InputDecoration(
               filled: true,
               fillColor: Colors.grey.shade100,
@@ -161,7 +166,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             _buildButton(
               text: localizations.home_readReviews,
-              onTap: () => widget.onSearchLandlord(searchController.text), //Navigator.pushReplacementNamed(context, '/reviews'),
+              onTap: () => _handleSearch, //Navigator.pushReplacementNamed(context, '/reviews'),
             ),
             const SizedBox(width: 10),
             _buildButton(

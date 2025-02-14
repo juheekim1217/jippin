@@ -590,7 +590,7 @@ abstract class AppLocalizations {
   /// No description provided for @home_heroTitle.
   ///
   /// In en, this message translates to:
-  /// **'Find the truth about your landlord and the place you will call home!'**
+  /// **'Find the truth about your landlord and your future home!'**
   String get home_heroTitle;
 
   /// No description provided for @home_heroSubtitle.
@@ -602,7 +602,7 @@ abstract class AppLocalizations {
   /// No description provided for @home_searchHint.
   ///
   /// In en, this message translates to:
-  /// **'Search landlord or property...'**
+  /// **'Search landlord, property or realtor...'**
   String get home_searchHint;
 
   /// No description provided for @home_readReviews.

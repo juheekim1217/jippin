@@ -97,7 +97,12 @@ class _ReviewsPageState extends State<ReviewsPage> {
       // Apply landlord or property filtering at the end
       if (searchQueryLandlord!.isNotEmpty) {
         //filteredReviews = allReviews.where((review) => review["landlord"]!.toLowerCase().contains(query.toLowerCase()) || review["property"]!.toLowerCase().contains(query.toLowerCase())).toList();
-        filteredReviews = filteredReviews.where((review) => (review["landlord"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()) || (review["property"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase())).toList();
+        filteredReviews = filteredReviews
+            .where((review) =>
+                (review["landlord"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()) ||
+                (review["property"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()) ||
+                (review["realtor"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()))
+            .toList();
         // ✅ Now, we can clear searchQueryLandlord properly
       }
     });
