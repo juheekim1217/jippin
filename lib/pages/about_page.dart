@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
+import 'package:jippin/component/footer.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
@@ -46,6 +47,10 @@ class AboutPage extends StatelessWidget {
             _buildAdditionalDetailsSection(local),
             const SizedBox(height: 30),
             _buildContributionMessage(local.about_contribute_message),
+
+            // 📌 Footer (Not Sticky, Appears After All Content)
+            const SizedBox(height: 30),
+            const AppFooter(),
           ],
         ),
       ),

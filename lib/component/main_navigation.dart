@@ -23,14 +23,19 @@ class MainNavigation extends StatefulWidget {
 class _MainNavigationState extends State<MainNavigation> {
   late int _currentIndex;
   String _searchQuery = "";
-
-  //final List<BottomNavigationBarItem> _mobileBottomNavigationBarList = [];
+  String _searchQueryLandlord = "";
 
   List<Widget> get _pages => [
-        HomePage(),
+        HomePage(
+          //key: ValueKey(_searchQuery),
+          defaultCountryCode: widget.localeProvider.country.code,
+          defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
+          onSearchLandlord: (query) => _filterReviewsLandlord(query),
+        ),
         ReviewsPage(
           key: ValueKey(_searchQuery),
           searchQuery: _searchQuery,
+          searchQueryLandlord: _searchQueryLandlord,
           defaultCountryCode: widget.localeProvider.country.code,
           defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
         ),
@@ -55,6 +60,14 @@ class _MainNavigationState extends State<MainNavigation> {
       _currentIndex = 1;
       _searchQuery = query;
       debugPrint("_filterReviews $query");
+    });
+  }
+
+  void _filterReviewsLandlord(String query) {
+    setState(() {
+      _currentIndex = 1;
+      _searchQueryLandlord = query;
+      debugPrint("_filterReviewsLandlord $query");
     });
   }
 

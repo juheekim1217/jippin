@@ -101,6 +101,12 @@ abstract class AppLocalizations {
   /// **'JIPPIN'**
   String get appTitle;
 
+  /// No description provided for @appMission.
+  ///
+  /// In en, this message translates to:
+  /// **'All reviews are anonymous. Share your experience with confidence and help create a fair, fraud-free rental market together.'**
+  String get appMission;
+
   /// No description provided for @home.
   ///
   /// In en, this message translates to:
@@ -287,6 +293,12 @@ abstract class AppLocalizations {
   /// **'Landlord'**
   String get landlord;
 
+  /// No description provided for @property.
+  ///
+  /// In en, this message translates to:
+  /// **'Property Name'**
+  String get property;
+
   /// No description provided for @landlord_fraud.
   ///
   /// In en, this message translates to:
@@ -334,6 +346,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Close'**
   String get close;
+
+  /// No description provided for @created_at.
+  ///
+  /// In en, this message translates to:
+  /// **'Created At'**
+  String get created_at;
+
+  /// No description provided for @unknown.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown'**
+  String get unknown;
+
+  /// No description provided for @unknown_country.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown Country'**
+  String get unknown_country;
+
+  /// No description provided for @unknown_city.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown City'**
+  String get unknown_city;
+
+  /// No description provided for @unknown_landlord.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown Landlord'**
+  String get unknown_landlord;
+
+  /// No description provided for @unknown_property.
+  ///
+  /// In en, this message translates to:
+  /// **'🏠 Unknown Property'**
+  String get unknown_property;
+
+  /// No description provided for @no_review_available.
+  ///
+  /// In en, this message translates to:
+  /// **'No review available'**
+  String get no_review_available;
 
   /// No description provided for @submit_review_title.
   ///
@@ -494,8 +548,14 @@ abstract class AppLocalizations {
   /// No description provided for @home_intro3_desc3_title.
   ///
   /// In en, this message translates to:
-  /// **'Community Support'**
+  /// **'Contribute to a Better Rental Market'**
   String get home_intro3_desc3_title;
+
+  /// No description provided for @home_intro3_desc4_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Community Support'**
+  String get home_intro3_desc4_title;
 
   /// No description provided for @home_intro3_desc1.
   ///
@@ -512,8 +572,140 @@ abstract class AppLocalizations {
   /// No description provided for @home_intro3_desc3.
   ///
   /// In en, this message translates to:
-  /// **'Connect with renters like you to find trusted advice and support.'**
+  /// **'Contribute to creating a transparent rental market.'**
   String get home_intro3_desc3;
+
+  /// No description provided for @home_intro3_desc4.
+  ///
+  /// In en, this message translates to:
+  /// **'Connect with renters like you to find trusted advice and support.'**
+  String get home_intro3_desc4;
+
+  /// No description provided for @home_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Rental Review Platform'**
+  String get home_title;
+
+  /// No description provided for @home_heroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find the truth about your landlord and the place you will call home!'**
+  String get home_heroTitle;
+
+  /// No description provided for @home_heroSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rental fraud, lease scam, 🔊 noisy neighbors, 😡 ruthless landlords, and real estate agents who deceive tenants 🤯... Tired of it all? Read honest reviews from real tenants and protect yourself from abuse! 🤝 Share your experience to help not only tenants in your city but also renters around the world.'**
+  String get home_heroSubtitle;
+
+  /// No description provided for @home_searchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search landlord or property...'**
+  String get home_searchHint;
+
+  /// No description provided for @home_readReviews.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Reviews'**
+  String get home_readReviews;
+
+  /// No description provided for @home_writeReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a Review'**
+  String get home_writeReview;
+
+  /// No description provided for @home_recentReviews.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Reviews'**
+  String get home_recentReviews;
+
+  /// No description provided for @home_seeMoreReviews.
+  ///
+  /// In en, this message translates to:
+  /// **'See More Reviews →'**
+  String get home_seeMoreReviews;
+
+  /// No description provided for @home_howItWorks.
+  ///
+  /// In en, this message translates to:
+  /// **'How It Works'**
+  String get home_howItWorks;
+
+  /// No description provided for @home_step1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Landlords/Properties'**
+  String get home_step1Title;
+
+  /// No description provided for @home_step1Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Look up rental properties and landlords to read real reviews.'**
+  String get home_step1Desc;
+
+  /// No description provided for @home_step2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a Review'**
+  String get home_step2Title;
+
+  /// No description provided for @home_step2Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your experience to help future tenants make better choices.'**
+  String get home_step2Desc;
+
+  /// No description provided for @home_step3Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Protect Yourself'**
+  String get home_step3Title;
+
+  /// No description provided for @home_step3Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Use community-driven insights to avoid rental scams.'**
+  String get home_step3Desc;
+
+  /// No description provided for @home_anonymousReviewsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'All Reviews Are Anonymous'**
+  String get home_anonymousReviewsTitle;
+
+  /// No description provided for @home_anonymousReviewsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Your identity is protected. Share your experience freely and help others stay safe!'**
+  String get home_anonymousReviewsDesc;
+
+  /// No description provided for @home_findLandlordsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find Landlords/Properties'**
+  String get home_findLandlordsTitle;
+
+  /// No description provided for @home_findLandlordsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for properties and see real reviews.'**
+  String get home_findLandlordsDesc;
+
+  /// No description provided for @home_writeReviewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a Review'**
+  String get home_writeReviewTitle;
+
+  /// No description provided for @home_writeReviewDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Help others by sharing your rental experience.'**
+  String get home_writeReviewDesc;
 
   /// No description provided for @about_title.
   ///

@@ -3,13 +3,21 @@ import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/utilities/constants.dart';
+import 'package:intl/intl.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String searchQuery;
+  final String searchQueryLandlord;
   final String defaultCountryCode;
   final String defaultCountryName;
 
-  const ReviewsPage({super.key, required this.searchQuery, required this.defaultCountryCode, required this.defaultCountryName});
+  const ReviewsPage({
+    super.key,
+    required this.searchQuery,
+    required this.searchQueryLandlord,
+    required this.defaultCountryCode,
+    required this.defaultCountryName,
+  });
 
   @override
   State<ReviewsPage> createState() => _ReviewsPageState();
@@ -17,18 +25,17 @@ class ReviewsPage extends StatefulWidget {
 
 class _ReviewsPageState extends State<ReviewsPage> {
   final supabase = Supabase.instance.client;
-  TextEditingController searchController = TextEditingController();
-
   List<Map<String, dynamic>> allReviews = [];
   List<Map<String, dynamic>> filteredReviews = [];
   bool isLoading = true;
   String errorMessage = '';
   String? selectedSort;
+  String? searchQueryLandlord = ''; // Store landlord search query in state
 
   @override
   void initState() {
     super.initState();
-    searchController.text = widget.searchQuery; // Set initial search query
+    searchQueryLandlord = widget.searchQueryLandlord; // Initialize it with widget value
     _fetchAllReviews();
   }
 
@@ -38,14 +45,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
     if (widget.defaultCountryCode.isNotEmpty && widget.defaultCountryCode != oldWidget.defaultCountryCode) {
       _fetchAllReviews();
     }
-    // else {
-    //   setState(() {
-    //     isLoading = false;
-    //     errorMessage = 'not valid country';
-    //   });
-    // }
     if (widget.searchQuery != oldWidget.searchQuery) {
-      searchController.text = widget.searchQuery;
       _applySearchFilter(widget.searchQuery);
     }
   }
@@ -92,6 +92,13 @@ class _ReviewsPageState extends State<ReviewsPage> {
       } else {
         //filteredReviews = allReviews.where((review) => review["city"].toLowerCase().contains(query.toLowerCase()) || review["address"].toLowerCase().contains(query.toLowerCase()) || review["postal_code"].toString().toLowerCase().contains(query.toLowerCase())).toList();
         filteredReviews = allReviews.where((review) => review["city"].toLowerCase().contains(query.toLowerCase())).toList();
+      }
+
+      // Apply landlord or property filtering at the end
+      if (searchQueryLandlord!.isNotEmpty) {
+        //filteredReviews = allReviews.where((review) => review["landlord"]!.toLowerCase().contains(query.toLowerCase()) || review["property"]!.toLowerCase().contains(query.toLowerCase())).toList();
+        filteredReviews = filteredReviews.where((review) => (review["landlord"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()) || (review["property"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase())).toList();
+        // ✅ Now, we can clear searchQueryLandlord properly
       }
     });
   }
@@ -211,6 +218,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
 
     String? countryName = widget.defaultCountryName;
     String? searchQuery = widget.searchQuery.isEmpty ? "" : "/ ${widget.searchQuery}";
+    if (searchQueryLandlord!.isNotEmpty) searchQuery += "/ $searchQueryLandlord";
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -418,6 +426,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
     final AppLocalizations local = AppLocalizations.of(context);
     String? countryName = widget.defaultCountryName;
     String? searchQuery = widget.searchQuery.isEmpty ? "" : "/ ${widget.searchQuery}";
+    if (searchQueryLandlord!.isNotEmpty) searchQuery += "/ $searchQueryLandlord";
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -446,7 +455,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
           const SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: () {
-              Navigator.pushNamed(context, '/submit'); // ✅ Use your route name
+              Navigator.pushReplacementNamed(context, '/submit'); // ✅ Use your route name
             },
             icon: const Icon(Icons.add, size: 18),
             label: Text(local.empty_reviews_write_review),
@@ -499,42 +508,119 @@ class _ReviewsPageState extends State<ReviewsPage> {
       otherFees = '$currency ${review['other_fees'].toString()}';
     }
 
+    String formatDateTime(String dateTimeString) {
+      DateTime dateTime = DateTime.parse(dateTimeString); // Convert string to DateTime
+      return DateFormat('yyyy-MM-dd HH:mm').format(dateTime); // Format to readable string
+    }
+
     return Card(
       margin: const EdgeInsets.only(bottom: 16.0),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start, // Aligns everything to the top
           children: [
-            // Landlord section
-            if (review['landlord'] != null)
+            // Landlord name && Created_at section
+            Row(
+              children: [
+                // 📌 Column 1: Landlord Info (Left-Aligned)
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      if (review['landlord'] != null && review['landlord'] != "")
+                        Text(
+                          "${AppLocalizations.of(context).landlord}: ${review['landlord']}",
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+                // 📌 Column 2: Created At (Right-Aligned & Top)
+                // Column(
+                //   mainAxisSize: MainAxisSize.min, // Prevents stretching
+                //   crossAxisAlignment: CrossAxisAlignment.end, // Ensures full right alignment
+                //   children: [
+                //     Text(
+                //       formatDateTime(review['created_at']),
+                //       style: const TextStyle(fontSize: 12, color: Colors.black54),
+                //     ),
+                //   ],
+                // ),
+                Column(
+                  mainAxisSize: MainAxisSize.min, // Prevents unnecessary vertical stretching
+                  crossAxisAlignment: CrossAxisAlignment.end, // Ensures right alignment
+                  children: [
+                    Row(
+                      mainAxisSize: MainAxisSize.min, // Ensures only takes necessary space
+                      children: [
+                        Icon(Icons.edit_calendar_outlined, size: 12, color: Colors.black54),
+                        const SizedBox(width: 4), // Space between text and icon
+                        Text(
+                          formatDateTime(review['created_at']),
+                          style: const TextStyle(fontSize: 12, color: Colors.black54),
+                        ),
+                      ],
+                    ),
+                  ],
+                )
+              ],
+            ),
+            const SizedBox(height: 8), // Spacing between icon and text
+
+            // Property name and alerts section
+            if (review['property'] != null || (review['fraud'] != null && review['fraud']))
               Row(
                 children: [
-                  Tooltip(
-                    message: AppLocalizations.of(context).landlord,
-                    child: Text(
-                      '${review['landlord']}',
-                      // Title text
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
+                  Expanded(
+                    child: Row(
+                      // Use Row instead of Column to keep elements in one line
+                      crossAxisAlignment: CrossAxisAlignment.center, // Ensures proper alignment
+                      children: [
+                        // 📌 Property Icon with Tooltip
+                        if (review['property'] != null && review['property'] != "")
+                          Tooltip(
+                            message: AppLocalizations.of(context).property,
+                            child: Icon(Icons.apartment_outlined, size: 20, color: Colors.black87),
+                          ),
+                        const SizedBox(width: 8), // Spacing between icon and text
+                        // 📌 Property Text (Ensures it stays in one line)
+                        if (review['property'] != null && review['property'] != "")
+                          Expanded(
+                            child: Text(
+                              review['property'],
+                              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
+                              overflow: TextOverflow.ellipsis, // Ensures text truncates instead of wrapping
+                              maxLines: 1, // Restricts text to a single line
+                            ),
+                          ),
+                      ],
                     ),
                   ),
-                  Spacer(),
+                  // 📌 Column 2: Alerts (Right-Aligned)
                   if (review['fraud'] != null && review['fraud'])
-                    Tooltip(
-                      message: AppLocalizations.of(context).landlord_fraud,
-                      child: Icon(Icons.gavel, size: 30, color: Colors.red),
+                    Column(
+                      mainAxisSize: MainAxisSize.min, // Prevents stretching
+                      crossAxisAlignment: CrossAxisAlignment.end, // Ensures full right alignment
+                      children: [
+                        Tooltip(
+                          message: AppLocalizations.of(context).landlord_fraud,
+                          child: Icon(Icons.gavel, size: 20, color: Colors.red),
+                        ),
+                      ],
                     ),
                 ],
               ),
 
             // Address section
-            const SizedBox(height: 4),
-            if (address.isNotEmpty)
-              Row(
+            Padding(
+              padding: const EdgeInsets.only(top: 4.0),
+              // Adds a top margin of 16 pixels
+              child: Row(
                 children: [
                   Tooltip(
                     message: AppLocalizations.of(context).address,
@@ -551,6 +637,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                   ),
                 ],
               ),
+            ),
 
             // Realtor section
             if (review['realtor'] != null)

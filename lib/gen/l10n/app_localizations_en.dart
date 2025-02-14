@@ -12,6 +12,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'JIPPIN';
 
   @override
+  String get appMission => 'All reviews are anonymous. Share your experience with confidence and help create a fair, fraud-free rental market together.';
+
+  @override
   String get home => 'Home';
 
   @override
@@ -105,6 +108,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get landlord => 'Landlord';
 
   @override
+  String get property => 'Property Name';
+
+  @override
   String get landlord_fraud => 'This landlord has been reported for fraud or deception by the reviewer.';
 
   @override
@@ -127,6 +133,27 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get close => 'Close';
+
+  @override
+  String get created_at => 'Created At';
+
+  @override
+  String get unknown => 'Unknown';
+
+  @override
+  String get unknown_country => 'Unknown Country';
+
+  @override
+  String get unknown_city => 'Unknown City';
+
+  @override
+  String get unknown_landlord => 'Unknown Landlord';
+
+  @override
+  String get unknown_property => '🏠 Unknown Property';
+
+  @override
+  String get no_review_available => 'No review available';
 
   @override
   String get submit_review_title => 'Submit a Review';
@@ -207,7 +234,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get home_intro3_desc2_title => 'Submit Your Story';
 
   @override
-  String get home_intro3_desc3_title => 'Community Support';
+  String get home_intro3_desc3_title => 'Contribute to a Better Rental Market';
+
+  @override
+  String get home_intro3_desc4_title => 'Community Support';
 
   @override
   String get home_intro3_desc1 => 'Read honest reviews from real tenants about their experiences.';
@@ -216,7 +246,73 @@ class AppLocalizationsEn extends AppLocalizations {
   String get home_intro3_desc2 => 'Share your renting journey and help others make informed decisions.';
 
   @override
-  String get home_intro3_desc3 => 'Connect with renters like you to find trusted advice and support.';
+  String get home_intro3_desc3 => 'Contribute to creating a transparent rental market.';
+
+  @override
+  String get home_intro3_desc4 => 'Connect with renters like you to find trusted advice and support.';
+
+  @override
+  String get home_title => 'Rental Review Platform';
+
+  @override
+  String get home_heroTitle => 'Find the truth about your landlord and the place you will call home!';
+
+  @override
+  String get home_heroSubtitle => 'Rental fraud, lease scam, 🔊 noisy neighbors, 😡 ruthless landlords, and real estate agents who deceive tenants 🤯... Tired of it all? Read honest reviews from real tenants and protect yourself from abuse! 🤝 Share your experience to help not only tenants in your city but also renters around the world.';
+
+  @override
+  String get home_searchHint => 'Search landlord or property...';
+
+  @override
+  String get home_readReviews => 'Read Reviews';
+
+  @override
+  String get home_writeReview => 'Write a Review';
+
+  @override
+  String get home_recentReviews => 'Recent Reviews';
+
+  @override
+  String get home_seeMoreReviews => 'See More Reviews →';
+
+  @override
+  String get home_howItWorks => 'How It Works';
+
+  @override
+  String get home_step1Title => 'Search Landlords/Properties';
+
+  @override
+  String get home_step1Desc => 'Look up rental properties and landlords to read real reviews.';
+
+  @override
+  String get home_step2Title => 'Write a Review';
+
+  @override
+  String get home_step2Desc => 'Share your experience to help future tenants make better choices.';
+
+  @override
+  String get home_step3Title => 'Protect Yourself';
+
+  @override
+  String get home_step3Desc => 'Use community-driven insights to avoid rental scams.';
+
+  @override
+  String get home_anonymousReviewsTitle => 'All Reviews Are Anonymous';
+
+  @override
+  String get home_anonymousReviewsDesc => 'Your identity is protected. Share your experience freely and help others stay safe!';
+
+  @override
+  String get home_findLandlordsTitle => 'Find Landlords/Properties';
+
+  @override
+  String get home_findLandlordsDesc => 'Search for properties and see real reviews.';
+
+  @override
+  String get home_writeReviewTitle => 'Write a Review';
+
+  @override
+  String get home_writeReviewDesc => 'Help others by sharing your rental experience.';
 
   @override
   String get about_title => 'Who we are?';

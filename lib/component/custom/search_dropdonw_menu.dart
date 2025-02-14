@@ -33,6 +33,7 @@ class _DropdownMenuSampleState extends State<DropdownMenuSample> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width - 16.0;
     final TextEditingController menuController = TextEditingController();
+    // ignore: unused_local_variable
     MenuItem? selectedMenu;
 
     return Scaffold(

@@ -9,6 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:jippin/theme/theme.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/component/main_navigation.dart';
+import 'package:jippin/models/language.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -51,7 +52,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       locale: localeProvider.locale,
-      supportedLocales: locales.values,
+      supportedLocales: languages.values.map((lang) => lang.locale).toList(),
       localizationsDelegates: [
         AppLocalizations.delegate, // Generated localization
         GlobalMaterialLocalizations.delegate,

@@ -12,6 +12,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get appTitle => '집핀';
 
   @override
+  String get appMission => '모든 리뷰는 익명으로 보호됩니다. 안심하고 경험을 공유하며, 사기 없는 공정한 임대 시장을 함께 만들어가세요.';
+
+  @override
   String get home => '홈';
 
   @override
@@ -105,7 +108,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get landlord => '집주인';
 
   @override
-  String get landlord_fraud => '이 집주인은 리뷰어에 의해 사기 또는 기만 행위로 신고되었습니다.';
+  String get property => '건물 이름';
+
+  @override
+  String get landlord_fraud => '이 집주인은 작성자에 의해 사기 또는 기만 행위로 신고되었습니다.';
 
   @override
   String get address => '주소';
@@ -127,6 +133,27 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get close => '닫기';
+
+  @override
+  String get created_at => '작성일';
+
+  @override
+  String get unknown => '알 수 없음';
+
+  @override
+  String get unknown_country => '알 수 없는 국가';
+
+  @override
+  String get unknown_city => '알 수 없는 도시';
+
+  @override
+  String get unknown_landlord => '알 수 없는 집주인';
+
+  @override
+  String get unknown_property => '🏠 알 수 없는 건물';
+
+  @override
+  String get no_review_available => '리뷰 없음';
 
   @override
   String get submit_review_title => '리뷰 작성하기';
@@ -207,16 +234,85 @@ class AppLocalizationsKo extends AppLocalizations {
   String get home_intro3_desc2_title => '경험 공유';
 
   @override
-  String get home_intro3_desc3_title => '커뮤니티 지원';
+  String get home_intro3_desc3_title => '더 나은 임대 시장 기여';
 
   @override
-  String get home_intro3_desc1 => '실제 세입자들의 솔직한 리뷰를 확인하세요.';
+  String get home_intro3_desc4_title => '커뮤니티 지원';
+
+  @override
+  String get home_intro3_desc1 => '실제 세입자들의 솔직한 후기를 확인하세요.';
 
   @override
   String get home_intro3_desc2 => '임대 경험을 공유하여 다른 사람들이 더 나은 결정을 내릴 수 있도록 도와주세요.';
 
   @override
-  String get home_intro3_desc3 => '다른 세입자들과 소통하며 신뢰할 수 있는 조언과 지원을 받아보세요.';
+  String get home_intro3_desc3 => '투명한 임대 시장을 만드는데 기여해주세요.';
+
+  @override
+  String get home_intro3_desc4 => '다른 세입자들과 소통하며 신뢰할 수 있는 조언과 지원을 받아보세요.';
+
+  @override
+  String get home_title => '임대 리뷰 플랫폼';
+
+  @override
+  String get home_heroTitle => '집주인과 당신이 살 집의 진짜 모습을 확인하세요!';
+
+  @override
+  String get home_heroSubtitle => '전세 사기, 🔊 층간 소음, 😡 악덕 집주인, 그리고 세입자 뒤통수를 치는 부동산과 허위 매물이 점령한 부동산앱들 🤯… 지긋지긋하시죠? 실제 세입자들의 솔직한 후기를 읽고 사기를 예방하세요! 🤝 당신의 경험을 공유하여 국내뿐만 아니라 전 세계 세입자들에게도 도움을 주세요.';
+
+  @override
+  String get home_searchHint => '집주인 또는 건물 검색...';
+
+  @override
+  String get home_readReviews => '리뷰 보기';
+
+  @override
+  String get home_writeReview => '리뷰 작성';
+
+  @override
+  String get home_recentReviews => '최근 리뷰';
+
+  @override
+  String get home_seeMoreReviews => '더 많은 리뷰 보기 →';
+
+  @override
+  String get home_howItWorks => '이용 방법';
+
+  @override
+  String get home_step1Title => '집주인 검색';
+
+  @override
+  String get home_step1Desc => '임대 건물과 집주인 정보를 확인하고 리뷰를 읽어보세요.';
+
+  @override
+  String get home_step2Title => '리뷰 작성';
+
+  @override
+  String get home_step2Desc => '당신의 경험을 공유하여 미래 세입자들에게 도움을 주세요.';
+
+  @override
+  String get home_step3Title => '사기 예방';
+
+  @override
+  String get home_step3Desc => '커뮤니티 기반의 정보를 활용하여 안전한 계약을 맺으세요.';
+
+  @override
+  String get home_anonymousReviewsTitle => '모든 리뷰는 익명으로 보호됩니다';
+
+  @override
+  String get home_anonymousReviewsDesc => '개인정보는 안전하게 보호됩니다. 안심하고 자유롭게 경험을 공유하여, 더 안전한 임대 시장을 만들어가세요!';
+
+  @override
+  String get home_findLandlordsTitle => '집주인/집 검색';
+
+  @override
+  String get home_findLandlordsDesc => '임대 건물을 검색하고 실제 리뷰를 확인하세요.';
+
+  @override
+  String get home_writeReviewTitle => '리뷰 작성';
+
+  @override
+  String get home_writeReviewDesc => '당신의 경험을 공유하여 다른 세입자들에게 도움을 주세요.';
 
   @override
   String get about_title => '집핀 소개';

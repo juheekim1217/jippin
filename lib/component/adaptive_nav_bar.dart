@@ -171,6 +171,8 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         height: 32, // Match the height of other menu items
         width: barWidth ?? widget.screenWidth * 0.25,
         child: TextField(
+          onSubmitted: (value) => _handleSearch(),
+          controller: searchController,
           autofocus: false,
           // Prevents unnecessary refocus
           style: TextStyle(
@@ -199,8 +201,6 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             //fillColor: Colors.grey.shade100,
             //filled: true,
           ),
-          onSubmitted: (value) => _handleSearch(),
-          controller: searchController,
         ),
       ),
     );
@@ -340,7 +340,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                 value: localeProvider.language,
                 onChanged: (Language? newLanguage) {
                   if (newLanguage != null) {
-                    localeProvider.setLanguage(newLanguage); // Update locale
+                    localeProvider.setLocaleLanguage(newLanguage); // Update locale
                   }
                 },
                 icon: const Icon(Icons.arrow_drop_down, size: 16, color: Colors.grey),
