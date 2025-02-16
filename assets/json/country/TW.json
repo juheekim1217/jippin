@@ -1,0 +1,956 @@
+{
+  "states": [
+    {
+      "n": "Changhua",
+      "la": 24.05,
+      "lo": 120.52,
+      "sc": "CHA",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Changhua",
+          "la": 23.95,
+          "lo": 120.49,
+          "fn": "Changhua, Changhua",
+          "s": "Changhua"
+        },
+        {
+          "n": "Yuanlin",
+          "la": 23.96,
+          "lo": 120.58,
+          "fn": "Yuanlin, Changhua",
+          "s": "Changhua"
+        }
+      ]
+    },
+    {
+      "n": "Changhua",
+      "la": 24.05,
+      "lo": 120.52,
+      "sc": "CHA",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Changhua",
+          "la": 23.95,
+          "lo": 120.49,
+          "fn": "Changhua, Changhua",
+          "s": "Changhua"
+        },
+        {
+          "n": "Yuanlin",
+          "la": 23.96,
+          "lo": 120.58,
+          "fn": "Yuanlin, Changhua",
+          "s": "Changhua"
+        }
+      ]
+    },
+    {
+      "n": "Chiayi",
+      "la": 23.45,
+      "lo": 120.26,
+      "sc": "CYI",
+      "t": "city",
+      "cities": [
+        {
+          "n": "Chiayi",
+          "la": 23.48,
+          "lo": 120.45,
+          "fn": "Chiayi, Chiayi",
+          "s": "Chiayi"
+        },
+        {
+          "n": "Pizitou",
+          "la": 23.49,
+          "lo": 120.44,
+          "fn": "Pizitou, Chiayi",
+          "s": "Chiayi"
+        }
+      ]
+    },
+    {
+      "n": "Chiayi",
+      "la": 23.45,
+      "lo": 120.26,
+      "sc": "CYI",
+      "t": "city",
+      "cities": [
+        {
+          "n": "Chiayi",
+          "la": 23.48,
+          "lo": 120.45,
+          "fn": "Chiayi, Chiayi",
+          "s": "Chiayi"
+        },
+        {
+          "n": "Pizitou",
+          "la": 23.49,
+          "lo": 120.44,
+          "fn": "Pizitou, Chiayi",
+          "s": "Chiayi"
+        }
+      ]
+    },
+    {
+      "n": "Chiayi",
+      "la": 23.48,
+      "lo": 120.45,
+      "sc": "CYQ",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Chiayi County",
+          "la": 23.46,
+          "lo": 120.58,
+          "fn": "Chiayi County, Chiayi",
+          "s": "Chiayi"
+        }
+      ]
+    },
+    {
+      "n": "Chiayi",
+      "la": 23.48,
+      "lo": 120.45,
+      "sc": "CYQ",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Chiayi County",
+          "la": 23.46,
+          "lo": 120.58,
+          "fn": "Chiayi County, Chiayi",
+          "s": "Chiayi"
+        }
+      ]
+    },
+    {
+      "n": "Hsinchu",
+      "la": 24.84,
+      "lo": 121.02,
+      "sc": "HSQ",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Hsinchu",
+          "la": 24.8,
+          "lo": 120.97,
+          "fn": "Hsinchu, Hsinchu",
+          "s": "Hsinchu"
+        }
+      ]
+    },
+    {
+      "n": "Hsinchu",
+      "la": 24.84,
+      "lo": 121.02,
+      "sc": "HSQ",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Hsinchu",
+          "la": 24.8,
+          "lo": 120.97,
+          "fn": "Hsinchu, Hsinchu",
+          "s": "Hsinchu"
+        }
+      ]
+    },
+    {
+      "n": "Hsinchu",
+      "la": 24.81,
+      "lo": 120.97,
+      "sc": "HSZ",
+      "t": "city",
+      "cities": [
+        {
+          "n": "Hsinchu County",
+          "la": 24.67,
+          "lo": 121.16,
+          "fn": "Hsinchu County, Hsinchu",
+          "s": "Hsinchu"
+        }
+      ]
+    },
+    {
+      "n": "Hsinchu",
+      "la": 24.81,
+      "lo": 120.97,
+      "sc": "HSZ",
+      "t": "city",
+      "cities": [
+        {
+          "n": "Hsinchu County",
+          "la": 24.67,
+          "lo": 121.16,
+          "fn": "Hsinchu County, Hsinchu",
+          "s": "Hsinchu"
+        }
+      ]
+    },
+    {
+      "n": "Hualien",
+      "la": 23.99,
+      "lo": 121.6,
+      "sc": "HUA",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Hualien",
+          "la": 23.78,
+          "lo": 121.39,
+          "fn": "Hualien, Hualien",
+          "s": "Hualien"
+        },
+        {
+          "n": "Hualien City",
+          "la": 23.98,
+          "lo": 121.6,
+          "fn": "Hualien City, Hualien",
+          "s": "Hualien"
+        }
+      ]
+    },
+    {
+      "n": "Hualien",
+      "la": 23.99,
+      "lo": 121.6,
+      "sc": "HUA",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Hualien",
+          "la": 23.78,
+          "lo": 121.39,
+          "fn": "Hualien, Hualien",
+          "s": "Hualien"
+        },
+        {
+          "n": "Hualien City",
+          "la": 23.98,
+          "lo": 121.6,
+          "fn": "Hualien City, Hualien",
+          "s": "Hualien"
+        }
+      ]
+    },
+    {
+      "n": "Kaohsiung",
+      "la": 22.63,
+      "lo": 120.3,
+      "sc": "KHH",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Kaohsiung",
+          "la": 22.62,
+          "lo": 120.31,
+          "fn": "Kaohsiung, Kaohsiung",
+          "s": "Kaohsiung"
+        }
+      ]
+    },
+    {
+      "n": "Kaohsiung",
+      "la": 22.63,
+      "lo": 120.3,
+      "sc": "KHH",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Kaohsiung",
+          "la": 22.62,
+          "lo": 120.31,
+          "fn": "Kaohsiung, Kaohsiung",
+          "s": "Kaohsiung"
+        }
+      ]
+    },
+    {
+      "n": "Keelung",
+      "la": 25.12,
+      "lo": 121.65,
+      "sc": "KEE",
+      "t": "city",
+      "cities": []
+    },
+    {
+      "n": "Keelung",
+      "la": 25.12,
+      "lo": 121.65,
+      "sc": "KEE",
+      "t": "city",
+      "cities": []
+    },
+    {
+      "n": "Kinmen",
+      "la": 24.35,
+      "lo": 118.33,
+      "sc": "KIN",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Jincheng",
+          "la": 24.43,
+          "lo": 118.32,
+          "fn": "Jincheng, Kinmen",
+          "s": "Kinmen"
+        },
+        {
+          "n": "Kinmen County",
+          "la": 24.45,
+          "lo": 118.39,
+          "fn": "Kinmen County, Kinmen",
+          "s": "Kinmen"
+        }
+      ]
+    },
+    {
+      "n": "Kinmen",
+      "la": 24.35,
+      "lo": 118.33,
+      "sc": "KIN",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Jincheng",
+          "la": 24.43,
+          "lo": 118.32,
+          "fn": "Jincheng, Kinmen",
+          "s": "Kinmen"
+        },
+        {
+          "n": "Kinmen County",
+          "la": 24.45,
+          "lo": 118.39,
+          "fn": "Kinmen County, Kinmen",
+          "s": "Kinmen"
+        }
+      ]
+    },
+    {
+      "n": "Lienchiang",
+      "la": 26.15,
+      "lo": 119.93,
+      "sc": "LIE",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Lienchiang",
+          "la": 26.37,
+          "lo": 120.5,
+          "fn": "Lienchiang, Lienchiang",
+          "s": "Lienchiang"
+        },
+        {
+          "n": "Nangan",
+          "la": 26.15,
+          "lo": 119.93,
+          "fn": "Nangan, Lienchiang",
+          "s": "Lienchiang"
+        }
+      ]
+    },
+    {
+      "n": "Lienchiang",
+      "la": 26.15,
+      "lo": 119.93,
+      "sc": "LIE",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Lienchiang",
+          "la": 26.37,
+          "lo": 120.5,
+          "fn": "Lienchiang, Lienchiang",
+          "s": "Lienchiang"
+        },
+        {
+          "n": "Nangan",
+          "la": 26.15,
+          "lo": 119.93,
+          "fn": "Nangan, Lienchiang",
+          "s": "Lienchiang"
+        }
+      ]
+    },
+    {
+      "n": "Miaoli",
+      "la": 24.56,
+      "lo": 120.82,
+      "sc": "MIA",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Miaoli",
+          "la": 24.49,
+          "lo": 120.91,
+          "fn": "Miaoli, Miaoli",
+          "s": "Miaoli"
+        }
+      ]
+    },
+    {
+      "n": "Miaoli",
+      "la": 24.56,
+      "lo": 120.82,
+      "sc": "MIA",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Miaoli",
+          "la": 24.49,
+          "lo": 120.91,
+          "fn": "Miaoli, Miaoli",
+          "s": "Miaoli"
+        }
+      ]
+    },
+    {
+      "n": "Nantou",
+      "la": 23.96,
+      "lo": 120.97,
+      "sc": "NAN",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Lugu",
+          "la": 23.75,
+          "lo": 120.75,
+          "fn": "Lugu, Nantou",
+          "s": "Nantou"
+        },
+        {
+          "n": "Nantou",
+          "la": 23.83,
+          "lo": 120.93,
+          "fn": "Nantou, Nantou",
+          "s": "Nantou"
+        },
+        {
+          "n": "Puli",
+          "la": 23.97,
+          "lo": 120.97,
+          "fn": "Puli, Nantou",
+          "s": "Nantou"
+        },
+        {
+          "n": "Zhongxing New Village",
+          "la": 23.96,
+          "lo": 120.69,
+          "fn": "Zhongxing New Village, Nantou",
+          "s": "Nantou"
+        }
+      ]
+    },
+    {
+      "n": "Nantou",
+      "la": 23.96,
+      "lo": 120.97,
+      "sc": "NAN",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Lugu",
+          "la": 23.75,
+          "lo": 120.75,
+          "fn": "Lugu, Nantou",
+          "s": "Nantou"
+        },
+        {
+          "n": "Nantou",
+          "la": 23.83,
+          "lo": 120.93,
+          "fn": "Nantou, Nantou",
+          "s": "Nantou"
+        },
+        {
+          "n": "Puli",
+          "la": 23.97,
+          "lo": 120.97,
+          "fn": "Puli, Nantou",
+          "s": "Nantou"
+        },
+        {
+          "n": "Zhongxing New Village",
+          "la": 23.96,
+          "lo": 120.69,
+          "fn": "Zhongxing New Village, Nantou",
+          "s": "Nantou"
+        }
+      ]
+    },
+    {
+      "n": "New Taipei",
+      "la": 24.99,
+      "lo": 121.36,
+      "sc": "NWT",
+      "t": "special municipality",
+      "cities": []
+    },
+    {
+      "n": "New Taipei",
+      "la": 24.99,
+      "lo": 121.36,
+      "sc": "NWT",
+      "t": "special municipality",
+      "cities": []
+    },
+    {
+      "n": "Penghu",
+      "la": 23.57,
+      "lo": 119.58,
+      "sc": "PEN",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Magong",
+          "la": 23.57,
+          "lo": 119.59,
+          "fn": "Magong, Penghu",
+          "s": "Penghu"
+        },
+        {
+          "n": "Penghu County",
+          "la": 23.57,
+          "lo": 119.61,
+          "fn": "Penghu County, Penghu",
+          "s": "Penghu"
+        }
+      ]
+    },
+    {
+      "n": "Penghu",
+      "la": 23.57,
+      "lo": 119.58,
+      "sc": "PEN",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Magong",
+          "la": 23.57,
+          "lo": 119.59,
+          "fn": "Magong, Penghu",
+          "s": "Penghu"
+        },
+        {
+          "n": "Penghu County",
+          "la": 23.57,
+          "lo": 119.61,
+          "fn": "Penghu County, Penghu",
+          "s": "Penghu"
+        }
+      ]
+    },
+    {
+      "n": "Pingtung",
+      "la": 22.55,
+      "lo": 120.55,
+      "sc": "PIF",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Donggang",
+          "la": 22.47,
+          "lo": 120.45,
+          "fn": "Donggang, Pingtung",
+          "s": "Pingtung"
+        },
+        {
+          "n": "Hengchun",
+          "la": 22.0,
+          "lo": 120.74,
+          "fn": "Hengchun, Pingtung",
+          "s": "Pingtung"
+        },
+        {
+          "n": "Pingtung",
+          "la": 22.5,
+          "lo": 120.61,
+          "fn": "Pingtung, Pingtung",
+          "s": "Pingtung"
+        }
+      ]
+    },
+    {
+      "n": "Pingtung",
+      "la": 22.55,
+      "lo": 120.55,
+      "sc": "PIF",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Donggang",
+          "la": 22.47,
+          "lo": 120.45,
+          "fn": "Donggang, Pingtung",
+          "s": "Pingtung"
+        },
+        {
+          "n": "Hengchun",
+          "la": 22.0,
+          "lo": 120.74,
+          "fn": "Hengchun, Pingtung",
+          "s": "Pingtung"
+        },
+        {
+          "n": "Pingtung",
+          "la": 22.5,
+          "lo": 120.61,
+          "fn": "Pingtung, Pingtung",
+          "s": "Pingtung"
+        }
+      ]
+    },
+    {
+      "n": "Taichung",
+      "la": 24.15,
+      "lo": 120.67,
+      "sc": "TXG",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Taichung",
+          "la": 24.15,
+          "lo": 120.68,
+          "fn": "Taichung, Taichung",
+          "s": "Taichung"
+        },
+        {
+          "n": "Taichung City",
+          "la": 24.15,
+          "lo": 120.67,
+          "fn": "Taichung City, Taichung",
+          "s": "Taichung"
+        }
+      ]
+    },
+    {
+      "n": "Taichung",
+      "la": 24.15,
+      "lo": 120.67,
+      "sc": "TXG",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Taichung",
+          "la": 24.15,
+          "lo": 120.68,
+          "fn": "Taichung, Taichung",
+          "s": "Taichung"
+        },
+        {
+          "n": "Taichung City",
+          "la": 24.15,
+          "lo": 120.67,
+          "fn": "Taichung City, Taichung",
+          "s": "Taichung"
+        }
+      ]
+    },
+    {
+      "n": "Tainan",
+      "la": 23.0,
+      "lo": 120.23,
+      "sc": "TNN",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Tainan",
+          "la": 22.99,
+          "lo": 120.21,
+          "fn": "Tainan, Tainan",
+          "s": "Tainan"
+        },
+        {
+          "n": "Yujing",
+          "la": 23.12,
+          "lo": 120.46,
+          "fn": "Yujing, Tainan",
+          "s": "Tainan"
+        }
+      ]
+    },
+    {
+      "n": "Tainan",
+      "la": 23.0,
+      "lo": 120.23,
+      "sc": "TNN",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Tainan",
+          "la": 22.99,
+          "lo": 120.21,
+          "fn": "Tainan, Tainan",
+          "s": "Tainan"
+        },
+        {
+          "n": "Yujing",
+          "la": 23.12,
+          "lo": 120.46,
+          "fn": "Yujing, Tainan",
+          "s": "Tainan"
+        }
+      ]
+    },
+    {
+      "n": "Taipei",
+      "la": 25.03,
+      "lo": 121.57,
+      "sc": "TPE",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Banqiao",
+          "la": 25.01,
+          "lo": 121.47,
+          "fn": "Banqiao, Taipei",
+          "s": "Taipei"
+        },
+        {
+          "n": "Jiufen",
+          "la": 25.11,
+          "lo": 121.84,
+          "fn": "Jiufen, Taipei",
+          "s": "Taipei"
+        },
+        {
+          "n": "Taipei",
+          "la": 25.05,
+          "lo": 121.53,
+          "fn": "Taipei, Taipei",
+          "s": "Taipei"
+        },
+        {
+          "n": "Taipei City",
+          "la": 25.08,
+          "lo": 121.55,
+          "fn": "Taipei City, Taipei",
+          "s": "Taipei"
+        }
+      ]
+    },
+    {
+      "n": "Taipei",
+      "la": 25.03,
+      "lo": 121.57,
+      "sc": "TPE",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Banqiao",
+          "la": 25.01,
+          "lo": 121.47,
+          "fn": "Banqiao, Taipei",
+          "s": "Taipei"
+        },
+        {
+          "n": "Jiufen",
+          "la": 25.11,
+          "lo": 121.84,
+          "fn": "Jiufen, Taipei",
+          "s": "Taipei"
+        },
+        {
+          "n": "Taipei",
+          "la": 25.05,
+          "lo": 121.53,
+          "fn": "Taipei, Taipei",
+          "s": "Taipei"
+        },
+        {
+          "n": "Taipei City",
+          "la": 25.08,
+          "lo": 121.55,
+          "fn": "Taipei City, Taipei",
+          "s": "Taipei"
+        }
+      ]
+    },
+    {
+      "n": "Taitung",
+      "la": 22.8,
+      "lo": 121.07,
+      "sc": "TTT",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Taitung",
+          "la": 22.88,
+          "lo": 121.05,
+          "fn": "Taitung, Taitung",
+          "s": "Taitung"
+        },
+        {
+          "n": "Taitung City",
+          "la": 22.76,
+          "lo": 121.14,
+          "fn": "Taitung City, Taitung",
+          "s": "Taitung"
+        }
+      ]
+    },
+    {
+      "n": "Taitung",
+      "la": 22.8,
+      "lo": 121.07,
+      "sc": "TTT",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Taitung",
+          "la": 22.88,
+          "lo": 121.05,
+          "fn": "Taitung, Taitung",
+          "s": "Taitung"
+        },
+        {
+          "n": "Taitung City",
+          "la": 22.76,
+          "lo": 121.14,
+          "fn": "Taitung City, Taitung",
+          "s": "Taitung"
+        }
+      ]
+    },
+    {
+      "n": "Taoyuan",
+      "la": 24.99,
+      "lo": 121.3,
+      "sc": "TAO",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Daxi",
+          "la": 24.88,
+          "lo": 121.29,
+          "fn": "Daxi, Taoyuan",
+          "s": "Taoyuan"
+        },
+        {
+          "n": "Taoyuan",
+          "la": 24.89,
+          "lo": 121.25,
+          "fn": "Taoyuan, Taoyuan",
+          "s": "Taoyuan"
+        },
+        {
+          "n": "Taoyuan City",
+          "la": 24.99,
+          "lo": 121.3,
+          "fn": "Taoyuan City, Taoyuan",
+          "s": "Taoyuan"
+        }
+      ]
+    },
+    {
+      "n": "Taoyuan",
+      "la": 24.99,
+      "lo": 121.3,
+      "sc": "TAO",
+      "t": "special municipality",
+      "cities": [
+        {
+          "n": "Daxi",
+          "la": 24.88,
+          "lo": 121.29,
+          "fn": "Daxi, Taoyuan",
+          "s": "Taoyuan"
+        },
+        {
+          "n": "Taoyuan",
+          "la": 24.89,
+          "lo": 121.25,
+          "fn": "Taoyuan, Taoyuan",
+          "s": "Taoyuan"
+        },
+        {
+          "n": "Taoyuan City",
+          "la": 24.99,
+          "lo": 121.3,
+          "fn": "Taoyuan City, Taoyuan",
+          "s": "Taoyuan"
+        }
+      ]
+    },
+    {
+      "n": "Yilan",
+      "la": 24.7,
+      "lo": 121.74,
+      "sc": "ILA",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Yilan",
+          "la": 24.54,
+          "lo": 121.63,
+          "fn": "Yilan, Yilan",
+          "s": "Yilan"
+        }
+      ]
+    },
+    {
+      "n": "Yilan",
+      "la": 24.7,
+      "lo": 121.74,
+      "sc": "ILA",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Yilan",
+          "la": 24.54,
+          "lo": 121.63,
+          "fn": "Yilan, Yilan",
+          "s": "Yilan"
+        }
+      ]
+    },
+    {
+      "n": "Yunlin",
+      "la": 23.71,
+      "lo": 120.43,
+      "sc": "YUN",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Douliu",
+          "la": 23.71,
+          "lo": 120.54,
+          "fn": "Douliu, Yunlin",
+          "s": "Yunlin"
+        },
+        {
+          "n": "Yunlin",
+          "la": 23.71,
+          "lo": 120.38,
+          "fn": "Yunlin, Yunlin",
+          "s": "Yunlin"
+        }
+      ]
+    },
+    {
+      "n": "Yunlin",
+      "la": 23.71,
+      "lo": 120.43,
+      "sc": "YUN",
+      "t": "county",
+      "cities": [
+        {
+          "n": "Douliu",
+          "la": 23.71,
+          "lo": 120.54,
+          "fn": "Douliu, Yunlin",
+          "s": "Yunlin"
+        },
+        {
+          "n": "Yunlin",
+          "la": 23.71,
+          "lo": 120.38,
+          "fn": "Yunlin, Yunlin",
+          "s": "Yunlin"
+        }
+      ]
+    }
+  ]
+}

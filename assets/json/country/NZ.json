@@ -1,0 +1,2536 @@
+{
+  "states": [
+    {
+      "n": "Auckland",
+      "la": -36.67,
+      "lo": 174.77,
+      "sc": "AUK",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Auckland",
+          "la": -36.85,
+          "lo": 174.76,
+          "fn": "Auckland, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Mangere",
+          "la": -36.97,
+          "lo": 174.8,
+          "fn": "Mangere, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Manukau City",
+          "la": -36.99,
+          "lo": 174.88,
+          "fn": "Manukau City, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Muriwai Beach",
+          "la": -36.82,
+          "lo": 174.45,
+          "fn": "Muriwai Beach, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Murrays Bay",
+          "la": -36.73,
+          "lo": 174.75,
+          "fn": "Murrays Bay, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "North Shore",
+          "la": -36.8,
+          "lo": 174.75,
+          "fn": "North Shore, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Pakuranga",
+          "la": -36.88,
+          "lo": 174.92,
+          "fn": "Pakuranga, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Papakura",
+          "la": -37.07,
+          "lo": 174.94,
+          "fn": "Papakura, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Parakai",
+          "la": -36.65,
+          "lo": 174.43,
+          "fn": "Parakai, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Pukekohe East",
+          "la": -37.2,
+          "lo": 174.95,
+          "fn": "Pukekohe East, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Red Hill",
+          "la": -37.06,
+          "lo": 174.97,
+          "fn": "Red Hill, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Rosebank",
+          "la": -36.87,
+          "lo": 174.67,
+          "fn": "Rosebank, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Rothesay Bay",
+          "la": -36.73,
+          "lo": 174.74,
+          "fn": "Rothesay Bay, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Takanini",
+          "la": -37.05,
+          "lo": 174.9,
+          "fn": "Takanini, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Tamaki",
+          "la": -36.89,
+          "lo": 174.86,
+          "fn": "Tamaki, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Titirangi",
+          "la": -36.94,
+          "lo": 174.66,
+          "fn": "Titirangi, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Waitakere",
+          "la": -36.92,
+          "lo": 174.66,
+          "fn": "Waitakere, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Waiuku",
+          "la": -37.25,
+          "lo": 174.73,
+          "fn": "Waiuku, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Warkworth",
+          "la": -36.4,
+          "lo": 174.67,
+          "fn": "Warkworth, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Wellsford",
+          "la": -36.28,
+          "lo": 174.52,
+          "fn": "Wellsford, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Wiri",
+          "la": -37.0,
+          "lo": 174.86,
+          "fn": "Wiri, Auckland",
+          "s": "Auckland"
+        }
+      ]
+    },
+    {
+      "n": "Auckland",
+      "la": -36.67,
+      "lo": 174.77,
+      "sc": "AUK",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Auckland",
+          "la": -36.85,
+          "lo": 174.76,
+          "fn": "Auckland, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Mangere",
+          "la": -36.97,
+          "lo": 174.8,
+          "fn": "Mangere, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Manukau City",
+          "la": -36.99,
+          "lo": 174.88,
+          "fn": "Manukau City, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Muriwai Beach",
+          "la": -36.82,
+          "lo": 174.45,
+          "fn": "Muriwai Beach, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Murrays Bay",
+          "la": -36.73,
+          "lo": 174.75,
+          "fn": "Murrays Bay, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "North Shore",
+          "la": -36.8,
+          "lo": 174.75,
+          "fn": "North Shore, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Pakuranga",
+          "la": -36.88,
+          "lo": 174.92,
+          "fn": "Pakuranga, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Papakura",
+          "la": -37.07,
+          "lo": 174.94,
+          "fn": "Papakura, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Parakai",
+          "la": -36.65,
+          "lo": 174.43,
+          "fn": "Parakai, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Pukekohe East",
+          "la": -37.2,
+          "lo": 174.95,
+          "fn": "Pukekohe East, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Red Hill",
+          "la": -37.06,
+          "lo": 174.97,
+          "fn": "Red Hill, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Rosebank",
+          "la": -36.87,
+          "lo": 174.67,
+          "fn": "Rosebank, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Rothesay Bay",
+          "la": -36.73,
+          "lo": 174.74,
+          "fn": "Rothesay Bay, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Takanini",
+          "la": -37.05,
+          "lo": 174.9,
+          "fn": "Takanini, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Tamaki",
+          "la": -36.89,
+          "lo": 174.86,
+          "fn": "Tamaki, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Titirangi",
+          "la": -36.94,
+          "lo": 174.66,
+          "fn": "Titirangi, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Waitakere",
+          "la": -36.92,
+          "lo": 174.66,
+          "fn": "Waitakere, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Waiuku",
+          "la": -37.25,
+          "lo": 174.73,
+          "fn": "Waiuku, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Warkworth",
+          "la": -36.4,
+          "lo": 174.67,
+          "fn": "Warkworth, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Wellsford",
+          "la": -36.28,
+          "lo": 174.52,
+          "fn": "Wellsford, Auckland",
+          "s": "Auckland"
+        },
+        {
+          "n": "Wiri",
+          "la": -37.0,
+          "lo": 174.86,
+          "fn": "Wiri, Auckland",
+          "s": "Auckland"
+        }
+      ]
+    },
+    {
+      "n": "Bay of Plenty",
+      "la": -37.42,
+      "lo": 176.74,
+      "sc": "BOP",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Edgecumbe",
+          "la": -37.98,
+          "lo": 176.83,
+          "fn": "Edgecumbe, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Katikati",
+          "la": -37.55,
+          "lo": 175.92,
+          "fn": "Katikati, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Kawerau",
+          "la": -38.1,
+          "lo": 176.7,
+          "fn": "Kawerau, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Maketu",
+          "la": -37.77,
+          "lo": 176.45,
+          "fn": "Maketu, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Murupara",
+          "la": -38.47,
+          "lo": 176.7,
+          "fn": "Murupara, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Opotiki",
+          "la": -38.01,
+          "lo": 177.29,
+          "fn": "Opotiki, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Rotorua",
+          "la": -38.14,
+          "lo": 176.25,
+          "fn": "Rotorua, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Tauranga",
+          "la": -37.69,
+          "lo": 176.17,
+          "fn": "Tauranga, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Waihi Beach",
+          "la": -37.4,
+          "lo": 175.93,
+          "fn": "Waihi Beach, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Whakatane",
+          "la": -37.96,
+          "lo": 176.99,
+          "fn": "Whakatane, Bay of Plenty",
+          "s": "Bay of Plenty"
+        }
+      ]
+    },
+    {
+      "n": "Bay of Plenty",
+      "la": -37.42,
+      "lo": 176.74,
+      "sc": "BOP",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Edgecumbe",
+          "la": -37.98,
+          "lo": 176.83,
+          "fn": "Edgecumbe, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Katikati",
+          "la": -37.55,
+          "lo": 175.92,
+          "fn": "Katikati, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Kawerau",
+          "la": -38.1,
+          "lo": 176.7,
+          "fn": "Kawerau, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Maketu",
+          "la": -37.77,
+          "lo": 176.45,
+          "fn": "Maketu, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Murupara",
+          "la": -38.47,
+          "lo": 176.7,
+          "fn": "Murupara, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Opotiki",
+          "la": -38.01,
+          "lo": 177.29,
+          "fn": "Opotiki, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Rotorua",
+          "la": -38.14,
+          "lo": 176.25,
+          "fn": "Rotorua, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Tauranga",
+          "la": -37.69,
+          "lo": 176.17,
+          "fn": "Tauranga, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Waihi Beach",
+          "la": -37.4,
+          "lo": 175.93,
+          "fn": "Waihi Beach, Bay of Plenty",
+          "s": "Bay of Plenty"
+        },
+        {
+          "n": "Whakatane",
+          "la": -37.96,
+          "lo": 176.99,
+          "fn": "Whakatane, Bay of Plenty",
+          "s": "Bay of Plenty"
+        }
+      ]
+    },
+    {
+      "n": "Canterbury",
+      "la": -43.75,
+      "lo": 171.16,
+      "sc": "CAN",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Amberley",
+          "la": -43.16,
+          "lo": 172.73,
+          "fn": "Amberley, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Ashburton",
+          "la": -43.9,
+          "lo": 171.73,
+          "fn": "Ashburton, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Ashburton District",
+          "la": -43.9,
+          "lo": 171.75,
+          "fn": "Ashburton District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Burnham",
+          "la": -43.62,
+          "lo": 172.32,
+          "fn": "Burnham, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Christchurch",
+          "la": -43.53,
+          "lo": 172.63,
+          "fn": "Christchurch, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Christchurch City",
+          "la": -43.65,
+          "lo": 172.75,
+          "fn": "Christchurch City, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Darfield",
+          "la": -43.48,
+          "lo": 172.12,
+          "fn": "Darfield, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Geraldine",
+          "la": -44.09,
+          "lo": 171.24,
+          "fn": "Geraldine, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Kaiapoi",
+          "la": -43.38,
+          "lo": 172.64,
+          "fn": "Kaiapoi, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Leeston",
+          "la": -43.77,
+          "lo": 172.3,
+          "fn": "Leeston, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Lincoln",
+          "la": -43.65,
+          "lo": 172.48,
+          "fn": "Lincoln, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Mackenzie District",
+          "la": -43.94,
+          "lo": 170.52,
+          "fn": "Mackenzie District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Methven",
+          "la": -43.63,
+          "lo": 171.65,
+          "fn": "Methven, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Oxford",
+          "la": -43.3,
+          "lo": 172.18,
+          "fn": "Oxford, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Pleasant Point",
+          "la": -44.27,
+          "lo": 171.13,
+          "fn": "Pleasant Point, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Prebbleton",
+          "la": -43.58,
+          "lo": 172.52,
+          "fn": "Prebbleton, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Rakaia",
+          "la": -43.75,
+          "lo": 172.02,
+          "fn": "Rakaia, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Rolleston",
+          "la": -43.58,
+          "lo": 172.38,
+          "fn": "Rolleston, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Selwyn District",
+          "la": -43.32,
+          "lo": 171.87,
+          "fn": "Selwyn District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Timaru",
+          "la": -44.4,
+          "lo": 171.25,
+          "fn": "Timaru, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Timaru District",
+          "la": -44.4,
+          "lo": 171.22,
+          "fn": "Timaru District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Tinwald",
+          "la": -43.92,
+          "lo": 171.72,
+          "fn": "Tinwald, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Waimakariri District",
+          "la": -43.21,
+          "lo": 172.33,
+          "fn": "Waimakariri District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Woodend",
+          "la": -43.32,
+          "lo": 172.67,
+          "fn": "Woodend, Canterbury",
+          "s": "Canterbury"
+        }
+      ]
+    },
+    {
+      "n": "Canterbury",
+      "la": -43.75,
+      "lo": 171.16,
+      "sc": "CAN",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Amberley",
+          "la": -43.16,
+          "lo": 172.73,
+          "fn": "Amberley, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Ashburton",
+          "la": -43.9,
+          "lo": 171.73,
+          "fn": "Ashburton, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Ashburton District",
+          "la": -43.9,
+          "lo": 171.75,
+          "fn": "Ashburton District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Burnham",
+          "la": -43.62,
+          "lo": 172.32,
+          "fn": "Burnham, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Christchurch",
+          "la": -43.53,
+          "lo": 172.63,
+          "fn": "Christchurch, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Christchurch City",
+          "la": -43.65,
+          "lo": 172.75,
+          "fn": "Christchurch City, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Darfield",
+          "la": -43.48,
+          "lo": 172.12,
+          "fn": "Darfield, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Geraldine",
+          "la": -44.09,
+          "lo": 171.24,
+          "fn": "Geraldine, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Kaiapoi",
+          "la": -43.38,
+          "lo": 172.64,
+          "fn": "Kaiapoi, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Leeston",
+          "la": -43.77,
+          "lo": 172.3,
+          "fn": "Leeston, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Lincoln",
+          "la": -43.65,
+          "lo": 172.48,
+          "fn": "Lincoln, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Mackenzie District",
+          "la": -43.94,
+          "lo": 170.52,
+          "fn": "Mackenzie District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Methven",
+          "la": -43.63,
+          "lo": 171.65,
+          "fn": "Methven, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Oxford",
+          "la": -43.3,
+          "lo": 172.18,
+          "fn": "Oxford, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Pleasant Point",
+          "la": -44.27,
+          "lo": 171.13,
+          "fn": "Pleasant Point, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Prebbleton",
+          "la": -43.58,
+          "lo": 172.52,
+          "fn": "Prebbleton, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Rakaia",
+          "la": -43.75,
+          "lo": 172.02,
+          "fn": "Rakaia, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Rolleston",
+          "la": -43.58,
+          "lo": 172.38,
+          "fn": "Rolleston, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Selwyn District",
+          "la": -43.32,
+          "lo": 171.87,
+          "fn": "Selwyn District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Timaru",
+          "la": -44.4,
+          "lo": 171.25,
+          "fn": "Timaru, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Timaru District",
+          "la": -44.4,
+          "lo": 171.22,
+          "fn": "Timaru District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Tinwald",
+          "la": -43.92,
+          "lo": 171.72,
+          "fn": "Tinwald, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Waimakariri District",
+          "la": -43.21,
+          "lo": 172.33,
+          "fn": "Waimakariri District, Canterbury",
+          "s": "Canterbury"
+        },
+        {
+          "n": "Woodend",
+          "la": -43.32,
+          "lo": 172.67,
+          "fn": "Woodend, Canterbury",
+          "s": "Canterbury"
+        }
+      ]
+    },
+    {
+      "n": "Chatham Islands",
+      "la": -44.01,
+      "lo": -176.54,
+      "sc": "CIT",
+      "t": "special island authority",
+      "cities": [
+        {
+          "n": "Waitangi",
+          "la": -43.95,
+          "lo": -176.56,
+          "fn": "Waitangi, Chatham Islands",
+          "s": "Chatham Islands"
+        }
+      ]
+    },
+    {
+      "n": "Chatham Islands",
+      "la": -44.01,
+      "lo": -176.54,
+      "sc": "CIT",
+      "t": "special island authority",
+      "cities": [
+        {
+          "n": "Waitangi",
+          "la": -43.95,
+          "lo": -176.56,
+          "fn": "Waitangi, Chatham Islands",
+          "s": "Chatham Islands"
+        }
+      ]
+    },
+    {
+      "n": "Gisborne",
+      "la": -38.14,
+      "lo": 178.32,
+      "sc": "GIS",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Gisborne",
+          "la": -38.65,
+          "lo": 178.0,
+          "fn": "Gisborne, Gisborne",
+          "s": "Gisborne"
+        }
+      ]
+    },
+    {
+      "n": "Gisborne",
+      "la": -38.14,
+      "lo": 178.32,
+      "sc": "GIS",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Gisborne",
+          "la": -38.65,
+          "lo": 178.0,
+          "fn": "Gisborne, Gisborne",
+          "s": "Gisborne"
+        }
+      ]
+    },
+    {
+      "n": "Hawke's Bay",
+      "la": -39.6,
+      "lo": 176.58,
+      "sc": "HKB",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Hastings",
+          "la": -39.64,
+          "lo": 176.85,
+          "fn": "Hastings, Hawke's Bay",
+          "s": "Hawke's Bay"
+        },
+        {
+          "n": "Napier",
+          "la": -39.49,
+          "lo": 176.91,
+          "fn": "Napier, Hawke's Bay",
+          "s": "Hawke's Bay"
+        },
+        {
+          "n": "Taradale",
+          "la": -39.53,
+          "lo": 176.85,
+          "fn": "Taradale, Hawke's Bay",
+          "s": "Hawke's Bay"
+        },
+        {
+          "n": "Wairoa",
+          "la": -39.03,
+          "lo": 177.37,
+          "fn": "Wairoa, Hawke's Bay",
+          "s": "Hawke's Bay"
+        }
+      ]
+    },
+    {
+      "n": "Hawke's Bay",
+      "la": -39.6,
+      "lo": 176.58,
+      "sc": "HKB",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Hastings",
+          "la": -39.64,
+          "lo": 176.85,
+          "fn": "Hastings, Hawke's Bay",
+          "s": "Hawke's Bay"
+        },
+        {
+          "n": "Napier",
+          "la": -39.49,
+          "lo": 176.91,
+          "fn": "Napier, Hawke's Bay",
+          "s": "Hawke's Bay"
+        },
+        {
+          "n": "Taradale",
+          "la": -39.53,
+          "lo": 176.85,
+          "fn": "Taradale, Hawke's Bay",
+          "s": "Hawke's Bay"
+        },
+        {
+          "n": "Wairoa",
+          "la": -39.03,
+          "lo": 177.37,
+          "fn": "Wairoa, Hawke's Bay",
+          "s": "Hawke's Bay"
+        }
+      ]
+    },
+    {
+      "n": "Manawatu-Wanganui",
+      "la": -39.73,
+      "lo": 175.44,
+      "sc": "MWT",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Bulls",
+          "la": -40.17,
+          "lo": 175.38,
+          "fn": "Bulls, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Foxton",
+          "la": -40.47,
+          "lo": 175.3,
+          "fn": "Foxton, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Horowhenua District",
+          "la": -40.58,
+          "lo": 175.38,
+          "fn": "Horowhenua District, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Levin",
+          "la": -40.63,
+          "lo": 175.28,
+          "fn": "Levin, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Manawatu District",
+          "la": -40.12,
+          "lo": 175.67,
+          "fn": "Manawatu District, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Palmerston North",
+          "la": -40.36,
+          "lo": 175.61,
+          "fn": "Palmerston North, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Waiouru",
+          "la": -39.48,
+          "lo": 175.67,
+          "fn": "Waiouru, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Wanganui",
+          "la": -39.93,
+          "lo": 175.05,
+          "fn": "Wanganui, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        }
+      ]
+    },
+    {
+      "n": "Manawatu-Wanganui",
+      "la": -39.73,
+      "lo": 175.44,
+      "sc": "MWT",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Bulls",
+          "la": -40.17,
+          "lo": 175.38,
+          "fn": "Bulls, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Foxton",
+          "la": -40.47,
+          "lo": 175.3,
+          "fn": "Foxton, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Horowhenua District",
+          "la": -40.58,
+          "lo": 175.38,
+          "fn": "Horowhenua District, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Levin",
+          "la": -40.63,
+          "lo": 175.28,
+          "fn": "Levin, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Manawatu District",
+          "la": -40.12,
+          "lo": 175.67,
+          "fn": "Manawatu District, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Palmerston North",
+          "la": -40.36,
+          "lo": 175.61,
+          "fn": "Palmerston North, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Waiouru",
+          "la": -39.48,
+          "lo": 175.67,
+          "fn": "Waiouru, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        },
+        {
+          "n": "Wanganui",
+          "la": -39.93,
+          "lo": 175.05,
+          "fn": "Wanganui, Manawatu-Wanganui",
+          "s": "Manawatu-Wanganui"
+        }
+      ]
+    },
+    {
+      "n": "Marlborough",
+      "la": -41.59,
+      "lo": 173.76,
+      "sc": "MBH",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Blenheim",
+          "la": -41.52,
+          "lo": 173.95,
+          "fn": "Blenheim, Marlborough",
+          "s": "Marlborough"
+        },
+        {
+          "n": "Picton",
+          "la": -41.29,
+          "lo": 174.01,
+          "fn": "Picton, Marlborough",
+          "s": "Marlborough"
+        }
+      ]
+    },
+    {
+      "n": "Marlborough",
+      "la": -41.59,
+      "lo": 173.76,
+      "sc": "MBH",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Blenheim",
+          "la": -41.52,
+          "lo": 173.95,
+          "fn": "Blenheim, Marlborough",
+          "s": "Marlborough"
+        },
+        {
+          "n": "Picton",
+          "la": -41.29,
+          "lo": 174.01,
+          "fn": "Picton, Marlborough",
+          "s": "Marlborough"
+        }
+      ]
+    },
+    {
+      "n": "Nelson",
+      "la": -41.3,
+      "lo": 173.24,
+      "sc": "NSN",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Nelson",
+          "la": -41.27,
+          "lo": 173.28,
+          "fn": "Nelson, Nelson",
+          "s": "Nelson"
+        }
+      ]
+    },
+    {
+      "n": "Nelson",
+      "la": -41.3,
+      "lo": 173.24,
+      "sc": "NSN",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Nelson",
+          "la": -41.27,
+          "lo": 173.28,
+          "fn": "Nelson, Nelson",
+          "s": "Nelson"
+        }
+      ]
+    },
+    {
+      "n": "Northland",
+      "la": -35.41,
+      "lo": 173.93,
+      "sc": "NTL",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Ahipara",
+          "la": -35.17,
+          "lo": 173.17,
+          "fn": "Ahipara, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Dargaville",
+          "la": -35.93,
+          "lo": 173.88,
+          "fn": "Dargaville, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Far North District",
+          "la": -35.03,
+          "lo": 173.49,
+          "fn": "Far North District, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Kaipara District",
+          "la": -36.0,
+          "lo": 174.05,
+          "fn": "Kaipara District, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Kaitaia",
+          "la": -35.11,
+          "lo": 173.26,
+          "fn": "Kaitaia, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Kawakawa",
+          "la": -35.38,
+          "lo": 174.07,
+          "fn": "Kawakawa, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Kerikeri",
+          "la": -35.23,
+          "lo": 173.95,
+          "fn": "Kerikeri, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Maungatapere",
+          "la": -35.75,
+          "lo": 174.2,
+          "fn": "Maungatapere, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Moerewa",
+          "la": -35.38,
+          "lo": 174.03,
+          "fn": "Moerewa, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Ngunguru",
+          "la": -35.62,
+          "lo": 174.5,
+          "fn": "Ngunguru, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Paihia",
+          "la": -35.28,
+          "lo": 174.09,
+          "fn": "Paihia, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Ruakaka",
+          "la": -35.91,
+          "lo": 174.45,
+          "fn": "Ruakaka, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Taipa",
+          "la": -35.0,
+          "lo": 173.47,
+          "fn": "Taipa, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Waimate North",
+          "la": -35.32,
+          "lo": 173.88,
+          "fn": "Waimate North, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Whangarei",
+          "la": -35.73,
+          "lo": 174.32,
+          "fn": "Whangarei, Northland",
+          "s": "Northland"
+        }
+      ]
+    },
+    {
+      "n": "Northland",
+      "la": -35.41,
+      "lo": 173.93,
+      "sc": "NTL",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Ahipara",
+          "la": -35.17,
+          "lo": 173.17,
+          "fn": "Ahipara, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Dargaville",
+          "la": -35.93,
+          "lo": 173.88,
+          "fn": "Dargaville, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Far North District",
+          "la": -35.03,
+          "lo": 173.49,
+          "fn": "Far North District, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Kaipara District",
+          "la": -36.0,
+          "lo": 174.05,
+          "fn": "Kaipara District, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Kaitaia",
+          "la": -35.11,
+          "lo": 173.26,
+          "fn": "Kaitaia, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Kawakawa",
+          "la": -35.38,
+          "lo": 174.07,
+          "fn": "Kawakawa, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Kerikeri",
+          "la": -35.23,
+          "lo": 173.95,
+          "fn": "Kerikeri, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Maungatapere",
+          "la": -35.75,
+          "lo": 174.2,
+          "fn": "Maungatapere, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Moerewa",
+          "la": -35.38,
+          "lo": 174.03,
+          "fn": "Moerewa, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Ngunguru",
+          "la": -35.62,
+          "lo": 174.5,
+          "fn": "Ngunguru, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Paihia",
+          "la": -35.28,
+          "lo": 174.09,
+          "fn": "Paihia, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Ruakaka",
+          "la": -35.91,
+          "lo": 174.45,
+          "fn": "Ruakaka, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Taipa",
+          "la": -35.0,
+          "lo": 173.47,
+          "fn": "Taipa, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Waimate North",
+          "la": -35.32,
+          "lo": 173.88,
+          "fn": "Waimate North, Northland",
+          "s": "Northland"
+        },
+        {
+          "n": "Whangarei",
+          "la": -35.73,
+          "lo": 174.32,
+          "fn": "Whangarei, Northland",
+          "s": "Northland"
+        }
+      ]
+    },
+    {
+      "n": "Otago",
+      "la": -45.48,
+      "lo": 170.15,
+      "sc": "OTA",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Arrowtown",
+          "la": -44.94,
+          "lo": 168.81,
+          "fn": "Arrowtown, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Balclutha",
+          "la": -46.23,
+          "lo": 169.75,
+          "fn": "Balclutha, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Clutha District",
+          "la": -46.04,
+          "lo": 169.61,
+          "fn": "Clutha District, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Cromwell",
+          "la": -45.04,
+          "lo": 169.2,
+          "fn": "Cromwell, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Dunedin",
+          "la": -45.87,
+          "lo": 170.5,
+          "fn": "Dunedin, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Kingston",
+          "la": -45.33,
+          "lo": 168.71,
+          "fn": "Kingston, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Milton",
+          "la": -46.12,
+          "lo": 169.97,
+          "fn": "Milton, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Oamaru",
+          "la": -45.1,
+          "lo": 170.97,
+          "fn": "Oamaru, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Papatowai",
+          "la": -46.56,
+          "lo": 169.47,
+          "fn": "Papatowai, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Portobello",
+          "la": -45.85,
+          "lo": 170.65,
+          "fn": "Portobello, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Queenstown",
+          "la": -45.03,
+          "lo": 168.66,
+          "fn": "Queenstown, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Wanaka",
+          "la": -44.7,
+          "lo": 169.15,
+          "fn": "Wanaka, Otago",
+          "s": "Otago"
+        }
+      ]
+    },
+    {
+      "n": "Otago",
+      "la": -45.48,
+      "lo": 170.15,
+      "sc": "OTA",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Arrowtown",
+          "la": -44.94,
+          "lo": 168.81,
+          "fn": "Arrowtown, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Balclutha",
+          "la": -46.23,
+          "lo": 169.75,
+          "fn": "Balclutha, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Clutha District",
+          "la": -46.04,
+          "lo": 169.61,
+          "fn": "Clutha District, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Cromwell",
+          "la": -45.04,
+          "lo": 169.2,
+          "fn": "Cromwell, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Dunedin",
+          "la": -45.87,
+          "lo": 170.5,
+          "fn": "Dunedin, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Kingston",
+          "la": -45.33,
+          "lo": 168.71,
+          "fn": "Kingston, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Milton",
+          "la": -46.12,
+          "lo": 169.97,
+          "fn": "Milton, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Oamaru",
+          "la": -45.1,
+          "lo": 170.97,
+          "fn": "Oamaru, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Papatowai",
+          "la": -46.56,
+          "lo": 169.47,
+          "fn": "Papatowai, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Portobello",
+          "la": -45.85,
+          "lo": 170.65,
+          "fn": "Portobello, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Queenstown",
+          "la": -45.03,
+          "lo": 168.66,
+          "fn": "Queenstown, Otago",
+          "s": "Otago"
+        },
+        {
+          "n": "Wanaka",
+          "la": -44.7,
+          "lo": 169.15,
+          "fn": "Wanaka, Otago",
+          "s": "Otago"
+        }
+      ]
+    },
+    {
+      "n": "Southland",
+      "la": -45.85,
+      "lo": 167.68,
+      "sc": "STL",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Bluff",
+          "la": -46.6,
+          "lo": 168.33,
+          "fn": "Bluff, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Gore",
+          "la": -46.1,
+          "lo": 168.94,
+          "fn": "Gore, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Invercargill",
+          "la": -46.4,
+          "lo": 168.35,
+          "fn": "Invercargill, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Riverton",
+          "la": -46.35,
+          "lo": 168.02,
+          "fn": "Riverton, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Southland District",
+          "la": -45.77,
+          "lo": 167.85,
+          "fn": "Southland District, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Te Anau",
+          "la": -45.42,
+          "lo": 167.72,
+          "fn": "Te Anau, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Winton",
+          "la": -46.15,
+          "lo": 168.33,
+          "fn": "Winton, Southland",
+          "s": "Southland"
+        }
+      ]
+    },
+    {
+      "n": "Southland",
+      "la": -45.85,
+      "lo": 167.68,
+      "sc": "STL",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Bluff",
+          "la": -46.6,
+          "lo": 168.33,
+          "fn": "Bluff, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Gore",
+          "la": -46.1,
+          "lo": 168.94,
+          "fn": "Gore, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Invercargill",
+          "la": -46.4,
+          "lo": 168.35,
+          "fn": "Invercargill, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Riverton",
+          "la": -46.35,
+          "lo": 168.02,
+          "fn": "Riverton, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Southland District",
+          "la": -45.77,
+          "lo": 167.85,
+          "fn": "Southland District, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Te Anau",
+          "la": -45.42,
+          "lo": 167.72,
+          "fn": "Te Anau, Southland",
+          "s": "Southland"
+        },
+        {
+          "n": "Winton",
+          "la": -46.15,
+          "lo": 168.33,
+          "fn": "Winton, Southland",
+          "s": "Southland"
+        }
+      ]
+    },
+    {
+      "n": "Taranaki",
+      "la": -39.35,
+      "lo": 174.44,
+      "sc": "TKI",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Eltham",
+          "la": -39.43,
+          "lo": 174.3,
+          "fn": "Eltham, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Hawera",
+          "la": -39.59,
+          "lo": 174.28,
+          "fn": "Hawera, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "New Plymouth",
+          "la": -39.07,
+          "lo": 174.08,
+          "fn": "New Plymouth, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "New Plymouth District",
+          "la": -39.06,
+          "lo": 174.1,
+          "fn": "New Plymouth District, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Opunake",
+          "la": -39.46,
+          "lo": 173.86,
+          "fn": "Opunake, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Patea",
+          "la": -39.76,
+          "lo": 174.48,
+          "fn": "Patea, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "South Taranaki District",
+          "la": -39.52,
+          "lo": 174.37,
+          "fn": "South Taranaki District, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Stratford",
+          "la": -39.32,
+          "lo": 174.26,
+          "fn": "Stratford, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Waitara",
+          "la": -39.0,
+          "lo": 174.24,
+          "fn": "Waitara, Taranaki",
+          "s": "Taranaki"
+        }
+      ]
+    },
+    {
+      "n": "Taranaki",
+      "la": -39.35,
+      "lo": 174.44,
+      "sc": "TKI",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Eltham",
+          "la": -39.43,
+          "lo": 174.3,
+          "fn": "Eltham, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Hawera",
+          "la": -39.59,
+          "lo": 174.28,
+          "fn": "Hawera, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "New Plymouth",
+          "la": -39.07,
+          "lo": 174.08,
+          "fn": "New Plymouth, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "New Plymouth District",
+          "la": -39.06,
+          "lo": 174.1,
+          "fn": "New Plymouth District, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Opunake",
+          "la": -39.46,
+          "lo": 173.86,
+          "fn": "Opunake, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Patea",
+          "la": -39.76,
+          "lo": 174.48,
+          "fn": "Patea, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "South Taranaki District",
+          "la": -39.52,
+          "lo": 174.37,
+          "fn": "South Taranaki District, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Stratford",
+          "la": -39.32,
+          "lo": 174.26,
+          "fn": "Stratford, Taranaki",
+          "s": "Taranaki"
+        },
+        {
+          "n": "Waitara",
+          "la": -39.0,
+          "lo": 174.24,
+          "fn": "Waitara, Taranaki",
+          "s": "Taranaki"
+        }
+      ]
+    },
+    {
+      "n": "Tasman",
+      "la": -41.46,
+      "lo": 172.82,
+      "sc": "TAS",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Brightwater",
+          "la": -41.38,
+          "lo": 173.12,
+          "fn": "Brightwater, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Mapua",
+          "la": -41.25,
+          "lo": 173.1,
+          "fn": "Mapua, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Motueka",
+          "la": -41.13,
+          "lo": 173.02,
+          "fn": "Motueka, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Richmond",
+          "la": -41.33,
+          "lo": 173.18,
+          "fn": "Richmond, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Takaka",
+          "la": -40.85,
+          "lo": 172.8,
+          "fn": "Takaka, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Wakefield",
+          "la": -41.4,
+          "lo": 173.05,
+          "fn": "Wakefield, Tasman",
+          "s": "Tasman"
+        }
+      ]
+    },
+    {
+      "n": "Tasman",
+      "la": -41.46,
+      "lo": 172.82,
+      "sc": "TAS",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Brightwater",
+          "la": -41.38,
+          "lo": 173.12,
+          "fn": "Brightwater, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Mapua",
+          "la": -41.25,
+          "lo": 173.1,
+          "fn": "Mapua, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Motueka",
+          "la": -41.13,
+          "lo": 173.02,
+          "fn": "Motueka, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Richmond",
+          "la": -41.33,
+          "lo": 173.18,
+          "fn": "Richmond, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Takaka",
+          "la": -40.85,
+          "lo": 172.8,
+          "fn": "Takaka, Tasman",
+          "s": "Tasman"
+        },
+        {
+          "n": "Wakefield",
+          "la": -41.4,
+          "lo": 173.05,
+          "fn": "Wakefield, Tasman",
+          "s": "Tasman"
+        }
+      ]
+    },
+    {
+      "n": "Waikato",
+      "la": -37.62,
+      "lo": 175.02,
+      "sc": "WKO",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Cambridge",
+          "la": -37.88,
+          "lo": 175.44,
+          "fn": "Cambridge, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Coromandel",
+          "la": -36.76,
+          "lo": 175.5,
+          "fn": "Coromandel, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Hamilton",
+          "la": -37.78,
+          "lo": 175.28,
+          "fn": "Hamilton, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Matamata",
+          "la": -37.81,
+          "lo": 175.76,
+          "fn": "Matamata, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Ngaruawahia",
+          "la": -37.67,
+          "lo": 175.16,
+          "fn": "Ngaruawahia, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Ngatea",
+          "la": -37.28,
+          "lo": 175.5,
+          "fn": "Ngatea, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Otorohanga",
+          "la": -38.18,
+          "lo": 175.2,
+          "fn": "Otorohanga, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Paeroa",
+          "la": -37.37,
+          "lo": 175.67,
+          "fn": "Paeroa, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Raglan",
+          "la": -37.8,
+          "lo": 174.88,
+          "fn": "Raglan, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "South Waikato District",
+          "la": -38.17,
+          "lo": 175.89,
+          "fn": "South Waikato District, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Tairua",
+          "la": -37.02,
+          "lo": 175.85,
+          "fn": "Tairua, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Taupo",
+          "la": -38.68,
+          "lo": 176.08,
+          "fn": "Taupo, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Te Kauwhata",
+          "la": -37.4,
+          "lo": 175.15,
+          "fn": "Te Kauwhata, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Thames",
+          "la": -37.14,
+          "lo": 175.54,
+          "fn": "Thames, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Tokoroa",
+          "la": -38.23,
+          "lo": 175.87,
+          "fn": "Tokoroa, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Turangi",
+          "la": -38.99,
+          "lo": 175.81,
+          "fn": "Turangi, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Waihi",
+          "la": -37.38,
+          "lo": 175.83,
+          "fn": "Waihi, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Whangamata",
+          "la": -37.2,
+          "lo": 175.87,
+          "fn": "Whangamata, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Whitianga",
+          "la": -36.83,
+          "lo": 175.7,
+          "fn": "Whitianga, Waikato",
+          "s": "Waikato"
+        }
+      ]
+    },
+    {
+      "n": "Waikato",
+      "la": -37.62,
+      "lo": 175.02,
+      "sc": "WKO",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Cambridge",
+          "la": -37.88,
+          "lo": 175.44,
+          "fn": "Cambridge, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Coromandel",
+          "la": -36.76,
+          "lo": 175.5,
+          "fn": "Coromandel, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Hamilton",
+          "la": -37.78,
+          "lo": 175.28,
+          "fn": "Hamilton, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Matamata",
+          "la": -37.81,
+          "lo": 175.76,
+          "fn": "Matamata, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Ngaruawahia",
+          "la": -37.67,
+          "lo": 175.16,
+          "fn": "Ngaruawahia, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Ngatea",
+          "la": -37.28,
+          "lo": 175.5,
+          "fn": "Ngatea, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Otorohanga",
+          "la": -38.18,
+          "lo": 175.2,
+          "fn": "Otorohanga, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Paeroa",
+          "la": -37.37,
+          "lo": 175.67,
+          "fn": "Paeroa, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Raglan",
+          "la": -37.8,
+          "lo": 174.88,
+          "fn": "Raglan, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "South Waikato District",
+          "la": -38.17,
+          "lo": 175.89,
+          "fn": "South Waikato District, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Tairua",
+          "la": -37.02,
+          "lo": 175.85,
+          "fn": "Tairua, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Taupo",
+          "la": -38.68,
+          "lo": 176.08,
+          "fn": "Taupo, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Te Kauwhata",
+          "la": -37.4,
+          "lo": 175.15,
+          "fn": "Te Kauwhata, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Thames",
+          "la": -37.14,
+          "lo": 175.54,
+          "fn": "Thames, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Tokoroa",
+          "la": -38.23,
+          "lo": 175.87,
+          "fn": "Tokoroa, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Turangi",
+          "la": -38.99,
+          "lo": 175.81,
+          "fn": "Turangi, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Waihi",
+          "la": -37.38,
+          "lo": 175.83,
+          "fn": "Waihi, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Whangamata",
+          "la": -37.2,
+          "lo": 175.87,
+          "fn": "Whangamata, Waikato",
+          "s": "Waikato"
+        },
+        {
+          "n": "Whitianga",
+          "la": -36.83,
+          "lo": 175.7,
+          "fn": "Whitianga, Waikato",
+          "s": "Waikato"
+        }
+      ]
+    },
+    {
+      "n": "Wellington",
+      "la": -41.03,
+      "lo": 175.44,
+      "sc": "WGN",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Brooklyn",
+          "la": -41.31,
+          "lo": 174.76,
+          "fn": "Brooklyn, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Castlepoint",
+          "la": -40.9,
+          "lo": 176.22,
+          "fn": "Castlepoint, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Kapiti Coast District",
+          "la": -40.86,
+          "lo": 175.15,
+          "fn": "Kapiti Coast District, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Kelburn",
+          "la": -41.28,
+          "lo": 174.77,
+          "fn": "Kelburn, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Khandallah",
+          "la": -41.24,
+          "lo": 174.79,
+          "fn": "Khandallah, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Lower Hutt",
+          "la": -41.22,
+          "lo": 174.92,
+          "fn": "Lower Hutt, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Masterton",
+          "la": -40.96,
+          "lo": 175.66,
+          "fn": "Masterton, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Otaki",
+          "la": -40.76,
+          "lo": 175.15,
+          "fn": "Otaki, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Paraparaumu",
+          "la": -40.92,
+          "lo": 175.02,
+          "fn": "Paraparaumu, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Petone",
+          "la": -41.23,
+          "lo": 174.87,
+          "fn": "Petone, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Porirua",
+          "la": -41.13,
+          "lo": 174.85,
+          "fn": "Porirua, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "South Wairarapa District",
+          "la": -41.27,
+          "lo": 175.38,
+          "fn": "South Wairarapa District, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Upper Hutt",
+          "la": -41.14,
+          "lo": 175.05,
+          "fn": "Upper Hutt, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Waipawa",
+          "la": -41.41,
+          "lo": 175.52,
+          "fn": "Waipawa, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Wellington",
+          "la": -41.29,
+          "lo": 174.78,
+          "fn": "Wellington, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Wellington City",
+          "la": -41.25,
+          "lo": 174.75,
+          "fn": "Wellington City, Wellington",
+          "s": "Wellington"
+        }
+      ]
+    },
+    {
+      "n": "Wellington",
+      "la": -41.03,
+      "lo": 175.44,
+      "sc": "WGN",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Brooklyn",
+          "la": -41.31,
+          "lo": 174.76,
+          "fn": "Brooklyn, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Castlepoint",
+          "la": -40.9,
+          "lo": 176.22,
+          "fn": "Castlepoint, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Kapiti Coast District",
+          "la": -40.86,
+          "lo": 175.15,
+          "fn": "Kapiti Coast District, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Kelburn",
+          "la": -41.28,
+          "lo": 174.77,
+          "fn": "Kelburn, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Khandallah",
+          "la": -41.24,
+          "lo": 174.79,
+          "fn": "Khandallah, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Lower Hutt",
+          "la": -41.22,
+          "lo": 174.92,
+          "fn": "Lower Hutt, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Masterton",
+          "la": -40.96,
+          "lo": 175.66,
+          "fn": "Masterton, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Otaki",
+          "la": -40.76,
+          "lo": 175.15,
+          "fn": "Otaki, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Paraparaumu",
+          "la": -40.92,
+          "lo": 175.02,
+          "fn": "Paraparaumu, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Petone",
+          "la": -41.23,
+          "lo": 174.87,
+          "fn": "Petone, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Porirua",
+          "la": -41.13,
+          "lo": 174.85,
+          "fn": "Porirua, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "South Wairarapa District",
+          "la": -41.27,
+          "lo": 175.38,
+          "fn": "South Wairarapa District, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Upper Hutt",
+          "la": -41.14,
+          "lo": 175.05,
+          "fn": "Upper Hutt, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Waipawa",
+          "la": -41.41,
+          "lo": 175.52,
+          "fn": "Waipawa, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Wellington",
+          "la": -41.29,
+          "lo": 174.78,
+          "fn": "Wellington, Wellington",
+          "s": "Wellington"
+        },
+        {
+          "n": "Wellington City",
+          "la": -41.25,
+          "lo": 174.75,
+          "fn": "Wellington City, Wellington",
+          "s": "Wellington"
+        }
+      ]
+    },
+    {
+      "n": "West Coast",
+      "la": 62.41,
+      "lo": -149.07,
+      "sc": "WTC",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Greymouth",
+          "la": -42.47,
+          "lo": 171.2,
+          "fn": "Greymouth, West Coast",
+          "s": "West Coast"
+        },
+        {
+          "n": "Hokitika",
+          "la": -42.72,
+          "lo": 170.97,
+          "fn": "Hokitika, West Coast",
+          "s": "West Coast"
+        },
+        {
+          "n": "Westport",
+          "la": -41.75,
+          "lo": 171.6,
+          "fn": "Westport, West Coast",
+          "s": "West Coast"
+        }
+      ]
+    },
+    {
+      "n": "West Coast",
+      "la": 62.41,
+      "lo": -149.07,
+      "sc": "WTC",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Greymouth",
+          "la": -42.47,
+          "lo": 171.2,
+          "fn": "Greymouth, West Coast",
+          "s": "West Coast"
+        },
+        {
+          "n": "Hokitika",
+          "la": -42.72,
+          "lo": 170.97,
+          "fn": "Hokitika, West Coast",
+          "s": "West Coast"
+        },
+        {
+          "n": "Westport",
+          "la": -41.75,
+          "lo": 171.6,
+          "fn": "Westport, West Coast",
+          "s": "West Coast"
+        }
+      ]
+    }
+  ]
+}

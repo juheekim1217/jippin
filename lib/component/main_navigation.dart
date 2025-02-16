@@ -10,6 +10,8 @@ import 'package:jippin/pages/home_page.dart';
 import 'package:jippin/pages/reviews_page.dart';
 import 'package:jippin/pages/submit_review_page.dart';
 
+import 'package:jippin/models/address.dart';
+
 class MainNavigation extends StatefulWidget {
   final int currentIndex;
   final dynamic localeProvider;
@@ -55,10 +57,10 @@ class _MainNavigationState extends State<MainNavigation> {
     });
   }
 
-  void _filterReviews(String query) {
+  void _filterReviews(Address query) {
     setState(() {
       _currentIndex = 1;
-      _searchQuery = query;
+      _searchQuery = query.city!;
       debugPrint("_filterReviews $query");
     });
   }

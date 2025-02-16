@@ -1,0 +1,676 @@
+{
+  "states": [
+    {
+      "n": "Abu Dhabi",
+      "la": 24.45,
+      "lo": 54.38,
+      "sc": "AZ",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Abu Dhabi Island and Internal Islands City",
+          "la": 24.45,
+          "lo": 54.4,
+          "fn": "Abu Dhabi Island and Internal Islands City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Abu Dhabi Municipality",
+          "la": 24.41,
+          "lo": 54.43,
+          "fn": "Abu Dhabi Municipality, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Al Ain City",
+          "la": 24.19,
+          "lo": 55.76,
+          "fn": "Al Ain City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Al Ain Municipality",
+          "la": 24.15,
+          "lo": 55.82,
+          "fn": "Al Ain Municipality, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Al Dhafra",
+          "la": 23.66,
+          "lo": 53.72,
+          "fn": "Al Dhafra, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Al Shamkhah City",
+          "la": 24.39,
+          "lo": 54.71,
+          "fn": "Al Shamkhah City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Bani Yas City",
+          "la": 24.31,
+          "lo": 54.63,
+          "fn": "Bani Yas City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Khalifah A City",
+          "la": 24.43,
+          "lo": 54.6,
+          "fn": "Khalifah A City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Musaffah",
+          "la": 24.36,
+          "lo": 54.48,
+          "fn": "Musaffah, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Muzayri‘",
+          "la": 23.14,
+          "lo": 53.79,
+          "fn": "Muzayri‘, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Ruwais",
+          "la": 24.11,
+          "lo": 52.73,
+          "fn": "Ruwais, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Zayed City",
+          "la": 23.65,
+          "lo": 53.71,
+          "fn": "Zayed City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        }
+      ]
+    },
+    {
+      "n": "Abu Dhabi",
+      "la": 24.45,
+      "lo": 54.38,
+      "sc": "AZ",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Abu Dhabi Island and Internal Islands City",
+          "la": 24.45,
+          "lo": 54.4,
+          "fn": "Abu Dhabi Island and Internal Islands City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Abu Dhabi Municipality",
+          "la": 24.41,
+          "lo": 54.43,
+          "fn": "Abu Dhabi Municipality, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Al Ain City",
+          "la": 24.19,
+          "lo": 55.76,
+          "fn": "Al Ain City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Al Ain Municipality",
+          "la": 24.15,
+          "lo": 55.82,
+          "fn": "Al Ain Municipality, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Al Dhafra",
+          "la": 23.66,
+          "lo": 53.72,
+          "fn": "Al Dhafra, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Al Shamkhah City",
+          "la": 24.39,
+          "lo": 54.71,
+          "fn": "Al Shamkhah City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Bani Yas City",
+          "la": 24.31,
+          "lo": 54.63,
+          "fn": "Bani Yas City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Khalifah A City",
+          "la": 24.43,
+          "lo": 54.6,
+          "fn": "Khalifah A City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Musaffah",
+          "la": 24.36,
+          "lo": 54.48,
+          "fn": "Musaffah, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Muzayri‘",
+          "la": 23.14,
+          "lo": 53.79,
+          "fn": "Muzayri‘, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Ruwais",
+          "la": 24.11,
+          "lo": 52.73,
+          "fn": "Ruwais, Abu Dhabi",
+          "s": "Abu Dhabi"
+        },
+        {
+          "n": "Zayed City",
+          "la": 23.65,
+          "lo": 53.71,
+          "fn": "Zayed City, Abu Dhabi",
+          "s": "Abu Dhabi"
+        }
+      ]
+    },
+    {
+      "n": "Ajman",
+      "la": 25.41,
+      "lo": 55.51,
+      "sc": "AJ",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Ajman",
+          "la": 25.4,
+          "lo": 55.52,
+          "fn": "Ajman, Ajman",
+          "s": "Ajman"
+        },
+        {
+          "n": "Ajman City",
+          "la": 25.4,
+          "lo": 55.48,
+          "fn": "Ajman City, Ajman",
+          "s": "Ajman"
+        },
+        {
+          "n": "Manama",
+          "la": 25.33,
+          "lo": 56.0,
+          "fn": "Manama, Ajman",
+          "s": "Ajman"
+        },
+        {
+          "n": "Masfout",
+          "la": 24.84,
+          "lo": 56.05,
+          "fn": "Masfout, Ajman",
+          "s": "Ajman"
+        }
+      ]
+    },
+    {
+      "n": "Ajman",
+      "la": 25.41,
+      "lo": 55.51,
+      "sc": "AJ",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Ajman",
+          "la": 25.4,
+          "lo": 55.52,
+          "fn": "Ajman, Ajman",
+          "s": "Ajman"
+        },
+        {
+          "n": "Ajman City",
+          "la": 25.4,
+          "lo": 55.48,
+          "fn": "Ajman City, Ajman",
+          "s": "Ajman"
+        },
+        {
+          "n": "Manama",
+          "la": 25.33,
+          "lo": 56.0,
+          "fn": "Manama, Ajman",
+          "s": "Ajman"
+        },
+        {
+          "n": "Masfout",
+          "la": 24.84,
+          "lo": 56.05,
+          "fn": "Masfout, Ajman",
+          "s": "Ajman"
+        }
+      ]
+    },
+    {
+      "n": "Dubai",
+      "la": 25.2,
+      "lo": 55.27,
+      "sc": "DU",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Dubai",
+          "la": 25.07,
+          "lo": 55.17,
+          "fn": "Dubai, Dubai",
+          "s": "Dubai"
+        }
+      ]
+    },
+    {
+      "n": "Dubai",
+      "la": 25.2,
+      "lo": 55.27,
+      "sc": "DU",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Dubai",
+          "la": 25.07,
+          "lo": 55.17,
+          "fn": "Dubai, Dubai",
+          "s": "Dubai"
+        }
+      ]
+    },
+    {
+      "n": "Fujairah",
+      "la": 25.13,
+      "lo": 56.33,
+      "sc": "FU",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Al Fujairah City",
+          "la": 25.12,
+          "lo": 56.34,
+          "fn": "Al Fujairah City, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Al Fujairah Municipality",
+          "la": 25.14,
+          "lo": 56.33,
+          "fn": "Al Fujairah Municipality, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Dibba Al Fujairah Municipality",
+          "la": 25.59,
+          "lo": 56.25,
+          "fn": "Dibba Al Fujairah Municipality, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Dibba Al-Fujairah",
+          "la": 25.59,
+          "lo": 56.26,
+          "fn": "Dibba Al-Fujairah, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Dibba Al-Hisn",
+          "la": 25.62,
+          "lo": 56.27,
+          "fn": "Dibba Al-Hisn, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Reef Al Fujairah City",
+          "la": 25.14,
+          "lo": 56.25,
+          "fn": "Reef Al Fujairah City, Fujairah",
+          "s": "Fujairah"
+        }
+      ]
+    },
+    {
+      "n": "Fujairah",
+      "la": 25.13,
+      "lo": 56.33,
+      "sc": "FU",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Al Fujairah City",
+          "la": 25.12,
+          "lo": 56.34,
+          "fn": "Al Fujairah City, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Al Fujairah Municipality",
+          "la": 25.14,
+          "lo": 56.33,
+          "fn": "Al Fujairah Municipality, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Dibba Al Fujairah Municipality",
+          "la": 25.59,
+          "lo": 56.25,
+          "fn": "Dibba Al Fujairah Municipality, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Dibba Al-Fujairah",
+          "la": 25.59,
+          "lo": 56.26,
+          "fn": "Dibba Al-Fujairah, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Dibba Al-Hisn",
+          "la": 25.62,
+          "lo": 56.27,
+          "fn": "Dibba Al-Hisn, Fujairah",
+          "s": "Fujairah"
+        },
+        {
+          "n": "Reef Al Fujairah City",
+          "la": 25.14,
+          "lo": 56.25,
+          "fn": "Reef Al Fujairah City, Fujairah",
+          "s": "Fujairah"
+        }
+      ]
+    },
+    {
+      "n": "Ras al-Khaimah",
+      "la": 25.67,
+      "lo": 55.98,
+      "sc": "RK",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Ras Al Khaimah",
+          "la": 25.46,
+          "lo": 56.04,
+          "fn": "Ras Al Khaimah, Ras al-Khaimah",
+          "s": "Ras al-Khaimah"
+        },
+        {
+          "n": "Ras Al Khaimah City",
+          "la": 25.79,
+          "lo": 55.94,
+          "fn": "Ras Al Khaimah City, Ras al-Khaimah",
+          "s": "Ras al-Khaimah"
+        }
+      ]
+    },
+    {
+      "n": "Ras al-Khaimah",
+      "la": 25.67,
+      "lo": 55.98,
+      "sc": "RK",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Ras Al Khaimah",
+          "la": 25.46,
+          "lo": 56.04,
+          "fn": "Ras Al Khaimah, Ras al-Khaimah",
+          "s": "Ras al-Khaimah"
+        },
+        {
+          "n": "Ras Al Khaimah City",
+          "la": 25.79,
+          "lo": 55.94,
+          "fn": "Ras Al Khaimah City, Ras al-Khaimah",
+          "s": "Ras al-Khaimah"
+        }
+      ]
+    },
+    {
+      "n": "Sharjah",
+      "la": 25.08,
+      "lo": 55.76,
+      "sc": "SH",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Adh Dhayd",
+          "la": 25.29,
+          "lo": 55.88,
+          "fn": "Adh Dhayd, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Al Batayih",
+          "la": 25.22,
+          "lo": 55.74,
+          "fn": "Al Batayih, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Al Hamriyah",
+          "la": 25.46,
+          "lo": 55.55,
+          "fn": "Al Hamriyah, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Al Madam",
+          "la": 24.96,
+          "lo": 55.77,
+          "fn": "Al Madam, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Dhaid",
+          "la": 25.27,
+          "lo": 55.92,
+          "fn": "Dhaid, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Dibba Al Hesn",
+          "la": 25.62,
+          "lo": 56.27,
+          "fn": "Dibba Al Hesn, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Kalba",
+          "la": 25.0,
+          "lo": 56.27,
+          "fn": "Kalba, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Khawr Fakkān",
+          "la": 25.33,
+          "lo": 56.34,
+          "fn": "Khawr Fakkān, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Khor Fakkan",
+          "la": 25.34,
+          "lo": 56.3,
+          "fn": "Khor Fakkan, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Milehah",
+          "la": 25.1,
+          "lo": 55.91,
+          "fn": "Milehah, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Murbaḩ",
+          "la": 25.28,
+          "lo": 56.36,
+          "fn": "Murbaḩ, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Sharjah",
+          "la": 25.34,
+          "lo": 55.41,
+          "fn": "Sharjah, Sharjah",
+          "s": "Sharjah"
+        }
+      ]
+    },
+    {
+      "n": "Sharjah",
+      "la": 25.08,
+      "lo": 55.76,
+      "sc": "SH",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Adh Dhayd",
+          "la": 25.29,
+          "lo": 55.88,
+          "fn": "Adh Dhayd, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Al Batayih",
+          "la": 25.22,
+          "lo": 55.74,
+          "fn": "Al Batayih, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Al Hamriyah",
+          "la": 25.46,
+          "lo": 55.55,
+          "fn": "Al Hamriyah, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Al Madam",
+          "la": 24.96,
+          "lo": 55.77,
+          "fn": "Al Madam, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Dhaid",
+          "la": 25.27,
+          "lo": 55.92,
+          "fn": "Dhaid, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Dibba Al Hesn",
+          "la": 25.62,
+          "lo": 56.27,
+          "fn": "Dibba Al Hesn, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Kalba",
+          "la": 25.0,
+          "lo": 56.27,
+          "fn": "Kalba, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Khawr Fakkān",
+          "la": 25.33,
+          "lo": 56.34,
+          "fn": "Khawr Fakkān, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Khor Fakkan",
+          "la": 25.34,
+          "lo": 56.3,
+          "fn": "Khor Fakkan, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Milehah",
+          "la": 25.1,
+          "lo": 55.91,
+          "fn": "Milehah, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Murbaḩ",
+          "la": 25.28,
+          "lo": 56.36,
+          "fn": "Murbaḩ, Sharjah",
+          "s": "Sharjah"
+        },
+        {
+          "n": "Sharjah",
+          "la": 25.34,
+          "lo": 55.41,
+          "fn": "Sharjah, Sharjah",
+          "s": "Sharjah"
+        }
+      ]
+    },
+    {
+      "n": "Umm al-Quwain",
+      "la": 25.54,
+      "lo": 55.55,
+      "sc": "UQ",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Umm AL Quwain",
+          "la": 25.49,
+          "lo": 55.74,
+          "fn": "Umm AL Quwain, Umm al-Quwain",
+          "s": "Umm al-Quwain"
+        },
+        {
+          "n": "Umm Al Quwain City",
+          "la": 25.56,
+          "lo": 55.56,
+          "fn": "Umm Al Quwain City, Umm al-Quwain",
+          "s": "Umm al-Quwain"
+        }
+      ]
+    },
+    {
+      "n": "Umm al-Quwain",
+      "la": 25.54,
+      "lo": 55.55,
+      "sc": "UQ",
+      "t": "emirate",
+      "cities": [
+        {
+          "n": "Umm AL Quwain",
+          "la": 25.49,
+          "lo": 55.74,
+          "fn": "Umm AL Quwain, Umm al-Quwain",
+          "s": "Umm al-Quwain"
+        },
+        {
+          "n": "Umm Al Quwain City",
+          "la": 25.56,
+          "lo": 55.56,
+          "fn": "Umm Al Quwain City, Umm al-Quwain",
+          "s": "Umm al-Quwain"
+        }
+      ]
+    }
+  ]
+}

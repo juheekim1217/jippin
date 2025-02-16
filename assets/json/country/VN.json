@@ -1,0 +1,8012 @@
+{
+  "states": [
+    {
+      "n": "An Giang",
+      "la": 10.52,
+      "lo": 105.13,
+      "sc": "44",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cho Dok",
+          "la": 10.7,
+          "lo": 105.12,
+          "fn": "Cho Dok, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện An Phú",
+          "la": 10.84,
+          "lo": 105.09,
+          "fn": "Huyện An Phú, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện Châu Phú",
+          "la": 10.57,
+          "lo": 105.17,
+          "fn": "Huyện Châu Phú, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện Chợ Mới",
+          "la": 10.48,
+          "lo": 105.49,
+          "fn": "Huyện Chợ Mới, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện Phú Tân",
+          "la": 10.66,
+          "lo": 105.28,
+          "fn": "Huyện Phú Tân, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện Tri Tôn",
+          "la": 10.41,
+          "lo": 104.96,
+          "fn": "Huyện Tri Tôn, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Long Xuyên",
+          "la": 10.39,
+          "lo": 105.44,
+          "fn": "Long Xuyên, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Long Xuyên City",
+          "la": 10.37,
+          "lo": 105.42,
+          "fn": "Long Xuyên City, An Giang",
+          "s": "An Giang"
+        }
+      ]
+    },
+    {
+      "n": "An Giang",
+      "la": 10.52,
+      "lo": 105.13,
+      "sc": "44",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cho Dok",
+          "la": 10.7,
+          "lo": 105.12,
+          "fn": "Cho Dok, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện An Phú",
+          "la": 10.84,
+          "lo": 105.09,
+          "fn": "Huyện An Phú, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện Châu Phú",
+          "la": 10.57,
+          "lo": 105.17,
+          "fn": "Huyện Châu Phú, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện Chợ Mới",
+          "la": 10.48,
+          "lo": 105.49,
+          "fn": "Huyện Chợ Mới, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện Phú Tân",
+          "la": 10.66,
+          "lo": 105.28,
+          "fn": "Huyện Phú Tân, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Huyện Tri Tôn",
+          "la": 10.41,
+          "lo": 104.96,
+          "fn": "Huyện Tri Tôn, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Long Xuyên",
+          "la": 10.39,
+          "lo": 105.44,
+          "fn": "Long Xuyên, An Giang",
+          "s": "An Giang"
+        },
+        {
+          "n": "Long Xuyên City",
+          "la": 10.37,
+          "lo": 105.42,
+          "fn": "Long Xuyên City, An Giang",
+          "s": "An Giang"
+        }
+      ]
+    },
+    {
+      "n": "Bà Rịa-Vũng Tàu",
+      "la": 10.54,
+      "lo": 107.24,
+      "sc": "43",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Côn Sơn",
+          "la": 8.69,
+          "lo": 106.61,
+          "fn": "Côn Sơn, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Huyện Châu Đức",
+          "la": 10.66,
+          "lo": 107.25,
+          "fn": "Huyện Châu Đức, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Huyện Đất Đỏ",
+          "la": 10.48,
+          "lo": 107.28,
+          "fn": "Huyện Đất Đỏ, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Huyện Tân Thành",
+          "la": 10.57,
+          "lo": 107.1,
+          "fn": "Huyện Tân Thành, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Huyện Xuyên Mộc",
+          "la": 10.63,
+          "lo": 107.47,
+          "fn": "Huyện Xuyên Mộc, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Thành Phố Vũng Tàu",
+          "la": 10.4,
+          "lo": 107.14,
+          "fn": "Thành Phố Vũng Tàu, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Thị Xã Phú Mỹ",
+          "la": 10.57,
+          "lo": 107.13,
+          "fn": "Thị Xã Phú Mỹ, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Vũng Tàu",
+          "la": 10.35,
+          "lo": 107.08,
+          "fn": "Vũng Tàu, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        }
+      ]
+    },
+    {
+      "n": "Bà Rịa-Vũng Tàu",
+      "la": 10.54,
+      "lo": 107.24,
+      "sc": "43",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Côn Sơn",
+          "la": 8.69,
+          "lo": 106.61,
+          "fn": "Côn Sơn, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Huyện Châu Đức",
+          "la": 10.66,
+          "lo": 107.25,
+          "fn": "Huyện Châu Đức, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Huyện Đất Đỏ",
+          "la": 10.48,
+          "lo": 107.28,
+          "fn": "Huyện Đất Đỏ, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Huyện Tân Thành",
+          "la": 10.57,
+          "lo": 107.1,
+          "fn": "Huyện Tân Thành, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Huyện Xuyên Mộc",
+          "la": 10.63,
+          "lo": 107.47,
+          "fn": "Huyện Xuyên Mộc, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Thành Phố Vũng Tàu",
+          "la": 10.4,
+          "lo": 107.14,
+          "fn": "Thành Phố Vũng Tàu, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Thị Xã Phú Mỹ",
+          "la": 10.57,
+          "lo": 107.13,
+          "fn": "Thị Xã Phú Mỹ, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        },
+        {
+          "n": "Vũng Tàu",
+          "la": 10.35,
+          "lo": 107.08,
+          "fn": "Vũng Tàu, Bà Rịa-Vũng Tàu",
+          "s": "Bà Rịa-Vũng Tàu"
+        }
+      ]
+    },
+    {
+      "n": "Bắc Giang",
+      "la": 21.28,
+      "lo": 106.2,
+      "sc": "54",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bắc Giang",
+          "la": 21.27,
+          "lo": 106.19,
+          "fn": "Bắc Giang, Bắc Giang",
+          "s": "Bắc Giang"
+        },
+        {
+          "n": "Huyện Lục Nam",
+          "la": 21.28,
+          "lo": 106.47,
+          "fn": "Huyện Lục Nam, Bắc Giang",
+          "s": "Bắc Giang"
+        },
+        {
+          "n": "Huyện Lục Ngạn",
+          "la": 21.44,
+          "lo": 106.66,
+          "fn": "Huyện Lục Ngạn, Bắc Giang",
+          "s": "Bắc Giang"
+        },
+        {
+          "n": "Huyện Yên Thế",
+          "la": 21.52,
+          "lo": 106.12,
+          "fn": "Huyện Yên Thế, Bắc Giang",
+          "s": "Bắc Giang"
+        }
+      ]
+    },
+    {
+      "n": "Bắc Giang",
+      "la": 21.28,
+      "lo": 106.2,
+      "sc": "54",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bắc Giang",
+          "la": 21.27,
+          "lo": 106.19,
+          "fn": "Bắc Giang, Bắc Giang",
+          "s": "Bắc Giang"
+        },
+        {
+          "n": "Huyện Lục Nam",
+          "la": 21.28,
+          "lo": 106.47,
+          "fn": "Huyện Lục Nam, Bắc Giang",
+          "s": "Bắc Giang"
+        },
+        {
+          "n": "Huyện Lục Ngạn",
+          "la": 21.44,
+          "lo": 106.66,
+          "fn": "Huyện Lục Ngạn, Bắc Giang",
+          "s": "Bắc Giang"
+        },
+        {
+          "n": "Huyện Yên Thế",
+          "la": 21.52,
+          "lo": 106.12,
+          "fn": "Huyện Yên Thế, Bắc Giang",
+          "s": "Bắc Giang"
+        }
+      ]
+    },
+    {
+      "n": "Bắc Kạn",
+      "la": 22.3,
+      "lo": 105.88,
+      "sc": "53",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bắc Kạn",
+          "la": 22.15,
+          "lo": 105.83,
+          "fn": "Bắc Kạn, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Ba Bể",
+          "la": 22.42,
+          "lo": 105.75,
+          "fn": "Huyện Ba Bể, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Bạch Thông",
+          "la": 22.26,
+          "lo": 105.83,
+          "fn": "Huyện Bạch Thông, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Chợ Đồn",
+          "la": 22.19,
+          "lo": 105.57,
+          "fn": "Huyện Chợ Đồn, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Na Rì",
+          "la": 22.18,
+          "lo": 106.11,
+          "fn": "Huyện Na Rì, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Ngân Sơn",
+          "la": 22.43,
+          "lo": 106.01,
+          "fn": "Huyện Ngân Sơn, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Thị Xã Bắc Kạn",
+          "la": 22.14,
+          "lo": 105.84,
+          "fn": "Thị Xã Bắc Kạn, Bắc Kạn",
+          "s": "Bắc Kạn"
+        }
+      ]
+    },
+    {
+      "n": "Bắc Kạn",
+      "la": 22.3,
+      "lo": 105.88,
+      "sc": "53",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bắc Kạn",
+          "la": 22.15,
+          "lo": 105.83,
+          "fn": "Bắc Kạn, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Ba Bể",
+          "la": 22.42,
+          "lo": 105.75,
+          "fn": "Huyện Ba Bể, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Bạch Thông",
+          "la": 22.26,
+          "lo": 105.83,
+          "fn": "Huyện Bạch Thông, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Chợ Đồn",
+          "la": 22.19,
+          "lo": 105.57,
+          "fn": "Huyện Chợ Đồn, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Na Rì",
+          "la": 22.18,
+          "lo": 106.11,
+          "fn": "Huyện Na Rì, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Huyện Ngân Sơn",
+          "la": 22.43,
+          "lo": 106.01,
+          "fn": "Huyện Ngân Sơn, Bắc Kạn",
+          "s": "Bắc Kạn"
+        },
+        {
+          "n": "Thị Xã Bắc Kạn",
+          "la": 22.14,
+          "lo": 105.84,
+          "fn": "Thị Xã Bắc Kạn, Bắc Kạn",
+          "s": "Bắc Kạn"
+        }
+      ]
+    },
+    {
+      "n": "Bạc Liêu",
+      "la": 9.29,
+      "lo": 105.72,
+      "sc": "55",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bạc Liêu",
+          "la": 9.29,
+          "lo": 105.73,
+          "fn": "Bạc Liêu, Bạc Liêu",
+          "s": "Bạc Liêu"
+        },
+        {
+          "n": "Huyện Giá Rai",
+          "la": 9.27,
+          "lo": 105.4,
+          "fn": "Huyện Giá Rai, Bạc Liêu",
+          "s": "Bạc Liêu"
+        },
+        {
+          "n": "Huyện Hồng Dân",
+          "la": 9.54,
+          "lo": 105.42,
+          "fn": "Huyện Hồng Dân, Bạc Liêu",
+          "s": "Bạc Liêu"
+        }
+      ]
+    },
+    {
+      "n": "Bạc Liêu",
+      "la": 9.29,
+      "lo": 105.72,
+      "sc": "55",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bạc Liêu",
+          "la": 9.29,
+          "lo": 105.73,
+          "fn": "Bạc Liêu, Bạc Liêu",
+          "s": "Bạc Liêu"
+        },
+        {
+          "n": "Huyện Giá Rai",
+          "la": 9.27,
+          "lo": 105.4,
+          "fn": "Huyện Giá Rai, Bạc Liêu",
+          "s": "Bạc Liêu"
+        },
+        {
+          "n": "Huyện Hồng Dân",
+          "la": 9.54,
+          "lo": 105.42,
+          "fn": "Huyện Hồng Dân, Bạc Liêu",
+          "s": "Bạc Liêu"
+        }
+      ]
+    },
+    {
+      "n": "Bắc Ninh",
+      "la": 21.12,
+      "lo": 106.11,
+      "sc": "56",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bắc Ninh",
+          "la": 21.19,
+          "lo": 106.08,
+          "fn": "Bắc Ninh, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Cung Kiệm",
+          "la": 21.19,
+          "lo": 106.16,
+          "fn": "Cung Kiệm, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Huyện Gia Bình",
+          "la": 21.08,
+          "lo": 106.21,
+          "fn": "Huyện Gia Bình, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Huyện Thuận Thành",
+          "la": 21.04,
+          "lo": 106.08,
+          "fn": "Huyện Thuận Thành, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Huyện Tiên Du",
+          "la": 21.12,
+          "lo": 106.04,
+          "fn": "Huyện Tiên Du, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Huyện Yên Phong",
+          "la": 21.21,
+          "lo": 105.99,
+          "fn": "Huyện Yên Phong, Bắc Ninh",
+          "s": "Bắc Ninh"
+        }
+      ]
+    },
+    {
+      "n": "Bắc Ninh",
+      "la": 21.12,
+      "lo": 106.11,
+      "sc": "56",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bắc Ninh",
+          "la": 21.19,
+          "lo": 106.08,
+          "fn": "Bắc Ninh, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Cung Kiệm",
+          "la": 21.19,
+          "lo": 106.16,
+          "fn": "Cung Kiệm, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Huyện Gia Bình",
+          "la": 21.08,
+          "lo": 106.21,
+          "fn": "Huyện Gia Bình, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Huyện Thuận Thành",
+          "la": 21.04,
+          "lo": 106.08,
+          "fn": "Huyện Thuận Thành, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Huyện Tiên Du",
+          "la": 21.12,
+          "lo": 106.04,
+          "fn": "Huyện Tiên Du, Bắc Ninh",
+          "s": "Bắc Ninh"
+        },
+        {
+          "n": "Huyện Yên Phong",
+          "la": 21.21,
+          "lo": 105.99,
+          "fn": "Huyện Yên Phong, Bắc Ninh",
+          "s": "Bắc Ninh"
+        }
+      ]
+    },
+    {
+      "n": "Bến Tre",
+      "la": 10.24,
+      "lo": 106.38,
+      "sc": "50",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Ấp Tân Ngãi",
+          "la": 10.23,
+          "lo": 106.28,
+          "fn": "Ấp Tân Ngãi, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Bến Tre",
+          "la": 10.24,
+          "lo": 106.38,
+          "fn": "Bến Tre, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Ba Tri",
+          "la": 10.07,
+          "lo": 106.61,
+          "fn": "Huyện Ba Tri, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Bình Đại",
+          "la": 10.19,
+          "lo": 106.64,
+          "fn": "Huyện Bình Đại, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 10.29,
+          "lo": 106.31,
+          "fn": "Huyện Châu Thành, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Chợ Lách",
+          "la": 10.23,
+          "lo": 106.17,
+          "fn": "Huyện Chợ Lách, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Giồng Trôm",
+          "la": 10.16,
+          "lo": 106.47,
+          "fn": "Huyện Giồng Trôm, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Thạnh Phú",
+          "la": 9.93,
+          "lo": 106.54,
+          "fn": "Huyện Thạnh Phú, Bến Tre",
+          "s": "Bến Tre"
+        }
+      ]
+    },
+    {
+      "n": "Bến Tre",
+      "la": 10.24,
+      "lo": 106.38,
+      "sc": "50",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Ấp Tân Ngãi",
+          "la": 10.23,
+          "lo": 106.28,
+          "fn": "Ấp Tân Ngãi, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Bến Tre",
+          "la": 10.24,
+          "lo": 106.38,
+          "fn": "Bến Tre, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Ba Tri",
+          "la": 10.07,
+          "lo": 106.61,
+          "fn": "Huyện Ba Tri, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Bình Đại",
+          "la": 10.19,
+          "lo": 106.64,
+          "fn": "Huyện Bình Đại, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 10.29,
+          "lo": 106.31,
+          "fn": "Huyện Châu Thành, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Chợ Lách",
+          "la": 10.23,
+          "lo": 106.17,
+          "fn": "Huyện Chợ Lách, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Giồng Trôm",
+          "la": 10.16,
+          "lo": 106.47,
+          "fn": "Huyện Giồng Trôm, Bến Tre",
+          "s": "Bến Tre"
+        },
+        {
+          "n": "Huyện Thạnh Phú",
+          "la": 9.93,
+          "lo": 106.54,
+          "fn": "Huyện Thạnh Phú, Bến Tre",
+          "s": "Bến Tre"
+        }
+      ]
+    },
+    {
+      "n": "Bình Dương",
+      "la": 11.33,
+      "lo": 106.48,
+      "sc": "57",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Dĩ An",
+          "la": 10.91,
+          "lo": 106.77,
+          "fn": "Dĩ An, Bình Dương",
+          "s": "Bình Dương"
+        },
+        {
+          "n": "Thủ Dầu Một",
+          "la": 10.98,
+          "lo": 106.65,
+          "fn": "Thủ Dầu Một, Bình Dương",
+          "s": "Bình Dương"
+        }
+      ]
+    },
+    {
+      "n": "Bình Dương",
+      "la": 11.33,
+      "lo": 106.48,
+      "sc": "57",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Dĩ An",
+          "la": 10.91,
+          "lo": 106.77,
+          "fn": "Dĩ An, Bình Dương",
+          "s": "Bình Dương"
+        },
+        {
+          "n": "Thủ Dầu Một",
+          "la": 10.98,
+          "lo": 106.65,
+          "fn": "Thủ Dầu Một, Bình Dương",
+          "s": "Bình Dương"
+        }
+      ]
+    },
+    {
+      "n": "Bình Định",
+      "la": 14.17,
+      "lo": 108.9,
+      "sc": "31",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện An Lão",
+          "la": 14.56,
+          "lo": 108.8,
+          "fn": "Huyện An Lão, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Hoài Nhơn",
+          "la": 14.51,
+          "lo": 109.02,
+          "fn": "Huyện Hoài Nhơn, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Phù Mỹ",
+          "la": 14.22,
+          "lo": 109.09,
+          "fn": "Huyện Phù Mỹ, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Tây Sơn",
+          "la": 13.94,
+          "lo": 108.88,
+          "fn": "Huyện Tây Sơn, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Tuy Phước",
+          "la": 13.85,
+          "lo": 109.15,
+          "fn": "Huyện Tuy Phước, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Vĩnh Thạnh",
+          "la": 14.21,
+          "lo": 108.74,
+          "fn": "Huyện Vĩnh Thạnh, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Qui Nhon",
+          "la": 13.78,
+          "lo": 109.22,
+          "fn": "Qui Nhon, Bình Định",
+          "s": "Bình Định"
+        }
+      ]
+    },
+    {
+      "n": "Bình Định",
+      "la": 14.17,
+      "lo": 108.9,
+      "sc": "31",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện An Lão",
+          "la": 14.56,
+          "lo": 108.8,
+          "fn": "Huyện An Lão, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Hoài Nhơn",
+          "la": 14.51,
+          "lo": 109.02,
+          "fn": "Huyện Hoài Nhơn, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Phù Mỹ",
+          "la": 14.22,
+          "lo": 109.09,
+          "fn": "Huyện Phù Mỹ, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Tây Sơn",
+          "la": 13.94,
+          "lo": 108.88,
+          "fn": "Huyện Tây Sơn, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Tuy Phước",
+          "la": 13.85,
+          "lo": 109.15,
+          "fn": "Huyện Tuy Phước, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Huyện Vĩnh Thạnh",
+          "la": 14.21,
+          "lo": 108.74,
+          "fn": "Huyện Vĩnh Thạnh, Bình Định",
+          "s": "Bình Định"
+        },
+        {
+          "n": "Qui Nhon",
+          "la": 13.78,
+          "lo": 109.22,
+          "fn": "Qui Nhon, Bình Định",
+          "s": "Bình Định"
+        }
+      ]
+    },
+    {
+      "n": "Bình Phước",
+      "la": 11.75,
+      "lo": 106.72,
+      "sc": "58",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bình Long",
+          "la": 11.65,
+          "lo": 106.61,
+          "fn": "Bình Long, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Don Luan",
+          "la": 11.53,
+          "lo": 106.88,
+          "fn": "Don Luan, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Huyện Bù Đốp",
+          "la": 12.0,
+          "lo": 106.82,
+          "fn": "Huyện Bù Đốp, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Huyện Chơn Thành",
+          "la": 11.46,
+          "lo": 106.67,
+          "fn": "Huyện Chơn Thành, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Huyện Đồng Phú",
+          "la": 11.5,
+          "lo": 107.01,
+          "fn": "Huyện Đồng Phú, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Huyện Hớn Quản",
+          "la": 11.6,
+          "lo": 106.63,
+          "fn": "Huyện Hớn Quản, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Thị Xã Phước Long",
+          "la": 11.81,
+          "lo": 107.0,
+          "fn": "Thị Xã Phước Long, Bình Phước",
+          "s": "Bình Phước"
+        }
+      ]
+    },
+    {
+      "n": "Bình Phước",
+      "la": 11.75,
+      "lo": 106.72,
+      "sc": "58",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bình Long",
+          "la": 11.65,
+          "lo": 106.61,
+          "fn": "Bình Long, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Don Luan",
+          "la": 11.53,
+          "lo": 106.88,
+          "fn": "Don Luan, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Huyện Bù Đốp",
+          "la": 12.0,
+          "lo": 106.82,
+          "fn": "Huyện Bù Đốp, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Huyện Chơn Thành",
+          "la": 11.46,
+          "lo": 106.67,
+          "fn": "Huyện Chơn Thành, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Huyện Đồng Phú",
+          "la": 11.5,
+          "lo": 107.01,
+          "fn": "Huyện Đồng Phú, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Huyện Hớn Quản",
+          "la": 11.6,
+          "lo": 106.63,
+          "fn": "Huyện Hớn Quản, Bình Phước",
+          "s": "Bình Phước"
+        },
+        {
+          "n": "Thị Xã Phước Long",
+          "la": 11.81,
+          "lo": 107.0,
+          "fn": "Thị Xã Phước Long, Bình Phước",
+          "s": "Bình Phước"
+        }
+      ]
+    },
+    {
+      "n": "Bình Thuận",
+      "la": 11.09,
+      "lo": 108.07,
+      "sc": "40",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bắc Bình",
+          "la": 11.28,
+          "lo": 108.39,
+          "fn": "Huyện Bắc Bình, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Hàm Tân",
+          "la": 10.77,
+          "lo": 107.64,
+          "fn": "Huyện Hàm Tân, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Hàm Thuận Bắc",
+          "la": 11.15,
+          "lo": 108.08,
+          "fn": "Huyện Hàm Thuận Bắc, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Hàm Thuận Nam",
+          "la": 10.92,
+          "lo": 107.93,
+          "fn": "Huyện Hàm Thuận Nam, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Tánh Linh",
+          "la": 11.11,
+          "lo": 107.68,
+          "fn": "Huyện Tánh Linh, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Tuy Phong",
+          "la": 11.35,
+          "lo": 108.7,
+          "fn": "Huyện Tuy Phong, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "La Gi",
+          "la": 10.66,
+          "lo": 107.77,
+          "fn": "La Gi, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Phan Thiết",
+          "la": 10.93,
+          "lo": 108.1,
+          "fn": "Phan Thiết, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Thành Phố Phan Thiết",
+          "la": 10.94,
+          "lo": 108.16,
+          "fn": "Thành Phố Phan Thiết, Bình Thuận",
+          "s": "Bình Thuận"
+        }
+      ]
+    },
+    {
+      "n": "Bình Thuận",
+      "la": 11.09,
+      "lo": 108.07,
+      "sc": "40",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bắc Bình",
+          "la": 11.28,
+          "lo": 108.39,
+          "fn": "Huyện Bắc Bình, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Hàm Tân",
+          "la": 10.77,
+          "lo": 107.64,
+          "fn": "Huyện Hàm Tân, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Hàm Thuận Bắc",
+          "la": 11.15,
+          "lo": 108.08,
+          "fn": "Huyện Hàm Thuận Bắc, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Hàm Thuận Nam",
+          "la": 10.92,
+          "lo": 107.93,
+          "fn": "Huyện Hàm Thuận Nam, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Tánh Linh",
+          "la": 11.11,
+          "lo": 107.68,
+          "fn": "Huyện Tánh Linh, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Huyện Tuy Phong",
+          "la": 11.35,
+          "lo": 108.7,
+          "fn": "Huyện Tuy Phong, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "La Gi",
+          "la": 10.66,
+          "lo": 107.77,
+          "fn": "La Gi, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Phan Thiết",
+          "la": 10.93,
+          "lo": 108.1,
+          "fn": "Phan Thiết, Bình Thuận",
+          "s": "Bình Thuận"
+        },
+        {
+          "n": "Thành Phố Phan Thiết",
+          "la": 10.94,
+          "lo": 108.16,
+          "fn": "Thành Phố Phan Thiết, Bình Thuận",
+          "s": "Bình Thuận"
+        }
+      ]
+    },
+    {
+      "n": "Cà Mau",
+      "la": 9.15,
+      "lo": 105.2,
+      "sc": "59",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cà Mau",
+          "la": 9.18,
+          "lo": 105.15,
+          "fn": "Cà Mau, Cà Mau",
+          "s": "Cà Mau"
+        },
+        {
+          "n": "Huyện Cái Nước",
+          "la": 9.0,
+          "lo": 105.04,
+          "fn": "Huyện Cái Nước, Cà Mau",
+          "s": "Cà Mau"
+        },
+        {
+          "n": "Huyện Đầm Dơi",
+          "la": 8.96,
+          "lo": 105.24,
+          "fn": "Huyện Đầm Dơi, Cà Mau",
+          "s": "Cà Mau"
+        },
+        {
+          "n": "Huyen Nam Can",
+          "la": 8.82,
+          "lo": 105.06,
+          "fn": "Huyen Nam Can, Cà Mau",
+          "s": "Cà Mau"
+        },
+        {
+          "n": "Huyện Thới Bình",
+          "la": 9.36,
+          "lo": 105.16,
+          "fn": "Huyện Thới Bình, Cà Mau",
+          "s": "Cà Mau"
+        }
+      ]
+    },
+    {
+      "n": "Cà Mau",
+      "la": 9.15,
+      "lo": 105.2,
+      "sc": "59",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cà Mau",
+          "la": 9.18,
+          "lo": 105.15,
+          "fn": "Cà Mau, Cà Mau",
+          "s": "Cà Mau"
+        },
+        {
+          "n": "Huyện Cái Nước",
+          "la": 9.0,
+          "lo": 105.04,
+          "fn": "Huyện Cái Nước, Cà Mau",
+          "s": "Cà Mau"
+        },
+        {
+          "n": "Huyện Đầm Dơi",
+          "la": 8.96,
+          "lo": 105.24,
+          "fn": "Huyện Đầm Dơi, Cà Mau",
+          "s": "Cà Mau"
+        },
+        {
+          "n": "Huyen Nam Can",
+          "la": 8.82,
+          "lo": 105.06,
+          "fn": "Huyen Nam Can, Cà Mau",
+          "s": "Cà Mau"
+        },
+        {
+          "n": "Huyện Thới Bình",
+          "la": 9.36,
+          "lo": 105.16,
+          "fn": "Huyện Thới Bình, Cà Mau",
+          "s": "Cà Mau"
+        }
+      ]
+    },
+    {
+      "n": "Cần Thơ",
+      "la": 10.03,
+      "lo": 105.72,
+      "sc": "CT",
+      "t": "municipality",
+      "cities": [
+        {
+          "n": "Cần Thơ",
+          "la": 10.12,
+          "lo": 105.5,
+          "fn": "Cần Thơ, Cần Thơ",
+          "s": "Cần Thơ"
+        },
+        {
+          "n": "Cờ Đỏ",
+          "la": 10.09,
+          "lo": 105.43,
+          "fn": "Cờ Đỏ, Cần Thơ",
+          "s": "Cần Thơ"
+        },
+        {
+          "n": "Thới Lai",
+          "la": 10.06,
+          "lo": 105.56,
+          "fn": "Thới Lai, Cần Thơ",
+          "s": "Cần Thơ"
+        },
+        {
+          "n": "Vĩnh Thạnh",
+          "la": 10.22,
+          "lo": 105.4,
+          "fn": "Vĩnh Thạnh, Cần Thơ",
+          "s": "Cần Thơ"
+        }
+      ]
+    },
+    {
+      "n": "Cần Thơ",
+      "la": 10.03,
+      "lo": 105.72,
+      "sc": "CT",
+      "t": "municipality",
+      "cities": [
+        {
+          "n": "Cần Thơ",
+          "la": 10.12,
+          "lo": 105.5,
+          "fn": "Cần Thơ, Cần Thơ",
+          "s": "Cần Thơ"
+        },
+        {
+          "n": "Cờ Đỏ",
+          "la": 10.09,
+          "lo": 105.43,
+          "fn": "Cờ Đỏ, Cần Thơ",
+          "s": "Cần Thơ"
+        },
+        {
+          "n": "Thới Lai",
+          "la": 10.06,
+          "lo": 105.56,
+          "fn": "Thới Lai, Cần Thơ",
+          "s": "Cần Thơ"
+        },
+        {
+          "n": "Vĩnh Thạnh",
+          "la": 10.22,
+          "lo": 105.4,
+          "fn": "Vĩnh Thạnh, Cần Thơ",
+          "s": "Cần Thơ"
+        }
+      ]
+    },
+    {
+      "n": "Cao Bằng",
+      "la": 22.64,
+      "lo": 106.25,
+      "sc": "04",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cao Bằng",
+          "la": 22.67,
+          "lo": 106.26,
+          "fn": "Cao Bằng, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Bảo Lac",
+          "la": 22.9,
+          "lo": 105.73,
+          "fn": "Huyện Bảo Lac, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Bảo Lâm",
+          "la": 22.87,
+          "lo": 105.49,
+          "fn": "Huyện Bảo Lâm, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Hạ Lang",
+          "la": 22.71,
+          "lo": 106.68,
+          "fn": "Huyện Hạ Lang, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Hà Quảng",
+          "la": 22.91,
+          "lo": 106.12,
+          "fn": "Huyện Hà Quảng, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Nguyên Bình",
+          "la": 22.62,
+          "lo": 105.93,
+          "fn": "Huyện Nguyên Bình, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyen Phuc Hoa",
+          "la": 22.54,
+          "lo": 106.51,
+          "fn": "Huyen Phuc Hoa, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Thạch An",
+          "la": 22.48,
+          "lo": 106.34,
+          "fn": "Huyện Thạch An, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Thông Nông",
+          "la": 22.81,
+          "lo": 105.96,
+          "fn": "Huyện Thông Nông, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Trà Lĩnh",
+          "la": 22.81,
+          "lo": 106.33,
+          "fn": "Huyện Trà Lĩnh, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Trùng Khánh",
+          "la": 22.83,
+          "lo": 106.56,
+          "fn": "Huyện Trùng Khánh, Cao Bằng",
+          "s": "Cao Bằng"
+        }
+      ]
+    },
+    {
+      "n": "Cao Bằng",
+      "la": 22.64,
+      "lo": 106.25,
+      "sc": "04",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cao Bằng",
+          "la": 22.67,
+          "lo": 106.26,
+          "fn": "Cao Bằng, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Bảo Lac",
+          "la": 22.9,
+          "lo": 105.73,
+          "fn": "Huyện Bảo Lac, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Bảo Lâm",
+          "la": 22.87,
+          "lo": 105.49,
+          "fn": "Huyện Bảo Lâm, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Hạ Lang",
+          "la": 22.71,
+          "lo": 106.68,
+          "fn": "Huyện Hạ Lang, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Hà Quảng",
+          "la": 22.91,
+          "lo": 106.12,
+          "fn": "Huyện Hà Quảng, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Nguyên Bình",
+          "la": 22.62,
+          "lo": 105.93,
+          "fn": "Huyện Nguyên Bình, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyen Phuc Hoa",
+          "la": 22.54,
+          "lo": 106.51,
+          "fn": "Huyen Phuc Hoa, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Thạch An",
+          "la": 22.48,
+          "lo": 106.34,
+          "fn": "Huyện Thạch An, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Thông Nông",
+          "la": 22.81,
+          "lo": 105.96,
+          "fn": "Huyện Thông Nông, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Trà Lĩnh",
+          "la": 22.81,
+          "lo": 106.33,
+          "fn": "Huyện Trà Lĩnh, Cao Bằng",
+          "s": "Cao Bằng"
+        },
+        {
+          "n": "Huyện Trùng Khánh",
+          "la": 22.83,
+          "lo": 106.56,
+          "fn": "Huyện Trùng Khánh, Cao Bằng",
+          "s": "Cao Bằng"
+        }
+      ]
+    },
+    {
+      "n": "Đà Nẵng",
+      "la": 16.05,
+      "lo": 108.2,
+      "sc": "DN",
+      "t": "municipality",
+      "cities": [
+        {
+          "n": "Da Nang",
+          "la": 16.07,
+          "lo": 108.22,
+          "fn": "Da Nang, Đà Nẵng",
+          "s": "Đà Nẵng"
+        }
+      ]
+    },
+    {
+      "n": "Đà Nẵng",
+      "la": 16.05,
+      "lo": 108.2,
+      "sc": "DN",
+      "t": "municipality",
+      "cities": [
+        {
+          "n": "Da Nang",
+          "la": 16.07,
+          "lo": 108.22,
+          "fn": "Da Nang, Đà Nẵng",
+          "s": "Đà Nẵng"
+        }
+      ]
+    },
+    {
+      "n": "Đắk Lắk",
+      "la": 12.71,
+      "lo": 108.24,
+      "sc": "33",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Buôn Ma Thuột",
+          "la": 12.67,
+          "lo": 108.04,
+          "fn": "Buôn Ma Thuột, Đắk Lắk",
+          "s": "Đắk Lắk"
+        },
+        {
+          "n": "Huyện Buôn Đôn",
+          "la": 12.9,
+          "lo": 107.74,
+          "fn": "Huyện Buôn Đôn, Đắk Lắk",
+          "s": "Đắk Lắk"
+        },
+        {
+          "n": "Huyện Ea H'Leo",
+          "la": 13.32,
+          "lo": 108.07,
+          "fn": "Huyện Ea H'Leo, Đắk Lắk",
+          "s": "Đắk Lắk"
+        },
+        {
+          "n": "Huyện Ea Súp",
+          "la": 13.18,
+          "lo": 107.8,
+          "fn": "Huyện Ea Súp, Đắk Lắk",
+          "s": "Đắk Lắk"
+        }
+      ]
+    },
+    {
+      "n": "Đắk Lắk",
+      "la": 12.71,
+      "lo": 108.24,
+      "sc": "33",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Buôn Ma Thuột",
+          "la": 12.67,
+          "lo": 108.04,
+          "fn": "Buôn Ma Thuột, Đắk Lắk",
+          "s": "Đắk Lắk"
+        },
+        {
+          "n": "Huyện Buôn Đôn",
+          "la": 12.9,
+          "lo": 107.74,
+          "fn": "Huyện Buôn Đôn, Đắk Lắk",
+          "s": "Đắk Lắk"
+        },
+        {
+          "n": "Huyện Ea H'Leo",
+          "la": 13.32,
+          "lo": 108.07,
+          "fn": "Huyện Ea H'Leo, Đắk Lắk",
+          "s": "Đắk Lắk"
+        },
+        {
+          "n": "Huyện Ea Súp",
+          "la": 13.18,
+          "lo": 107.8,
+          "fn": "Huyện Ea Súp, Đắk Lắk",
+          "s": "Đắk Lắk"
+        }
+      ]
+    },
+    {
+      "n": "Đắk Nông",
+      "la": 12.26,
+      "lo": 107.61,
+      "sc": "72",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Cư Jút",
+          "la": 12.7,
+          "lo": 107.76,
+          "fn": "Huyện Cư Jút, Đắk Nông",
+          "s": "Đắk Nông"
+        },
+        {
+          "n": "Huyện Đắk R’Lấp",
+          "la": 11.88,
+          "lo": 107.52,
+          "fn": "Huyện Đắk R’Lấp, Đắk Nông",
+          "s": "Đắk Nông"
+        },
+        {
+          "n": "Huyện Krông Nô",
+          "la": 12.36,
+          "lo": 107.83,
+          "fn": "Huyện Krông Nô, Đắk Nông",
+          "s": "Đắk Nông"
+        }
+      ]
+    },
+    {
+      "n": "Đắk Nông",
+      "la": 12.26,
+      "lo": 107.61,
+      "sc": "72",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Cư Jút",
+          "la": 12.7,
+          "lo": 107.76,
+          "fn": "Huyện Cư Jút, Đắk Nông",
+          "s": "Đắk Nông"
+        },
+        {
+          "n": "Huyện Đắk R’Lấp",
+          "la": 11.88,
+          "lo": 107.52,
+          "fn": "Huyện Đắk R’Lấp, Đắk Nông",
+          "s": "Đắk Nông"
+        },
+        {
+          "n": "Huyện Krông Nô",
+          "la": 12.36,
+          "lo": 107.83,
+          "fn": "Huyện Krông Nô, Đắk Nông",
+          "s": "Đắk Nông"
+        }
+      ]
+    },
+    {
+      "n": "Điện Biên",
+      "la": 21.8,
+      "lo": 103.11,
+      "sc": "71",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Dien Bien Phu",
+          "la": 21.39,
+          "lo": 103.02,
+          "fn": "Dien Bien Phu, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Huyện Điện Biên Đông",
+          "la": 21.25,
+          "lo": 103.27,
+          "fn": "Huyện Điện Biên Đông, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Huyện Mường Nhé",
+          "la": 22.1,
+          "lo": 102.58,
+          "fn": "Huyện Mường Nhé, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Huyện Tủa Chùa",
+          "la": 21.95,
+          "lo": 103.37,
+          "fn": "Huyện Tủa Chùa, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Huyện Tuần Giáo",
+          "la": 21.69,
+          "lo": 103.42,
+          "fn": "Huyện Tuần Giáo, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Thị Xã Mưòng Lay",
+          "la": 22.03,
+          "lo": 103.12,
+          "fn": "Thị Xã Mưòng Lay, Điện Biên",
+          "s": "Điện Biên"
+        }
+      ]
+    },
+    {
+      "n": "Điện Biên",
+      "la": 21.8,
+      "lo": 103.11,
+      "sc": "71",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Dien Bien Phu",
+          "la": 21.39,
+          "lo": 103.02,
+          "fn": "Dien Bien Phu, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Huyện Điện Biên Đông",
+          "la": 21.25,
+          "lo": 103.27,
+          "fn": "Huyện Điện Biên Đông, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Huyện Mường Nhé",
+          "la": 22.1,
+          "lo": 102.58,
+          "fn": "Huyện Mường Nhé, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Huyện Tủa Chùa",
+          "la": 21.95,
+          "lo": 103.37,
+          "fn": "Huyện Tủa Chùa, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Huyện Tuần Giáo",
+          "la": 21.69,
+          "lo": 103.42,
+          "fn": "Huyện Tuần Giáo, Điện Biên",
+          "s": "Điện Biên"
+        },
+        {
+          "n": "Thị Xã Mưòng Lay",
+          "la": 22.03,
+          "lo": 103.12,
+          "fn": "Thị Xã Mưòng Lay, Điện Biên",
+          "s": "Điện Biên"
+        }
+      ]
+    },
+    {
+      "n": "Đồng Nai",
+      "la": 11.07,
+      "lo": 107.17,
+      "sc": "39",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Biên Hòa",
+          "la": 10.94,
+          "lo": 106.82,
+          "fn": "Biên Hòa, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Định Quán",
+          "la": 11.22,
+          "lo": 107.34,
+          "fn": "Huyện Định Quán, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Long Thành",
+          "la": 10.76,
+          "lo": 107.03,
+          "fn": "Huyện Long Thành, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Tân Phú",
+          "la": 11.4,
+          "lo": 107.4,
+          "fn": "Huyện Tân Phú, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Thống Nhất",
+          "la": 10.98,
+          "lo": 107.16,
+          "fn": "Huyện Thống Nhất, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Trảng Bom",
+          "la": 10.97,
+          "lo": 107.04,
+          "fn": "Huyện Trảng Bom, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Vĩnh Cửu",
+          "la": 11.26,
+          "lo": 107.03,
+          "fn": "Huyện Vĩnh Cửu, Đồng Nai",
+          "s": "Đồng Nai"
+        }
+      ]
+    },
+    {
+      "n": "Đồng Nai",
+      "la": 11.07,
+      "lo": 107.17,
+      "sc": "39",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Biên Hòa",
+          "la": 10.94,
+          "lo": 106.82,
+          "fn": "Biên Hòa, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Định Quán",
+          "la": 11.22,
+          "lo": 107.34,
+          "fn": "Huyện Định Quán, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Long Thành",
+          "la": 10.76,
+          "lo": 107.03,
+          "fn": "Huyện Long Thành, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Tân Phú",
+          "la": 11.4,
+          "lo": 107.4,
+          "fn": "Huyện Tân Phú, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Thống Nhất",
+          "la": 10.98,
+          "lo": 107.16,
+          "fn": "Huyện Thống Nhất, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Trảng Bom",
+          "la": 10.97,
+          "lo": 107.04,
+          "fn": "Huyện Trảng Bom, Đồng Nai",
+          "s": "Đồng Nai"
+        },
+        {
+          "n": "Huyện Vĩnh Cửu",
+          "la": 11.26,
+          "lo": 107.03,
+          "fn": "Huyện Vĩnh Cửu, Đồng Nai",
+          "s": "Đồng Nai"
+        }
+      ]
+    },
+    {
+      "n": "Đồng Tháp",
+      "la": 10.49,
+      "lo": 105.69,
+      "sc": "45",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cao Lãnh",
+          "la": 10.46,
+          "lo": 105.63,
+          "fn": "Cao Lãnh, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 10.23,
+          "lo": 105.82,
+          "fn": "Huyện Châu Thành, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Lai Vung",
+          "la": 10.24,
+          "lo": 105.66,
+          "fn": "Huyện Lai Vung, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Lấp Vò",
+          "la": 10.36,
+          "lo": 105.61,
+          "fn": "Huyện Lấp Vò, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Tam Nông",
+          "la": 10.73,
+          "lo": 105.53,
+          "fn": "Huyện Tam Nông, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Tân Hồng",
+          "la": 10.87,
+          "lo": 105.49,
+          "fn": "Huyện Tân Hồng, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Thanh Bình",
+          "la": 10.6,
+          "lo": 105.48,
+          "fn": "Huyện Thanh Bình, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Tháp Mười",
+          "la": 10.54,
+          "lo": 105.82,
+          "fn": "Huyện Tháp Mười, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Sa Dec",
+          "la": 10.29,
+          "lo": 105.76,
+          "fn": "Sa Dec, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Sa Dec city",
+          "la": 10.31,
+          "lo": 105.75,
+          "fn": "Sa Dec city, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Thị Trấn Tân Thành",
+          "la": 10.26,
+          "lo": 105.59,
+          "fn": "Thị Trấn Tân Thành, Đồng Tháp",
+          "s": "Đồng Tháp"
+        }
+      ]
+    },
+    {
+      "n": "Đồng Tháp",
+      "la": 10.49,
+      "lo": 105.69,
+      "sc": "45",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cao Lãnh",
+          "la": 10.46,
+          "lo": 105.63,
+          "fn": "Cao Lãnh, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 10.23,
+          "lo": 105.82,
+          "fn": "Huyện Châu Thành, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Lai Vung",
+          "la": 10.24,
+          "lo": 105.66,
+          "fn": "Huyện Lai Vung, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Lấp Vò",
+          "la": 10.36,
+          "lo": 105.61,
+          "fn": "Huyện Lấp Vò, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Tam Nông",
+          "la": 10.73,
+          "lo": 105.53,
+          "fn": "Huyện Tam Nông, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Tân Hồng",
+          "la": 10.87,
+          "lo": 105.49,
+          "fn": "Huyện Tân Hồng, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Thanh Bình",
+          "la": 10.6,
+          "lo": 105.48,
+          "fn": "Huyện Thanh Bình, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Huyện Tháp Mười",
+          "la": 10.54,
+          "lo": 105.82,
+          "fn": "Huyện Tháp Mười, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Sa Dec",
+          "la": 10.29,
+          "lo": 105.76,
+          "fn": "Sa Dec, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Sa Dec city",
+          "la": 10.31,
+          "lo": 105.75,
+          "fn": "Sa Dec city, Đồng Tháp",
+          "s": "Đồng Tháp"
+        },
+        {
+          "n": "Thị Trấn Tân Thành",
+          "la": 10.26,
+          "lo": 105.59,
+          "fn": "Thị Trấn Tân Thành, Đồng Tháp",
+          "s": "Đồng Tháp"
+        }
+      ]
+    },
+    {
+      "n": "Gia Lai",
+      "la": 13.81,
+      "lo": 108.11,
+      "sc": "30",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Chư Păh",
+          "la": 14.16,
+          "lo": 107.98,
+          "fn": "Huyện Chư Păh, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Chư Prông",
+          "la": 13.6,
+          "lo": 107.81,
+          "fn": "Huyện Chư Prông, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Chư Sê",
+          "la": 13.74,
+          "lo": 108.09,
+          "fn": "Huyện Chư Sê, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Đức Cơ",
+          "la": 13.78,
+          "lo": 107.67,
+          "fn": "Huyện Đức Cơ, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Ia Grai",
+          "la": 13.99,
+          "lo": 107.74,
+          "fn": "Huyện Ia Grai, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện KBang",
+          "la": 14.31,
+          "lo": 108.5,
+          "fn": "Huyện KBang, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Kông Chro",
+          "la": 13.74,
+          "lo": 108.6,
+          "fn": "Huyện Kông Chro, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Krông Pa",
+          "la": 13.23,
+          "lo": 108.65,
+          "fn": "Huyện Krông Pa, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Mang Yang",
+          "la": 13.93,
+          "lo": 108.3,
+          "fn": "Huyện Mang Yang, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Pleiku",
+          "la": 13.98,
+          "lo": 108.0,
+          "fn": "Pleiku, Gia Lai",
+          "s": "Gia Lai"
+        }
+      ]
+    },
+    {
+      "n": "Gia Lai",
+      "la": 13.81,
+      "lo": 108.11,
+      "sc": "30",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Chư Păh",
+          "la": 14.16,
+          "lo": 107.98,
+          "fn": "Huyện Chư Păh, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Chư Prông",
+          "la": 13.6,
+          "lo": 107.81,
+          "fn": "Huyện Chư Prông, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Chư Sê",
+          "la": 13.74,
+          "lo": 108.09,
+          "fn": "Huyện Chư Sê, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Đức Cơ",
+          "la": 13.78,
+          "lo": 107.67,
+          "fn": "Huyện Đức Cơ, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Ia Grai",
+          "la": 13.99,
+          "lo": 107.74,
+          "fn": "Huyện Ia Grai, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện KBang",
+          "la": 14.31,
+          "lo": 108.5,
+          "fn": "Huyện KBang, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Kông Chro",
+          "la": 13.74,
+          "lo": 108.6,
+          "fn": "Huyện Kông Chro, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Krông Pa",
+          "la": 13.23,
+          "lo": 108.65,
+          "fn": "Huyện Krông Pa, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Huyện Mang Yang",
+          "la": 13.93,
+          "lo": 108.3,
+          "fn": "Huyện Mang Yang, Gia Lai",
+          "s": "Gia Lai"
+        },
+        {
+          "n": "Pleiku",
+          "la": 13.98,
+          "lo": 108.0,
+          "fn": "Pleiku, Gia Lai",
+          "s": "Gia Lai"
+        }
+      ]
+    },
+    {
+      "n": "Hà Giang",
+      "la": 22.8,
+      "lo": 104.98,
+      "sc": "03",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hà Giang",
+          "la": 22.82,
+          "lo": 104.98,
+          "fn": "Hà Giang, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Bắc Mê",
+          "la": 22.75,
+          "lo": 105.29,
+          "fn": "Huyện Bắc Mê, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Bắc Quang",
+          "la": 22.42,
+          "lo": 104.92,
+          "fn": "Huyện Bắc Quang, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Đồng Văn",
+          "la": 23.25,
+          "lo": 105.28,
+          "fn": "Huyện Đồng Văn, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Quang Bình",
+          "la": 22.42,
+          "lo": 104.66,
+          "fn": "Huyện Quang Bình, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Vị Xuyên",
+          "la": 22.73,
+          "lo": 104.91,
+          "fn": "Huyện Vị Xuyên, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Xín Mần",
+          "la": 22.64,
+          "lo": 104.52,
+          "fn": "Huyện Xín Mần, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Yên Minh",
+          "la": 23.07,
+          "lo": 105.18,
+          "fn": "Huyện Yên Minh, Hà Giang",
+          "s": "Hà Giang"
+        }
+      ]
+    },
+    {
+      "n": "Hà Giang",
+      "la": 22.8,
+      "lo": 104.98,
+      "sc": "03",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hà Giang",
+          "la": 22.82,
+          "lo": 104.98,
+          "fn": "Hà Giang, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Bắc Mê",
+          "la": 22.75,
+          "lo": 105.29,
+          "fn": "Huyện Bắc Mê, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Bắc Quang",
+          "la": 22.42,
+          "lo": 104.92,
+          "fn": "Huyện Bắc Quang, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Đồng Văn",
+          "la": 23.25,
+          "lo": 105.28,
+          "fn": "Huyện Đồng Văn, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Quang Bình",
+          "la": 22.42,
+          "lo": 104.66,
+          "fn": "Huyện Quang Bình, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Vị Xuyên",
+          "la": 22.73,
+          "lo": 104.91,
+          "fn": "Huyện Vị Xuyên, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Xín Mần",
+          "la": 22.64,
+          "lo": 104.52,
+          "fn": "Huyện Xín Mần, Hà Giang",
+          "s": "Hà Giang"
+        },
+        {
+          "n": "Huyện Yên Minh",
+          "la": 23.07,
+          "lo": 105.18,
+          "fn": "Huyện Yên Minh, Hà Giang",
+          "s": "Hà Giang"
+        }
+      ]
+    },
+    {
+      "n": "Hà Nam",
+      "la": 20.58,
+      "lo": 105.92,
+      "sc": "63",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bình Lục",
+          "la": 20.5,
+          "lo": 106.03,
+          "fn": "Huyện Bình Lục, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Huyện Duy Tiên",
+          "la": 20.63,
+          "lo": 105.96,
+          "fn": "Huyện Duy Tiên, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Huyện Kim Bảng",
+          "la": 20.57,
+          "lo": 105.85,
+          "fn": "Huyện Kim Bảng, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Huyện Lý Nhân",
+          "la": 20.56,
+          "lo": 106.09,
+          "fn": "Huyện Lý Nhân, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Huyện Thanh Liêm",
+          "la": 20.46,
+          "lo": 105.92,
+          "fn": "Huyện Thanh Liêm, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Phủ Lý",
+          "la": 20.55,
+          "lo": 105.91,
+          "fn": "Phủ Lý, Hà Nam",
+          "s": "Hà Nam"
+        }
+      ]
+    },
+    {
+      "n": "Hà Nam",
+      "la": 20.58,
+      "lo": 105.92,
+      "sc": "63",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bình Lục",
+          "la": 20.5,
+          "lo": 106.03,
+          "fn": "Huyện Bình Lục, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Huyện Duy Tiên",
+          "la": 20.63,
+          "lo": 105.96,
+          "fn": "Huyện Duy Tiên, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Huyện Kim Bảng",
+          "la": 20.57,
+          "lo": 105.85,
+          "fn": "Huyện Kim Bảng, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Huyện Lý Nhân",
+          "la": 20.56,
+          "lo": 106.09,
+          "fn": "Huyện Lý Nhân, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Huyện Thanh Liêm",
+          "la": 20.46,
+          "lo": 105.92,
+          "fn": "Huyện Thanh Liêm, Hà Nam",
+          "s": "Hà Nam"
+        },
+        {
+          "n": "Phủ Lý",
+          "la": 20.55,
+          "lo": 105.91,
+          "fn": "Phủ Lý, Hà Nam",
+          "s": "Hà Nam"
+        }
+      ]
+    },
+    {
+      "n": "Hà Nội",
+      "la": 21.03,
+      "lo": 105.83,
+      "sc": "HN",
+      "t": "municipality",
+      "cities": [
+        {
+          "n": "Ba Đình",
+          "la": 21.03,
+          "lo": 105.81,
+          "fn": "Ba Đình, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Ba Vì",
+          "la": 21.16,
+          "lo": 105.21,
+          "fn": "Ba Vì, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Bắc Từ Liêm",
+          "la": 21.07,
+          "lo": 105.72,
+          "fn": "Bắc Từ Liêm, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Cầu Giấy",
+          "la": 21.03,
+          "lo": 105.75,
+          "fn": "Cầu Giấy, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Chương Mỹ",
+          "la": 20.88,
+          "lo": 105.57,
+          "fn": "Chương Mỹ, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Đan Phượng",
+          "la": 21.12,
+          "lo": 105.6,
+          "fn": "Đan Phượng, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Đông Anh",
+          "la": 21.14,
+          "lo": 105.75,
+          "fn": "Đông Anh, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Đống Đa",
+          "la": 21.01,
+          "lo": 105.8,
+          "fn": "Đống Đa, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Gia Lâm",
+          "la": 21.02,
+          "lo": 105.79,
+          "fn": "Gia Lâm, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hà Đông",
+          "la": 20.95,
+          "lo": 105.71,
+          "fn": "Hà Đông, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hai Bà Trưng",
+          "la": 21.01,
+          "lo": 105.84,
+          "fn": "Hai Bà Trưng, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hoài Đức",
+          "la": 21.02,
+          "lo": 105.61,
+          "fn": "Hoài Đức, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hoàn Kiếm ",
+          "la": 21.03,
+          "lo": 105.83,
+          "fn": "Hoàn Kiếm , Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hoàng Mai",
+          "la": 20.97,
+          "lo": 105.82,
+          "fn": "Hoàng Mai, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Long Biên",
+          "la": 21.04,
+          "lo": 105.85,
+          "fn": "Long Biên, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Mê Linh",
+          "la": 21.18,
+          "lo": 105.62,
+          "fn": "Mê Linh, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Mỹ Đức",
+          "la": 20.7,
+          "lo": 105.57,
+          "fn": "Mỹ Đức, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Nam Từ Liêm",
+          "la": 21.02,
+          "lo": 105.72,
+          "fn": "Nam Từ Liêm, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Phú Xuyên",
+          "la": 20.73,
+          "lo": 105.81,
+          "fn": "Phú Xuyên, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Phúc Thọ",
+          "la": 21.11,
+          "lo": 105.5,
+          "fn": "Phúc Thọ, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Quốc Oai",
+          "la": 20.98,
+          "lo": 105.44,
+          "fn": "Quốc Oai, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Sóc Sơn",
+          "la": 21.28,
+          "lo": 105.67,
+          "fn": "Sóc Sơn, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Sơn Tây",
+          "la": 21.1,
+          "lo": 105.39,
+          "fn": "Sơn Tây, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Tây Hồ ",
+          "la": 21.07,
+          "lo": 105.78,
+          "fn": "Tây Hồ , Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thạch Thất",
+          "la": 21.02,
+          "lo": 105.35,
+          "fn": "Thạch Thất, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thanh Oai",
+          "la": 20.86,
+          "lo": 105.7,
+          "fn": "Thanh Oai, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thanh Trì",
+          "la": 20.94,
+          "lo": 105.77,
+          "fn": "Thanh Trì, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thanh Xuân",
+          "la": 20.99,
+          "lo": 105.8,
+          "fn": "Thanh Xuân, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thường Tín",
+          "la": 20.83,
+          "lo": 105.79,
+          "fn": "Thường Tín, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Ứng Hòa",
+          "la": 20.71,
+          "lo": 105.64,
+          "fn": "Ứng Hòa, Hà Nội",
+          "s": "Hà Nội"
+        }
+      ]
+    },
+    {
+      "n": "Hà Nội",
+      "la": 21.03,
+      "lo": 105.83,
+      "sc": "HN",
+      "t": "municipality",
+      "cities": [
+        {
+          "n": "Ba Đình",
+          "la": 21.03,
+          "lo": 105.81,
+          "fn": "Ba Đình, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Ba Vì",
+          "la": 21.16,
+          "lo": 105.21,
+          "fn": "Ba Vì, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Bắc Từ Liêm",
+          "la": 21.07,
+          "lo": 105.72,
+          "fn": "Bắc Từ Liêm, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Cầu Giấy",
+          "la": 21.03,
+          "lo": 105.75,
+          "fn": "Cầu Giấy, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Chương Mỹ",
+          "la": 20.88,
+          "lo": 105.57,
+          "fn": "Chương Mỹ, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Đan Phượng",
+          "la": 21.12,
+          "lo": 105.6,
+          "fn": "Đan Phượng, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Đông Anh",
+          "la": 21.14,
+          "lo": 105.75,
+          "fn": "Đông Anh, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Đống Đa",
+          "la": 21.01,
+          "lo": 105.8,
+          "fn": "Đống Đa, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Gia Lâm",
+          "la": 21.02,
+          "lo": 105.79,
+          "fn": "Gia Lâm, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hà Đông",
+          "la": 20.95,
+          "lo": 105.71,
+          "fn": "Hà Đông, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hai Bà Trưng",
+          "la": 21.01,
+          "lo": 105.84,
+          "fn": "Hai Bà Trưng, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hoài Đức",
+          "la": 21.02,
+          "lo": 105.61,
+          "fn": "Hoài Đức, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hoàn Kiếm ",
+          "la": 21.03,
+          "lo": 105.83,
+          "fn": "Hoàn Kiếm , Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Hoàng Mai",
+          "la": 20.97,
+          "lo": 105.82,
+          "fn": "Hoàng Mai, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Long Biên",
+          "la": 21.04,
+          "lo": 105.85,
+          "fn": "Long Biên, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Mê Linh",
+          "la": 21.18,
+          "lo": 105.62,
+          "fn": "Mê Linh, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Mỹ Đức",
+          "la": 20.7,
+          "lo": 105.57,
+          "fn": "Mỹ Đức, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Nam Từ Liêm",
+          "la": 21.02,
+          "lo": 105.72,
+          "fn": "Nam Từ Liêm, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Phú Xuyên",
+          "la": 20.73,
+          "lo": 105.81,
+          "fn": "Phú Xuyên, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Phúc Thọ",
+          "la": 21.11,
+          "lo": 105.5,
+          "fn": "Phúc Thọ, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Quốc Oai",
+          "la": 20.98,
+          "lo": 105.44,
+          "fn": "Quốc Oai, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Sóc Sơn",
+          "la": 21.28,
+          "lo": 105.67,
+          "fn": "Sóc Sơn, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Sơn Tây",
+          "la": 21.1,
+          "lo": 105.39,
+          "fn": "Sơn Tây, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Tây Hồ ",
+          "la": 21.07,
+          "lo": 105.78,
+          "fn": "Tây Hồ , Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thạch Thất",
+          "la": 21.02,
+          "lo": 105.35,
+          "fn": "Thạch Thất, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thanh Oai",
+          "la": 20.86,
+          "lo": 105.7,
+          "fn": "Thanh Oai, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thanh Trì",
+          "la": 20.94,
+          "lo": 105.77,
+          "fn": "Thanh Trì, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thanh Xuân",
+          "la": 20.99,
+          "lo": 105.8,
+          "fn": "Thanh Xuân, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Thường Tín",
+          "la": 20.83,
+          "lo": 105.79,
+          "fn": "Thường Tín, Hà Nội",
+          "s": "Hà Nội"
+        },
+        {
+          "n": "Ứng Hòa",
+          "la": 20.71,
+          "lo": 105.64,
+          "fn": "Ứng Hòa, Hà Nội",
+          "s": "Hà Nội"
+        }
+      ]
+    },
+    {
+      "n": "Hà Tĩnh",
+      "la": 18.36,
+      "lo": 105.89,
+      "sc": "23",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hà Tĩnh",
+          "la": 18.34,
+          "lo": 105.91,
+          "fn": "Hà Tĩnh, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Cẩm Xuyên",
+          "la": 18.19,
+          "lo": 106.0,
+          "fn": "Huyện Cẩm Xuyên, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Can Lộc",
+          "la": 18.44,
+          "lo": 105.76,
+          "fn": "Huyện Can Lộc, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Ðức Thọ",
+          "la": 18.5,
+          "lo": 105.61,
+          "fn": "Huyện Ðức Thọ, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Kỳ Anh",
+          "la": 18.06,
+          "lo": 106.25,
+          "fn": "Huyện Kỳ Anh, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Nghi Xuân",
+          "la": 18.62,
+          "lo": 105.77,
+          "fn": "Huyện Nghi Xuân, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Thạch Hà",
+          "la": 18.35,
+          "lo": 105.81,
+          "fn": "Huyện Thạch Hà, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        }
+      ]
+    },
+    {
+      "n": "Hà Tĩnh",
+      "la": 18.36,
+      "lo": 105.89,
+      "sc": "23",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hà Tĩnh",
+          "la": 18.34,
+          "lo": 105.91,
+          "fn": "Hà Tĩnh, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Cẩm Xuyên",
+          "la": 18.19,
+          "lo": 106.0,
+          "fn": "Huyện Cẩm Xuyên, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Can Lộc",
+          "la": 18.44,
+          "lo": 105.76,
+          "fn": "Huyện Can Lộc, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Ðức Thọ",
+          "la": 18.5,
+          "lo": 105.61,
+          "fn": "Huyện Ðức Thọ, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Kỳ Anh",
+          "la": 18.06,
+          "lo": 106.25,
+          "fn": "Huyện Kỳ Anh, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Nghi Xuân",
+          "la": 18.62,
+          "lo": 105.77,
+          "fn": "Huyện Nghi Xuân, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        },
+        {
+          "n": "Huyện Thạch Hà",
+          "la": 18.35,
+          "lo": 105.81,
+          "fn": "Huyện Thạch Hà, Hà Tĩnh",
+          "s": "Hà Tĩnh"
+        }
+      ]
+    },
+    {
+      "n": "Hải Dương",
+      "la": 20.94,
+      "lo": 106.31,
+      "sc": "61",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hải Dương",
+          "la": 20.94,
+          "lo": 106.33,
+          "fn": "Hải Dương, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Bình Giang",
+          "la": 20.88,
+          "lo": 106.19,
+          "fn": "Huyện Bình Giang, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Cẩm Giàng",
+          "la": 20.95,
+          "lo": 106.22,
+          "fn": "Huyện Cẩm Giàng, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Gia Lộc",
+          "la": 20.85,
+          "lo": 106.29,
+          "fn": "Huyện Gia Lộc, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Kinh Môn",
+          "la": 21.02,
+          "lo": 106.5,
+          "fn": "Huyện Kinh Môn, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Nam Sách",
+          "la": 21.0,
+          "lo": 106.34,
+          "fn": "Huyện Nam Sách, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Thanh Miện",
+          "la": 20.78,
+          "lo": 106.22,
+          "fn": "Huyện Thanh Miện, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Thị Xã Chí Linh",
+          "la": 21.14,
+          "lo": 106.4,
+          "fn": "Thị Xã Chí Linh, Hải Dương",
+          "s": "Hải Dương"
+        }
+      ]
+    },
+    {
+      "n": "Hải Dương",
+      "la": 20.94,
+      "lo": 106.31,
+      "sc": "61",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hải Dương",
+          "la": 20.94,
+          "lo": 106.33,
+          "fn": "Hải Dương, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Bình Giang",
+          "la": 20.88,
+          "lo": 106.19,
+          "fn": "Huyện Bình Giang, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Cẩm Giàng",
+          "la": 20.95,
+          "lo": 106.22,
+          "fn": "Huyện Cẩm Giàng, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Gia Lộc",
+          "la": 20.85,
+          "lo": 106.29,
+          "fn": "Huyện Gia Lộc, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Kinh Môn",
+          "la": 21.02,
+          "lo": 106.5,
+          "fn": "Huyện Kinh Môn, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Nam Sách",
+          "la": 21.0,
+          "lo": 106.34,
+          "fn": "Huyện Nam Sách, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Huyện Thanh Miện",
+          "la": 20.78,
+          "lo": 106.22,
+          "fn": "Huyện Thanh Miện, Hải Dương",
+          "s": "Hải Dương"
+        },
+        {
+          "n": "Thị Xã Chí Linh",
+          "la": 21.14,
+          "lo": 106.4,
+          "fn": "Thị Xã Chí Linh, Hải Dương",
+          "s": "Hải Dương"
+        }
+      ]
+    },
+    {
+      "n": "Hải Phòng",
+      "la": 20.84,
+      "lo": 106.69,
+      "sc": "HP",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cát Bà",
+          "la": 20.73,
+          "lo": 107.05,
+          "fn": "Cát Bà, Hải Phòng",
+          "s": "Hải Phòng"
+        },
+        {
+          "n": "Haiphong",
+          "la": 20.86,
+          "lo": 106.68,
+          "fn": "Haiphong, Hải Phòng",
+          "s": "Hải Phòng"
+        }
+      ]
+    },
+    {
+      "n": "Hải Phòng",
+      "la": 20.84,
+      "lo": 106.69,
+      "sc": "HP",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cát Bà",
+          "la": 20.73,
+          "lo": 107.05,
+          "fn": "Cát Bà, Hải Phòng",
+          "s": "Hải Phòng"
+        },
+        {
+          "n": "Haiphong",
+          "la": 20.86,
+          "lo": 106.68,
+          "fn": "Haiphong, Hải Phòng",
+          "s": "Hải Phòng"
+        }
+      ]
+    },
+    {
+      "n": "Hậu Giang",
+      "la": 9.76,
+      "lo": 105.64,
+      "sc": "73",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Châu Thành A",
+          "la": 9.93,
+          "lo": 105.64,
+          "fn": "Huyện Châu Thành A, Hậu Giang",
+          "s": "Hậu Giang"
+        },
+        {
+          "n": "Vị Thanh",
+          "la": 9.78,
+          "lo": 105.47,
+          "fn": "Vị Thanh, Hậu Giang",
+          "s": "Hậu Giang"
+        }
+      ]
+    },
+    {
+      "n": "Hậu Giang",
+      "la": 9.76,
+      "lo": 105.64,
+      "sc": "73",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Châu Thành A",
+          "la": 9.93,
+          "lo": 105.64,
+          "fn": "Huyện Châu Thành A, Hậu Giang",
+          "s": "Hậu Giang"
+        },
+        {
+          "n": "Vị Thanh",
+          "la": 9.78,
+          "lo": 105.47,
+          "fn": "Vị Thanh, Hậu Giang",
+          "s": "Hậu Giang"
+        }
+      ]
+    },
+    {
+      "n": "Hồ Chí Minh",
+      "la": 10.82,
+      "lo": 106.63,
+      "sc": "SG",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cần Giờ",
+          "la": 10.41,
+          "lo": 106.95,
+          "fn": "Cần Giờ, Hồ Chí Minh",
+          "s": "Hồ Chí Minh"
+        },
+        {
+          "n": "Củ Chi",
+          "la": 10.97,
+          "lo": 106.49,
+          "fn": "Củ Chi, Hồ Chí Minh",
+          "s": "Hồ Chí Minh"
+        },
+        {
+          "n": "Ho Chi Minh City",
+          "la": 10.82,
+          "lo": 106.63,
+          "fn": "Ho Chi Minh City, Hồ Chí Minh",
+          "s": "Hồ Chí Minh"
+        }
+      ]
+    },
+    {
+      "n": "Hồ Chí Minh",
+      "la": 10.82,
+      "lo": 106.63,
+      "sc": "SG",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cần Giờ",
+          "la": 10.41,
+          "lo": 106.95,
+          "fn": "Cần Giờ, Hồ Chí Minh",
+          "s": "Hồ Chí Minh"
+        },
+        {
+          "n": "Củ Chi",
+          "la": 10.97,
+          "lo": 106.49,
+          "fn": "Củ Chi, Hồ Chí Minh",
+          "s": "Hồ Chí Minh"
+        },
+        {
+          "n": "Ho Chi Minh City",
+          "la": 10.82,
+          "lo": 106.63,
+          "fn": "Ho Chi Minh City, Hồ Chí Minh",
+          "s": "Hồ Chí Minh"
+        }
+      ]
+    },
+    {
+      "n": "Hòa Bình",
+      "la": 20.69,
+      "lo": 105.31,
+      "sc": "14",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hòa Bình",
+          "la": 20.82,
+          "lo": 105.34,
+          "fn": "Hòa Bình, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Cao Phong",
+          "la": 20.7,
+          "lo": 105.34,
+          "fn": "Huyện Cao Phong, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Kỳ Sơn",
+          "la": 20.9,
+          "lo": 105.4,
+          "fn": "Huyện Kỳ Sơn, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Lạc Thủy",
+          "la": 20.5,
+          "lo": 105.74,
+          "fn": "Huyện Lạc Thủy, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Lương Sơn",
+          "la": 20.88,
+          "lo": 105.51,
+          "fn": "Huyện Lương Sơn, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Tân Lạc",
+          "la": 20.61,
+          "lo": 105.23,
+          "fn": "Huyện Tân Lạc, Hòa Bình",
+          "s": "Hòa Bình"
+        }
+      ]
+    },
+    {
+      "n": "Hòa Bình",
+      "la": 20.69,
+      "lo": 105.31,
+      "sc": "14",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hòa Bình",
+          "la": 20.82,
+          "lo": 105.34,
+          "fn": "Hòa Bình, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Cao Phong",
+          "la": 20.7,
+          "lo": 105.34,
+          "fn": "Huyện Cao Phong, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Kỳ Sơn",
+          "la": 20.9,
+          "lo": 105.4,
+          "fn": "Huyện Kỳ Sơn, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Lạc Thủy",
+          "la": 20.5,
+          "lo": 105.74,
+          "fn": "Huyện Lạc Thủy, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Lương Sơn",
+          "la": 20.88,
+          "lo": 105.51,
+          "fn": "Huyện Lương Sơn, Hòa Bình",
+          "s": "Hòa Bình"
+        },
+        {
+          "n": "Huyện Tân Lạc",
+          "la": 20.61,
+          "lo": 105.23,
+          "fn": "Huyện Tân Lạc, Hòa Bình",
+          "s": "Hòa Bình"
+        }
+      ]
+    },
+    {
+      "n": "Hưng Yên",
+      "la": 20.85,
+      "lo": 106.02,
+      "sc": "66",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hưng Yên",
+          "la": 20.65,
+          "lo": 106.05,
+          "fn": "Hưng Yên, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Ân Thi",
+          "la": 20.81,
+          "lo": 106.1,
+          "fn": "Huyện Ân Thi, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Khoái Châu",
+          "la": 20.82,
+          "lo": 105.97,
+          "fn": "Huyện Khoái Châu, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Kim Động",
+          "la": 20.75,
+          "lo": 106.04,
+          "fn": "Huyện Kim Động, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Mỹ Hào",
+          "la": 20.93,
+          "lo": 106.11,
+          "fn": "Huyện Mỹ Hào, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Phù Cừ",
+          "la": 20.71,
+          "lo": 106.2,
+          "fn": "Huyện Phù Cừ, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Tiên Lữ",
+          "la": 20.68,
+          "lo": 106.13,
+          "fn": "Huyện Tiên Lữ, Hưng Yên",
+          "s": "Hưng Yên"
+        }
+      ]
+    },
+    {
+      "n": "Hưng Yên",
+      "la": 20.85,
+      "lo": 106.02,
+      "sc": "66",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hưng Yên",
+          "la": 20.65,
+          "lo": 106.05,
+          "fn": "Hưng Yên, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Ân Thi",
+          "la": 20.81,
+          "lo": 106.1,
+          "fn": "Huyện Ân Thi, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Khoái Châu",
+          "la": 20.82,
+          "lo": 105.97,
+          "fn": "Huyện Khoái Châu, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Kim Động",
+          "la": 20.75,
+          "lo": 106.04,
+          "fn": "Huyện Kim Động, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Mỹ Hào",
+          "la": 20.93,
+          "lo": 106.11,
+          "fn": "Huyện Mỹ Hào, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Phù Cừ",
+          "la": 20.71,
+          "lo": 106.2,
+          "fn": "Huyện Phù Cừ, Hưng Yên",
+          "s": "Hưng Yên"
+        },
+        {
+          "n": "Huyện Tiên Lữ",
+          "la": 20.68,
+          "lo": 106.13,
+          "fn": "Huyện Tiên Lữ, Hưng Yên",
+          "s": "Hưng Yên"
+        }
+      ]
+    },
+    {
+      "n": "Khánh Hòa",
+      "la": 12.26,
+      "lo": 109.05,
+      "sc": "34",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cam Ranh",
+          "la": 11.92,
+          "lo": 109.16,
+          "fn": "Cam Ranh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Huyện Diên Khánh",
+          "la": 12.27,
+          "lo": 109.04,
+          "fn": "Huyện Diên Khánh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Huyện Khánh Sơn",
+          "la": 12.03,
+          "lo": 108.91,
+          "fn": "Huyện Khánh Sơn, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Huyện Khánh Vĩnh",
+          "la": 12.31,
+          "lo": 108.83,
+          "fn": "Huyện Khánh Vĩnh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Huyện Vạn Ninh",
+          "la": 12.72,
+          "lo": 109.25,
+          "fn": "Huyện Vạn Ninh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Nha Trang",
+          "la": 12.25,
+          "lo": 109.19,
+          "fn": "Nha Trang, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Thành Phố Cam Ranh",
+          "la": 11.91,
+          "lo": 109.15,
+          "fn": "Thành Phố Cam Ranh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Thành Phố Nha Trang",
+          "la": 12.25,
+          "lo": 109.17,
+          "fn": "Thành Phố Nha Trang, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Thị Xã Ninh Hòa",
+          "la": 12.54,
+          "lo": 109.06,
+          "fn": "Thị Xã Ninh Hòa, Khánh Hòa",
+          "s": "Khánh Hòa"
+        }
+      ]
+    },
+    {
+      "n": "Khánh Hòa",
+      "la": 12.26,
+      "lo": 109.05,
+      "sc": "34",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cam Ranh",
+          "la": 11.92,
+          "lo": 109.16,
+          "fn": "Cam Ranh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Huyện Diên Khánh",
+          "la": 12.27,
+          "lo": 109.04,
+          "fn": "Huyện Diên Khánh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Huyện Khánh Sơn",
+          "la": 12.03,
+          "lo": 108.91,
+          "fn": "Huyện Khánh Sơn, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Huyện Khánh Vĩnh",
+          "la": 12.31,
+          "lo": 108.83,
+          "fn": "Huyện Khánh Vĩnh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Huyện Vạn Ninh",
+          "la": 12.72,
+          "lo": 109.25,
+          "fn": "Huyện Vạn Ninh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Nha Trang",
+          "la": 12.25,
+          "lo": 109.19,
+          "fn": "Nha Trang, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Thành Phố Cam Ranh",
+          "la": 11.91,
+          "lo": 109.15,
+          "fn": "Thành Phố Cam Ranh, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Thành Phố Nha Trang",
+          "la": 12.25,
+          "lo": 109.17,
+          "fn": "Thành Phố Nha Trang, Khánh Hòa",
+          "s": "Khánh Hòa"
+        },
+        {
+          "n": "Thị Xã Ninh Hòa",
+          "la": 12.54,
+          "lo": 109.06,
+          "fn": "Thị Xã Ninh Hòa, Khánh Hòa",
+          "s": "Khánh Hòa"
+        }
+      ]
+    },
+    {
+      "n": "Kiên Giang",
+      "la": 9.82,
+      "lo": 105.13,
+      "sc": "47",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Dương Đông",
+          "la": 10.22,
+          "lo": 103.96,
+          "fn": "Dương Đông, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Hà Tiên",
+          "la": 10.38,
+          "lo": 104.49,
+          "fn": "Hà Tiên, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện An Biên",
+          "la": 9.81,
+          "lo": 105.05,
+          "fn": "Huyện An Biên, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện An Minh",
+          "la": 9.67,
+          "lo": 104.95,
+          "fn": "Huyện An Minh, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 9.94,
+          "lo": 105.17,
+          "fn": "Huyện Châu Thành, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Giồng Riềng",
+          "la": 9.91,
+          "lo": 105.37,
+          "fn": "Huyện Giồng Riềng, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Gò Quao",
+          "la": 9.74,
+          "lo": 105.3,
+          "fn": "Huyện Gò Quao, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Hòn Đất",
+          "la": 10.23,
+          "lo": 104.95,
+          "fn": "Huyện Hòn Đất, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Kiên Hải",
+          "la": 9.84,
+          "lo": 104.62,
+          "fn": "Huyện Kiên Hải, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Phú Quốc",
+          "la": 10.26,
+          "lo": 104.01,
+          "fn": "Huyện Phú Quốc, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Tân Hiệp",
+          "la": 10.1,
+          "lo": 105.26,
+          "fn": "Huyện Tân Hiệp, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Vĩnh Thuận",
+          "la": 9.53,
+          "lo": 105.24,
+          "fn": "Huyện Vĩnh Thuận, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Kien Luong Town",
+          "la": 10.25,
+          "lo": 104.59,
+          "fn": "Kien Luong Town, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Rạch Giá",
+          "la": 10.01,
+          "lo": 105.08,
+          "fn": "Rạch Giá, Kiên Giang",
+          "s": "Kiên Giang"
+        }
+      ]
+    },
+    {
+      "n": "Kiên Giang",
+      "la": 9.82,
+      "lo": 105.13,
+      "sc": "47",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Dương Đông",
+          "la": 10.22,
+          "lo": 103.96,
+          "fn": "Dương Đông, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Hà Tiên",
+          "la": 10.38,
+          "lo": 104.49,
+          "fn": "Hà Tiên, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện An Biên",
+          "la": 9.81,
+          "lo": 105.05,
+          "fn": "Huyện An Biên, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện An Minh",
+          "la": 9.67,
+          "lo": 104.95,
+          "fn": "Huyện An Minh, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 9.94,
+          "lo": 105.17,
+          "fn": "Huyện Châu Thành, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Giồng Riềng",
+          "la": 9.91,
+          "lo": 105.37,
+          "fn": "Huyện Giồng Riềng, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Gò Quao",
+          "la": 9.74,
+          "lo": 105.3,
+          "fn": "Huyện Gò Quao, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Hòn Đất",
+          "la": 10.23,
+          "lo": 104.95,
+          "fn": "Huyện Hòn Đất, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Kiên Hải",
+          "la": 9.84,
+          "lo": 104.62,
+          "fn": "Huyện Kiên Hải, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Phú Quốc",
+          "la": 10.26,
+          "lo": 104.01,
+          "fn": "Huyện Phú Quốc, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Tân Hiệp",
+          "la": 10.1,
+          "lo": 105.26,
+          "fn": "Huyện Tân Hiệp, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Huyện Vĩnh Thuận",
+          "la": 9.53,
+          "lo": 105.24,
+          "fn": "Huyện Vĩnh Thuận, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Kien Luong Town",
+          "la": 10.25,
+          "lo": 104.59,
+          "fn": "Kien Luong Town, Kiên Giang",
+          "s": "Kiên Giang"
+        },
+        {
+          "n": "Rạch Giá",
+          "la": 10.01,
+          "lo": 105.08,
+          "fn": "Rạch Giá, Kiên Giang",
+          "s": "Kiên Giang"
+        }
+      ]
+    },
+    {
+      "n": "Kon Tum",
+      "la": 14.35,
+      "lo": 108.0,
+      "sc": "28",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Đắk Glei",
+          "la": 15.11,
+          "lo": 107.75,
+          "fn": "Huyện Đắk Glei, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Đắk Hà",
+          "la": 14.6,
+          "lo": 107.99,
+          "fn": "Huyện Đắk Hà, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Đắk Tô",
+          "la": 14.7,
+          "lo": 107.81,
+          "fn": "Huyện Đắk Tô, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Ia H'Drai",
+          "la": 14.06,
+          "lo": 107.46,
+          "fn": "Huyện Ia H'Drai, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Kon Plông",
+          "la": 14.76,
+          "lo": 108.32,
+          "fn": "Huyện Kon Plông, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Ngọc Hồi",
+          "la": 14.72,
+          "lo": 107.63,
+          "fn": "Huyện Ngọc Hồi, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Sa Thầy",
+          "la": 14.32,
+          "lo": 107.6,
+          "fn": "Huyện Sa Thầy, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Kon Tum",
+          "la": 14.35,
+          "lo": 108.01,
+          "fn": "Kon Tum, Kon Tum",
+          "s": "Kon Tum"
+        }
+      ]
+    },
+    {
+      "n": "Kon Tum",
+      "la": 14.35,
+      "lo": 108.0,
+      "sc": "28",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Đắk Glei",
+          "la": 15.11,
+          "lo": 107.75,
+          "fn": "Huyện Đắk Glei, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Đắk Hà",
+          "la": 14.6,
+          "lo": 107.99,
+          "fn": "Huyện Đắk Hà, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Đắk Tô",
+          "la": 14.7,
+          "lo": 107.81,
+          "fn": "Huyện Đắk Tô, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Ia H'Drai",
+          "la": 14.06,
+          "lo": 107.46,
+          "fn": "Huyện Ia H'Drai, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Kon Plông",
+          "la": 14.76,
+          "lo": 108.32,
+          "fn": "Huyện Kon Plông, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Ngọc Hồi",
+          "la": 14.72,
+          "lo": 107.63,
+          "fn": "Huyện Ngọc Hồi, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Huyện Sa Thầy",
+          "la": 14.32,
+          "lo": 107.6,
+          "fn": "Huyện Sa Thầy, Kon Tum",
+          "s": "Kon Tum"
+        },
+        {
+          "n": "Kon Tum",
+          "la": 14.35,
+          "lo": 108.01,
+          "fn": "Kon Tum, Kon Tum",
+          "s": "Kon Tum"
+        }
+      ]
+    },
+    {
+      "n": "Lai Châu",
+      "la": 22.39,
+      "lo": 103.47,
+      "sc": "01",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Mưòng Tè",
+          "la": 22.37,
+          "lo": 102.74,
+          "fn": "Huyện Mưòng Tè, Lai Châu",
+          "s": "Lai Châu"
+        },
+        {
+          "n": "Huyện Tam Đường",
+          "la": 22.35,
+          "lo": 103.59,
+          "fn": "Huyện Tam Đường, Lai Châu",
+          "s": "Lai Châu"
+        },
+        {
+          "n": "Huyện Than Uyên",
+          "la": 21.91,
+          "lo": 103.83,
+          "fn": "Huyện Than Uyên, Lai Châu",
+          "s": "Lai Châu"
+        }
+      ]
+    },
+    {
+      "n": "Lai Châu",
+      "la": 22.39,
+      "lo": 103.47,
+      "sc": "01",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Mưòng Tè",
+          "la": 22.37,
+          "lo": 102.74,
+          "fn": "Huyện Mưòng Tè, Lai Châu",
+          "s": "Lai Châu"
+        },
+        {
+          "n": "Huyện Tam Đường",
+          "la": 22.35,
+          "lo": 103.59,
+          "fn": "Huyện Tam Đường, Lai Châu",
+          "s": "Lai Châu"
+        },
+        {
+          "n": "Huyện Than Uyên",
+          "la": 21.91,
+          "lo": 103.83,
+          "fn": "Huyện Than Uyên, Lai Châu",
+          "s": "Lai Châu"
+        }
+      ]
+    },
+    {
+      "n": "Lâm Đồng",
+      "la": 11.58,
+      "lo": 108.14,
+      "sc": "35",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bảo Lộc",
+          "la": 11.55,
+          "lo": 107.81,
+          "fn": "Bảo Lộc, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Đam Rong",
+          "la": 12.05,
+          "lo": 108.15,
+          "fn": "Đam Rong, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Đinh Văn",
+          "la": 11.79,
+          "lo": 108.24,
+          "fn": "Đinh Văn, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Đưc Trọng",
+          "la": 11.74,
+          "lo": 108.37,
+          "fn": "Đưc Trọng, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Ðà Lạt",
+          "la": 11.95,
+          "lo": 108.44,
+          "fn": "Ðà Lạt, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Bảo Lâm",
+          "la": 11.71,
+          "lo": 107.75,
+          "fn": "Huyện Bảo Lâm, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Đạ Huoai",
+          "la": 11.42,
+          "lo": 107.64,
+          "fn": "Huyện Đạ Huoai, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Đạ Tẻh",
+          "la": 11.58,
+          "lo": 107.53,
+          "fn": "Huyện Đạ Tẻh, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Đơn Dương",
+          "la": 11.75,
+          "lo": 108.55,
+          "fn": "Huyện Đơn Dương, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Đức Trọng",
+          "la": 11.63,
+          "lo": 108.35,
+          "fn": "Huyện Đức Trọng, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Lâm Hà",
+          "la": 11.82,
+          "lo": 108.21,
+          "fn": "Huyện Lâm Hà, Lâm Đồng",
+          "s": "Lâm Đồng"
+        }
+      ]
+    },
+    {
+      "n": "Lâm Đồng",
+      "la": 11.58,
+      "lo": 108.14,
+      "sc": "35",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bảo Lộc",
+          "la": 11.55,
+          "lo": 107.81,
+          "fn": "Bảo Lộc, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Đam Rong",
+          "la": 12.05,
+          "lo": 108.15,
+          "fn": "Đam Rong, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Đinh Văn",
+          "la": 11.79,
+          "lo": 108.24,
+          "fn": "Đinh Văn, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Đưc Trọng",
+          "la": 11.74,
+          "lo": 108.37,
+          "fn": "Đưc Trọng, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Ðà Lạt",
+          "la": 11.95,
+          "lo": 108.44,
+          "fn": "Ðà Lạt, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Bảo Lâm",
+          "la": 11.71,
+          "lo": 107.75,
+          "fn": "Huyện Bảo Lâm, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Đạ Huoai",
+          "la": 11.42,
+          "lo": 107.64,
+          "fn": "Huyện Đạ Huoai, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Đạ Tẻh",
+          "la": 11.58,
+          "lo": 107.53,
+          "fn": "Huyện Đạ Tẻh, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Đơn Dương",
+          "la": 11.75,
+          "lo": 108.55,
+          "fn": "Huyện Đơn Dương, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Đức Trọng",
+          "la": 11.63,
+          "lo": 108.35,
+          "fn": "Huyện Đức Trọng, Lâm Đồng",
+          "s": "Lâm Đồng"
+        },
+        {
+          "n": "Huyện Lâm Hà",
+          "la": 11.82,
+          "lo": 108.21,
+          "fn": "Huyện Lâm Hà, Lâm Đồng",
+          "s": "Lâm Đồng"
+        }
+      ]
+    },
+    {
+      "n": "Lạng Sơn",
+      "la": 21.85,
+      "lo": 106.76,
+      "sc": "09",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bắc Sơn",
+          "la": 21.84,
+          "lo": 106.28,
+          "fn": "Huyện Bắc Sơn, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Bình Gia",
+          "la": 22.07,
+          "lo": 106.3,
+          "fn": "Huyện Bình Gia, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Cao Lộc",
+          "la": 21.9,
+          "lo": 106.85,
+          "fn": "Huyện Cao Lộc, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Chi Lăng",
+          "la": 21.68,
+          "lo": 106.63,
+          "fn": "Huyện Chi Lăng, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Đình Lập",
+          "la": 21.54,
+          "lo": 107.13,
+          "fn": "Huyện Đình Lập, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Hũu Lũng",
+          "la": 21.54,
+          "lo": 106.34,
+          "fn": "Huyện Hũu Lũng, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Vặn Quan",
+          "la": 21.83,
+          "lo": 106.55,
+          "fn": "Huyện Vặn Quan, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Lạng Sơn",
+          "la": 21.85,
+          "lo": 106.76,
+          "fn": "Lạng Sơn, Lạng Sơn",
+          "s": "Lạng Sơn"
+        }
+      ]
+    },
+    {
+      "n": "Lạng Sơn",
+      "la": 21.85,
+      "lo": 106.76,
+      "sc": "09",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bắc Sơn",
+          "la": 21.84,
+          "lo": 106.28,
+          "fn": "Huyện Bắc Sơn, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Bình Gia",
+          "la": 22.07,
+          "lo": 106.3,
+          "fn": "Huyện Bình Gia, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Cao Lộc",
+          "la": 21.9,
+          "lo": 106.85,
+          "fn": "Huyện Cao Lộc, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Chi Lăng",
+          "la": 21.68,
+          "lo": 106.63,
+          "fn": "Huyện Chi Lăng, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Đình Lập",
+          "la": 21.54,
+          "lo": 107.13,
+          "fn": "Huyện Đình Lập, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Hũu Lũng",
+          "la": 21.54,
+          "lo": 106.34,
+          "fn": "Huyện Hũu Lũng, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Huyện Vặn Quan",
+          "la": 21.83,
+          "lo": 106.55,
+          "fn": "Huyện Vặn Quan, Lạng Sơn",
+          "s": "Lạng Sơn"
+        },
+        {
+          "n": "Lạng Sơn",
+          "la": 21.85,
+          "lo": 106.76,
+          "fn": "Lạng Sơn, Lạng Sơn",
+          "s": "Lạng Sơn"
+        }
+      ]
+    },
+    {
+      "n": "Lào Cai",
+      "la": 22.48,
+      "lo": 103.98,
+      "sc": "02",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bắc Hà",
+          "la": 22.51,
+          "lo": 104.31,
+          "fn": "Huyện Bắc Hà, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Bảo Yên",
+          "la": 22.26,
+          "lo": 104.46,
+          "fn": "Huyện Bảo Yên, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Bát Xát",
+          "la": 22.57,
+          "lo": 103.71,
+          "fn": "Huyện Bát Xát, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Mường Khương",
+          "la": 22.67,
+          "lo": 104.12,
+          "fn": "Huyện Mường Khương, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Sa Pa",
+          "la": 22.34,
+          "lo": 103.84,
+          "fn": "Huyện Sa Pa, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Si Ma Cai",
+          "la": 22.67,
+          "lo": 104.27,
+          "fn": "Huyện Si Ma Cai, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Văn Bàn",
+          "la": 22.07,
+          "lo": 104.18,
+          "fn": "Huyện Văn Bàn, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Lào Cai",
+          "la": 22.49,
+          "lo": 103.97,
+          "fn": "Lào Cai, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Lao Chải",
+          "la": 22.31,
+          "lo": 103.87,
+          "fn": "Lao Chải, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Sa Pa",
+          "la": 22.34,
+          "lo": 103.84,
+          "fn": "Sa Pa, Lào Cai",
+          "s": "Lào Cai"
+        }
+      ]
+    },
+    {
+      "n": "Lào Cai",
+      "la": 22.48,
+      "lo": 103.98,
+      "sc": "02",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bắc Hà",
+          "la": 22.51,
+          "lo": 104.31,
+          "fn": "Huyện Bắc Hà, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Bảo Yên",
+          "la": 22.26,
+          "lo": 104.46,
+          "fn": "Huyện Bảo Yên, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Bát Xát",
+          "la": 22.57,
+          "lo": 103.71,
+          "fn": "Huyện Bát Xát, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Mường Khương",
+          "la": 22.67,
+          "lo": 104.12,
+          "fn": "Huyện Mường Khương, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Sa Pa",
+          "la": 22.34,
+          "lo": 103.84,
+          "fn": "Huyện Sa Pa, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Si Ma Cai",
+          "la": 22.67,
+          "lo": 104.27,
+          "fn": "Huyện Si Ma Cai, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Huyện Văn Bàn",
+          "la": 22.07,
+          "lo": 104.18,
+          "fn": "Huyện Văn Bàn, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Lào Cai",
+          "la": 22.49,
+          "lo": 103.97,
+          "fn": "Lào Cai, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Lao Chải",
+          "la": 22.31,
+          "lo": 103.87,
+          "fn": "Lao Chải, Lào Cai",
+          "s": "Lào Cai"
+        },
+        {
+          "n": "Sa Pa",
+          "la": 22.34,
+          "lo": 103.84,
+          "fn": "Sa Pa, Lào Cai",
+          "s": "Lào Cai"
+        }
+      ]
+    },
+    {
+      "n": "Long An",
+      "la": 10.56,
+      "lo": 106.65,
+      "sc": "41",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cần Giuộc",
+          "la": 10.61,
+          "lo": 106.67,
+          "fn": "Cần Giuộc, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Bến Lức",
+          "la": 10.69,
+          "lo": 106.45,
+          "fn": "Huyện Bến Lức, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Cần Đước",
+          "la": 10.54,
+          "lo": 106.6,
+          "fn": "Huyện Cần Đước, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Cần Giuộc",
+          "la": 10.58,
+          "lo": 106.67,
+          "fn": "Huyện Cần Giuộc, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 10.45,
+          "lo": 106.49,
+          "fn": "Huyện Châu Thành, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Đức Hòa",
+          "la": 10.88,
+          "lo": 106.42,
+          "fn": "Huyện Đức Hòa, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Đức Huệ",
+          "la": 10.86,
+          "lo": 106.26,
+          "fn": "Huyện Đức Huệ, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Mộc Hóa",
+          "la": 10.75,
+          "lo": 106.02,
+          "fn": "Huyện Mộc Hóa, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Tân Hưng",
+          "la": 10.83,
+          "lo": 105.69,
+          "fn": "Huyện Tân Hưng, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Tân Thạnh",
+          "la": 10.6,
+          "lo": 105.97,
+          "fn": "Huyện Tân Thạnh, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Tân Trụ",
+          "la": 10.53,
+          "lo": 106.52,
+          "fn": "Huyện Tân Trụ, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Thạnh Hóa",
+          "la": 10.67,
+          "lo": 106.17,
+          "fn": "Huyện Thạnh Hóa, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Thủ Thừa",
+          "la": 10.66,
+          "lo": 106.35,
+          "fn": "Huyện Thủ Thừa, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Vĩnh Hưng",
+          "la": 10.88,
+          "lo": 105.8,
+          "fn": "Huyện Vĩnh Hưng, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Tân An",
+          "la": 10.54,
+          "lo": 106.41,
+          "fn": "Tân An, Long An",
+          "s": "Long An"
+        }
+      ]
+    },
+    {
+      "n": "Long An",
+      "la": 10.56,
+      "lo": 106.65,
+      "sc": "41",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cần Giuộc",
+          "la": 10.61,
+          "lo": 106.67,
+          "fn": "Cần Giuộc, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Bến Lức",
+          "la": 10.69,
+          "lo": 106.45,
+          "fn": "Huyện Bến Lức, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Cần Đước",
+          "la": 10.54,
+          "lo": 106.6,
+          "fn": "Huyện Cần Đước, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Cần Giuộc",
+          "la": 10.58,
+          "lo": 106.67,
+          "fn": "Huyện Cần Giuộc, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 10.45,
+          "lo": 106.49,
+          "fn": "Huyện Châu Thành, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Đức Hòa",
+          "la": 10.88,
+          "lo": 106.42,
+          "fn": "Huyện Đức Hòa, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Đức Huệ",
+          "la": 10.86,
+          "lo": 106.26,
+          "fn": "Huyện Đức Huệ, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Mộc Hóa",
+          "la": 10.75,
+          "lo": 106.02,
+          "fn": "Huyện Mộc Hóa, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Tân Hưng",
+          "la": 10.83,
+          "lo": 105.69,
+          "fn": "Huyện Tân Hưng, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Tân Thạnh",
+          "la": 10.6,
+          "lo": 105.97,
+          "fn": "Huyện Tân Thạnh, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Tân Trụ",
+          "la": 10.53,
+          "lo": 106.52,
+          "fn": "Huyện Tân Trụ, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Thạnh Hóa",
+          "la": 10.67,
+          "lo": 106.17,
+          "fn": "Huyện Thạnh Hóa, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Thủ Thừa",
+          "la": 10.66,
+          "lo": 106.35,
+          "fn": "Huyện Thủ Thừa, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Huyện Vĩnh Hưng",
+          "la": 10.88,
+          "lo": 105.8,
+          "fn": "Huyện Vĩnh Hưng, Long An",
+          "s": "Long An"
+        },
+        {
+          "n": "Tân An",
+          "la": 10.54,
+          "lo": 106.41,
+          "fn": "Tân An, Long An",
+          "s": "Long An"
+        }
+      ]
+    },
+    {
+      "n": "Nam Định",
+      "la": 20.44,
+      "lo": 106.16,
+      "sc": "67",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Giao Thủy",
+          "la": 20.26,
+          "lo": 106.46,
+          "fn": "Huyện Giao Thủy, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Hải Hậu",
+          "la": 20.15,
+          "lo": 106.27,
+          "fn": "Huyện Hải Hậu, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Mỹ Lộc",
+          "la": 20.46,
+          "lo": 106.12,
+          "fn": "Huyện Mỹ Lộc, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Nam Trực",
+          "la": 20.34,
+          "lo": 106.21,
+          "fn": "Huyện Nam Trực, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Nghĩa Hưng",
+          "la": 20.11,
+          "lo": 106.17,
+          "fn": "Huyện Nghĩa Hưng, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Trực Ninh",
+          "la": 20.26,
+          "lo": 106.25,
+          "fn": "Huyện Trực Ninh, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Vụ Bản",
+          "la": 20.38,
+          "lo": 106.1,
+          "fn": "Huyện Vụ Bản, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Ý Yên",
+          "la": 20.32,
+          "lo": 106.02,
+          "fn": "Huyện Ý Yên, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Nam Định",
+          "la": 20.43,
+          "lo": 106.18,
+          "fn": "Nam Định, Nam Định",
+          "s": "Nam Định"
+        }
+      ]
+    },
+    {
+      "n": "Nam Định",
+      "la": 20.44,
+      "lo": 106.16,
+      "sc": "67",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Giao Thủy",
+          "la": 20.26,
+          "lo": 106.46,
+          "fn": "Huyện Giao Thủy, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Hải Hậu",
+          "la": 20.15,
+          "lo": 106.27,
+          "fn": "Huyện Hải Hậu, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Mỹ Lộc",
+          "la": 20.46,
+          "lo": 106.12,
+          "fn": "Huyện Mỹ Lộc, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Nam Trực",
+          "la": 20.34,
+          "lo": 106.21,
+          "fn": "Huyện Nam Trực, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Nghĩa Hưng",
+          "la": 20.11,
+          "lo": 106.17,
+          "fn": "Huyện Nghĩa Hưng, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Trực Ninh",
+          "la": 20.26,
+          "lo": 106.25,
+          "fn": "Huyện Trực Ninh, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Vụ Bản",
+          "la": 20.38,
+          "lo": 106.1,
+          "fn": "Huyện Vụ Bản, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Huyện Ý Yên",
+          "la": 20.32,
+          "lo": 106.02,
+          "fn": "Huyện Ý Yên, Nam Định",
+          "s": "Nam Định"
+        },
+        {
+          "n": "Nam Định",
+          "la": 20.43,
+          "lo": 106.18,
+          "fn": "Nam Định, Nam Định",
+          "s": "Nam Định"
+        }
+      ]
+    },
+    {
+      "n": "Nghệ An",
+      "la": 19.23,
+      "lo": 104.92,
+      "sc": "22",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Anh Sơn",
+          "la": 18.93,
+          "lo": 105.08,
+          "fn": "Huyện Anh Sơn, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Con Cuông",
+          "la": 19.04,
+          "lo": 104.8,
+          "fn": "Huyện Con Cuông, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Diễn Châu",
+          "la": 18.99,
+          "lo": 105.58,
+          "fn": "Huyện Diễn Châu, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Đô Lương",
+          "la": 18.89,
+          "lo": 105.34,
+          "fn": "Huyện Đô Lương, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Hưng Nguyên",
+          "la": 18.68,
+          "lo": 105.63,
+          "fn": "Huyện Hưng Nguyên, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Kỳ Sơn",
+          "la": 19.42,
+          "lo": 104.22,
+          "fn": "Huyện Kỳ Sơn, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Nam Đàn",
+          "la": 18.67,
+          "lo": 105.53,
+          "fn": "Huyện Nam Đàn, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Nghi Lộc",
+          "la": 18.83,
+          "lo": 105.62,
+          "fn": "Huyện Nghi Lộc, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Nghĩa Đàn",
+          "la": 19.38,
+          "lo": 105.44,
+          "fn": "Huyện Nghĩa Đàn, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Quế Phong",
+          "la": 19.7,
+          "lo": 104.88,
+          "fn": "Huyện Quế Phong, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Quỳ Châu",
+          "la": 19.56,
+          "lo": 105.09,
+          "fn": "Huyện Quỳ Châu, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Quỳ Hợp",
+          "la": 19.33,
+          "lo": 105.16,
+          "fn": "Huyện Quỳ Hợp, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Quỳnh Lưu",
+          "la": 19.23,
+          "lo": 105.64,
+          "fn": "Huyện Quỳnh Lưu, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Thanh Chương",
+          "la": 18.74,
+          "lo": 105.24,
+          "fn": "Huyện Thanh Chương, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Tương Dương",
+          "la": 19.31,
+          "lo": 104.58,
+          "fn": "Huyện Tương Dương, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Yên Thành",
+          "la": 19.03,
+          "lo": 105.44,
+          "fn": "Huyện Yên Thành, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Vinh",
+          "la": 18.67,
+          "lo": 105.69,
+          "fn": "Vinh, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Yên Vinh",
+          "la": 18.67,
+          "lo": 105.67,
+          "fn": "Yên Vinh, Nghệ An",
+          "s": "Nghệ An"
+        }
+      ]
+    },
+    {
+      "n": "Nghệ An",
+      "la": 19.23,
+      "lo": 104.92,
+      "sc": "22",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Anh Sơn",
+          "la": 18.93,
+          "lo": 105.08,
+          "fn": "Huyện Anh Sơn, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Con Cuông",
+          "la": 19.04,
+          "lo": 104.8,
+          "fn": "Huyện Con Cuông, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Diễn Châu",
+          "la": 18.99,
+          "lo": 105.58,
+          "fn": "Huyện Diễn Châu, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Đô Lương",
+          "la": 18.89,
+          "lo": 105.34,
+          "fn": "Huyện Đô Lương, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Hưng Nguyên",
+          "la": 18.68,
+          "lo": 105.63,
+          "fn": "Huyện Hưng Nguyên, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Kỳ Sơn",
+          "la": 19.42,
+          "lo": 104.22,
+          "fn": "Huyện Kỳ Sơn, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Nam Đàn",
+          "la": 18.67,
+          "lo": 105.53,
+          "fn": "Huyện Nam Đàn, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Nghi Lộc",
+          "la": 18.83,
+          "lo": 105.62,
+          "fn": "Huyện Nghi Lộc, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Nghĩa Đàn",
+          "la": 19.38,
+          "lo": 105.44,
+          "fn": "Huyện Nghĩa Đàn, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Quế Phong",
+          "la": 19.7,
+          "lo": 104.88,
+          "fn": "Huyện Quế Phong, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Quỳ Châu",
+          "la": 19.56,
+          "lo": 105.09,
+          "fn": "Huyện Quỳ Châu, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Quỳ Hợp",
+          "la": 19.33,
+          "lo": 105.16,
+          "fn": "Huyện Quỳ Hợp, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Quỳnh Lưu",
+          "la": 19.23,
+          "lo": 105.64,
+          "fn": "Huyện Quỳnh Lưu, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Thanh Chương",
+          "la": 18.74,
+          "lo": 105.24,
+          "fn": "Huyện Thanh Chương, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Tương Dương",
+          "la": 19.31,
+          "lo": 104.58,
+          "fn": "Huyện Tương Dương, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Huyện Yên Thành",
+          "la": 19.03,
+          "lo": 105.44,
+          "fn": "Huyện Yên Thành, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Vinh",
+          "la": 18.67,
+          "lo": 105.69,
+          "fn": "Vinh, Nghệ An",
+          "s": "Nghệ An"
+        },
+        {
+          "n": "Yên Vinh",
+          "la": 18.67,
+          "lo": 105.67,
+          "fn": "Yên Vinh, Nghệ An",
+          "s": "Nghệ An"
+        }
+      ]
+    },
+    {
+      "n": "Ninh Bình",
+      "la": 20.25,
+      "lo": 105.97,
+      "sc": "18",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Hoa Lư",
+          "la": 20.25,
+          "lo": 105.91,
+          "fn": "Huyện Hoa Lư, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Huyện Kim Sơn",
+          "la": 20.06,
+          "lo": 106.1,
+          "fn": "Huyện Kim Sơn, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Huyện Nho Quan",
+          "la": 20.28,
+          "lo": 105.75,
+          "fn": "Huyện Nho Quan, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Huyện Yên Khánh",
+          "la": 20.19,
+          "lo": 106.1,
+          "fn": "Huyện Yên Khánh, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Huyện Yên Mô",
+          "la": 20.13,
+          "lo": 106.0,
+          "fn": "Huyện Yên Mô, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Ninh Bình",
+          "la": 20.26,
+          "lo": 105.98,
+          "fn": "Ninh Bình, Ninh Bình",
+          "s": "Ninh Bình"
+        }
+      ]
+    },
+    {
+      "n": "Ninh Bình",
+      "la": 20.25,
+      "lo": 105.97,
+      "sc": "18",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Hoa Lư",
+          "la": 20.25,
+          "lo": 105.91,
+          "fn": "Huyện Hoa Lư, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Huyện Kim Sơn",
+          "la": 20.06,
+          "lo": 106.1,
+          "fn": "Huyện Kim Sơn, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Huyện Nho Quan",
+          "la": 20.28,
+          "lo": 105.75,
+          "fn": "Huyện Nho Quan, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Huyện Yên Khánh",
+          "la": 20.19,
+          "lo": 106.1,
+          "fn": "Huyện Yên Khánh, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Huyện Yên Mô",
+          "la": 20.13,
+          "lo": 106.0,
+          "fn": "Huyện Yên Mô, Ninh Bình",
+          "s": "Ninh Bình"
+        },
+        {
+          "n": "Ninh Bình",
+          "la": 20.26,
+          "lo": 105.98,
+          "fn": "Ninh Bình, Ninh Bình",
+          "s": "Ninh Bình"
+        }
+      ]
+    },
+    {
+      "n": "Ninh Thuận",
+      "la": 11.67,
+      "lo": 108.86,
+      "sc": "36",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Phan Rang-Tháp Chàm",
+          "la": 11.56,
+          "lo": 108.99,
+          "fn": "Phan Rang-Tháp Chàm, Ninh Thuận",
+          "s": "Ninh Thuận"
+        }
+      ]
+    },
+    {
+      "n": "Ninh Thuận",
+      "la": 11.67,
+      "lo": 108.86,
+      "sc": "36",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Phan Rang-Tháp Chàm",
+          "la": 11.56,
+          "lo": 108.99,
+          "fn": "Phan Rang-Tháp Chàm, Ninh Thuận",
+          "s": "Ninh Thuận"
+        }
+      ]
+    },
+    {
+      "n": "Phú Thọ",
+      "la": 21.27,
+      "lo": 105.2,
+      "sc": "68",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Cẩm Khê",
+          "la": 21.41,
+          "lo": 105.1,
+          "fn": "Huyện Cẩm Khê, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyện Đoan Hùng",
+          "la": 21.62,
+          "lo": 105.16,
+          "fn": "Huyện Đoan Hùng, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyện Hạ Hòa",
+          "la": 21.58,
+          "lo": 104.99,
+          "fn": "Huyện Hạ Hòa, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyen Lam Thao",
+          "la": 21.3,
+          "lo": 105.31,
+          "fn": "Huyen Lam Thao, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyện Thanh Ba",
+          "la": 21.48,
+          "lo": 105.16,
+          "fn": "Huyện Thanh Ba, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyện Yên Lập",
+          "la": 21.36,
+          "lo": 105.0,
+          "fn": "Huyện Yên Lập, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Thành Phố Việt Trì",
+          "la": 21.33,
+          "lo": 105.39,
+          "fn": "Thành Phố Việt Trì, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Thị xã Phú Thọ",
+          "la": 21.42,
+          "lo": 105.24,
+          "fn": "Thị xã Phú Thọ, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Việt Trì",
+          "la": 21.32,
+          "lo": 105.4,
+          "fn": "Việt Trì, Phú Thọ",
+          "s": "Phú Thọ"
+        }
+      ]
+    },
+    {
+      "n": "Phú Thọ",
+      "la": 21.27,
+      "lo": 105.2,
+      "sc": "68",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Cẩm Khê",
+          "la": 21.41,
+          "lo": 105.1,
+          "fn": "Huyện Cẩm Khê, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyện Đoan Hùng",
+          "la": 21.62,
+          "lo": 105.16,
+          "fn": "Huyện Đoan Hùng, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyện Hạ Hòa",
+          "la": 21.58,
+          "lo": 104.99,
+          "fn": "Huyện Hạ Hòa, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyen Lam Thao",
+          "la": 21.3,
+          "lo": 105.31,
+          "fn": "Huyen Lam Thao, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyện Thanh Ba",
+          "la": 21.48,
+          "lo": 105.16,
+          "fn": "Huyện Thanh Ba, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Huyện Yên Lập",
+          "la": 21.36,
+          "lo": 105.0,
+          "fn": "Huyện Yên Lập, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Thành Phố Việt Trì",
+          "la": 21.33,
+          "lo": 105.39,
+          "fn": "Thành Phố Việt Trì, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Thị xã Phú Thọ",
+          "la": 21.42,
+          "lo": 105.24,
+          "fn": "Thị xã Phú Thọ, Phú Thọ",
+          "s": "Phú Thọ"
+        },
+        {
+          "n": "Việt Trì",
+          "la": 21.32,
+          "lo": 105.4,
+          "fn": "Việt Trì, Phú Thọ",
+          "s": "Phú Thọ"
+        }
+      ]
+    },
+    {
+      "n": "Phú Yên",
+      "la": 13.09,
+      "lo": 109.09,
+      "sc": "32",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Sơn Hòa",
+          "la": 13.16,
+          "lo": 108.97,
+          "fn": "Huyện Sơn Hòa, Phú Yên",
+          "s": "Phú Yên"
+        },
+        {
+          "n": "Huyện Sông Hinh",
+          "la": 12.92,
+          "lo": 108.92,
+          "fn": "Huyện Sông Hinh, Phú Yên",
+          "s": "Phú Yên"
+        },
+        {
+          "n": "Sông Cầu",
+          "la": 13.46,
+          "lo": 109.22,
+          "fn": "Sông Cầu, Phú Yên",
+          "s": "Phú Yên"
+        },
+        {
+          "n": "Tuy Hòa",
+          "la": 13.1,
+          "lo": 109.32,
+          "fn": "Tuy Hòa, Phú Yên",
+          "s": "Phú Yên"
+        }
+      ]
+    },
+    {
+      "n": "Phú Yên",
+      "la": 13.09,
+      "lo": 109.09,
+      "sc": "32",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Sơn Hòa",
+          "la": 13.16,
+          "lo": 108.97,
+          "fn": "Huyện Sơn Hòa, Phú Yên",
+          "s": "Phú Yên"
+        },
+        {
+          "n": "Huyện Sông Hinh",
+          "la": 12.92,
+          "lo": 108.92,
+          "fn": "Huyện Sông Hinh, Phú Yên",
+          "s": "Phú Yên"
+        },
+        {
+          "n": "Sông Cầu",
+          "la": 13.46,
+          "lo": 109.22,
+          "fn": "Sông Cầu, Phú Yên",
+          "s": "Phú Yên"
+        },
+        {
+          "n": "Tuy Hòa",
+          "la": 13.1,
+          "lo": 109.32,
+          "fn": "Tuy Hòa, Phú Yên",
+          "s": "Phú Yên"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Bình",
+      "la": 17.61,
+      "lo": 106.35,
+      "sc": "24",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Lệ Thủy",
+          "la": 17.11,
+          "lo": 106.7,
+          "fn": "Huyện Lệ Thủy, Quảng Bình",
+          "s": "Quảng Bình"
+        },
+        {
+          "n": "Huyện Quảng Ninh",
+          "la": 17.27,
+          "lo": 106.51,
+          "fn": "Huyện Quảng Ninh, Quảng Bình",
+          "s": "Quảng Bình"
+        },
+        {
+          "n": "Huyện Quảng Trạch",
+          "la": 17.83,
+          "lo": 106.37,
+          "fn": "Huyện Quảng Trạch, Quảng Bình",
+          "s": "Quảng Bình"
+        },
+        {
+          "n": "Huyện Tuyên Hóa",
+          "la": 17.91,
+          "lo": 106.03,
+          "fn": "Huyện Tuyên Hóa, Quảng Bình",
+          "s": "Quảng Bình"
+        },
+        {
+          "n": "Kwang Binh",
+          "la": 17.47,
+          "lo": 106.62,
+          "fn": "Kwang Binh, Quảng Bình",
+          "s": "Quảng Bình"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Bình",
+      "la": 17.61,
+      "lo": 106.35,
+      "sc": "24",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Lệ Thủy",
+          "la": 17.11,
+          "lo": 106.7,
+          "fn": "Huyện Lệ Thủy, Quảng Bình",
+          "s": "Quảng Bình"
+        },
+        {
+          "n": "Huyện Quảng Ninh",
+          "la": 17.27,
+          "lo": 106.51,
+          "fn": "Huyện Quảng Ninh, Quảng Bình",
+          "s": "Quảng Bình"
+        },
+        {
+          "n": "Huyện Quảng Trạch",
+          "la": 17.83,
+          "lo": 106.37,
+          "fn": "Huyện Quảng Trạch, Quảng Bình",
+          "s": "Quảng Bình"
+        },
+        {
+          "n": "Huyện Tuyên Hóa",
+          "la": 17.91,
+          "lo": 106.03,
+          "fn": "Huyện Tuyên Hóa, Quảng Bình",
+          "s": "Quảng Bình"
+        },
+        {
+          "n": "Kwang Binh",
+          "la": 17.47,
+          "lo": 106.62,
+          "fn": "Kwang Binh, Quảng Bình",
+          "s": "Quảng Bình"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Nam",
+      "la": 15.54,
+      "lo": 108.02,
+      "sc": "27",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hội An",
+          "la": 15.88,
+          "lo": 108.33,
+          "fn": "Hội An, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Duy Xuyên",
+          "la": 15.79,
+          "lo": 108.2,
+          "fn": "Huyện Duy Xuyên, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Đại Lộc",
+          "la": 15.84,
+          "lo": 107.98,
+          "fn": "Huyện Đại Lộc, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Điện Bàn",
+          "la": 15.9,
+          "lo": 108.22,
+          "fn": "Huyện Điện Bàn, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Hiệp Đức",
+          "la": 15.54,
+          "lo": 108.1,
+          "fn": "Huyện Hiệp Đức, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Nam Giang",
+          "la": 15.63,
+          "lo": 107.6,
+          "fn": "Huyện Nam Giang, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Núi Thành",
+          "la": 15.43,
+          "lo": 108.57,
+          "fn": "Huyện Núi Thành, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Phước Sơn",
+          "la": 15.39,
+          "lo": 107.86,
+          "fn": "Huyện Phước Sơn, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Tiên Phước",
+          "la": 15.47,
+          "lo": 108.28,
+          "fn": "Huyện Tiên Phước, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Trà My",
+          "la": 15.25,
+          "lo": 108.08,
+          "fn": "Huyện Trà My, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Tam Kỳ",
+          "la": 15.57,
+          "lo": 108.47,
+          "fn": "Tam Kỳ, Quảng Nam",
+          "s": "Quảng Nam"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Nam",
+      "la": 15.54,
+      "lo": 108.02,
+      "sc": "27",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Hội An",
+          "la": 15.88,
+          "lo": 108.33,
+          "fn": "Hội An, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Duy Xuyên",
+          "la": 15.79,
+          "lo": 108.2,
+          "fn": "Huyện Duy Xuyên, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Đại Lộc",
+          "la": 15.84,
+          "lo": 107.98,
+          "fn": "Huyện Đại Lộc, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Điện Bàn",
+          "la": 15.9,
+          "lo": 108.22,
+          "fn": "Huyện Điện Bàn, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Hiệp Đức",
+          "la": 15.54,
+          "lo": 108.1,
+          "fn": "Huyện Hiệp Đức, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Nam Giang",
+          "la": 15.63,
+          "lo": 107.6,
+          "fn": "Huyện Nam Giang, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Núi Thành",
+          "la": 15.43,
+          "lo": 108.57,
+          "fn": "Huyện Núi Thành, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Phước Sơn",
+          "la": 15.39,
+          "lo": 107.86,
+          "fn": "Huyện Phước Sơn, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Tiên Phước",
+          "la": 15.47,
+          "lo": 108.28,
+          "fn": "Huyện Tiên Phước, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Huyện Trà My",
+          "la": 15.25,
+          "lo": 108.08,
+          "fn": "Huyện Trà My, Quảng Nam",
+          "s": "Quảng Nam"
+        },
+        {
+          "n": "Tam Kỳ",
+          "la": 15.57,
+          "lo": 108.47,
+          "fn": "Tam Kỳ, Quảng Nam",
+          "s": "Quảng Nam"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Ngãi",
+      "la": 15.12,
+      "lo": 108.8,
+      "sc": "29",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Ba Tơ",
+          "la": 14.74,
+          "lo": 108.69,
+          "fn": "Huyện Ba Tơ, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Bình Sơn",
+          "la": 15.32,
+          "lo": 108.76,
+          "fn": "Huyện Bình Sơn, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Đức Phổ",
+          "la": 14.78,
+          "lo": 108.98,
+          "fn": "Huyện Đức Phổ, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Lý Sơn",
+          "la": 15.41,
+          "lo": 109.1,
+          "fn": "Huyện Lý Sơn, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Minh Long",
+          "la": 14.95,
+          "lo": 108.68,
+          "fn": "Huyện Minh Long, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Mộ Đức",
+          "la": 14.96,
+          "lo": 108.89,
+          "fn": "Huyện Mộ Đức, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Nghĩa Hành",
+          "la": 14.99,
+          "lo": 108.8,
+          "fn": "Huyện Nghĩa Hành, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Sơn Hà",
+          "la": 14.98,
+          "lo": 108.54,
+          "fn": "Huyện Sơn Hà, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Sơn Tây",
+          "la": 14.96,
+          "lo": 108.36,
+          "fn": "Huyện Sơn Tây, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Sơn Tịnh",
+          "la": 15.19,
+          "lo": 108.74,
+          "fn": "Huyện Sơn Tịnh, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Trà Bồng",
+          "la": 15.24,
+          "lo": 108.53,
+          "fn": "Huyện Trà Bồng, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Tư Nghĩa",
+          "la": 15.09,
+          "lo": 108.77,
+          "fn": "Huyện Tư Nghĩa, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Quảng Ngãi",
+          "la": 15.12,
+          "lo": 108.79,
+          "fn": "Quảng Ngãi, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Ngãi",
+      "la": 15.12,
+      "lo": 108.8,
+      "sc": "29",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Ba Tơ",
+          "la": 14.74,
+          "lo": 108.69,
+          "fn": "Huyện Ba Tơ, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Bình Sơn",
+          "la": 15.32,
+          "lo": 108.76,
+          "fn": "Huyện Bình Sơn, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Đức Phổ",
+          "la": 14.78,
+          "lo": 108.98,
+          "fn": "Huyện Đức Phổ, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Lý Sơn",
+          "la": 15.41,
+          "lo": 109.1,
+          "fn": "Huyện Lý Sơn, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Minh Long",
+          "la": 14.95,
+          "lo": 108.68,
+          "fn": "Huyện Minh Long, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Mộ Đức",
+          "la": 14.96,
+          "lo": 108.89,
+          "fn": "Huyện Mộ Đức, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Nghĩa Hành",
+          "la": 14.99,
+          "lo": 108.8,
+          "fn": "Huyện Nghĩa Hành, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Sơn Hà",
+          "la": 14.98,
+          "lo": 108.54,
+          "fn": "Huyện Sơn Hà, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Sơn Tây",
+          "la": 14.96,
+          "lo": 108.36,
+          "fn": "Huyện Sơn Tây, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Sơn Tịnh",
+          "la": 15.19,
+          "lo": 108.74,
+          "fn": "Huyện Sơn Tịnh, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Trà Bồng",
+          "la": 15.24,
+          "lo": 108.53,
+          "fn": "Huyện Trà Bồng, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Huyện Tư Nghĩa",
+          "la": 15.09,
+          "lo": 108.77,
+          "fn": "Huyện Tư Nghĩa, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        },
+        {
+          "n": "Quảng Ngãi",
+          "la": 15.12,
+          "lo": 108.79,
+          "fn": "Quảng Ngãi, Quảng Ngãi",
+          "s": "Quảng Ngãi"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Ninh",
+      "la": 21.01,
+      "lo": 107.29,
+      "sc": "13",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cẩm Phả",
+          "la": 21.01,
+          "lo": 107.27,
+          "fn": "Cẩm Phả, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Cẩm Phả Mines",
+          "la": 21.02,
+          "lo": 107.3,
+          "fn": "Cẩm Phả Mines, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Hạ Long",
+          "la": 20.95,
+          "lo": 107.07,
+          "fn": "Hạ Long, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Ba Chẽ",
+          "la": 21.3,
+          "lo": 107.19,
+          "fn": "Huyện Ba Chẽ, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Bình Liêu",
+          "la": 21.54,
+          "lo": 107.44,
+          "fn": "Huyện Bình Liêu, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Cô Tô",
+          "la": 21.05,
+          "lo": 107.81,
+          "fn": "Huyện Cô Tô, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Đầm Hà",
+          "la": 21.4,
+          "lo": 107.56,
+          "fn": "Huyện Đầm Hà, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Đông Triều",
+          "la": 21.11,
+          "lo": 106.6,
+          "fn": "Huyện Đông Triều, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Hải Hà",
+          "la": 21.5,
+          "lo": 107.67,
+          "fn": "Huyện Hải Hà, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Hoành Bồ",
+          "la": 21.12,
+          "lo": 107.03,
+          "fn": "Huyện Hoành Bồ, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Tiên Yên",
+          "la": 21.38,
+          "lo": 107.37,
+          "fn": "Huyện Tiên Yên, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Vân Đồn",
+          "la": 21.05,
+          "lo": 107.51,
+          "fn": "Huyện Vân Đồn, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Móng Cái",
+          "la": 21.52,
+          "lo": 107.97,
+          "fn": "Móng Cái, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Thành Phố Uông Bí",
+          "la": 21.03,
+          "lo": 106.77,
+          "fn": "Thành Phố Uông Bí, Quảng Ninh",
+          "s": "Quảng Ninh"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Ninh",
+      "la": 21.01,
+      "lo": 107.29,
+      "sc": "13",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Cẩm Phả",
+          "la": 21.01,
+          "lo": 107.27,
+          "fn": "Cẩm Phả, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Cẩm Phả Mines",
+          "la": 21.02,
+          "lo": 107.3,
+          "fn": "Cẩm Phả Mines, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Hạ Long",
+          "la": 20.95,
+          "lo": 107.07,
+          "fn": "Hạ Long, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Ba Chẽ",
+          "la": 21.3,
+          "lo": 107.19,
+          "fn": "Huyện Ba Chẽ, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Bình Liêu",
+          "la": 21.54,
+          "lo": 107.44,
+          "fn": "Huyện Bình Liêu, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Cô Tô",
+          "la": 21.05,
+          "lo": 107.81,
+          "fn": "Huyện Cô Tô, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Đầm Hà",
+          "la": 21.4,
+          "lo": 107.56,
+          "fn": "Huyện Đầm Hà, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Đông Triều",
+          "la": 21.11,
+          "lo": 106.6,
+          "fn": "Huyện Đông Triều, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Hải Hà",
+          "la": 21.5,
+          "lo": 107.67,
+          "fn": "Huyện Hải Hà, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Hoành Bồ",
+          "la": 21.12,
+          "lo": 107.03,
+          "fn": "Huyện Hoành Bồ, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Tiên Yên",
+          "la": 21.38,
+          "lo": 107.37,
+          "fn": "Huyện Tiên Yên, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Huyện Vân Đồn",
+          "la": 21.05,
+          "lo": 107.51,
+          "fn": "Huyện Vân Đồn, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Móng Cái",
+          "la": 21.52,
+          "lo": 107.97,
+          "fn": "Móng Cái, Quảng Ninh",
+          "s": "Quảng Ninh"
+        },
+        {
+          "n": "Thành Phố Uông Bí",
+          "la": 21.03,
+          "lo": 106.77,
+          "fn": "Thành Phố Uông Bí, Quảng Ninh",
+          "s": "Quảng Ninh"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Trị",
+      "la": 16.74,
+      "lo": 107.19,
+      "sc": "25",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Ðông Hà",
+          "la": 16.82,
+          "lo": 107.1,
+          "fn": "Ðông Hà, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Cam Lộ",
+          "la": 16.79,
+          "lo": 106.96,
+          "fn": "Huyện Cam Lộ, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Đa Krông",
+          "la": 16.56,
+          "lo": 106.97,
+          "fn": "Huyện Đa Krông, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Gio Linh",
+          "la": 16.92,
+          "lo": 107.0,
+          "fn": "Huyện Gio Linh, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Hải Lăng",
+          "la": 16.68,
+          "lo": 107.23,
+          "fn": "Huyện Hải Lăng, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Hướng Hóa",
+          "la": 16.7,
+          "lo": 106.67,
+          "fn": "Huyện Hướng Hóa, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Triệu Phong",
+          "la": 16.78,
+          "lo": 107.16,
+          "fn": "Huyện Triệu Phong, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Vĩnh Linh",
+          "la": 17.02,
+          "lo": 106.93,
+          "fn": "Huyện Vĩnh Linh, Quảng Trị",
+          "s": "Quảng Trị"
+        }
+      ]
+    },
+    {
+      "n": "Quảng Trị",
+      "la": 16.74,
+      "lo": 107.19,
+      "sc": "25",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Ðông Hà",
+          "la": 16.82,
+          "lo": 107.1,
+          "fn": "Ðông Hà, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Cam Lộ",
+          "la": 16.79,
+          "lo": 106.96,
+          "fn": "Huyện Cam Lộ, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Đa Krông",
+          "la": 16.56,
+          "lo": 106.97,
+          "fn": "Huyện Đa Krông, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Gio Linh",
+          "la": 16.92,
+          "lo": 107.0,
+          "fn": "Huyện Gio Linh, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Hải Lăng",
+          "la": 16.68,
+          "lo": 107.23,
+          "fn": "Huyện Hải Lăng, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Hướng Hóa",
+          "la": 16.7,
+          "lo": 106.67,
+          "fn": "Huyện Hướng Hóa, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Triệu Phong",
+          "la": 16.78,
+          "lo": 107.16,
+          "fn": "Huyện Triệu Phong, Quảng Trị",
+          "s": "Quảng Trị"
+        },
+        {
+          "n": "Huyện Vĩnh Linh",
+          "la": 17.02,
+          "lo": 106.93,
+          "fn": "Huyện Vĩnh Linh, Quảng Trị",
+          "s": "Quảng Trị"
+        }
+      ]
+    },
+    {
+      "n": "Sóc Trăng",
+      "la": 9.6,
+      "lo": 105.97,
+      "sc": "52",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Kế Sách",
+          "la": 9.82,
+          "lo": 105.94,
+          "fn": "Huyện Kế Sách, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyện Long Phú",
+          "la": 9.64,
+          "lo": 106.08,
+          "fn": "Huyện Long Phú, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyện Mỹ Tú",
+          "la": 9.61,
+          "lo": 105.81,
+          "fn": "Huyện Mỹ Tú, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyện Mỹ Xuyên",
+          "la": 9.44,
+          "lo": 105.89,
+          "fn": "Huyện Mỹ Xuyên, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyen Nga Nam",
+          "la": 9.56,
+          "lo": 105.59,
+          "fn": "Huyen Nga Nam, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyện Thạnh Trị",
+          "la": 9.47,
+          "lo": 105.71,
+          "fn": "Huyện Thạnh Trị, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Sóc Trăng",
+          "la": 9.6,
+          "lo": 105.97,
+          "fn": "Sóc Trăng, Sóc Trăng",
+          "s": "Sóc Trăng"
+        }
+      ]
+    },
+    {
+      "n": "Sóc Trăng",
+      "la": 9.6,
+      "lo": 105.97,
+      "sc": "52",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Kế Sách",
+          "la": 9.82,
+          "lo": 105.94,
+          "fn": "Huyện Kế Sách, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyện Long Phú",
+          "la": 9.64,
+          "lo": 106.08,
+          "fn": "Huyện Long Phú, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyện Mỹ Tú",
+          "la": 9.61,
+          "lo": 105.81,
+          "fn": "Huyện Mỹ Tú, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyện Mỹ Xuyên",
+          "la": 9.44,
+          "lo": 105.89,
+          "fn": "Huyện Mỹ Xuyên, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyen Nga Nam",
+          "la": 9.56,
+          "lo": 105.59,
+          "fn": "Huyen Nga Nam, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Huyện Thạnh Trị",
+          "la": 9.47,
+          "lo": 105.71,
+          "fn": "Huyện Thạnh Trị, Sóc Trăng",
+          "s": "Sóc Trăng"
+        },
+        {
+          "n": "Sóc Trăng",
+          "la": 9.6,
+          "lo": 105.97,
+          "fn": "Sóc Trăng, Sóc Trăng",
+          "s": "Sóc Trăng"
+        }
+      ]
+    },
+    {
+      "n": "Sơn La",
+      "la": 21.1,
+      "lo": 103.73,
+      "sc": "05",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bắc Yên",
+          "la": 21.25,
+          "lo": 104.39,
+          "fn": "Huyện Bắc Yên, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Mai Sơn",
+          "la": 21.16,
+          "lo": 104.05,
+          "fn": "Huyện Mai Sơn, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Mộc Châu",
+          "la": 21.83,
+          "lo": 104.75,
+          "fn": "Huyện Mộc Châu, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Mường La",
+          "la": 21.53,
+          "lo": 104.11,
+          "fn": "Huyện Mường La, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Phù Yên",
+          "la": 21.21,
+          "lo": 104.69,
+          "fn": "Huyện Phù Yên, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Quỳnh Nhai",
+          "la": 21.77,
+          "lo": 103.65,
+          "fn": "Huyện Quỳnh Nhai, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Sông Mã",
+          "la": 21.07,
+          "lo": 103.69,
+          "fn": "Huyện Sông Mã, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Thuận Châu",
+          "la": 21.42,
+          "lo": 103.64,
+          "fn": "Huyện Thuận Châu, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Yên Châu",
+          "la": 21.0,
+          "lo": 104.33,
+          "fn": "Huyện Yên Châu, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Sơn La",
+          "la": 21.33,
+          "lo": 103.92,
+          "fn": "Sơn La, Sơn La",
+          "s": "Sơn La"
+        }
+      ]
+    },
+    {
+      "n": "Sơn La",
+      "la": 21.1,
+      "lo": 103.73,
+      "sc": "05",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bắc Yên",
+          "la": 21.25,
+          "lo": 104.39,
+          "fn": "Huyện Bắc Yên, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Mai Sơn",
+          "la": 21.16,
+          "lo": 104.05,
+          "fn": "Huyện Mai Sơn, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Mộc Châu",
+          "la": 21.83,
+          "lo": 104.75,
+          "fn": "Huyện Mộc Châu, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Mường La",
+          "la": 21.53,
+          "lo": 104.11,
+          "fn": "Huyện Mường La, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Phù Yên",
+          "la": 21.21,
+          "lo": 104.69,
+          "fn": "Huyện Phù Yên, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Quỳnh Nhai",
+          "la": 21.77,
+          "lo": 103.65,
+          "fn": "Huyện Quỳnh Nhai, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Sông Mã",
+          "la": 21.07,
+          "lo": 103.69,
+          "fn": "Huyện Sông Mã, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Thuận Châu",
+          "la": 21.42,
+          "lo": 103.64,
+          "fn": "Huyện Thuận Châu, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Huyện Yên Châu",
+          "la": 21.0,
+          "lo": 104.33,
+          "fn": "Huyện Yên Châu, Sơn La",
+          "s": "Sơn La"
+        },
+        {
+          "n": "Sơn La",
+          "la": 21.33,
+          "lo": 103.92,
+          "fn": "Sơn La, Sơn La",
+          "s": "Sơn La"
+        }
+      ]
+    },
+    {
+      "n": "Tây Ninh",
+      "la": 11.34,
+      "lo": 106.11,
+      "sc": "37",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bến Cầu",
+          "la": 11.13,
+          "lo": 106.14,
+          "fn": "Huyện Bến Cầu, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Dương Minh Châu",
+          "la": 11.32,
+          "lo": 106.26,
+          "fn": "Huyện Dương Minh Châu, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Gò Dầu",
+          "la": 11.16,
+          "lo": 106.27,
+          "fn": "Huyện Gò Dầu, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Hòa Thành",
+          "la": 11.27,
+          "lo": 106.14,
+          "fn": "Huyện Hòa Thành, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Tân Châu",
+          "la": 11.59,
+          "lo": 106.28,
+          "fn": "Huyện Tân Châu, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Trảng Bàng",
+          "la": 11.06,
+          "lo": 106.38,
+          "fn": "Huyện Trảng Bàng, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Phú Khương",
+          "la": 11.28,
+          "lo": 106.13,
+          "fn": "Phú Khương, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Tây Ninh",
+          "la": 11.31,
+          "lo": 106.1,
+          "fn": "Tây Ninh, Tây Ninh",
+          "s": "Tây Ninh"
+        }
+      ]
+    },
+    {
+      "n": "Tây Ninh",
+      "la": 11.34,
+      "lo": 106.11,
+      "sc": "37",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bến Cầu",
+          "la": 11.13,
+          "lo": 106.14,
+          "fn": "Huyện Bến Cầu, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Dương Minh Châu",
+          "la": 11.32,
+          "lo": 106.26,
+          "fn": "Huyện Dương Minh Châu, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Gò Dầu",
+          "la": 11.16,
+          "lo": 106.27,
+          "fn": "Huyện Gò Dầu, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Hòa Thành",
+          "la": 11.27,
+          "lo": 106.14,
+          "fn": "Huyện Hòa Thành, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Tân Châu",
+          "la": 11.59,
+          "lo": 106.28,
+          "fn": "Huyện Tân Châu, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Huyện Trảng Bàng",
+          "la": 11.06,
+          "lo": 106.38,
+          "fn": "Huyện Trảng Bàng, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Phú Khương",
+          "la": 11.28,
+          "lo": 106.13,
+          "fn": "Phú Khương, Tây Ninh",
+          "s": "Tây Ninh"
+        },
+        {
+          "n": "Tây Ninh",
+          "la": 11.31,
+          "lo": 106.1,
+          "fn": "Tây Ninh, Tây Ninh",
+          "s": "Tây Ninh"
+        }
+      ]
+    },
+    {
+      "n": "Thái Bình",
+      "la": 20.45,
+      "lo": 106.34,
+      "sc": "20",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Ðông Hưng",
+          "la": 20.54,
+          "lo": 106.34,
+          "fn": "Huyện Ðông Hưng, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Hưng Hà",
+          "la": 20.59,
+          "lo": 106.21,
+          "fn": "Huyện Hưng Hà, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Kiến Xương",
+          "la": 20.4,
+          "lo": 106.42,
+          "fn": "Huyện Kiến Xương, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Quỳnh Phụ",
+          "la": 20.65,
+          "lo": 106.36,
+          "fn": "Huyện Quỳnh Phụ, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Thái Thụy",
+          "la": 20.54,
+          "lo": 106.52,
+          "fn": "Huyện Thái Thụy, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Tiền Hải",
+          "la": 20.38,
+          "lo": 106.53,
+          "fn": "Huyện Tiền Hải, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Vũ Thư",
+          "la": 20.44,
+          "lo": 106.27,
+          "fn": "Huyện Vũ Thư, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Thái Bình",
+          "la": 20.45,
+          "lo": 106.34,
+          "fn": "Thái Bình, Thái Bình",
+          "s": "Thái Bình"
+        }
+      ]
+    },
+    {
+      "n": "Thái Bình",
+      "la": 20.45,
+      "lo": 106.34,
+      "sc": "20",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Ðông Hưng",
+          "la": 20.54,
+          "lo": 106.34,
+          "fn": "Huyện Ðông Hưng, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Hưng Hà",
+          "la": 20.59,
+          "lo": 106.21,
+          "fn": "Huyện Hưng Hà, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Kiến Xương",
+          "la": 20.4,
+          "lo": 106.42,
+          "fn": "Huyện Kiến Xương, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Quỳnh Phụ",
+          "la": 20.65,
+          "lo": 106.36,
+          "fn": "Huyện Quỳnh Phụ, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Thái Thụy",
+          "la": 20.54,
+          "lo": 106.52,
+          "fn": "Huyện Thái Thụy, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Tiền Hải",
+          "la": 20.38,
+          "lo": 106.53,
+          "fn": "Huyện Tiền Hải, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Huyện Vũ Thư",
+          "la": 20.44,
+          "lo": 106.27,
+          "fn": "Huyện Vũ Thư, Thái Bình",
+          "s": "Thái Bình"
+        },
+        {
+          "n": "Thái Bình",
+          "la": 20.45,
+          "lo": 106.34,
+          "fn": "Thái Bình, Thái Bình",
+          "s": "Thái Bình"
+        }
+      ]
+    },
+    {
+      "n": "Thái Nguyên",
+      "la": 21.57,
+      "lo": 105.83,
+      "sc": "69",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Thái Nguyên",
+          "la": 21.59,
+          "lo": 105.85,
+          "fn": "Thái Nguyên, Thái Nguyên",
+          "s": "Thái Nguyên"
+        }
+      ]
+    },
+    {
+      "n": "Thái Nguyên",
+      "la": 21.57,
+      "lo": 105.83,
+      "sc": "69",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Thái Nguyên",
+          "la": 21.59,
+          "lo": 105.85,
+          "fn": "Thái Nguyên, Thái Nguyên",
+          "s": "Thái Nguyên"
+        }
+      ]
+    },
+    {
+      "n": "Thanh Hóa",
+      "la": 19.81,
+      "lo": 105.79,
+      "sc": "21",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bỉm Sơn",
+          "la": 20.08,
+          "lo": 105.86,
+          "fn": "Bỉm Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Bá Thước",
+          "la": 20.36,
+          "lo": 105.25,
+          "fn": "Huyện Bá Thước, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Cẩm Thủy",
+          "la": 20.2,
+          "lo": 105.47,
+          "fn": "Huyện Cẩm Thủy, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Đông Sơn",
+          "la": 19.8,
+          "lo": 105.72,
+          "fn": "Huyện Đông Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Hà Trung",
+          "la": 20.03,
+          "lo": 105.82,
+          "fn": "Huyện Hà Trung, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Hậu Lộc",
+          "la": 19.93,
+          "lo": 105.89,
+          "fn": "Huyện Hậu Lộc, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Lang Chánh",
+          "la": 20.16,
+          "lo": 105.15,
+          "fn": "Huyện Lang Chánh, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Mường Lát",
+          "la": 20.53,
+          "lo": 104.63,
+          "fn": "Huyện Mường Lát, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Nga Sơn",
+          "la": 20.02,
+          "lo": 105.99,
+          "fn": "Huyện Nga Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Ngọc Lặc",
+          "la": 20.07,
+          "lo": 105.37,
+          "fn": "Huyện Ngọc Lặc, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Như Thanh",
+          "la": 19.58,
+          "lo": 105.56,
+          "fn": "Huyện Như Thanh, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Như Xuân",
+          "la": 19.63,
+          "lo": 105.39,
+          "fn": "Huyện Như Xuân, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Nông Cống",
+          "la": 19.61,
+          "lo": 105.68,
+          "fn": "Huyện Nông Cống, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Quan Hóa",
+          "la": 20.48,
+          "lo": 104.95,
+          "fn": "Huyện Quan Hóa, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Quan Sơn",
+          "la": 20.26,
+          "lo": 104.83,
+          "fn": "Huyện Quan Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Quảng Xương",
+          "la": 19.7,
+          "lo": 105.79,
+          "fn": "Huyện Quảng Xương, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Thiệu Hóa",
+          "la": 19.9,
+          "lo": 105.68,
+          "fn": "Huyện Thiệu Hóa, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Thọ Xuân",
+          "la": 19.93,
+          "lo": 105.48,
+          "fn": "Huyện Thọ Xuân, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Thường Xuân",
+          "la": 19.94,
+          "lo": 105.24,
+          "fn": "Huyện Thường Xuân, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Triệu Sơn",
+          "la": 19.83,
+          "lo": 105.58,
+          "fn": "Huyện Triệu Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Vĩnh Lộc",
+          "la": 20.03,
+          "lo": 105.66,
+          "fn": "Huyện Vĩnh Lộc, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Yên Định",
+          "la": 19.99,
+          "lo": 105.61,
+          "fn": "Huyện Yên Định, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Thanh Hóa",
+          "la": 19.8,
+          "lo": 105.77,
+          "fn": "Thanh Hóa, Thanh Hóa",
+          "s": "Thanh Hóa"
+        }
+      ]
+    },
+    {
+      "n": "Thanh Hóa",
+      "la": 19.81,
+      "lo": 105.79,
+      "sc": "21",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Bỉm Sơn",
+          "la": 20.08,
+          "lo": 105.86,
+          "fn": "Bỉm Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Bá Thước",
+          "la": 20.36,
+          "lo": 105.25,
+          "fn": "Huyện Bá Thước, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Cẩm Thủy",
+          "la": 20.2,
+          "lo": 105.47,
+          "fn": "Huyện Cẩm Thủy, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Đông Sơn",
+          "la": 19.8,
+          "lo": 105.72,
+          "fn": "Huyện Đông Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Hà Trung",
+          "la": 20.03,
+          "lo": 105.82,
+          "fn": "Huyện Hà Trung, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Hậu Lộc",
+          "la": 19.93,
+          "lo": 105.89,
+          "fn": "Huyện Hậu Lộc, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Lang Chánh",
+          "la": 20.16,
+          "lo": 105.15,
+          "fn": "Huyện Lang Chánh, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Mường Lát",
+          "la": 20.53,
+          "lo": 104.63,
+          "fn": "Huyện Mường Lát, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Nga Sơn",
+          "la": 20.02,
+          "lo": 105.99,
+          "fn": "Huyện Nga Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Ngọc Lặc",
+          "la": 20.07,
+          "lo": 105.37,
+          "fn": "Huyện Ngọc Lặc, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Như Thanh",
+          "la": 19.58,
+          "lo": 105.56,
+          "fn": "Huyện Như Thanh, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Như Xuân",
+          "la": 19.63,
+          "lo": 105.39,
+          "fn": "Huyện Như Xuân, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Nông Cống",
+          "la": 19.61,
+          "lo": 105.68,
+          "fn": "Huyện Nông Cống, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Quan Hóa",
+          "la": 20.48,
+          "lo": 104.95,
+          "fn": "Huyện Quan Hóa, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Quan Sơn",
+          "la": 20.26,
+          "lo": 104.83,
+          "fn": "Huyện Quan Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Quảng Xương",
+          "la": 19.7,
+          "lo": 105.79,
+          "fn": "Huyện Quảng Xương, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Thiệu Hóa",
+          "la": 19.9,
+          "lo": 105.68,
+          "fn": "Huyện Thiệu Hóa, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Thọ Xuân",
+          "la": 19.93,
+          "lo": 105.48,
+          "fn": "Huyện Thọ Xuân, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Thường Xuân",
+          "la": 19.94,
+          "lo": 105.24,
+          "fn": "Huyện Thường Xuân, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Triệu Sơn",
+          "la": 19.83,
+          "lo": 105.58,
+          "fn": "Huyện Triệu Sơn, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Vĩnh Lộc",
+          "la": 20.03,
+          "lo": 105.66,
+          "fn": "Huyện Vĩnh Lộc, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Huyện Yên Định",
+          "la": 19.99,
+          "lo": 105.61,
+          "fn": "Huyện Yên Định, Thanh Hóa",
+          "s": "Thanh Hóa"
+        },
+        {
+          "n": "Thanh Hóa",
+          "la": 19.8,
+          "lo": 105.77,
+          "fn": "Thanh Hóa, Thanh Hóa",
+          "s": "Thanh Hóa"
+        }
+      ]
+    },
+    {
+      "n": "Thừa Thiên-Huế",
+      "la": 16.47,
+      "lo": 107.59,
+      "sc": "26",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huế",
+          "la": 16.46,
+          "lo": 107.6,
+          "fn": "Huế, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện A Lưới",
+          "la": 16.23,
+          "lo": 107.31,
+          "fn": "Huyện A Lưới, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Nam Đông",
+          "la": 16.12,
+          "lo": 107.69,
+          "fn": "Huyện Nam Đông, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Phong Điền",
+          "la": 16.49,
+          "lo": 107.29,
+          "fn": "Huyện Phong Điền, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Phú Lộc",
+          "la": 16.27,
+          "lo": 107.89,
+          "fn": "Huyện Phú Lộc, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Phú Vang",
+          "la": 16.47,
+          "lo": 107.71,
+          "fn": "Huyện Phú Vang, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Quảng Ðiền",
+          "la": 16.58,
+          "lo": 107.49,
+          "fn": "Huyện Quảng Ðiền, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        }
+      ]
+    },
+    {
+      "n": "Thừa Thiên-Huế",
+      "la": 16.47,
+      "lo": 107.59,
+      "sc": "26",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huế",
+          "la": 16.46,
+          "lo": 107.6,
+          "fn": "Huế, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện A Lưới",
+          "la": 16.23,
+          "lo": 107.31,
+          "fn": "Huyện A Lưới, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Nam Đông",
+          "la": 16.12,
+          "lo": 107.69,
+          "fn": "Huyện Nam Đông, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Phong Điền",
+          "la": 16.49,
+          "lo": 107.29,
+          "fn": "Huyện Phong Điền, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Phú Lộc",
+          "la": 16.27,
+          "lo": 107.89,
+          "fn": "Huyện Phú Lộc, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Phú Vang",
+          "la": 16.47,
+          "lo": 107.71,
+          "fn": "Huyện Phú Vang, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        },
+        {
+          "n": "Huyện Quảng Ðiền",
+          "la": 16.58,
+          "lo": 107.49,
+          "fn": "Huyện Quảng Ðiền, Thừa Thiên-Huế",
+          "s": "Thừa Thiên-Huế"
+        }
+      ]
+    },
+    {
+      "n": "Tiền Giang",
+      "la": 10.45,
+      "lo": 106.34,
+      "sc": "46",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Cái Bè",
+          "la": 10.39,
+          "lo": 105.95,
+          "fn": "Huyện Cái Bè, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Cai Lậy",
+          "la": 10.39,
+          "lo": 106.07,
+          "fn": "Huyện Cai Lậy, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 10.39,
+          "lo": 106.27,
+          "fn": "Huyện Châu Thành, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Chợ Gạo",
+          "la": 10.37,
+          "lo": 106.44,
+          "fn": "Huyện Chợ Gạo, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Gò Công Đông",
+          "la": 10.37,
+          "lo": 106.75,
+          "fn": "Huyện Gò Công Đông, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Gò Công Tây",
+          "la": 10.35,
+          "lo": 106.6,
+          "fn": "Huyện Gò Công Tây, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Tân Phước",
+          "la": 10.51,
+          "lo": 106.23,
+          "fn": "Huyện Tân Phước, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Mỹ Tho",
+          "la": 10.36,
+          "lo": 106.36,
+          "fn": "Mỹ Tho, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Thành Phố Mỹ Tho",
+          "la": 10.36,
+          "lo": 106.37,
+          "fn": "Thành Phố Mỹ Tho, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Thị Xã Gò Công",
+          "la": 10.4,
+          "lo": 106.66,
+          "fn": "Thị Xã Gò Công, Tiền Giang",
+          "s": "Tiền Giang"
+        }
+      ]
+    },
+    {
+      "n": "Tiền Giang",
+      "la": 10.45,
+      "lo": 106.34,
+      "sc": "46",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Cái Bè",
+          "la": 10.39,
+          "lo": 105.95,
+          "fn": "Huyện Cái Bè, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Cai Lậy",
+          "la": 10.39,
+          "lo": 106.07,
+          "fn": "Huyện Cai Lậy, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Châu Thành",
+          "la": 10.39,
+          "lo": 106.27,
+          "fn": "Huyện Châu Thành, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Chợ Gạo",
+          "la": 10.37,
+          "lo": 106.44,
+          "fn": "Huyện Chợ Gạo, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Gò Công Đông",
+          "la": 10.37,
+          "lo": 106.75,
+          "fn": "Huyện Gò Công Đông, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Gò Công Tây",
+          "la": 10.35,
+          "lo": 106.6,
+          "fn": "Huyện Gò Công Tây, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Huyện Tân Phước",
+          "la": 10.51,
+          "lo": 106.23,
+          "fn": "Huyện Tân Phước, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Mỹ Tho",
+          "la": 10.36,
+          "lo": 106.36,
+          "fn": "Mỹ Tho, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Thành Phố Mỹ Tho",
+          "la": 10.36,
+          "lo": 106.37,
+          "fn": "Thành Phố Mỹ Tho, Tiền Giang",
+          "s": "Tiền Giang"
+        },
+        {
+          "n": "Thị Xã Gò Công",
+          "la": 10.4,
+          "lo": 106.66,
+          "fn": "Thị Xã Gò Công, Tiền Giang",
+          "s": "Tiền Giang"
+        }
+      ]
+    },
+    {
+      "n": "Trà Vinh",
+      "la": 9.81,
+      "lo": 106.3,
+      "sc": "51",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Càng Long",
+          "la": 9.96,
+          "lo": 106.21,
+          "fn": "Huyện Càng Long, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Huyện Cầu Kè",
+          "la": 9.87,
+          "lo": 106.08,
+          "fn": "Huyện Cầu Kè, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Huyện Cầu Ngang",
+          "la": 9.77,
+          "lo": 106.44,
+          "fn": "Huyện Cầu Ngang, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Huyện Tiểu Cần",
+          "la": 9.8,
+          "lo": 106.21,
+          "fn": "Huyện Tiểu Cần, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Huyện Trà Cú",
+          "la": 9.7,
+          "lo": 106.29,
+          "fn": "Huyện Trà Cú, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Trà Vinh",
+          "la": 9.95,
+          "lo": 106.34,
+          "fn": "Trà Vinh, Trà Vinh",
+          "s": "Trà Vinh"
+        }
+      ]
+    },
+    {
+      "n": "Trà Vinh",
+      "la": 9.81,
+      "lo": 106.3,
+      "sc": "51",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Càng Long",
+          "la": 9.96,
+          "lo": 106.21,
+          "fn": "Huyện Càng Long, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Huyện Cầu Kè",
+          "la": 9.87,
+          "lo": 106.08,
+          "fn": "Huyện Cầu Kè, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Huyện Cầu Ngang",
+          "la": 9.77,
+          "lo": 106.44,
+          "fn": "Huyện Cầu Ngang, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Huyện Tiểu Cần",
+          "la": 9.8,
+          "lo": 106.21,
+          "fn": "Huyện Tiểu Cần, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Huyện Trà Cú",
+          "la": 9.7,
+          "lo": 106.29,
+          "fn": "Huyện Trà Cú, Trà Vinh",
+          "s": "Trà Vinh"
+        },
+        {
+          "n": "Trà Vinh",
+          "la": 9.95,
+          "lo": 106.34,
+          "fn": "Trà Vinh, Trà Vinh",
+          "s": "Trà Vinh"
+        }
+      ]
+    },
+    {
+      "n": "Tuyên Quang",
+      "la": 21.78,
+      "lo": 105.23,
+      "sc": "07",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Chiêm Hóa",
+          "la": 22.18,
+          "lo": 105.28,
+          "fn": "Huyện Chiêm Hóa, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Hàm Yên",
+          "la": 22.11,
+          "lo": 105.02,
+          "fn": "Huyện Hàm Yên, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Lâm Bình",
+          "la": 22.46,
+          "lo": 105.22,
+          "fn": "Huyện Lâm Bình, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Na Hang",
+          "la": 22.48,
+          "lo": 105.48,
+          "fn": "Huyện Na Hang, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Sơn Dương",
+          "la": 21.64,
+          "lo": 105.39,
+          "fn": "Huyện Sơn Dương, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Yên Sơn",
+          "la": 21.88,
+          "lo": 105.28,
+          "fn": "Huyện Yên Sơn, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Tuyên Quang",
+          "la": 21.82,
+          "lo": 105.21,
+          "fn": "Tuyên Quang, Tuyên Quang",
+          "s": "Tuyên Quang"
+        }
+      ]
+    },
+    {
+      "n": "Tuyên Quang",
+      "la": 21.78,
+      "lo": 105.23,
+      "sc": "07",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Chiêm Hóa",
+          "la": 22.18,
+          "lo": 105.28,
+          "fn": "Huyện Chiêm Hóa, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Hàm Yên",
+          "la": 22.11,
+          "lo": 105.02,
+          "fn": "Huyện Hàm Yên, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Lâm Bình",
+          "la": 22.46,
+          "lo": 105.22,
+          "fn": "Huyện Lâm Bình, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Na Hang",
+          "la": 22.48,
+          "lo": 105.48,
+          "fn": "Huyện Na Hang, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Sơn Dương",
+          "la": 21.64,
+          "lo": 105.39,
+          "fn": "Huyện Sơn Dương, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Huyện Yên Sơn",
+          "la": 21.88,
+          "lo": 105.28,
+          "fn": "Huyện Yên Sơn, Tuyên Quang",
+          "s": "Tuyên Quang"
+        },
+        {
+          "n": "Tuyên Quang",
+          "la": 21.82,
+          "lo": 105.21,
+          "fn": "Tuyên Quang, Tuyên Quang",
+          "s": "Tuyên Quang"
+        }
+      ]
+    },
+    {
+      "n": "Vĩnh Long",
+      "la": 10.24,
+      "lo": 105.96,
+      "sc": "49",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Long Hồ",
+          "la": 10.22,
+          "lo": 105.98,
+          "fn": "Huyện Long Hồ, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Huyện Mang Thít",
+          "la": 10.19,
+          "lo": 106.07,
+          "fn": "Huyện Mang Thít, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Huyện Tam Bình",
+          "la": 10.08,
+          "lo": 105.95,
+          "fn": "Huyện Tam Bình, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Huyện Trà Ôn",
+          "la": 9.98,
+          "lo": 106.01,
+          "fn": "Huyện Trà Ôn, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Huyện Vũng Liêm",
+          "la": 10.09,
+          "lo": 106.16,
+          "fn": "Huyện Vũng Liêm, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Vĩnh Long",
+          "la": 10.25,
+          "lo": 105.97,
+          "fn": "Vĩnh Long, Vĩnh Long",
+          "s": "Vĩnh Long"
+        }
+      ]
+    },
+    {
+      "n": "Vĩnh Long",
+      "la": 10.24,
+      "lo": 105.96,
+      "sc": "49",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Long Hồ",
+          "la": 10.22,
+          "lo": 105.98,
+          "fn": "Huyện Long Hồ, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Huyện Mang Thít",
+          "la": 10.19,
+          "lo": 106.07,
+          "fn": "Huyện Mang Thít, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Huyện Tam Bình",
+          "la": 10.08,
+          "lo": 105.95,
+          "fn": "Huyện Tam Bình, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Huyện Trà Ôn",
+          "la": 9.98,
+          "lo": 106.01,
+          "fn": "Huyện Trà Ôn, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Huyện Vũng Liêm",
+          "la": 10.09,
+          "lo": 106.16,
+          "fn": "Huyện Vũng Liêm, Vĩnh Long",
+          "s": "Vĩnh Long"
+        },
+        {
+          "n": "Vĩnh Long",
+          "la": 10.25,
+          "lo": 105.97,
+          "fn": "Vĩnh Long, Vĩnh Long",
+          "s": "Vĩnh Long"
+        }
+      ]
+    },
+    {
+      "n": "Vĩnh Phúc",
+      "la": 21.36,
+      "lo": 105.55,
+      "sc": "70",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bình Xuyên",
+          "la": 21.31,
+          "lo": 105.66,
+          "fn": "Huyện Bình Xuyên, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        },
+        {
+          "n": "Huyện Tam Dương",
+          "la": 21.36,
+          "lo": 105.56,
+          "fn": "Huyện Tam Dương, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        },
+        {
+          "n": "Huyện Tam Đảo",
+          "la": 21.46,
+          "lo": 105.59,
+          "fn": "Huyện Tam Đảo, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        },
+        {
+          "n": "Huyện Yên Lạc",
+          "la": 21.22,
+          "lo": 105.58,
+          "fn": "Huyện Yên Lạc, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        },
+        {
+          "n": "Vĩnh Yên",
+          "la": 21.31,
+          "lo": 105.6,
+          "fn": "Vĩnh Yên, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        }
+      ]
+    },
+    {
+      "n": "Vĩnh Phúc",
+      "la": 21.36,
+      "lo": 105.55,
+      "sc": "70",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Bình Xuyên",
+          "la": 21.31,
+          "lo": 105.66,
+          "fn": "Huyện Bình Xuyên, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        },
+        {
+          "n": "Huyện Tam Dương",
+          "la": 21.36,
+          "lo": 105.56,
+          "fn": "Huyện Tam Dương, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        },
+        {
+          "n": "Huyện Tam Đảo",
+          "la": 21.46,
+          "lo": 105.59,
+          "fn": "Huyện Tam Đảo, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        },
+        {
+          "n": "Huyện Yên Lạc",
+          "la": 21.22,
+          "lo": 105.58,
+          "fn": "Huyện Yên Lạc, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        },
+        {
+          "n": "Vĩnh Yên",
+          "la": 21.31,
+          "lo": 105.6,
+          "fn": "Vĩnh Yên, Vĩnh Phúc",
+          "s": "Vĩnh Phúc"
+        }
+      ]
+    },
+    {
+      "n": "Yên Bái",
+      "la": 21.72,
+      "lo": 104.9,
+      "sc": "06",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Lục Yên",
+          "la": 22.1,
+          "lo": 104.73,
+          "fn": "Huyện Lục Yên, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Mù Cang Chải",
+          "la": 21.79,
+          "lo": 104.12,
+          "fn": "Huyện Mù Cang Chải, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Trạm Tấu",
+          "la": 21.49,
+          "lo": 104.43,
+          "fn": "Huyện Trạm Tấu, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Trấn Yên",
+          "la": 21.67,
+          "lo": 104.8,
+          "fn": "Huyện Trấn Yên, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Văn Chấn",
+          "la": 21.56,
+          "lo": 104.64,
+          "fn": "Huyện Văn Chấn, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Văn Yên",
+          "la": 21.9,
+          "lo": 104.57,
+          "fn": "Huyện Văn Yên, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Yên Bái",
+          "la": 21.72,
+          "lo": 104.91,
+          "fn": "Yên Bái, Yên Bái",
+          "s": "Yên Bái"
+        }
+      ]
+    },
+    {
+      "n": "Yên Bái",
+      "la": 21.72,
+      "lo": 104.9,
+      "sc": "06",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Huyện Lục Yên",
+          "la": 22.1,
+          "lo": 104.73,
+          "fn": "Huyện Lục Yên, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Mù Cang Chải",
+          "la": 21.79,
+          "lo": 104.12,
+          "fn": "Huyện Mù Cang Chải, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Trạm Tấu",
+          "la": 21.49,
+          "lo": 104.43,
+          "fn": "Huyện Trạm Tấu, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Trấn Yên",
+          "la": 21.67,
+          "lo": 104.8,
+          "fn": "Huyện Trấn Yên, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Văn Chấn",
+          "la": 21.56,
+          "lo": 104.64,
+          "fn": "Huyện Văn Chấn, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Huyện Văn Yên",
+          "la": 21.9,
+          "lo": 104.57,
+          "fn": "Huyện Văn Yên, Yên Bái",
+          "s": "Yên Bái"
+        },
+        {
+          "n": "Yên Bái",
+          "la": 21.72,
+          "lo": 104.91,
+          "fn": "Yên Bái, Yên Bái",
+          "s": "Yên Bái"
+        }
+      ]
+    }
+  ]
+}

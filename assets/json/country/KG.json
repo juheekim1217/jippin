@@ -1,0 +1,906 @@
+{
+  "states": [
+    {
+      "n": "Batken",
+      "la": 39.97,
+      "lo": 69.86,
+      "sc": "B",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Aydarken",
+          "la": 39.94,
+          "lo": 71.34,
+          "fn": "Aydarken, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Batken",
+          "la": 40.06,
+          "lo": 70.82,
+          "fn": "Batken, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Iradan",
+          "la": 40.27,
+          "lo": 72.1,
+          "fn": "Iradan, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Isfana",
+          "la": 39.84,
+          "lo": 69.53,
+          "fn": "Isfana, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Karavan",
+          "la": 40.3,
+          "lo": 72.19,
+          "fn": "Karavan, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Kyzyl-Kyya",
+          "la": 40.26,
+          "lo": 72.13,
+          "fn": "Kyzyl-Kyya, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Suluktu",
+          "la": 39.94,
+          "lo": 69.57,
+          "fn": "Suluktu, Batken",
+          "s": "Batken"
+        }
+      ]
+    },
+    {
+      "n": "Batken",
+      "la": 39.97,
+      "lo": 69.86,
+      "sc": "B",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Aydarken",
+          "la": 39.94,
+          "lo": 71.34,
+          "fn": "Aydarken, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Batken",
+          "la": 40.06,
+          "lo": 70.82,
+          "fn": "Batken, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Iradan",
+          "la": 40.27,
+          "lo": 72.1,
+          "fn": "Iradan, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Isfana",
+          "la": 39.84,
+          "lo": 69.53,
+          "fn": "Isfana, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Karavan",
+          "la": 40.3,
+          "lo": 72.19,
+          "fn": "Karavan, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Kyzyl-Kyya",
+          "la": 40.26,
+          "lo": 72.13,
+          "fn": "Kyzyl-Kyya, Batken",
+          "s": "Batken"
+        },
+        {
+          "n": "Suluktu",
+          "la": 39.94,
+          "lo": 69.57,
+          "fn": "Suluktu, Batken",
+          "s": "Batken"
+        }
+      ]
+    },
+    {
+      "n": "Bishkek",
+      "la": 42.87,
+      "lo": 74.57,
+      "sc": "GB",
+      "t": "city",
+      "cities": [
+        {
+          "n": "Bishkek",
+          "la": 42.87,
+          "lo": 74.59,
+          "fn": "Bishkek, Bishkek",
+          "s": "Bishkek"
+        }
+      ]
+    },
+    {
+      "n": "Bishkek",
+      "la": 42.87,
+      "lo": 74.57,
+      "sc": "GB",
+      "t": "city",
+      "cities": [
+        {
+          "n": "Bishkek",
+          "la": 42.87,
+          "lo": 74.59,
+          "fn": "Bishkek, Bishkek",
+          "s": "Bishkek"
+        }
+      ]
+    },
+    {
+      "n": "Chuy",
+      "la": 42.57,
+      "lo": 74.41,
+      "sc": "C",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Alamudunskiy Rayon",
+          "la": 42.82,
+          "lo": 74.59,
+          "fn": "Alamudunskiy Rayon, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Belovodskoye",
+          "la": 42.83,
+          "lo": 74.11,
+          "fn": "Belovodskoye, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Chuyskiy Rayon",
+          "la": 42.67,
+          "lo": 75.33,
+          "fn": "Chuyskiy Rayon, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Ivanovka",
+          "la": 42.89,
+          "lo": 75.08,
+          "fn": "Ivanovka, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Kaindy",
+          "la": 42.82,
+          "lo": 73.68,
+          "fn": "Kaindy, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Kant",
+          "la": 42.89,
+          "lo": 74.85,
+          "fn": "Kant, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Kara-Balta",
+          "la": 42.81,
+          "lo": 73.85,
+          "fn": "Kara-Balta, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Kemin",
+          "la": 42.79,
+          "lo": 75.69,
+          "fn": "Kemin, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Lebedinovka",
+          "la": 42.88,
+          "lo": 74.68,
+          "fn": "Lebedinovka, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Sokulukskiy Rayon",
+          "la": 42.83,
+          "lo": 74.33,
+          "fn": "Sokulukskiy Rayon, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Sosnovka",
+          "la": 42.64,
+          "lo": 73.9,
+          "fn": "Sosnovka, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Tokmok",
+          "la": 42.84,
+          "lo": 75.3,
+          "fn": "Tokmok, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Ysyk-Ata",
+          "la": 42.73,
+          "lo": 75.07,
+          "fn": "Ysyk-Ata, Chuy",
+          "s": "Chuy"
+        }
+      ]
+    },
+    {
+      "n": "Chuy",
+      "la": 42.57,
+      "lo": 74.41,
+      "sc": "C",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Alamudunskiy Rayon",
+          "la": 42.82,
+          "lo": 74.59,
+          "fn": "Alamudunskiy Rayon, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Belovodskoye",
+          "la": 42.83,
+          "lo": 74.11,
+          "fn": "Belovodskoye, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Chuyskiy Rayon",
+          "la": 42.67,
+          "lo": 75.33,
+          "fn": "Chuyskiy Rayon, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Ivanovka",
+          "la": 42.89,
+          "lo": 75.08,
+          "fn": "Ivanovka, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Kaindy",
+          "la": 42.82,
+          "lo": 73.68,
+          "fn": "Kaindy, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Kant",
+          "la": 42.89,
+          "lo": 74.85,
+          "fn": "Kant, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Kara-Balta",
+          "la": 42.81,
+          "lo": 73.85,
+          "fn": "Kara-Balta, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Kemin",
+          "la": 42.79,
+          "lo": 75.69,
+          "fn": "Kemin, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Lebedinovka",
+          "la": 42.88,
+          "lo": 74.68,
+          "fn": "Lebedinovka, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Sokulukskiy Rayon",
+          "la": 42.83,
+          "lo": 74.33,
+          "fn": "Sokulukskiy Rayon, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Sosnovka",
+          "la": 42.64,
+          "lo": 73.9,
+          "fn": "Sosnovka, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Tokmok",
+          "la": 42.84,
+          "lo": 75.3,
+          "fn": "Tokmok, Chuy",
+          "s": "Chuy"
+        },
+        {
+          "n": "Ysyk-Ata",
+          "la": 42.73,
+          "lo": 75.07,
+          "fn": "Ysyk-Ata, Chuy",
+          "s": "Chuy"
+        }
+      ]
+    },
+    {
+      "n": "Issyk-Kul",
+      "la": 42.19,
+      "lo": 77.56,
+      "sc": "Y",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Ak-Suu",
+          "la": 42.5,
+          "lo": 78.53,
+          "fn": "Ak-Suu, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Balykchy",
+          "la": 42.46,
+          "lo": 76.19,
+          "fn": "Balykchy, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Cholpon-Ata",
+          "la": 42.65,
+          "lo": 77.08,
+          "fn": "Cholpon-Ata, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Kadzhi-Say",
+          "la": 42.14,
+          "lo": 77.18,
+          "fn": "Kadzhi-Say, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Karakol",
+          "la": 42.49,
+          "lo": 78.39,
+          "fn": "Karakol, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Kyzyl-Suu",
+          "la": 42.34,
+          "lo": 78.01,
+          "fn": "Kyzyl-Suu, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Tyup",
+          "la": 42.73,
+          "lo": 78.36,
+          "fn": "Tyup, Issyk-Kul",
+          "s": "Issyk-Kul"
+        }
+      ]
+    },
+    {
+      "n": "Issyk-Kul",
+      "la": 42.19,
+      "lo": 77.56,
+      "sc": "Y",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Ak-Suu",
+          "la": 42.5,
+          "lo": 78.53,
+          "fn": "Ak-Suu, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Balykchy",
+          "la": 42.46,
+          "lo": 76.19,
+          "fn": "Balykchy, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Cholpon-Ata",
+          "la": 42.65,
+          "lo": 77.08,
+          "fn": "Cholpon-Ata, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Kadzhi-Say",
+          "la": 42.14,
+          "lo": 77.18,
+          "fn": "Kadzhi-Say, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Karakol",
+          "la": 42.49,
+          "lo": 78.39,
+          "fn": "Karakol, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Kyzyl-Suu",
+          "la": 42.34,
+          "lo": 78.01,
+          "fn": "Kyzyl-Suu, Issyk-Kul",
+          "s": "Issyk-Kul"
+        },
+        {
+          "n": "Tyup",
+          "la": 42.73,
+          "lo": 78.36,
+          "fn": "Tyup, Issyk-Kul",
+          "s": "Issyk-Kul"
+        }
+      ]
+    },
+    {
+      "n": "Jalal-Abad",
+      "la": 41.11,
+      "lo": 72.9,
+      "sc": "J",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Ala-Buka",
+          "la": 41.41,
+          "lo": 71.46,
+          "fn": "Ala-Buka, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Bazar-Korgon",
+          "la": 41.04,
+          "lo": 72.75,
+          "fn": "Bazar-Korgon, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Jalal-Abad",
+          "la": 40.93,
+          "lo": 73.0,
+          "fn": "Jalal-Abad, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Kazarman",
+          "la": 41.41,
+          "lo": 74.04,
+          "fn": "Kazarman, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Kerben",
+          "la": 41.49,
+          "lo": 71.76,
+          "fn": "Kerben, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Kochkor-Ata",
+          "la": 41.04,
+          "lo": 72.48,
+          "fn": "Kochkor-Ata, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Suzak",
+          "la": 40.9,
+          "lo": 72.9,
+          "fn": "Suzak, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Tash-Kumyr",
+          "la": 41.35,
+          "lo": 72.22,
+          "fn": "Tash-Kumyr, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Toktogul",
+          "la": 41.87,
+          "lo": 72.94,
+          "fn": "Toktogul, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Toktogul District",
+          "la": 41.75,
+          "lo": 73.0,
+          "fn": "Toktogul District, Jalal-Abad",
+          "s": "Jalal-Abad"
+        }
+      ]
+    },
+    {
+      "n": "Jalal-Abad",
+      "la": 41.11,
+      "lo": 72.9,
+      "sc": "J",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Ala-Buka",
+          "la": 41.41,
+          "lo": 71.46,
+          "fn": "Ala-Buka, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Bazar-Korgon",
+          "la": 41.04,
+          "lo": 72.75,
+          "fn": "Bazar-Korgon, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Jalal-Abad",
+          "la": 40.93,
+          "lo": 73.0,
+          "fn": "Jalal-Abad, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Kazarman",
+          "la": 41.41,
+          "lo": 74.04,
+          "fn": "Kazarman, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Kerben",
+          "la": 41.49,
+          "lo": 71.76,
+          "fn": "Kerben, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Kochkor-Ata",
+          "la": 41.04,
+          "lo": 72.48,
+          "fn": "Kochkor-Ata, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Suzak",
+          "la": 40.9,
+          "lo": 72.9,
+          "fn": "Suzak, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Tash-Kumyr",
+          "la": 41.35,
+          "lo": 72.22,
+          "fn": "Tash-Kumyr, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Toktogul",
+          "la": 41.87,
+          "lo": 72.94,
+          "fn": "Toktogul, Jalal-Abad",
+          "s": "Jalal-Abad"
+        },
+        {
+          "n": "Toktogul District",
+          "la": 41.75,
+          "lo": 73.0,
+          "fn": "Toktogul District, Jalal-Abad",
+          "s": "Jalal-Abad"
+        }
+      ]
+    },
+    {
+      "n": "Naryn",
+      "la": 41.29,
+      "lo": 75.34,
+      "sc": "N",
+      "t": "region",
+      "cities": [
+        {
+          "n": "At-Bashi",
+          "la": 41.17,
+          "lo": 75.8,
+          "fn": "At-Bashi, Naryn",
+          "s": "Naryn"
+        },
+        {
+          "n": "Jumgal",
+          "la": 41.95,
+          "lo": 74.41,
+          "fn": "Jumgal, Naryn",
+          "s": "Naryn"
+        },
+        {
+          "n": "Naryn",
+          "la": 41.43,
+          "lo": 75.99,
+          "fn": "Naryn, Naryn",
+          "s": "Naryn"
+        }
+      ]
+    },
+    {
+      "n": "Naryn",
+      "la": 41.29,
+      "lo": 75.34,
+      "sc": "N",
+      "t": "region",
+      "cities": [
+        {
+          "n": "At-Bashi",
+          "la": 41.17,
+          "lo": 75.8,
+          "fn": "At-Bashi, Naryn",
+          "s": "Naryn"
+        },
+        {
+          "n": "Jumgal",
+          "la": 41.95,
+          "lo": 74.41,
+          "fn": "Jumgal, Naryn",
+          "s": "Naryn"
+        },
+        {
+          "n": "Naryn",
+          "la": 41.43,
+          "lo": 75.99,
+          "fn": "Naryn, Naryn",
+          "s": "Naryn"
+        }
+      ]
+    },
+    {
+      "n": "Osh",
+      "la": 36.06,
+      "lo": -95.92,
+      "sc": "GO",
+      "t": "city",
+      "cities": []
+    },
+    {
+      "n": "Osh",
+      "la": 36.06,
+      "lo": -95.92,
+      "sc": "GO",
+      "t": "city",
+      "cities": []
+    },
+    {
+      "n": "Osh",
+      "la": 39.84,
+      "lo": 72.9,
+      "sc": "O",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Chong-Alay District",
+          "la": 39.48,
+          "lo": 72.33,
+          "fn": "Chong-Alay District, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Daroot-Korgon",
+          "la": 39.55,
+          "lo": 72.21,
+          "fn": "Daroot-Korgon, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Kara Kulja",
+          "la": 40.64,
+          "lo": 73.49,
+          "fn": "Kara Kulja, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Kara Suu",
+          "la": 40.7,
+          "lo": 72.87,
+          "fn": "Kara Suu, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Kyzyl-Eshme",
+          "la": 39.57,
+          "lo": 72.27,
+          "fn": "Kyzyl-Eshme, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Nookat",
+          "la": 40.27,
+          "lo": 72.62,
+          "fn": "Nookat, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Osh",
+          "la": 40.53,
+          "lo": 72.8,
+          "fn": "Osh, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Uzgen",
+          "la": 40.77,
+          "lo": 73.3,
+          "fn": "Uzgen, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Uzgen District",
+          "la": 40.55,
+          "lo": 73.3,
+          "fn": "Uzgen District, Osh",
+          "s": "Osh"
+        }
+      ]
+    },
+    {
+      "n": "Osh",
+      "la": 39.84,
+      "lo": 72.9,
+      "sc": "O",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Chong-Alay District",
+          "la": 39.48,
+          "lo": 72.33,
+          "fn": "Chong-Alay District, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Daroot-Korgon",
+          "la": 39.55,
+          "lo": 72.21,
+          "fn": "Daroot-Korgon, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Kara Kulja",
+          "la": 40.64,
+          "lo": 73.49,
+          "fn": "Kara Kulja, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Kara Suu",
+          "la": 40.7,
+          "lo": 72.87,
+          "fn": "Kara Suu, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Kyzyl-Eshme",
+          "la": 39.57,
+          "lo": 72.27,
+          "fn": "Kyzyl-Eshme, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Nookat",
+          "la": 40.27,
+          "lo": 72.62,
+          "fn": "Nookat, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Osh",
+          "la": 40.53,
+          "lo": 72.8,
+          "fn": "Osh, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Uzgen",
+          "la": 40.77,
+          "lo": 73.3,
+          "fn": "Uzgen, Osh",
+          "s": "Osh"
+        },
+        {
+          "n": "Uzgen District",
+          "la": 40.55,
+          "lo": 73.3,
+          "fn": "Uzgen District, Osh",
+          "s": "Osh"
+        }
+      ]
+    },
+    {
+      "n": "Talas",
+      "la": 42.29,
+      "lo": 72.52,
+      "sc": "T",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Kara-Buurinskiy Rayon",
+          "la": 42.5,
+          "lo": 71.42,
+          "fn": "Kara-Buurinskiy Rayon, Talas",
+          "s": "Talas"
+        },
+        {
+          "n": "Talas",
+          "la": 42.52,
+          "lo": 72.24,
+          "fn": "Talas, Talas",
+          "s": "Talas"
+        },
+        {
+          "n": "Talasskiy Rayon",
+          "la": 42.19,
+          "lo": 72.69,
+          "fn": "Talasskiy Rayon, Talas",
+          "s": "Talas"
+        }
+      ]
+    },
+    {
+      "n": "Talas",
+      "la": 42.29,
+      "lo": 72.52,
+      "sc": "T",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Kara-Buurinskiy Rayon",
+          "la": 42.5,
+          "lo": 71.42,
+          "fn": "Kara-Buurinskiy Rayon, Talas",
+          "s": "Talas"
+        },
+        {
+          "n": "Talas",
+          "la": 42.52,
+          "lo": 72.24,
+          "fn": "Talas, Talas",
+          "s": "Talas"
+        },
+        {
+          "n": "Talasskiy Rayon",
+          "la": 42.19,
+          "lo": 72.69,
+          "fn": "Talasskiy Rayon, Talas",
+          "s": "Talas"
+        }
+      ]
+    }
+  ]
+}

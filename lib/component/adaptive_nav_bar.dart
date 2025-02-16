@@ -7,7 +7,9 @@ import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/models/nav_bar_item.dart';
 import 'package:jippin/component/test/country_autocomplete_field.dart';
 import 'package:jippin/component/country_dropdown_search.dart';
+import 'package:jippin/component/address_autocomplete_search.dart';
 import 'package:jippin/models/language.dart';
+import 'package:jippin/models/address.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -15,7 +17,7 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final List<NavBarItem> navBarItems;
   final List<NavBarItem> popupMenuItems;
   final VoidCallback onSubmitReview;
-  final ValueChanged<String> onSearch;
+  final ValueChanged<Address> onSearch;
 
   const AdaptiveNavBar({
     super.key,
@@ -46,14 +48,14 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
   }
 
   // pass search user input to parent widget
-  void _handleSearch() {
-    FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
-    widget.onSearch(searchController.text);
-  }
+  // void _handleSearch() {
+  //   FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
+  //   widget.onSearch(searchController.text);
+  // }
 
   void _handleSearchDialog() {
     FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
-    widget.onSearch(searchController.text);
+    //widget.onSearch(searchController.text);
     Navigator.pop(context);
   }
 
@@ -116,21 +118,8 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                if (widget.screenWidth > smallScreenWidth)
-                  SizedBox(
-                    height: 32, // Match the height of other menu items
-                    width: widget.screenWidth * 0.1,
-                    child: CountryDropdownSearch(
-                      localeProvider: localeProvider,
-                      initialCountryName: initialCountryName,
-                      onChanged: (String? newValue, String? countryName) {
-                        if (newValue != null) {
-                          localeProvider.setCountry(newValue, countryName!);
-                        }
-                      },
-                    ),
-                  ),
-                if (widget.screenWidth > smallScreenWidth) _buildSearchBar(null),
+                if (widget.screenWidth > smallScreenWidth) _buildCountryDropdown(localeProvider, initialCountryName),
+                if (widget.screenWidth > smallScreenWidth) _buildSearchBar(localeProvider),
               ],
             ),
           ),
@@ -164,58 +153,117 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
-  Widget _buildSearchBar(barWidth) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-      child: SizedBox(
-        height: 32, // Match the height of other menu items
-        width: barWidth ?? widget.screenWidth * 0.25,
-        child: TextField(
-          onSubmitted: (value) => _handleSearch(),
-          controller: searchController,
-          autofocus: false,
-          // Prevents unnecessary refocus
-          style: TextStyle(
-            fontSize: 14, // Reduced text size
-            color: Colors.black87, // Text color
-          ),
-          decoration: InputDecoration(
-            hintText: AppLocalizations.of(context).search_location,
-            suffixIcon: IconButton(
-              icon: Icon(Icons.search, color: Colors.grey, size: 18),
-              onPressed: _handleSearch, // 🔥 Trigger search on icon click
-            ),
-            contentPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24.0),
-              borderSide: BorderSide(color: Colors.grey.shade400, width: 1.0), // Light grey border
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24.0),
-              borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0), // Light grey border for non-focused state
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(24.0),
-              borderSide: BorderSide(color: Colors.blue.shade300, width: 1.5), // Slightly thicker blue border on focus
-            ),
-            //fillColor: Colors.grey.shade100,
-            //filled: true,
-          ),
-        ),
+  Widget _buildCountryDropdown(localeProvider, String initialCountryName) {
+    return SizedBox(
+      height: 32, // Match the height of other menu items
+      width: widget.screenWidth * 0.1,
+      child: CountryDropdownSearch(
+        localeProvider: localeProvider,
+        initialCountryName: initialCountryName,
+        onChanged: (String? newValue, String? countryName) {
+          if (newValue != null) {
+            localeProvider.setCountry(newValue, countryName!);
+          }
+        },
       ),
     );
   }
 
+  Widget _buildCountryButton(localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
+    return IconButton(
+      padding: EdgeInsets.zero, // ✅ Removes default padding
+      constraints: BoxConstraints(), // ✅ Prevents extra space
+      icon: Icon(Icons.location_on, color: Colors.grey),
+      onPressed: () {
+        _showCountryDialog(context, localeProvider, currentLocale, navbarBackgroundColor);
+      },
+    );
+  }
+
+  // 🔹 Popup Country (For Small Screens) Text field widget
+  Widget _buildCountryDialogTextField(BuildContext context, localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
+    String initialCountryName = localeProvider.defaultCountry.getCountryName(localeProvider.defaultLanguage.code);
+    return CountryAutoCompleteField(
+      width: 150,
+      initialCountryName: initialCountryName,
+      onChanged: (String? newValue, String? countryName) {
+        if (newValue != null) {
+          localeProvider.setDefaultCountry(newValue, countryName!);
+        }
+      },
+    );
+  }
+
+  // no autocomplete searchbar
   // Widget _buildSearchBar(barWidth) {
   //   return Padding(
   //     padding: const EdgeInsets.symmetric(horizontal: 8.0),
   //     child: SizedBox(
-  //       //height: 20, // Increased height for better usability
-  //       width: 200,
-  //       child: AddressAutocompleteField(), // Only the address search field
+  //       height: 32, // Match the height of other menu items
+  //       width: barWidth ?? widget.screenWidth * 0.25,
+  //       child: TextField(
+  //         onSubmitted: (value) => _handleSearch(),
+  //         controller: searchController,
+  //         autofocus: false,
+  //         // Prevents unnecessary refocus
+  //         style: TextStyle(
+  //           fontSize: 14, // Reduced text size
+  //           color: Colors.black87, // Text color
+  //         ),
+  //         decoration: InputDecoration(
+  //           hintText: AppLocalizations.of(context).search_location,
+  //           suffixIcon: IconButton(
+  //             icon: Icon(Icons.search, color: Colors.grey, size: 18),
+  //             onPressed: _handleSearch, // 🔥 Trigger search on icon click
+  //           ),
+  //           contentPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
+  //           border: OutlineInputBorder(
+  //             borderRadius: BorderRadius.circular(24.0),
+  //             borderSide: BorderSide(color: Colors.grey.shade400, width: 1.0), // Light grey border
+  //           ),
+  //           enabledBorder: OutlineInputBorder(
+  //             borderRadius: BorderRadius.circular(24.0),
+  //             borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0), // Light grey border for non-focused state
+  //           ),
+  //           focusedBorder: OutlineInputBorder(
+  //             borderRadius: BorderRadius.circular(24.0),
+  //             borderSide: BorderSide(color: Colors.blue.shade300, width: 1.5), // Slightly thicker blue border on focus
+  //           ),
+  //           //fillColor: Colors.grey.shade100,
+  //           //filled: true,
+  //         ),
+  //       ),
   //     ),
   //   );
   // }
+
+  // AutoComplete searchbar
+  Widget _buildSearchBar(localeProvider) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      child: SizedBox(
+        //height: 20, // Increased height for better usability
+        width: 200,
+        child: AddressAutocompleteField(
+          fieldWidth: widget.screenWidth * 0.25,
+          localeProvider: localeProvider,
+          onChanged: (Address address) {
+            //FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
+            widget.onSearch(address);
+          },
+        ), // Only the address search field
+      ),
+    );
+  }
+
+  Widget _buildSearchBarButton() {
+    return IconButton(
+      icon: Icon(Icons.search, color: Colors.grey),
+      onPressed: () {
+        _showSearchDialog(context);
+      },
+    );
+  }
 
   // 🔹 Popup Search (For Small Screens) Text field widget
   Widget _buildSearchDialogTextField(BuildContext context) {
@@ -249,40 +297,6 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
       ),
       onSubmitted: (value) => _handleSearchDialog(),
       controller: searchController,
-    );
-  }
-
-  // 🔹 Popup Country (For Small Screens) Text field widget
-  Widget _buildCountryDialogTextField(BuildContext context, localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
-    String initialCountryName = localeProvider.defaultCountry.getCountryName(localeProvider.defaultLanguage.code);
-    return CountryAutoCompleteField(
-      width: 150,
-      initialCountryName: initialCountryName,
-      onChanged: (String? newValue, String? countryName) {
-        if (newValue != null) {
-          localeProvider.setDefaultCountry(newValue, countryName!);
-        }
-      },
-    );
-  }
-
-  Widget _buildCountryButton(localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
-    return IconButton(
-      padding: EdgeInsets.zero, // ✅ Removes default padding
-      constraints: BoxConstraints(), // ✅ Prevents extra space
-      icon: Icon(Icons.location_on, color: Colors.grey),
-      onPressed: () {
-        _showCountryDialog(context, localeProvider, currentLocale, navbarBackgroundColor);
-      },
-    );
-  }
-
-  Widget _buildSearchBarButton() {
-    return IconButton(
-      icon: Icon(Icons.search, color: Colors.grey),
-      onPressed: () {
-        _showSearchDialog(context);
-      },
     );
   }
 

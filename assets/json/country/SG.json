@@ -1,0 +1,458 @@
+{
+  "states": [
+    {
+      "n": "Central Singapore",
+      "la": 1.29,
+      "lo": 103.85,
+      "sc": "01",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bukit Timah",
+          "la": 1.33,
+          "lo": 103.8,
+          "fn": "Bukit Timah, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Downtown Core",
+          "la": 1.28,
+          "lo": 103.85,
+          "fn": "Downtown Core, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Geylang",
+          "la": 1.32,
+          "lo": 103.89,
+          "fn": "Geylang, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Kallang",
+          "la": 1.31,
+          "lo": 103.87,
+          "fn": "Kallang, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Marine Parade",
+          "la": 1.3,
+          "lo": 103.91,
+          "fn": "Marine Parade, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Novena",
+          "la": 1.32,
+          "lo": 103.84,
+          "fn": "Novena, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Orchard Road",
+          "la": 1.3,
+          "lo": 103.83,
+          "fn": "Orchard Road, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Outram",
+          "la": 1.28,
+          "lo": 103.84,
+          "fn": "Outram, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Rochor",
+          "la": 1.3,
+          "lo": 103.85,
+          "fn": "Rochor, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Singapore",
+          "la": 1.29,
+          "lo": 103.85,
+          "fn": "Singapore, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Tanjong Pagar",
+          "la": 1.28,
+          "lo": 103.84,
+          "fn": "Tanjong Pagar, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Toa Payoh",
+          "la": 1.34,
+          "lo": 103.85,
+          "fn": "Toa Payoh, Central Singapore",
+          "s": "Central Singapore"
+        }
+      ]
+    },
+    {
+      "n": "Central Singapore",
+      "la": 1.29,
+      "lo": 103.85,
+      "sc": "01",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bukit Timah",
+          "la": 1.33,
+          "lo": 103.8,
+          "fn": "Bukit Timah, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Downtown Core",
+          "la": 1.28,
+          "lo": 103.85,
+          "fn": "Downtown Core, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Geylang",
+          "la": 1.32,
+          "lo": 103.89,
+          "fn": "Geylang, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Kallang",
+          "la": 1.31,
+          "lo": 103.87,
+          "fn": "Kallang, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Marine Parade",
+          "la": 1.3,
+          "lo": 103.91,
+          "fn": "Marine Parade, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Novena",
+          "la": 1.32,
+          "lo": 103.84,
+          "fn": "Novena, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Orchard Road",
+          "la": 1.3,
+          "lo": 103.83,
+          "fn": "Orchard Road, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Outram",
+          "la": 1.28,
+          "lo": 103.84,
+          "fn": "Outram, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Rochor",
+          "la": 1.3,
+          "lo": 103.85,
+          "fn": "Rochor, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Singapore",
+          "la": 1.29,
+          "lo": 103.85,
+          "fn": "Singapore, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Tanjong Pagar",
+          "la": 1.28,
+          "lo": 103.84,
+          "fn": "Tanjong Pagar, Central Singapore",
+          "s": "Central Singapore"
+        },
+        {
+          "n": "Toa Payoh",
+          "la": 1.34,
+          "lo": 103.85,
+          "fn": "Toa Payoh, Central Singapore",
+          "s": "Central Singapore"
+        }
+      ]
+    },
+    {
+      "n": "North East",
+      "la": 1.38,
+      "lo": 103.9,
+      "sc": "02",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Ang Mo Kio",
+          "la": 1.37,
+          "lo": 103.85,
+          "fn": "Ang Mo Kio, North East",
+          "s": "North East"
+        },
+        {
+          "n": "Hougang",
+          "la": 1.37,
+          "lo": 103.89,
+          "fn": "Hougang, North East",
+          "s": "North East"
+        },
+        {
+          "n": "Punggol",
+          "la": 1.41,
+          "lo": 103.9,
+          "fn": "Punggol, North East",
+          "s": "North East"
+        },
+        {
+          "n": "Sengkang",
+          "la": 1.39,
+          "lo": 103.9,
+          "fn": "Sengkang, North East",
+          "s": "North East"
+        },
+        {
+          "n": "Serangoon",
+          "la": 1.35,
+          "lo": 103.87,
+          "fn": "Serangoon, North East",
+          "s": "North East"
+        }
+      ]
+    },
+    {
+      "n": "North East",
+      "la": 1.38,
+      "lo": 103.9,
+      "sc": "02",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Ang Mo Kio",
+          "la": 1.37,
+          "lo": 103.85,
+          "fn": "Ang Mo Kio, North East",
+          "s": "North East"
+        },
+        {
+          "n": "Hougang",
+          "la": 1.37,
+          "lo": 103.89,
+          "fn": "Hougang, North East",
+          "s": "North East"
+        },
+        {
+          "n": "Punggol",
+          "la": 1.41,
+          "lo": 103.9,
+          "fn": "Punggol, North East",
+          "s": "North East"
+        },
+        {
+          "n": "Sengkang",
+          "la": 1.39,
+          "lo": 103.9,
+          "fn": "Sengkang, North East",
+          "s": "North East"
+        },
+        {
+          "n": "Serangoon",
+          "la": 1.35,
+          "lo": 103.87,
+          "fn": "Serangoon, North East",
+          "s": "North East"
+        }
+      ]
+    },
+    {
+      "n": "North West",
+      "la": 1.42,
+      "lo": 103.83,
+      "sc": "03",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Sembawang",
+          "la": 1.45,
+          "lo": 103.82,
+          "fn": "Sembawang, North West",
+          "s": "North West"
+        },
+        {
+          "n": "Woodlands",
+          "la": 1.44,
+          "lo": 103.79,
+          "fn": "Woodlands, North West",
+          "s": "North West"
+        },
+        {
+          "n": "Yishun",
+          "la": 1.43,
+          "lo": 103.84,
+          "fn": "Yishun, North West",
+          "s": "North West"
+        }
+      ]
+    },
+    {
+      "n": "North West",
+      "la": 1.42,
+      "lo": 103.83,
+      "sc": "03",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Sembawang",
+          "la": 1.45,
+          "lo": 103.82,
+          "fn": "Sembawang, North West",
+          "s": "North West"
+        },
+        {
+          "n": "Woodlands",
+          "la": 1.44,
+          "lo": 103.79,
+          "fn": "Woodlands, North West",
+          "s": "North West"
+        },
+        {
+          "n": "Yishun",
+          "la": 1.43,
+          "lo": 103.84,
+          "fn": "Yishun, North West",
+          "s": "North West"
+        }
+      ]
+    },
+    {
+      "n": "South East",
+      "la": 1.36,
+      "lo": 103.7,
+      "sc": "04",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bedok",
+          "la": 1.32,
+          "lo": 103.93,
+          "fn": "Bedok, South East",
+          "s": "South East"
+        },
+        {
+          "n": "Pasir Ris",
+          "la": 1.37,
+          "lo": 103.95,
+          "fn": "Pasir Ris, South East",
+          "s": "South East"
+        },
+        {
+          "n": "Tampines",
+          "la": 1.35,
+          "lo": 103.94,
+          "fn": "Tampines, South East",
+          "s": "South East"
+        }
+      ]
+    },
+    {
+      "n": "South East",
+      "la": 1.36,
+      "lo": 103.7,
+      "sc": "04",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bedok",
+          "la": 1.32,
+          "lo": 103.93,
+          "fn": "Bedok, South East",
+          "s": "South East"
+        },
+        {
+          "n": "Pasir Ris",
+          "la": 1.37,
+          "lo": 103.95,
+          "fn": "Pasir Ris, South East",
+          "s": "South East"
+        },
+        {
+          "n": "Tampines",
+          "la": 1.35,
+          "lo": 103.94,
+          "fn": "Tampines, South East",
+          "s": "South East"
+        }
+      ]
+    },
+    {
+      "n": "South West",
+      "la": 1.36,
+      "lo": 103.95,
+      "sc": "05",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bukit Batok",
+          "la": 1.35,
+          "lo": 103.75,
+          "fn": "Bukit Batok, South West",
+          "s": "South West"
+        },
+        {
+          "n": "Bukit Panjang",
+          "la": 1.38,
+          "lo": 103.76,
+          "fn": "Bukit Panjang, South West",
+          "s": "South West"
+        },
+        {
+          "n": "Jurong West",
+          "la": 1.34,
+          "lo": 103.71,
+          "fn": "Jurong West, South West",
+          "s": "South West"
+        }
+      ]
+    },
+    {
+      "n": "South West",
+      "la": 1.36,
+      "lo": 103.95,
+      "sc": "05",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bukit Batok",
+          "la": 1.35,
+          "lo": 103.75,
+          "fn": "Bukit Batok, South West",
+          "s": "South West"
+        },
+        {
+          "n": "Bukit Panjang",
+          "la": 1.38,
+          "lo": 103.76,
+          "fn": "Bukit Panjang, South West",
+          "s": "South West"
+        },
+        {
+          "n": "Jurong West",
+          "la": 1.34,
+          "lo": 103.71,
+          "fn": "Jurong West, South West",
+          "s": "South West"
+        }
+      ]
+    }
+  ]
+}

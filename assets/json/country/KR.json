@@ -1,0 +1,4636 @@
+{
+  "states": [
+    {
+      "n": "Busan",
+      "la": 35.18,
+      "lo": 129.08,
+      "sc": "26",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Buk-gu",
+          "la": 35.2,
+          "lo": 128.99,
+          "fn": "Buk-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Busan",
+          "la": 35.1,
+          "lo": 129.03,
+          "fn": "Busan, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Dongnae-gu",
+          "la": 35.2,
+          "lo": 129.08,
+          "fn": "Dongnae-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Gangseo-gu",
+          "la": 35.16,
+          "lo": 128.93,
+          "fn": "Gangseo-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Geumjeong-gu",
+          "la": 35.26,
+          "lo": 129.09,
+          "fn": "Geumjeong-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Gijang",
+          "la": 35.24,
+          "lo": 129.21,
+          "fn": "Gijang, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Gijang-gun",
+          "la": 35.3,
+          "lo": 129.2,
+          "fn": "Gijang-gun, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Haeundae-gu",
+          "la": 35.17,
+          "lo": 129.17,
+          "fn": "Haeundae-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Jung-gu",
+          "la": 35.11,
+          "lo": 129.03,
+          "fn": "Jung-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Nam-gu",
+          "la": 35.14,
+          "lo": 129.08,
+          "fn": "Nam-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Saha-gu",
+          "la": 35.09,
+          "lo": 128.99,
+          "fn": "Saha-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Sasang-gu",
+          "la": 35.14,
+          "lo": 128.98,
+          "fn": "Sasang-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Seo-gu",
+          "la": 35.13,
+          "lo": 129.02,
+          "fn": "Seo-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Suyeong-gu",
+          "la": 35.16,
+          "lo": 129.11,
+          "fn": "Suyeong-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Yeongdo-gu",
+          "la": 35.08,
+          "lo": 129.06,
+          "fn": "Yeongdo-gu, Busan",
+          "s": "Busan"
+        }
+      ]
+    },
+    {
+      "n": "Busan",
+      "la": 35.18,
+      "lo": 129.08,
+      "sc": "26",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Buk-gu",
+          "la": 35.2,
+          "lo": 128.99,
+          "fn": "Buk-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Busan",
+          "la": 35.1,
+          "lo": 129.03,
+          "fn": "Busan, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Dongnae-gu",
+          "la": 35.2,
+          "lo": 129.08,
+          "fn": "Dongnae-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Gangseo-gu",
+          "la": 35.16,
+          "lo": 128.93,
+          "fn": "Gangseo-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Geumjeong-gu",
+          "la": 35.26,
+          "lo": 129.09,
+          "fn": "Geumjeong-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Gijang",
+          "la": 35.24,
+          "lo": 129.21,
+          "fn": "Gijang, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Gijang-gun",
+          "la": 35.3,
+          "lo": 129.2,
+          "fn": "Gijang-gun, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Haeundae-gu",
+          "la": 35.17,
+          "lo": 129.17,
+          "fn": "Haeundae-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Jung-gu",
+          "la": 35.11,
+          "lo": 129.03,
+          "fn": "Jung-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Nam-gu",
+          "la": 35.14,
+          "lo": 129.08,
+          "fn": "Nam-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Saha-gu",
+          "la": 35.09,
+          "lo": 128.99,
+          "fn": "Saha-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Sasang-gu",
+          "la": 35.14,
+          "lo": 128.98,
+          "fn": "Sasang-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Seo-gu",
+          "la": 35.13,
+          "lo": 129.02,
+          "fn": "Seo-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Suyeong-gu",
+          "la": 35.16,
+          "lo": 129.11,
+          "fn": "Suyeong-gu, Busan",
+          "s": "Busan"
+        },
+        {
+          "n": "Yeongdo-gu",
+          "la": 35.08,
+          "lo": 129.06,
+          "fn": "Yeongdo-gu, Busan",
+          "s": "Busan"
+        }
+      ]
+    },
+    {
+      "n": "Daegu",
+      "la": 35.87,
+      "lo": 128.6,
+      "sc": "27",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Daegu",
+          "la": 35.87,
+          "lo": 128.59,
+          "fn": "Daegu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Dalseo-gu",
+          "la": 35.83,
+          "lo": 128.52,
+          "fn": "Dalseo-gu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Dalseong-gun",
+          "la": 35.77,
+          "lo": 128.43,
+          "fn": "Dalseong-gun, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Dong-gu",
+          "la": 35.89,
+          "lo": 128.63,
+          "fn": "Dong-gu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Hwawŏn",
+          "la": 35.8,
+          "lo": 128.5,
+          "fn": "Hwawŏn, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Jung-gu",
+          "la": 35.87,
+          "lo": 128.6,
+          "fn": "Jung-gu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Seo-gu",
+          "la": 35.87,
+          "lo": 128.55,
+          "fn": "Seo-gu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Suseong-gu",
+          "la": 35.86,
+          "lo": 128.63,
+          "fn": "Suseong-gu, Daegu",
+          "s": "Daegu"
+        }
+      ]
+    },
+    {
+      "n": "Daegu",
+      "la": 35.87,
+      "lo": 128.6,
+      "sc": "27",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Daegu",
+          "la": 35.87,
+          "lo": 128.59,
+          "fn": "Daegu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Dalseo-gu",
+          "la": 35.83,
+          "lo": 128.52,
+          "fn": "Dalseo-gu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Dalseong-gun",
+          "la": 35.77,
+          "lo": 128.43,
+          "fn": "Dalseong-gun, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Dong-gu",
+          "la": 35.89,
+          "lo": 128.63,
+          "fn": "Dong-gu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Hwawŏn",
+          "la": 35.8,
+          "lo": 128.5,
+          "fn": "Hwawŏn, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Jung-gu",
+          "la": 35.87,
+          "lo": 128.6,
+          "fn": "Jung-gu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Seo-gu",
+          "la": 35.87,
+          "lo": 128.55,
+          "fn": "Seo-gu, Daegu",
+          "s": "Daegu"
+        },
+        {
+          "n": "Suseong-gu",
+          "la": 35.86,
+          "lo": 128.63,
+          "fn": "Suseong-gu, Daegu",
+          "s": "Daegu"
+        }
+      ]
+    },
+    {
+      "n": "Daejeon",
+      "la": 36.35,
+      "lo": 127.38,
+      "sc": "30",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Daejeon",
+          "la": 36.35,
+          "lo": 127.38,
+          "fn": "Daejeon, Daejeon",
+          "s": "Daejeon"
+        },
+        {
+          "n": "Seo-gu",
+          "la": 36.27,
+          "lo": 127.33,
+          "fn": "Seo-gu, Daejeon",
+          "s": "Daejeon"
+        },
+        {
+          "n": "Sintansin",
+          "la": 36.45,
+          "lo": 127.43,
+          "fn": "Sintansin, Daejeon",
+          "s": "Daejeon"
+        },
+        {
+          "n": "Songgangdong",
+          "la": 36.43,
+          "lo": 127.38,
+          "fn": "Songgangdong, Daejeon",
+          "s": "Daejeon"
+        },
+        {
+          "n": "Yuseong-gu",
+          "la": 36.37,
+          "lo": 127.33,
+          "fn": "Yuseong-gu, Daejeon",
+          "s": "Daejeon"
+        }
+      ]
+    },
+    {
+      "n": "Daejeon",
+      "la": 36.35,
+      "lo": 127.38,
+      "sc": "30",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Daejeon",
+          "la": 36.35,
+          "lo": 127.38,
+          "fn": "Daejeon, Daejeon",
+          "s": "Daejeon"
+        },
+        {
+          "n": "Seo-gu",
+          "la": 36.27,
+          "lo": 127.33,
+          "fn": "Seo-gu, Daejeon",
+          "s": "Daejeon"
+        },
+        {
+          "n": "Sintansin",
+          "la": 36.45,
+          "lo": 127.43,
+          "fn": "Sintansin, Daejeon",
+          "s": "Daejeon"
+        },
+        {
+          "n": "Songgangdong",
+          "la": 36.43,
+          "lo": 127.38,
+          "fn": "Songgangdong, Daejeon",
+          "s": "Daejeon"
+        },
+        {
+          "n": "Yuseong-gu",
+          "la": 36.37,
+          "lo": 127.33,
+          "fn": "Yuseong-gu, Daejeon",
+          "s": "Daejeon"
+        }
+      ]
+    },
+    {
+      "n": "Gangwon",
+      "la": 37.82,
+      "lo": 128.16,
+      "sc": "42",
+      "t": "special self-governing province",
+      "cities": [
+        {
+          "n": "Cheorwon-gun",
+          "la": 38.24,
+          "lo": 127.45,
+          "fn": "Cheorwon-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Chuncheon",
+          "la": 37.87,
+          "lo": 127.73,
+          "fn": "Chuncheon, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Chuncheon-si",
+          "la": 37.88,
+          "lo": 127.73,
+          "fn": "Chuncheon-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Donghae-si",
+          "la": 37.52,
+          "lo": 129.11,
+          "fn": "Donghae-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Gangneung",
+          "la": 37.75,
+          "lo": 128.87,
+          "fn": "Gangneung, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Gangneung-si",
+          "la": 37.75,
+          "lo": 128.88,
+          "fn": "Gangneung-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Goseong-gun",
+          "la": 38.38,
+          "lo": 128.47,
+          "fn": "Goseong-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hoengseong-gun",
+          "la": 37.49,
+          "lo": 127.99,
+          "fn": "Hoengseong-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hongch’ŏn",
+          "la": 37.69,
+          "lo": 127.89,
+          "fn": "Hongch’ŏn, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hongcheon-gun",
+          "la": 37.76,
+          "lo": 128.03,
+          "fn": "Hongcheon-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hwacheon",
+          "la": 38.11,
+          "lo": 127.71,
+          "fn": "Hwacheon, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hwacheon-gun",
+          "la": 38.14,
+          "lo": 127.68,
+          "fn": "Hwacheon-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Inje-gun",
+          "la": 38.04,
+          "lo": 128.28,
+          "fn": "Inje-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Jeongseon-gun",
+          "la": 37.39,
+          "lo": 128.73,
+          "fn": "Jeongseon-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Kosong",
+          "la": 38.38,
+          "lo": 128.47,
+          "fn": "Kosong, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Neietsu",
+          "la": 37.18,
+          "lo": 128.47,
+          "fn": "Neietsu, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Pyeongchang",
+          "la": 37.37,
+          "lo": 128.39,
+          "fn": "Pyeongchang, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Pyeongchang-gun",
+          "la": 37.37,
+          "lo": 128.4,
+          "fn": "Pyeongchang-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Samcheok-si",
+          "la": 37.45,
+          "lo": 129.17,
+          "fn": "Samcheok-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Santyoku",
+          "la": 37.44,
+          "lo": 129.17,
+          "fn": "Santyoku, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Sokcho",
+          "la": 38.21,
+          "lo": 128.59,
+          "fn": "Sokcho, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Sokcho-si",
+          "la": 38.21,
+          "lo": 128.59,
+          "fn": "Sokcho-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "T’aebaek",
+          "la": 37.18,
+          "lo": 128.99,
+          "fn": "T’aebaek, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Taebaek-si",
+          "la": 37.17,
+          "lo": 128.99,
+          "fn": "Taebaek-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Tonghae",
+          "la": 37.54,
+          "lo": 129.11,
+          "fn": "Tonghae, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Wŏnju",
+          "la": 37.35,
+          "lo": 127.95,
+          "fn": "Wŏnju, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Wonju-si",
+          "la": 37.32,
+          "lo": 127.92,
+          "fn": "Wonju-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Yanggu",
+          "la": 38.11,
+          "lo": 127.99,
+          "fn": "Yanggu, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Yanggu-gun",
+          "la": 38.1,
+          "lo": 127.99,
+          "fn": "Yanggu-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Yangyang-gun",
+          "la": 38.06,
+          "lo": 128.61,
+          "fn": "Yangyang-gun, Gangwon",
+          "s": "Gangwon"
+        }
+      ]
+    },
+    {
+      "n": "Gangwon",
+      "la": 37.82,
+      "lo": 128.16,
+      "sc": "42",
+      "t": "special self-governing province",
+      "cities": [
+        {
+          "n": "Cheorwon-gun",
+          "la": 38.24,
+          "lo": 127.45,
+          "fn": "Cheorwon-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Chuncheon",
+          "la": 37.87,
+          "lo": 127.73,
+          "fn": "Chuncheon, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Chuncheon-si",
+          "la": 37.88,
+          "lo": 127.73,
+          "fn": "Chuncheon-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Donghae-si",
+          "la": 37.52,
+          "lo": 129.11,
+          "fn": "Donghae-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Gangneung",
+          "la": 37.75,
+          "lo": 128.87,
+          "fn": "Gangneung, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Gangneung-si",
+          "la": 37.75,
+          "lo": 128.88,
+          "fn": "Gangneung-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Goseong-gun",
+          "la": 38.38,
+          "lo": 128.47,
+          "fn": "Goseong-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hoengseong-gun",
+          "la": 37.49,
+          "lo": 127.99,
+          "fn": "Hoengseong-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hongch’ŏn",
+          "la": 37.69,
+          "lo": 127.89,
+          "fn": "Hongch’ŏn, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hongcheon-gun",
+          "la": 37.76,
+          "lo": 128.03,
+          "fn": "Hongcheon-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hwacheon",
+          "la": 38.11,
+          "lo": 127.71,
+          "fn": "Hwacheon, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Hwacheon-gun",
+          "la": 38.14,
+          "lo": 127.68,
+          "fn": "Hwacheon-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Inje-gun",
+          "la": 38.04,
+          "lo": 128.28,
+          "fn": "Inje-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Jeongseon-gun",
+          "la": 37.39,
+          "lo": 128.73,
+          "fn": "Jeongseon-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Kosong",
+          "la": 38.38,
+          "lo": 128.47,
+          "fn": "Kosong, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Neietsu",
+          "la": 37.18,
+          "lo": 128.47,
+          "fn": "Neietsu, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Pyeongchang",
+          "la": 37.37,
+          "lo": 128.39,
+          "fn": "Pyeongchang, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Pyeongchang-gun",
+          "la": 37.37,
+          "lo": 128.4,
+          "fn": "Pyeongchang-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Samcheok-si",
+          "la": 37.45,
+          "lo": 129.17,
+          "fn": "Samcheok-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Santyoku",
+          "la": 37.44,
+          "lo": 129.17,
+          "fn": "Santyoku, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Sokcho",
+          "la": 38.21,
+          "lo": 128.59,
+          "fn": "Sokcho, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Sokcho-si",
+          "la": 38.21,
+          "lo": 128.59,
+          "fn": "Sokcho-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "T’aebaek",
+          "la": 37.18,
+          "lo": 128.99,
+          "fn": "T’aebaek, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Taebaek-si",
+          "la": 37.17,
+          "lo": 128.99,
+          "fn": "Taebaek-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Tonghae",
+          "la": 37.54,
+          "lo": 129.11,
+          "fn": "Tonghae, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Wŏnju",
+          "la": 37.35,
+          "lo": 127.95,
+          "fn": "Wŏnju, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Wonju-si",
+          "la": 37.32,
+          "lo": 127.92,
+          "fn": "Wonju-si, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Yanggu",
+          "la": 38.11,
+          "lo": 127.99,
+          "fn": "Yanggu, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Yanggu-gun",
+          "la": 38.1,
+          "lo": 127.99,
+          "fn": "Yanggu-gun, Gangwon",
+          "s": "Gangwon"
+        },
+        {
+          "n": "Yangyang-gun",
+          "la": 38.06,
+          "lo": 128.61,
+          "fn": "Yangyang-gun, Gangwon",
+          "s": "Gangwon"
+        }
+      ]
+    },
+    {
+      "n": "Gwangju",
+      "la": 35.16,
+      "lo": 126.85,
+      "sc": "29",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Gwangju",
+          "la": 35.15,
+          "lo": 126.92,
+          "fn": "Gwangju, Gwangju",
+          "s": "Gwangju"
+        },
+        {
+          "n": "Gwangsan-gu",
+          "la": 35.16,
+          "lo": 126.81,
+          "fn": "Gwangsan-gu, Gwangju",
+          "s": "Gwangju"
+        },
+        {
+          "n": "Masan",
+          "la": 35.13,
+          "lo": 126.83,
+          "fn": "Masan, Gwangju",
+          "s": "Gwangju"
+        }
+      ]
+    },
+    {
+      "n": "Gwangju",
+      "la": 35.16,
+      "lo": 126.85,
+      "sc": "29",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Gwangju",
+          "la": 35.15,
+          "lo": 126.92,
+          "fn": "Gwangju, Gwangju",
+          "s": "Gwangju"
+        },
+        {
+          "n": "Gwangsan-gu",
+          "la": 35.16,
+          "lo": 126.81,
+          "fn": "Gwangsan-gu, Gwangju",
+          "s": "Gwangju"
+        },
+        {
+          "n": "Masan",
+          "la": 35.13,
+          "lo": 126.83,
+          "fn": "Masan, Gwangju",
+          "s": "Gwangju"
+        }
+      ]
+    },
+    {
+      "n": "Gyeonggi",
+      "la": 37.41,
+      "lo": 127.52,
+      "sc": "41",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Ansan-si",
+          "la": 37.32,
+          "lo": 126.82,
+          "fn": "Ansan-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Anseong",
+          "la": 37.01,
+          "lo": 127.27,
+          "fn": "Anseong, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Anyang-si",
+          "la": 37.39,
+          "lo": 126.93,
+          "fn": "Anyang-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Bucheon-si",
+          "la": 37.5,
+          "lo": 126.77,
+          "fn": "Bucheon-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Dongducheon",
+          "la": 37.92,
+          "lo": 127.07,
+          "fn": "Dongducheon, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gapyeong",
+          "la": 37.83,
+          "lo": 127.51,
+          "fn": "Gapyeong, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gapyeong-gun",
+          "la": 37.83,
+          "lo": 127.52,
+          "fn": "Gapyeong-gun, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gimpo-si",
+          "la": 37.64,
+          "lo": 126.69,
+          "fn": "Gimpo-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Goyang-si",
+          "la": 37.66,
+          "lo": 126.83,
+          "fn": "Goyang-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gunpo-si",
+          "la": 37.34,
+          "lo": 126.92,
+          "fn": "Gunpo-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Guri-si",
+          "la": 37.6,
+          "lo": 127.14,
+          "fn": "Guri-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gwacheon-si",
+          "la": 37.43,
+          "lo": 127.0,
+          "fn": "Gwacheon-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gwangju",
+          "la": 37.41,
+          "lo": 127.26,
+          "fn": "Gwangju, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gwangju-si",
+          "la": 37.4,
+          "lo": 127.3,
+          "fn": "Gwangju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gwangmyeong-si",
+          "la": 37.44,
+          "lo": 126.86,
+          "fn": "Gwangmyeong-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Hanam",
+          "la": 37.54,
+          "lo": 127.21,
+          "fn": "Hanam, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Hanam-si",
+          "la": 37.54,
+          "lo": 127.21,
+          "fn": "Hanam-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Hwado",
+          "la": 37.65,
+          "lo": 127.31,
+          "fn": "Hwado, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Hwaseong-si",
+          "la": 37.21,
+          "lo": 126.82,
+          "fn": "Hwaseong-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Icheon-si",
+          "la": 37.28,
+          "lo": 127.44,
+          "fn": "Icheon-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Kwangmyŏng",
+          "la": 37.48,
+          "lo": 126.87,
+          "fn": "Kwangmyŏng, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Munsan",
+          "la": 37.86,
+          "lo": 126.78,
+          "fn": "Munsan, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Namyangju",
+          "la": 37.64,
+          "lo": 127.21,
+          "fn": "Namyangju, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Namyangju-si",
+          "la": 37.65,
+          "lo": 127.24,
+          "fn": "Namyangju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Osan",
+          "la": 37.15,
+          "lo": 127.07,
+          "fn": "Osan, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Osan-si",
+          "la": 37.16,
+          "lo": 127.05,
+          "fn": "Osan-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Paju-si",
+          "la": 37.76,
+          "lo": 126.78,
+          "fn": "Paju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Pocheon-si",
+          "la": 37.89,
+          "lo": 127.2,
+          "fn": "Pocheon-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Pubal",
+          "la": 37.29,
+          "lo": 127.51,
+          "fn": "Pubal, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Pyeongtaek",
+          "la": 37.01,
+          "lo": 126.99,
+          "fn": "Pyeongtaek, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Seongnam-si",
+          "la": 37.42,
+          "lo": 127.13,
+          "fn": "Seongnam-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Siheung",
+          "la": 37.39,
+          "lo": 126.79,
+          "fn": "Siheung, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Suwon",
+          "la": 37.29,
+          "lo": 127.01,
+          "fn": "Suwon, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Uijeongbu-si",
+          "la": 37.74,
+          "lo": 127.05,
+          "fn": "Uijeongbu-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Uiwang-si",
+          "la": 37.34,
+          "lo": 126.98,
+          "fn": "Uiwang-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Wabu",
+          "la": 37.59,
+          "lo": 127.22,
+          "fn": "Wabu, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yangju",
+          "la": 37.83,
+          "lo": 127.06,
+          "fn": "Yangju, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yangju-si",
+          "la": 37.82,
+          "lo": 127.05,
+          "fn": "Yangju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yangp'yŏng",
+          "la": 37.49,
+          "lo": 127.49,
+          "fn": "Yangp'yŏng, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yangpyeong-gun",
+          "la": 37.49,
+          "lo": 127.49,
+          "fn": "Yangpyeong-gun, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yeoju-si",
+          "la": 37.3,
+          "lo": 127.64,
+          "fn": "Yeoju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yeoncheon-gun",
+          "la": 38.09,
+          "lo": 127.08,
+          "fn": "Yeoncheon-gun, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yongin-si",
+          "la": 37.24,
+          "lo": 127.18,
+          "fn": "Yongin-si, Gyeonggi",
+          "s": "Gyeonggi"
+        }
+      ]
+    },
+    {
+      "n": "Gyeonggi",
+      "la": 37.41,
+      "lo": 127.52,
+      "sc": "41",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Ansan-si",
+          "la": 37.32,
+          "lo": 126.82,
+          "fn": "Ansan-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Anseong",
+          "la": 37.01,
+          "lo": 127.27,
+          "fn": "Anseong, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Anyang-si",
+          "la": 37.39,
+          "lo": 126.93,
+          "fn": "Anyang-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Bucheon-si",
+          "la": 37.5,
+          "lo": 126.77,
+          "fn": "Bucheon-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Dongducheon",
+          "la": 37.92,
+          "lo": 127.07,
+          "fn": "Dongducheon, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gapyeong",
+          "la": 37.83,
+          "lo": 127.51,
+          "fn": "Gapyeong, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gapyeong-gun",
+          "la": 37.83,
+          "lo": 127.52,
+          "fn": "Gapyeong-gun, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gimpo-si",
+          "la": 37.64,
+          "lo": 126.69,
+          "fn": "Gimpo-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Goyang-si",
+          "la": 37.66,
+          "lo": 126.83,
+          "fn": "Goyang-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gunpo-si",
+          "la": 37.34,
+          "lo": 126.92,
+          "fn": "Gunpo-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Guri-si",
+          "la": 37.6,
+          "lo": 127.14,
+          "fn": "Guri-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gwacheon-si",
+          "la": 37.43,
+          "lo": 127.0,
+          "fn": "Gwacheon-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gwangju",
+          "la": 37.41,
+          "lo": 127.26,
+          "fn": "Gwangju, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gwangju-si",
+          "la": 37.4,
+          "lo": 127.3,
+          "fn": "Gwangju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Gwangmyeong-si",
+          "la": 37.44,
+          "lo": 126.86,
+          "fn": "Gwangmyeong-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Hanam",
+          "la": 37.54,
+          "lo": 127.21,
+          "fn": "Hanam, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Hanam-si",
+          "la": 37.54,
+          "lo": 127.21,
+          "fn": "Hanam-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Hwado",
+          "la": 37.65,
+          "lo": 127.31,
+          "fn": "Hwado, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Hwaseong-si",
+          "la": 37.21,
+          "lo": 126.82,
+          "fn": "Hwaseong-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Icheon-si",
+          "la": 37.28,
+          "lo": 127.44,
+          "fn": "Icheon-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Kwangmyŏng",
+          "la": 37.48,
+          "lo": 126.87,
+          "fn": "Kwangmyŏng, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Munsan",
+          "la": 37.86,
+          "lo": 126.78,
+          "fn": "Munsan, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Namyangju",
+          "la": 37.64,
+          "lo": 127.21,
+          "fn": "Namyangju, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Namyangju-si",
+          "la": 37.65,
+          "lo": 127.24,
+          "fn": "Namyangju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Osan",
+          "la": 37.15,
+          "lo": 127.07,
+          "fn": "Osan, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Osan-si",
+          "la": 37.16,
+          "lo": 127.05,
+          "fn": "Osan-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Paju-si",
+          "la": 37.76,
+          "lo": 126.78,
+          "fn": "Paju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Pocheon-si",
+          "la": 37.89,
+          "lo": 127.2,
+          "fn": "Pocheon-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Pubal",
+          "la": 37.29,
+          "lo": 127.51,
+          "fn": "Pubal, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Pyeongtaek",
+          "la": 37.01,
+          "lo": 126.99,
+          "fn": "Pyeongtaek, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Seongnam-si",
+          "la": 37.42,
+          "lo": 127.13,
+          "fn": "Seongnam-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Siheung",
+          "la": 37.39,
+          "lo": 126.79,
+          "fn": "Siheung, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Suwon",
+          "la": 37.29,
+          "lo": 127.01,
+          "fn": "Suwon, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Uijeongbu-si",
+          "la": 37.74,
+          "lo": 127.05,
+          "fn": "Uijeongbu-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Uiwang-si",
+          "la": 37.34,
+          "lo": 126.98,
+          "fn": "Uiwang-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Wabu",
+          "la": 37.59,
+          "lo": 127.22,
+          "fn": "Wabu, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yangju",
+          "la": 37.83,
+          "lo": 127.06,
+          "fn": "Yangju, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yangju-si",
+          "la": 37.82,
+          "lo": 127.05,
+          "fn": "Yangju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yangp'yŏng",
+          "la": 37.49,
+          "lo": 127.49,
+          "fn": "Yangp'yŏng, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yangpyeong-gun",
+          "la": 37.49,
+          "lo": 127.49,
+          "fn": "Yangpyeong-gun, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yeoju-si",
+          "la": 37.3,
+          "lo": 127.64,
+          "fn": "Yeoju-si, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yeoncheon-gun",
+          "la": 38.09,
+          "lo": 127.08,
+          "fn": "Yeoncheon-gun, Gyeonggi",
+          "s": "Gyeonggi"
+        },
+        {
+          "n": "Yongin-si",
+          "la": 37.24,
+          "lo": 127.18,
+          "fn": "Yongin-si, Gyeonggi",
+          "s": "Gyeonggi"
+        }
+      ]
+    },
+    {
+      "n": "Incheon",
+      "la": 37.46,
+      "lo": 126.71,
+      "sc": "28",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Bupyeong-gu",
+          "la": 37.5,
+          "lo": 126.71,
+          "fn": "Bupyeong-gu, Incheon",
+          "s": "Incheon"
+        },
+        {
+          "n": "Incheon",
+          "la": 37.46,
+          "lo": 126.71,
+          "fn": "Incheon, Incheon",
+          "s": "Incheon"
+        },
+        {
+          "n": "Michuhol",
+          "la": 37.46,
+          "lo": 126.65,
+          "fn": "Michuhol, Incheon",
+          "s": "Incheon"
+        },
+        {
+          "n": "Yeonsu-gu",
+          "la": 37.42,
+          "lo": 126.66,
+          "fn": "Yeonsu-gu, Incheon",
+          "s": "Incheon"
+        }
+      ]
+    },
+    {
+      "n": "Incheon",
+      "la": 37.46,
+      "lo": 126.71,
+      "sc": "28",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Bupyeong-gu",
+          "la": 37.5,
+          "lo": 126.71,
+          "fn": "Bupyeong-gu, Incheon",
+          "s": "Incheon"
+        },
+        {
+          "n": "Incheon",
+          "la": 37.46,
+          "lo": 126.71,
+          "fn": "Incheon, Incheon",
+          "s": "Incheon"
+        },
+        {
+          "n": "Michuhol",
+          "la": 37.46,
+          "lo": 126.65,
+          "fn": "Michuhol, Incheon",
+          "s": "Incheon"
+        },
+        {
+          "n": "Yeonsu-gu",
+          "la": 37.42,
+          "lo": 126.66,
+          "fn": "Yeonsu-gu, Incheon",
+          "s": "Incheon"
+        }
+      ]
+    },
+    {
+      "n": "Jeju",
+      "la": 33.96,
+      "lo": -84.13,
+      "sc": "49",
+      "t": "special self-governing province",
+      "cities": [
+        {
+          "n": "Gaigeturi",
+          "la": 33.46,
+          "lo": 126.32,
+          "fn": "Gaigeturi, Jeju",
+          "s": "Jeju"
+        },
+        {
+          "n": "Jeju City",
+          "la": 33.51,
+          "lo": 126.52,
+          "fn": "Jeju City, Jeju",
+          "s": "Jeju"
+        },
+        {
+          "n": "Jeju-si",
+          "la": 33.46,
+          "lo": 126.54,
+          "fn": "Jeju-si, Jeju",
+          "s": "Jeju"
+        },
+        {
+          "n": "Seogwipo",
+          "la": 33.25,
+          "lo": 126.56,
+          "fn": "Seogwipo, Jeju",
+          "s": "Jeju"
+        }
+      ]
+    },
+    {
+      "n": "Jeju",
+      "la": 33.96,
+      "lo": -84.13,
+      "sc": "49",
+      "t": "special self-governing province",
+      "cities": [
+        {
+          "n": "Gaigeturi",
+          "la": 33.46,
+          "lo": 126.32,
+          "fn": "Gaigeturi, Jeju",
+          "s": "Jeju"
+        },
+        {
+          "n": "Jeju City",
+          "la": 33.51,
+          "lo": 126.52,
+          "fn": "Jeju City, Jeju",
+          "s": "Jeju"
+        },
+        {
+          "n": "Jeju-si",
+          "la": 33.46,
+          "lo": 126.54,
+          "fn": "Jeju-si, Jeju",
+          "s": "Jeju"
+        },
+        {
+          "n": "Seogwipo",
+          "la": 33.25,
+          "lo": 126.56,
+          "fn": "Seogwipo, Jeju",
+          "s": "Jeju"
+        }
+      ]
+    },
+    {
+      "n": "North Chungcheong",
+      "la": 36.8,
+      "lo": 127.7,
+      "sc": "43",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Boeun-gun",
+          "la": 36.49,
+          "lo": 127.73,
+          "fn": "Boeun-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Cheongju-si",
+          "la": 36.64,
+          "lo": 127.49,
+          "fn": "Cheongju-si, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Chinch'ŏn",
+          "la": 36.86,
+          "lo": 127.44,
+          "fn": "Chinch'ŏn, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Chungju-si",
+          "la": 37.02,
+          "lo": 127.88,
+          "fn": "Chungju-si, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Danyang-gun",
+          "la": 36.99,
+          "lo": 128.37,
+          "fn": "Danyang-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Eumseong-gun",
+          "la": 36.93,
+          "lo": 127.68,
+          "fn": "Eumseong-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Goesan-gun",
+          "la": 36.77,
+          "lo": 127.81,
+          "fn": "Goesan-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Jecheon-si",
+          "la": 37.06,
+          "lo": 128.14,
+          "fn": "Jecheon-si, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Jeungpyeong-gun",
+          "la": 36.78,
+          "lo": 127.6,
+          "fn": "Jeungpyeong-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Jincheon-gun",
+          "la": 36.88,
+          "lo": 127.43,
+          "fn": "Jincheon-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Koesan",
+          "la": 36.81,
+          "lo": 127.79,
+          "fn": "Koesan, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Okcheon",
+          "la": 36.3,
+          "lo": 127.57,
+          "fn": "Okcheon, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Okcheon-gun",
+          "la": 36.27,
+          "lo": 127.58,
+          "fn": "Okcheon-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Yeongdong",
+          "la": 36.17,
+          "lo": 127.78,
+          "fn": "Yeongdong, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Yeongdong-gun",
+          "la": 36.22,
+          "lo": 127.79,
+          "fn": "Yeongdong-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        }
+      ]
+    },
+    {
+      "n": "North Chungcheong",
+      "la": 36.8,
+      "lo": 127.7,
+      "sc": "43",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Boeun-gun",
+          "la": 36.49,
+          "lo": 127.73,
+          "fn": "Boeun-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Cheongju-si",
+          "la": 36.64,
+          "lo": 127.49,
+          "fn": "Cheongju-si, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Chinch'ŏn",
+          "la": 36.86,
+          "lo": 127.44,
+          "fn": "Chinch'ŏn, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Chungju-si",
+          "la": 37.02,
+          "lo": 127.88,
+          "fn": "Chungju-si, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Danyang-gun",
+          "la": 36.99,
+          "lo": 128.37,
+          "fn": "Danyang-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Eumseong-gun",
+          "la": 36.93,
+          "lo": 127.68,
+          "fn": "Eumseong-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Goesan-gun",
+          "la": 36.77,
+          "lo": 127.81,
+          "fn": "Goesan-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Jecheon-si",
+          "la": 37.06,
+          "lo": 128.14,
+          "fn": "Jecheon-si, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Jeungpyeong-gun",
+          "la": 36.78,
+          "lo": 127.6,
+          "fn": "Jeungpyeong-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Jincheon-gun",
+          "la": 36.88,
+          "lo": 127.43,
+          "fn": "Jincheon-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Koesan",
+          "la": 36.81,
+          "lo": 127.79,
+          "fn": "Koesan, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Okcheon",
+          "la": 36.3,
+          "lo": 127.57,
+          "fn": "Okcheon, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Okcheon-gun",
+          "la": 36.27,
+          "lo": 127.58,
+          "fn": "Okcheon-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Yeongdong",
+          "la": 36.17,
+          "lo": 127.78,
+          "fn": "Yeongdong, North Chungcheong",
+          "s": "North Chungcheong"
+        },
+        {
+          "n": "Yeongdong-gun",
+          "la": 36.22,
+          "lo": 127.79,
+          "fn": "Yeongdong-gun, North Chungcheong",
+          "s": "North Chungcheong"
+        }
+      ]
+    },
+    {
+      "n": "North Gyeongsang",
+      "la": 36.49,
+      "lo": 128.89,
+      "sc": "47",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Andong",
+          "la": 36.57,
+          "lo": 128.72,
+          "fn": "Andong, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Andong-si",
+          "la": 36.57,
+          "lo": 128.72,
+          "fn": "Andong-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Bonghwa-gun",
+          "la": 36.89,
+          "lo": 128.74,
+          "fn": "Bonghwa-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Cheongdo-gun",
+          "la": 35.67,
+          "lo": 128.79,
+          "fn": "Cheongdo-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Cheongsong gun",
+          "la": 36.43,
+          "lo": 129.06,
+          "fn": "Cheongsong gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Cheongsong-gun",
+          "la": 36.43,
+          "lo": 129.05,
+          "fn": "Cheongsong-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Chilgok-gun",
+          "la": 36.02,
+          "lo": 128.46,
+          "fn": "Chilgok-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Eisen",
+          "la": 36.82,
+          "lo": 128.63,
+          "fn": "Eisen, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gimcheon",
+          "la": 36.12,
+          "lo": 128.12,
+          "fn": "Gimcheon, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gimcheon-si",
+          "la": 36.14,
+          "lo": 128.11,
+          "fn": "Gimcheon-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Goryeong-gun",
+          "la": 35.75,
+          "lo": 128.3,
+          "fn": "Goryeong-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gumi-si",
+          "la": 36.21,
+          "lo": 128.35,
+          "fn": "Gumi-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gunwi-gun",
+          "la": 36.17,
+          "lo": 128.65,
+          "fn": "Gunwi-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gyeongju",
+          "la": 35.84,
+          "lo": 129.21,
+          "fn": "Gyeongju, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gyeongsan-si",
+          "la": 35.83,
+          "lo": 128.8,
+          "fn": "Gyeongsan-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Hayang",
+          "la": 35.91,
+          "lo": 128.82,
+          "fn": "Hayang, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Heunghae",
+          "la": 36.11,
+          "lo": 129.35,
+          "fn": "Heunghae, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Jenzan",
+          "la": 36.24,
+          "lo": 128.3,
+          "fn": "Jenzan, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Kunwi",
+          "la": 36.23,
+          "lo": 128.57,
+          "fn": "Kunwi, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Mungyeong",
+          "la": 36.59,
+          "lo": 128.2,
+          "fn": "Mungyeong, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Mungyeong-si",
+          "la": 36.59,
+          "lo": 128.19,
+          "fn": "Mungyeong-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Pohang",
+          "la": 36.03,
+          "lo": 129.36,
+          "fn": "Pohang, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Pohang-si",
+          "la": 36.08,
+          "lo": 129.37,
+          "fn": "Pohang-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Sangju",
+          "la": 36.42,
+          "lo": 128.16,
+          "fn": "Sangju, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Seongju-gun",
+          "la": 35.92,
+          "lo": 128.29,
+          "fn": "Seongju-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Uiseong-gun",
+          "la": 36.36,
+          "lo": 128.62,
+          "fn": "Uiseong-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Uljin-gun",
+          "la": 36.92,
+          "lo": 129.32,
+          "fn": "Uljin-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Ulleung-gun",
+          "la": 37.5,
+          "lo": 130.86,
+          "fn": "Ulleung-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Waegwan",
+          "la": 35.99,
+          "lo": 128.4,
+          "fn": "Waegwan, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yecheon-gun",
+          "la": 36.65,
+          "lo": 128.43,
+          "fn": "Yecheon-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeongcheon-si",
+          "la": 36.0,
+          "lo": 129.0,
+          "fn": "Yeongcheon-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeongdeok-gun",
+          "la": 36.48,
+          "lo": 129.31,
+          "fn": "Yeongdeok-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeongju-si",
+          "la": 36.87,
+          "lo": 128.59,
+          "fn": "Yeongju-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeongyang-gun",
+          "la": 36.7,
+          "lo": 129.14,
+          "fn": "Yeongyang-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeonil",
+          "la": 36.0,
+          "lo": 129.35,
+          "fn": "Yeonil, North Gyeongsang",
+          "s": "North Gyeongsang"
+        }
+      ]
+    },
+    {
+      "n": "North Gyeongsang",
+      "la": 36.49,
+      "lo": 128.89,
+      "sc": "47",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Andong",
+          "la": 36.57,
+          "lo": 128.72,
+          "fn": "Andong, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Andong-si",
+          "la": 36.57,
+          "lo": 128.72,
+          "fn": "Andong-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Bonghwa-gun",
+          "la": 36.89,
+          "lo": 128.74,
+          "fn": "Bonghwa-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Cheongdo-gun",
+          "la": 35.67,
+          "lo": 128.79,
+          "fn": "Cheongdo-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Cheongsong gun",
+          "la": 36.43,
+          "lo": 129.06,
+          "fn": "Cheongsong gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Cheongsong-gun",
+          "la": 36.43,
+          "lo": 129.05,
+          "fn": "Cheongsong-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Chilgok-gun",
+          "la": 36.02,
+          "lo": 128.46,
+          "fn": "Chilgok-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Eisen",
+          "la": 36.82,
+          "lo": 128.63,
+          "fn": "Eisen, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gimcheon",
+          "la": 36.12,
+          "lo": 128.12,
+          "fn": "Gimcheon, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gimcheon-si",
+          "la": 36.14,
+          "lo": 128.11,
+          "fn": "Gimcheon-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Goryeong-gun",
+          "la": 35.75,
+          "lo": 128.3,
+          "fn": "Goryeong-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gumi-si",
+          "la": 36.21,
+          "lo": 128.35,
+          "fn": "Gumi-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gunwi-gun",
+          "la": 36.17,
+          "lo": 128.65,
+          "fn": "Gunwi-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gyeongju",
+          "la": 35.84,
+          "lo": 129.21,
+          "fn": "Gyeongju, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Gyeongsan-si",
+          "la": 35.83,
+          "lo": 128.8,
+          "fn": "Gyeongsan-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Hayang",
+          "la": 35.91,
+          "lo": 128.82,
+          "fn": "Hayang, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Heunghae",
+          "la": 36.11,
+          "lo": 129.35,
+          "fn": "Heunghae, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Jenzan",
+          "la": 36.24,
+          "lo": 128.3,
+          "fn": "Jenzan, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Kunwi",
+          "la": 36.23,
+          "lo": 128.57,
+          "fn": "Kunwi, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Mungyeong",
+          "la": 36.59,
+          "lo": 128.2,
+          "fn": "Mungyeong, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Mungyeong-si",
+          "la": 36.59,
+          "lo": 128.19,
+          "fn": "Mungyeong-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Pohang",
+          "la": 36.03,
+          "lo": 129.36,
+          "fn": "Pohang, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Pohang-si",
+          "la": 36.08,
+          "lo": 129.37,
+          "fn": "Pohang-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Sangju",
+          "la": 36.42,
+          "lo": 128.16,
+          "fn": "Sangju, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Seongju-gun",
+          "la": 35.92,
+          "lo": 128.29,
+          "fn": "Seongju-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Uiseong-gun",
+          "la": 36.36,
+          "lo": 128.62,
+          "fn": "Uiseong-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Uljin-gun",
+          "la": 36.92,
+          "lo": 129.32,
+          "fn": "Uljin-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Ulleung-gun",
+          "la": 37.5,
+          "lo": 130.86,
+          "fn": "Ulleung-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Waegwan",
+          "la": 35.99,
+          "lo": 128.4,
+          "fn": "Waegwan, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yecheon-gun",
+          "la": 36.65,
+          "lo": 128.43,
+          "fn": "Yecheon-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeongcheon-si",
+          "la": 36.0,
+          "lo": 129.0,
+          "fn": "Yeongcheon-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeongdeok-gun",
+          "la": 36.48,
+          "lo": 129.31,
+          "fn": "Yeongdeok-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeongju-si",
+          "la": 36.87,
+          "lo": 128.59,
+          "fn": "Yeongju-si, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeongyang-gun",
+          "la": 36.7,
+          "lo": 129.14,
+          "fn": "Yeongyang-gun, North Gyeongsang",
+          "s": "North Gyeongsang"
+        },
+        {
+          "n": "Yeonil",
+          "la": 36.0,
+          "lo": 129.35,
+          "fn": "Yeonil, North Gyeongsang",
+          "s": "North Gyeongsang"
+        }
+      ]
+    },
+    {
+      "n": "North Jeolla",
+      "la": 35.72,
+      "lo": 127.15,
+      "sc": "45",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Buan-gun",
+          "la": 35.7,
+          "lo": 126.67,
+          "fn": "Buan-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Changsu",
+          "la": 35.65,
+          "lo": 127.52,
+          "fn": "Changsu, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Gimje-si",
+          "la": 35.81,
+          "lo": 126.91,
+          "fn": "Gimje-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Gochang-gun",
+          "la": 35.43,
+          "lo": 126.7,
+          "fn": "Gochang-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Gunsan",
+          "la": 35.98,
+          "lo": 126.71,
+          "fn": "Gunsan, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Gunsan-si",
+          "la": 35.94,
+          "lo": 126.68,
+          "fn": "Gunsan-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Iksan",
+          "la": 35.94,
+          "lo": 126.95,
+          "fn": "Iksan, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Iksan-si",
+          "la": 36.04,
+          "lo": 126.99,
+          "fn": "Iksan-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Imsil",
+          "la": 35.61,
+          "lo": 127.28,
+          "fn": "Imsil, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Imsil-gun",
+          "la": 35.62,
+          "lo": 127.23,
+          "fn": "Imsil-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jangsu-gun",
+          "la": 35.63,
+          "lo": 127.56,
+          "fn": "Jangsu-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jeongeup",
+          "la": 35.6,
+          "lo": 126.92,
+          "fn": "Jeongeup, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jeongeup-si",
+          "la": 35.6,
+          "lo": 126.92,
+          "fn": "Jeongeup-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jeonju",
+          "la": 35.82,
+          "lo": 127.15,
+          "fn": "Jeonju, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jeonju-si",
+          "la": 35.83,
+          "lo": 127.15,
+          "fn": "Jeonju-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jinan-gun",
+          "la": 35.8,
+          "lo": 127.48,
+          "fn": "Jinan-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Kimje",
+          "la": 35.8,
+          "lo": 126.89,
+          "fn": "Kimje, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Koch'ang",
+          "la": 35.43,
+          "lo": 126.7,
+          "fn": "Koch'ang, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Muju-gun",
+          "la": 35.93,
+          "lo": 127.71,
+          "fn": "Muju-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Namwon",
+          "la": 35.45,
+          "lo": 127.38,
+          "fn": "Namwon, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Nangen",
+          "la": 35.41,
+          "lo": 127.39,
+          "fn": "Nangen, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Puan",
+          "la": 35.73,
+          "lo": 126.73,
+          "fn": "Puan, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Sunchang-gun",
+          "la": 35.38,
+          "lo": 127.15,
+          "fn": "Sunchang-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Wanju",
+          "la": 35.85,
+          "lo": 127.15,
+          "fn": "Wanju, North Jeolla",
+          "s": "North Jeolla"
+        }
+      ]
+    },
+    {
+      "n": "North Jeolla",
+      "la": 35.72,
+      "lo": 127.15,
+      "sc": "45",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Buan-gun",
+          "la": 35.7,
+          "lo": 126.67,
+          "fn": "Buan-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Changsu",
+          "la": 35.65,
+          "lo": 127.52,
+          "fn": "Changsu, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Gimje-si",
+          "la": 35.81,
+          "lo": 126.91,
+          "fn": "Gimje-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Gochang-gun",
+          "la": 35.43,
+          "lo": 126.7,
+          "fn": "Gochang-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Gunsan",
+          "la": 35.98,
+          "lo": 126.71,
+          "fn": "Gunsan, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Gunsan-si",
+          "la": 35.94,
+          "lo": 126.68,
+          "fn": "Gunsan-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Iksan",
+          "la": 35.94,
+          "lo": 126.95,
+          "fn": "Iksan, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Iksan-si",
+          "la": 36.04,
+          "lo": 126.99,
+          "fn": "Iksan-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Imsil",
+          "la": 35.61,
+          "lo": 127.28,
+          "fn": "Imsil, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Imsil-gun",
+          "la": 35.62,
+          "lo": 127.23,
+          "fn": "Imsil-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jangsu-gun",
+          "la": 35.63,
+          "lo": 127.56,
+          "fn": "Jangsu-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jeongeup",
+          "la": 35.6,
+          "lo": 126.92,
+          "fn": "Jeongeup, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jeongeup-si",
+          "la": 35.6,
+          "lo": 126.92,
+          "fn": "Jeongeup-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jeonju",
+          "la": 35.82,
+          "lo": 127.15,
+          "fn": "Jeonju, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jeonju-si",
+          "la": 35.83,
+          "lo": 127.15,
+          "fn": "Jeonju-si, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Jinan-gun",
+          "la": 35.8,
+          "lo": 127.48,
+          "fn": "Jinan-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Kimje",
+          "la": 35.8,
+          "lo": 126.89,
+          "fn": "Kimje, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Koch'ang",
+          "la": 35.43,
+          "lo": 126.7,
+          "fn": "Koch'ang, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Muju-gun",
+          "la": 35.93,
+          "lo": 127.71,
+          "fn": "Muju-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Namwon",
+          "la": 35.45,
+          "lo": 127.38,
+          "fn": "Namwon, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Nangen",
+          "la": 35.41,
+          "lo": 127.39,
+          "fn": "Nangen, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Puan",
+          "la": 35.73,
+          "lo": 126.73,
+          "fn": "Puan, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Sunchang-gun",
+          "la": 35.38,
+          "lo": 127.15,
+          "fn": "Sunchang-gun, North Jeolla",
+          "s": "North Jeolla"
+        },
+        {
+          "n": "Wanju",
+          "la": 35.85,
+          "lo": 127.15,
+          "fn": "Wanju, North Jeolla",
+          "s": "North Jeolla"
+        }
+      ]
+    },
+    {
+      "n": "Sejong City",
+      "la": 34.05,
+      "lo": -118.31,
+      "sc": "50",
+      "t": "special self-governing city",
+      "cities": [
+        {
+          "n": "Sejong",
+          "la": 36.59,
+          "lo": 127.29,
+          "fn": "Sejong, Sejong City",
+          "s": "Sejong City"
+        }
+      ]
+    },
+    {
+      "n": "Sejong City",
+      "la": 34.05,
+      "lo": -118.31,
+      "sc": "50",
+      "t": "special self-governing city",
+      "cities": [
+        {
+          "n": "Sejong",
+          "la": 36.59,
+          "lo": 127.29,
+          "fn": "Sejong, Sejong City",
+          "s": "Sejong City"
+        }
+      ]
+    },
+    {
+      "n": "Seoul",
+      "la": 37.57,
+      "lo": 126.98,
+      "sc": "11",
+      "t": "special city",
+      "cities": [
+        {
+          "n": "Dobong-gu",
+          "la": 37.65,
+          "lo": 127.03,
+          "fn": "Dobong-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Dongdaemun-gu",
+          "la": 37.58,
+          "lo": 127.05,
+          "fn": "Dongdaemun-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Dongjak-gu",
+          "la": 37.5,
+          "lo": 126.95,
+          "fn": "Dongjak-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Eunpyeong-gu",
+          "la": 37.62,
+          "lo": 126.93,
+          "fn": "Eunpyeong-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gangbuk-gu",
+          "la": 37.63,
+          "lo": 127.02,
+          "fn": "Gangbuk-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gangdong-gu",
+          "la": 37.55,
+          "lo": 127.15,
+          "fn": "Gangdong-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gangnam-gu",
+          "la": 37.5,
+          "lo": 127.06,
+          "fn": "Gangnam-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gangseo-gu",
+          "la": 37.56,
+          "lo": 126.82,
+          "fn": "Gangseo-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Geumcheon-gu",
+          "la": 37.47,
+          "lo": 126.89,
+          "fn": "Geumcheon-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Guro-gu",
+          "la": 37.49,
+          "lo": 126.85,
+          "fn": "Guro-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gwanak-gu",
+          "la": 37.48,
+          "lo": 126.95,
+          "fn": "Gwanak-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gwangjin-gu",
+          "la": 37.54,
+          "lo": 127.08,
+          "fn": "Gwangjin-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Jongno-gu",
+          "la": 37.57,
+          "lo": 126.98,
+          "fn": "Jongno-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Jung-gu",
+          "la": 37.56,
+          "lo": 126.99,
+          "fn": "Jung-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Jungnang-gu",
+          "la": 37.6,
+          "lo": 127.1,
+          "fn": "Jungnang-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Mapo-gu",
+          "la": 37.55,
+          "lo": 126.91,
+          "fn": "Mapo-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Nowon-gu",
+          "la": 37.66,
+          "lo": 127.07,
+          "fn": "Nowon-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seocho-gu",
+          "la": 37.49,
+          "lo": 127.01,
+          "fn": "Seocho-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seodaemun-gu",
+          "la": 37.58,
+          "lo": 126.94,
+          "fn": "Seodaemun-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seongbuk-gu",
+          "la": 37.6,
+          "lo": 127.01,
+          "fn": "Seongbuk-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seongdong-gu",
+          "la": 37.55,
+          "lo": 127.02,
+          "fn": "Seongdong-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seoul",
+          "la": 37.57,
+          "lo": 126.98,
+          "fn": "Seoul, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Songpa-gu",
+          "la": 37.5,
+          "lo": 127.11,
+          "fn": "Songpa-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Yangcheon-gu",
+          "la": 37.52,
+          "lo": 126.86,
+          "fn": "Yangcheon-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Yeongdeungpo-gu",
+          "la": 37.53,
+          "lo": 126.9,
+          "fn": "Yeongdeungpo-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Yongsan-dong",
+          "la": 37.54,
+          "lo": 126.98,
+          "fn": "Yongsan-dong, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Yongsan-gu",
+          "la": 37.53,
+          "lo": 126.98,
+          "fn": "Yongsan-gu, Seoul",
+          "s": "Seoul"
+        }
+      ]
+    },
+    {
+      "n": "Seoul",
+      "la": 37.57,
+      "lo": 126.98,
+      "sc": "11",
+      "t": "special city",
+      "cities": [
+        {
+          "n": "Dobong-gu",
+          "la": 37.65,
+          "lo": 127.03,
+          "fn": "Dobong-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Dongdaemun-gu",
+          "la": 37.58,
+          "lo": 127.05,
+          "fn": "Dongdaemun-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Dongjak-gu",
+          "la": 37.5,
+          "lo": 126.95,
+          "fn": "Dongjak-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Eunpyeong-gu",
+          "la": 37.62,
+          "lo": 126.93,
+          "fn": "Eunpyeong-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gangbuk-gu",
+          "la": 37.63,
+          "lo": 127.02,
+          "fn": "Gangbuk-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gangdong-gu",
+          "la": 37.55,
+          "lo": 127.15,
+          "fn": "Gangdong-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gangnam-gu",
+          "la": 37.5,
+          "lo": 127.06,
+          "fn": "Gangnam-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gangseo-gu",
+          "la": 37.56,
+          "lo": 126.82,
+          "fn": "Gangseo-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Geumcheon-gu",
+          "la": 37.47,
+          "lo": 126.89,
+          "fn": "Geumcheon-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Guro-gu",
+          "la": 37.49,
+          "lo": 126.85,
+          "fn": "Guro-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gwanak-gu",
+          "la": 37.48,
+          "lo": 126.95,
+          "fn": "Gwanak-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Gwangjin-gu",
+          "la": 37.54,
+          "lo": 127.08,
+          "fn": "Gwangjin-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Jongno-gu",
+          "la": 37.57,
+          "lo": 126.98,
+          "fn": "Jongno-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Jung-gu",
+          "la": 37.56,
+          "lo": 126.99,
+          "fn": "Jung-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Jungnang-gu",
+          "la": 37.6,
+          "lo": 127.1,
+          "fn": "Jungnang-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Mapo-gu",
+          "la": 37.55,
+          "lo": 126.91,
+          "fn": "Mapo-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Nowon-gu",
+          "la": 37.66,
+          "lo": 127.07,
+          "fn": "Nowon-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seocho-gu",
+          "la": 37.49,
+          "lo": 127.01,
+          "fn": "Seocho-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seodaemun-gu",
+          "la": 37.58,
+          "lo": 126.94,
+          "fn": "Seodaemun-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seongbuk-gu",
+          "la": 37.6,
+          "lo": 127.01,
+          "fn": "Seongbuk-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seongdong-gu",
+          "la": 37.55,
+          "lo": 127.02,
+          "fn": "Seongdong-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Seoul",
+          "la": 37.57,
+          "lo": 126.98,
+          "fn": "Seoul, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Songpa-gu",
+          "la": 37.5,
+          "lo": 127.11,
+          "fn": "Songpa-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Yangcheon-gu",
+          "la": 37.52,
+          "lo": 126.86,
+          "fn": "Yangcheon-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Yeongdeungpo-gu",
+          "la": 37.53,
+          "lo": 126.9,
+          "fn": "Yeongdeungpo-gu, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Yongsan-dong",
+          "la": 37.54,
+          "lo": 126.98,
+          "fn": "Yongsan-dong, Seoul",
+          "s": "Seoul"
+        },
+        {
+          "n": "Yongsan-gu",
+          "la": 37.53,
+          "lo": 126.98,
+          "fn": "Yongsan-gu, Seoul",
+          "s": "Seoul"
+        }
+      ]
+    },
+    {
+      "n": "South Chungcheong",
+      "la": 36.52,
+      "lo": 126.8,
+      "sc": "44",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Asan",
+          "la": 36.78,
+          "lo": 127.0,
+          "fn": "Asan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Asan-si",
+          "la": 36.81,
+          "lo": 126.98,
+          "fn": "Asan-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Boryeong",
+          "la": 36.35,
+          "lo": 126.6,
+          "fn": "Boryeong, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Boryeong-si",
+          "la": 36.36,
+          "lo": 126.59,
+          "fn": "Boryeong-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Buyeo",
+          "la": 36.27,
+          "lo": 126.91,
+          "fn": "Buyeo, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Buyeo-gun",
+          "la": 36.26,
+          "lo": 126.86,
+          "fn": "Buyeo-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Cheonan",
+          "la": 36.81,
+          "lo": 127.15,
+          "fn": "Cheonan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Cheonan-si",
+          "la": 36.8,
+          "lo": 127.19,
+          "fn": "Cheonan-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Cheongyang-gun",
+          "la": 36.42,
+          "lo": 126.79,
+          "fn": "Cheongyang-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Geumsan-gun",
+          "la": 36.13,
+          "lo": 127.48,
+          "fn": "Geumsan-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Gongju",
+          "la": 36.46,
+          "lo": 127.12,
+          "fn": "Gongju, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Gongju-si",
+          "la": 36.5,
+          "lo": 127.08,
+          "fn": "Gongju-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Gyeryong-si",
+          "la": 36.29,
+          "lo": 127.23,
+          "fn": "Gyeryong-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Hongseong",
+          "la": 36.6,
+          "lo": 126.67,
+          "fn": "Hongseong, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Hongseong-gun",
+          "la": 36.57,
+          "lo": 126.63,
+          "fn": "Hongseong-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Kinzan",
+          "la": 36.1,
+          "lo": 127.49,
+          "fn": "Kinzan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Nonsan",
+          "la": 36.2,
+          "lo": 127.08,
+          "fn": "Nonsan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Nonsan-si",
+          "la": 36.2,
+          "lo": 127.12,
+          "fn": "Nonsan-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Seocheon-gun",
+          "la": 36.11,
+          "lo": 126.7,
+          "fn": "Seocheon-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Seonghwan",
+          "la": 36.92,
+          "lo": 127.13,
+          "fn": "Seonghwan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Seosan",
+          "la": 36.78,
+          "lo": 126.45,
+          "fn": "Seosan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Seosan-si",
+          "la": 36.79,
+          "lo": 126.47,
+          "fn": "Seosan-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Taean-gun",
+          "la": 36.7,
+          "lo": 126.28,
+          "fn": "Taean-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Taesal-li",
+          "la": 36.97,
+          "lo": 126.45,
+          "fn": "Taesal-li, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Tangjin",
+          "la": 36.89,
+          "lo": 126.63,
+          "fn": "Tangjin, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Yesan",
+          "la": 36.68,
+          "lo": 126.84,
+          "fn": "Yesan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Yesan-gun",
+          "la": 36.68,
+          "lo": 126.8,
+          "fn": "Yesan-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Yŏnmu",
+          "la": 36.13,
+          "lo": 127.1,
+          "fn": "Yŏnmu, South Chungcheong",
+          "s": "South Chungcheong"
+        }
+      ]
+    },
+    {
+      "n": "South Chungcheong",
+      "la": 36.52,
+      "lo": 126.8,
+      "sc": "44",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Asan",
+          "la": 36.78,
+          "lo": 127.0,
+          "fn": "Asan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Asan-si",
+          "la": 36.81,
+          "lo": 126.98,
+          "fn": "Asan-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Boryeong",
+          "la": 36.35,
+          "lo": 126.6,
+          "fn": "Boryeong, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Boryeong-si",
+          "la": 36.36,
+          "lo": 126.59,
+          "fn": "Boryeong-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Buyeo",
+          "la": 36.27,
+          "lo": 126.91,
+          "fn": "Buyeo, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Buyeo-gun",
+          "la": 36.26,
+          "lo": 126.86,
+          "fn": "Buyeo-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Cheonan",
+          "la": 36.81,
+          "lo": 127.15,
+          "fn": "Cheonan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Cheonan-si",
+          "la": 36.8,
+          "lo": 127.19,
+          "fn": "Cheonan-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Cheongyang-gun",
+          "la": 36.42,
+          "lo": 126.79,
+          "fn": "Cheongyang-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Geumsan-gun",
+          "la": 36.13,
+          "lo": 127.48,
+          "fn": "Geumsan-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Gongju",
+          "la": 36.46,
+          "lo": 127.12,
+          "fn": "Gongju, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Gongju-si",
+          "la": 36.5,
+          "lo": 127.08,
+          "fn": "Gongju-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Gyeryong-si",
+          "la": 36.29,
+          "lo": 127.23,
+          "fn": "Gyeryong-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Hongseong",
+          "la": 36.6,
+          "lo": 126.67,
+          "fn": "Hongseong, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Hongseong-gun",
+          "la": 36.57,
+          "lo": 126.63,
+          "fn": "Hongseong-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Kinzan",
+          "la": 36.1,
+          "lo": 127.49,
+          "fn": "Kinzan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Nonsan",
+          "la": 36.2,
+          "lo": 127.08,
+          "fn": "Nonsan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Nonsan-si",
+          "la": 36.2,
+          "lo": 127.12,
+          "fn": "Nonsan-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Seocheon-gun",
+          "la": 36.11,
+          "lo": 126.7,
+          "fn": "Seocheon-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Seonghwan",
+          "la": 36.92,
+          "lo": 127.13,
+          "fn": "Seonghwan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Seosan",
+          "la": 36.78,
+          "lo": 126.45,
+          "fn": "Seosan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Seosan-si",
+          "la": 36.79,
+          "lo": 126.47,
+          "fn": "Seosan-si, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Taean-gun",
+          "la": 36.7,
+          "lo": 126.28,
+          "fn": "Taean-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Taesal-li",
+          "la": 36.97,
+          "lo": 126.45,
+          "fn": "Taesal-li, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Tangjin",
+          "la": 36.89,
+          "lo": 126.63,
+          "fn": "Tangjin, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Yesan",
+          "la": 36.68,
+          "lo": 126.84,
+          "fn": "Yesan, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Yesan-gun",
+          "la": 36.68,
+          "lo": 126.8,
+          "fn": "Yesan-gun, South Chungcheong",
+          "s": "South Chungcheong"
+        },
+        {
+          "n": "Yŏnmu",
+          "la": 36.13,
+          "lo": 127.1,
+          "fn": "Yŏnmu, South Chungcheong",
+          "s": "South Chungcheong"
+        }
+      ]
+    },
+    {
+      "n": "South Gyeongsang",
+      "la": 35.46,
+      "lo": 128.21,
+      "sc": "48",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Changnyeong",
+          "la": 35.54,
+          "lo": 128.5,
+          "fn": "Changnyeong, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Changnyeong-gun",
+          "la": 35.51,
+          "lo": 128.49,
+          "fn": "Changnyeong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Changwon",
+          "la": 35.23,
+          "lo": 128.68,
+          "fn": "Changwon, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Changwon-si",
+          "la": 35.28,
+          "lo": 128.65,
+          "fn": "Changwon-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Chinju",
+          "la": 35.19,
+          "lo": 128.08,
+          "fn": "Chinju, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Geochang-gun",
+          "la": 35.73,
+          "lo": 127.9,
+          "fn": "Geochang-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Geoje-si",
+          "la": 34.9,
+          "lo": 128.67,
+          "fn": "Geoje-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Gimhae-si",
+          "la": 35.25,
+          "lo": 128.87,
+          "fn": "Gimhae-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Goseong",
+          "la": 34.98,
+          "lo": 128.32,
+          "fn": "Goseong, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Goseong-gun",
+          "la": 35.01,
+          "lo": 128.28,
+          "fn": "Goseong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Hadong-gun",
+          "la": 35.14,
+          "lo": 127.77,
+          "fn": "Hadong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Haman-gun",
+          "la": 35.29,
+          "lo": 128.43,
+          "fn": "Haman-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Hapcheon-gun",
+          "la": 35.57,
+          "lo": 128.14,
+          "fn": "Hapcheon-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Jinju-si",
+          "la": 35.2,
+          "lo": 128.12,
+          "fn": "Jinju-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Kimhae",
+          "la": 35.23,
+          "lo": 128.88,
+          "fn": "Kimhae, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Kyosai",
+          "la": 34.85,
+          "lo": 128.59,
+          "fn": "Kyosai, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Miryang",
+          "la": 35.49,
+          "lo": 128.75,
+          "fn": "Miryang, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Miryang-si",
+          "la": 35.5,
+          "lo": 128.79,
+          "fn": "Miryang-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Naesŏ",
+          "la": 35.25,
+          "lo": 128.52,
+          "fn": "Naesŏ, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Namhae-gun",
+          "la": 34.8,
+          "lo": 127.93,
+          "fn": "Namhae-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Sacheon-si",
+          "la": 35.0,
+          "lo": 128.07,
+          "fn": "Sacheon-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Sancheong-gun",
+          "la": 35.37,
+          "lo": 127.87,
+          "fn": "Sancheong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Sinhyeon",
+          "la": 34.88,
+          "lo": 128.63,
+          "fn": "Sinhyeon, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Uiryeong-gun",
+          "la": 35.39,
+          "lo": 128.27,
+          "fn": "Uiryeong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Ungsang",
+          "la": 35.41,
+          "lo": 129.17,
+          "fn": "Ungsang, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Yangsan",
+          "la": 35.34,
+          "lo": 129.03,
+          "fn": "Yangsan, South Gyeongsang",
+          "s": "South Gyeongsang"
+        }
+      ]
+    },
+    {
+      "n": "South Gyeongsang",
+      "la": 35.46,
+      "lo": 128.21,
+      "sc": "48",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Changnyeong",
+          "la": 35.54,
+          "lo": 128.5,
+          "fn": "Changnyeong, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Changnyeong-gun",
+          "la": 35.51,
+          "lo": 128.49,
+          "fn": "Changnyeong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Changwon",
+          "la": 35.23,
+          "lo": 128.68,
+          "fn": "Changwon, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Changwon-si",
+          "la": 35.28,
+          "lo": 128.65,
+          "fn": "Changwon-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Chinju",
+          "la": 35.19,
+          "lo": 128.08,
+          "fn": "Chinju, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Geochang-gun",
+          "la": 35.73,
+          "lo": 127.9,
+          "fn": "Geochang-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Geoje-si",
+          "la": 34.9,
+          "lo": 128.67,
+          "fn": "Geoje-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Gimhae-si",
+          "la": 35.25,
+          "lo": 128.87,
+          "fn": "Gimhae-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Goseong",
+          "la": 34.98,
+          "lo": 128.32,
+          "fn": "Goseong, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Goseong-gun",
+          "la": 35.01,
+          "lo": 128.28,
+          "fn": "Goseong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Hadong-gun",
+          "la": 35.14,
+          "lo": 127.77,
+          "fn": "Hadong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Haman-gun",
+          "la": 35.29,
+          "lo": 128.43,
+          "fn": "Haman-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Hapcheon-gun",
+          "la": 35.57,
+          "lo": 128.14,
+          "fn": "Hapcheon-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Jinju-si",
+          "la": 35.2,
+          "lo": 128.12,
+          "fn": "Jinju-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Kimhae",
+          "la": 35.23,
+          "lo": 128.88,
+          "fn": "Kimhae, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Kyosai",
+          "la": 34.85,
+          "lo": 128.59,
+          "fn": "Kyosai, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Miryang",
+          "la": 35.49,
+          "lo": 128.75,
+          "fn": "Miryang, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Miryang-si",
+          "la": 35.5,
+          "lo": 128.79,
+          "fn": "Miryang-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Naesŏ",
+          "la": 35.25,
+          "lo": 128.52,
+          "fn": "Naesŏ, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Namhae-gun",
+          "la": 34.8,
+          "lo": 127.93,
+          "fn": "Namhae-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Sacheon-si",
+          "la": 35.0,
+          "lo": 128.07,
+          "fn": "Sacheon-si, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Sancheong-gun",
+          "la": 35.37,
+          "lo": 127.87,
+          "fn": "Sancheong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Sinhyeon",
+          "la": 34.88,
+          "lo": 128.63,
+          "fn": "Sinhyeon, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Uiryeong-gun",
+          "la": 35.39,
+          "lo": 128.27,
+          "fn": "Uiryeong-gun, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Ungsang",
+          "la": 35.41,
+          "lo": 129.17,
+          "fn": "Ungsang, South Gyeongsang",
+          "s": "South Gyeongsang"
+        },
+        {
+          "n": "Yangsan",
+          "la": 35.34,
+          "lo": 129.03,
+          "fn": "Yangsan, South Gyeongsang",
+          "s": "South Gyeongsang"
+        }
+      ]
+    },
+    {
+      "n": "South Jeolla",
+      "la": 34.87,
+      "lo": 126.99,
+      "sc": "46",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Beolgyo",
+          "la": 34.85,
+          "lo": 127.34,
+          "fn": "Beolgyo, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Boseong-gun",
+          "la": 34.85,
+          "lo": 127.22,
+          "fn": "Boseong-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Damyang-gun",
+          "la": 35.34,
+          "lo": 126.99,
+          "fn": "Damyang-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gangjin-gun",
+          "la": 34.62,
+          "lo": 126.77,
+          "fn": "Gangjin-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Goheung-gun",
+          "la": 34.58,
+          "lo": 127.33,
+          "fn": "Goheung-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gokseong-gun",
+          "la": 35.21,
+          "lo": 127.26,
+          "fn": "Gokseong-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gurye-gun",
+          "la": 35.24,
+          "lo": 127.5,
+          "fn": "Gurye-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gwangyang",
+          "la": 34.94,
+          "lo": 127.7,
+          "fn": "Gwangyang, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gwangyang-si",
+          "la": 35.04,
+          "lo": 127.61,
+          "fn": "Gwangyang-si, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Haenam",
+          "la": 34.57,
+          "lo": 126.6,
+          "fn": "Haenam, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Haenam-gun",
+          "la": 34.54,
+          "lo": 126.52,
+          "fn": "Haenam-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Hampyeong-gun",
+          "la": 35.15,
+          "lo": 126.53,
+          "fn": "Hampyeong-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Hwasun",
+          "la": 35.06,
+          "lo": 126.99,
+          "fn": "Hwasun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Hwasun-gun",
+          "la": 35.0,
+          "lo": 127.03,
+          "fn": "Hwasun-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Jangheung-gun",
+          "la": 34.71,
+          "lo": 126.95,
+          "fn": "Jangheung-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Jangseong-gun",
+          "la": 35.33,
+          "lo": 126.77,
+          "fn": "Jangseong-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Jindo-gun",
+          "la": 34.42,
+          "lo": 126.23,
+          "fn": "Jindo-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Kurye",
+          "la": 35.21,
+          "lo": 127.46,
+          "fn": "Kurye, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Kwangyang",
+          "la": 34.98,
+          "lo": 127.59,
+          "fn": "Kwangyang, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Mokpo",
+          "la": 34.81,
+          "lo": 126.39,
+          "fn": "Mokpo, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Mokpo-si",
+          "la": 34.81,
+          "lo": 126.39,
+          "fn": "Mokpo-si, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Muan",
+          "la": 34.99,
+          "lo": 126.48,
+          "fn": "Muan, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Muan-gun",
+          "la": 34.96,
+          "lo": 126.44,
+          "fn": "Muan-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Naju",
+          "la": 35.03,
+          "lo": 126.72,
+          "fn": "Naju, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Naju-si",
+          "la": 35.06,
+          "lo": 126.67,
+          "fn": "Naju-si, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Sinan",
+          "la": 34.83,
+          "lo": 126.11,
+          "fn": "Sinan, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Sinan-gun",
+          "la": 34.83,
+          "lo": 126.1,
+          "fn": "Sinan-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Suncheon",
+          "la": 34.95,
+          "lo": 127.49,
+          "fn": "Suncheon, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Suncheon-si",
+          "la": 34.97,
+          "lo": 127.46,
+          "fn": "Suncheon-si, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Wando-gun",
+          "la": 34.31,
+          "lo": 126.74,
+          "fn": "Wando-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeongam",
+          "la": 34.8,
+          "lo": 126.7,
+          "fn": "Yeongam, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeongam-gun",
+          "la": 34.8,
+          "lo": 126.63,
+          "fn": "Yeongam-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeonggwang",
+          "la": 35.28,
+          "lo": 126.51,
+          "fn": "Yeonggwang, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeonggwang-gun",
+          "la": 35.29,
+          "lo": 126.44,
+          "fn": "Yeonggwang-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeosu",
+          "la": 34.76,
+          "lo": 127.66,
+          "fn": "Yeosu, South Jeolla",
+          "s": "South Jeolla"
+        }
+      ]
+    },
+    {
+      "n": "South Jeolla",
+      "la": 34.87,
+      "lo": 126.99,
+      "sc": "46",
+      "t": "province",
+      "cities": [
+        {
+          "n": "Beolgyo",
+          "la": 34.85,
+          "lo": 127.34,
+          "fn": "Beolgyo, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Boseong-gun",
+          "la": 34.85,
+          "lo": 127.22,
+          "fn": "Boseong-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Damyang-gun",
+          "la": 35.34,
+          "lo": 126.99,
+          "fn": "Damyang-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gangjin-gun",
+          "la": 34.62,
+          "lo": 126.77,
+          "fn": "Gangjin-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Goheung-gun",
+          "la": 34.58,
+          "lo": 127.33,
+          "fn": "Goheung-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gokseong-gun",
+          "la": 35.21,
+          "lo": 127.26,
+          "fn": "Gokseong-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gurye-gun",
+          "la": 35.24,
+          "lo": 127.5,
+          "fn": "Gurye-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gwangyang",
+          "la": 34.94,
+          "lo": 127.7,
+          "fn": "Gwangyang, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Gwangyang-si",
+          "la": 35.04,
+          "lo": 127.61,
+          "fn": "Gwangyang-si, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Haenam",
+          "la": 34.57,
+          "lo": 126.6,
+          "fn": "Haenam, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Haenam-gun",
+          "la": 34.54,
+          "lo": 126.52,
+          "fn": "Haenam-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Hampyeong-gun",
+          "la": 35.15,
+          "lo": 126.53,
+          "fn": "Hampyeong-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Hwasun",
+          "la": 35.06,
+          "lo": 126.99,
+          "fn": "Hwasun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Hwasun-gun",
+          "la": 35.0,
+          "lo": 127.03,
+          "fn": "Hwasun-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Jangheung-gun",
+          "la": 34.71,
+          "lo": 126.95,
+          "fn": "Jangheung-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Jangseong-gun",
+          "la": 35.33,
+          "lo": 126.77,
+          "fn": "Jangseong-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Jindo-gun",
+          "la": 34.42,
+          "lo": 126.23,
+          "fn": "Jindo-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Kurye",
+          "la": 35.21,
+          "lo": 127.46,
+          "fn": "Kurye, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Kwangyang",
+          "la": 34.98,
+          "lo": 127.59,
+          "fn": "Kwangyang, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Mokpo",
+          "la": 34.81,
+          "lo": 126.39,
+          "fn": "Mokpo, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Mokpo-si",
+          "la": 34.81,
+          "lo": 126.39,
+          "fn": "Mokpo-si, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Muan",
+          "la": 34.99,
+          "lo": 126.48,
+          "fn": "Muan, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Muan-gun",
+          "la": 34.96,
+          "lo": 126.44,
+          "fn": "Muan-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Naju",
+          "la": 35.03,
+          "lo": 126.72,
+          "fn": "Naju, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Naju-si",
+          "la": 35.06,
+          "lo": 126.67,
+          "fn": "Naju-si, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Sinan",
+          "la": 34.83,
+          "lo": 126.11,
+          "fn": "Sinan, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Sinan-gun",
+          "la": 34.83,
+          "lo": 126.1,
+          "fn": "Sinan-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Suncheon",
+          "la": 34.95,
+          "lo": 127.49,
+          "fn": "Suncheon, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Suncheon-si",
+          "la": 34.97,
+          "lo": 127.46,
+          "fn": "Suncheon-si, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Wando-gun",
+          "la": 34.31,
+          "lo": 126.74,
+          "fn": "Wando-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeongam",
+          "la": 34.8,
+          "lo": 126.7,
+          "fn": "Yeongam, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeongam-gun",
+          "la": 34.8,
+          "lo": 126.63,
+          "fn": "Yeongam-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeonggwang",
+          "la": 35.28,
+          "lo": 126.51,
+          "fn": "Yeonggwang, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeonggwang-gun",
+          "la": 35.29,
+          "lo": 126.44,
+          "fn": "Yeonggwang-gun, South Jeolla",
+          "s": "South Jeolla"
+        },
+        {
+          "n": "Yeosu",
+          "la": 34.76,
+          "lo": 127.66,
+          "fn": "Yeosu, South Jeolla",
+          "s": "South Jeolla"
+        }
+      ]
+    },
+    {
+      "n": "Ulsan",
+      "la": 35.54,
+      "lo": 129.31,
+      "sc": "31",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Buk-gu",
+          "la": 35.58,
+          "lo": 129.36,
+          "fn": "Buk-gu, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Dong-gu",
+          "la": 35.5,
+          "lo": 129.42,
+          "fn": "Dong-gu, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Jung-gu",
+          "la": 35.57,
+          "lo": 129.33,
+          "fn": "Jung-gu, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Nam-gu",
+          "la": 35.54,
+          "lo": 129.33,
+          "fn": "Nam-gu, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Ulju-gun",
+          "la": 35.56,
+          "lo": 129.13,
+          "fn": "Ulju-gun, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Ulsan",
+          "la": 35.54,
+          "lo": 129.32,
+          "fn": "Ulsan, Ulsan",
+          "s": "Ulsan"
+        }
+      ]
+    },
+    {
+      "n": "Ulsan",
+      "la": 35.54,
+      "lo": 129.31,
+      "sc": "31",
+      "t": "metropolitan city",
+      "cities": [
+        {
+          "n": "Buk-gu",
+          "la": 35.58,
+          "lo": 129.36,
+          "fn": "Buk-gu, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Dong-gu",
+          "la": 35.5,
+          "lo": 129.42,
+          "fn": "Dong-gu, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Jung-gu",
+          "la": 35.57,
+          "lo": 129.33,
+          "fn": "Jung-gu, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Nam-gu",
+          "la": 35.54,
+          "lo": 129.33,
+          "fn": "Nam-gu, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Ulju-gun",
+          "la": 35.56,
+          "lo": 129.13,
+          "fn": "Ulju-gun, Ulsan",
+          "s": "Ulsan"
+        },
+        {
+          "n": "Ulsan",
+          "la": 35.54,
+          "lo": 129.32,
+          "fn": "Ulsan, Ulsan",
+          "s": "Ulsan"
+        }
+      ]
+    }
+  ]
+}

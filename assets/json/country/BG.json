@@ -1,0 +1,7564 @@
+{
+  "states": [
+    {
+      "n": "Blagoevgrad",
+      "la": 42.02,
+      "lo": 23.09,
+      "sc": "01",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bansko",
+          "la": 41.84,
+          "lo": 23.49,
+          "fn": "Bansko, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Belitsa",
+          "la": 41.96,
+          "lo": 23.57,
+          "fn": "Belitsa, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Blagoevgrad",
+          "la": 42.02,
+          "lo": 23.1,
+          "fn": "Blagoevgrad, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Garmen",
+          "la": 41.6,
+          "lo": 23.82,
+          "fn": "Garmen, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Gotse Delchev",
+          "la": 41.57,
+          "lo": 23.73,
+          "fn": "Gotse Delchev, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Hadzhidimovo",
+          "la": 41.52,
+          "lo": 23.87,
+          "fn": "Hadzhidimovo, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Kolarovo",
+          "la": 41.36,
+          "lo": 23.11,
+          "fn": "Kolarovo, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Kresna",
+          "la": 41.73,
+          "lo": 23.15,
+          "fn": "Kresna, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Bansko",
+          "la": 41.8,
+          "lo": 23.6,
+          "fn": "Obshtina Bansko, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Belitsa",
+          "la": 42.02,
+          "lo": 23.58,
+          "fn": "Obshtina Belitsa, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Blagoevgrad",
+          "la": 42.02,
+          "lo": 23.17,
+          "fn": "Obshtina Blagoevgrad, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Garmen",
+          "la": 41.7,
+          "lo": 23.85,
+          "fn": "Obshtina Garmen, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Gotse Delchev",
+          "la": 41.63,
+          "lo": 23.68,
+          "fn": "Obshtina Gotse Delchev, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Kresna",
+          "la": 41.77,
+          "lo": 23.23,
+          "fn": "Obshtina Kresna, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Petrich",
+          "la": 41.45,
+          "lo": 23.17,
+          "fn": "Obshtina Petrich, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Razlog",
+          "la": 41.95,
+          "lo": 23.47,
+          "fn": "Obshtina Razlog, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Sandanski",
+          "la": 41.57,
+          "lo": 23.45,
+          "fn": "Obshtina Sandanski, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Satovcha",
+          "la": 41.6,
+          "lo": 24.01,
+          "fn": "Obshtina Satovcha, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Simitli",
+          "la": 41.88,
+          "lo": 23.17,
+          "fn": "Obshtina Simitli, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Strumyani",
+          "la": 41.63,
+          "lo": 23.2,
+          "fn": "Obshtina Strumyani, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Yakoruda",
+          "la": 42.08,
+          "lo": 23.7,
+          "fn": "Obshtina Yakoruda, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Petrich",
+          "la": 41.4,
+          "lo": 23.21,
+          "fn": "Petrich, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Razlog",
+          "la": 41.89,
+          "lo": 23.47,
+          "fn": "Razlog, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Sandanski",
+          "la": 41.57,
+          "lo": 23.28,
+          "fn": "Sandanski, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Satovcha",
+          "la": 41.62,
+          "lo": 23.98,
+          "fn": "Satovcha, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Simitli",
+          "la": 41.88,
+          "lo": 23.12,
+          "fn": "Simitli, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Stara Kresna",
+          "la": 41.8,
+          "lo": 23.18,
+          "fn": "Stara Kresna, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Strumyani",
+          "la": 41.63,
+          "lo": 23.2,
+          "fn": "Strumyani, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Yakoruda",
+          "la": 42.03,
+          "lo": 23.68,
+          "fn": "Yakoruda, Blagoevgrad",
+          "s": "Blagoevgrad"
+        }
+      ]
+    },
+    {
+      "n": "Blagoevgrad",
+      "la": 42.02,
+      "lo": 23.09,
+      "sc": "01",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bansko",
+          "la": 41.84,
+          "lo": 23.49,
+          "fn": "Bansko, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Belitsa",
+          "la": 41.96,
+          "lo": 23.57,
+          "fn": "Belitsa, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Blagoevgrad",
+          "la": 42.02,
+          "lo": 23.1,
+          "fn": "Blagoevgrad, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Garmen",
+          "la": 41.6,
+          "lo": 23.82,
+          "fn": "Garmen, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Gotse Delchev",
+          "la": 41.57,
+          "lo": 23.73,
+          "fn": "Gotse Delchev, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Hadzhidimovo",
+          "la": 41.52,
+          "lo": 23.87,
+          "fn": "Hadzhidimovo, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Kolarovo",
+          "la": 41.36,
+          "lo": 23.11,
+          "fn": "Kolarovo, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Kresna",
+          "la": 41.73,
+          "lo": 23.15,
+          "fn": "Kresna, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Bansko",
+          "la": 41.8,
+          "lo": 23.6,
+          "fn": "Obshtina Bansko, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Belitsa",
+          "la": 42.02,
+          "lo": 23.58,
+          "fn": "Obshtina Belitsa, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Blagoevgrad",
+          "la": 42.02,
+          "lo": 23.17,
+          "fn": "Obshtina Blagoevgrad, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Garmen",
+          "la": 41.7,
+          "lo": 23.85,
+          "fn": "Obshtina Garmen, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Gotse Delchev",
+          "la": 41.63,
+          "lo": 23.68,
+          "fn": "Obshtina Gotse Delchev, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Kresna",
+          "la": 41.77,
+          "lo": 23.23,
+          "fn": "Obshtina Kresna, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Petrich",
+          "la": 41.45,
+          "lo": 23.17,
+          "fn": "Obshtina Petrich, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Razlog",
+          "la": 41.95,
+          "lo": 23.47,
+          "fn": "Obshtina Razlog, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Sandanski",
+          "la": 41.57,
+          "lo": 23.45,
+          "fn": "Obshtina Sandanski, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Satovcha",
+          "la": 41.6,
+          "lo": 24.01,
+          "fn": "Obshtina Satovcha, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Simitli",
+          "la": 41.88,
+          "lo": 23.17,
+          "fn": "Obshtina Simitli, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Strumyani",
+          "la": 41.63,
+          "lo": 23.2,
+          "fn": "Obshtina Strumyani, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Obshtina Yakoruda",
+          "la": 42.08,
+          "lo": 23.7,
+          "fn": "Obshtina Yakoruda, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Petrich",
+          "la": 41.4,
+          "lo": 23.21,
+          "fn": "Petrich, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Razlog",
+          "la": 41.89,
+          "lo": 23.47,
+          "fn": "Razlog, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Sandanski",
+          "la": 41.57,
+          "lo": 23.28,
+          "fn": "Sandanski, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Satovcha",
+          "la": 41.62,
+          "lo": 23.98,
+          "fn": "Satovcha, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Simitli",
+          "la": 41.88,
+          "lo": 23.12,
+          "fn": "Simitli, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Stara Kresna",
+          "la": 41.8,
+          "lo": 23.18,
+          "fn": "Stara Kresna, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Strumyani",
+          "la": 41.63,
+          "lo": 23.2,
+          "fn": "Strumyani, Blagoevgrad",
+          "s": "Blagoevgrad"
+        },
+        {
+          "n": "Yakoruda",
+          "la": 42.03,
+          "lo": 23.68,
+          "fn": "Yakoruda, Blagoevgrad",
+          "s": "Blagoevgrad"
+        }
+      ]
+    },
+    {
+      "n": "Burgas",
+      "la": 42.5,
+      "lo": 27.46,
+      "sc": "02",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Aheloy",
+          "la": 42.65,
+          "lo": 27.65,
+          "fn": "Aheloy, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Ahtopol",
+          "la": 42.1,
+          "lo": 27.94,
+          "fn": "Ahtopol, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Aytos",
+          "la": 42.7,
+          "lo": 27.25,
+          "fn": "Aytos, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Bata",
+          "la": 42.74,
+          "lo": 27.5,
+          "fn": "Bata, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Burgas",
+          "la": 42.51,
+          "lo": 27.47,
+          "fn": "Burgas, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Chernomorets",
+          "la": 42.44,
+          "lo": 27.64,
+          "fn": "Chernomorets, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Kameno",
+          "la": 42.57,
+          "lo": 27.3,
+          "fn": "Kameno, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Karnobat",
+          "la": 42.65,
+          "lo": 26.98,
+          "fn": "Karnobat, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Kiten",
+          "la": 42.23,
+          "lo": 27.77,
+          "fn": "Kiten, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Malko Tarnovo",
+          "la": 41.98,
+          "lo": 27.52,
+          "fn": "Malko Tarnovo, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Nesebar",
+          "la": 42.66,
+          "lo": 27.74,
+          "fn": "Nesebar, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Aytos",
+          "la": 42.7,
+          "lo": 27.25,
+          "fn": "Obshtina Aytos, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Burgas",
+          "la": 42.5,
+          "lo": 27.47,
+          "fn": "Obshtina Burgas, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Kameno",
+          "la": 42.52,
+          "lo": 27.18,
+          "fn": "Obshtina Kameno, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Karnobat",
+          "la": 42.65,
+          "lo": 26.98,
+          "fn": "Obshtina Karnobat, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Malko Tarnovo",
+          "la": 42.08,
+          "lo": 27.53,
+          "fn": "Obshtina Malko Tarnovo, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Nesebar",
+          "la": 42.78,
+          "lo": 27.73,
+          "fn": "Obshtina Nesebar, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Pomorie",
+          "la": 42.73,
+          "lo": 27.55,
+          "fn": "Obshtina Pomorie, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Primorsko",
+          "la": 42.25,
+          "lo": 27.63,
+          "fn": "Obshtina Primorsko, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Sozopol",
+          "la": 42.31,
+          "lo": 27.52,
+          "fn": "Obshtina Sozopol, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Sungurlare",
+          "la": 42.83,
+          "lo": 26.83,
+          "fn": "Obshtina Sungurlare, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obzor",
+          "la": 42.82,
+          "lo": 27.88,
+          "fn": "Obzor, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Pomorie",
+          "la": 42.56,
+          "lo": 27.63,
+          "fn": "Pomorie, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Primorsko",
+          "la": 42.27,
+          "lo": 27.76,
+          "fn": "Primorsko, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Ravda",
+          "la": 42.64,
+          "lo": 27.68,
+          "fn": "Ravda, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Ruen",
+          "la": 42.8,
+          "lo": 27.28,
+          "fn": "Ruen, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sarafovo",
+          "la": 42.56,
+          "lo": 27.52,
+          "fn": "Sarafovo, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sozopol",
+          "la": 42.42,
+          "lo": 27.7,
+          "fn": "Sozopol, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sredets",
+          "la": 42.35,
+          "lo": 27.18,
+          "fn": "Sredets, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sungurlare",
+          "la": 42.77,
+          "lo": 26.78,
+          "fn": "Sungurlare, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sveti Vlas",
+          "la": 42.71,
+          "lo": 27.76,
+          "fn": "Sveti Vlas, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Tsarevo",
+          "la": 42.17,
+          "lo": 27.85,
+          "fn": "Tsarevo, Burgas",
+          "s": "Burgas"
+        }
+      ]
+    },
+    {
+      "n": "Burgas",
+      "la": 42.5,
+      "lo": 27.46,
+      "sc": "02",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Aheloy",
+          "la": 42.65,
+          "lo": 27.65,
+          "fn": "Aheloy, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Ahtopol",
+          "la": 42.1,
+          "lo": 27.94,
+          "fn": "Ahtopol, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Aytos",
+          "la": 42.7,
+          "lo": 27.25,
+          "fn": "Aytos, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Bata",
+          "la": 42.74,
+          "lo": 27.5,
+          "fn": "Bata, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Burgas",
+          "la": 42.51,
+          "lo": 27.47,
+          "fn": "Burgas, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Chernomorets",
+          "la": 42.44,
+          "lo": 27.64,
+          "fn": "Chernomorets, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Kameno",
+          "la": 42.57,
+          "lo": 27.3,
+          "fn": "Kameno, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Karnobat",
+          "la": 42.65,
+          "lo": 26.98,
+          "fn": "Karnobat, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Kiten",
+          "la": 42.23,
+          "lo": 27.77,
+          "fn": "Kiten, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Malko Tarnovo",
+          "la": 41.98,
+          "lo": 27.52,
+          "fn": "Malko Tarnovo, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Nesebar",
+          "la": 42.66,
+          "lo": 27.74,
+          "fn": "Nesebar, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Aytos",
+          "la": 42.7,
+          "lo": 27.25,
+          "fn": "Obshtina Aytos, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Burgas",
+          "la": 42.5,
+          "lo": 27.47,
+          "fn": "Obshtina Burgas, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Kameno",
+          "la": 42.52,
+          "lo": 27.18,
+          "fn": "Obshtina Kameno, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Karnobat",
+          "la": 42.65,
+          "lo": 26.98,
+          "fn": "Obshtina Karnobat, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Malko Tarnovo",
+          "la": 42.08,
+          "lo": 27.53,
+          "fn": "Obshtina Malko Tarnovo, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Nesebar",
+          "la": 42.78,
+          "lo": 27.73,
+          "fn": "Obshtina Nesebar, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Pomorie",
+          "la": 42.73,
+          "lo": 27.55,
+          "fn": "Obshtina Pomorie, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Primorsko",
+          "la": 42.25,
+          "lo": 27.63,
+          "fn": "Obshtina Primorsko, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Sozopol",
+          "la": 42.31,
+          "lo": 27.52,
+          "fn": "Obshtina Sozopol, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obshtina Sungurlare",
+          "la": 42.83,
+          "lo": 26.83,
+          "fn": "Obshtina Sungurlare, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Obzor",
+          "la": 42.82,
+          "lo": 27.88,
+          "fn": "Obzor, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Pomorie",
+          "la": 42.56,
+          "lo": 27.63,
+          "fn": "Pomorie, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Primorsko",
+          "la": 42.27,
+          "lo": 27.76,
+          "fn": "Primorsko, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Ravda",
+          "la": 42.64,
+          "lo": 27.68,
+          "fn": "Ravda, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Ruen",
+          "la": 42.8,
+          "lo": 27.28,
+          "fn": "Ruen, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sarafovo",
+          "la": 42.56,
+          "lo": 27.52,
+          "fn": "Sarafovo, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sozopol",
+          "la": 42.42,
+          "lo": 27.7,
+          "fn": "Sozopol, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sredets",
+          "la": 42.35,
+          "lo": 27.18,
+          "fn": "Sredets, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sungurlare",
+          "la": 42.77,
+          "lo": 26.78,
+          "fn": "Sungurlare, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Sveti Vlas",
+          "la": 42.71,
+          "lo": 27.76,
+          "fn": "Sveti Vlas, Burgas",
+          "s": "Burgas"
+        },
+        {
+          "n": "Tsarevo",
+          "la": 42.17,
+          "lo": 27.85,
+          "fn": "Tsarevo, Burgas",
+          "s": "Burgas"
+        }
+      ]
+    },
+    {
+      "n": "Dobrich",
+      "la": 43.57,
+      "lo": 27.83,
+      "sc": "08",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Balchik",
+          "la": 43.42,
+          "lo": 28.16,
+          "fn": "Balchik, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Dobrich",
+          "la": 43.57,
+          "lo": 27.83,
+          "fn": "Dobrich, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "General Toshevo",
+          "la": 43.7,
+          "lo": 28.04,
+          "fn": "General Toshevo, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Kavarna",
+          "la": 43.44,
+          "lo": 28.34,
+          "fn": "Kavarna, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Krushari",
+          "la": 43.82,
+          "lo": 27.76,
+          "fn": "Krushari, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Balchik",
+          "la": 43.5,
+          "lo": 28.13,
+          "fn": "Obshtina Balchik, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Dobrich",
+          "la": 43.58,
+          "lo": 27.81,
+          "fn": "Obshtina Dobrich, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Dobrich-Selska",
+          "la": 43.63,
+          "lo": 27.73,
+          "fn": "Obshtina Dobrich-Selska, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina General Toshevo",
+          "la": 43.73,
+          "lo": 28.08,
+          "fn": "Obshtina General Toshevo, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Kavarna",
+          "la": 43.5,
+          "lo": 28.38,
+          "fn": "Obshtina Kavarna, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Krushari",
+          "la": 43.88,
+          "lo": 27.75,
+          "fn": "Obshtina Krushari, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Shabla",
+          "la": 43.62,
+          "lo": 28.52,
+          "fn": "Obshtina Shabla, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Tervel",
+          "la": 43.75,
+          "lo": 27.4,
+          "fn": "Obshtina Tervel, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Shabla",
+          "la": 43.54,
+          "lo": 28.53,
+          "fn": "Shabla, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Tervel",
+          "la": 43.75,
+          "lo": 27.41,
+          "fn": "Tervel, Dobrich",
+          "s": "Dobrich"
+        }
+      ]
+    },
+    {
+      "n": "Dobrich",
+      "la": 43.57,
+      "lo": 27.83,
+      "sc": "08",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Balchik",
+          "la": 43.42,
+          "lo": 28.16,
+          "fn": "Balchik, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Dobrich",
+          "la": 43.57,
+          "lo": 27.83,
+          "fn": "Dobrich, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "General Toshevo",
+          "la": 43.7,
+          "lo": 28.04,
+          "fn": "General Toshevo, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Kavarna",
+          "la": 43.44,
+          "lo": 28.34,
+          "fn": "Kavarna, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Krushari",
+          "la": 43.82,
+          "lo": 27.76,
+          "fn": "Krushari, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Balchik",
+          "la": 43.5,
+          "lo": 28.13,
+          "fn": "Obshtina Balchik, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Dobrich",
+          "la": 43.58,
+          "lo": 27.81,
+          "fn": "Obshtina Dobrich, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Dobrich-Selska",
+          "la": 43.63,
+          "lo": 27.73,
+          "fn": "Obshtina Dobrich-Selska, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina General Toshevo",
+          "la": 43.73,
+          "lo": 28.08,
+          "fn": "Obshtina General Toshevo, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Kavarna",
+          "la": 43.5,
+          "lo": 28.38,
+          "fn": "Obshtina Kavarna, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Krushari",
+          "la": 43.88,
+          "lo": 27.75,
+          "fn": "Obshtina Krushari, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Shabla",
+          "la": 43.62,
+          "lo": 28.52,
+          "fn": "Obshtina Shabla, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Obshtina Tervel",
+          "la": 43.75,
+          "lo": 27.4,
+          "fn": "Obshtina Tervel, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Shabla",
+          "la": 43.54,
+          "lo": 28.53,
+          "fn": "Shabla, Dobrich",
+          "s": "Dobrich"
+        },
+        {
+          "n": "Tervel",
+          "la": 43.75,
+          "lo": 27.41,
+          "fn": "Tervel, Dobrich",
+          "s": "Dobrich"
+        }
+      ]
+    },
+    {
+      "n": "Gabrovo",
+      "la": 42.87,
+      "lo": 25.32,
+      "sc": "07",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Dryanovo",
+          "la": 42.98,
+          "lo": 25.48,
+          "fn": "Dryanovo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Gabrovo",
+          "la": 42.87,
+          "lo": 25.33,
+          "fn": "Gabrovo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Obshtina Dryanovo",
+          "la": 43.0,
+          "lo": 25.47,
+          "fn": "Obshtina Dryanovo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Obshtina Gabrovo",
+          "la": 42.9,
+          "lo": 25.3,
+          "fn": "Obshtina Gabrovo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Obshtina Sevlievo",
+          "la": 43.02,
+          "lo": 25.1,
+          "fn": "Obshtina Sevlievo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Obshtina Tryavna",
+          "la": 42.85,
+          "lo": 25.55,
+          "fn": "Obshtina Tryavna, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Sevlievo",
+          "la": 43.03,
+          "lo": 25.11,
+          "fn": "Sevlievo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Tryavna",
+          "la": 42.87,
+          "lo": 25.5,
+          "fn": "Tryavna, Gabrovo",
+          "s": "Gabrovo"
+        }
+      ]
+    },
+    {
+      "n": "Gabrovo",
+      "la": 42.87,
+      "lo": 25.32,
+      "sc": "07",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Dryanovo",
+          "la": 42.98,
+          "lo": 25.48,
+          "fn": "Dryanovo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Gabrovo",
+          "la": 42.87,
+          "lo": 25.33,
+          "fn": "Gabrovo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Obshtina Dryanovo",
+          "la": 43.0,
+          "lo": 25.47,
+          "fn": "Obshtina Dryanovo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Obshtina Gabrovo",
+          "la": 42.9,
+          "lo": 25.3,
+          "fn": "Obshtina Gabrovo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Obshtina Sevlievo",
+          "la": 43.02,
+          "lo": 25.1,
+          "fn": "Obshtina Sevlievo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Obshtina Tryavna",
+          "la": 42.85,
+          "lo": 25.55,
+          "fn": "Obshtina Tryavna, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Sevlievo",
+          "la": 43.03,
+          "lo": 25.11,
+          "fn": "Sevlievo, Gabrovo",
+          "s": "Gabrovo"
+        },
+        {
+          "n": "Tryavna",
+          "la": 42.87,
+          "lo": 25.5,
+          "fn": "Tryavna, Gabrovo",
+          "s": "Gabrovo"
+        }
+      ]
+    },
+    {
+      "n": "Haskovo",
+      "la": 41.93,
+      "lo": 25.56,
+      "sc": "26",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Dimitrovgrad",
+          "la": 42.05,
+          "lo": 25.6,
+          "fn": "Dimitrovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Harmanli",
+          "la": 41.93,
+          "lo": 25.9,
+          "fn": "Harmanli, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Haskovo",
+          "la": 41.93,
+          "lo": 25.56,
+          "fn": "Haskovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Ivaylovgrad",
+          "la": 41.53,
+          "lo": 26.12,
+          "fn": "Ivaylovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Lyubimets",
+          "la": 41.83,
+          "lo": 26.08,
+          "fn": "Lyubimets, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Madzharovo",
+          "la": 41.63,
+          "lo": 25.86,
+          "fn": "Madzharovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Mineralni Bani",
+          "la": 41.92,
+          "lo": 25.35,
+          "fn": "Mineralni Bani, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Dimitrovgrad",
+          "la": 42.05,
+          "lo": 25.6,
+          "fn": "Obshtina Dimitrovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Harmanli",
+          "la": 41.93,
+          "lo": 25.98,
+          "fn": "Obshtina Harmanli, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Haskovo",
+          "la": 41.88,
+          "lo": 25.62,
+          "fn": "Obshtina Haskovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Ivaylovgrad",
+          "la": 41.48,
+          "lo": 26.0,
+          "fn": "Obshtina Ivaylovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Madzharovo",
+          "la": 41.68,
+          "lo": 25.9,
+          "fn": "Obshtina Madzharovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Mineralni Bani",
+          "la": 41.9,
+          "lo": 25.33,
+          "fn": "Obshtina Mineralni Bani, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Stambolovo",
+          "la": 41.73,
+          "lo": 25.7,
+          "fn": "Obshtina Stambolovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Svilengrad",
+          "la": 41.87,
+          "lo": 26.32,
+          "fn": "Obshtina Svilengrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Topolovgrad",
+          "la": 42.08,
+          "lo": 26.33,
+          "fn": "Obshtina Topolovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Simeonovgrad",
+          "la": 42.03,
+          "lo": 25.83,
+          "fn": "Simeonovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Svilengrad",
+          "la": 41.77,
+          "lo": 26.2,
+          "fn": "Svilengrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Topolovgrad",
+          "la": 42.08,
+          "lo": 26.33,
+          "fn": "Topolovgrad, Haskovo",
+          "s": "Haskovo"
+        }
+      ]
+    },
+    {
+      "n": "Haskovo",
+      "la": 41.93,
+      "lo": 25.56,
+      "sc": "26",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Dimitrovgrad",
+          "la": 42.05,
+          "lo": 25.6,
+          "fn": "Dimitrovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Harmanli",
+          "la": 41.93,
+          "lo": 25.9,
+          "fn": "Harmanli, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Haskovo",
+          "la": 41.93,
+          "lo": 25.56,
+          "fn": "Haskovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Ivaylovgrad",
+          "la": 41.53,
+          "lo": 26.12,
+          "fn": "Ivaylovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Lyubimets",
+          "la": 41.83,
+          "lo": 26.08,
+          "fn": "Lyubimets, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Madzharovo",
+          "la": 41.63,
+          "lo": 25.86,
+          "fn": "Madzharovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Mineralni Bani",
+          "la": 41.92,
+          "lo": 25.35,
+          "fn": "Mineralni Bani, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Dimitrovgrad",
+          "la": 42.05,
+          "lo": 25.6,
+          "fn": "Obshtina Dimitrovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Harmanli",
+          "la": 41.93,
+          "lo": 25.98,
+          "fn": "Obshtina Harmanli, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Haskovo",
+          "la": 41.88,
+          "lo": 25.62,
+          "fn": "Obshtina Haskovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Ivaylovgrad",
+          "la": 41.48,
+          "lo": 26.0,
+          "fn": "Obshtina Ivaylovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Madzharovo",
+          "la": 41.68,
+          "lo": 25.9,
+          "fn": "Obshtina Madzharovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Mineralni Bani",
+          "la": 41.9,
+          "lo": 25.33,
+          "fn": "Obshtina Mineralni Bani, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Stambolovo",
+          "la": 41.73,
+          "lo": 25.7,
+          "fn": "Obshtina Stambolovo, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Svilengrad",
+          "la": 41.87,
+          "lo": 26.32,
+          "fn": "Obshtina Svilengrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Obshtina Topolovgrad",
+          "la": 42.08,
+          "lo": 26.33,
+          "fn": "Obshtina Topolovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Simeonovgrad",
+          "la": 42.03,
+          "lo": 25.83,
+          "fn": "Simeonovgrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Svilengrad",
+          "la": 41.77,
+          "lo": 26.2,
+          "fn": "Svilengrad, Haskovo",
+          "s": "Haskovo"
+        },
+        {
+          "n": "Topolovgrad",
+          "la": 42.08,
+          "lo": 26.33,
+          "fn": "Topolovgrad, Haskovo",
+          "s": "Haskovo"
+        }
+      ]
+    },
+    {
+      "n": "Kardzhali",
+      "la": 41.63,
+      "lo": 25.38,
+      "sc": "09",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Ardino",
+          "la": 41.58,
+          "lo": 25.13,
+          "fn": "Ardino, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Dzhebel",
+          "la": 41.5,
+          "lo": 25.3,
+          "fn": "Dzhebel, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Kardzhali",
+          "la": 41.65,
+          "lo": 25.37,
+          "fn": "Kardzhali, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Kirkovo",
+          "la": 41.33,
+          "lo": 25.36,
+          "fn": "Kirkovo, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Krumovgrad",
+          "la": 41.47,
+          "lo": 25.65,
+          "fn": "Krumovgrad, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Ardino",
+          "la": 41.6,
+          "lo": 25.15,
+          "fn": "Obshtina Ardino, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Chernoochene",
+          "la": 41.78,
+          "lo": 25.25,
+          "fn": "Obshtina Chernoochene, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Dzhebel",
+          "la": 41.5,
+          "lo": 25.27,
+          "fn": "Obshtina Dzhebel, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Kardzhali",
+          "la": 41.68,
+          "lo": 25.43,
+          "fn": "Obshtina Kardzhali, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Kirkovo",
+          "la": 41.36,
+          "lo": 25.34,
+          "fn": "Obshtina Kirkovo, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Momchilgrad",
+          "la": 41.53,
+          "lo": 25.5,
+          "fn": "Obshtina Momchilgrad, Kardzhali",
+          "s": "Kardzhali"
+        }
+      ]
+    },
+    {
+      "n": "Kardzhali",
+      "la": 41.63,
+      "lo": 25.38,
+      "sc": "09",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Ardino",
+          "la": 41.58,
+          "lo": 25.13,
+          "fn": "Ardino, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Dzhebel",
+          "la": 41.5,
+          "lo": 25.3,
+          "fn": "Dzhebel, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Kardzhali",
+          "la": 41.65,
+          "lo": 25.37,
+          "fn": "Kardzhali, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Kirkovo",
+          "la": 41.33,
+          "lo": 25.36,
+          "fn": "Kirkovo, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Krumovgrad",
+          "la": 41.47,
+          "lo": 25.65,
+          "fn": "Krumovgrad, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Ardino",
+          "la": 41.6,
+          "lo": 25.15,
+          "fn": "Obshtina Ardino, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Chernoochene",
+          "la": 41.78,
+          "lo": 25.25,
+          "fn": "Obshtina Chernoochene, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Dzhebel",
+          "la": 41.5,
+          "lo": 25.27,
+          "fn": "Obshtina Dzhebel, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Kardzhali",
+          "la": 41.68,
+          "lo": 25.43,
+          "fn": "Obshtina Kardzhali, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Kirkovo",
+          "la": 41.36,
+          "lo": 25.34,
+          "fn": "Obshtina Kirkovo, Kardzhali",
+          "s": "Kardzhali"
+        },
+        {
+          "n": "Obshtina Momchilgrad",
+          "la": 41.53,
+          "lo": 25.5,
+          "fn": "Obshtina Momchilgrad, Kardzhali",
+          "s": "Kardzhali"
+        }
+      ]
+    },
+    {
+      "n": "Kyustendil",
+      "la": 42.29,
+      "lo": 22.69,
+      "sc": "10",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Boboshevo",
+          "la": 42.15,
+          "lo": 23.0,
+          "fn": "Boboshevo, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Bobov Dol",
+          "la": 42.36,
+          "lo": 23.0,
+          "fn": "Bobov Dol, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Dupnitsa",
+          "la": 42.27,
+          "lo": 23.12,
+          "fn": "Dupnitsa, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Kocherinovo",
+          "la": 42.08,
+          "lo": 23.06,
+          "fn": "Kocherinovo, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Kyustendil",
+          "la": 42.28,
+          "lo": 22.69,
+          "fn": "Kyustendil, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Nevestino",
+          "la": 42.26,
+          "lo": 22.85,
+          "fn": "Nevestino, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Boboshevo",
+          "la": 42.18,
+          "lo": 23.03,
+          "fn": "Obshtina Boboshevo, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Bobov Dol",
+          "la": 42.32,
+          "lo": 22.98,
+          "fn": "Obshtina Bobov Dol, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Dupnitsa",
+          "la": 42.28,
+          "lo": 23.15,
+          "fn": "Obshtina Dupnitsa, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Kocherinovo",
+          "la": 42.1,
+          "lo": 23.03,
+          "fn": "Obshtina Kocherinovo, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Kyustendil",
+          "la": 42.28,
+          "lo": 22.68,
+          "fn": "Obshtina Kyustendil, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Nevestino",
+          "la": 42.17,
+          "lo": 22.83,
+          "fn": "Obshtina Nevestino, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Rila",
+          "la": 42.15,
+          "lo": 23.32,
+          "fn": "Obshtina Rila, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Sapareva Banya",
+          "la": 42.28,
+          "lo": 23.32,
+          "fn": "Obshtina Sapareva Banya, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Treklyano",
+          "la": 42.55,
+          "lo": 22.6,
+          "fn": "Obshtina Treklyano, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Rila",
+          "la": 42.13,
+          "lo": 23.13,
+          "fn": "Rila, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Sapareva Banya",
+          "la": 42.28,
+          "lo": 23.27,
+          "fn": "Sapareva Banya, Kyustendil",
+          "s": "Kyustendil"
+        }
+      ]
+    },
+    {
+      "n": "Kyustendil",
+      "la": 42.29,
+      "lo": 22.69,
+      "sc": "10",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Boboshevo",
+          "la": 42.15,
+          "lo": 23.0,
+          "fn": "Boboshevo, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Bobov Dol",
+          "la": 42.36,
+          "lo": 23.0,
+          "fn": "Bobov Dol, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Dupnitsa",
+          "la": 42.27,
+          "lo": 23.12,
+          "fn": "Dupnitsa, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Kocherinovo",
+          "la": 42.08,
+          "lo": 23.06,
+          "fn": "Kocherinovo, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Kyustendil",
+          "la": 42.28,
+          "lo": 22.69,
+          "fn": "Kyustendil, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Nevestino",
+          "la": 42.26,
+          "lo": 22.85,
+          "fn": "Nevestino, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Boboshevo",
+          "la": 42.18,
+          "lo": 23.03,
+          "fn": "Obshtina Boboshevo, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Bobov Dol",
+          "la": 42.32,
+          "lo": 22.98,
+          "fn": "Obshtina Bobov Dol, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Dupnitsa",
+          "la": 42.28,
+          "lo": 23.15,
+          "fn": "Obshtina Dupnitsa, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Kocherinovo",
+          "la": 42.1,
+          "lo": 23.03,
+          "fn": "Obshtina Kocherinovo, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Kyustendil",
+          "la": 42.28,
+          "lo": 22.68,
+          "fn": "Obshtina Kyustendil, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Nevestino",
+          "la": 42.17,
+          "lo": 22.83,
+          "fn": "Obshtina Nevestino, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Rila",
+          "la": 42.15,
+          "lo": 23.32,
+          "fn": "Obshtina Rila, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Sapareva Banya",
+          "la": 42.28,
+          "lo": 23.32,
+          "fn": "Obshtina Sapareva Banya, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Obshtina Treklyano",
+          "la": 42.55,
+          "lo": 22.6,
+          "fn": "Obshtina Treklyano, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Rila",
+          "la": 42.13,
+          "lo": 23.13,
+          "fn": "Rila, Kyustendil",
+          "s": "Kyustendil"
+        },
+        {
+          "n": "Sapareva Banya",
+          "la": 42.28,
+          "lo": 23.27,
+          "fn": "Sapareva Banya, Kyustendil",
+          "s": "Kyustendil"
+        }
+      ]
+    },
+    {
+      "n": "Lovech",
+      "la": 43.14,
+      "lo": 24.71,
+      "sc": "11",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Apriltsi",
+          "la": 42.84,
+          "lo": 24.92,
+          "fn": "Apriltsi, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Letnitsa",
+          "la": 43.31,
+          "lo": 25.07,
+          "fn": "Letnitsa, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Lovech",
+          "la": 43.13,
+          "lo": 24.72,
+          "fn": "Lovech, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Lukovit",
+          "la": 43.2,
+          "lo": 24.17,
+          "fn": "Lukovit, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Obshtina Lovech",
+          "la": 43.17,
+          "lo": 24.8,
+          "fn": "Obshtina Lovech, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Obshtina Teteven",
+          "la": 42.92,
+          "lo": 24.27,
+          "fn": "Obshtina Teteven, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Obshtina Ugarchin",
+          "la": 43.1,
+          "lo": 24.42,
+          "fn": "Obshtina Ugarchin, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Teteven",
+          "la": 42.92,
+          "lo": 24.27,
+          "fn": "Teteven, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Troyan",
+          "la": 42.89,
+          "lo": 24.72,
+          "fn": "Troyan, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Ugarchin",
+          "la": 43.1,
+          "lo": 24.42,
+          "fn": "Ugarchin, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Yablanitsa",
+          "la": 43.03,
+          "lo": 24.11,
+          "fn": "Yablanitsa, Lovech",
+          "s": "Lovech"
+        }
+      ]
+    },
+    {
+      "n": "Lovech",
+      "la": 43.14,
+      "lo": 24.71,
+      "sc": "11",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Apriltsi",
+          "la": 42.84,
+          "lo": 24.92,
+          "fn": "Apriltsi, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Letnitsa",
+          "la": 43.31,
+          "lo": 25.07,
+          "fn": "Letnitsa, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Lovech",
+          "la": 43.13,
+          "lo": 24.72,
+          "fn": "Lovech, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Lukovit",
+          "la": 43.2,
+          "lo": 24.17,
+          "fn": "Lukovit, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Obshtina Lovech",
+          "la": 43.17,
+          "lo": 24.8,
+          "fn": "Obshtina Lovech, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Obshtina Teteven",
+          "la": 42.92,
+          "lo": 24.27,
+          "fn": "Obshtina Teteven, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Obshtina Ugarchin",
+          "la": 43.1,
+          "lo": 24.42,
+          "fn": "Obshtina Ugarchin, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Teteven",
+          "la": 42.92,
+          "lo": 24.27,
+          "fn": "Teteven, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Troyan",
+          "la": 42.89,
+          "lo": 24.72,
+          "fn": "Troyan, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Ugarchin",
+          "la": 43.1,
+          "lo": 24.42,
+          "fn": "Ugarchin, Lovech",
+          "s": "Lovech"
+        },
+        {
+          "n": "Yablanitsa",
+          "la": 43.03,
+          "lo": 24.11,
+          "fn": "Yablanitsa, Lovech",
+          "s": "Lovech"
+        }
+      ]
+    },
+    {
+      "n": "Montana",
+      "la": 43.41,
+      "lo": 23.23,
+      "sc": "12",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Berkovitsa",
+          "la": 43.24,
+          "lo": 23.13,
+          "fn": "Berkovitsa, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Boychinovtsi",
+          "la": 43.47,
+          "lo": 23.34,
+          "fn": "Boychinovtsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Brusartsi",
+          "la": 43.66,
+          "lo": 23.07,
+          "fn": "Brusartsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Chiprovtsi",
+          "la": 43.38,
+          "lo": 22.88,
+          "fn": "Chiprovtsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Lom",
+          "la": 43.82,
+          "lo": 23.24,
+          "fn": "Lom, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Medkovets",
+          "la": 43.62,
+          "lo": 23.17,
+          "fn": "Medkovets, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Montana",
+          "la": 43.41,
+          "lo": 23.23,
+          "fn": "Montana, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Boychinovtsi",
+          "la": 43.53,
+          "lo": 23.43,
+          "fn": "Obshtina Boychinovtsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Chiprovtsi",
+          "la": 43.42,
+          "lo": 22.9,
+          "fn": "Obshtina Chiprovtsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Georgi Damyanovo",
+          "la": 43.35,
+          "lo": 23.0,
+          "fn": "Obshtina Georgi Damyanovo, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Lom",
+          "la": 43.82,
+          "lo": 23.23,
+          "fn": "Obshtina Lom, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Montana",
+          "la": 43.47,
+          "lo": 23.2,
+          "fn": "Obshtina Montana, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Valchedram",
+          "la": 43.72,
+          "lo": 23.52,
+          "fn": "Obshtina Valchedram, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Varshets",
+          "la": 43.22,
+          "lo": 23.33,
+          "fn": "Obshtina Varshets, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Yakimovo",
+          "la": 43.63,
+          "lo": 23.33,
+          "fn": "Obshtina Yakimovo, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Valchedram",
+          "la": 43.69,
+          "lo": 23.45,
+          "fn": "Valchedram, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Varshets",
+          "la": 43.19,
+          "lo": 23.29,
+          "fn": "Varshets, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Yakimovo",
+          "la": 43.63,
+          "lo": 23.35,
+          "fn": "Yakimovo, Montana",
+          "s": "Montana"
+        }
+      ]
+    },
+    {
+      "n": "Montana",
+      "la": 43.41,
+      "lo": 23.23,
+      "sc": "12",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Berkovitsa",
+          "la": 43.24,
+          "lo": 23.13,
+          "fn": "Berkovitsa, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Boychinovtsi",
+          "la": 43.47,
+          "lo": 23.34,
+          "fn": "Boychinovtsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Brusartsi",
+          "la": 43.66,
+          "lo": 23.07,
+          "fn": "Brusartsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Chiprovtsi",
+          "la": 43.38,
+          "lo": 22.88,
+          "fn": "Chiprovtsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Lom",
+          "la": 43.82,
+          "lo": 23.24,
+          "fn": "Lom, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Medkovets",
+          "la": 43.62,
+          "lo": 23.17,
+          "fn": "Medkovets, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Montana",
+          "la": 43.41,
+          "lo": 23.23,
+          "fn": "Montana, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Boychinovtsi",
+          "la": 43.53,
+          "lo": 23.43,
+          "fn": "Obshtina Boychinovtsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Chiprovtsi",
+          "la": 43.42,
+          "lo": 22.9,
+          "fn": "Obshtina Chiprovtsi, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Georgi Damyanovo",
+          "la": 43.35,
+          "lo": 23.0,
+          "fn": "Obshtina Georgi Damyanovo, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Lom",
+          "la": 43.82,
+          "lo": 23.23,
+          "fn": "Obshtina Lom, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Montana",
+          "la": 43.47,
+          "lo": 23.2,
+          "fn": "Obshtina Montana, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Valchedram",
+          "la": 43.72,
+          "lo": 23.52,
+          "fn": "Obshtina Valchedram, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Varshets",
+          "la": 43.22,
+          "lo": 23.33,
+          "fn": "Obshtina Varshets, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Obshtina Yakimovo",
+          "la": 43.63,
+          "lo": 23.33,
+          "fn": "Obshtina Yakimovo, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Valchedram",
+          "la": 43.69,
+          "lo": 23.45,
+          "fn": "Valchedram, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Varshets",
+          "la": 43.19,
+          "lo": 23.29,
+          "fn": "Varshets, Montana",
+          "s": "Montana"
+        },
+        {
+          "n": "Yakimovo",
+          "la": 43.63,
+          "lo": 23.35,
+          "fn": "Yakimovo, Montana",
+          "s": "Montana"
+        }
+      ]
+    },
+    {
+      "n": "Pazardzhik",
+      "la": 42.19,
+      "lo": 24.33,
+      "sc": "13",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Batak",
+          "la": 41.94,
+          "lo": 24.22,
+          "fn": "Batak, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Belovo",
+          "la": 42.21,
+          "lo": 24.02,
+          "fn": "Belovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Bratsigovo",
+          "la": 42.02,
+          "lo": 24.37,
+          "fn": "Bratsigovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Lesichovo",
+          "la": 42.36,
+          "lo": 24.11,
+          "fn": "Lesichovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Batak",
+          "la": 41.87,
+          "lo": 24.22,
+          "fn": "Obshtina Batak, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Belovo",
+          "la": 42.2,
+          "lo": 23.93,
+          "fn": "Obshtina Belovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Bratsigovo",
+          "la": 42.0,
+          "lo": 24.4,
+          "fn": "Obshtina Bratsigovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Lesichovo",
+          "la": 42.37,
+          "lo": 24.15,
+          "fn": "Obshtina Lesichovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Panagyurishte",
+          "la": 42.5,
+          "lo": 24.17,
+          "fn": "Obshtina Panagyurishte, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Pazardzhik",
+          "la": 42.2,
+          "lo": 24.33,
+          "fn": "Obshtina Pazardzhik, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Peshtera",
+          "la": 42.03,
+          "lo": 24.3,
+          "fn": "Obshtina Peshtera, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Rakitovo",
+          "la": 42.0,
+          "lo": 24.11,
+          "fn": "Obshtina Rakitovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Septemvri",
+          "la": 42.27,
+          "lo": 24.13,
+          "fn": "Obshtina Septemvri, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Strelcha",
+          "la": 42.47,
+          "lo": 24.37,
+          "fn": "Obshtina Strelcha, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Velingrad",
+          "la": 41.97,
+          "lo": 23.93,
+          "fn": "Obshtina Velingrad, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Panagyurishte",
+          "la": 42.5,
+          "lo": 24.19,
+          "fn": "Panagyurishte, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Pazardzhik",
+          "la": 42.2,
+          "lo": 24.33,
+          "fn": "Pazardzhik, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Peshtera",
+          "la": 42.03,
+          "lo": 24.3,
+          "fn": "Peshtera, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Rakitovo",
+          "la": 41.99,
+          "lo": 24.09,
+          "fn": "Rakitovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Sarnitsa",
+          "la": 41.74,
+          "lo": 24.02,
+          "fn": "Sarnitsa, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Sarnitsa Obshtina",
+          "la": 41.73,
+          "lo": 24.03,
+          "fn": "Sarnitsa Obshtina, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Septemvri",
+          "la": 42.21,
+          "lo": 24.13,
+          "fn": "Septemvri, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Strelcha",
+          "la": 42.5,
+          "lo": 24.32,
+          "fn": "Strelcha, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Velingrad",
+          "la": 42.03,
+          "lo": 23.99,
+          "fn": "Velingrad, Pazardzhik",
+          "s": "Pazardzhik"
+        }
+      ]
+    },
+    {
+      "n": "Pazardzhik",
+      "la": 42.19,
+      "lo": 24.33,
+      "sc": "13",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Batak",
+          "la": 41.94,
+          "lo": 24.22,
+          "fn": "Batak, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Belovo",
+          "la": 42.21,
+          "lo": 24.02,
+          "fn": "Belovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Bratsigovo",
+          "la": 42.02,
+          "lo": 24.37,
+          "fn": "Bratsigovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Lesichovo",
+          "la": 42.36,
+          "lo": 24.11,
+          "fn": "Lesichovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Batak",
+          "la": 41.87,
+          "lo": 24.22,
+          "fn": "Obshtina Batak, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Belovo",
+          "la": 42.2,
+          "lo": 23.93,
+          "fn": "Obshtina Belovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Bratsigovo",
+          "la": 42.0,
+          "lo": 24.4,
+          "fn": "Obshtina Bratsigovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Lesichovo",
+          "la": 42.37,
+          "lo": 24.15,
+          "fn": "Obshtina Lesichovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Panagyurishte",
+          "la": 42.5,
+          "lo": 24.17,
+          "fn": "Obshtina Panagyurishte, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Pazardzhik",
+          "la": 42.2,
+          "lo": 24.33,
+          "fn": "Obshtina Pazardzhik, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Peshtera",
+          "la": 42.03,
+          "lo": 24.3,
+          "fn": "Obshtina Peshtera, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Rakitovo",
+          "la": 42.0,
+          "lo": 24.11,
+          "fn": "Obshtina Rakitovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Septemvri",
+          "la": 42.27,
+          "lo": 24.13,
+          "fn": "Obshtina Septemvri, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Strelcha",
+          "la": 42.47,
+          "lo": 24.37,
+          "fn": "Obshtina Strelcha, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Obshtina Velingrad",
+          "la": 41.97,
+          "lo": 23.93,
+          "fn": "Obshtina Velingrad, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Panagyurishte",
+          "la": 42.5,
+          "lo": 24.19,
+          "fn": "Panagyurishte, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Pazardzhik",
+          "la": 42.2,
+          "lo": 24.33,
+          "fn": "Pazardzhik, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Peshtera",
+          "la": 42.03,
+          "lo": 24.3,
+          "fn": "Peshtera, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Rakitovo",
+          "la": 41.99,
+          "lo": 24.09,
+          "fn": "Rakitovo, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Sarnitsa",
+          "la": 41.74,
+          "lo": 24.02,
+          "fn": "Sarnitsa, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Sarnitsa Obshtina",
+          "la": 41.73,
+          "lo": 24.03,
+          "fn": "Sarnitsa Obshtina, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Septemvri",
+          "la": 42.21,
+          "lo": 24.13,
+          "fn": "Septemvri, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Strelcha",
+          "la": 42.5,
+          "lo": 24.32,
+          "fn": "Strelcha, Pazardzhik",
+          "s": "Pazardzhik"
+        },
+        {
+          "n": "Velingrad",
+          "la": 42.03,
+          "lo": 23.99,
+          "fn": "Velingrad, Pazardzhik",
+          "s": "Pazardzhik"
+        }
+      ]
+    },
+    {
+      "n": "Pernik",
+      "la": 42.61,
+      "lo": 23.04,
+      "sc": "14",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Batanovtsi",
+          "la": 42.6,
+          "lo": 22.96,
+          "fn": "Batanovtsi, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Breznik",
+          "la": 42.74,
+          "lo": 22.91,
+          "fn": "Breznik, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Obshtina Kovachevtsi",
+          "la": 42.55,
+          "lo": 22.83,
+          "fn": "Obshtina Kovachevtsi, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Obshtina Pernik",
+          "la": 42.62,
+          "lo": 23.08,
+          "fn": "Obshtina Pernik, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Obshtina Radomir",
+          "la": 42.47,
+          "lo": 23.02,
+          "fn": "Obshtina Radomir, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Obshtina Zemen",
+          "la": 42.55,
+          "lo": 22.71,
+          "fn": "Obshtina Zemen, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Pernik",
+          "la": 42.6,
+          "lo": 23.03,
+          "fn": "Pernik, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Radomir",
+          "la": 42.55,
+          "lo": 22.97,
+          "fn": "Radomir, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Tran",
+          "la": 42.84,
+          "lo": 22.65,
+          "fn": "Tran, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Zemen",
+          "la": 42.48,
+          "lo": 22.75,
+          "fn": "Zemen, Pernik",
+          "s": "Pernik"
+        }
+      ]
+    },
+    {
+      "n": "Pernik",
+      "la": 42.61,
+      "lo": 23.04,
+      "sc": "14",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Batanovtsi",
+          "la": 42.6,
+          "lo": 22.96,
+          "fn": "Batanovtsi, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Breznik",
+          "la": 42.74,
+          "lo": 22.91,
+          "fn": "Breznik, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Obshtina Kovachevtsi",
+          "la": 42.55,
+          "lo": 22.83,
+          "fn": "Obshtina Kovachevtsi, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Obshtina Pernik",
+          "la": 42.62,
+          "lo": 23.08,
+          "fn": "Obshtina Pernik, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Obshtina Radomir",
+          "la": 42.47,
+          "lo": 23.02,
+          "fn": "Obshtina Radomir, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Obshtina Zemen",
+          "la": 42.55,
+          "lo": 22.71,
+          "fn": "Obshtina Zemen, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Pernik",
+          "la": 42.6,
+          "lo": 23.03,
+          "fn": "Pernik, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Radomir",
+          "la": 42.55,
+          "lo": 22.97,
+          "fn": "Radomir, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Tran",
+          "la": 42.84,
+          "lo": 22.65,
+          "fn": "Tran, Pernik",
+          "s": "Pernik"
+        },
+        {
+          "n": "Zemen",
+          "la": 42.48,
+          "lo": 22.75,
+          "fn": "Zemen, Pernik",
+          "s": "Pernik"
+        }
+      ]
+    },
+    {
+      "n": "Pleven",
+      "la": 43.42,
+      "lo": 24.61,
+      "sc": "15",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Belene",
+          "la": 43.65,
+          "lo": 25.13,
+          "fn": "Belene, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Cherven Bryag",
+          "la": 43.27,
+          "lo": 24.1,
+          "fn": "Cherven Bryag, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Dolna Mitropolia",
+          "la": 43.47,
+          "lo": 24.53,
+          "fn": "Dolna Mitropolia, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Dolni Dabnik",
+          "la": 43.4,
+          "lo": 24.43,
+          "fn": "Dolni Dabnik, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Gulyantsi",
+          "la": 43.64,
+          "lo": 24.69,
+          "fn": "Gulyantsi, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Iskar",
+          "la": 43.45,
+          "lo": 24.27,
+          "fn": "Iskar, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Knezha",
+          "la": 43.5,
+          "lo": 24.08,
+          "fn": "Knezha, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Koynare",
+          "la": 43.35,
+          "lo": 24.13,
+          "fn": "Koynare, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Levski",
+          "la": 43.37,
+          "lo": 25.13,
+          "fn": "Levski, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Nikopol",
+          "la": 43.71,
+          "lo": 24.9,
+          "fn": "Nikopol, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Belene",
+          "la": 43.63,
+          "lo": 25.13,
+          "fn": "Obshtina Belene, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Cherven Bryag",
+          "la": 43.33,
+          "lo": 24.13,
+          "fn": "Obshtina Cherven Bryag, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Dolna Mitropolia",
+          "la": 43.58,
+          "lo": 24.42,
+          "fn": "Obshtina Dolna Mitropolia, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Dolni Dabnik",
+          "la": 43.37,
+          "lo": 24.42,
+          "fn": "Obshtina Dolni Dabnik, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Gulyantsi",
+          "la": 43.68,
+          "lo": 24.65,
+          "fn": "Obshtina Gulyantsi, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Iskar",
+          "la": 43.5,
+          "lo": 24.28,
+          "fn": "Obshtina Iskar, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Knezha",
+          "la": 43.5,
+          "lo": 24.12,
+          "fn": "Obshtina Knezha, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Levski",
+          "la": 43.43,
+          "lo": 25.1,
+          "fn": "Obshtina Levski, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Nikopol",
+          "la": 43.6,
+          "lo": 24.93,
+          "fn": "Obshtina Nikopol, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Pleven",
+          "la": 43.4,
+          "lo": 24.7,
+          "fn": "Obshtina Pleven, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Pordim",
+          "la": 43.38,
+          "lo": 24.9,
+          "fn": "Obshtina Pordim, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Pleven",
+          "la": 43.42,
+          "lo": 24.62,
+          "fn": "Pleven, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Pordim",
+          "la": 43.38,
+          "lo": 24.85,
+          "fn": "Pordim, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Slavyanovo",
+          "la": 43.47,
+          "lo": 24.87,
+          "fn": "Slavyanovo, Pleven",
+          "s": "Pleven"
+        }
+      ]
+    },
+    {
+      "n": "Pleven",
+      "la": 43.42,
+      "lo": 24.61,
+      "sc": "15",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Belene",
+          "la": 43.65,
+          "lo": 25.13,
+          "fn": "Belene, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Cherven Bryag",
+          "la": 43.27,
+          "lo": 24.1,
+          "fn": "Cherven Bryag, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Dolna Mitropolia",
+          "la": 43.47,
+          "lo": 24.53,
+          "fn": "Dolna Mitropolia, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Dolni Dabnik",
+          "la": 43.4,
+          "lo": 24.43,
+          "fn": "Dolni Dabnik, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Gulyantsi",
+          "la": 43.64,
+          "lo": 24.69,
+          "fn": "Gulyantsi, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Iskar",
+          "la": 43.45,
+          "lo": 24.27,
+          "fn": "Iskar, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Knezha",
+          "la": 43.5,
+          "lo": 24.08,
+          "fn": "Knezha, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Koynare",
+          "la": 43.35,
+          "lo": 24.13,
+          "fn": "Koynare, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Levski",
+          "la": 43.37,
+          "lo": 25.13,
+          "fn": "Levski, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Nikopol",
+          "la": 43.71,
+          "lo": 24.9,
+          "fn": "Nikopol, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Belene",
+          "la": 43.63,
+          "lo": 25.13,
+          "fn": "Obshtina Belene, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Cherven Bryag",
+          "la": 43.33,
+          "lo": 24.13,
+          "fn": "Obshtina Cherven Bryag, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Dolna Mitropolia",
+          "la": 43.58,
+          "lo": 24.42,
+          "fn": "Obshtina Dolna Mitropolia, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Dolni Dabnik",
+          "la": 43.37,
+          "lo": 24.42,
+          "fn": "Obshtina Dolni Dabnik, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Gulyantsi",
+          "la": 43.68,
+          "lo": 24.65,
+          "fn": "Obshtina Gulyantsi, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Iskar",
+          "la": 43.5,
+          "lo": 24.28,
+          "fn": "Obshtina Iskar, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Knezha",
+          "la": 43.5,
+          "lo": 24.12,
+          "fn": "Obshtina Knezha, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Levski",
+          "la": 43.43,
+          "lo": 25.1,
+          "fn": "Obshtina Levski, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Nikopol",
+          "la": 43.6,
+          "lo": 24.93,
+          "fn": "Obshtina Nikopol, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Pleven",
+          "la": 43.4,
+          "lo": 24.7,
+          "fn": "Obshtina Pleven, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Obshtina Pordim",
+          "la": 43.38,
+          "lo": 24.9,
+          "fn": "Obshtina Pordim, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Pleven",
+          "la": 43.42,
+          "lo": 24.62,
+          "fn": "Pleven, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Pordim",
+          "la": 43.38,
+          "lo": 24.85,
+          "fn": "Pordim, Pleven",
+          "s": "Pleven"
+        },
+        {
+          "n": "Slavyanovo",
+          "la": 43.47,
+          "lo": 24.87,
+          "fn": "Slavyanovo, Pleven",
+          "s": "Pleven"
+        }
+      ]
+    },
+    {
+      "n": "Plovdiv",
+      "la": 42.14,
+      "lo": 24.75,
+      "sc": "16",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Asenovgrad",
+          "la": 42.02,
+          "lo": 24.87,
+          "fn": "Asenovgrad, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Brezovo",
+          "la": 42.35,
+          "lo": 25.08,
+          "fn": "Brezovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Hisarya",
+          "la": 42.5,
+          "lo": 24.7,
+          "fn": "Hisarya, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Kalofer",
+          "la": 42.62,
+          "lo": 24.98,
+          "fn": "Kalofer, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Kaloyanovo",
+          "la": 42.35,
+          "lo": 24.73,
+          "fn": "Kaloyanovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Karlovo",
+          "la": 42.63,
+          "lo": 24.8,
+          "fn": "Karlovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Klisura",
+          "la": 42.7,
+          "lo": 24.45,
+          "fn": "Klisura, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Krichim",
+          "la": 42.05,
+          "lo": 24.47,
+          "fn": "Krichim, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Laki",
+          "la": 41.85,
+          "lo": 24.82,
+          "fn": "Laki, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Asenovgrad",
+          "la": 41.95,
+          "lo": 24.97,
+          "fn": "Obshtina Asenovgrad, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Hisarya",
+          "la": 42.5,
+          "lo": 24.6,
+          "fn": "Obshtina Hisarya, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Kaloyanovo",
+          "la": 42.38,
+          "lo": 24.82,
+          "fn": "Obshtina Kaloyanovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Karlovo",
+          "la": 42.68,
+          "lo": 24.67,
+          "fn": "Obshtina Karlovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Krichim",
+          "la": 42.0,
+          "lo": 24.47,
+          "fn": "Obshtina Krichim, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Kuklen",
+          "la": 42.04,
+          "lo": 24.78,
+          "fn": "Obshtina Kuklen, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Laki",
+          "la": 41.82,
+          "lo": 24.85,
+          "fn": "Obshtina Laki, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Maritsa",
+          "la": 42.23,
+          "lo": 24.8,
+          "fn": "Obshtina Maritsa, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Parvomay",
+          "la": 42.03,
+          "lo": 25.2,
+          "fn": "Obshtina Parvomay, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Perushtitsa",
+          "la": 42.07,
+          "lo": 24.55,
+          "fn": "Obshtina Perushtitsa, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Plovdiv",
+          "la": 42.15,
+          "lo": 24.75,
+          "fn": "Obshtina Plovdiv, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Rakovski",
+          "la": 42.27,
+          "lo": 24.98,
+          "fn": "Obshtina Rakovski, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Rodopi",
+          "la": 42.03,
+          "lo": 24.68,
+          "fn": "Obshtina Rodopi, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Sadovo",
+          "la": 42.13,
+          "lo": 25.0,
+          "fn": "Obshtina Sadovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Saedinenie",
+          "la": 42.32,
+          "lo": 24.58,
+          "fn": "Obshtina Saedinenie, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Sopot",
+          "la": 42.65,
+          "lo": 24.74,
+          "fn": "Obshtina Sopot, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Stamboliyski",
+          "la": 42.12,
+          "lo": 24.52,
+          "fn": "Obshtina Stamboliyski, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Parvomay",
+          "la": 42.1,
+          "lo": 25.22,
+          "fn": "Parvomay, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Perushtitsa",
+          "la": 42.05,
+          "lo": 24.55,
+          "fn": "Perushtitsa, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Plovdiv",
+          "la": 42.15,
+          "lo": 24.75,
+          "fn": "Plovdiv, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Rakovski",
+          "la": 42.27,
+          "lo": 24.94,
+          "fn": "Rakovski, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Sadovo",
+          "la": 42.13,
+          "lo": 24.94,
+          "fn": "Sadovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Saedinenie",
+          "la": 42.27,
+          "lo": 24.55,
+          "fn": "Saedinenie, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Stamboliyski",
+          "la": 42.13,
+          "lo": 24.53,
+          "fn": "Stamboliyski, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Topolovo",
+          "la": 41.9,
+          "lo": 25.0,
+          "fn": "Topolovo, Plovdiv",
+          "s": "Plovdiv"
+        }
+      ]
+    },
+    {
+      "n": "Plovdiv",
+      "la": 42.14,
+      "lo": 24.75,
+      "sc": "16",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Asenovgrad",
+          "la": 42.02,
+          "lo": 24.87,
+          "fn": "Asenovgrad, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Brezovo",
+          "la": 42.35,
+          "lo": 25.08,
+          "fn": "Brezovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Hisarya",
+          "la": 42.5,
+          "lo": 24.7,
+          "fn": "Hisarya, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Kalofer",
+          "la": 42.62,
+          "lo": 24.98,
+          "fn": "Kalofer, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Kaloyanovo",
+          "la": 42.35,
+          "lo": 24.73,
+          "fn": "Kaloyanovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Karlovo",
+          "la": 42.63,
+          "lo": 24.8,
+          "fn": "Karlovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Klisura",
+          "la": 42.7,
+          "lo": 24.45,
+          "fn": "Klisura, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Krichim",
+          "la": 42.05,
+          "lo": 24.47,
+          "fn": "Krichim, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Laki",
+          "la": 41.85,
+          "lo": 24.82,
+          "fn": "Laki, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Asenovgrad",
+          "la": 41.95,
+          "lo": 24.97,
+          "fn": "Obshtina Asenovgrad, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Hisarya",
+          "la": 42.5,
+          "lo": 24.6,
+          "fn": "Obshtina Hisarya, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Kaloyanovo",
+          "la": 42.38,
+          "lo": 24.82,
+          "fn": "Obshtina Kaloyanovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Karlovo",
+          "la": 42.68,
+          "lo": 24.67,
+          "fn": "Obshtina Karlovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Krichim",
+          "la": 42.0,
+          "lo": 24.47,
+          "fn": "Obshtina Krichim, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Kuklen",
+          "la": 42.04,
+          "lo": 24.78,
+          "fn": "Obshtina Kuklen, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Laki",
+          "la": 41.82,
+          "lo": 24.85,
+          "fn": "Obshtina Laki, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Maritsa",
+          "la": 42.23,
+          "lo": 24.8,
+          "fn": "Obshtina Maritsa, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Parvomay",
+          "la": 42.03,
+          "lo": 25.2,
+          "fn": "Obshtina Parvomay, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Perushtitsa",
+          "la": 42.07,
+          "lo": 24.55,
+          "fn": "Obshtina Perushtitsa, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Plovdiv",
+          "la": 42.15,
+          "lo": 24.75,
+          "fn": "Obshtina Plovdiv, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Rakovski",
+          "la": 42.27,
+          "lo": 24.98,
+          "fn": "Obshtina Rakovski, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Rodopi",
+          "la": 42.03,
+          "lo": 24.68,
+          "fn": "Obshtina Rodopi, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Sadovo",
+          "la": 42.13,
+          "lo": 25.0,
+          "fn": "Obshtina Sadovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Saedinenie",
+          "la": 42.32,
+          "lo": 24.58,
+          "fn": "Obshtina Saedinenie, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Sopot",
+          "la": 42.65,
+          "lo": 24.74,
+          "fn": "Obshtina Sopot, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Obshtina Stamboliyski",
+          "la": 42.12,
+          "lo": 24.52,
+          "fn": "Obshtina Stamboliyski, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Parvomay",
+          "la": 42.1,
+          "lo": 25.22,
+          "fn": "Parvomay, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Perushtitsa",
+          "la": 42.05,
+          "lo": 24.55,
+          "fn": "Perushtitsa, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Plovdiv",
+          "la": 42.15,
+          "lo": 24.75,
+          "fn": "Plovdiv, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Rakovski",
+          "la": 42.27,
+          "lo": 24.94,
+          "fn": "Rakovski, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Sadovo",
+          "la": 42.13,
+          "lo": 24.94,
+          "fn": "Sadovo, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Saedinenie",
+          "la": 42.27,
+          "lo": 24.55,
+          "fn": "Saedinenie, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Stamboliyski",
+          "la": 42.13,
+          "lo": 24.53,
+          "fn": "Stamboliyski, Plovdiv",
+          "s": "Plovdiv"
+        },
+        {
+          "n": "Topolovo",
+          "la": 41.9,
+          "lo": 25.0,
+          "fn": "Topolovo, Plovdiv",
+          "s": "Plovdiv"
+        }
+      ]
+    },
+    {
+      "n": "Razgrad",
+      "la": 43.53,
+      "lo": 26.52,
+      "sc": "17",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Isperih",
+          "la": 43.72,
+          "lo": 26.83,
+          "fn": "Isperih, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Kubrat",
+          "la": 43.8,
+          "lo": 26.5,
+          "fn": "Kubrat, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Loznitsa",
+          "la": 43.37,
+          "lo": 26.6,
+          "fn": "Loznitsa, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Medovene",
+          "la": 43.77,
+          "lo": 26.52,
+          "fn": "Medovene, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Isperih",
+          "la": 43.72,
+          "lo": 26.83,
+          "fn": "Obshtina Isperih, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Kubrat",
+          "la": 43.87,
+          "lo": 26.48,
+          "fn": "Obshtina Kubrat, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Loznitsa",
+          "la": 43.42,
+          "lo": 26.58,
+          "fn": "Obshtina Loznitsa, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Razgrad",
+          "la": 43.53,
+          "lo": 26.52,
+          "fn": "Obshtina Razgrad, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Samuil",
+          "la": 43.6,
+          "lo": 26.8,
+          "fn": "Obshtina Samuil, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Tsar Kaloyan",
+          "la": 43.6,
+          "lo": 26.22,
+          "fn": "Obshtina Tsar Kaloyan, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Zavet",
+          "la": 43.77,
+          "lo": 26.68,
+          "fn": "Obshtina Zavet, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Razgrad",
+          "la": 43.53,
+          "lo": 26.52,
+          "fn": "Razgrad, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Samuil",
+          "la": 43.52,
+          "lo": 26.75,
+          "fn": "Samuil, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Tsar Kaloyan",
+          "la": 43.62,
+          "lo": 26.25,
+          "fn": "Tsar Kaloyan, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Zavet",
+          "la": 43.76,
+          "lo": 26.68,
+          "fn": "Zavet, Razgrad",
+          "s": "Razgrad"
+        }
+      ]
+    },
+    {
+      "n": "Razgrad",
+      "la": 43.53,
+      "lo": 26.52,
+      "sc": "17",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Isperih",
+          "la": 43.72,
+          "lo": 26.83,
+          "fn": "Isperih, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Kubrat",
+          "la": 43.8,
+          "lo": 26.5,
+          "fn": "Kubrat, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Loznitsa",
+          "la": 43.37,
+          "lo": 26.6,
+          "fn": "Loznitsa, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Medovene",
+          "la": 43.77,
+          "lo": 26.52,
+          "fn": "Medovene, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Isperih",
+          "la": 43.72,
+          "lo": 26.83,
+          "fn": "Obshtina Isperih, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Kubrat",
+          "la": 43.87,
+          "lo": 26.48,
+          "fn": "Obshtina Kubrat, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Loznitsa",
+          "la": 43.42,
+          "lo": 26.58,
+          "fn": "Obshtina Loznitsa, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Razgrad",
+          "la": 43.53,
+          "lo": 26.52,
+          "fn": "Obshtina Razgrad, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Samuil",
+          "la": 43.6,
+          "lo": 26.8,
+          "fn": "Obshtina Samuil, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Tsar Kaloyan",
+          "la": 43.6,
+          "lo": 26.22,
+          "fn": "Obshtina Tsar Kaloyan, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Obshtina Zavet",
+          "la": 43.77,
+          "lo": 26.68,
+          "fn": "Obshtina Zavet, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Razgrad",
+          "la": 43.53,
+          "lo": 26.52,
+          "fn": "Razgrad, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Samuil",
+          "la": 43.52,
+          "lo": 26.75,
+          "fn": "Samuil, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Tsar Kaloyan",
+          "la": 43.62,
+          "lo": 26.25,
+          "fn": "Tsar Kaloyan, Razgrad",
+          "s": "Razgrad"
+        },
+        {
+          "n": "Zavet",
+          "la": 43.76,
+          "lo": 26.68,
+          "fn": "Zavet, Razgrad",
+          "s": "Razgrad"
+        }
+      ]
+    },
+    {
+      "n": "Ruse",
+      "la": 43.84,
+      "lo": 25.97,
+      "sc": "18",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Borovo",
+          "la": 43.5,
+          "lo": 25.81,
+          "fn": "Borovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Dve Mogili",
+          "la": 43.59,
+          "lo": 25.87,
+          "fn": "Dve Mogili, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Ivanovo",
+          "la": 43.69,
+          "lo": 25.96,
+          "fn": "Ivanovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Borovo",
+          "la": 43.6,
+          "lo": 25.8,
+          "fn": "Obshtina Borovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Byala",
+          "la": 43.42,
+          "lo": 25.83,
+          "fn": "Obshtina Byala, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Dve Mogili",
+          "la": 43.52,
+          "lo": 25.97,
+          "fn": "Obshtina Dve Mogili, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Ivanovo",
+          "la": 43.7,
+          "lo": 25.98,
+          "fn": "Obshtina Ivanovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Ruse",
+          "la": 43.85,
+          "lo": 26.08,
+          "fn": "Obshtina Ruse, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Slivo Pole",
+          "la": 43.97,
+          "lo": 26.3,
+          "fn": "Obshtina Slivo Pole, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Tsenovo",
+          "la": 43.58,
+          "lo": 25.62,
+          "fn": "Obshtina Tsenovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Vetovo",
+          "la": 43.72,
+          "lo": 26.33,
+          "fn": "Obshtina Vetovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Ruse",
+          "la": 43.85,
+          "lo": 25.95,
+          "fn": "Ruse, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Senovo",
+          "la": 43.65,
+          "lo": 26.37,
+          "fn": "Senovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Slivo Pole",
+          "la": 43.94,
+          "lo": 26.2,
+          "fn": "Slivo Pole, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Tsenovo",
+          "la": 43.54,
+          "lo": 25.66,
+          "fn": "Tsenovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Vetovo",
+          "la": 43.7,
+          "lo": 26.27,
+          "fn": "Vetovo, Ruse",
+          "s": "Ruse"
+        }
+      ]
+    },
+    {
+      "n": "Ruse",
+      "la": 43.84,
+      "lo": 25.97,
+      "sc": "18",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Borovo",
+          "la": 43.5,
+          "lo": 25.81,
+          "fn": "Borovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Dve Mogili",
+          "la": 43.59,
+          "lo": 25.87,
+          "fn": "Dve Mogili, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Ivanovo",
+          "la": 43.69,
+          "lo": 25.96,
+          "fn": "Ivanovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Borovo",
+          "la": 43.6,
+          "lo": 25.8,
+          "fn": "Obshtina Borovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Byala",
+          "la": 43.42,
+          "lo": 25.83,
+          "fn": "Obshtina Byala, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Dve Mogili",
+          "la": 43.52,
+          "lo": 25.97,
+          "fn": "Obshtina Dve Mogili, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Ivanovo",
+          "la": 43.7,
+          "lo": 25.98,
+          "fn": "Obshtina Ivanovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Ruse",
+          "la": 43.85,
+          "lo": 26.08,
+          "fn": "Obshtina Ruse, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Slivo Pole",
+          "la": 43.97,
+          "lo": 26.3,
+          "fn": "Obshtina Slivo Pole, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Tsenovo",
+          "la": 43.58,
+          "lo": 25.62,
+          "fn": "Obshtina Tsenovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Obshtina Vetovo",
+          "la": 43.72,
+          "lo": 26.33,
+          "fn": "Obshtina Vetovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Ruse",
+          "la": 43.85,
+          "lo": 25.95,
+          "fn": "Ruse, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Senovo",
+          "la": 43.65,
+          "lo": 26.37,
+          "fn": "Senovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Slivo Pole",
+          "la": 43.94,
+          "lo": 26.2,
+          "fn": "Slivo Pole, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Tsenovo",
+          "la": 43.54,
+          "lo": 25.66,
+          "fn": "Tsenovo, Ruse",
+          "s": "Ruse"
+        },
+        {
+          "n": "Vetovo",
+          "la": 43.7,
+          "lo": 26.27,
+          "fn": "Vetovo, Ruse",
+          "s": "Ruse"
+        }
+      ]
+    },
+    {
+      "n": "Shumen",
+      "la": 43.27,
+      "lo": 26.94,
+      "sc": "27",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Shumen",
+          "la": 43.28,
+          "lo": 26.93,
+          "fn": "Shumen, Shumen",
+          "s": "Shumen"
+        }
+      ]
+    },
+    {
+      "n": "Shumen",
+      "la": 43.27,
+      "lo": 26.94,
+      "sc": "27",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Shumen",
+          "la": 43.28,
+          "lo": 26.93,
+          "fn": "Shumen, Shumen",
+          "s": "Shumen"
+        }
+      ]
+    },
+    {
+      "n": "Silistra",
+      "la": 44.11,
+      "lo": 27.27,
+      "sc": "19",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Alfatar",
+          "la": 43.95,
+          "lo": 27.29,
+          "fn": "Alfatar, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Dulovo",
+          "la": 43.82,
+          "lo": 27.15,
+          "fn": "Dulovo, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Glavinitsa",
+          "la": 43.92,
+          "lo": 26.83,
+          "fn": "Glavinitsa, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Kaynardzha",
+          "la": 43.99,
+          "lo": 27.51,
+          "fn": "Kaynardzha, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Alfatar",
+          "la": 43.9,
+          "lo": 27.33,
+          "fn": "Obshtina Alfatar, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Dulovo",
+          "la": 43.82,
+          "lo": 27.08,
+          "fn": "Obshtina Dulovo, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Glavinitsa",
+          "la": 43.95,
+          "lo": 26.85,
+          "fn": "Obshtina Glavinitsa, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Kaynardzha",
+          "la": 43.95,
+          "lo": 27.53,
+          "fn": "Obshtina Kaynardzha, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Silistra",
+          "la": 44.03,
+          "lo": 27.2,
+          "fn": "Obshtina Silistra, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Sitovo",
+          "la": 44.02,
+          "lo": 27.0,
+          "fn": "Obshtina Sitovo, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Tutrakan",
+          "la": 44.0,
+          "lo": 26.6,
+          "fn": "Obshtina Tutrakan, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Silistra",
+          "la": 44.12,
+          "lo": 27.26,
+          "fn": "Silistra, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Sitovo",
+          "la": 44.03,
+          "lo": 27.02,
+          "fn": "Sitovo, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Tutrakan",
+          "la": 44.05,
+          "lo": 26.61,
+          "fn": "Tutrakan, Silistra",
+          "s": "Silistra"
+        }
+      ]
+    },
+    {
+      "n": "Silistra",
+      "la": 44.11,
+      "lo": 27.27,
+      "sc": "19",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Alfatar",
+          "la": 43.95,
+          "lo": 27.29,
+          "fn": "Alfatar, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Dulovo",
+          "la": 43.82,
+          "lo": 27.15,
+          "fn": "Dulovo, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Glavinitsa",
+          "la": 43.92,
+          "lo": 26.83,
+          "fn": "Glavinitsa, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Kaynardzha",
+          "la": 43.99,
+          "lo": 27.51,
+          "fn": "Kaynardzha, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Alfatar",
+          "la": 43.9,
+          "lo": 27.33,
+          "fn": "Obshtina Alfatar, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Dulovo",
+          "la": 43.82,
+          "lo": 27.08,
+          "fn": "Obshtina Dulovo, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Glavinitsa",
+          "la": 43.95,
+          "lo": 26.85,
+          "fn": "Obshtina Glavinitsa, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Kaynardzha",
+          "la": 43.95,
+          "lo": 27.53,
+          "fn": "Obshtina Kaynardzha, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Silistra",
+          "la": 44.03,
+          "lo": 27.2,
+          "fn": "Obshtina Silistra, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Sitovo",
+          "la": 44.02,
+          "lo": 27.0,
+          "fn": "Obshtina Sitovo, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Obshtina Tutrakan",
+          "la": 44.0,
+          "lo": 26.6,
+          "fn": "Obshtina Tutrakan, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Silistra",
+          "la": 44.12,
+          "lo": 27.26,
+          "fn": "Silistra, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Sitovo",
+          "la": 44.03,
+          "lo": 27.02,
+          "fn": "Sitovo, Silistra",
+          "s": "Silistra"
+        },
+        {
+          "n": "Tutrakan",
+          "la": 44.05,
+          "lo": 26.61,
+          "fn": "Tutrakan, Silistra",
+          "s": "Silistra"
+        }
+      ]
+    },
+    {
+      "n": "Sliven",
+      "la": 42.68,
+      "lo": 26.32,
+      "sc": "20",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Kermen",
+          "la": 42.5,
+          "lo": 26.25,
+          "fn": "Kermen, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Kotel",
+          "la": 42.88,
+          "lo": 26.45,
+          "fn": "Kotel, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Nova Zagora",
+          "la": 42.48,
+          "lo": 26.02,
+          "fn": "Nova Zagora, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Obshtina Kotel",
+          "la": 42.88,
+          "lo": 26.45,
+          "fn": "Obshtina Kotel, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Obshtina Nova Zagora",
+          "la": 42.45,
+          "lo": 26.05,
+          "fn": "Obshtina Nova Zagora, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Obshtina Sliven",
+          "la": 42.67,
+          "lo": 26.32,
+          "fn": "Obshtina Sliven, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Obshtina Tvarditsa",
+          "la": 42.73,
+          "lo": 26.0,
+          "fn": "Obshtina Tvarditsa, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Sliven",
+          "la": 42.69,
+          "lo": 26.33,
+          "fn": "Sliven, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Tvarditsa",
+          "la": 42.7,
+          "lo": 25.9,
+          "fn": "Tvarditsa, Sliven",
+          "s": "Sliven"
+        }
+      ]
+    },
+    {
+      "n": "Sliven",
+      "la": 42.68,
+      "lo": 26.32,
+      "sc": "20",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Kermen",
+          "la": 42.5,
+          "lo": 26.25,
+          "fn": "Kermen, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Kotel",
+          "la": 42.88,
+          "lo": 26.45,
+          "fn": "Kotel, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Nova Zagora",
+          "la": 42.48,
+          "lo": 26.02,
+          "fn": "Nova Zagora, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Obshtina Kotel",
+          "la": 42.88,
+          "lo": 26.45,
+          "fn": "Obshtina Kotel, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Obshtina Nova Zagora",
+          "la": 42.45,
+          "lo": 26.05,
+          "fn": "Obshtina Nova Zagora, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Obshtina Sliven",
+          "la": 42.67,
+          "lo": 26.32,
+          "fn": "Obshtina Sliven, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Obshtina Tvarditsa",
+          "la": 42.73,
+          "lo": 26.0,
+          "fn": "Obshtina Tvarditsa, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Sliven",
+          "la": 42.69,
+          "lo": 26.33,
+          "fn": "Sliven, Sliven",
+          "s": "Sliven"
+        },
+        {
+          "n": "Tvarditsa",
+          "la": 42.7,
+          "lo": 25.9,
+          "fn": "Tvarditsa, Sliven",
+          "s": "Sliven"
+        }
+      ]
+    },
+    {
+      "n": "Smolyan",
+      "la": 41.58,
+      "lo": 24.7,
+      "sc": "21",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Banite",
+          "la": 41.62,
+          "lo": 25.02,
+          "fn": "Banite, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Borino",
+          "la": 41.68,
+          "lo": 24.29,
+          "fn": "Borino, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Chepelare",
+          "la": 41.73,
+          "lo": 24.68,
+          "fn": "Chepelare, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Devin",
+          "la": 41.74,
+          "lo": 24.4,
+          "fn": "Devin, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Dospat",
+          "la": 41.64,
+          "lo": 24.16,
+          "fn": "Dospat, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Gyovren",
+          "la": 41.66,
+          "lo": 24.38,
+          "fn": "Gyovren, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Madan",
+          "la": 41.5,
+          "lo": 24.94,
+          "fn": "Madan, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Nedelino",
+          "la": 41.46,
+          "lo": 25.08,
+          "fn": "Nedelino, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Banite",
+          "la": 41.7,
+          "lo": 25.0,
+          "fn": "Obshtina Banite, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Borino",
+          "la": 41.65,
+          "lo": 24.32,
+          "fn": "Obshtina Borino, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Chepelare",
+          "la": 41.8,
+          "lo": 24.68,
+          "fn": "Obshtina Chepelare, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Devin",
+          "la": 41.74,
+          "lo": 24.4,
+          "fn": "Obshtina Devin, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Dospat",
+          "la": 41.63,
+          "lo": 24.19,
+          "fn": "Obshtina Dospat, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Madan",
+          "la": 41.53,
+          "lo": 24.97,
+          "fn": "Obshtina Madan, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Nedelino",
+          "la": 41.47,
+          "lo": 25.09,
+          "fn": "Obshtina Nedelino, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Rudozem",
+          "la": 41.45,
+          "lo": 24.84,
+          "fn": "Obshtina Rudozem, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Smolyan",
+          "la": 41.58,
+          "lo": 24.71,
+          "fn": "Obshtina Smolyan, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Zlatograd",
+          "la": 41.4,
+          "lo": 25.05,
+          "fn": "Obshtina Zlatograd, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Rudozem",
+          "la": 41.49,
+          "lo": 24.85,
+          "fn": "Rudozem, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Smolyan",
+          "la": 41.57,
+          "lo": 24.71,
+          "fn": "Smolyan, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Zlatograd",
+          "la": 41.38,
+          "lo": 25.1,
+          "fn": "Zlatograd, Smolyan",
+          "s": "Smolyan"
+        }
+      ]
+    },
+    {
+      "n": "Smolyan",
+      "la": 41.58,
+      "lo": 24.7,
+      "sc": "21",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Banite",
+          "la": 41.62,
+          "lo": 25.02,
+          "fn": "Banite, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Borino",
+          "la": 41.68,
+          "lo": 24.29,
+          "fn": "Borino, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Chepelare",
+          "la": 41.73,
+          "lo": 24.68,
+          "fn": "Chepelare, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Devin",
+          "la": 41.74,
+          "lo": 24.4,
+          "fn": "Devin, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Dospat",
+          "la": 41.64,
+          "lo": 24.16,
+          "fn": "Dospat, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Gyovren",
+          "la": 41.66,
+          "lo": 24.38,
+          "fn": "Gyovren, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Madan",
+          "la": 41.5,
+          "lo": 24.94,
+          "fn": "Madan, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Nedelino",
+          "la": 41.46,
+          "lo": 25.08,
+          "fn": "Nedelino, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Banite",
+          "la": 41.7,
+          "lo": 25.0,
+          "fn": "Obshtina Banite, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Borino",
+          "la": 41.65,
+          "lo": 24.32,
+          "fn": "Obshtina Borino, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Chepelare",
+          "la": 41.8,
+          "lo": 24.68,
+          "fn": "Obshtina Chepelare, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Devin",
+          "la": 41.74,
+          "lo": 24.4,
+          "fn": "Obshtina Devin, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Dospat",
+          "la": 41.63,
+          "lo": 24.19,
+          "fn": "Obshtina Dospat, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Madan",
+          "la": 41.53,
+          "lo": 24.97,
+          "fn": "Obshtina Madan, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Nedelino",
+          "la": 41.47,
+          "lo": 25.09,
+          "fn": "Obshtina Nedelino, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Rudozem",
+          "la": 41.45,
+          "lo": 24.84,
+          "fn": "Obshtina Rudozem, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Smolyan",
+          "la": 41.58,
+          "lo": 24.71,
+          "fn": "Obshtina Smolyan, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Obshtina Zlatograd",
+          "la": 41.4,
+          "lo": 25.05,
+          "fn": "Obshtina Zlatograd, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Rudozem",
+          "la": 41.49,
+          "lo": 24.85,
+          "fn": "Rudozem, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Smolyan",
+          "la": 41.57,
+          "lo": 24.71,
+          "fn": "Smolyan, Smolyan",
+          "s": "Smolyan"
+        },
+        {
+          "n": "Zlatograd",
+          "la": 41.38,
+          "lo": 25.1,
+          "fn": "Zlatograd, Smolyan",
+          "s": "Smolyan"
+        }
+      ]
+    },
+    {
+      "n": "Sofia",
+      "la": 42.67,
+      "lo": 23.83,
+      "sc": "23",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Anton",
+          "la": 42.75,
+          "lo": 24.28,
+          "fn": "Anton, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Botevgrad",
+          "la": 42.9,
+          "lo": 23.78,
+          "fn": "Botevgrad, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Bozhurishte",
+          "la": 42.75,
+          "lo": 23.2,
+          "fn": "Bozhurishte, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Chavdar",
+          "la": 42.65,
+          "lo": 24.05,
+          "fn": "Chavdar, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Chelopech",
+          "la": 42.7,
+          "lo": 24.08,
+          "fn": "Chelopech, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Dolna Banya",
+          "la": 42.3,
+          "lo": 23.77,
+          "fn": "Dolna Banya, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Dragoman",
+          "la": 42.92,
+          "lo": 22.93,
+          "fn": "Dragoman, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Elin Pelin",
+          "la": 42.67,
+          "lo": 23.6,
+          "fn": "Elin Pelin, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Etropole",
+          "la": 42.83,
+          "lo": 24.0,
+          "fn": "Etropole, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Godech",
+          "la": 43.02,
+          "lo": 23.05,
+          "fn": "Godech, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Gorna Malina",
+          "la": 42.68,
+          "lo": 23.7,
+          "fn": "Gorna Malina, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Ihtiman",
+          "la": 42.43,
+          "lo": 23.82,
+          "fn": "Ihtiman, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Koprivshtitsa",
+          "la": 42.63,
+          "lo": 24.35,
+          "fn": "Koprivshtitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Kostinbrod",
+          "la": 42.82,
+          "lo": 23.22,
+          "fn": "Kostinbrod, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Lakatnik",
+          "la": 43.05,
+          "lo": 23.4,
+          "fn": "Lakatnik, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Mirkovo",
+          "la": 42.7,
+          "lo": 23.98,
+          "fn": "Mirkovo, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Anton",
+          "la": 42.77,
+          "lo": 24.3,
+          "fn": "Obshtina Anton, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Botevgrad",
+          "la": 42.95,
+          "lo": 23.75,
+          "fn": "Obshtina Botevgrad, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Bozhurishte",
+          "la": 42.78,
+          "lo": 23.12,
+          "fn": "Obshtina Bozhurishte, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Chavdar",
+          "la": 42.62,
+          "lo": 24.08,
+          "fn": "Obshtina Chavdar, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Chelopech",
+          "la": 42.72,
+          "lo": 24.07,
+          "fn": "Obshtina Chelopech, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Dolna Banya",
+          "la": 42.3,
+          "lo": 23.77,
+          "fn": "Obshtina Dolna Banya, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Dragoman",
+          "la": 42.93,
+          "lo": 22.93,
+          "fn": "Obshtina Dragoman, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Elin Pelin",
+          "la": 42.67,
+          "lo": 23.6,
+          "fn": "Obshtina Elin Pelin, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Etropole",
+          "la": 42.85,
+          "lo": 24.03,
+          "fn": "Obshtina Etropole, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Gorna Malina",
+          "la": 42.72,
+          "lo": 23.8,
+          "fn": "Obshtina Gorna Malina, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Koprivshtitsa",
+          "la": 42.62,
+          "lo": 24.38,
+          "fn": "Obshtina Koprivshtitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Kostenets",
+          "la": 42.3,
+          "lo": 23.87,
+          "fn": "Obshtina Kostenets, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Kostinbrod",
+          "la": 42.88,
+          "lo": 23.2,
+          "fn": "Obshtina Kostinbrod, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Mirkovo",
+          "la": 42.67,
+          "lo": 23.97,
+          "fn": "Obshtina Mirkovo, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Pirdop",
+          "la": 42.7,
+          "lo": 24.23,
+          "fn": "Obshtina Pirdop, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Pravets",
+          "la": 42.97,
+          "lo": 23.98,
+          "fn": "Obshtina Pravets, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Samokov",
+          "la": 42.33,
+          "lo": 23.55,
+          "fn": "Obshtina Samokov, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Slivnitsa",
+          "la": 42.85,
+          "lo": 22.98,
+          "fn": "Obshtina Slivnitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Svoge",
+          "la": 43.0,
+          "lo": 23.4,
+          "fn": "Obshtina Svoge, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Zlatitsa",
+          "la": 42.7,
+          "lo": 24.13,
+          "fn": "Obshtina Zlatitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Pirdop",
+          "la": 42.7,
+          "lo": 24.18,
+          "fn": "Pirdop, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Pravets",
+          "la": 42.88,
+          "lo": 23.92,
+          "fn": "Pravets, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Samokov",
+          "la": 42.34,
+          "lo": 23.55,
+          "fn": "Samokov, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Slivnitsa",
+          "la": 42.85,
+          "lo": 23.04,
+          "fn": "Slivnitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Svoge",
+          "la": 42.97,
+          "lo": 23.35,
+          "fn": "Svoge, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Zlatitsa",
+          "la": 42.72,
+          "lo": 24.13,
+          "fn": "Zlatitsa, Sofia",
+          "s": "Sofia"
+        }
+      ]
+    },
+    {
+      "n": "Sofia",
+      "la": 42.67,
+      "lo": 23.83,
+      "sc": "23",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Anton",
+          "la": 42.75,
+          "lo": 24.28,
+          "fn": "Anton, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Botevgrad",
+          "la": 42.9,
+          "lo": 23.78,
+          "fn": "Botevgrad, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Bozhurishte",
+          "la": 42.75,
+          "lo": 23.2,
+          "fn": "Bozhurishte, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Chavdar",
+          "la": 42.65,
+          "lo": 24.05,
+          "fn": "Chavdar, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Chelopech",
+          "la": 42.7,
+          "lo": 24.08,
+          "fn": "Chelopech, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Dolna Banya",
+          "la": 42.3,
+          "lo": 23.77,
+          "fn": "Dolna Banya, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Dragoman",
+          "la": 42.92,
+          "lo": 22.93,
+          "fn": "Dragoman, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Elin Pelin",
+          "la": 42.67,
+          "lo": 23.6,
+          "fn": "Elin Pelin, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Etropole",
+          "la": 42.83,
+          "lo": 24.0,
+          "fn": "Etropole, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Godech",
+          "la": 43.02,
+          "lo": 23.05,
+          "fn": "Godech, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Gorna Malina",
+          "la": 42.68,
+          "lo": 23.7,
+          "fn": "Gorna Malina, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Ihtiman",
+          "la": 42.43,
+          "lo": 23.82,
+          "fn": "Ihtiman, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Koprivshtitsa",
+          "la": 42.63,
+          "lo": 24.35,
+          "fn": "Koprivshtitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Kostinbrod",
+          "la": 42.82,
+          "lo": 23.22,
+          "fn": "Kostinbrod, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Lakatnik",
+          "la": 43.05,
+          "lo": 23.4,
+          "fn": "Lakatnik, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Mirkovo",
+          "la": 42.7,
+          "lo": 23.98,
+          "fn": "Mirkovo, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Anton",
+          "la": 42.77,
+          "lo": 24.3,
+          "fn": "Obshtina Anton, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Botevgrad",
+          "la": 42.95,
+          "lo": 23.75,
+          "fn": "Obshtina Botevgrad, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Bozhurishte",
+          "la": 42.78,
+          "lo": 23.12,
+          "fn": "Obshtina Bozhurishte, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Chavdar",
+          "la": 42.62,
+          "lo": 24.08,
+          "fn": "Obshtina Chavdar, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Chelopech",
+          "la": 42.72,
+          "lo": 24.07,
+          "fn": "Obshtina Chelopech, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Dolna Banya",
+          "la": 42.3,
+          "lo": 23.77,
+          "fn": "Obshtina Dolna Banya, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Dragoman",
+          "la": 42.93,
+          "lo": 22.93,
+          "fn": "Obshtina Dragoman, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Elin Pelin",
+          "la": 42.67,
+          "lo": 23.6,
+          "fn": "Obshtina Elin Pelin, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Etropole",
+          "la": 42.85,
+          "lo": 24.03,
+          "fn": "Obshtina Etropole, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Gorna Malina",
+          "la": 42.72,
+          "lo": 23.8,
+          "fn": "Obshtina Gorna Malina, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Koprivshtitsa",
+          "la": 42.62,
+          "lo": 24.38,
+          "fn": "Obshtina Koprivshtitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Kostenets",
+          "la": 42.3,
+          "lo": 23.87,
+          "fn": "Obshtina Kostenets, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Kostinbrod",
+          "la": 42.88,
+          "lo": 23.2,
+          "fn": "Obshtina Kostinbrod, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Mirkovo",
+          "la": 42.67,
+          "lo": 23.97,
+          "fn": "Obshtina Mirkovo, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Pirdop",
+          "la": 42.7,
+          "lo": 24.23,
+          "fn": "Obshtina Pirdop, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Pravets",
+          "la": 42.97,
+          "lo": 23.98,
+          "fn": "Obshtina Pravets, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Samokov",
+          "la": 42.33,
+          "lo": 23.55,
+          "fn": "Obshtina Samokov, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Slivnitsa",
+          "la": 42.85,
+          "lo": 22.98,
+          "fn": "Obshtina Slivnitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Svoge",
+          "la": 43.0,
+          "lo": 23.4,
+          "fn": "Obshtina Svoge, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Obshtina Zlatitsa",
+          "la": 42.7,
+          "lo": 24.13,
+          "fn": "Obshtina Zlatitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Pirdop",
+          "la": 42.7,
+          "lo": 24.18,
+          "fn": "Pirdop, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Pravets",
+          "la": 42.88,
+          "lo": 23.92,
+          "fn": "Pravets, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Samokov",
+          "la": 42.34,
+          "lo": 23.55,
+          "fn": "Samokov, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Slivnitsa",
+          "la": 42.85,
+          "lo": 23.04,
+          "fn": "Slivnitsa, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Svoge",
+          "la": 42.97,
+          "lo": 23.35,
+          "fn": "Svoge, Sofia",
+          "s": "Sofia"
+        },
+        {
+          "n": "Zlatitsa",
+          "la": 42.72,
+          "lo": 24.13,
+          "fn": "Zlatitsa, Sofia",
+          "s": "Sofia"
+        }
+      ]
+    },
+    {
+      "n": "Sofia City",
+      "la": 42.76,
+      "lo": 23.45,
+      "sc": "22",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Buhovo",
+          "la": 42.77,
+          "lo": 23.57,
+          "fn": "Buhovo, Sofia City",
+          "s": "Sofia City"
+        },
+        {
+          "n": "Sofia",
+          "la": 42.7,
+          "lo": 23.32,
+          "fn": "Sofia, Sofia City",
+          "s": "Sofia City"
+        },
+        {
+          "n": "Stolichna Obshtina",
+          "la": 42.69,
+          "lo": 23.31,
+          "fn": "Stolichna Obshtina, Sofia City",
+          "s": "Sofia City"
+        }
+      ]
+    },
+    {
+      "n": "Sofia City",
+      "la": 42.76,
+      "lo": 23.45,
+      "sc": "22",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Buhovo",
+          "la": 42.77,
+          "lo": 23.57,
+          "fn": "Buhovo, Sofia City",
+          "s": "Sofia City"
+        },
+        {
+          "n": "Sofia",
+          "la": 42.7,
+          "lo": 23.32,
+          "fn": "Sofia, Sofia City",
+          "s": "Sofia City"
+        },
+        {
+          "n": "Stolichna Obshtina",
+          "la": 42.69,
+          "lo": 23.31,
+          "fn": "Stolichna Obshtina, Sofia City",
+          "s": "Sofia City"
+        }
+      ]
+    },
+    {
+      "n": "Stara Zagora",
+      "la": 42.43,
+      "lo": 25.63,
+      "sc": "24",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Asen",
+          "la": 42.65,
+          "lo": 25.2,
+          "fn": "Asen, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Chirpan",
+          "la": 42.2,
+          "lo": 25.33,
+          "fn": "Chirpan, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Gŭlŭbovo",
+          "la": 42.13,
+          "lo": 25.85,
+          "fn": "Gŭlŭbovo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Gurkovo",
+          "la": 42.67,
+          "lo": 25.8,
+          "fn": "Gurkovo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Kazanlak",
+          "la": 42.62,
+          "lo": 25.4,
+          "fn": "Kazanlak, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Maglizh",
+          "la": 42.6,
+          "lo": 25.55,
+          "fn": "Maglizh, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Nikolaevo",
+          "la": 42.63,
+          "lo": 25.8,
+          "fn": "Nikolaevo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Bratya Daskalovi",
+          "la": 42.3,
+          "lo": 25.22,
+          "fn": "Obshtina Bratya Daskalovi, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Chirpan",
+          "la": 42.23,
+          "lo": 25.38,
+          "fn": "Obshtina Chirpan, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Galabovo",
+          "la": 42.15,
+          "lo": 25.97,
+          "fn": "Obshtina Galabovo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Gurkovo",
+          "la": 42.72,
+          "lo": 25.8,
+          "fn": "Obshtina Gurkovo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Kazanlŭk",
+          "la": 42.62,
+          "lo": 25.4,
+          "fn": "Obshtina Kazanlŭk, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Maglizh",
+          "la": 42.63,
+          "lo": 25.62,
+          "fn": "Obshtina Maglizh, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Nikolaevo",
+          "la": 42.6,
+          "lo": 25.78,
+          "fn": "Obshtina Nikolaevo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Opan",
+          "la": 42.22,
+          "lo": 25.7,
+          "fn": "Obshtina Opan, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Pavel Banya",
+          "la": 42.63,
+          "lo": 25.13,
+          "fn": "Obshtina Pavel Banya, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Radnevo",
+          "la": 42.3,
+          "lo": 25.93,
+          "fn": "Obshtina Radnevo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Stara Zagora",
+          "la": 42.42,
+          "lo": 25.63,
+          "fn": "Obshtina Stara Zagora, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Pavel Banya",
+          "la": 42.6,
+          "lo": 25.2,
+          "fn": "Pavel Banya, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Radnevo",
+          "la": 42.3,
+          "lo": 25.93,
+          "fn": "Radnevo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Shipka",
+          "la": 42.72,
+          "lo": 25.33,
+          "fn": "Shipka, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Stara Zagora",
+          "la": 42.43,
+          "lo": 25.64,
+          "fn": "Stara Zagora, Stara Zagora",
+          "s": "Stara Zagora"
+        }
+      ]
+    },
+    {
+      "n": "Stara Zagora",
+      "la": 42.43,
+      "lo": 25.63,
+      "sc": "24",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Asen",
+          "la": 42.65,
+          "lo": 25.2,
+          "fn": "Asen, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Chirpan",
+          "la": 42.2,
+          "lo": 25.33,
+          "fn": "Chirpan, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Gŭlŭbovo",
+          "la": 42.13,
+          "lo": 25.85,
+          "fn": "Gŭlŭbovo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Gurkovo",
+          "la": 42.67,
+          "lo": 25.8,
+          "fn": "Gurkovo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Kazanlak",
+          "la": 42.62,
+          "lo": 25.4,
+          "fn": "Kazanlak, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Maglizh",
+          "la": 42.6,
+          "lo": 25.55,
+          "fn": "Maglizh, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Nikolaevo",
+          "la": 42.63,
+          "lo": 25.8,
+          "fn": "Nikolaevo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Bratya Daskalovi",
+          "la": 42.3,
+          "lo": 25.22,
+          "fn": "Obshtina Bratya Daskalovi, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Chirpan",
+          "la": 42.23,
+          "lo": 25.38,
+          "fn": "Obshtina Chirpan, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Galabovo",
+          "la": 42.15,
+          "lo": 25.97,
+          "fn": "Obshtina Galabovo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Gurkovo",
+          "la": 42.72,
+          "lo": 25.8,
+          "fn": "Obshtina Gurkovo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Kazanlŭk",
+          "la": 42.62,
+          "lo": 25.4,
+          "fn": "Obshtina Kazanlŭk, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Maglizh",
+          "la": 42.63,
+          "lo": 25.62,
+          "fn": "Obshtina Maglizh, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Nikolaevo",
+          "la": 42.6,
+          "lo": 25.78,
+          "fn": "Obshtina Nikolaevo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Opan",
+          "la": 42.22,
+          "lo": 25.7,
+          "fn": "Obshtina Opan, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Pavel Banya",
+          "la": 42.63,
+          "lo": 25.13,
+          "fn": "Obshtina Pavel Banya, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Radnevo",
+          "la": 42.3,
+          "lo": 25.93,
+          "fn": "Obshtina Radnevo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Obshtina Stara Zagora",
+          "la": 42.42,
+          "lo": 25.63,
+          "fn": "Obshtina Stara Zagora, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Pavel Banya",
+          "la": 42.6,
+          "lo": 25.2,
+          "fn": "Pavel Banya, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Radnevo",
+          "la": 42.3,
+          "lo": 25.93,
+          "fn": "Radnevo, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Shipka",
+          "la": 42.72,
+          "lo": 25.33,
+          "fn": "Shipka, Stara Zagora",
+          "s": "Stara Zagora"
+        },
+        {
+          "n": "Stara Zagora",
+          "la": 42.43,
+          "lo": 25.64,
+          "fn": "Stara Zagora, Stara Zagora",
+          "s": "Stara Zagora"
+        }
+      ]
+    },
+    {
+      "n": "Targovishte",
+      "la": 43.25,
+      "lo": 26.57,
+      "sc": "25",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Antonovo",
+          "la": 43.15,
+          "lo": 26.17,
+          "fn": "Antonovo, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Antonovo",
+          "la": 43.12,
+          "lo": 26.2,
+          "fn": "Obshtina Antonovo, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Omurtag",
+          "la": 43.08,
+          "lo": 26.48,
+          "fn": "Obshtina Omurtag, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Opaka",
+          "la": 43.47,
+          "lo": 26.15,
+          "fn": "Obshtina Opaka, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Popovo",
+          "la": 43.35,
+          "lo": 26.23,
+          "fn": "Obshtina Popovo, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Targovishte",
+          "la": 43.25,
+          "lo": 26.57,
+          "fn": "Obshtina Targovishte, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Omurtag",
+          "la": 43.1,
+          "lo": 26.42,
+          "fn": "Omurtag, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Opaka",
+          "la": 43.45,
+          "lo": 26.17,
+          "fn": "Opaka, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Popovo",
+          "la": 43.35,
+          "lo": 26.23,
+          "fn": "Popovo, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Targovishte",
+          "la": 43.25,
+          "lo": 26.57,
+          "fn": "Targovishte, Targovishte",
+          "s": "Targovishte"
+        }
+      ]
+    },
+    {
+      "n": "Targovishte",
+      "la": 43.25,
+      "lo": 26.57,
+      "sc": "25",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Antonovo",
+          "la": 43.15,
+          "lo": 26.17,
+          "fn": "Antonovo, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Antonovo",
+          "la": 43.12,
+          "lo": 26.2,
+          "fn": "Obshtina Antonovo, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Omurtag",
+          "la": 43.08,
+          "lo": 26.48,
+          "fn": "Obshtina Omurtag, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Opaka",
+          "la": 43.47,
+          "lo": 26.15,
+          "fn": "Obshtina Opaka, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Popovo",
+          "la": 43.35,
+          "lo": 26.23,
+          "fn": "Obshtina Popovo, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Obshtina Targovishte",
+          "la": 43.25,
+          "lo": 26.57,
+          "fn": "Obshtina Targovishte, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Omurtag",
+          "la": 43.1,
+          "lo": 26.42,
+          "fn": "Omurtag, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Opaka",
+          "la": 43.45,
+          "lo": 26.17,
+          "fn": "Opaka, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Popovo",
+          "la": 43.35,
+          "lo": 26.23,
+          "fn": "Popovo, Targovishte",
+          "s": "Targovishte"
+        },
+        {
+          "n": "Targovishte",
+          "la": 43.25,
+          "lo": 26.57,
+          "fn": "Targovishte, Targovishte",
+          "s": "Targovishte"
+        }
+      ]
+    },
+    {
+      "n": "Varna",
+      "la": 43.2,
+      "lo": 27.91,
+      "sc": "03",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Aksakovo",
+          "la": 43.26,
+          "lo": 27.82,
+          "fn": "Aksakovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Asparuhovo",
+          "la": 43.18,
+          "lo": 27.89,
+          "fn": "Asparuhovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Balgarevo",
+          "la": 43.4,
+          "lo": 28.41,
+          "fn": "Balgarevo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Beloslav",
+          "la": 43.19,
+          "lo": 27.7,
+          "fn": "Beloslav, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Byala",
+          "la": 42.87,
+          "lo": 27.89,
+          "fn": "Byala, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Dalgopol",
+          "la": 43.05,
+          "lo": 27.35,
+          "fn": "Dalgopol, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Devnya",
+          "la": 43.22,
+          "lo": 27.57,
+          "fn": "Devnya, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Dolni Chiflik",
+          "la": 42.99,
+          "lo": 27.72,
+          "fn": "Dolni Chiflik, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Kiten",
+          "la": 43.08,
+          "lo": 27.32,
+          "fn": "Kiten, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Aksakovo",
+          "la": 43.32,
+          "lo": 27.85,
+          "fn": "Obshtina Aksakovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Avren",
+          "la": 43.1,
+          "lo": 27.72,
+          "fn": "Obshtina Avren, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Beloslav",
+          "la": 43.2,
+          "lo": 27.73,
+          "fn": "Obshtina Beloslav, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Byala",
+          "la": 42.88,
+          "lo": 27.82,
+          "fn": "Obshtina Byala, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Dalgopol",
+          "la": 43.05,
+          "lo": 27.35,
+          "fn": "Obshtina Dalgopol, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Devnya",
+          "la": 43.22,
+          "lo": 27.6,
+          "fn": "Obshtina Devnya, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Dolni Chiflik",
+          "la": 42.97,
+          "lo": 27.68,
+          "fn": "Obshtina Dolni Chiflik, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Provadia",
+          "la": 43.18,
+          "lo": 27.4,
+          "fn": "Obshtina Provadia, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Suvorovo",
+          "la": 43.33,
+          "lo": 27.65,
+          "fn": "Obshtina Suvorovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Valchidol",
+          "la": 43.45,
+          "lo": 27.5,
+          "fn": "Obshtina Valchidol, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Varna",
+          "la": 43.22,
+          "lo": 27.92,
+          "fn": "Obshtina Varna, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Vetrino",
+          "la": 43.32,
+          "lo": 27.43,
+          "fn": "Obshtina Vetrino, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Provadia",
+          "la": 43.18,
+          "lo": 27.43,
+          "fn": "Provadia, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Suvorovo",
+          "la": 43.33,
+          "lo": 27.6,
+          "fn": "Suvorovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Valchidol",
+          "la": 43.4,
+          "lo": 27.55,
+          "fn": "Valchidol, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Varna",
+          "la": 43.22,
+          "lo": 27.92,
+          "fn": "Varna, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Vetrino",
+          "la": 43.32,
+          "lo": 27.43,
+          "fn": "Vetrino, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Zlatni Pyasatsi",
+          "la": 43.28,
+          "lo": 28.04,
+          "fn": "Zlatni Pyasatsi, Varna",
+          "s": "Varna"
+        }
+      ]
+    },
+    {
+      "n": "Varna",
+      "la": 43.2,
+      "lo": 27.91,
+      "sc": "03",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Aksakovo",
+          "la": 43.26,
+          "lo": 27.82,
+          "fn": "Aksakovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Asparuhovo",
+          "la": 43.18,
+          "lo": 27.89,
+          "fn": "Asparuhovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Balgarevo",
+          "la": 43.4,
+          "lo": 28.41,
+          "fn": "Balgarevo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Beloslav",
+          "la": 43.19,
+          "lo": 27.7,
+          "fn": "Beloslav, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Byala",
+          "la": 42.87,
+          "lo": 27.89,
+          "fn": "Byala, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Dalgopol",
+          "la": 43.05,
+          "lo": 27.35,
+          "fn": "Dalgopol, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Devnya",
+          "la": 43.22,
+          "lo": 27.57,
+          "fn": "Devnya, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Dolni Chiflik",
+          "la": 42.99,
+          "lo": 27.72,
+          "fn": "Dolni Chiflik, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Kiten",
+          "la": 43.08,
+          "lo": 27.32,
+          "fn": "Kiten, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Aksakovo",
+          "la": 43.32,
+          "lo": 27.85,
+          "fn": "Obshtina Aksakovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Avren",
+          "la": 43.1,
+          "lo": 27.72,
+          "fn": "Obshtina Avren, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Beloslav",
+          "la": 43.2,
+          "lo": 27.73,
+          "fn": "Obshtina Beloslav, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Byala",
+          "la": 42.88,
+          "lo": 27.82,
+          "fn": "Obshtina Byala, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Dalgopol",
+          "la": 43.05,
+          "lo": 27.35,
+          "fn": "Obshtina Dalgopol, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Devnya",
+          "la": 43.22,
+          "lo": 27.6,
+          "fn": "Obshtina Devnya, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Dolni Chiflik",
+          "la": 42.97,
+          "lo": 27.68,
+          "fn": "Obshtina Dolni Chiflik, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Provadia",
+          "la": 43.18,
+          "lo": 27.4,
+          "fn": "Obshtina Provadia, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Suvorovo",
+          "la": 43.33,
+          "lo": 27.65,
+          "fn": "Obshtina Suvorovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Valchidol",
+          "la": 43.45,
+          "lo": 27.5,
+          "fn": "Obshtina Valchidol, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Varna",
+          "la": 43.22,
+          "lo": 27.92,
+          "fn": "Obshtina Varna, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Obshtina Vetrino",
+          "la": 43.32,
+          "lo": 27.43,
+          "fn": "Obshtina Vetrino, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Provadia",
+          "la": 43.18,
+          "lo": 27.43,
+          "fn": "Provadia, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Suvorovo",
+          "la": 43.33,
+          "lo": 27.6,
+          "fn": "Suvorovo, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Valchidol",
+          "la": 43.4,
+          "lo": 27.55,
+          "fn": "Valchidol, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Varna",
+          "la": 43.22,
+          "lo": 27.92,
+          "fn": "Varna, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Vetrino",
+          "la": 43.32,
+          "lo": 27.43,
+          "fn": "Vetrino, Varna",
+          "s": "Varna"
+        },
+        {
+          "n": "Zlatni Pyasatsi",
+          "la": 43.28,
+          "lo": 28.04,
+          "fn": "Zlatni Pyasatsi, Varna",
+          "s": "Varna"
+        }
+      ]
+    },
+    {
+      "n": "Veliko Tarnovo",
+      "la": 43.08,
+      "lo": 25.62,
+      "sc": "04",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Byala Cherkva",
+          "la": 43.2,
+          "lo": 25.3,
+          "fn": "Byala Cherkva, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Debelets",
+          "la": 43.03,
+          "lo": 25.62,
+          "fn": "Debelets, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Elena",
+          "la": 42.93,
+          "lo": 25.88,
+          "fn": "Elena, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Gorna Oryahovitsa",
+          "la": 43.13,
+          "lo": 25.7,
+          "fn": "Gorna Oryahovitsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Kilifarevo",
+          "la": 42.98,
+          "lo": 25.63,
+          "fn": "Kilifarevo, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Lyaskovets",
+          "la": 43.11,
+          "lo": 25.73,
+          "fn": "Lyaskovets, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Elena",
+          "la": 42.92,
+          "lo": 25.95,
+          "fn": "Obshtina Elena, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Gorna Oryahovitsa",
+          "la": 43.22,
+          "lo": 25.75,
+          "fn": "Obshtina Gorna Oryahovitsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Lyaskovets",
+          "la": 43.13,
+          "lo": 25.85,
+          "fn": "Obshtina Lyaskovets, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Pavlikeni",
+          "la": 43.28,
+          "lo": 25.35,
+          "fn": "Obshtina Pavlikeni, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Polski Trambesh",
+          "la": 43.35,
+          "lo": 25.58,
+          "fn": "Obshtina Polski Trambesh, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Strazhitsa",
+          "la": 43.27,
+          "lo": 25.98,
+          "fn": "Obshtina Strazhitsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Suhindol",
+          "la": 43.17,
+          "lo": 25.2,
+          "fn": "Obshtina Suhindol, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Svishtov",
+          "la": 43.53,
+          "lo": 25.35,
+          "fn": "Obshtina Svishtov, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Veliko Tŭrnovo",
+          "la": 43.08,
+          "lo": 25.63,
+          "fn": "Obshtina Veliko Tŭrnovo, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Zlataritsa",
+          "la": 43.07,
+          "lo": 25.98,
+          "fn": "Obshtina Zlataritsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Parvomaytsi",
+          "la": 43.15,
+          "lo": 25.65,
+          "fn": "Parvomaytsi, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Pavlikeni",
+          "la": 43.24,
+          "lo": 25.32,
+          "fn": "Pavlikeni, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Polski Trambesh",
+          "la": 43.37,
+          "lo": 25.64,
+          "fn": "Polski Trambesh, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Strazhitsa",
+          "la": 43.23,
+          "lo": 25.97,
+          "fn": "Strazhitsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Suhindol",
+          "la": 43.19,
+          "lo": 25.18,
+          "fn": "Suhindol, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Svishtov",
+          "la": 43.62,
+          "lo": 25.35,
+          "fn": "Svishtov, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Veliko Tŭrnovo",
+          "la": 43.08,
+          "lo": 25.63,
+          "fn": "Veliko Tŭrnovo, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Zlataritsa",
+          "la": 43.05,
+          "lo": 25.9,
+          "fn": "Zlataritsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        }
+      ]
+    },
+    {
+      "n": "Veliko Tarnovo",
+      "la": 43.08,
+      "lo": 25.62,
+      "sc": "04",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Byala Cherkva",
+          "la": 43.2,
+          "lo": 25.3,
+          "fn": "Byala Cherkva, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Debelets",
+          "la": 43.03,
+          "lo": 25.62,
+          "fn": "Debelets, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Elena",
+          "la": 42.93,
+          "lo": 25.88,
+          "fn": "Elena, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Gorna Oryahovitsa",
+          "la": 43.13,
+          "lo": 25.7,
+          "fn": "Gorna Oryahovitsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Kilifarevo",
+          "la": 42.98,
+          "lo": 25.63,
+          "fn": "Kilifarevo, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Lyaskovets",
+          "la": 43.11,
+          "lo": 25.73,
+          "fn": "Lyaskovets, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Elena",
+          "la": 42.92,
+          "lo": 25.95,
+          "fn": "Obshtina Elena, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Gorna Oryahovitsa",
+          "la": 43.22,
+          "lo": 25.75,
+          "fn": "Obshtina Gorna Oryahovitsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Lyaskovets",
+          "la": 43.13,
+          "lo": 25.85,
+          "fn": "Obshtina Lyaskovets, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Pavlikeni",
+          "la": 43.28,
+          "lo": 25.35,
+          "fn": "Obshtina Pavlikeni, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Polski Trambesh",
+          "la": 43.35,
+          "lo": 25.58,
+          "fn": "Obshtina Polski Trambesh, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Strazhitsa",
+          "la": 43.27,
+          "lo": 25.98,
+          "fn": "Obshtina Strazhitsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Suhindol",
+          "la": 43.17,
+          "lo": 25.2,
+          "fn": "Obshtina Suhindol, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Svishtov",
+          "la": 43.53,
+          "lo": 25.35,
+          "fn": "Obshtina Svishtov, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Veliko Tŭrnovo",
+          "la": 43.08,
+          "lo": 25.63,
+          "fn": "Obshtina Veliko Tŭrnovo, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Obshtina Zlataritsa",
+          "la": 43.07,
+          "lo": 25.98,
+          "fn": "Obshtina Zlataritsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Parvomaytsi",
+          "la": 43.15,
+          "lo": 25.65,
+          "fn": "Parvomaytsi, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Pavlikeni",
+          "la": 43.24,
+          "lo": 25.32,
+          "fn": "Pavlikeni, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Polski Trambesh",
+          "la": 43.37,
+          "lo": 25.64,
+          "fn": "Polski Trambesh, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Strazhitsa",
+          "la": 43.23,
+          "lo": 25.97,
+          "fn": "Strazhitsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Suhindol",
+          "la": 43.19,
+          "lo": 25.18,
+          "fn": "Suhindol, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Svishtov",
+          "la": 43.62,
+          "lo": 25.35,
+          "fn": "Svishtov, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Veliko Tŭrnovo",
+          "la": 43.08,
+          "lo": 25.63,
+          "fn": "Veliko Tŭrnovo, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        },
+        {
+          "n": "Zlataritsa",
+          "la": 43.05,
+          "lo": 25.9,
+          "fn": "Zlataritsa, Veliko Tarnovo",
+          "s": "Veliko Tarnovo"
+        }
+      ]
+    },
+    {
+      "n": "Vidin",
+      "la": 44.0,
+      "lo": 22.87,
+      "sc": "05",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Belogradchik",
+          "la": 43.63,
+          "lo": 22.68,
+          "fn": "Belogradchik, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Boynitsa",
+          "la": 43.96,
+          "lo": 22.53,
+          "fn": "Boynitsa, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Bregovo",
+          "la": 44.15,
+          "lo": 22.64,
+          "fn": "Bregovo, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Chuprene",
+          "la": 43.52,
+          "lo": 22.67,
+          "fn": "Chuprene, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Dimovo",
+          "la": 43.74,
+          "lo": 22.73,
+          "fn": "Dimovo, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Drenovets",
+          "la": 43.69,
+          "lo": 22.97,
+          "fn": "Drenovets, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Dunavtsi",
+          "la": 43.92,
+          "lo": 22.82,
+          "fn": "Dunavtsi, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Gramada",
+          "la": 43.84,
+          "lo": 22.65,
+          "fn": "Gramada, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Kula",
+          "la": 43.89,
+          "lo": 22.52,
+          "fn": "Kula, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Makresh",
+          "la": 43.77,
+          "lo": 22.66,
+          "fn": "Makresh, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Novo Selo",
+          "la": 44.16,
+          "lo": 22.78,
+          "fn": "Novo Selo, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Belogradchik",
+          "la": 43.65,
+          "lo": 22.6,
+          "fn": "Obshtina Belogradchik, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Boynitsa",
+          "la": 44.0,
+          "lo": 22.55,
+          "fn": "Obshtina Boynitsa, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Dimovo",
+          "la": 43.75,
+          "lo": 22.82,
+          "fn": "Obshtina Dimovo, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Gramada",
+          "la": 43.83,
+          "lo": 22.65,
+          "fn": "Obshtina Gramada, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Kula",
+          "la": 43.9,
+          "lo": 22.57,
+          "fn": "Obshtina Kula, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Ruzhintsi",
+          "la": 43.65,
+          "lo": 22.9,
+          "fn": "Obshtina Ruzhintsi, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Vidin",
+          "la": 44.0,
+          "lo": 22.83,
+          "fn": "Obshtina Vidin, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Ruzhintsi",
+          "la": 43.62,
+          "lo": 22.83,
+          "fn": "Ruzhintsi, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Vidin",
+          "la": 43.99,
+          "lo": 22.88,
+          "fn": "Vidin, Vidin",
+          "s": "Vidin"
+        }
+      ]
+    },
+    {
+      "n": "Vidin",
+      "la": 44.0,
+      "lo": 22.87,
+      "sc": "05",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Belogradchik",
+          "la": 43.63,
+          "lo": 22.68,
+          "fn": "Belogradchik, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Boynitsa",
+          "la": 43.96,
+          "lo": 22.53,
+          "fn": "Boynitsa, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Bregovo",
+          "la": 44.15,
+          "lo": 22.64,
+          "fn": "Bregovo, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Chuprene",
+          "la": 43.52,
+          "lo": 22.67,
+          "fn": "Chuprene, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Dimovo",
+          "la": 43.74,
+          "lo": 22.73,
+          "fn": "Dimovo, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Drenovets",
+          "la": 43.69,
+          "lo": 22.97,
+          "fn": "Drenovets, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Dunavtsi",
+          "la": 43.92,
+          "lo": 22.82,
+          "fn": "Dunavtsi, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Gramada",
+          "la": 43.84,
+          "lo": 22.65,
+          "fn": "Gramada, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Kula",
+          "la": 43.89,
+          "lo": 22.52,
+          "fn": "Kula, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Makresh",
+          "la": 43.77,
+          "lo": 22.66,
+          "fn": "Makresh, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Novo Selo",
+          "la": 44.16,
+          "lo": 22.78,
+          "fn": "Novo Selo, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Belogradchik",
+          "la": 43.65,
+          "lo": 22.6,
+          "fn": "Obshtina Belogradchik, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Boynitsa",
+          "la": 44.0,
+          "lo": 22.55,
+          "fn": "Obshtina Boynitsa, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Dimovo",
+          "la": 43.75,
+          "lo": 22.82,
+          "fn": "Obshtina Dimovo, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Gramada",
+          "la": 43.83,
+          "lo": 22.65,
+          "fn": "Obshtina Gramada, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Kula",
+          "la": 43.9,
+          "lo": 22.57,
+          "fn": "Obshtina Kula, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Ruzhintsi",
+          "la": 43.65,
+          "lo": 22.9,
+          "fn": "Obshtina Ruzhintsi, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Obshtina Vidin",
+          "la": 44.0,
+          "lo": 22.83,
+          "fn": "Obshtina Vidin, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Ruzhintsi",
+          "la": 43.62,
+          "lo": 22.83,
+          "fn": "Ruzhintsi, Vidin",
+          "s": "Vidin"
+        },
+        {
+          "n": "Vidin",
+          "la": 43.99,
+          "lo": 22.88,
+          "fn": "Vidin, Vidin",
+          "s": "Vidin"
+        }
+      ]
+    },
+    {
+      "n": "Vratsa",
+      "la": 43.21,
+      "lo": 23.55,
+      "sc": "06",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Borovan",
+          "la": 43.43,
+          "lo": 23.75,
+          "fn": "Borovan, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Byala Slatina",
+          "la": 43.47,
+          "lo": 23.93,
+          "fn": "Byala Slatina, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Hayredin",
+          "la": 43.6,
+          "lo": 23.66,
+          "fn": "Hayredin, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Kozloduy",
+          "la": 43.78,
+          "lo": 23.72,
+          "fn": "Kozloduy, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Krivodol",
+          "la": 43.37,
+          "lo": 23.48,
+          "fn": "Krivodol, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Mezdra",
+          "la": 43.15,
+          "lo": 23.7,
+          "fn": "Mezdra, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Mizia",
+          "la": 43.69,
+          "lo": 23.85,
+          "fn": "Mizia, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Borovan",
+          "la": 43.43,
+          "lo": 23.75,
+          "fn": "Obshtina Borovan, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Hayredin",
+          "la": 43.58,
+          "lo": 23.67,
+          "fn": "Obshtina Hayredin, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Kozloduy",
+          "la": 43.72,
+          "lo": 23.73,
+          "fn": "Obshtina Kozloduy, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Krivodol",
+          "la": 43.38,
+          "lo": 23.48,
+          "fn": "Obshtina Krivodol, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Mezdra",
+          "la": 43.13,
+          "lo": 23.73,
+          "fn": "Obshtina Mezdra, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Mizia",
+          "la": 43.63,
+          "lo": 23.85,
+          "fn": "Obshtina Mizia, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Oryahovo",
+          "la": 43.69,
+          "lo": 23.99,
+          "fn": "Obshtina Oryahovo, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Roman",
+          "la": 43.15,
+          "lo": 23.92,
+          "fn": "Obshtina Roman, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Vratsa",
+          "la": 43.28,
+          "lo": 23.6,
+          "fn": "Obshtina Vratsa, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Oryahovo",
+          "la": 43.74,
+          "lo": 23.96,
+          "fn": "Oryahovo, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Roman",
+          "la": 43.15,
+          "lo": 23.92,
+          "fn": "Roman, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Vratsa",
+          "la": 43.21,
+          "lo": 23.56,
+          "fn": "Vratsa, Vratsa",
+          "s": "Vratsa"
+        }
+      ]
+    },
+    {
+      "n": "Vratsa",
+      "la": 43.21,
+      "lo": 23.55,
+      "sc": "06",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Borovan",
+          "la": 43.43,
+          "lo": 23.75,
+          "fn": "Borovan, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Byala Slatina",
+          "la": 43.47,
+          "lo": 23.93,
+          "fn": "Byala Slatina, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Hayredin",
+          "la": 43.6,
+          "lo": 23.66,
+          "fn": "Hayredin, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Kozloduy",
+          "la": 43.78,
+          "lo": 23.72,
+          "fn": "Kozloduy, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Krivodol",
+          "la": 43.37,
+          "lo": 23.48,
+          "fn": "Krivodol, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Mezdra",
+          "la": 43.15,
+          "lo": 23.7,
+          "fn": "Mezdra, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Mizia",
+          "la": 43.69,
+          "lo": 23.85,
+          "fn": "Mizia, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Borovan",
+          "la": 43.43,
+          "lo": 23.75,
+          "fn": "Obshtina Borovan, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Hayredin",
+          "la": 43.58,
+          "lo": 23.67,
+          "fn": "Obshtina Hayredin, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Kozloduy",
+          "la": 43.72,
+          "lo": 23.73,
+          "fn": "Obshtina Kozloduy, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Krivodol",
+          "la": 43.38,
+          "lo": 23.48,
+          "fn": "Obshtina Krivodol, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Mezdra",
+          "la": 43.13,
+          "lo": 23.73,
+          "fn": "Obshtina Mezdra, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Mizia",
+          "la": 43.63,
+          "lo": 23.85,
+          "fn": "Obshtina Mizia, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Oryahovo",
+          "la": 43.69,
+          "lo": 23.99,
+          "fn": "Obshtina Oryahovo, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Roman",
+          "la": 43.15,
+          "lo": 23.92,
+          "fn": "Obshtina Roman, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Obshtina Vratsa",
+          "la": 43.28,
+          "lo": 23.6,
+          "fn": "Obshtina Vratsa, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Oryahovo",
+          "la": 43.74,
+          "lo": 23.96,
+          "fn": "Oryahovo, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Roman",
+          "la": 43.15,
+          "lo": 23.92,
+          "fn": "Roman, Vratsa",
+          "s": "Vratsa"
+        },
+        {
+          "n": "Vratsa",
+          "la": 43.21,
+          "lo": 23.56,
+          "fn": "Vratsa, Vratsa",
+          "s": "Vratsa"
+        }
+      ]
+    },
+    {
+      "n": "Yambol",
+      "la": 42.48,
+      "lo": 26.5,
+      "sc": "28",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bolyarovo",
+          "la": 42.15,
+          "lo": 26.81,
+          "fn": "Bolyarovo, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Elhovo",
+          "la": 42.17,
+          "lo": 26.57,
+          "fn": "Elhovo, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Bolyarovo",
+          "la": 42.15,
+          "lo": 26.85,
+          "fn": "Obshtina Bolyarovo, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Elhovo",
+          "la": 42.12,
+          "lo": 26.62,
+          "fn": "Obshtina Elhovo, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Straldzha",
+          "la": 42.48,
+          "lo": 26.78,
+          "fn": "Obshtina Straldzha, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Tundzha",
+          "la": 42.35,
+          "lo": 26.45,
+          "fn": "Obshtina Tundzha, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Yambol",
+          "la": 42.48,
+          "lo": 26.5,
+          "fn": "Obshtina Yambol, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Straldzha",
+          "la": 42.6,
+          "lo": 26.68,
+          "fn": "Straldzha, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Yambol",
+          "la": 42.48,
+          "lo": 26.5,
+          "fn": "Yambol, Yambol",
+          "s": "Yambol"
+        }
+      ]
+    },
+    {
+      "n": "Yambol",
+      "la": 42.48,
+      "lo": 26.5,
+      "sc": "28",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bolyarovo",
+          "la": 42.15,
+          "lo": 26.81,
+          "fn": "Bolyarovo, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Elhovo",
+          "la": 42.17,
+          "lo": 26.57,
+          "fn": "Elhovo, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Bolyarovo",
+          "la": 42.15,
+          "lo": 26.85,
+          "fn": "Obshtina Bolyarovo, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Elhovo",
+          "la": 42.12,
+          "lo": 26.62,
+          "fn": "Obshtina Elhovo, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Straldzha",
+          "la": 42.48,
+          "lo": 26.78,
+          "fn": "Obshtina Straldzha, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Tundzha",
+          "la": 42.35,
+          "lo": 26.45,
+          "fn": "Obshtina Tundzha, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Obshtina Yambol",
+          "la": 42.48,
+          "lo": 26.5,
+          "fn": "Obshtina Yambol, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Straldzha",
+          "la": 42.6,
+          "lo": 26.68,
+          "fn": "Straldzha, Yambol",
+          "s": "Yambol"
+        },
+        {
+          "n": "Yambol",
+          "la": 42.48,
+          "lo": 26.5,
+          "fn": "Yambol, Yambol",
+          "s": "Yambol"
+        }
+      ]
+    }
+  ]
+}

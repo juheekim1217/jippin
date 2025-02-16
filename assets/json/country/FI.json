@@ -1,0 +1,6630 @@
+{
+  "states": [
+    {
+      "n": "Åland Islands",
+      "la": 60.18,
+      "lo": 19.92,
+      "sc": "01",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Brändö",
+          "la": 60.41,
+          "lo": 21.08,
+          "fn": "Brändö, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Eckerö",
+          "la": 60.22,
+          "lo": 19.56,
+          "fn": "Eckerö, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Finström",
+          "la": 60.23,
+          "lo": 20.11,
+          "fn": "Finström, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Föglö",
+          "la": 60.1,
+          "lo": 20.37,
+          "fn": "Föglö, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Geta",
+          "la": 60.42,
+          "lo": 19.72,
+          "fn": "Geta, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Hammarland",
+          "la": 60.24,
+          "lo": 19.69,
+          "fn": "Hammarland, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Jomala",
+          "la": 60.12,
+          "lo": 19.9,
+          "fn": "Jomala, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Kumlinge",
+          "la": 60.4,
+          "lo": 20.77,
+          "fn": "Kumlinge, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Lemland",
+          "la": 60.09,
+          "lo": 20.15,
+          "fn": "Lemland, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Mariehamn",
+          "la": 60.1,
+          "lo": 19.93,
+          "fn": "Mariehamn, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Saltvik",
+          "la": 60.36,
+          "lo": 20.15,
+          "fn": "Saltvik, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Sund",
+          "la": 60.24,
+          "lo": 20.22,
+          "fn": "Sund, Åland Islands",
+          "s": "Åland Islands"
+        }
+      ]
+    },
+    {
+      "n": "Åland Islands",
+      "la": 60.18,
+      "lo": 19.92,
+      "sc": "01",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Brändö",
+          "la": 60.41,
+          "lo": 21.08,
+          "fn": "Brändö, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Eckerö",
+          "la": 60.22,
+          "lo": 19.56,
+          "fn": "Eckerö, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Finström",
+          "la": 60.23,
+          "lo": 20.11,
+          "fn": "Finström, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Föglö",
+          "la": 60.1,
+          "lo": 20.37,
+          "fn": "Föglö, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Geta",
+          "la": 60.42,
+          "lo": 19.72,
+          "fn": "Geta, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Hammarland",
+          "la": 60.24,
+          "lo": 19.69,
+          "fn": "Hammarland, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Jomala",
+          "la": 60.12,
+          "lo": 19.9,
+          "fn": "Jomala, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Kumlinge",
+          "la": 60.4,
+          "lo": 20.77,
+          "fn": "Kumlinge, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Lemland",
+          "la": 60.09,
+          "lo": 20.15,
+          "fn": "Lemland, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Mariehamn",
+          "la": 60.1,
+          "lo": 19.93,
+          "fn": "Mariehamn, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Saltvik",
+          "la": 60.36,
+          "lo": 20.15,
+          "fn": "Saltvik, Åland Islands",
+          "s": "Åland Islands"
+        },
+        {
+          "n": "Sund",
+          "la": 60.24,
+          "lo": 20.22,
+          "fn": "Sund, Åland Islands",
+          "s": "Åland Islands"
+        }
+      ]
+    },
+    {
+      "n": "Central Finland",
+      "la": 62.57,
+      "lo": 25.55,
+      "sc": "08",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Äänekoski",
+          "la": 62.6,
+          "lo": 25.73,
+          "fn": "Äänekoski, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Hankasalmi",
+          "la": 62.38,
+          "lo": 26.43,
+          "fn": "Hankasalmi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Jämsä",
+          "la": 61.86,
+          "lo": 25.19,
+          "fn": "Jämsä, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Jämsänkoski",
+          "la": 61.92,
+          "lo": 25.17,
+          "fn": "Jämsänkoski, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Joutsa",
+          "la": 61.73,
+          "lo": 26.12,
+          "fn": "Joutsa, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Jyväskylä",
+          "la": 62.24,
+          "lo": 25.72,
+          "fn": "Jyväskylä, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kannonkoski",
+          "la": 62.97,
+          "lo": 25.25,
+          "fn": "Kannonkoski, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Karstula",
+          "la": 62.87,
+          "lo": 24.78,
+          "fn": "Karstula, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Keuruu",
+          "la": 62.27,
+          "lo": 24.7,
+          "fn": "Keuruu, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kinnula",
+          "la": 63.38,
+          "lo": 24.95,
+          "fn": "Kinnula, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kivijärvi",
+          "la": 63.12,
+          "lo": 25.08,
+          "fn": "Kivijärvi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Konnevesi",
+          "la": 62.62,
+          "lo": 26.32,
+          "fn": "Konnevesi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Korpilahti",
+          "la": 62.02,
+          "lo": 25.55,
+          "fn": "Korpilahti, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kuhmoinen",
+          "la": 61.57,
+          "lo": 25.18,
+          "fn": "Kuhmoinen, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kyyjärvi",
+          "la": 63.03,
+          "lo": 24.57,
+          "fn": "Kyyjärvi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Laukaa",
+          "la": 62.41,
+          "lo": 25.95,
+          "fn": "Laukaa, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Leivonmäki",
+          "la": 61.91,
+          "lo": 26.13,
+          "fn": "Leivonmäki, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Luhanka",
+          "la": 61.8,
+          "lo": 25.7,
+          "fn": "Luhanka, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Multia",
+          "la": 62.42,
+          "lo": 24.78,
+          "fn": "Multia, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Muurame",
+          "la": 62.13,
+          "lo": 25.67,
+          "fn": "Muurame, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Petäjävesi",
+          "la": 62.25,
+          "lo": 25.2,
+          "fn": "Petäjävesi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Pihtipudas",
+          "la": 63.38,
+          "lo": 25.57,
+          "fn": "Pihtipudas, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Pylkönmäki",
+          "la": 62.67,
+          "lo": 24.8,
+          "fn": "Pylkönmäki, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Saarijärvi",
+          "la": 62.7,
+          "lo": 25.25,
+          "fn": "Saarijärvi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Säynätsalo",
+          "la": 62.14,
+          "lo": 25.77,
+          "fn": "Säynätsalo, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Sumiainen",
+          "la": 62.66,
+          "lo": 26.05,
+          "fn": "Sumiainen, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Suolahti",
+          "la": 62.56,
+          "lo": 25.85,
+          "fn": "Suolahti, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Toivakka",
+          "la": 62.1,
+          "lo": 26.08,
+          "fn": "Toivakka, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Uurainen",
+          "la": 62.5,
+          "lo": 25.45,
+          "fn": "Uurainen, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Viitasaari",
+          "la": 63.07,
+          "lo": 25.87,
+          "fn": "Viitasaari, Central Finland",
+          "s": "Central Finland"
+        }
+      ]
+    },
+    {
+      "n": "Central Finland",
+      "la": 62.57,
+      "lo": 25.55,
+      "sc": "08",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Äänekoski",
+          "la": 62.6,
+          "lo": 25.73,
+          "fn": "Äänekoski, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Hankasalmi",
+          "la": 62.38,
+          "lo": 26.43,
+          "fn": "Hankasalmi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Jämsä",
+          "la": 61.86,
+          "lo": 25.19,
+          "fn": "Jämsä, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Jämsänkoski",
+          "la": 61.92,
+          "lo": 25.17,
+          "fn": "Jämsänkoski, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Joutsa",
+          "la": 61.73,
+          "lo": 26.12,
+          "fn": "Joutsa, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Jyväskylä",
+          "la": 62.24,
+          "lo": 25.72,
+          "fn": "Jyväskylä, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kannonkoski",
+          "la": 62.97,
+          "lo": 25.25,
+          "fn": "Kannonkoski, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Karstula",
+          "la": 62.87,
+          "lo": 24.78,
+          "fn": "Karstula, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Keuruu",
+          "la": 62.27,
+          "lo": 24.7,
+          "fn": "Keuruu, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kinnula",
+          "la": 63.38,
+          "lo": 24.95,
+          "fn": "Kinnula, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kivijärvi",
+          "la": 63.12,
+          "lo": 25.08,
+          "fn": "Kivijärvi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Konnevesi",
+          "la": 62.62,
+          "lo": 26.32,
+          "fn": "Konnevesi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Korpilahti",
+          "la": 62.02,
+          "lo": 25.55,
+          "fn": "Korpilahti, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kuhmoinen",
+          "la": 61.57,
+          "lo": 25.18,
+          "fn": "Kuhmoinen, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Kyyjärvi",
+          "la": 63.03,
+          "lo": 24.57,
+          "fn": "Kyyjärvi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Laukaa",
+          "la": 62.41,
+          "lo": 25.95,
+          "fn": "Laukaa, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Leivonmäki",
+          "la": 61.91,
+          "lo": 26.13,
+          "fn": "Leivonmäki, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Luhanka",
+          "la": 61.8,
+          "lo": 25.7,
+          "fn": "Luhanka, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Multia",
+          "la": 62.42,
+          "lo": 24.78,
+          "fn": "Multia, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Muurame",
+          "la": 62.13,
+          "lo": 25.67,
+          "fn": "Muurame, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Petäjävesi",
+          "la": 62.25,
+          "lo": 25.2,
+          "fn": "Petäjävesi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Pihtipudas",
+          "la": 63.38,
+          "lo": 25.57,
+          "fn": "Pihtipudas, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Pylkönmäki",
+          "la": 62.67,
+          "lo": 24.8,
+          "fn": "Pylkönmäki, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Saarijärvi",
+          "la": 62.7,
+          "lo": 25.25,
+          "fn": "Saarijärvi, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Säynätsalo",
+          "la": 62.14,
+          "lo": 25.77,
+          "fn": "Säynätsalo, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Sumiainen",
+          "la": 62.66,
+          "lo": 26.05,
+          "fn": "Sumiainen, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Suolahti",
+          "la": 62.56,
+          "lo": 25.85,
+          "fn": "Suolahti, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Toivakka",
+          "la": 62.1,
+          "lo": 26.08,
+          "fn": "Toivakka, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Uurainen",
+          "la": 62.5,
+          "lo": 25.45,
+          "fn": "Uurainen, Central Finland",
+          "s": "Central Finland"
+        },
+        {
+          "n": "Viitasaari",
+          "la": 63.07,
+          "lo": 25.87,
+          "fn": "Viitasaari, Central Finland",
+          "s": "Central Finland"
+        }
+      ]
+    },
+    {
+      "n": "Central Ostrobothnia",
+      "la": 63.56,
+      "lo": 24.0,
+      "sc": "07",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Halsua",
+          "la": 63.47,
+          "lo": 24.17,
+          "fn": "Halsua, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Kälviä",
+          "la": 63.86,
+          "lo": 23.45,
+          "fn": "Kälviä, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Kannus",
+          "la": 63.9,
+          "lo": 23.9,
+          "fn": "Kannus, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Kaustinen",
+          "la": 63.55,
+          "lo": 23.69,
+          "fn": "Kaustinen, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Kokkola",
+          "la": 63.85,
+          "lo": 23.59,
+          "fn": "Kokkola, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Lestijärvi",
+          "la": 63.53,
+          "lo": 24.65,
+          "fn": "Lestijärvi, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Lohtaja",
+          "la": 64.02,
+          "lo": 23.5,
+          "fn": "Lohtaja, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Perho",
+          "la": 63.22,
+          "lo": 24.42,
+          "fn": "Perho, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Toholampi",
+          "la": 63.77,
+          "lo": 24.25,
+          "fn": "Toholampi, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Ullava",
+          "la": 63.6,
+          "lo": 24.08,
+          "fn": "Ullava, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Veteli",
+          "la": 63.48,
+          "lo": 23.78,
+          "fn": "Veteli, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        }
+      ]
+    },
+    {
+      "n": "Central Ostrobothnia",
+      "la": 63.56,
+      "lo": 24.0,
+      "sc": "07",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Halsua",
+          "la": 63.47,
+          "lo": 24.17,
+          "fn": "Halsua, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Kälviä",
+          "la": 63.86,
+          "lo": 23.45,
+          "fn": "Kälviä, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Kannus",
+          "la": 63.9,
+          "lo": 23.9,
+          "fn": "Kannus, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Kaustinen",
+          "la": 63.55,
+          "lo": 23.69,
+          "fn": "Kaustinen, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Kokkola",
+          "la": 63.85,
+          "lo": 23.59,
+          "fn": "Kokkola, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Lestijärvi",
+          "la": 63.53,
+          "lo": 24.65,
+          "fn": "Lestijärvi, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Lohtaja",
+          "la": 64.02,
+          "lo": 23.5,
+          "fn": "Lohtaja, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Perho",
+          "la": 63.22,
+          "lo": 24.42,
+          "fn": "Perho, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Toholampi",
+          "la": 63.77,
+          "lo": 24.25,
+          "fn": "Toholampi, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Ullava",
+          "la": 63.6,
+          "lo": 24.08,
+          "fn": "Ullava, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        },
+        {
+          "n": "Veteli",
+          "la": 63.48,
+          "lo": 23.78,
+          "fn": "Veteli, Central Ostrobothnia",
+          "s": "Central Ostrobothnia"
+        }
+      ]
+    },
+    {
+      "n": "Finland Proper",
+      "la": 60.36,
+      "lo": 22.44,
+      "sc": "19",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Alastaro",
+          "la": 60.95,
+          "lo": 22.85,
+          "fn": "Alastaro, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Askainen",
+          "la": 60.57,
+          "lo": 21.87,
+          "fn": "Askainen, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Aura",
+          "la": 60.65,
+          "lo": 22.59,
+          "fn": "Aura, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Dragsfjärd",
+          "la": 60.07,
+          "lo": 22.48,
+          "fn": "Dragsfjärd, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Halikko",
+          "la": 60.4,
+          "lo": 23.08,
+          "fn": "Halikko, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Houtskär",
+          "la": 60.22,
+          "lo": 21.37,
+          "fn": "Houtskär, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Iniö",
+          "la": 60.4,
+          "lo": 21.4,
+          "fn": "Iniö, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kaarina",
+          "la": 60.41,
+          "lo": 22.37,
+          "fn": "Kaarina, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Karinainen",
+          "la": 60.67,
+          "lo": 22.77,
+          "fn": "Karinainen, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kiikala",
+          "la": 60.47,
+          "lo": 23.57,
+          "fn": "Kiikala, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kimito",
+          "la": 60.16,
+          "lo": 22.73,
+          "fn": "Kimito, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kisko",
+          "la": 60.23,
+          "lo": 23.48,
+          "fn": "Kisko, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kustavi",
+          "la": 60.55,
+          "lo": 21.36,
+          "fn": "Kustavi, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kuusjoki",
+          "la": 60.52,
+          "lo": 23.2,
+          "fn": "Kuusjoki, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Laitila",
+          "la": 60.88,
+          "lo": 21.7,
+          "fn": "Laitila, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Lemu",
+          "la": 60.57,
+          "lo": 21.97,
+          "fn": "Lemu, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Lieto",
+          "la": 60.51,
+          "lo": 22.46,
+          "fn": "Lieto, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Marttila",
+          "la": 60.58,
+          "lo": 22.9,
+          "fn": "Marttila, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Masku",
+          "la": 60.57,
+          "lo": 22.1,
+          "fn": "Masku, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Mellilä",
+          "la": 60.77,
+          "lo": 22.95,
+          "fn": "Mellilä, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Merimasku",
+          "la": 60.48,
+          "lo": 21.87,
+          "fn": "Merimasku, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Mietoinen",
+          "la": 60.63,
+          "lo": 21.93,
+          "fn": "Mietoinen, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Muurla",
+          "la": 60.35,
+          "lo": 23.28,
+          "fn": "Muurla, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Mynämäki",
+          "la": 60.68,
+          "lo": 21.99,
+          "fn": "Mynämäki, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Naantali",
+          "la": 60.47,
+          "lo": 22.02,
+          "fn": "Naantali, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Nagu",
+          "la": 60.19,
+          "lo": 21.91,
+          "fn": "Nagu, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Nousiainen",
+          "la": 60.6,
+          "lo": 22.08,
+          "fn": "Nousiainen, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Oripää",
+          "la": 60.85,
+          "lo": 22.68,
+          "fn": "Oripää, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Paimio",
+          "la": 60.46,
+          "lo": 22.69,
+          "fn": "Paimio, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Pargas",
+          "la": 60.31,
+          "lo": 22.3,
+          "fn": "Pargas, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Perniö",
+          "la": 60.2,
+          "lo": 23.13,
+          "fn": "Perniö, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Pertteli",
+          "la": 60.43,
+          "lo": 23.27,
+          "fn": "Pertteli, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Piikkiö",
+          "la": 60.42,
+          "lo": 22.52,
+          "fn": "Piikkiö, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Pöytyä",
+          "la": 60.77,
+          "lo": 22.67,
+          "fn": "Pöytyä, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Pyhäranta",
+          "la": 60.95,
+          "lo": 21.45,
+          "fn": "Pyhäranta, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Raisio",
+          "la": 60.49,
+          "lo": 22.17,
+          "fn": "Raisio, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Rusko",
+          "la": 60.53,
+          "lo": 22.22,
+          "fn": "Rusko, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Rymättylä",
+          "la": 60.38,
+          "lo": 21.94,
+          "fn": "Rymättylä, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Salo",
+          "la": 60.38,
+          "lo": 23.13,
+          "fn": "Salo, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Särkisalo",
+          "la": 60.11,
+          "lo": 22.95,
+          "fn": "Särkisalo, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Sauvo",
+          "la": 60.34,
+          "lo": 22.7,
+          "fn": "Sauvo, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Somero",
+          "la": 60.62,
+          "lo": 23.53,
+          "fn": "Somero, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Suomusjärvi",
+          "la": 60.35,
+          "lo": 23.65,
+          "fn": "Suomusjärvi, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Taivassalo",
+          "la": 60.56,
+          "lo": 21.62,
+          "fn": "Taivassalo, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Tarvasjoki",
+          "la": 60.58,
+          "lo": 22.73,
+          "fn": "Tarvasjoki, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Turku",
+          "la": 60.45,
+          "lo": 22.27,
+          "fn": "Turku, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Uusikaupunki",
+          "la": 60.8,
+          "lo": 21.41,
+          "fn": "Uusikaupunki, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Vahto",
+          "la": 60.6,
+          "lo": 22.3,
+          "fn": "Vahto, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Väståboland",
+          "la": 60.3,
+          "lo": 22.3,
+          "fn": "Väståboland, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Västanfjärd",
+          "la": 60.05,
+          "lo": 22.68,
+          "fn": "Västanfjärd, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Vehmaa",
+          "la": 60.68,
+          "lo": 21.67,
+          "fn": "Vehmaa, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Velkua",
+          "la": 60.47,
+          "lo": 21.67,
+          "fn": "Velkua, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Yläne",
+          "la": 60.88,
+          "lo": 22.42,
+          "fn": "Yläne, Finland Proper",
+          "s": "Finland Proper"
+        }
+      ]
+    },
+    {
+      "n": "Finland Proper",
+      "la": 60.36,
+      "lo": 22.44,
+      "sc": "19",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Alastaro",
+          "la": 60.95,
+          "lo": 22.85,
+          "fn": "Alastaro, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Askainen",
+          "la": 60.57,
+          "lo": 21.87,
+          "fn": "Askainen, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Aura",
+          "la": 60.65,
+          "lo": 22.59,
+          "fn": "Aura, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Dragsfjärd",
+          "la": 60.07,
+          "lo": 22.48,
+          "fn": "Dragsfjärd, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Halikko",
+          "la": 60.4,
+          "lo": 23.08,
+          "fn": "Halikko, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Houtskär",
+          "la": 60.22,
+          "lo": 21.37,
+          "fn": "Houtskär, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Iniö",
+          "la": 60.4,
+          "lo": 21.4,
+          "fn": "Iniö, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kaarina",
+          "la": 60.41,
+          "lo": 22.37,
+          "fn": "Kaarina, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Karinainen",
+          "la": 60.67,
+          "lo": 22.77,
+          "fn": "Karinainen, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kiikala",
+          "la": 60.47,
+          "lo": 23.57,
+          "fn": "Kiikala, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kimito",
+          "la": 60.16,
+          "lo": 22.73,
+          "fn": "Kimito, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kisko",
+          "la": 60.23,
+          "lo": 23.48,
+          "fn": "Kisko, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kustavi",
+          "la": 60.55,
+          "lo": 21.36,
+          "fn": "Kustavi, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Kuusjoki",
+          "la": 60.52,
+          "lo": 23.2,
+          "fn": "Kuusjoki, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Laitila",
+          "la": 60.88,
+          "lo": 21.7,
+          "fn": "Laitila, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Lemu",
+          "la": 60.57,
+          "lo": 21.97,
+          "fn": "Lemu, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Lieto",
+          "la": 60.51,
+          "lo": 22.46,
+          "fn": "Lieto, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Marttila",
+          "la": 60.58,
+          "lo": 22.9,
+          "fn": "Marttila, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Masku",
+          "la": 60.57,
+          "lo": 22.1,
+          "fn": "Masku, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Mellilä",
+          "la": 60.77,
+          "lo": 22.95,
+          "fn": "Mellilä, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Merimasku",
+          "la": 60.48,
+          "lo": 21.87,
+          "fn": "Merimasku, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Mietoinen",
+          "la": 60.63,
+          "lo": 21.93,
+          "fn": "Mietoinen, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Muurla",
+          "la": 60.35,
+          "lo": 23.28,
+          "fn": "Muurla, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Mynämäki",
+          "la": 60.68,
+          "lo": 21.99,
+          "fn": "Mynämäki, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Naantali",
+          "la": 60.47,
+          "lo": 22.02,
+          "fn": "Naantali, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Nagu",
+          "la": 60.19,
+          "lo": 21.91,
+          "fn": "Nagu, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Nousiainen",
+          "la": 60.6,
+          "lo": 22.08,
+          "fn": "Nousiainen, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Oripää",
+          "la": 60.85,
+          "lo": 22.68,
+          "fn": "Oripää, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Paimio",
+          "la": 60.46,
+          "lo": 22.69,
+          "fn": "Paimio, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Pargas",
+          "la": 60.31,
+          "lo": 22.3,
+          "fn": "Pargas, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Perniö",
+          "la": 60.2,
+          "lo": 23.13,
+          "fn": "Perniö, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Pertteli",
+          "la": 60.43,
+          "lo": 23.27,
+          "fn": "Pertteli, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Piikkiö",
+          "la": 60.42,
+          "lo": 22.52,
+          "fn": "Piikkiö, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Pöytyä",
+          "la": 60.77,
+          "lo": 22.67,
+          "fn": "Pöytyä, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Pyhäranta",
+          "la": 60.95,
+          "lo": 21.45,
+          "fn": "Pyhäranta, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Raisio",
+          "la": 60.49,
+          "lo": 22.17,
+          "fn": "Raisio, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Rusko",
+          "la": 60.53,
+          "lo": 22.22,
+          "fn": "Rusko, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Rymättylä",
+          "la": 60.38,
+          "lo": 21.94,
+          "fn": "Rymättylä, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Salo",
+          "la": 60.38,
+          "lo": 23.13,
+          "fn": "Salo, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Särkisalo",
+          "la": 60.11,
+          "lo": 22.95,
+          "fn": "Särkisalo, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Sauvo",
+          "la": 60.34,
+          "lo": 22.7,
+          "fn": "Sauvo, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Somero",
+          "la": 60.62,
+          "lo": 23.53,
+          "fn": "Somero, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Suomusjärvi",
+          "la": 60.35,
+          "lo": 23.65,
+          "fn": "Suomusjärvi, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Taivassalo",
+          "la": 60.56,
+          "lo": 21.62,
+          "fn": "Taivassalo, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Tarvasjoki",
+          "la": 60.58,
+          "lo": 22.73,
+          "fn": "Tarvasjoki, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Turku",
+          "la": 60.45,
+          "lo": 22.27,
+          "fn": "Turku, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Uusikaupunki",
+          "la": 60.8,
+          "lo": 21.41,
+          "fn": "Uusikaupunki, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Vahto",
+          "la": 60.6,
+          "lo": 22.3,
+          "fn": "Vahto, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Väståboland",
+          "la": 60.3,
+          "lo": 22.3,
+          "fn": "Väståboland, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Västanfjärd",
+          "la": 60.05,
+          "lo": 22.68,
+          "fn": "Västanfjärd, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Vehmaa",
+          "la": 60.68,
+          "lo": 21.67,
+          "fn": "Vehmaa, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Velkua",
+          "la": 60.47,
+          "lo": 21.67,
+          "fn": "Velkua, Finland Proper",
+          "s": "Finland Proper"
+        },
+        {
+          "n": "Yläne",
+          "la": 60.88,
+          "lo": 22.42,
+          "fn": "Yläne, Finland Proper",
+          "s": "Finland Proper"
+        }
+      ]
+    },
+    {
+      "n": "Kainuu",
+      "la": 64.37,
+      "lo": 28.74,
+      "sc": "05",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Hyrynsalmi",
+          "la": 64.67,
+          "lo": 28.53,
+          "fn": "Hyrynsalmi, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Kajaani",
+          "la": 64.23,
+          "lo": 27.73,
+          "fn": "Kajaani, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Kuhmo",
+          "la": 64.13,
+          "lo": 29.52,
+          "fn": "Kuhmo, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Paltamo",
+          "la": 64.42,
+          "lo": 27.83,
+          "fn": "Paltamo, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Puolanka",
+          "la": 64.87,
+          "lo": 27.67,
+          "fn": "Puolanka, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Ristijärvi",
+          "la": 64.5,
+          "lo": 28.22,
+          "fn": "Ristijärvi, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Sotkamo",
+          "la": 64.13,
+          "lo": 28.42,
+          "fn": "Sotkamo, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Suomussalmi",
+          "la": 64.89,
+          "lo": 28.91,
+          "fn": "Suomussalmi, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Vaala",
+          "la": 64.57,
+          "lo": 26.83,
+          "fn": "Vaala, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Vuokatti",
+          "la": 64.14,
+          "lo": 28.28,
+          "fn": "Vuokatti, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Vuolijoki",
+          "la": 64.19,
+          "lo": 27.0,
+          "fn": "Vuolijoki, Kainuu",
+          "s": "Kainuu"
+        }
+      ]
+    },
+    {
+      "n": "Kainuu",
+      "la": 64.37,
+      "lo": 28.74,
+      "sc": "05",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Hyrynsalmi",
+          "la": 64.67,
+          "lo": 28.53,
+          "fn": "Hyrynsalmi, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Kajaani",
+          "la": 64.23,
+          "lo": 27.73,
+          "fn": "Kajaani, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Kuhmo",
+          "la": 64.13,
+          "lo": 29.52,
+          "fn": "Kuhmo, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Paltamo",
+          "la": 64.42,
+          "lo": 27.83,
+          "fn": "Paltamo, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Puolanka",
+          "la": 64.87,
+          "lo": 27.67,
+          "fn": "Puolanka, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Ristijärvi",
+          "la": 64.5,
+          "lo": 28.22,
+          "fn": "Ristijärvi, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Sotkamo",
+          "la": 64.13,
+          "lo": 28.42,
+          "fn": "Sotkamo, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Suomussalmi",
+          "la": 64.89,
+          "lo": 28.91,
+          "fn": "Suomussalmi, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Vaala",
+          "la": 64.57,
+          "lo": 26.83,
+          "fn": "Vaala, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Vuokatti",
+          "la": 64.14,
+          "lo": 28.28,
+          "fn": "Vuokatti, Kainuu",
+          "s": "Kainuu"
+        },
+        {
+          "n": "Vuolijoki",
+          "la": 64.19,
+          "lo": 27.0,
+          "fn": "Vuolijoki, Kainuu",
+          "s": "Kainuu"
+        }
+      ]
+    },
+    {
+      "n": "Kymenlaakso",
+      "la": 60.78,
+      "lo": 26.88,
+      "sc": "09",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Anjala",
+          "la": 60.68,
+          "lo": 26.83,
+          "fn": "Anjala, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Elimäki",
+          "la": 60.72,
+          "lo": 26.47,
+          "fn": "Elimäki, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Hamina",
+          "la": 60.57,
+          "lo": 27.2,
+          "fn": "Hamina, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Iitti",
+          "la": 60.89,
+          "lo": 26.34,
+          "fn": "Iitti, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Jaala",
+          "la": 61.05,
+          "lo": 26.48,
+          "fn": "Jaala, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Karhula",
+          "la": 60.52,
+          "lo": 26.93,
+          "fn": "Karhula, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Kotka",
+          "la": 60.47,
+          "lo": 26.95,
+          "fn": "Kotka, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Kouvola",
+          "la": 60.87,
+          "lo": 26.7,
+          "fn": "Kouvola, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Miehikkälä",
+          "la": 60.67,
+          "lo": 27.7,
+          "fn": "Miehikkälä, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Pyhtää",
+          "la": 60.49,
+          "lo": 26.54,
+          "fn": "Pyhtää, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Virojoki",
+          "la": 60.58,
+          "lo": 27.7,
+          "fn": "Virojoki, Kymenlaakso",
+          "s": "Kymenlaakso"
+        }
+      ]
+    },
+    {
+      "n": "Kymenlaakso",
+      "la": 60.78,
+      "lo": 26.88,
+      "sc": "09",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Anjala",
+          "la": 60.68,
+          "lo": 26.83,
+          "fn": "Anjala, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Elimäki",
+          "la": 60.72,
+          "lo": 26.47,
+          "fn": "Elimäki, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Hamina",
+          "la": 60.57,
+          "lo": 27.2,
+          "fn": "Hamina, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Iitti",
+          "la": 60.89,
+          "lo": 26.34,
+          "fn": "Iitti, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Jaala",
+          "la": 61.05,
+          "lo": 26.48,
+          "fn": "Jaala, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Karhula",
+          "la": 60.52,
+          "lo": 26.93,
+          "fn": "Karhula, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Kotka",
+          "la": 60.47,
+          "lo": 26.95,
+          "fn": "Kotka, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Kouvola",
+          "la": 60.87,
+          "lo": 26.7,
+          "fn": "Kouvola, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Miehikkälä",
+          "la": 60.67,
+          "lo": 27.7,
+          "fn": "Miehikkälä, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Pyhtää",
+          "la": 60.49,
+          "lo": 26.54,
+          "fn": "Pyhtää, Kymenlaakso",
+          "s": "Kymenlaakso"
+        },
+        {
+          "n": "Virojoki",
+          "la": 60.58,
+          "lo": 27.7,
+          "fn": "Virojoki, Kymenlaakso",
+          "s": "Kymenlaakso"
+        }
+      ]
+    },
+    {
+      "n": "Lapland",
+      "la": 67.92,
+      "lo": 26.5,
+      "sc": "10",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Enontekiö",
+          "la": 68.39,
+          "lo": 23.63,
+          "fn": "Enontekiö, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Inari",
+          "la": 68.91,
+          "lo": 27.03,
+          "fn": "Inari, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Ivalo",
+          "la": 68.66,
+          "lo": 27.54,
+          "fn": "Ivalo, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Kemi",
+          "la": 65.74,
+          "lo": 24.56,
+          "fn": "Kemi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Kemijärvi",
+          "la": 66.71,
+          "lo": 27.43,
+          "fn": "Kemijärvi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Keminmaa",
+          "la": 65.8,
+          "lo": 24.54,
+          "fn": "Keminmaa, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Kittilä",
+          "la": 67.66,
+          "lo": 24.89,
+          "fn": "Kittilä, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Kolari",
+          "la": 67.33,
+          "lo": 23.78,
+          "fn": "Kolari, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Muonio",
+          "la": 67.95,
+          "lo": 23.7,
+          "fn": "Muonio, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Pelkosenniemi",
+          "la": 67.11,
+          "lo": 27.51,
+          "fn": "Pelkosenniemi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Pello",
+          "la": 66.77,
+          "lo": 23.96,
+          "fn": "Pello, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Posio",
+          "la": 66.11,
+          "lo": 28.17,
+          "fn": "Posio, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Pyhäjärvi",
+          "la": 67.07,
+          "lo": 27.22,
+          "fn": "Pyhäjärvi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Ranua",
+          "la": 65.92,
+          "lo": 26.53,
+          "fn": "Ranua, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Rovaniemi",
+          "la": 66.5,
+          "lo": 25.72,
+          "fn": "Rovaniemi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Salla",
+          "la": 66.83,
+          "lo": 28.67,
+          "fn": "Salla, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Savukoski",
+          "la": 67.29,
+          "lo": 28.16,
+          "fn": "Savukoski, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Simo",
+          "la": 65.67,
+          "lo": 25.05,
+          "fn": "Simo, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Sodankylä",
+          "la": 67.42,
+          "lo": 26.6,
+          "fn": "Sodankylä, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Tervola",
+          "la": 66.08,
+          "lo": 24.8,
+          "fn": "Tervola, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Tornio",
+          "la": 65.85,
+          "lo": 24.15,
+          "fn": "Tornio, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Utsjoki",
+          "la": 69.91,
+          "lo": 27.03,
+          "fn": "Utsjoki, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Ylitornio",
+          "la": 66.31,
+          "lo": 23.68,
+          "fn": "Ylitornio, Lapland",
+          "s": "Lapland"
+        }
+      ]
+    },
+    {
+      "n": "Lapland",
+      "la": 67.92,
+      "lo": 26.5,
+      "sc": "10",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Enontekiö",
+          "la": 68.39,
+          "lo": 23.63,
+          "fn": "Enontekiö, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Inari",
+          "la": 68.91,
+          "lo": 27.03,
+          "fn": "Inari, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Ivalo",
+          "la": 68.66,
+          "lo": 27.54,
+          "fn": "Ivalo, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Kemi",
+          "la": 65.74,
+          "lo": 24.56,
+          "fn": "Kemi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Kemijärvi",
+          "la": 66.71,
+          "lo": 27.43,
+          "fn": "Kemijärvi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Keminmaa",
+          "la": 65.8,
+          "lo": 24.54,
+          "fn": "Keminmaa, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Kittilä",
+          "la": 67.66,
+          "lo": 24.89,
+          "fn": "Kittilä, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Kolari",
+          "la": 67.33,
+          "lo": 23.78,
+          "fn": "Kolari, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Muonio",
+          "la": 67.95,
+          "lo": 23.7,
+          "fn": "Muonio, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Pelkosenniemi",
+          "la": 67.11,
+          "lo": 27.51,
+          "fn": "Pelkosenniemi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Pello",
+          "la": 66.77,
+          "lo": 23.96,
+          "fn": "Pello, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Posio",
+          "la": 66.11,
+          "lo": 28.17,
+          "fn": "Posio, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Pyhäjärvi",
+          "la": 67.07,
+          "lo": 27.22,
+          "fn": "Pyhäjärvi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Ranua",
+          "la": 65.92,
+          "lo": 26.53,
+          "fn": "Ranua, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Rovaniemi",
+          "la": 66.5,
+          "lo": 25.72,
+          "fn": "Rovaniemi, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Salla",
+          "la": 66.83,
+          "lo": 28.67,
+          "fn": "Salla, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Savukoski",
+          "la": 67.29,
+          "lo": 28.16,
+          "fn": "Savukoski, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Simo",
+          "la": 65.67,
+          "lo": 25.05,
+          "fn": "Simo, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Sodankylä",
+          "la": 67.42,
+          "lo": 26.6,
+          "fn": "Sodankylä, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Tervola",
+          "la": 66.08,
+          "lo": 24.8,
+          "fn": "Tervola, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Tornio",
+          "la": 65.85,
+          "lo": 24.15,
+          "fn": "Tornio, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Utsjoki",
+          "la": 69.91,
+          "lo": 27.03,
+          "fn": "Utsjoki, Lapland",
+          "s": "Lapland"
+        },
+        {
+          "n": "Ylitornio",
+          "la": 66.31,
+          "lo": 23.68,
+          "fn": "Ylitornio, Lapland",
+          "s": "Lapland"
+        }
+      ]
+    },
+    {
+      "n": "North Karelia",
+      "la": 62.81,
+      "lo": 30.16,
+      "sc": "13",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Eno",
+          "la": 62.81,
+          "lo": 30.15,
+          "fn": "Eno, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Ilomantsi",
+          "la": 62.67,
+          "lo": 30.93,
+          "fn": "Ilomantsi, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Joensuu",
+          "la": 62.6,
+          "lo": 29.76,
+          "fn": "Joensuu, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Juuka",
+          "la": 63.23,
+          "lo": 29.25,
+          "fn": "Juuka, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Kesälahti",
+          "la": 61.9,
+          "lo": 29.83,
+          "fn": "Kesälahti, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Kiihtelysvaara",
+          "la": 62.5,
+          "lo": 30.25,
+          "fn": "Kiihtelysvaara, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Kitee",
+          "la": 62.1,
+          "lo": 30.15,
+          "fn": "Kitee, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Kontiolahti",
+          "la": 62.76,
+          "lo": 29.85,
+          "fn": "Kontiolahti, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Lieksa",
+          "la": 63.32,
+          "lo": 30.02,
+          "fn": "Lieksa, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Liperi",
+          "la": 62.53,
+          "lo": 29.37,
+          "fn": "Liperi, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Nurmes",
+          "la": 63.54,
+          "lo": 29.14,
+          "fn": "Nurmes, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Outokumpu",
+          "la": 62.73,
+          "lo": 29.02,
+          "fn": "Outokumpu, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Polvijärvi",
+          "la": 62.85,
+          "lo": 29.37,
+          "fn": "Polvijärvi, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Pyhäselkä",
+          "la": 62.43,
+          "lo": 29.97,
+          "fn": "Pyhäselkä, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Rääkkylä",
+          "la": 62.32,
+          "lo": 29.62,
+          "fn": "Rääkkylä, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Tohmajärvi",
+          "la": 62.18,
+          "lo": 30.38,
+          "fn": "Tohmajärvi, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Tuupovaara",
+          "la": 62.48,
+          "lo": 30.63,
+          "fn": "Tuupovaara, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Valtimo",
+          "la": 63.67,
+          "lo": 28.8,
+          "fn": "Valtimo, North Karelia",
+          "s": "North Karelia"
+        }
+      ]
+    },
+    {
+      "n": "North Karelia",
+      "la": 62.81,
+      "lo": 30.16,
+      "sc": "13",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Eno",
+          "la": 62.81,
+          "lo": 30.15,
+          "fn": "Eno, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Ilomantsi",
+          "la": 62.67,
+          "lo": 30.93,
+          "fn": "Ilomantsi, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Joensuu",
+          "la": 62.6,
+          "lo": 29.76,
+          "fn": "Joensuu, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Juuka",
+          "la": 63.23,
+          "lo": 29.25,
+          "fn": "Juuka, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Kesälahti",
+          "la": 61.9,
+          "lo": 29.83,
+          "fn": "Kesälahti, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Kiihtelysvaara",
+          "la": 62.5,
+          "lo": 30.25,
+          "fn": "Kiihtelysvaara, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Kitee",
+          "la": 62.1,
+          "lo": 30.15,
+          "fn": "Kitee, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Kontiolahti",
+          "la": 62.76,
+          "lo": 29.85,
+          "fn": "Kontiolahti, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Lieksa",
+          "la": 63.32,
+          "lo": 30.02,
+          "fn": "Lieksa, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Liperi",
+          "la": 62.53,
+          "lo": 29.37,
+          "fn": "Liperi, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Nurmes",
+          "la": 63.54,
+          "lo": 29.14,
+          "fn": "Nurmes, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Outokumpu",
+          "la": 62.73,
+          "lo": 29.02,
+          "fn": "Outokumpu, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Polvijärvi",
+          "la": 62.85,
+          "lo": 29.37,
+          "fn": "Polvijärvi, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Pyhäselkä",
+          "la": 62.43,
+          "lo": 29.97,
+          "fn": "Pyhäselkä, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Rääkkylä",
+          "la": 62.32,
+          "lo": 29.62,
+          "fn": "Rääkkylä, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Tohmajärvi",
+          "la": 62.18,
+          "lo": 30.38,
+          "fn": "Tohmajärvi, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Tuupovaara",
+          "la": 62.48,
+          "lo": 30.63,
+          "fn": "Tuupovaara, North Karelia",
+          "s": "North Karelia"
+        },
+        {
+          "n": "Valtimo",
+          "la": 63.67,
+          "lo": 28.8,
+          "fn": "Valtimo, North Karelia",
+          "s": "North Karelia"
+        }
+      ]
+    },
+    {
+      "n": "Northern Ostrobothnia",
+      "la": 65.28,
+      "lo": 26.29,
+      "sc": "14",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Alavieska",
+          "la": 64.17,
+          "lo": 24.3,
+          "fn": "Alavieska, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Haapajärvi",
+          "la": 63.75,
+          "lo": 25.33,
+          "fn": "Haapajärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Haapavesi",
+          "la": 64.13,
+          "lo": 25.37,
+          "fn": "Haapavesi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Hailuoto",
+          "la": 65.01,
+          "lo": 24.71,
+          "fn": "Hailuoto, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Haukipudas",
+          "la": 65.18,
+          "lo": 25.35,
+          "fn": "Haukipudas, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Himanka",
+          "la": 64.06,
+          "lo": 23.65,
+          "fn": "Himanka, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Ii",
+          "la": 65.32,
+          "lo": 25.37,
+          "fn": "Ii, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kalajoki",
+          "la": 64.25,
+          "lo": 23.95,
+          "fn": "Kalajoki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kärsämäki",
+          "la": 63.97,
+          "lo": 25.77,
+          "fn": "Kärsämäki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kempele",
+          "la": 64.91,
+          "lo": 25.5,
+          "fn": "Kempele, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kestilä",
+          "la": 64.35,
+          "lo": 26.28,
+          "fn": "Kestilä, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kiiminki",
+          "la": 65.13,
+          "lo": 25.8,
+          "fn": "Kiiminki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kuivaniemi",
+          "la": 65.58,
+          "lo": 25.19,
+          "fn": "Kuivaniemi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kuusamo",
+          "la": 65.97,
+          "lo": 29.18,
+          "fn": "Kuusamo, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Liminka",
+          "la": 64.81,
+          "lo": 25.42,
+          "fn": "Liminka, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Lumijoki",
+          "la": 64.84,
+          "lo": 25.19,
+          "fn": "Lumijoki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Merijärvi",
+          "la": 64.3,
+          "lo": 24.45,
+          "fn": "Merijärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Muhos",
+          "la": 64.81,
+          "lo": 25.99,
+          "fn": "Muhos, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Nivala",
+          "la": 63.92,
+          "lo": 24.97,
+          "fn": "Nivala, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Oulainen",
+          "la": 64.27,
+          "lo": 24.8,
+          "fn": "Oulainen, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Oulu",
+          "la": 65.01,
+          "lo": 25.47,
+          "fn": "Oulu, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Oulunsalo",
+          "la": 64.93,
+          "lo": 25.41,
+          "fn": "Oulunsalo, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Piippola",
+          "la": 64.17,
+          "lo": 25.97,
+          "fn": "Piippola, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pudasjärvi",
+          "la": 65.38,
+          "lo": 26.92,
+          "fn": "Pudasjärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pulkkila",
+          "la": 64.27,
+          "lo": 25.87,
+          "fn": "Pulkkila, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pyhäjärvi",
+          "la": 63.67,
+          "lo": 25.9,
+          "fn": "Pyhäjärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pyhäjoki",
+          "la": 64.47,
+          "lo": 24.23,
+          "fn": "Pyhäjoki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pyhäntä",
+          "la": 64.1,
+          "lo": 26.32,
+          "fn": "Pyhäntä, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Raahe",
+          "la": 64.68,
+          "lo": 24.48,
+          "fn": "Raahe, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Rantsila",
+          "la": 64.51,
+          "lo": 25.66,
+          "fn": "Rantsila, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Reisjärvi",
+          "la": 63.62,
+          "lo": 24.9,
+          "fn": "Reisjärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Ruukki",
+          "la": 64.67,
+          "lo": 25.1,
+          "fn": "Ruukki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Sievi",
+          "la": 63.9,
+          "lo": 24.5,
+          "fn": "Sievi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Siikajoki",
+          "la": 64.81,
+          "lo": 24.76,
+          "fn": "Siikajoki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Taivalkoski",
+          "la": 65.57,
+          "lo": 28.25,
+          "fn": "Taivalkoski, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Tyrnävä",
+          "la": 64.76,
+          "lo": 25.65,
+          "fn": "Tyrnävä, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Utajärvi",
+          "la": 64.75,
+          "lo": 26.38,
+          "fn": "Utajärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Vihanti",
+          "la": 64.48,
+          "lo": 24.99,
+          "fn": "Vihanti, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Yli-Ii",
+          "la": 65.37,
+          "lo": 25.85,
+          "fn": "Yli-Ii, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Ylikiiminki",
+          "la": 65.08,
+          "lo": 26.25,
+          "fn": "Ylikiiminki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Ylivieska",
+          "la": 64.08,
+          "lo": 24.55,
+          "fn": "Ylivieska, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        }
+      ]
+    },
+    {
+      "n": "Northern Ostrobothnia",
+      "la": 65.28,
+      "lo": 26.29,
+      "sc": "14",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Alavieska",
+          "la": 64.17,
+          "lo": 24.3,
+          "fn": "Alavieska, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Haapajärvi",
+          "la": 63.75,
+          "lo": 25.33,
+          "fn": "Haapajärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Haapavesi",
+          "la": 64.13,
+          "lo": 25.37,
+          "fn": "Haapavesi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Hailuoto",
+          "la": 65.01,
+          "lo": 24.71,
+          "fn": "Hailuoto, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Haukipudas",
+          "la": 65.18,
+          "lo": 25.35,
+          "fn": "Haukipudas, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Himanka",
+          "la": 64.06,
+          "lo": 23.65,
+          "fn": "Himanka, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Ii",
+          "la": 65.32,
+          "lo": 25.37,
+          "fn": "Ii, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kalajoki",
+          "la": 64.25,
+          "lo": 23.95,
+          "fn": "Kalajoki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kärsämäki",
+          "la": 63.97,
+          "lo": 25.77,
+          "fn": "Kärsämäki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kempele",
+          "la": 64.91,
+          "lo": 25.5,
+          "fn": "Kempele, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kestilä",
+          "la": 64.35,
+          "lo": 26.28,
+          "fn": "Kestilä, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kiiminki",
+          "la": 65.13,
+          "lo": 25.8,
+          "fn": "Kiiminki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kuivaniemi",
+          "la": 65.58,
+          "lo": 25.19,
+          "fn": "Kuivaniemi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Kuusamo",
+          "la": 65.97,
+          "lo": 29.18,
+          "fn": "Kuusamo, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Liminka",
+          "la": 64.81,
+          "lo": 25.42,
+          "fn": "Liminka, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Lumijoki",
+          "la": 64.84,
+          "lo": 25.19,
+          "fn": "Lumijoki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Merijärvi",
+          "la": 64.3,
+          "lo": 24.45,
+          "fn": "Merijärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Muhos",
+          "la": 64.81,
+          "lo": 25.99,
+          "fn": "Muhos, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Nivala",
+          "la": 63.92,
+          "lo": 24.97,
+          "fn": "Nivala, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Oulainen",
+          "la": 64.27,
+          "lo": 24.8,
+          "fn": "Oulainen, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Oulu",
+          "la": 65.01,
+          "lo": 25.47,
+          "fn": "Oulu, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Oulunsalo",
+          "la": 64.93,
+          "lo": 25.41,
+          "fn": "Oulunsalo, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Piippola",
+          "la": 64.17,
+          "lo": 25.97,
+          "fn": "Piippola, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pudasjärvi",
+          "la": 65.38,
+          "lo": 26.92,
+          "fn": "Pudasjärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pulkkila",
+          "la": 64.27,
+          "lo": 25.87,
+          "fn": "Pulkkila, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pyhäjärvi",
+          "la": 63.67,
+          "lo": 25.9,
+          "fn": "Pyhäjärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pyhäjoki",
+          "la": 64.47,
+          "lo": 24.23,
+          "fn": "Pyhäjoki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Pyhäntä",
+          "la": 64.1,
+          "lo": 26.32,
+          "fn": "Pyhäntä, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Raahe",
+          "la": 64.68,
+          "lo": 24.48,
+          "fn": "Raahe, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Rantsila",
+          "la": 64.51,
+          "lo": 25.66,
+          "fn": "Rantsila, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Reisjärvi",
+          "la": 63.62,
+          "lo": 24.9,
+          "fn": "Reisjärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Ruukki",
+          "la": 64.67,
+          "lo": 25.1,
+          "fn": "Ruukki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Sievi",
+          "la": 63.9,
+          "lo": 24.5,
+          "fn": "Sievi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Siikajoki",
+          "la": 64.81,
+          "lo": 24.76,
+          "fn": "Siikajoki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Taivalkoski",
+          "la": 65.57,
+          "lo": 28.25,
+          "fn": "Taivalkoski, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Tyrnävä",
+          "la": 64.76,
+          "lo": 25.65,
+          "fn": "Tyrnävä, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Utajärvi",
+          "la": 64.75,
+          "lo": 26.38,
+          "fn": "Utajärvi, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Vihanti",
+          "la": 64.48,
+          "lo": 24.99,
+          "fn": "Vihanti, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Yli-Ii",
+          "la": 65.37,
+          "lo": 25.85,
+          "fn": "Yli-Ii, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Ylikiiminki",
+          "la": 65.08,
+          "lo": 26.25,
+          "fn": "Ylikiiminki, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        },
+        {
+          "n": "Ylivieska",
+          "la": 64.08,
+          "lo": 24.55,
+          "fn": "Ylivieska, Northern Ostrobothnia",
+          "s": "Northern Ostrobothnia"
+        }
+      ]
+    },
+    {
+      "n": "Northern Savonia",
+      "la": 63.08,
+      "lo": 27.03,
+      "sc": "15",
+      "t": "region",
+      "cities": []
+    },
+    {
+      "n": "Northern Savonia",
+      "la": 63.08,
+      "lo": 27.03,
+      "sc": "15",
+      "t": "region",
+      "cities": []
+    },
+    {
+      "n": "Ostrobothnia",
+      "la": 63.12,
+      "lo": 21.91,
+      "sc": "12",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Hietalahti",
+          "la": 63.08,
+          "lo": 21.62,
+          "fn": "Hietalahti, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Isokyrö",
+          "la": 63.01,
+          "lo": 22.33,
+          "fn": "Isokyrö, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Jakobstad",
+          "la": 63.67,
+          "lo": 22.7,
+          "fn": "Jakobstad, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Kaskinen",
+          "la": 62.38,
+          "lo": 21.22,
+          "fn": "Kaskinen, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Korsholm",
+          "la": 63.11,
+          "lo": 21.68,
+          "fn": "Korsholm, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Korsnäs",
+          "la": 62.78,
+          "lo": 21.2,
+          "fn": "Korsnäs, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Kristinestad",
+          "la": 62.27,
+          "lo": 21.38,
+          "fn": "Kristinestad, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Kronoby",
+          "la": 63.73,
+          "lo": 23.03,
+          "fn": "Kronoby, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Laihia",
+          "la": 62.98,
+          "lo": 22.01,
+          "fn": "Laihia, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Larsmo",
+          "la": 63.75,
+          "lo": 22.75,
+          "fn": "Larsmo, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Malax",
+          "la": 62.94,
+          "lo": 21.57,
+          "fn": "Malax, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Nykarleby",
+          "la": 63.52,
+          "lo": 22.53,
+          "fn": "Nykarleby, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Oravais",
+          "la": 63.3,
+          "lo": 22.38,
+          "fn": "Oravais, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Pedersöre",
+          "la": 63.65,
+          "lo": 22.68,
+          "fn": "Pedersöre, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Replot",
+          "la": 63.23,
+          "lo": 21.42,
+          "fn": "Replot, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Ristinummi",
+          "la": 63.09,
+          "lo": 21.72,
+          "fn": "Ristinummi, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Teeriniemi",
+          "la": 63.1,
+          "lo": 21.7,
+          "fn": "Teeriniemi, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Vaasa",
+          "la": 63.1,
+          "lo": 21.62,
+          "fn": "Vaasa, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Vähäkyrö",
+          "la": 63.06,
+          "lo": 22.11,
+          "fn": "Vähäkyrö, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Vörå",
+          "la": 63.14,
+          "lo": 22.25,
+          "fn": "Vörå, Ostrobothnia",
+          "s": "Ostrobothnia"
+        }
+      ]
+    },
+    {
+      "n": "Ostrobothnia",
+      "la": 63.12,
+      "lo": 21.91,
+      "sc": "12",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Hietalahti",
+          "la": 63.08,
+          "lo": 21.62,
+          "fn": "Hietalahti, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Isokyrö",
+          "la": 63.01,
+          "lo": 22.33,
+          "fn": "Isokyrö, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Jakobstad",
+          "la": 63.67,
+          "lo": 22.7,
+          "fn": "Jakobstad, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Kaskinen",
+          "la": 62.38,
+          "lo": 21.22,
+          "fn": "Kaskinen, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Korsholm",
+          "la": 63.11,
+          "lo": 21.68,
+          "fn": "Korsholm, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Korsnäs",
+          "la": 62.78,
+          "lo": 21.2,
+          "fn": "Korsnäs, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Kristinestad",
+          "la": 62.27,
+          "lo": 21.38,
+          "fn": "Kristinestad, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Kronoby",
+          "la": 63.73,
+          "lo": 23.03,
+          "fn": "Kronoby, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Laihia",
+          "la": 62.98,
+          "lo": 22.01,
+          "fn": "Laihia, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Larsmo",
+          "la": 63.75,
+          "lo": 22.75,
+          "fn": "Larsmo, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Malax",
+          "la": 62.94,
+          "lo": 21.57,
+          "fn": "Malax, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Nykarleby",
+          "la": 63.52,
+          "lo": 22.53,
+          "fn": "Nykarleby, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Oravais",
+          "la": 63.3,
+          "lo": 22.38,
+          "fn": "Oravais, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Pedersöre",
+          "la": 63.65,
+          "lo": 22.68,
+          "fn": "Pedersöre, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Replot",
+          "la": 63.23,
+          "lo": 21.42,
+          "fn": "Replot, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Ristinummi",
+          "la": 63.09,
+          "lo": 21.72,
+          "fn": "Ristinummi, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Teeriniemi",
+          "la": 63.1,
+          "lo": 21.7,
+          "fn": "Teeriniemi, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Vaasa",
+          "la": 63.1,
+          "lo": 21.62,
+          "fn": "Vaasa, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Vähäkyrö",
+          "la": 63.06,
+          "lo": 22.11,
+          "fn": "Vähäkyrö, Ostrobothnia",
+          "s": "Ostrobothnia"
+        },
+        {
+          "n": "Vörå",
+          "la": 63.14,
+          "lo": 22.25,
+          "fn": "Vörå, Ostrobothnia",
+          "s": "Ostrobothnia"
+        }
+      ]
+    },
+    {
+      "n": "Päijänne Tavastia",
+      "la": 61.32,
+      "lo": 25.73,
+      "sc": "16",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Artjärvi",
+          "la": 60.75,
+          "lo": 26.07,
+          "fn": "Artjärvi, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Asikkala",
+          "la": 61.22,
+          "lo": 25.5,
+          "fn": "Asikkala, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Auttoinen",
+          "la": 61.3,
+          "lo": 25.09,
+          "fn": "Auttoinen, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Hämeenkoski",
+          "la": 61.02,
+          "lo": 25.15,
+          "fn": "Hämeenkoski, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Hartola",
+          "la": 61.58,
+          "lo": 26.02,
+          "fn": "Hartola, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Heinola",
+          "la": 61.21,
+          "lo": 26.04,
+          "fn": "Heinola, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Hollola",
+          "la": 61.05,
+          "lo": 25.43,
+          "fn": "Hollola, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Lahti",
+          "la": 60.98,
+          "lo": 25.66,
+          "fn": "Lahti, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Nastola",
+          "la": 60.95,
+          "lo": 25.93,
+          "fn": "Nastola, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Orimattila",
+          "la": 60.8,
+          "lo": 25.73,
+          "fn": "Orimattila, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Padasjoki",
+          "la": 61.35,
+          "lo": 25.28,
+          "fn": "Padasjoki, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Sysmä",
+          "la": 61.5,
+          "lo": 25.68,
+          "fn": "Sysmä, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        }
+      ]
+    },
+    {
+      "n": "Päijänne Tavastia",
+      "la": 61.32,
+      "lo": 25.73,
+      "sc": "16",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Artjärvi",
+          "la": 60.75,
+          "lo": 26.07,
+          "fn": "Artjärvi, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Asikkala",
+          "la": 61.22,
+          "lo": 25.5,
+          "fn": "Asikkala, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Auttoinen",
+          "la": 61.3,
+          "lo": 25.09,
+          "fn": "Auttoinen, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Hämeenkoski",
+          "la": 61.02,
+          "lo": 25.15,
+          "fn": "Hämeenkoski, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Hartola",
+          "la": 61.58,
+          "lo": 26.02,
+          "fn": "Hartola, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Heinola",
+          "la": 61.21,
+          "lo": 26.04,
+          "fn": "Heinola, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Hollola",
+          "la": 61.05,
+          "lo": 25.43,
+          "fn": "Hollola, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Lahti",
+          "la": 60.98,
+          "lo": 25.66,
+          "fn": "Lahti, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Nastola",
+          "la": 60.95,
+          "lo": 25.93,
+          "fn": "Nastola, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Orimattila",
+          "la": 60.8,
+          "lo": 25.73,
+          "fn": "Orimattila, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Padasjoki",
+          "la": 61.35,
+          "lo": 25.28,
+          "fn": "Padasjoki, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        },
+        {
+          "n": "Sysmä",
+          "la": 61.5,
+          "lo": 25.68,
+          "fn": "Sysmä, Päijänne Tavastia",
+          "s": "Päijänne Tavastia"
+        }
+      ]
+    },
+    {
+      "n": "Pirkanmaa",
+      "la": 61.7,
+      "lo": 23.79,
+      "sc": "11",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Äetsä",
+          "la": 61.28,
+          "lo": 22.68,
+          "fn": "Äetsä, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Aimala",
+          "la": 61.33,
+          "lo": 23.69,
+          "fn": "Aimala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Aitoo",
+          "la": 61.34,
+          "lo": 24.49,
+          "fn": "Aitoo, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Akaa",
+          "la": 61.17,
+          "lo": 23.87,
+          "fn": "Akaa, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Amuri",
+          "la": 61.5,
+          "lo": 23.75,
+          "fn": "Amuri, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Haihara",
+          "la": 61.48,
+          "lo": 23.88,
+          "fn": "Haihara, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Hallila",
+          "la": 61.46,
+          "lo": 23.83,
+          "fn": "Hallila, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Hämeenkyrö",
+          "la": 61.63,
+          "lo": 23.2,
+          "fn": "Hämeenkyrö, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Hervanta",
+          "la": 61.45,
+          "lo": 23.85,
+          "fn": "Hervanta, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Ikaalinen",
+          "la": 61.77,
+          "lo": 23.07,
+          "fn": "Ikaalinen, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Juupajoki",
+          "la": 61.8,
+          "lo": 24.37,
+          "fn": "Juupajoki, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kangasala",
+          "la": 61.46,
+          "lo": 24.07,
+          "fn": "Kangasala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kihniö",
+          "la": 62.21,
+          "lo": 23.18,
+          "fn": "Kihniö, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kiikka",
+          "la": 61.32,
+          "lo": 22.78,
+          "fn": "Kiikka, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kiikoinen",
+          "la": 61.45,
+          "lo": 22.57,
+          "fn": "Kiikoinen, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kolho",
+          "la": 62.13,
+          "lo": 24.52,
+          "fn": "Kolho, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kuhmalahti",
+          "la": 61.51,
+          "lo": 24.57,
+          "fn": "Kuhmalahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kuru",
+          "la": 61.88,
+          "lo": 23.72,
+          "fn": "Kuru, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kylmäkoski",
+          "la": 61.15,
+          "lo": 23.69,
+          "fn": "Kylmäkoski, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Längelmäki",
+          "la": 61.69,
+          "lo": 24.69,
+          "fn": "Längelmäki, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Lempäälä",
+          "la": 61.31,
+          "lo": 23.75,
+          "fn": "Lempäälä, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Lentävänniemi",
+          "la": 61.53,
+          "lo": 23.71,
+          "fn": "Lentävänniemi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Lielahti",
+          "la": 61.52,
+          "lo": 23.67,
+          "fn": "Lielahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Luopioinen",
+          "la": 61.36,
+          "lo": 24.67,
+          "fn": "Luopioinen, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Mänttä",
+          "la": 62.03,
+          "lo": 24.63,
+          "fn": "Mänttä, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Messukylä",
+          "la": 61.49,
+          "lo": 23.84,
+          "fn": "Messukylä, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Mouhijärvi",
+          "la": 61.5,
+          "lo": 23.02,
+          "fn": "Mouhijärvi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Naistenmatka",
+          "la": 61.47,
+          "lo": 23.65,
+          "fn": "Naistenmatka, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Nekala",
+          "la": 61.48,
+          "lo": 23.79,
+          "fn": "Nekala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Nokia",
+          "la": 61.48,
+          "lo": 23.51,
+          "fn": "Nokia, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Nurmi",
+          "la": 61.54,
+          "lo": 23.94,
+          "fn": "Nurmi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Nuutajärvi",
+          "la": 61.04,
+          "lo": 23.43,
+          "fn": "Nuutajärvi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Orivesi",
+          "la": 61.68,
+          "lo": 24.36,
+          "fn": "Orivesi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Osara",
+          "la": 61.71,
+          "lo": 23.16,
+          "fn": "Osara, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Pälkäne",
+          "la": 61.35,
+          "lo": 24.52,
+          "fn": "Pälkäne, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Parkano",
+          "la": 62.01,
+          "lo": 23.02,
+          "fn": "Parkano, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Pirkkala",
+          "la": 61.47,
+          "lo": 23.65,
+          "fn": "Pirkkala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Pispala",
+          "la": 61.51,
+          "lo": 23.7,
+          "fn": "Pispala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Pohjaslahti",
+          "la": 62.16,
+          "lo": 24.13,
+          "fn": "Pohjaslahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Punkalaidun",
+          "la": 61.11,
+          "lo": 23.11,
+          "fn": "Punkalaidun, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Ruovesi",
+          "la": 61.98,
+          "lo": 24.08,
+          "fn": "Ruovesi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Sääksmäki",
+          "la": 61.2,
+          "lo": 24.07,
+          "fn": "Sääksmäki, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Sahalahti",
+          "la": 61.47,
+          "lo": 24.32,
+          "fn": "Sahalahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Sastamala",
+          "la": 61.34,
+          "lo": 22.91,
+          "fn": "Sastamala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Suodenniemi",
+          "la": 61.56,
+          "lo": 22.79,
+          "fn": "Suodenniemi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Suoniemi",
+          "la": 61.44,
+          "lo": 23.21,
+          "fn": "Suoniemi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Tampere",
+          "la": 61.5,
+          "lo": 23.76,
+          "fn": "Tampere, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Teisko",
+          "la": 61.67,
+          "lo": 23.85,
+          "fn": "Teisko, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Toijala",
+          "la": 61.17,
+          "lo": 23.84,
+          "fn": "Toijala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Tottijärvi",
+          "la": 61.4,
+          "lo": 23.34,
+          "fn": "Tottijärvi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Urjala",
+          "la": 61.08,
+          "lo": 23.55,
+          "fn": "Urjala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Valkeakoski",
+          "la": 61.27,
+          "lo": 24.03,
+          "fn": "Valkeakoski, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Vammala",
+          "la": 61.34,
+          "lo": 22.91,
+          "fn": "Vammala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Vesilahti",
+          "la": 61.32,
+          "lo": 23.62,
+          "fn": "Vesilahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Viiala",
+          "la": 61.21,
+          "lo": 23.77,
+          "fn": "Viiala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Viljakkala",
+          "la": 61.71,
+          "lo": 23.27,
+          "fn": "Viljakkala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Vilppula",
+          "la": 62.02,
+          "lo": 24.5,
+          "fn": "Vilppula, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Virrat",
+          "la": 62.24,
+          "lo": 23.77,
+          "fn": "Virrat, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Vuores",
+          "la": 61.43,
+          "lo": 23.81,
+          "fn": "Vuores, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Ylöjärvi",
+          "la": 61.55,
+          "lo": 23.58,
+          "fn": "Ylöjärvi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        }
+      ]
+    },
+    {
+      "n": "Pirkanmaa",
+      "la": 61.7,
+      "lo": 23.79,
+      "sc": "11",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Äetsä",
+          "la": 61.28,
+          "lo": 22.68,
+          "fn": "Äetsä, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Aimala",
+          "la": 61.33,
+          "lo": 23.69,
+          "fn": "Aimala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Aitoo",
+          "la": 61.34,
+          "lo": 24.49,
+          "fn": "Aitoo, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Akaa",
+          "la": 61.17,
+          "lo": 23.87,
+          "fn": "Akaa, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Amuri",
+          "la": 61.5,
+          "lo": 23.75,
+          "fn": "Amuri, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Haihara",
+          "la": 61.48,
+          "lo": 23.88,
+          "fn": "Haihara, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Hallila",
+          "la": 61.46,
+          "lo": 23.83,
+          "fn": "Hallila, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Hämeenkyrö",
+          "la": 61.63,
+          "lo": 23.2,
+          "fn": "Hämeenkyrö, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Hervanta",
+          "la": 61.45,
+          "lo": 23.85,
+          "fn": "Hervanta, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Ikaalinen",
+          "la": 61.77,
+          "lo": 23.07,
+          "fn": "Ikaalinen, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Juupajoki",
+          "la": 61.8,
+          "lo": 24.37,
+          "fn": "Juupajoki, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kangasala",
+          "la": 61.46,
+          "lo": 24.07,
+          "fn": "Kangasala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kihniö",
+          "la": 62.21,
+          "lo": 23.18,
+          "fn": "Kihniö, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kiikka",
+          "la": 61.32,
+          "lo": 22.78,
+          "fn": "Kiikka, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kiikoinen",
+          "la": 61.45,
+          "lo": 22.57,
+          "fn": "Kiikoinen, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kolho",
+          "la": 62.13,
+          "lo": 24.52,
+          "fn": "Kolho, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kuhmalahti",
+          "la": 61.51,
+          "lo": 24.57,
+          "fn": "Kuhmalahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kuru",
+          "la": 61.88,
+          "lo": 23.72,
+          "fn": "Kuru, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Kylmäkoski",
+          "la": 61.15,
+          "lo": 23.69,
+          "fn": "Kylmäkoski, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Längelmäki",
+          "la": 61.69,
+          "lo": 24.69,
+          "fn": "Längelmäki, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Lempäälä",
+          "la": 61.31,
+          "lo": 23.75,
+          "fn": "Lempäälä, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Lentävänniemi",
+          "la": 61.53,
+          "lo": 23.71,
+          "fn": "Lentävänniemi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Lielahti",
+          "la": 61.52,
+          "lo": 23.67,
+          "fn": "Lielahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Luopioinen",
+          "la": 61.36,
+          "lo": 24.67,
+          "fn": "Luopioinen, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Mänttä",
+          "la": 62.03,
+          "lo": 24.63,
+          "fn": "Mänttä, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Messukylä",
+          "la": 61.49,
+          "lo": 23.84,
+          "fn": "Messukylä, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Mouhijärvi",
+          "la": 61.5,
+          "lo": 23.02,
+          "fn": "Mouhijärvi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Naistenmatka",
+          "la": 61.47,
+          "lo": 23.65,
+          "fn": "Naistenmatka, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Nekala",
+          "la": 61.48,
+          "lo": 23.79,
+          "fn": "Nekala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Nokia",
+          "la": 61.48,
+          "lo": 23.51,
+          "fn": "Nokia, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Nurmi",
+          "la": 61.54,
+          "lo": 23.94,
+          "fn": "Nurmi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Nuutajärvi",
+          "la": 61.04,
+          "lo": 23.43,
+          "fn": "Nuutajärvi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Orivesi",
+          "la": 61.68,
+          "lo": 24.36,
+          "fn": "Orivesi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Osara",
+          "la": 61.71,
+          "lo": 23.16,
+          "fn": "Osara, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Pälkäne",
+          "la": 61.35,
+          "lo": 24.52,
+          "fn": "Pälkäne, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Parkano",
+          "la": 62.01,
+          "lo": 23.02,
+          "fn": "Parkano, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Pirkkala",
+          "la": 61.47,
+          "lo": 23.65,
+          "fn": "Pirkkala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Pispala",
+          "la": 61.51,
+          "lo": 23.7,
+          "fn": "Pispala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Pohjaslahti",
+          "la": 62.16,
+          "lo": 24.13,
+          "fn": "Pohjaslahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Punkalaidun",
+          "la": 61.11,
+          "lo": 23.11,
+          "fn": "Punkalaidun, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Ruovesi",
+          "la": 61.98,
+          "lo": 24.08,
+          "fn": "Ruovesi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Sääksmäki",
+          "la": 61.2,
+          "lo": 24.07,
+          "fn": "Sääksmäki, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Sahalahti",
+          "la": 61.47,
+          "lo": 24.32,
+          "fn": "Sahalahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Sastamala",
+          "la": 61.34,
+          "lo": 22.91,
+          "fn": "Sastamala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Suodenniemi",
+          "la": 61.56,
+          "lo": 22.79,
+          "fn": "Suodenniemi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Suoniemi",
+          "la": 61.44,
+          "lo": 23.21,
+          "fn": "Suoniemi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Tampere",
+          "la": 61.5,
+          "lo": 23.76,
+          "fn": "Tampere, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Teisko",
+          "la": 61.67,
+          "lo": 23.85,
+          "fn": "Teisko, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Toijala",
+          "la": 61.17,
+          "lo": 23.84,
+          "fn": "Toijala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Tottijärvi",
+          "la": 61.4,
+          "lo": 23.34,
+          "fn": "Tottijärvi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Urjala",
+          "la": 61.08,
+          "lo": 23.55,
+          "fn": "Urjala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Valkeakoski",
+          "la": 61.27,
+          "lo": 24.03,
+          "fn": "Valkeakoski, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Vammala",
+          "la": 61.34,
+          "lo": 22.91,
+          "fn": "Vammala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Vesilahti",
+          "la": 61.32,
+          "lo": 23.62,
+          "fn": "Vesilahti, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Viiala",
+          "la": 61.21,
+          "lo": 23.77,
+          "fn": "Viiala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Viljakkala",
+          "la": 61.71,
+          "lo": 23.27,
+          "fn": "Viljakkala, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Vilppula",
+          "la": 62.02,
+          "lo": 24.5,
+          "fn": "Vilppula, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Virrat",
+          "la": 62.24,
+          "lo": 23.77,
+          "fn": "Virrat, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Vuores",
+          "la": 61.43,
+          "lo": 23.81,
+          "fn": "Vuores, Pirkanmaa",
+          "s": "Pirkanmaa"
+        },
+        {
+          "n": "Ylöjärvi",
+          "la": 61.55,
+          "lo": 23.58,
+          "fn": "Ylöjärvi, Pirkanmaa",
+          "s": "Pirkanmaa"
+        }
+      ]
+    },
+    {
+      "n": "Satakunta",
+      "la": 61.59,
+      "lo": 22.15,
+      "sc": "17",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Eura",
+          "la": 61.13,
+          "lo": 22.13,
+          "fn": "Eura, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Eurajoki",
+          "la": 61.2,
+          "lo": 21.73,
+          "fn": "Eurajoki, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Harjavalta",
+          "la": 61.32,
+          "lo": 22.13,
+          "fn": "Harjavalta, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Huittinen",
+          "la": 61.18,
+          "lo": 22.7,
+          "fn": "Huittinen, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Jämijärvi",
+          "la": 61.82,
+          "lo": 22.7,
+          "fn": "Jämijärvi, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Kankaanpää",
+          "la": 61.8,
+          "lo": 22.42,
+          "fn": "Kankaanpää, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Karvia",
+          "la": 62.13,
+          "lo": 22.57,
+          "fn": "Karvia, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Kiukainen",
+          "la": 61.22,
+          "lo": 22.08,
+          "fn": "Kiukainen, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Kokemäki",
+          "la": 61.26,
+          "lo": 22.36,
+          "fn": "Kokemäki, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Köyliö",
+          "la": 61.12,
+          "lo": 22.31,
+          "fn": "Köyliö, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Kullaa",
+          "la": 61.47,
+          "lo": 22.16,
+          "fn": "Kullaa, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Längelmäki",
+          "la": 61.65,
+          "lo": 22.1,
+          "fn": "Längelmäki, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Lappi",
+          "la": 61.1,
+          "lo": 21.83,
+          "fn": "Lappi, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Lavia",
+          "la": 61.6,
+          "lo": 22.6,
+          "fn": "Lavia, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Luvia",
+          "la": 61.36,
+          "lo": 21.63,
+          "fn": "Luvia, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Merikarvia",
+          "la": 61.86,
+          "lo": 21.5,
+          "fn": "Merikarvia, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Nakkila",
+          "la": 61.37,
+          "lo": 22.0,
+          "fn": "Nakkila, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Noormarkku",
+          "la": 61.59,
+          "lo": 21.87,
+          "fn": "Noormarkku, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Pomarkku",
+          "la": 61.69,
+          "lo": 22.01,
+          "fn": "Pomarkku, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Pori",
+          "la": 61.48,
+          "lo": 21.78,
+          "fn": "Pori, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Rauma",
+          "la": 61.13,
+          "lo": 21.51,
+          "fn": "Rauma, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Säkylä",
+          "la": 61.03,
+          "lo": 22.33,
+          "fn": "Säkylä, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Siikainen",
+          "la": 61.88,
+          "lo": 21.82,
+          "fn": "Siikainen, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Ulvila",
+          "la": 61.43,
+          "lo": 21.87,
+          "fn": "Ulvila, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Vampula",
+          "la": 61.02,
+          "lo": 22.7,
+          "fn": "Vampula, Satakunta",
+          "s": "Satakunta"
+        }
+      ]
+    },
+    {
+      "n": "Satakunta",
+      "la": 61.59,
+      "lo": 22.15,
+      "sc": "17",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Eura",
+          "la": 61.13,
+          "lo": 22.13,
+          "fn": "Eura, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Eurajoki",
+          "la": 61.2,
+          "lo": 21.73,
+          "fn": "Eurajoki, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Harjavalta",
+          "la": 61.32,
+          "lo": 22.13,
+          "fn": "Harjavalta, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Huittinen",
+          "la": 61.18,
+          "lo": 22.7,
+          "fn": "Huittinen, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Jämijärvi",
+          "la": 61.82,
+          "lo": 22.7,
+          "fn": "Jämijärvi, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Kankaanpää",
+          "la": 61.8,
+          "lo": 22.42,
+          "fn": "Kankaanpää, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Karvia",
+          "la": 62.13,
+          "lo": 22.57,
+          "fn": "Karvia, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Kiukainen",
+          "la": 61.22,
+          "lo": 22.08,
+          "fn": "Kiukainen, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Kokemäki",
+          "la": 61.26,
+          "lo": 22.36,
+          "fn": "Kokemäki, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Köyliö",
+          "la": 61.12,
+          "lo": 22.31,
+          "fn": "Köyliö, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Kullaa",
+          "la": 61.47,
+          "lo": 22.16,
+          "fn": "Kullaa, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Längelmäki",
+          "la": 61.65,
+          "lo": 22.1,
+          "fn": "Längelmäki, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Lappi",
+          "la": 61.1,
+          "lo": 21.83,
+          "fn": "Lappi, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Lavia",
+          "la": 61.6,
+          "lo": 22.6,
+          "fn": "Lavia, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Luvia",
+          "la": 61.36,
+          "lo": 21.63,
+          "fn": "Luvia, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Merikarvia",
+          "la": 61.86,
+          "lo": 21.5,
+          "fn": "Merikarvia, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Nakkila",
+          "la": 61.37,
+          "lo": 22.0,
+          "fn": "Nakkila, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Noormarkku",
+          "la": 61.59,
+          "lo": 21.87,
+          "fn": "Noormarkku, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Pomarkku",
+          "la": 61.69,
+          "lo": 22.01,
+          "fn": "Pomarkku, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Pori",
+          "la": 61.48,
+          "lo": 21.78,
+          "fn": "Pori, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Rauma",
+          "la": 61.13,
+          "lo": 21.51,
+          "fn": "Rauma, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Säkylä",
+          "la": 61.03,
+          "lo": 22.33,
+          "fn": "Säkylä, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Siikainen",
+          "la": 61.88,
+          "lo": 21.82,
+          "fn": "Siikainen, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Ulvila",
+          "la": 61.43,
+          "lo": 21.87,
+          "fn": "Ulvila, Satakunta",
+          "s": "Satakunta"
+        },
+        {
+          "n": "Vampula",
+          "la": 61.02,
+          "lo": 22.7,
+          "fn": "Vampula, Satakunta",
+          "s": "Satakunta"
+        }
+      ]
+    },
+    {
+      "n": "South Karelia",
+      "la": 61.12,
+      "lo": 28.1,
+      "sc": "02",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Imatra",
+          "la": 61.17,
+          "lo": 28.75,
+          "fn": "Imatra, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Joutseno",
+          "la": 61.12,
+          "lo": 28.51,
+          "fn": "Joutseno, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Lappeenranta",
+          "la": 61.06,
+          "lo": 28.19,
+          "fn": "Lappeenranta, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Lemi",
+          "la": 61.06,
+          "lo": 27.81,
+          "fn": "Lemi, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Luumäki",
+          "la": 60.93,
+          "lo": 27.58,
+          "fn": "Luumäki, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Nuijamaa",
+          "la": 60.96,
+          "lo": 28.55,
+          "fn": "Nuijamaa, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Parikkala",
+          "la": 61.55,
+          "lo": 29.5,
+          "fn": "Parikkala, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Rautjärvi",
+          "la": 61.43,
+          "lo": 29.35,
+          "fn": "Rautjärvi, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Ruokolahti",
+          "la": 61.28,
+          "lo": 28.83,
+          "fn": "Ruokolahti, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Saari",
+          "la": 61.65,
+          "lo": 29.75,
+          "fn": "Saari, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Savitaipale",
+          "la": 61.2,
+          "lo": 27.7,
+          "fn": "Savitaipale, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Taipalsaari",
+          "la": 61.15,
+          "lo": 28.05,
+          "fn": "Taipalsaari, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Ylämaa",
+          "la": 60.8,
+          "lo": 28.0,
+          "fn": "Ylämaa, South Karelia",
+          "s": "South Karelia"
+        }
+      ]
+    },
+    {
+      "n": "South Karelia",
+      "la": 61.12,
+      "lo": 28.1,
+      "sc": "02",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Imatra",
+          "la": 61.17,
+          "lo": 28.75,
+          "fn": "Imatra, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Joutseno",
+          "la": 61.12,
+          "lo": 28.51,
+          "fn": "Joutseno, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Lappeenranta",
+          "la": 61.06,
+          "lo": 28.19,
+          "fn": "Lappeenranta, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Lemi",
+          "la": 61.06,
+          "lo": 27.81,
+          "fn": "Lemi, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Luumäki",
+          "la": 60.93,
+          "lo": 27.58,
+          "fn": "Luumäki, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Nuijamaa",
+          "la": 60.96,
+          "lo": 28.55,
+          "fn": "Nuijamaa, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Parikkala",
+          "la": 61.55,
+          "lo": 29.5,
+          "fn": "Parikkala, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Rautjärvi",
+          "la": 61.43,
+          "lo": 29.35,
+          "fn": "Rautjärvi, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Ruokolahti",
+          "la": 61.28,
+          "lo": 28.83,
+          "fn": "Ruokolahti, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Saari",
+          "la": 61.65,
+          "lo": 29.75,
+          "fn": "Saari, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Savitaipale",
+          "la": 61.2,
+          "lo": 27.7,
+          "fn": "Savitaipale, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Taipalsaari",
+          "la": 61.15,
+          "lo": 28.05,
+          "fn": "Taipalsaari, South Karelia",
+          "s": "South Karelia"
+        },
+        {
+          "n": "Ylämaa",
+          "la": 60.8,
+          "lo": 28.0,
+          "fn": "Ylämaa, South Karelia",
+          "s": "South Karelia"
+        }
+      ]
+    },
+    {
+      "n": "Southern Ostrobothnia",
+      "la": 62.94,
+      "lo": 23.53,
+      "sc": "03",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Ähtäri",
+          "la": 62.55,
+          "lo": 24.06,
+          "fn": "Ähtäri, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Alahärmä",
+          "la": 63.23,
+          "lo": 22.85,
+          "fn": "Alahärmä, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Alajärvi",
+          "la": 63.0,
+          "lo": 23.82,
+          "fn": "Alajärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Alavus",
+          "la": 62.58,
+          "lo": 23.62,
+          "fn": "Alavus, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Evijärvi",
+          "la": 63.37,
+          "lo": 23.48,
+          "fn": "Evijärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Ilmajoki",
+          "la": 62.73,
+          "lo": 22.57,
+          "fn": "Ilmajoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Isojoki",
+          "la": 62.11,
+          "lo": 21.96,
+          "fn": "Isojoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Jalasjärvi",
+          "la": 62.5,
+          "lo": 22.75,
+          "fn": "Jalasjärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Jurva",
+          "la": 62.68,
+          "lo": 21.98,
+          "fn": "Jurva, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Karijoki",
+          "la": 62.31,
+          "lo": 21.71,
+          "fn": "Karijoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kauhajoki",
+          "la": 62.43,
+          "lo": 22.18,
+          "fn": "Kauhajoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kauhava",
+          "la": 63.1,
+          "lo": 23.07,
+          "fn": "Kauhava, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kortesjärvi",
+          "la": 63.3,
+          "lo": 23.17,
+          "fn": "Kortesjärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kuortane",
+          "la": 62.8,
+          "lo": 23.5,
+          "fn": "Kuortane, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kurikka",
+          "la": 62.62,
+          "lo": 22.42,
+          "fn": "Kurikka, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Lappajärvi",
+          "la": 63.2,
+          "lo": 23.63,
+          "fn": "Lappajärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Lapua",
+          "la": 62.97,
+          "lo": 23.01,
+          "fn": "Lapua, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Lehtimäki",
+          "la": 62.78,
+          "lo": 23.92,
+          "fn": "Lehtimäki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Nurmo",
+          "la": 62.83,
+          "lo": 22.91,
+          "fn": "Nurmo, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Seinäjoki",
+          "la": 62.79,
+          "lo": 22.83,
+          "fn": "Seinäjoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Soini",
+          "la": 62.87,
+          "lo": 24.22,
+          "fn": "Soini, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Teuva",
+          "la": 62.48,
+          "lo": 21.74,
+          "fn": "Teuva, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Töysä",
+          "la": 62.63,
+          "lo": 23.82,
+          "fn": "Töysä, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Vimpeli",
+          "la": 63.16,
+          "lo": 23.82,
+          "fn": "Vimpeli, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Ylihärmä",
+          "la": 63.15,
+          "lo": 22.78,
+          "fn": "Ylihärmä, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Ylistaro",
+          "la": 62.94,
+          "lo": 22.51,
+          "fn": "Ylistaro, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        }
+      ]
+    },
+    {
+      "n": "Southern Ostrobothnia",
+      "la": 62.94,
+      "lo": 23.53,
+      "sc": "03",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Ähtäri",
+          "la": 62.55,
+          "lo": 24.06,
+          "fn": "Ähtäri, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Alahärmä",
+          "la": 63.23,
+          "lo": 22.85,
+          "fn": "Alahärmä, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Alajärvi",
+          "la": 63.0,
+          "lo": 23.82,
+          "fn": "Alajärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Alavus",
+          "la": 62.58,
+          "lo": 23.62,
+          "fn": "Alavus, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Evijärvi",
+          "la": 63.37,
+          "lo": 23.48,
+          "fn": "Evijärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Ilmajoki",
+          "la": 62.73,
+          "lo": 22.57,
+          "fn": "Ilmajoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Isojoki",
+          "la": 62.11,
+          "lo": 21.96,
+          "fn": "Isojoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Jalasjärvi",
+          "la": 62.5,
+          "lo": 22.75,
+          "fn": "Jalasjärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Jurva",
+          "la": 62.68,
+          "lo": 21.98,
+          "fn": "Jurva, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Karijoki",
+          "la": 62.31,
+          "lo": 21.71,
+          "fn": "Karijoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kauhajoki",
+          "la": 62.43,
+          "lo": 22.18,
+          "fn": "Kauhajoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kauhava",
+          "la": 63.1,
+          "lo": 23.07,
+          "fn": "Kauhava, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kortesjärvi",
+          "la": 63.3,
+          "lo": 23.17,
+          "fn": "Kortesjärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kuortane",
+          "la": 62.8,
+          "lo": 23.5,
+          "fn": "Kuortane, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Kurikka",
+          "la": 62.62,
+          "lo": 22.42,
+          "fn": "Kurikka, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Lappajärvi",
+          "la": 63.2,
+          "lo": 23.63,
+          "fn": "Lappajärvi, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Lapua",
+          "la": 62.97,
+          "lo": 23.01,
+          "fn": "Lapua, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Lehtimäki",
+          "la": 62.78,
+          "lo": 23.92,
+          "fn": "Lehtimäki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Nurmo",
+          "la": 62.83,
+          "lo": 22.91,
+          "fn": "Nurmo, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Seinäjoki",
+          "la": 62.79,
+          "lo": 22.83,
+          "fn": "Seinäjoki, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Soini",
+          "la": 62.87,
+          "lo": 24.22,
+          "fn": "Soini, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Teuva",
+          "la": 62.48,
+          "lo": 21.74,
+          "fn": "Teuva, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Töysä",
+          "la": 62.63,
+          "lo": 23.82,
+          "fn": "Töysä, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Vimpeli",
+          "la": 63.16,
+          "lo": 23.82,
+          "fn": "Vimpeli, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Ylihärmä",
+          "la": 63.15,
+          "lo": 22.78,
+          "fn": "Ylihärmä, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        },
+        {
+          "n": "Ylistaro",
+          "la": 62.94,
+          "lo": 22.51,
+          "fn": "Ylistaro, Southern Ostrobothnia",
+          "s": "Southern Ostrobothnia"
+        }
+      ]
+    },
+    {
+      "n": "Southern Savonia",
+      "la": 61.69,
+      "lo": 27.8,
+      "sc": "04",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Enonkoski",
+          "la": 62.08,
+          "lo": 28.93,
+          "fn": "Enonkoski, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Haukivuori",
+          "la": 62.02,
+          "lo": 27.22,
+          "fn": "Haukivuori, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Heinävesi",
+          "la": 62.43,
+          "lo": 28.6,
+          "fn": "Heinävesi, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Hirvensalmi",
+          "la": 61.63,
+          "lo": 26.8,
+          "fn": "Hirvensalmi, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Jäppilä",
+          "la": 62.38,
+          "lo": 27.43,
+          "fn": "Jäppilä, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Joroinen",
+          "la": 62.18,
+          "lo": 27.83,
+          "fn": "Joroinen, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Juva",
+          "la": 61.9,
+          "lo": 27.85,
+          "fn": "Juva, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Kangasniemi",
+          "la": 61.99,
+          "lo": 26.65,
+          "fn": "Kangasniemi, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Kerimäki",
+          "la": 61.91,
+          "lo": 29.28,
+          "fn": "Kerimäki, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Mäntyharju",
+          "la": 61.42,
+          "lo": 26.88,
+          "fn": "Mäntyharju, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Mikkeli",
+          "la": 61.69,
+          "lo": 27.27,
+          "fn": "Mikkeli, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Pertunmaa",
+          "la": 61.5,
+          "lo": 26.48,
+          "fn": "Pertunmaa, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Pieksämäki",
+          "la": 62.3,
+          "lo": 27.13,
+          "fn": "Pieksämäki, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Punkaharju",
+          "la": 61.76,
+          "lo": 29.39,
+          "fn": "Punkaharju, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Puumala",
+          "la": 61.53,
+          "lo": 28.17,
+          "fn": "Puumala, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Rantasalmi",
+          "la": 62.07,
+          "lo": 28.3,
+          "fn": "Rantasalmi, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Ristiina",
+          "la": 61.51,
+          "lo": 27.25,
+          "fn": "Ristiina, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Savonlinna",
+          "la": 61.87,
+          "lo": 28.88,
+          "fn": "Savonlinna, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Savonranta",
+          "la": 62.18,
+          "lo": 29.2,
+          "fn": "Savonranta, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Sulkava",
+          "la": 61.79,
+          "lo": 28.37,
+          "fn": "Sulkava, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Virtasalmi",
+          "la": 62.13,
+          "lo": 27.46,
+          "fn": "Virtasalmi, Southern Savonia",
+          "s": "Southern Savonia"
+        }
+      ]
+    },
+    {
+      "n": "Southern Savonia",
+      "la": 61.69,
+      "lo": 27.8,
+      "sc": "04",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Enonkoski",
+          "la": 62.08,
+          "lo": 28.93,
+          "fn": "Enonkoski, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Haukivuori",
+          "la": 62.02,
+          "lo": 27.22,
+          "fn": "Haukivuori, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Heinävesi",
+          "la": 62.43,
+          "lo": 28.6,
+          "fn": "Heinävesi, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Hirvensalmi",
+          "la": 61.63,
+          "lo": 26.8,
+          "fn": "Hirvensalmi, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Jäppilä",
+          "la": 62.38,
+          "lo": 27.43,
+          "fn": "Jäppilä, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Joroinen",
+          "la": 62.18,
+          "lo": 27.83,
+          "fn": "Joroinen, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Juva",
+          "la": 61.9,
+          "lo": 27.85,
+          "fn": "Juva, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Kangasniemi",
+          "la": 61.99,
+          "lo": 26.65,
+          "fn": "Kangasniemi, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Kerimäki",
+          "la": 61.91,
+          "lo": 29.28,
+          "fn": "Kerimäki, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Mäntyharju",
+          "la": 61.42,
+          "lo": 26.88,
+          "fn": "Mäntyharju, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Mikkeli",
+          "la": 61.69,
+          "lo": 27.27,
+          "fn": "Mikkeli, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Pertunmaa",
+          "la": 61.5,
+          "lo": 26.48,
+          "fn": "Pertunmaa, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Pieksämäki",
+          "la": 62.3,
+          "lo": 27.13,
+          "fn": "Pieksämäki, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Punkaharju",
+          "la": 61.76,
+          "lo": 29.39,
+          "fn": "Punkaharju, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Puumala",
+          "la": 61.53,
+          "lo": 28.17,
+          "fn": "Puumala, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Rantasalmi",
+          "la": 62.07,
+          "lo": 28.3,
+          "fn": "Rantasalmi, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Ristiina",
+          "la": 61.51,
+          "lo": 27.25,
+          "fn": "Ristiina, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Savonlinna",
+          "la": 61.87,
+          "lo": 28.88,
+          "fn": "Savonlinna, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Savonranta",
+          "la": 62.18,
+          "lo": 29.2,
+          "fn": "Savonranta, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Sulkava",
+          "la": 61.79,
+          "lo": 28.37,
+          "fn": "Sulkava, Southern Savonia",
+          "s": "Southern Savonia"
+        },
+        {
+          "n": "Virtasalmi",
+          "la": 62.13,
+          "lo": 27.46,
+          "fn": "Virtasalmi, Southern Savonia",
+          "s": "Southern Savonia"
+        }
+      ]
+    },
+    {
+      "n": "Tavastia Proper",
+      "la": 60.91,
+      "lo": 24.3,
+      "sc": "06",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Forssa",
+          "la": 60.81,
+          "lo": 23.62,
+          "fn": "Forssa, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Hämeenlinna",
+          "la": 61.0,
+          "lo": 24.46,
+          "fn": "Hämeenlinna, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Hauho",
+          "la": 61.17,
+          "lo": 24.56,
+          "fn": "Hauho, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Hausjärvi",
+          "la": 60.78,
+          "lo": 24.93,
+          "fn": "Hausjärvi, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Humppila",
+          "la": 60.93,
+          "lo": 23.37,
+          "fn": "Humppila, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Janakkala",
+          "la": 60.9,
+          "lo": 24.6,
+          "fn": "Janakkala, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Jokioinen",
+          "la": 60.8,
+          "lo": 23.48,
+          "fn": "Jokioinen, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Kalvola",
+          "la": 61.1,
+          "lo": 24.12,
+          "fn": "Kalvola, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Lammi",
+          "la": 61.08,
+          "lo": 25.02,
+          "fn": "Lammi, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Loppi",
+          "la": 60.72,
+          "lo": 24.45,
+          "fn": "Loppi, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Renko",
+          "la": 60.9,
+          "lo": 24.29,
+          "fn": "Renko, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Riihimäki",
+          "la": 60.74,
+          "lo": 24.78,
+          "fn": "Riihimäki, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Tammela",
+          "la": 60.81,
+          "lo": 23.77,
+          "fn": "Tammela, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Tervakoski",
+          "la": 60.81,
+          "lo": 24.63,
+          "fn": "Tervakoski, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Tuulos",
+          "la": 61.15,
+          "lo": 24.8,
+          "fn": "Tuulos, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Ypäjä",
+          "la": 60.8,
+          "lo": 23.28,
+          "fn": "Ypäjä, Tavastia Proper",
+          "s": "Tavastia Proper"
+        }
+      ]
+    },
+    {
+      "n": "Tavastia Proper",
+      "la": 60.91,
+      "lo": 24.3,
+      "sc": "06",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Forssa",
+          "la": 60.81,
+          "lo": 23.62,
+          "fn": "Forssa, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Hämeenlinna",
+          "la": 61.0,
+          "lo": 24.46,
+          "fn": "Hämeenlinna, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Hauho",
+          "la": 61.17,
+          "lo": 24.56,
+          "fn": "Hauho, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Hausjärvi",
+          "la": 60.78,
+          "lo": 24.93,
+          "fn": "Hausjärvi, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Humppila",
+          "la": 60.93,
+          "lo": 23.37,
+          "fn": "Humppila, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Janakkala",
+          "la": 60.9,
+          "lo": 24.6,
+          "fn": "Janakkala, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Jokioinen",
+          "la": 60.8,
+          "lo": 23.48,
+          "fn": "Jokioinen, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Kalvola",
+          "la": 61.1,
+          "lo": 24.12,
+          "fn": "Kalvola, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Lammi",
+          "la": 61.08,
+          "lo": 25.02,
+          "fn": "Lammi, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Loppi",
+          "la": 60.72,
+          "lo": 24.45,
+          "fn": "Loppi, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Renko",
+          "la": 60.9,
+          "lo": 24.29,
+          "fn": "Renko, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Riihimäki",
+          "la": 60.74,
+          "lo": 24.78,
+          "fn": "Riihimäki, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Tammela",
+          "la": 60.81,
+          "lo": 23.77,
+          "fn": "Tammela, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Tervakoski",
+          "la": 60.81,
+          "lo": 24.63,
+          "fn": "Tervakoski, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Tuulos",
+          "la": 61.15,
+          "lo": 24.8,
+          "fn": "Tuulos, Tavastia Proper",
+          "s": "Tavastia Proper"
+        },
+        {
+          "n": "Ypäjä",
+          "la": 60.8,
+          "lo": 23.28,
+          "fn": "Ypäjä, Tavastia Proper",
+          "s": "Tavastia Proper"
+        }
+      ]
+    },
+    {
+      "n": "Uusimaa",
+      "la": 60.22,
+      "lo": 25.27,
+      "sc": "18",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Askola",
+          "la": 60.53,
+          "lo": 25.6,
+          "fn": "Askola, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Ekenäs",
+          "la": 59.97,
+          "lo": 23.43,
+          "fn": "Ekenäs, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Espoo",
+          "la": 60.21,
+          "lo": 24.65,
+          "fn": "Espoo, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Gumböle",
+          "la": 60.22,
+          "lo": 24.62,
+          "fn": "Gumböle, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Hanko",
+          "la": 59.83,
+          "lo": 22.95,
+          "fn": "Hanko, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Helsinki",
+          "la": 60.17,
+          "lo": 24.94,
+          "fn": "Helsinki, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Hyvinge",
+          "la": 60.63,
+          "lo": 24.87,
+          "fn": "Hyvinge, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Ingå",
+          "la": 60.05,
+          "lo": 24.0,
+          "fn": "Ingå, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Järvenpää",
+          "la": 60.47,
+          "lo": 25.09,
+          "fn": "Järvenpää, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kaarela",
+          "la": 60.25,
+          "lo": 24.88,
+          "fn": "Kaarela, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kallio",
+          "la": 60.18,
+          "lo": 24.95,
+          "fn": "Kallio, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Karis",
+          "la": 60.07,
+          "lo": 23.66,
+          "fn": "Karis, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Karjalohja",
+          "la": 60.24,
+          "lo": 23.72,
+          "fn": "Karjalohja, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Karkkila",
+          "la": 60.53,
+          "lo": 24.21,
+          "fn": "Karkkila, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kärkölä",
+          "la": 60.61,
+          "lo": 23.94,
+          "fn": "Kärkölä, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kauniainen",
+          "la": 60.21,
+          "lo": 24.73,
+          "fn": "Kauniainen, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kellokoski",
+          "la": 60.53,
+          "lo": 25.11,
+          "fn": "Kellokoski, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kerava",
+          "la": 60.4,
+          "lo": 25.11,
+          "fn": "Kerava, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kilo",
+          "la": 60.22,
+          "lo": 24.78,
+          "fn": "Kilo, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kirkkonummi",
+          "la": 60.12,
+          "lo": 24.44,
+          "fn": "Kirkkonummi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Koukkuniemi",
+          "la": 60.15,
+          "lo": 24.76,
+          "fn": "Koukkuniemi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Lapinjärvi",
+          "la": 60.62,
+          "lo": 26.2,
+          "fn": "Lapinjärvi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Lauttasaari",
+          "la": 60.16,
+          "lo": 24.87,
+          "fn": "Lauttasaari, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Liljendal",
+          "la": 60.57,
+          "lo": 26.05,
+          "fn": "Liljendal, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Lohja",
+          "la": 60.25,
+          "lo": 24.07,
+          "fn": "Lohja, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Lovisa",
+          "la": 60.46,
+          "lo": 26.23,
+          "fn": "Lovisa, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Mäntsälä",
+          "la": 60.63,
+          "lo": 25.32,
+          "fn": "Mäntsälä, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Mellunkylä",
+          "la": 60.23,
+          "lo": 25.1,
+          "fn": "Mellunkylä, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Munkkiniemi",
+          "la": 60.2,
+          "lo": 24.88,
+          "fn": "Munkkiniemi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Myrskylä",
+          "la": 60.67,
+          "lo": 25.85,
+          "fn": "Myrskylä, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Nurmijärvi",
+          "la": 60.46,
+          "lo": 24.81,
+          "fn": "Nurmijärvi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Otaniemi",
+          "la": 60.18,
+          "lo": 24.83,
+          "fn": "Otaniemi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Pernå",
+          "la": 60.45,
+          "lo": 26.03,
+          "fn": "Pernå, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Pohja",
+          "la": 60.1,
+          "lo": 23.53,
+          "fn": "Pohja, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Pornainen",
+          "la": 60.48,
+          "lo": 25.37,
+          "fn": "Pornainen, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Porvoo",
+          "la": 60.39,
+          "lo": 25.67,
+          "fn": "Porvoo, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Pukkila",
+          "la": 60.65,
+          "lo": 25.57,
+          "fn": "Pukkila, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Raaseporin",
+          "la": 60.0,
+          "lo": 23.55,
+          "fn": "Raaseporin, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Ruotsinpyhtää",
+          "la": 60.53,
+          "lo": 26.46,
+          "fn": "Ruotsinpyhtää, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Sammatti",
+          "la": 60.32,
+          "lo": 23.82,
+          "fn": "Sammatti, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Sibbo",
+          "la": 60.38,
+          "lo": 25.27,
+          "fn": "Sibbo, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Siuntio",
+          "la": 60.14,
+          "lo": 24.23,
+          "fn": "Siuntio, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Tuusula",
+          "la": 60.4,
+          "lo": 25.03,
+          "fn": "Tuusula, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Vantaa",
+          "la": 60.29,
+          "lo": 25.04,
+          "fn": "Vantaa, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Vihti",
+          "la": 60.42,
+          "lo": 24.32,
+          "fn": "Vihti, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Vuosaari",
+          "la": 60.21,
+          "lo": 25.14,
+          "fn": "Vuosaari, Uusimaa",
+          "s": "Uusimaa"
+        }
+      ]
+    },
+    {
+      "n": "Uusimaa",
+      "la": 60.22,
+      "lo": 25.27,
+      "sc": "18",
+      "t": "region",
+      "cities": [
+        {
+          "n": "Askola",
+          "la": 60.53,
+          "lo": 25.6,
+          "fn": "Askola, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Ekenäs",
+          "la": 59.97,
+          "lo": 23.43,
+          "fn": "Ekenäs, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Espoo",
+          "la": 60.21,
+          "lo": 24.65,
+          "fn": "Espoo, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Gumböle",
+          "la": 60.22,
+          "lo": 24.62,
+          "fn": "Gumböle, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Hanko",
+          "la": 59.83,
+          "lo": 22.95,
+          "fn": "Hanko, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Helsinki",
+          "la": 60.17,
+          "lo": 24.94,
+          "fn": "Helsinki, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Hyvinge",
+          "la": 60.63,
+          "lo": 24.87,
+          "fn": "Hyvinge, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Ingå",
+          "la": 60.05,
+          "lo": 24.0,
+          "fn": "Ingå, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Järvenpää",
+          "la": 60.47,
+          "lo": 25.09,
+          "fn": "Järvenpää, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kaarela",
+          "la": 60.25,
+          "lo": 24.88,
+          "fn": "Kaarela, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kallio",
+          "la": 60.18,
+          "lo": 24.95,
+          "fn": "Kallio, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Karis",
+          "la": 60.07,
+          "lo": 23.66,
+          "fn": "Karis, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Karjalohja",
+          "la": 60.24,
+          "lo": 23.72,
+          "fn": "Karjalohja, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Karkkila",
+          "la": 60.53,
+          "lo": 24.21,
+          "fn": "Karkkila, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kärkölä",
+          "la": 60.61,
+          "lo": 23.94,
+          "fn": "Kärkölä, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kauniainen",
+          "la": 60.21,
+          "lo": 24.73,
+          "fn": "Kauniainen, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kellokoski",
+          "la": 60.53,
+          "lo": 25.11,
+          "fn": "Kellokoski, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kerava",
+          "la": 60.4,
+          "lo": 25.11,
+          "fn": "Kerava, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kilo",
+          "la": 60.22,
+          "lo": 24.78,
+          "fn": "Kilo, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Kirkkonummi",
+          "la": 60.12,
+          "lo": 24.44,
+          "fn": "Kirkkonummi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Koukkuniemi",
+          "la": 60.15,
+          "lo": 24.76,
+          "fn": "Koukkuniemi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Lapinjärvi",
+          "la": 60.62,
+          "lo": 26.2,
+          "fn": "Lapinjärvi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Lauttasaari",
+          "la": 60.16,
+          "lo": 24.87,
+          "fn": "Lauttasaari, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Liljendal",
+          "la": 60.57,
+          "lo": 26.05,
+          "fn": "Liljendal, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Lohja",
+          "la": 60.25,
+          "lo": 24.07,
+          "fn": "Lohja, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Lovisa",
+          "la": 60.46,
+          "lo": 26.23,
+          "fn": "Lovisa, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Mäntsälä",
+          "la": 60.63,
+          "lo": 25.32,
+          "fn": "Mäntsälä, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Mellunkylä",
+          "la": 60.23,
+          "lo": 25.1,
+          "fn": "Mellunkylä, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Munkkiniemi",
+          "la": 60.2,
+          "lo": 24.88,
+          "fn": "Munkkiniemi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Myrskylä",
+          "la": 60.67,
+          "lo": 25.85,
+          "fn": "Myrskylä, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Nurmijärvi",
+          "la": 60.46,
+          "lo": 24.81,
+          "fn": "Nurmijärvi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Otaniemi",
+          "la": 60.18,
+          "lo": 24.83,
+          "fn": "Otaniemi, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Pernå",
+          "la": 60.45,
+          "lo": 26.03,
+          "fn": "Pernå, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Pohja",
+          "la": 60.1,
+          "lo": 23.53,
+          "fn": "Pohja, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Pornainen",
+          "la": 60.48,
+          "lo": 25.37,
+          "fn": "Pornainen, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Porvoo",
+          "la": 60.39,
+          "lo": 25.67,
+          "fn": "Porvoo, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Pukkila",
+          "la": 60.65,
+          "lo": 25.57,
+          "fn": "Pukkila, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Raaseporin",
+          "la": 60.0,
+          "lo": 23.55,
+          "fn": "Raaseporin, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Ruotsinpyhtää",
+          "la": 60.53,
+          "lo": 26.46,
+          "fn": "Ruotsinpyhtää, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Sammatti",
+          "la": 60.32,
+          "lo": 23.82,
+          "fn": "Sammatti, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Sibbo",
+          "la": 60.38,
+          "lo": 25.27,
+          "fn": "Sibbo, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Siuntio",
+          "la": 60.14,
+          "lo": 24.23,
+          "fn": "Siuntio, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Tuusula",
+          "la": 60.4,
+          "lo": 25.03,
+          "fn": "Tuusula, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Vantaa",
+          "la": 60.29,
+          "lo": 25.04,
+          "fn": "Vantaa, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Vihti",
+          "la": 60.42,
+          "lo": 24.32,
+          "fn": "Vihti, Uusimaa",
+          "s": "Uusimaa"
+        },
+        {
+          "n": "Vuosaari",
+          "la": 60.21,
+          "lo": 25.14,
+          "fn": "Vuosaari, Uusimaa",
+          "s": "Uusimaa"
+        }
+      ]
+    }
+  ]
+}

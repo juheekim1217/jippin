@@ -1,0 +1,2212 @@
+{
+  "states": [
+    {
+      "n": "Central",
+      "la": 47.61,
+      "lo": -122.3,
+      "sc": "M",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bet Dagan",
+          "la": 32.0,
+          "lo": 34.83,
+          "fn": "Bet Dagan, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Bet Yiẕẖaq",
+          "la": 32.33,
+          "lo": 34.89,
+          "fn": "Bet Yiẕẖaq, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Bnei Ayish",
+          "la": 31.78,
+          "lo": 34.75,
+          "fn": "Bnei Ayish, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Elyakhin",
+          "la": 32.41,
+          "lo": 34.92,
+          "fn": "Elyakhin, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Eṭ Ṭaiyiba",
+          "la": 32.27,
+          "lo": 35.01,
+          "fn": "Eṭ Ṭaiyiba, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Even Yehuda",
+          "la": 32.27,
+          "lo": 34.89,
+          "fn": "Even Yehuda, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Gan Yavne",
+          "la": 31.79,
+          "lo": 34.71,
+          "fn": "Gan Yavne, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ganei Tikva",
+          "la": 32.06,
+          "lo": 34.87,
+          "fn": "Ganei Tikva, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Gedera",
+          "la": 31.81,
+          "lo": 34.78,
+          "fn": "Gedera, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Hod HaSharon",
+          "la": 32.16,
+          "lo": 34.89,
+          "fn": "Hod HaSharon, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Jaljūlya",
+          "la": 32.15,
+          "lo": 34.95,
+          "fn": "Jaljūlya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Kafr Qāsim",
+          "la": 32.11,
+          "lo": 34.98,
+          "fn": "Kafr Qāsim, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Kefar H̱abad",
+          "la": 31.99,
+          "lo": 34.85,
+          "fn": "Kefar H̱abad, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Kefar Yona",
+          "la": 32.32,
+          "lo": 34.94,
+          "fn": "Kefar Yona, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Kfar Saba",
+          "la": 32.17,
+          "lo": 34.91,
+          "fn": "Kfar Saba, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Lapid",
+          "la": 31.92,
+          "lo": 35.03,
+          "fn": "Lapid, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Lod",
+          "la": 31.95,
+          "lo": 34.89,
+          "fn": "Lod, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Mazkeret Batya",
+          "la": 31.85,
+          "lo": 34.85,
+          "fn": "Mazkeret Batya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Modi‘in Makkabbim Re‘ut",
+          "la": 31.89,
+          "lo": 35.02,
+          "fn": "Modi‘in Makkabbim Re‘ut, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Neẖalim",
+          "la": 32.06,
+          "lo": 34.91,
+          "fn": "Neẖalim, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ness Ziona",
+          "la": 31.93,
+          "lo": 34.8,
+          "fn": "Ness Ziona, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Netanya",
+          "la": 32.33,
+          "lo": 34.86,
+          "fn": "Netanya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Nirit",
+          "la": 32.15,
+          "lo": 34.99,
+          "fn": "Nirit, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Nof Ayalon",
+          "la": 31.87,
+          "lo": 34.99,
+          "fn": "Nof Ayalon, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Nordiyya",
+          "la": 32.31,
+          "lo": 34.9,
+          "fn": "Nordiyya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Pardesiyya",
+          "la": 32.31,
+          "lo": 34.91,
+          "fn": "Pardesiyya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Petaẖ Tiqwa",
+          "la": 32.09,
+          "lo": 34.89,
+          "fn": "Petaẖ Tiqwa, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Qalansuwa",
+          "la": 32.28,
+          "lo": 34.98,
+          "fn": "Qalansuwa, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ra'anana",
+          "la": 32.18,
+          "lo": 34.87,
+          "fn": "Ra'anana, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ramla",
+          "la": 31.93,
+          "lo": 34.87,
+          "fn": "Ramla, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Reẖovot",
+          "la": 31.89,
+          "lo": 34.81,
+          "fn": "Reẖovot, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Rishon LeẔiyyon",
+          "la": 31.97,
+          "lo": 34.79,
+          "fn": "Rishon LeẔiyyon, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Rosh Ha‘Ayin",
+          "la": 32.1,
+          "lo": 34.96,
+          "fn": "Rosh Ha‘Ayin, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Savyon",
+          "la": 32.05,
+          "lo": 34.88,
+          "fn": "Savyon, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Shoham",
+          "la": 32.0,
+          "lo": 34.95,
+          "fn": "Shoham, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Tel Mond",
+          "la": 32.25,
+          "lo": 34.92,
+          "fn": "Tel Mond, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Tirah",
+          "la": 32.23,
+          "lo": 34.95,
+          "fn": "Tirah, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Yavné",
+          "la": 31.88,
+          "lo": 34.74,
+          "fn": "Yavné, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Yehud",
+          "la": 32.03,
+          "lo": 34.89,
+          "fn": "Yehud, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ẕur Moshe",
+          "la": 32.3,
+          "lo": 34.91,
+          "fn": "Ẕur Moshe, Central",
+          "s": "Central"
+        }
+      ]
+    },
+    {
+      "n": "Central",
+      "la": 47.61,
+      "lo": -122.3,
+      "sc": "M",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Bet Dagan",
+          "la": 32.0,
+          "lo": 34.83,
+          "fn": "Bet Dagan, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Bet Yiẕẖaq",
+          "la": 32.33,
+          "lo": 34.89,
+          "fn": "Bet Yiẕẖaq, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Bnei Ayish",
+          "la": 31.78,
+          "lo": 34.75,
+          "fn": "Bnei Ayish, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Elyakhin",
+          "la": 32.41,
+          "lo": 34.92,
+          "fn": "Elyakhin, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Eṭ Ṭaiyiba",
+          "la": 32.27,
+          "lo": 35.01,
+          "fn": "Eṭ Ṭaiyiba, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Even Yehuda",
+          "la": 32.27,
+          "lo": 34.89,
+          "fn": "Even Yehuda, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Gan Yavne",
+          "la": 31.79,
+          "lo": 34.71,
+          "fn": "Gan Yavne, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ganei Tikva",
+          "la": 32.06,
+          "lo": 34.87,
+          "fn": "Ganei Tikva, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Gedera",
+          "la": 31.81,
+          "lo": 34.78,
+          "fn": "Gedera, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Hod HaSharon",
+          "la": 32.16,
+          "lo": 34.89,
+          "fn": "Hod HaSharon, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Jaljūlya",
+          "la": 32.15,
+          "lo": 34.95,
+          "fn": "Jaljūlya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Kafr Qāsim",
+          "la": 32.11,
+          "lo": 34.98,
+          "fn": "Kafr Qāsim, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Kefar H̱abad",
+          "la": 31.99,
+          "lo": 34.85,
+          "fn": "Kefar H̱abad, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Kefar Yona",
+          "la": 32.32,
+          "lo": 34.94,
+          "fn": "Kefar Yona, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Kfar Saba",
+          "la": 32.17,
+          "lo": 34.91,
+          "fn": "Kfar Saba, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Lapid",
+          "la": 31.92,
+          "lo": 35.03,
+          "fn": "Lapid, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Lod",
+          "la": 31.95,
+          "lo": 34.89,
+          "fn": "Lod, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Mazkeret Batya",
+          "la": 31.85,
+          "lo": 34.85,
+          "fn": "Mazkeret Batya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Modi‘in Makkabbim Re‘ut",
+          "la": 31.89,
+          "lo": 35.02,
+          "fn": "Modi‘in Makkabbim Re‘ut, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Neẖalim",
+          "la": 32.06,
+          "lo": 34.91,
+          "fn": "Neẖalim, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ness Ziona",
+          "la": 31.93,
+          "lo": 34.8,
+          "fn": "Ness Ziona, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Netanya",
+          "la": 32.33,
+          "lo": 34.86,
+          "fn": "Netanya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Nirit",
+          "la": 32.15,
+          "lo": 34.99,
+          "fn": "Nirit, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Nof Ayalon",
+          "la": 31.87,
+          "lo": 34.99,
+          "fn": "Nof Ayalon, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Nordiyya",
+          "la": 32.31,
+          "lo": 34.9,
+          "fn": "Nordiyya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Pardesiyya",
+          "la": 32.31,
+          "lo": 34.91,
+          "fn": "Pardesiyya, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Petaẖ Tiqwa",
+          "la": 32.09,
+          "lo": 34.89,
+          "fn": "Petaẖ Tiqwa, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Qalansuwa",
+          "la": 32.28,
+          "lo": 34.98,
+          "fn": "Qalansuwa, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ra'anana",
+          "la": 32.18,
+          "lo": 34.87,
+          "fn": "Ra'anana, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ramla",
+          "la": 31.93,
+          "lo": 34.87,
+          "fn": "Ramla, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Reẖovot",
+          "la": 31.89,
+          "lo": 34.81,
+          "fn": "Reẖovot, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Rishon LeẔiyyon",
+          "la": 31.97,
+          "lo": 34.79,
+          "fn": "Rishon LeẔiyyon, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Rosh Ha‘Ayin",
+          "la": 32.1,
+          "lo": 34.96,
+          "fn": "Rosh Ha‘Ayin, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Savyon",
+          "la": 32.05,
+          "lo": 34.88,
+          "fn": "Savyon, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Shoham",
+          "la": 32.0,
+          "lo": 34.95,
+          "fn": "Shoham, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Tel Mond",
+          "la": 32.25,
+          "lo": 34.92,
+          "fn": "Tel Mond, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Tirah",
+          "la": 32.23,
+          "lo": 34.95,
+          "fn": "Tirah, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Yavné",
+          "la": 31.88,
+          "lo": 34.74,
+          "fn": "Yavné, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Yehud",
+          "la": 32.03,
+          "lo": 34.89,
+          "fn": "Yehud, Central",
+          "s": "Central"
+        },
+        {
+          "n": "Ẕur Moshe",
+          "la": 32.3,
+          "lo": 34.91,
+          "fn": "Ẕur Moshe, Central",
+          "s": "Central"
+        }
+      ]
+    },
+    {
+      "n": "Haifa",
+      "la": 32.48,
+      "lo": 34.99,
+      "sc": "HA",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Atlit",
+          "la": 32.69,
+          "lo": 34.94,
+          "fn": "Atlit, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Caesarea",
+          "la": 32.52,
+          "lo": 34.9,
+          "fn": "Caesarea, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Daliyat al Karmel",
+          "la": 32.69,
+          "lo": 35.05,
+          "fn": "Daliyat al Karmel, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "El Fureidīs",
+          "la": 32.6,
+          "lo": 34.95,
+          "fn": "El Fureidīs, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Hadera",
+          "la": 32.44,
+          "lo": 34.9,
+          "fn": "Hadera, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Haifa",
+          "la": 32.82,
+          "lo": 34.99,
+          "fn": "Haifa, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Ibṭīn",
+          "la": 32.76,
+          "lo": 35.11,
+          "fn": "Ibṭīn, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Nesher",
+          "la": 32.77,
+          "lo": 35.04,
+          "fn": "Nesher, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Qiryat Ata",
+          "la": 32.81,
+          "lo": 35.11,
+          "fn": "Qiryat Ata, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Qiryat Bialik",
+          "la": 32.83,
+          "lo": 35.09,
+          "fn": "Qiryat Bialik, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Qiryat Moẕqin",
+          "la": 32.84,
+          "lo": 35.08,
+          "fn": "Qiryat Moẕqin, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Qiryat Yam",
+          "la": 32.85,
+          "lo": 35.07,
+          "fn": "Qiryat Yam, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Rekhasim",
+          "la": 32.75,
+          "lo": 35.1,
+          "fn": "Rekhasim, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Tirat Karmel",
+          "la": 32.76,
+          "lo": 34.97,
+          "fn": "Tirat Karmel, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Umm el Faḥm",
+          "la": 32.52,
+          "lo": 35.15,
+          "fn": "Umm el Faḥm, Haifa",
+          "s": "Haifa"
+        }
+      ]
+    },
+    {
+      "n": "Haifa",
+      "la": 32.48,
+      "lo": 34.99,
+      "sc": "HA",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Atlit",
+          "la": 32.69,
+          "lo": 34.94,
+          "fn": "Atlit, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Caesarea",
+          "la": 32.52,
+          "lo": 34.9,
+          "fn": "Caesarea, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Daliyat al Karmel",
+          "la": 32.69,
+          "lo": 35.05,
+          "fn": "Daliyat al Karmel, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "El Fureidīs",
+          "la": 32.6,
+          "lo": 34.95,
+          "fn": "El Fureidīs, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Hadera",
+          "la": 32.44,
+          "lo": 34.9,
+          "fn": "Hadera, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Haifa",
+          "la": 32.82,
+          "lo": 34.99,
+          "fn": "Haifa, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Ibṭīn",
+          "la": 32.76,
+          "lo": 35.11,
+          "fn": "Ibṭīn, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Nesher",
+          "la": 32.77,
+          "lo": 35.04,
+          "fn": "Nesher, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Qiryat Ata",
+          "la": 32.81,
+          "lo": 35.11,
+          "fn": "Qiryat Ata, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Qiryat Bialik",
+          "la": 32.83,
+          "lo": 35.09,
+          "fn": "Qiryat Bialik, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Qiryat Moẕqin",
+          "la": 32.84,
+          "lo": 35.08,
+          "fn": "Qiryat Moẕqin, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Qiryat Yam",
+          "la": 32.85,
+          "lo": 35.07,
+          "fn": "Qiryat Yam, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Rekhasim",
+          "la": 32.75,
+          "lo": 35.1,
+          "fn": "Rekhasim, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Tirat Karmel",
+          "la": 32.76,
+          "lo": 34.97,
+          "fn": "Tirat Karmel, Haifa",
+          "s": "Haifa"
+        },
+        {
+          "n": "Umm el Faḥm",
+          "la": 32.52,
+          "lo": 35.15,
+          "fn": "Umm el Faḥm, Haifa",
+          "s": "Haifa"
+        }
+      ]
+    },
+    {
+      "n": "Jerusalem",
+      "la": 31.76,
+      "lo": 34.99,
+      "sc": "JM",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Abū Ghaush",
+          "la": 31.81,
+          "lo": 35.11,
+          "fn": "Abū Ghaush, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Bet Shemesh",
+          "la": 31.73,
+          "lo": 34.99,
+          "fn": "Bet Shemesh, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Har Adar",
+          "la": 31.83,
+          "lo": 35.13,
+          "fn": "Har Adar, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Jerusalem",
+          "la": 31.77,
+          "lo": 35.22,
+          "fn": "Jerusalem, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Mevasseret Ẕiyyon",
+          "la": 31.8,
+          "lo": 35.15,
+          "fn": "Mevasseret Ẕiyyon, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Modiin Ilit",
+          "la": 31.93,
+          "lo": 35.04,
+          "fn": "Modiin Ilit, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "West Jerusalem",
+          "la": 31.78,
+          "lo": 35.22,
+          "fn": "West Jerusalem, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Ẕur Hadassa",
+          "la": 31.72,
+          "lo": 35.1,
+          "fn": "Ẕur Hadassa, Jerusalem",
+          "s": "Jerusalem"
+        }
+      ]
+    },
+    {
+      "n": "Jerusalem",
+      "la": 31.76,
+      "lo": 34.99,
+      "sc": "JM",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Abū Ghaush",
+          "la": 31.81,
+          "lo": 35.11,
+          "fn": "Abū Ghaush, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Bet Shemesh",
+          "la": 31.73,
+          "lo": 34.99,
+          "fn": "Bet Shemesh, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Har Adar",
+          "la": 31.83,
+          "lo": 35.13,
+          "fn": "Har Adar, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Jerusalem",
+          "la": 31.77,
+          "lo": 35.22,
+          "fn": "Jerusalem, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Mevasseret Ẕiyyon",
+          "la": 31.8,
+          "lo": 35.15,
+          "fn": "Mevasseret Ẕiyyon, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Modiin Ilit",
+          "la": 31.93,
+          "lo": 35.04,
+          "fn": "Modiin Ilit, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "West Jerusalem",
+          "la": 31.78,
+          "lo": 35.22,
+          "fn": "West Jerusalem, Jerusalem",
+          "s": "Jerusalem"
+        },
+        {
+          "n": "Ẕur Hadassa",
+          "la": 31.72,
+          "lo": 35.1,
+          "fn": "Ẕur Hadassa, Jerusalem",
+          "s": "Jerusalem"
+        }
+      ]
+    },
+    {
+      "n": "Northern",
+      "la": 36.15,
+      "lo": -96.0,
+      "sc": "Z",
+      "t": "district",
+      "cities": [
+        {
+          "n": "‘Eilabun",
+          "la": 32.84,
+          "lo": 35.4,
+          "fn": "‘Eilabun, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "‘Uzeir",
+          "la": 32.79,
+          "lo": 35.33,
+          "fn": "‘Uzeir, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Acre",
+          "la": 32.93,
+          "lo": 35.08,
+          "fn": "Acre, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Afula",
+          "la": 32.61,
+          "lo": 35.29,
+          "fn": "Afula, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Basmat Ṭab‘ūn",
+          "la": 32.74,
+          "lo": 35.16,
+          "fn": "Basmat Ṭab‘ūn, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Beit Jann",
+          "la": 32.96,
+          "lo": 35.38,
+          "fn": "Beit Jann, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Bet She’an",
+          "la": 32.5,
+          "lo": 35.5,
+          "fn": "Bet She’an, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Bīr el Maksūr",
+          "la": 32.78,
+          "lo": 35.22,
+          "fn": "Bīr el Maksūr, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Bu‘eina",
+          "la": 32.81,
+          "lo": 35.36,
+          "fn": "Bu‘eina, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Buqei‘a",
+          "la": 32.98,
+          "lo": 35.33,
+          "fn": "Buqei‘a, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Dabbūrīya",
+          "la": 32.69,
+          "lo": 35.37,
+          "fn": "Dabbūrīya, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Deir Ḥannā",
+          "la": 32.86,
+          "lo": 35.36,
+          "fn": "Deir Ḥannā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "El Mazra‘a",
+          "la": 32.98,
+          "lo": 35.1,
+          "fn": "El Mazra‘a, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Er Reina",
+          "la": 32.72,
+          "lo": 35.32,
+          "fn": "Er Reina, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Esh Sheikh Dannūn",
+          "la": 32.99,
+          "lo": 35.15,
+          "fn": "Esh Sheikh Dannūn, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Ḥurfeish",
+          "la": 33.02,
+          "lo": 35.35,
+          "fn": "Ḥurfeish, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Iksāl",
+          "la": 32.68,
+          "lo": 35.32,
+          "fn": "Iksāl, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Jīsh",
+          "la": 33.02,
+          "lo": 35.45,
+          "fn": "Jīsh, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Judeida Makr",
+          "la": 32.93,
+          "lo": 35.16,
+          "fn": "Judeida Makr, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kābūl",
+          "la": 32.87,
+          "lo": 35.21,
+          "fn": "Kābūl, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kafr Kammā",
+          "la": 32.72,
+          "lo": 35.44,
+          "fn": "Kafr Kammā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kafr Kannā",
+          "la": 32.75,
+          "lo": 35.34,
+          "fn": "Kafr Kannā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kafr Mandā",
+          "la": 32.81,
+          "lo": 35.26,
+          "fn": "Kafr Mandā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kafr Miṣr",
+          "la": 32.65,
+          "lo": 35.42,
+          "fn": "Kafr Miṣr, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Karmi’el",
+          "la": 32.92,
+          "lo": 35.31,
+          "fn": "Karmi’el, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kaukab Abū el Hījā",
+          "la": 32.83,
+          "lo": 35.25,
+          "fn": "Kaukab Abū el Hījā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kefar Rosh HaNiqra",
+          "la": 33.09,
+          "lo": 35.11,
+          "fn": "Kefar Rosh HaNiqra, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kefar Tavor",
+          "la": 32.69,
+          "lo": 35.42,
+          "fn": "Kefar Tavor, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kefar Weradim",
+          "la": 32.99,
+          "lo": 35.28,
+          "fn": "Kefar Weradim, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kfar Yasif",
+          "la": 32.95,
+          "lo": 35.16,
+          "fn": "Kfar Yasif, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "maalot Tarshīhā",
+          "la": 33.02,
+          "lo": 35.27,
+          "fn": "maalot Tarshīhā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Maghār",
+          "la": 32.89,
+          "lo": 35.41,
+          "fn": "Maghār, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Metulla",
+          "la": 33.28,
+          "lo": 35.58,
+          "fn": "Metulla, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Mi‘ilyā",
+          "la": 33.03,
+          "lo": 35.26,
+          "fn": "Mi‘ilyā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Migdal Ha‘Emeq",
+          "la": 32.68,
+          "lo": 35.24,
+          "fn": "Migdal Ha‘Emeq, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Nahariyya",
+          "la": 33.01,
+          "lo": 35.1,
+          "fn": "Nahariyya, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Naḥf",
+          "la": 32.93,
+          "lo": 35.32,
+          "fn": "Naḥf, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Nazareth",
+          "la": 32.7,
+          "lo": 35.3,
+          "fn": "Nazareth, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Nefat ‘Akko",
+          "la": 32.95,
+          "lo": 35.23,
+          "fn": "Nefat ‘Akko, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Nein",
+          "la": 32.63,
+          "lo": 35.35,
+          "fn": "Nein, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Pasuta",
+          "la": 33.05,
+          "lo": 35.31,
+          "fn": "Pasuta, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Qiryat Shemona",
+          "la": 33.21,
+          "lo": 35.57,
+          "fn": "Qiryat Shemona, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Ramat Yishay",
+          "la": 32.7,
+          "lo": 35.17,
+          "fn": "Ramat Yishay, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Rosh Pinna",
+          "la": 32.97,
+          "lo": 35.54,
+          "fn": "Rosh Pinna, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Rumat Heib",
+          "la": 32.78,
+          "lo": 35.31,
+          "fn": "Rumat Heib, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Safed",
+          "la": 32.96,
+          "lo": 35.5,
+          "fn": "Safed, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Sājūr",
+          "la": 32.94,
+          "lo": 35.34,
+          "fn": "Sājūr, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Sakhnīn",
+          "la": 32.86,
+          "lo": 35.3,
+          "fn": "Sakhnīn, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Sallama",
+          "la": 32.89,
+          "lo": 35.37,
+          "fn": "Sallama, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Shelomi",
+          "la": 33.07,
+          "lo": 35.14,
+          "fn": "Shelomi, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Shibli",
+          "la": 32.69,
+          "lo": 35.39,
+          "fn": "Shibli, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Sūlam",
+          "la": 32.61,
+          "lo": 35.33,
+          "fn": "Sūlam, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Tamra",
+          "la": 32.85,
+          "lo": 35.2,
+          "fn": "Tamra, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Tiberias",
+          "la": 32.79,
+          "lo": 35.53,
+          "fn": "Tiberias, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Timrat",
+          "la": 32.7,
+          "lo": 35.22,
+          "fn": "Timrat, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Yavne’el",
+          "la": 32.71,
+          "lo": 35.5,
+          "fn": "Yavne’el, Northern",
+          "s": "Northern"
+        }
+      ]
+    },
+    {
+      "n": "Northern",
+      "la": 36.15,
+      "lo": -96.0,
+      "sc": "Z",
+      "t": "district",
+      "cities": [
+        {
+          "n": "‘Eilabun",
+          "la": 32.84,
+          "lo": 35.4,
+          "fn": "‘Eilabun, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "‘Uzeir",
+          "la": 32.79,
+          "lo": 35.33,
+          "fn": "‘Uzeir, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Acre",
+          "la": 32.93,
+          "lo": 35.08,
+          "fn": "Acre, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Afula",
+          "la": 32.61,
+          "lo": 35.29,
+          "fn": "Afula, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Basmat Ṭab‘ūn",
+          "la": 32.74,
+          "lo": 35.16,
+          "fn": "Basmat Ṭab‘ūn, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Beit Jann",
+          "la": 32.96,
+          "lo": 35.38,
+          "fn": "Beit Jann, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Bet She’an",
+          "la": 32.5,
+          "lo": 35.5,
+          "fn": "Bet She’an, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Bīr el Maksūr",
+          "la": 32.78,
+          "lo": 35.22,
+          "fn": "Bīr el Maksūr, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Bu‘eina",
+          "la": 32.81,
+          "lo": 35.36,
+          "fn": "Bu‘eina, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Buqei‘a",
+          "la": 32.98,
+          "lo": 35.33,
+          "fn": "Buqei‘a, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Dabbūrīya",
+          "la": 32.69,
+          "lo": 35.37,
+          "fn": "Dabbūrīya, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Deir Ḥannā",
+          "la": 32.86,
+          "lo": 35.36,
+          "fn": "Deir Ḥannā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "El Mazra‘a",
+          "la": 32.98,
+          "lo": 35.1,
+          "fn": "El Mazra‘a, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Er Reina",
+          "la": 32.72,
+          "lo": 35.32,
+          "fn": "Er Reina, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Esh Sheikh Dannūn",
+          "la": 32.99,
+          "lo": 35.15,
+          "fn": "Esh Sheikh Dannūn, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Ḥurfeish",
+          "la": 33.02,
+          "lo": 35.35,
+          "fn": "Ḥurfeish, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Iksāl",
+          "la": 32.68,
+          "lo": 35.32,
+          "fn": "Iksāl, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Jīsh",
+          "la": 33.02,
+          "lo": 35.45,
+          "fn": "Jīsh, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Judeida Makr",
+          "la": 32.93,
+          "lo": 35.16,
+          "fn": "Judeida Makr, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kābūl",
+          "la": 32.87,
+          "lo": 35.21,
+          "fn": "Kābūl, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kafr Kammā",
+          "la": 32.72,
+          "lo": 35.44,
+          "fn": "Kafr Kammā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kafr Kannā",
+          "la": 32.75,
+          "lo": 35.34,
+          "fn": "Kafr Kannā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kafr Mandā",
+          "la": 32.81,
+          "lo": 35.26,
+          "fn": "Kafr Mandā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kafr Miṣr",
+          "la": 32.65,
+          "lo": 35.42,
+          "fn": "Kafr Miṣr, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Karmi’el",
+          "la": 32.92,
+          "lo": 35.31,
+          "fn": "Karmi’el, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kaukab Abū el Hījā",
+          "la": 32.83,
+          "lo": 35.25,
+          "fn": "Kaukab Abū el Hījā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kefar Rosh HaNiqra",
+          "la": 33.09,
+          "lo": 35.11,
+          "fn": "Kefar Rosh HaNiqra, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kefar Tavor",
+          "la": 32.69,
+          "lo": 35.42,
+          "fn": "Kefar Tavor, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kefar Weradim",
+          "la": 32.99,
+          "lo": 35.28,
+          "fn": "Kefar Weradim, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Kfar Yasif",
+          "la": 32.95,
+          "lo": 35.16,
+          "fn": "Kfar Yasif, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "maalot Tarshīhā",
+          "la": 33.02,
+          "lo": 35.27,
+          "fn": "maalot Tarshīhā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Maghār",
+          "la": 32.89,
+          "lo": 35.41,
+          "fn": "Maghār, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Metulla",
+          "la": 33.28,
+          "lo": 35.58,
+          "fn": "Metulla, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Mi‘ilyā",
+          "la": 33.03,
+          "lo": 35.26,
+          "fn": "Mi‘ilyā, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Migdal Ha‘Emeq",
+          "la": 32.68,
+          "lo": 35.24,
+          "fn": "Migdal Ha‘Emeq, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Nahariyya",
+          "la": 33.01,
+          "lo": 35.1,
+          "fn": "Nahariyya, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Naḥf",
+          "la": 32.93,
+          "lo": 35.32,
+          "fn": "Naḥf, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Nazareth",
+          "la": 32.7,
+          "lo": 35.3,
+          "fn": "Nazareth, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Nefat ‘Akko",
+          "la": 32.95,
+          "lo": 35.23,
+          "fn": "Nefat ‘Akko, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Nein",
+          "la": 32.63,
+          "lo": 35.35,
+          "fn": "Nein, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Pasuta",
+          "la": 33.05,
+          "lo": 35.31,
+          "fn": "Pasuta, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Qiryat Shemona",
+          "la": 33.21,
+          "lo": 35.57,
+          "fn": "Qiryat Shemona, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Ramat Yishay",
+          "la": 32.7,
+          "lo": 35.17,
+          "fn": "Ramat Yishay, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Rosh Pinna",
+          "la": 32.97,
+          "lo": 35.54,
+          "fn": "Rosh Pinna, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Rumat Heib",
+          "la": 32.78,
+          "lo": 35.31,
+          "fn": "Rumat Heib, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Safed",
+          "la": 32.96,
+          "lo": 35.5,
+          "fn": "Safed, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Sājūr",
+          "la": 32.94,
+          "lo": 35.34,
+          "fn": "Sājūr, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Sakhnīn",
+          "la": 32.86,
+          "lo": 35.3,
+          "fn": "Sakhnīn, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Sallama",
+          "la": 32.89,
+          "lo": 35.37,
+          "fn": "Sallama, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Shelomi",
+          "la": 33.07,
+          "lo": 35.14,
+          "fn": "Shelomi, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Shibli",
+          "la": 32.69,
+          "lo": 35.39,
+          "fn": "Shibli, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Sūlam",
+          "la": 32.61,
+          "lo": 35.33,
+          "fn": "Sūlam, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Tamra",
+          "la": 32.85,
+          "lo": 35.2,
+          "fn": "Tamra, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Tiberias",
+          "la": 32.79,
+          "lo": 35.53,
+          "fn": "Tiberias, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Timrat",
+          "la": 32.7,
+          "lo": 35.22,
+          "fn": "Timrat, Northern",
+          "s": "Northern"
+        },
+        {
+          "n": "Yavne’el",
+          "la": 32.71,
+          "lo": 35.5,
+          "fn": "Yavne’el, Northern",
+          "s": "Northern"
+        }
+      ]
+    },
+    {
+      "n": "Southern",
+      "la": 40.71,
+      "lo": -74.0,
+      "sc": "D",
+      "t": "district",
+      "cities": [
+        {
+          "n": "‘En Boqeq",
+          "la": 31.2,
+          "lo": 35.36,
+          "fn": "‘En Boqeq, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Arad",
+          "la": 31.26,
+          "lo": 35.21,
+          "fn": "Arad, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Ashdod",
+          "la": 31.79,
+          "lo": 34.65,
+          "fn": "Ashdod, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Ashkelon",
+          "la": 31.67,
+          "lo": 34.57,
+          "fn": "Ashkelon, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Beersheba",
+          "la": 31.25,
+          "lo": 34.79,
+          "fn": "Beersheba, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Dimona",
+          "la": 31.07,
+          "lo": 35.03,
+          "fn": "Dimona, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Eilat",
+          "la": 29.56,
+          "lo": 34.95,
+          "fn": "Eilat, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Lehavim",
+          "la": 31.37,
+          "lo": 34.82,
+          "fn": "Lehavim, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Midreshet Ben-Gurion",
+          "la": 30.85,
+          "lo": 34.78,
+          "fn": "Midreshet Ben-Gurion, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Mitzpe Ramon",
+          "la": 30.61,
+          "lo": 34.8,
+          "fn": "Mitzpe Ramon, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Netivot",
+          "la": 31.42,
+          "lo": 34.59,
+          "fn": "Netivot, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Ofaqim",
+          "la": 31.31,
+          "lo": 34.62,
+          "fn": "Ofaqim, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Qiryat Gat",
+          "la": 31.61,
+          "lo": 34.76,
+          "fn": "Qiryat Gat, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Rahat",
+          "la": 31.4,
+          "lo": 34.76,
+          "fn": "Rahat, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Sederot",
+          "la": 31.52,
+          "lo": 34.6,
+          "fn": "Sederot, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Yeroẖam",
+          "la": 30.99,
+          "lo": 34.93,
+          "fn": "Yeroẖam, Southern",
+          "s": "Southern"
+        }
+      ]
+    },
+    {
+      "n": "Southern",
+      "la": 40.71,
+      "lo": -74.0,
+      "sc": "D",
+      "t": "district",
+      "cities": [
+        {
+          "n": "‘En Boqeq",
+          "la": 31.2,
+          "lo": 35.36,
+          "fn": "‘En Boqeq, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Arad",
+          "la": 31.26,
+          "lo": 35.21,
+          "fn": "Arad, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Ashdod",
+          "la": 31.79,
+          "lo": 34.65,
+          "fn": "Ashdod, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Ashkelon",
+          "la": 31.67,
+          "lo": 34.57,
+          "fn": "Ashkelon, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Beersheba",
+          "la": 31.25,
+          "lo": 34.79,
+          "fn": "Beersheba, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Dimona",
+          "la": 31.07,
+          "lo": 35.03,
+          "fn": "Dimona, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Eilat",
+          "la": 29.56,
+          "lo": 34.95,
+          "fn": "Eilat, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Lehavim",
+          "la": 31.37,
+          "lo": 34.82,
+          "fn": "Lehavim, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Midreshet Ben-Gurion",
+          "la": 30.85,
+          "lo": 34.78,
+          "fn": "Midreshet Ben-Gurion, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Mitzpe Ramon",
+          "la": 30.61,
+          "lo": 34.8,
+          "fn": "Mitzpe Ramon, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Netivot",
+          "la": 31.42,
+          "lo": 34.59,
+          "fn": "Netivot, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Ofaqim",
+          "la": 31.31,
+          "lo": 34.62,
+          "fn": "Ofaqim, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Qiryat Gat",
+          "la": 31.61,
+          "lo": 34.76,
+          "fn": "Qiryat Gat, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Rahat",
+          "la": 31.4,
+          "lo": 34.76,
+          "fn": "Rahat, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Sederot",
+          "la": 31.52,
+          "lo": 34.6,
+          "fn": "Sederot, Southern",
+          "s": "Southern"
+        },
+        {
+          "n": "Yeroẖam",
+          "la": 30.99,
+          "lo": 34.93,
+          "fn": "Yeroẖam, Southern",
+          "s": "Southern"
+        }
+      ]
+    },
+    {
+      "n": "Tel Aviv",
+      "la": 32.09,
+      "lo": 34.81,
+      "sc": "TA",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Azor",
+          "la": 32.02,
+          "lo": 34.81,
+          "fn": "Azor, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Bat Yam",
+          "la": 32.02,
+          "lo": 34.75,
+          "fn": "Bat Yam, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Bnei Brak",
+          "la": 32.08,
+          "lo": 34.83,
+          "fn": "Bnei Brak, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Giv'at Shmuel",
+          "la": 32.08,
+          "lo": 34.85,
+          "fn": "Giv'at Shmuel, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Givatayim",
+          "la": 32.07,
+          "lo": 34.81,
+          "fn": "Givatayim, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Herzliya",
+          "la": 32.17,
+          "lo": 34.83,
+          "fn": "Herzliya, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Herzliya Pituah",
+          "la": 32.17,
+          "lo": 34.8,
+          "fn": "Herzliya Pituah, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "H̱olon",
+          "la": 32.01,
+          "lo": 34.78,
+          "fn": "H̱olon, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Jaffa",
+          "la": 32.05,
+          "lo": 34.75,
+          "fn": "Jaffa, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Kefar Shemaryahu",
+          "la": 32.19,
+          "lo": 34.82,
+          "fn": "Kefar Shemaryahu, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Or Yehuda",
+          "la": 32.03,
+          "lo": 34.86,
+          "fn": "Or Yehuda, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Ramat Gan",
+          "la": 32.08,
+          "lo": 34.81,
+          "fn": "Ramat Gan, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Ramat HaSharon",
+          "la": 32.15,
+          "lo": 34.84,
+          "fn": "Ramat HaSharon, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Tel Aviv",
+          "la": 32.08,
+          "lo": 34.78,
+          "fn": "Tel Aviv, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Yehud-Monosson",
+          "la": 32.03,
+          "lo": 34.88,
+          "fn": "Yehud-Monosson, Tel Aviv",
+          "s": "Tel Aviv"
+        }
+      ]
+    },
+    {
+      "n": "Tel Aviv",
+      "la": 32.09,
+      "lo": 34.81,
+      "sc": "TA",
+      "t": "district",
+      "cities": [
+        {
+          "n": "Azor",
+          "la": 32.02,
+          "lo": 34.81,
+          "fn": "Azor, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Bat Yam",
+          "la": 32.02,
+          "lo": 34.75,
+          "fn": "Bat Yam, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Bnei Brak",
+          "la": 32.08,
+          "lo": 34.83,
+          "fn": "Bnei Brak, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Giv'at Shmuel",
+          "la": 32.08,
+          "lo": 34.85,
+          "fn": "Giv'at Shmuel, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Givatayim",
+          "la": 32.07,
+          "lo": 34.81,
+          "fn": "Givatayim, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Herzliya",
+          "la": 32.17,
+          "lo": 34.83,
+          "fn": "Herzliya, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Herzliya Pituah",
+          "la": 32.17,
+          "lo": 34.8,
+          "fn": "Herzliya Pituah, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "H̱olon",
+          "la": 32.01,
+          "lo": 34.78,
+          "fn": "H̱olon, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Jaffa",
+          "la": 32.05,
+          "lo": 34.75,
+          "fn": "Jaffa, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Kefar Shemaryahu",
+          "la": 32.19,
+          "lo": 34.82,
+          "fn": "Kefar Shemaryahu, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Or Yehuda",
+          "la": 32.03,
+          "lo": 34.86,
+          "fn": "Or Yehuda, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Ramat Gan",
+          "la": 32.08,
+          "lo": 34.81,
+          "fn": "Ramat Gan, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Ramat HaSharon",
+          "la": 32.15,
+          "lo": 34.84,
+          "fn": "Ramat HaSharon, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Tel Aviv",
+          "la": 32.08,
+          "lo": 34.78,
+          "fn": "Tel Aviv, Tel Aviv",
+          "s": "Tel Aviv"
+        },
+        {
+          "n": "Yehud-Monosson",
+          "la": 32.03,
+          "lo": 34.88,
+          "fn": "Yehud-Monosson, Tel Aviv",
+          "s": "Tel Aviv"
+        }
+      ]
+    }
+  ]
+}
