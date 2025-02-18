@@ -94,13 +94,12 @@ class _ReviewsPageState extends State<ReviewsPage> {
 
       // State+City Search bar filter
       if (widget.searchQueryAddress.state!.isNotEmpty && widget.searchQueryAddress.city!.isNotEmpty) {
-        filteredReviews = allReviews.where((review) => review["state"].toLowerCase().contains(widget.searchQueryAddress.state!.toLowerCase()) && review["city"].toLowerCase().contains(widget.searchQueryAddress.city!.toLowerCase())).toList();
+        filteredReviews = allReviews.where((review) => (review["state"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.state!.toLowerCase()) && (review["city"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.city!.toLowerCase())).toList();
       } else if (widget.searchQueryAddress.state!.isNotEmpty) {
-        filteredReviews = allReviews.where((review) => review["state"].toLowerCase().contains(widget.searchQueryAddress.state!.toLowerCase())).toList();
+        filteredReviews = allReviews.where((review) => (review["state"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.state!.toLowerCase())).toList();
       } else {
-        // Apply landlord or property filtering at the end
         if (widget.searchQuery.isNotEmpty) {
-          filteredReviews = allReviews.where((review) => review["state"].toLowerCase().contains(widget.searchQuery.toLowerCase()) || review["city"].toLowerCase().contains(widget.searchQuery.toLowerCase())).toList();
+          filteredReviews = allReviews.where((review) => (review["state"]?.toString().toLowerCase() ?? "").contains(widget.searchQuery.toLowerCase()) || (review["city"]?.toString().toLowerCase() ?? "").contains(widget.searchQuery.toLowerCase())).toList();
         } else {
           filteredReviews = List.from(allReviews);
         }
@@ -114,7 +113,6 @@ class _ReviewsPageState extends State<ReviewsPage> {
                 (review["property"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()) ||
                 (review["realtor"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()))
             .toList();
-        // ✅ Now, we can clear searchQueryLandlord properly
       }
     });
   }
@@ -240,18 +238,15 @@ class _ReviewsPageState extends State<ReviewsPage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // 🌍 **Header Section Above the Card**
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              "$countryName $searchQuery",
-              style: const TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ],
+
+        Text(
+          "$countryName $searchQuery",
+          style: const TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+          ),
         ),
+
         const SizedBox(height: 28),
 
         // ⭐ **The Rating Card**
@@ -440,9 +435,6 @@ class _ReviewsPageState extends State<ReviewsPage> {
 
   Widget _buildEmptyReviewsPage() {
     final AppLocalizations local = AppLocalizations.of(context);
-    String? countryName = widget.defaultCountryName;
-    String? searchQuery = widget.searchQuery.isEmpty ? "" : "/ ${widget.searchQuery}";
-    if (searchQueryLandlord!.isNotEmpty) searchQuery += "/ $searchQueryLandlord";
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -450,12 +442,170 @@ class _ReviewsPageState extends State<ReviewsPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            "$countryName $searchQuery",
-            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black87),
+          RichText(
+            text: TextSpan(
+              children: [
+                // Country search query
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+                  baseline: TextBaseline.alphabetic,
+                  child: MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacementNamed(
+                          context,
+                          '/reviews',
+                        );
+                      },
+                      child: Text(
+                        widget.defaultCountryName,
+                        style: const TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blueAccent,
+                          decoration: TextDecoration.none,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+                // State search query
+                if (widget.searchQueryAddress.state!.isNotEmpty)
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+                    baseline: TextBaseline.alphabetic,
+                    child: Text(
+                      " / ",
+                      style: const TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                  ),
+
+                if (widget.searchQueryAddress.state!.isNotEmpty)
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+                    baseline: TextBaseline.alphabetic,
+                    child: MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ReviewsPage(
+                                searchQuery: widget.searchQuery,
+                                searchQueryAddress: widget.searchQueryAddress,
+                                searchQueryLandlord: widget.searchQueryLandlord,
+                                defaultCountryCode: widget.defaultCountryCode,
+                                defaultCountryName: widget.defaultCountryName,
+                              ),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          widget.searchQueryAddress.state!,
+                          style: const TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blueAccent,
+                            decoration: TextDecoration.none,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+
+                // City search query
+                if (widget.searchQueryAddress.city!.isNotEmpty)
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+                    baseline: TextBaseline.alphabetic,
+                    child: Text(
+                      ", ",
+                      style: const TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                  ),
+
+                if (widget.searchQueryAddress.city!.isNotEmpty)
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+                    baseline: TextBaseline.alphabetic,
+                    child: MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushReplacementNamed(
+                            context,
+                            '/reviews',
+                          );
+                        },
+                        child: Text(
+                          widget.searchQueryAddress.city!,
+                          style: const TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blueAccent,
+                            decoration: TextDecoration.none,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+
+                // Landlord search query
+                if (widget.searchQueryLandlord.isNotEmpty)
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+                    baseline: TextBaseline.alphabetic,
+                    child: Text(
+                      " / ",
+                      style: const TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                  ),
+
+                if (widget.searchQueryLandlord.isNotEmpty)
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+                    baseline: TextBaseline.alphabetic,
+                    child: MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushReplacementNamed(
+                            context,
+                            '/reviews',
+                          );
+                        },
+                        child: Text(
+                          widget.searchQueryLandlord,
+                          style: const TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blueAccent,
+                            decoration: TextDecoration.none,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
           ),
           const SizedBox(height: 12),
-          const Icon(Icons.rate_review, size: 64, color: Colors.grey), // ✅ Larger icon
+          const Icon(Icons.rate_review, size: 64, color: Colors.grey),
           const SizedBox(height: 12),
           Text(
             local.empty_reviews_no_reviews,
@@ -471,7 +621,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
           const SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: () {
-              Navigator.pushReplacementNamed(context, '/submit'); // ✅ Use your route name
+              Navigator.pushReplacementNamed(context, '/submit');
             },
             icon: const Icon(Icons.add, size: 18),
             label: Text(local.empty_reviews_write_review),

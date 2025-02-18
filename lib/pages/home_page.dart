@@ -166,7 +166,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             _buildButton(
               text: localizations.home_readReviews,
-              onTap: () => _handleSearch, //Navigator.pushReplacementNamed(context, '/reviews'),
+              onTap: () => _handleSearch(), //Navigator.pushReplacementNamed(context, '/reviews'),
             ),
             const SizedBox(width: 10),
             _buildButton(

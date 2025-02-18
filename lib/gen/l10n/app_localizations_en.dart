@@ -57,7 +57,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get search_country => 'Find a Country';
 
   @override
-  String get search_location => 'City, Neighbourhood, Address or Postal Code';
+  String get search_location => 'Search for a State or City';
 
   @override
   String get sortBy => 'Sort by';

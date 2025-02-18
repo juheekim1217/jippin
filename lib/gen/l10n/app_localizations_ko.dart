@@ -57,7 +57,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get search_country => '국가 검색';
 
   @override
-  String get search_location => '도시, 동네, 주소 또는 우편번호';
+  String get search_location => '도시 검색';
 
   @override
   String get sortBy => '정렬';
