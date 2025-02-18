@@ -4,7 +4,7 @@ final Map<String, Country> countries = {
   "KR": Country("KR", "South Korea", "대한민국"),
   "AU": Country("AU", "Australia", "호주"),
   "NZ": Country("NZ", "New Zealand", "뉴질랜드"),
-  "UK": Country("UK", "United Kingdom", "영국"),
+  "GB": Country("GB", "United Kingdom", "영국"),
   "US": Country("US", "United States", "미국"),
   "IE": Country("IE", "Ireland", "아일랜드"),
   "JP": Country("JP", "Japan", "일본"),

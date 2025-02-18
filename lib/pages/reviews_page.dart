@@ -4,9 +4,11 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/utilities/constants.dart';
 import 'package:intl/intl.dart';
+import 'package:jippin/models/address.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String searchQuery;
+  final Address searchQueryAddress;
   final String searchQueryLandlord;
   final String defaultCountryCode;
   final String defaultCountryName;
@@ -14,6 +16,7 @@ class ReviewsPage extends StatefulWidget {
   const ReviewsPage({
     super.key,
     required this.searchQuery,
+    required this.searchQueryAddress,
     required this.searchQueryLandlord,
     required this.defaultCountryCode,
     required this.defaultCountryName,
@@ -42,11 +45,12 @@ class _ReviewsPageState extends State<ReviewsPage> {
   @override
   void didUpdateWidget(covariant ReviewsPage oldWidget) {
     super.didUpdateWidget(oldWidget);
+    // Default Country is changed
     if (widget.defaultCountryCode.isNotEmpty && widget.defaultCountryCode != oldWidget.defaultCountryCode) {
       _fetchAllReviews();
     }
-    if (widget.searchQuery != oldWidget.searchQuery) {
-      _applySearchFilter(widget.searchQuery);
+    if (widget.searchQueryAddress.fullName != oldWidget.searchQueryAddress.fullName) {
+      _applySearchFilter();
     }
   }
 
@@ -74,7 +78,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
       });
 
       // Apply search filtering after fetching
-      _applySearchFilter(widget.searchQuery);
+      _applySearchFilter();
     } catch (error) {
       setState(() {
         isLoading = false;
@@ -84,19 +88,26 @@ class _ReviewsPageState extends State<ReviewsPage> {
   }
 
   // Search filtering logic
-  void _applySearchFilter(String query) {
+  void _applySearchFilter() {
     setState(() {
-      debugPrint("_applySearchFilter $query");
-      if (query.isEmpty) {
-        filteredReviews = List.from(allReviews);
+      debugPrint("_applySearchFilter ${widget.searchQueryAddress.fullName}");
+
+      // State+City Search bar filter
+      if (widget.searchQueryAddress.state!.isNotEmpty && widget.searchQueryAddress.city!.isNotEmpty) {
+        filteredReviews = allReviews.where((review) => review["state"].toLowerCase().contains(widget.searchQueryAddress.state!.toLowerCase()) && review["city"].toLowerCase().contains(widget.searchQueryAddress.city!.toLowerCase())).toList();
+      } else if (widget.searchQueryAddress.state!.isNotEmpty) {
+        filteredReviews = allReviews.where((review) => review["state"].toLowerCase().contains(widget.searchQueryAddress.state!.toLowerCase())).toList();
       } else {
-        //filteredReviews = allReviews.where((review) => review["city"].toLowerCase().contains(query.toLowerCase()) || review["address"].toLowerCase().contains(query.toLowerCase()) || review["postal_code"].toString().toLowerCase().contains(query.toLowerCase())).toList();
-        filteredReviews = allReviews.where((review) => review["city"].toLowerCase().contains(query.toLowerCase())).toList();
+        // Apply landlord or property filtering at the end
+        if (widget.searchQuery.isNotEmpty) {
+          filteredReviews = allReviews.where((review) => review["state"].toLowerCase().contains(widget.searchQuery.toLowerCase()) || review["city"].toLowerCase().contains(widget.searchQuery.toLowerCase())).toList();
+        } else {
+          filteredReviews = List.from(allReviews);
+        }
       }
 
       // Apply landlord or property filtering at the end
       if (searchQueryLandlord!.isNotEmpty) {
-        //filteredReviews = allReviews.where((review) => review["landlord"]!.toLowerCase().contains(query.toLowerCase()) || review["property"]!.toLowerCase().contains(query.toLowerCase())).toList();
         filteredReviews = filteredReviews
             .where((review) =>
                 (review["landlord"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()) ||
@@ -222,7 +233,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
     int totalReviews = starCounts.values.reduce((a, b) => a + b);
 
     String? countryName = widget.defaultCountryName;
-    String? searchQuery = widget.searchQuery.isEmpty ? "" : "/ ${widget.searchQuery}";
+    String? searchQuery = widget.searchQueryAddress.fullName.isEmpty ? "" : "/ ${widget.searchQueryAddress.fullName}";
     if (searchQueryLandlord!.isNotEmpty) searchQuery += "/ $searchQueryLandlord";
 
     return Column(
@@ -500,14 +511,14 @@ class _ReviewsPageState extends State<ReviewsPage> {
     String address = '';
     if (review['country_code'] == 'KR') {
       currency = '만원';
-      address = address = '${review['postal_code']} ${review['country']} ' '${review['province'] != null ? '${review['province']} ' : ''}' '${review['city']} ${review['district']} ${review['street']}';
+      address = address = '${review['postal_code']} ${review['country']} ' '${review['state'] != null ? '${review['state']} ' : ''}' '${review['city']} ${review['district']} ${review['street']}';
       rent = '${review['rent'].toString()} $currency';
       deposit = '${review['deposit'].toString()} $currency';
       otherFees = '${review['other_fees'].toString()} $currency';
     } else {
       address = '${review['street']}, ${review['city']}, '
-          '${review['province'] == null ? '' : '${review['province']}, '}'
-          '${review['postal_code']}, ${review['country']}';
+          '${review['state'] == null ? '' : '${review['state']}, '}'
+          '${review['country']}, ${review['postal_code']}';
       rent = '$currency ${review['rent'].toString()} ';
       deposit = '$currency ${review['deposit'].toString()}';
       otherFees = '$currency ${review['other_fees'].toString()}';

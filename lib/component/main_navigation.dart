@@ -25,6 +25,7 @@ class MainNavigation extends StatefulWidget {
 class _MainNavigationState extends State<MainNavigation> {
   late int _currentIndex;
   String _searchQuery = "";
+  Address _searchAddress = Address.defaultAddress();
   String _searchQueryLandlord = "";
 
   List<Widget> get _pages => [
@@ -37,6 +38,7 @@ class _MainNavigationState extends State<MainNavigation> {
         ReviewsPage(
           key: ValueKey(_searchQuery),
           searchQuery: _searchQuery,
+          searchQueryAddress: _searchAddress,
           searchQueryLandlord: _searchQueryLandlord,
           defaultCountryCode: widget.localeProvider.country.code,
           defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
@@ -60,8 +62,17 @@ class _MainNavigationState extends State<MainNavigation> {
   void _filterReviews(Address query) {
     setState(() {
       _currentIndex = 1;
-      _searchQuery = query.city!;
-      debugPrint("_filterReviews $query");
+      //_searchQuery = query.fullName;
+      _searchAddress = query;
+      debugPrint("_filterReviews $query;");
+    });
+  }
+
+  void _filterReviewsFieldSubmitted(String query) {
+    setState(() {
+      _currentIndex = 1;
+      _searchQuery = query;
+      debugPrint("_filterReviewsString $query;");
     });
   }
 
@@ -144,6 +155,7 @@ class _MainNavigationState extends State<MainNavigation> {
               ],
               onSubmitReview: () => _navigateTo(2),
               onSearch: (query) => _filterReviews(query),
+              onSearchFieldSubmitted: (query) => _filterReviewsFieldSubmitted(query),
             ),
       body: _pages[_currentIndex],
       bottomNavigationBar: isAndroid

@@ -15,6 +15,7 @@ class AdvancedBehaviorAutocomplete<T extends Object> extends StatelessWidget {
     this.optionsViewBuilder,
     this.initialValue,
     this.moveFocusNext = true,
+    this.submitSelectedOptionOnly = true, // Submit only selected option from the dropdown and clear _textEditingController if it is an user manual input
   });
 
   final String? Function(String?)? validator;
@@ -34,6 +35,8 @@ class AdvancedBehaviorAutocomplete<T extends Object> extends StatelessWidget {
   final TextEditingValue? initialValue;
 
   final bool? moveFocusNext;
+
+  final bool? submitSelectedOptionOnly;
 
   static Widget _defaultFieldViewBuilder(BuildContext context, TextEditingController textEditingController, FocusNode focusNode, VoidCallback onFieldSubmitted) {
     return _AutocompleteField(
@@ -61,6 +64,7 @@ class AdvancedBehaviorAutocomplete<T extends Object> extends StatelessWidget {
           },
       onSelected: onSelected,
       moveFocusNext: moveFocusNext,
+      submitSelectedOptionOnly: submitSelectedOptionOnly,
     );
   }
 }
@@ -167,6 +171,7 @@ class AdvancedBehaviorRawAutocomplete<T extends Object> extends StatefulWidget {
     this.textEditingController,
     this.initialValue,
     this.moveFocusNext,
+    this.submitSelectedOptionOnly,
   })  : assert(
           fieldViewBuilder != null || (key != null && focusNode != null && textEditingController != null),
           'Pass in a fieldViewBuilder, or otherwise create a separate field and pass in the FocusNode, TextEditingController, and a key. Use the key with RawAutocomplete.onFieldSubmitted.',
@@ -194,6 +199,8 @@ class AdvancedBehaviorRawAutocomplete<T extends Object> extends StatefulWidget {
   final TextEditingValue? initialValue;
 
   final bool? moveFocusNext;
+
+  final bool? submitSelectedOptionOnly;
 
   static void onFieldSubmitted<T extends Object>(GlobalKey key) {
     final _AdvancedBehaviorRawAutocompleteState<T> rawAutocomplete = key.currentState! as _AdvancedBehaviorRawAutocompleteState<T>;
@@ -254,14 +261,18 @@ class _AdvancedBehaviorRawAutocompleteState<T extends Object> extends State<Adva
       return;
     }
     if (_options.isEmpty && _textEditingController.value.text.isNotEmpty) {
-      _selection = _textEditingController.value.text as T;
-      widget.onSelected?.call(_selection!);
-      if (widget.moveFocusNext!) {
-        _focusNode.nextFocus();
-        //_focusNode.nextFocus(); // move to second next focus
-        //FocusScope.of(context).requestFocus(nextFieldFocusNode); // manually setting the focus to the next field:
+      if (widget.submitSelectedOptionOnly!) {
+        _textEditingController.clear();
       } else {
-        FocusScope.of(context).unfocus(); // This will close the keyboard but not move focus.
+        _selection = _textEditingController.value.text as T;
+        widget.onSelected?.call(_selection!);
+        if (widget.moveFocusNext!) {
+          _focusNode.nextFocus();
+          //_focusNode.nextFocus(); // move to second next focus
+          //FocusScope.of(context).requestFocus(nextFieldFocusNode); // manually setting the focus to the next field:
+        } else {
+          FocusScope.of(context).unfocus(); // This will close the keyboard but not move focus.
+        }
       }
       return;
     }

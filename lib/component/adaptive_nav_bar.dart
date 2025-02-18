@@ -18,6 +18,7 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final List<NavBarItem> popupMenuItems;
   final VoidCallback onSubmitReview;
   final ValueChanged<Address> onSearch;
+  final ValueChanged<String> onSearchFieldSubmitted;
 
   const AdaptiveNavBar({
     super.key,
@@ -27,6 +28,7 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
     required this.popupMenuItems,
     required this.onSubmitReview,
     required this.onSearch,
+    required this.onSearchFieldSubmitted,
   });
 
   @override
@@ -250,6 +252,10 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
           onChanged: (Address address) {
             //FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
             widget.onSearch(address);
+          },
+          onChangedFieldSubmitted: (String address) {
+            //FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
+            widget.onSearchFieldSubmitted(address);
           },
         ), // Only the address search field
       ),

@@ -17,6 +17,19 @@ class Address {
     this.city,
   });
 
+  // Factory constructor for empty Address
+  factory Address.defaultAddress() {
+    return Address(
+      name: "",
+      latitude: 0.0,
+      longitude: 0.0,
+      fullName: "",
+      stateCode: "",
+      state: "",
+      city: "",
+    );
+  }
+
   // deserialize City JSON into an Address object
   factory Address.fromMapCity(Map<String, dynamic> map) {
     // Extract city and state from "fn" (e.g., "Airdrie, Alberta")

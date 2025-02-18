@@ -12,12 +12,14 @@ class AddressAutocompleteField extends StatefulWidget {
   final double fieldWidth;
   final dynamic localeProvider;
   final Function(Address) onChanged;
+  final Function(String) onChangedFieldSubmitted;
 
   const AddressAutocompleteField({
     super.key,
     required this.fieldWidth,
     required this.localeProvider,
     required this.onChanged,
+    required this.onChangedFieldSubmitted,
   });
 
   @override
@@ -43,14 +45,13 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    final _localeProvider = Provider.of<LocaleProvider>(context);
-    _loadCities(_localeProvider.country.code);
+    _loadCities(Provider.of<LocaleProvider>(context).country.code);
   }
 
   /// Loads city data based on localeProvider
   Future<void> _loadCities(String countryCode) async {
     try {
-      print("loadcities");
+      debugPrint("loadcities");
       final String jsonString = await rootBundle.loadString('assets/json/country/$countryCode.json');
       final Map<String, dynamic> jsonData = json.decode(jsonString);
 
@@ -64,20 +65,9 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
         }
       });
     } catch (e) {
-      print("Error loading cities: $e");
+      debugPrint("Error loading cities: $e");
     }
   }
-
-  /// Filters cities based on user input
-  // List<Map<String, dynamic>> _filterCities(String query) {
-  //   if (query.isEmpty) return [];
-  //   final lowerQuery = query.toLowerCase();
-  //   return cities.where((city) {
-  //     final cityNameKo = city["name"]["ko"].toLowerCase();
-  //     final cityNameEn = city["name"]["en"].toLowerCase();
-  //     return cityNameKo.contains(lowerQuery) || cityNameEn.contains(lowerQuery);
-  //   }).toList();
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -88,28 +78,20 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
         key: formKey,
         child: AdvancedBehaviorAutocomplete<Address>(
           optionsMaxHeight: 300,
+          submitSelectedOptionOnly: true,
           optionsBuilder: (TextEditingValue textEditingValue) {
             if (textEditingValue.text.isEmpty) {
               return const Iterable<Address>.empty();
             }
-            //return const Iterable<String>.empty();
-            //Iterable<Address> resultStates = states.where((item) => item["name"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => item["name"]!);
             Iterable<Address> resultStates = states.where((item) => item["n"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapState(item));
-            // city name only
             Iterable<Address> resultCities = cities.where((item) => item["n"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapCity(item));
-            //Iterable<String> resultCities = cities.where((item) => item["fn"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => item["fn"]!);
-            // var resultCities = states.expand((state) {
-            //   return state["cities"].where((city) => city["n"] != null && city["n"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((city) => "${city["n"]}, ${state["name"]}");
-            // }).toList();
             List<Address> combinedResults = [...resultStates, ...resultCities];
             return combinedResults;
           },
           displayStringForOption: (Address address) => address.fullName,
-          // ✅ Show fullName in dropdown
           // Tab key pressed
           onSelected: (Address selection) {
             debugPrint('onSelected $selection');
-            //String? selectionCode = getCountryCode(selection);
             widget.onChanged(selection);
           },
           moveFocusNext: false,
@@ -134,8 +116,12 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
                       controller: textEditingController,
                       // Enter Key pressed
                       onFieldSubmitted: (String value) {
+                        // if empty, show all
+                        // if (value.isEmpty) {
+                        //   widget.onChangedFieldSubmitted(value);
+                        // } else {
                         debugPrint('onFieldSubmitted $value');
-                        onFieldSubmitted();
+                        onFieldSubmitted(); // Proceed with dropdown selection
                       },
                       onChanged: (value) {
                         //debugPrint('onChanged $value');
