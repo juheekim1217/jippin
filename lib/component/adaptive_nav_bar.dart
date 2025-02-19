@@ -110,15 +110,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
       child: SizedBox(
         height: 32,
         width: widget.screenWidth * 0.12, // ✅ Dynamic max width
-        child: CountryDropdownSearch(
-          localeProvider: localeProvider,
-          initialCountryName: initialCountryName,
-          onChanged: (String? newValue, String? countryName) {
-            if (newValue != null) {
-              localeProvider.setCountry(newValue, countryName!);
-            }
-          },
-        ),
+        child: _buildCountryDropdownSearch(localeProvider, initialCountryName),
       ),
     );
   }
@@ -134,18 +126,14 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
           builder: (context) {
             return AlertDialog(
               title: Text(AppLocalizations.of(context).selectCountry),
-              content: CountryDropdownSearch(
-                localeProvider: localeProvider,
-                initialCountryName: initialCountryName,
-                onChanged: (String? newValue, String? countryName) {
-                  if (newValue != null) {
-                    localeProvider.setCountry(newValue, countryName!);
-                  }
-                },
-              ),
+              content: _buildCountryDropdownSearch(localeProvider, initialCountryName),
               actions: [
                 TextButton(
-                  onPressed: () => Navigator.pop(context),
+                  onPressed: () {
+                    if (mounted) {
+                      Navigator.pop(context); // ✅ Safely closes the dialog
+                    }
+                  },
                   child: Text(AppLocalizations.of(context).close),
                 ),
               ],
@@ -153,6 +141,19 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
           },
         );
         //_showCountryDialog(context, localeProvider, currentLocale, navbarBackgroundColor);
+      },
+    );
+  }
+
+  Widget _buildCountryDropdownSearch(localeProvider, String initialCountryName) {
+    return CountryDropdownSearch(
+      localeProvider: localeProvider,
+      initialCountryName: initialCountryName,
+      onChanged: (String? newValue, String? countryName) {
+        if (newValue != null && countryName != null) {
+          String currentRoute = GoRouter.of(context).state.path ?? '/';
+          localeProvider.setCountry(newValue, countryName, currentRoute);
+        }
       },
     );
   }
@@ -192,12 +193,18 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                 onChangedAddress: (Address address) {
                   FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
                   widget.onSearch(address);
-                  Navigator.pop(context); // Close the popup dialog
+                  if (mounted) {
+                    Navigator.pop(context); // ✅ Safely closes the dialog
+                  }
                 },
               ), // Only the address search field,
               actions: [
                 TextButton(
-                  onPressed: () => Navigator.pop(context),
+                  onPressed: () {
+                    if (mounted) {
+                      Navigator.pop(context); // ✅ Safely closes the dialog
+                    }
+                  },
                   child: Text(AppLocalizations.of(context).close),
                 ),
               ],
@@ -263,8 +270,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                 onChanged: (Language? newLanguage) {
                   if (newLanguage != null) {
                     String currentRoute = GoRouter.of(context).state.path ?? '/';
-                    localeProvider.setCurrentRoute(currentRoute); // ✅ Store the current route
-                    localeProvider.setLocaleLanguage(newLanguage); // Update locale
+                    localeProvider.setLocaleLanguage(newLanguage, currentRoute); // Update locale
                   }
                 },
                 icon: const Icon(Icons.arrow_drop_down, size: 16, color: Colors.grey),

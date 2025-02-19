@@ -7,6 +7,8 @@ import 'package:jippin/utilities/constants.dart';
 import 'package:intl/intl.dart';
 import 'package:jippin/models/address.dart';
 
+import 'dart:convert'; // Required for router JSON encoding
+
 class ReviewsPage extends StatefulWidget {
   final Address searchQueryAddress;
   final String searchQueryLandlord;
@@ -449,10 +451,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                     cursor: SystemMouseCursors.click,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.pushReplacementNamed(
-                          context,
-                          '/reviews',
-                        );
+                        context.go('/reviews');
                       },
                       child: Text(
                         widget.defaultCountryName,
@@ -490,18 +489,9 @@ class _ReviewsPageState extends State<ReviewsPage> {
                       cursor: SystemMouseCursors.click,
                       child: GestureDetector(
                         onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => ReviewsPage(
-                                //searchQuery: widget.searchQuery,
-                                searchQueryAddress: widget.searchQueryAddress,
-                                searchQueryLandlord: widget.searchQueryLandlord,
-                                defaultCountryCode: widget.defaultCountryCode,
-                                defaultCountryName: widget.defaultCountryName,
-                              ),
-                            ),
-                          );
+                          // Convert Address object to JSON string and encode it for the URL
+                          final encodedAddress = Uri.encodeComponent(jsonEncode(widget.searchQueryAddress.toJson()));
+                          context.go('/reviews?searchQueryAddress=$encodedAddress');
                         },
                         child: Text(
                           widget.searchQueryAddress.state!,
@@ -539,10 +529,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                       cursor: SystemMouseCursors.click,
                       child: GestureDetector(
                         onTap: () {
-                          Navigator.pushReplacementNamed(
-                            context,
-                            '/reviews',
-                          );
+                          context.go('/reviews');
                         },
                         child: Text(
                           widget.searchQueryAddress.city!,
@@ -580,10 +567,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                       cursor: SystemMouseCursors.click,
                       child: GestureDetector(
                         onTap: () {
-                          Navigator.pushReplacementNamed(
-                            context,
-                            '/reviews',
-                          );
+                          context.go('/reviews');
                         },
                         child: Text(
                           widget.searchQueryLandlord,

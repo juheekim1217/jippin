@@ -61,7 +61,7 @@ class _MainNavigationState extends State<MainNavigation> {
   //   });
   // }
 
-  void _filterReviews(Address query) {
+  void _filterReviews(Address address) {
     // setState(() {
     //   _currentIndex = 1;
     //   //_searchQuery = query.fullName;
@@ -69,7 +69,7 @@ class _MainNavigationState extends State<MainNavigation> {
     //   debugPrint("_filterReviews $query;");
     // });
     // Convert Address object to JSON string and encode it for the URL
-    final encodedAddress = Uri.encodeComponent(jsonEncode(query.toJson()));
+    final encodedAddress = Uri.encodeComponent(jsonEncode(address.toJson()));
 
     context.go('/reviews?searchQueryAddress=$encodedAddress');
   }
@@ -102,10 +102,6 @@ class _MainNavigationState extends State<MainNavigation> {
                         break;
                       case 'about':
                         context.go('/about');
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => const AboutPage()),
-                        // );
                         break;
                     }
                   },

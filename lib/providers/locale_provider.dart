@@ -32,7 +32,8 @@ class LocaleProvider extends ChangeNotifier {
     notifyListeners(); // Notify UI of the locale change
   }
 
-  void setLocaleLanguage(Language language) {
+  void setLocaleLanguage(Language language, String route) {
+    _currentRoute = route; // ✅ Store the current route before changing language
     if (languages.containsKey(language.code)) {
       _locale = languages[language.code]!.locale;
       _language = language;
@@ -41,7 +42,8 @@ class LocaleProvider extends ChangeNotifier {
     notifyListeners(); // Notify the UI about the change
   }
 
-  void setCountry(String countryCode, String countryName) {
+  void setCountry(String countryCode, String countryName, String route) {
+    _currentRoute = route; // ✅ Store the current route before changing language
     if (countryCode.isNotEmpty && countries.containsKey(countryCode)) {
       _country = countries[countryCode]!;
     }
@@ -49,8 +51,8 @@ class LocaleProvider extends ChangeNotifier {
     notifyListeners(); // Notify the UI about the change
   }
 
-  void setCurrentRoute(String route) {
-    _currentRoute = route; // ✅ Store the current route before changing language
-    debugPrint("Stored current route: $_currentRoute");
-  }
+// void setCurrentRoute(String route) {
+//   _currentRoute = route; // ✅ Store the current route before changing language
+//   debugPrint("Stored current route: $_currentRoute");
+// }
 }
