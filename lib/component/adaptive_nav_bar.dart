@@ -37,65 +37,15 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
 }
 
 class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
-  final TextEditingController searchController = TextEditingController();
-  final FocusNode searchFocusNode = FocusNode(); // ✅ Added for better focus handling
+  // final TextEditingController searchController = TextEditingController();
+  // final FocusNode searchFocusNode = FocusNode(); // ✅ Added for better focus handling
 
-  @override
-  void dispose() {
-    searchController.dispose(); // ✅ Prevent memory leaks
-    searchFocusNode.dispose(); // ✅ Properly dispose of the focus node
-    super.dispose();
-  }
-
-  // pass search user input to parent widget
-  // void _handleSearch() {
-  //   FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
-  //   widget.onSearch(searchController.text);
+  // @override
+  // void dispose() {
+  //   searchController.dispose(); // ✅ Prevent memory leaks
+  //   searchFocusNode.dispose(); // ✅ Properly dispose of the focus node
+  //   super.dispose();
   // }
-
-  void _handleSearchDialog() {
-    FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
-    //widget.onSearch(searchController.text);
-    Navigator.pop(context);
-  }
-
-  // 🔹 Popup Search (For Small Screens)
-  void _showSearchDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: Text(AppLocalizations.of(context).search),
-          content: _buildSearchDialogTextField(context),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text(AppLocalizations.of(context).close),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  // 🔹 Popup Search (For Small Screens)
-  void _showCountryDialog(BuildContext context, localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: Text(AppLocalizations.of(context).selectCountry),
-          content: _buildCountryDialogTextField(context, localeProvider, currentLocale, navbarBackgroundColor),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text(AppLocalizations.of(context).close),
-            ),
-          ],
-        );
-      },
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -126,8 +76,8 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         ],
       ),
       actions: [
-        if (widget.screenWidth <= smallScreenWidth) _buildCountryButton(localeProvider, currentLocale, navbarBackgroundColor),
-        if (widget.screenWidth <= smallScreenWidth) _buildSearchBarButton(),
+        if (widget.screenWidth <= smallScreenWidth) _buildCountryDropdownButton(localeProvider, currentLocale, navbarBackgroundColor, initialCountryName),
+        if (widget.screenWidth <= smallScreenWidth) _buildSearchBarButton(localeProvider),
         if (widget.screenWidth > mediumScreenWidth) _buildSubmitButton(),
         _buildLanguageDropdown(localeProvider, currentLocale, navbarBackgroundColor),
         if (widget.screenWidth <= mediumScreenWidth) _buildPopupMenuButton(),
@@ -172,27 +122,36 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
-  Widget _buildCountryButton(localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
+  Widget _buildCountryDropdownButton(localeProvider, Locale currentLocale, Color navbarBackgroundColor, String initialCountryName) {
     return IconButton(
       padding: EdgeInsets.zero, // ✅ Removes default padding
       constraints: BoxConstraints(), // ✅ Prevents extra space
       icon: Icon(Icons.location_on, color: Colors.grey),
       onPressed: () {
-        _showCountryDialog(context, localeProvider, currentLocale, navbarBackgroundColor);
-      },
-    );
-  }
-
-  // 🔹 Popup Country (For Small Screens) Text field widget
-  Widget _buildCountryDialogTextField(BuildContext context, localeProvider, Locale currentLocale, Color navbarBackgroundColor) {
-    String initialCountryName = localeProvider.defaultCountry.getCountryName(localeProvider.defaultLanguage.code);
-    return CountryAutoCompleteField(
-      width: 150,
-      initialCountryName: initialCountryName,
-      onChanged: (String? newValue, String? countryName) {
-        if (newValue != null) {
-          localeProvider.setDefaultCountry(newValue, countryName!);
-        }
+        showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              title: Text(AppLocalizations.of(context).selectCountry),
+              content: CountryDropdownSearch(
+                localeProvider: localeProvider,
+                initialCountryName: initialCountryName,
+                onChanged: (String? newValue, String? countryName) {
+                  if (newValue != null) {
+                    localeProvider.setCountry(newValue, countryName!);
+                  }
+                },
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: Text(AppLocalizations.of(context).close),
+                ),
+              ],
+            );
+          },
+        );
+        //_showCountryDialog(context, localeProvider, currentLocale, navbarBackgroundColor);
       },
     );
   }
@@ -218,47 +177,33 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
-  Widget _buildSearchBarButton() {
+  Widget _buildSearchBarButton(localeProvider) {
     return IconButton(
       icon: Icon(Icons.search, color: Colors.grey),
       onPressed: () {
-        _showSearchDialog(context);
+        showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              title: Text(AppLocalizations.of(context).search),
+              content: AddressAutocompleteField(
+                localeProvider: localeProvider,
+                onChangedAddress: (Address address) {
+                  FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
+                  widget.onSearch(address);
+                  Navigator.pop(context); // Close the popup dialog
+                },
+              ), // Only the address search field,
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: Text(AppLocalizations.of(context).close),
+                ),
+              ],
+            );
+          },
+        );
       },
-    );
-  }
-
-  // 🔹 Popup Search (For Small Screens) Text field widget
-  Widget _buildSearchDialogTextField(BuildContext context) {
-    return TextField(
-      autofocus: false,
-      // Prevents unnecessary refocus
-      style: TextStyle(fontSize: 14, color: Colors.black87),
-      decoration: InputDecoration(
-        hintText: AppLocalizations.of(context).search_location,
-        // Replace with localization if needed
-        suffixIcon: IconButton(
-          icon: Icon(Icons.search, color: Colors.grey),
-          onPressed: _handleSearchDialog, // 🔥 Trigger search on icon click
-        ),
-        //Icon(Icons.search, color: Colors.grey),
-        contentPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24.0),
-          borderSide: BorderSide(color: Colors.grey.shade400, width: 1.0),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24.0),
-          borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24.0),
-          borderSide: BorderSide(color: Colors.blue.shade300, width: 1.5),
-        ),
-        fillColor: Colors.grey.shade100,
-        filled: true,
-      ),
-      onSubmitted: (value) => _handleSearchDialog(),
-      controller: searchController,
     );
   }
 
