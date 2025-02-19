@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/component/footer.dart';
@@ -166,13 +167,13 @@ class _HomePageState extends State<HomePage> {
           children: [
             _buildButton(
               text: localizations.home_readReviews,
-              onTap: () => _handleSearch(), //Navigator.pushReplacementNamed(context, '/reviews'),
+              onTap: () => _handleSearch(),
             ),
             const SizedBox(width: 10),
             _buildButton(
               text: localizations.home_writeReview,
               isOutlined: true,
-              onTap: () => Navigator.pushReplacementNamed(context, '/submit'), //debugPrint("Navigate to Submit Review"),
+              onTap: () => context.go('/submit'),
             ),
           ],
         ),
@@ -248,7 +249,7 @@ class _HomePageState extends State<HomePage> {
 
         // 🔗 "See More Reviews" Button
         TextButton(
-          onPressed: () => Navigator.pushReplacementNamed(context, '/reviews'),
+          onPressed: () => context.go('/reviews'),
           child: Text(localizations.home_seeMoreReviews),
         ),
       ],
@@ -323,7 +324,7 @@ class _HomePageState extends State<HomePage> {
             icon: Icons.content_paste_search_rounded,
             color: Colors.lightBlue,
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/reviews'); // Navigate to Profile Page
+              context.go('/reviews');
             },
           ),
           _buildFeatureCard(
@@ -332,7 +333,7 @@ class _HomePageState extends State<HomePage> {
             icon: Icons.mode_edit_rounded,
             color: Colors.green,
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/submit'); // Navigate to Profile Page
+              context.go('/submit');
             },
           ),
         ],

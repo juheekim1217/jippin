@@ -8,8 +8,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:jippin/theme/theme.dart';
 import 'package:jippin/providers/locale_provider.dart';
-import 'package:jippin/component/main_navigation.dart';
 import 'package:jippin/models/language.dart';
+
+import 'package:jippin/router.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -49,7 +50,7 @@ class _MyAppState extends State<MyApp> {
     final TextTheme textTheme = GoogleFonts.notoSansKrTextTheme();
     final MaterialTheme materialTheme = MaterialTheme(textTheme);
 
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       locale: localeProvider.locale,
       supportedLocales: languages.values.map((lang) => lang.locale).toList(),
@@ -62,13 +63,7 @@ class _MyAppState extends State<MyApp> {
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       theme: materialTheme.lightHighContrast(),
       darkTheme: materialTheme.darkHighContrast(),
-      initialRoute: "/home",
-      routes: {
-        "/home": (context) => MainNavigation(currentIndex: 0, localeProvider: localeProvider),
-        "/reviews": (context) => MainNavigation(currentIndex: 1, localeProvider: localeProvider),
-        "/submit": (context) => MainNavigation(currentIndex: 2, localeProvider: localeProvider),
-        "/about": (context) => MainNavigation(currentIndex: 3, localeProvider: localeProvider),
-      },
+      routerConfig: createRouter(localeProvider), // ✅ Use the external router function
     );
   }
 }

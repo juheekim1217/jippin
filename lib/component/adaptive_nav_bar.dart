@@ -18,7 +18,6 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final List<NavBarItem> popupMenuItems;
   final VoidCallback onSubmitReview;
   final ValueChanged<Address> onSearch;
-  final ValueChanged<String> onSearchFieldSubmitted;
 
   const AdaptiveNavBar({
     super.key,
@@ -28,7 +27,6 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
     required this.popupMenuItems,
     required this.onSubmitReview,
     required this.onSearch,
-    required this.onSearchFieldSubmitted,
   });
 
   @override
@@ -196,66 +194,18 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
     );
   }
 
-  // no autocomplete searchbar
-  // Widget _buildSearchBar(barWidth) {
-  //   return Padding(
-  //     padding: const EdgeInsets.symmetric(horizontal: 8.0),
-  //     child: SizedBox(
-  //       height: 32, // Match the height of other menu items
-  //       width: barWidth ?? widget.screenWidth * 0.25,
-  //       child: TextField(
-  //         onSubmitted: (value) => _handleSearch(),
-  //         controller: searchController,
-  //         autofocus: false,
-  //         // Prevents unnecessary refocus
-  //         style: TextStyle(
-  //           fontSize: 14, // Reduced text size
-  //           color: Colors.black87, // Text color
-  //         ),
-  //         decoration: InputDecoration(
-  //           hintText: AppLocalizations.of(context).search_location,
-  //           suffixIcon: IconButton(
-  //             icon: Icon(Icons.search, color: Colors.grey, size: 18),
-  //             onPressed: _handleSearch, // 🔥 Trigger search on icon click
-  //           ),
-  //           contentPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
-  //           border: OutlineInputBorder(
-  //             borderRadius: BorderRadius.circular(24.0),
-  //             borderSide: BorderSide(color: Colors.grey.shade400, width: 1.0), // Light grey border
-  //           ),
-  //           enabledBorder: OutlineInputBorder(
-  //             borderRadius: BorderRadius.circular(24.0),
-  //             borderSide: BorderSide(color: Colors.grey.shade300, width: 1.0), // Light grey border for non-focused state
-  //           ),
-  //           focusedBorder: OutlineInputBorder(
-  //             borderRadius: BorderRadius.circular(24.0),
-  //             borderSide: BorderSide(color: Colors.blue.shade300, width: 1.5), // Slightly thicker blue border on focus
-  //           ),
-  //           //fillColor: Colors.grey.shade100,
-  //           //filled: true,
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
-
   // AutoComplete searchbar
   Widget _buildSearchBar(localeProvider) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: SizedBox(
-        //height: 20, // Increased height for better usability
-        width: 200,
+        height: 32, // Match the height of other menu items
+        width: widget.screenWidth * 0.25,
         child: AddressAutocompleteField(
-          fieldWidth: widget.screenWidth * 0.25,
           localeProvider: localeProvider,
           onChanged: (Address address) {
             //FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
             widget.onSearch(address);
-          },
-          onChangedFieldSubmitted: (String address) {
-            //FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
-            widget.onSearchFieldSubmitted(address);
           },
         ), // Only the address search field
       ),

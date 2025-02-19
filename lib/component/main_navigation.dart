@@ -5,18 +5,19 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:jippin/models/nav_bar_item.dart';
 import 'package:jippin/component/adaptive_nav_bar.dart';
 import 'package:jippin/utilities/constants.dart';
-import 'package:jippin/pages/about_page.dart';
-import 'package:jippin/pages/home_page.dart';
-import 'package:jippin/pages/reviews_page.dart';
-import 'package:jippin/pages/submit_review_page.dart';
-
 import 'package:jippin/models/address.dart';
 
+import 'package:go_router/go_router.dart';
+import 'dart:convert'; // Required for router JSON encoding
+
 class MainNavigation extends StatefulWidget {
-  final int currentIndex;
+  //final int currentIndex;
   final dynamic localeProvider;
 
-  const MainNavigation({super.key, required this.currentIndex, required this.localeProvider});
+  final Widget child;
+
+  //const MainNavigation({super.key, required this.currentIndex, required this.localeProvider});
+  const MainNavigation({super.key, required this.localeProvider, required this.child});
 
   @override
   State<MainNavigation> createState() => _MainNavigationState();
@@ -24,65 +25,62 @@ class MainNavigation extends StatefulWidget {
 
 class _MainNavigationState extends State<MainNavigation> {
   late int _currentIndex;
-  String _searchQuery = "";
-  Address _searchAddress = Address.defaultAddress();
-  String _searchQueryLandlord = "";
 
-  List<Widget> get _pages => [
-        HomePage(
-          //key: ValueKey(_searchQuery),
-          defaultCountryCode: widget.localeProvider.country.code,
-          defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
-          onSearchLandlord: (query) => _filterReviewsLandlord(query),
-        ),
-        ReviewsPage(
-          key: ValueKey(_searchQuery),
-          searchQuery: _searchQuery,
-          searchQueryAddress: _searchAddress,
-          searchQueryLandlord: _searchQueryLandlord,
-          defaultCountryCode: widget.localeProvider.country.code,
-          defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
-        ),
-        SubmitReviewPage(),
-        AboutPage(),
-      ];
+  // String _searchQuery = "";
+  // Address _searchAddress = Address.defaultAddress();
 
-  @override
-  void initState() {
-    super.initState();
-    _currentIndex = widget.currentIndex;
-  }
+  //String _searchQueryLandlord = "";
+  // List<Widget> get _pages => [
+  //       HomePage(
+  //         //key: ValueKey(_searchQuery),
+  //         defaultCountryCode: widget.localeProvider.country.code,
+  //         defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
+  //         onSearchLandlord: (query) => _filterReviewsLandlord(query),
+  //       ),
+  //       ReviewsPage(
+  //         key: ValueKey(_searchQuery),
+  //         searchQuery: _searchQuery,
+  //         searchQueryAddress: _searchAddress,
+  //         searchQueryLandlord: _searchQueryLandlord,
+  //         defaultCountryCode: widget.localeProvider.country.code,
+  //         defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
+  //       ),
+  //       SubmitReviewPage(),
+  //       AboutPage(),
+  //     ];
 
-  void _navigateTo(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _currentIndex = widget.currentIndex;
+  // }
+
+  // void _navigateTo(int index) {
+  //   setState(() {
+  //     _currentIndex = index;
+  //   });
+  // }
 
   void _filterReviews(Address query) {
-    setState(() {
-      _currentIndex = 1;
-      //_searchQuery = query.fullName;
-      _searchAddress = query;
-      debugPrint("_filterReviews $query;");
-    });
+    // setState(() {
+    //   _currentIndex = 1;
+    //   //_searchQuery = query.fullName;
+    //   _searchAddress = query;
+    //   debugPrint("_filterReviews $query;");
+    // });
+    // Convert Address object to JSON string and encode it for the URL
+    final encodedAddress = Uri.encodeComponent(jsonEncode(query.toJson()));
+
+    context.go('/reviews?searchQueryAddress=$encodedAddress');
   }
 
-  void _filterReviewsFieldSubmitted(String query) {
-    setState(() {
-      _currentIndex = 1;
-      _searchQuery = query;
-      debugPrint("_filterReviewsString $query;");
-    });
-  }
-
-  void _filterReviewsLandlord(String query) {
-    setState(() {
-      _currentIndex = 1;
-      _searchQueryLandlord = query;
-      debugPrint("_filterReviewsLandlord $query");
-    });
-  }
+  // void _filterReviewsFieldSubmitted(String query) {
+  //   setState(() {
+  //     _currentIndex = 1;
+  //     _searchQuery = query;
+  //     debugPrint("_filterReviewsString $query;");
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -103,10 +101,11 @@ class _MainNavigationState extends State<MainNavigation> {
                         debugPrint('Settings selected');
                         break;
                       case 'about':
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => const AboutPage()),
-                        );
+                        context.go('/about');
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(builder: (context) => const AboutPage()),
+                        // );
                         break;
                     }
                   },
@@ -129,7 +128,7 @@ class _MainNavigationState extends State<MainNavigation> {
                   MouseRegion(
                     cursor: SystemMouseCursors.click,
                     child: GestureDetector(
-                      onTap: () => _navigateTo(0),
+                      onTap: () => context.go('/'),
                       child: Text(
                         local.appTitle,
                         style: GoogleFonts.montserrat(
@@ -143,25 +142,32 @@ class _MainNavigationState extends State<MainNavigation> {
                 ],
               ),
               navBarItems: [
-                NavBarItem(text: local.reviews, onTap: () => _navigateTo(1)),
-                if (screenWidth <= smallScreenWidth) NavBarItem(text: local.writeReview, onTap: () => _navigateTo(2)),
-                NavBarItem(text: local.about, onTap: () => _navigateTo(3)),
+                NavBarItem(
+                  text: local.reviews,
+                  onTap: () => context.go('/reviews'),
+                ),
+                if (screenWidth <= smallScreenWidth) NavBarItem(text: local.writeReview, onTap: () => context.go('/submit')),
+                NavBarItem(text: local.about, onTap: () => context.go('/about')),
               ],
               popupMenuItems: [
-                NavBarItem(text: local.home, onTap: () => _navigateTo(0)),
-                NavBarItem(text: local.reviews, onTap: () => _navigateTo(1)),
-                NavBarItem(text: local.writeReview, onTap: () => _navigateTo(2)),
-                NavBarItem(text: local.about, onTap: () => _navigateTo(3)),
+                NavBarItem(text: local.home, onTap: () => context.go('/')),
+                NavBarItem(text: local.reviews, onTap: () => context.go('/reviews')),
+                NavBarItem(text: local.writeReview, onTap: () => context.go('/submit')),
+                NavBarItem(text: local.about, onTap: () => context.go('/about')),
               ],
-              onSubmitReview: () => _navigateTo(2),
+              onSubmitReview: () => context.go('/submit'),
               onSearch: (query) => _filterReviews(query),
-              onSearchFieldSubmitted: (query) => _filterReviewsFieldSubmitted(query),
             ),
-      body: _pages[_currentIndex],
+      body: widget.child, //_pages[_currentIndex],
       bottomNavigationBar: isAndroid
           ? BottomNavigationBar(
               currentIndex: _currentIndex,
-              onTap: _navigateTo,
+              //onTap: _navigateTo,
+              onTap: (index) {
+                if (index == 0) context.go('/');
+                if (index == 1) context.go('/reviews');
+                if (index == 2) context.go('/submit');
+              },
               items: [
                 BottomNavigationBarItem(icon: const Icon(Icons.home), label: local.home),
                 BottomNavigationBarItem(icon: const Icon(Icons.list), label: local.reviews),

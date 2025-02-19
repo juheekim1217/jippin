@@ -1,3 +1,7 @@
+import 'dart:convert';
+
+import 'package:supabase_flutter/supabase_flutter.dart';
+
 class Address {
   final String name;
   final double latitude;
@@ -30,13 +34,36 @@ class Address {
     );
   }
 
+  // Convert Address to JSON
+  Map<String, dynamic> toJson() => {
+        'name': name,
+        'latitude': latitude,
+        'longitude': longitude,
+        'fullName': fullName,
+        'stateCode': stateCode,
+        'state': state,
+        'city': city,
+      };
+
+  // Deserialize JSON back to Address
+  factory Address.fromJson(Map<String, dynamic> json) {
+    try {
+      return Address(
+        name: json['name'] ?? "",
+        latitude: toDouble(['latitude']) ?? 0.0,
+        longitude: toDouble(['longitude']) ?? 0.0,
+        fullName: json['fullName'] ?? "",
+        stateCode: json['stateCode'] ?? "",
+        state: json['state'] ?? "",
+        city: json['city'] ?? "",
+      );
+    } catch (e) {
+      return Address.defaultAddress(); // Fallback if parsing fails
+    }
+  }
+
   // deserialize City JSON into an Address object
   factory Address.fromMapCity(Map<String, dynamic> map) {
-    // Extract city and state from "fn" (e.g., "Airdrie, Alberta")
-    //List<String> parts = (map["fn"] ?? "").split(", ");
-    //String? city = parts.isNotEmpty ? parts[0] : null;
-    //String? state = parts.length > 1 ? parts[1] : null;
-
     return Address(
       name: map["n"] ?? "",
       latitude: map["la"] ?? 0.0,

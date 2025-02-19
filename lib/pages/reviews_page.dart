@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
@@ -7,7 +8,6 @@ import 'package:intl/intl.dart';
 import 'package:jippin/models/address.dart';
 
 class ReviewsPage extends StatefulWidget {
-  final String searchQuery;
   final Address searchQueryAddress;
   final String searchQueryLandlord;
   final String defaultCountryCode;
@@ -15,7 +15,6 @@ class ReviewsPage extends StatefulWidget {
 
   const ReviewsPage({
     super.key,
-    required this.searchQuery,
     required this.searchQueryAddress,
     required this.searchQueryLandlord,
     required this.defaultCountryCode,
@@ -96,13 +95,10 @@ class _ReviewsPageState extends State<ReviewsPage> {
       if (widget.searchQueryAddress.state!.isNotEmpty && widget.searchQueryAddress.city!.isNotEmpty) {
         filteredReviews = allReviews.where((review) => (review["state"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.state!.toLowerCase()) && (review["city"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.city!.toLowerCase())).toList();
       } else if (widget.searchQueryAddress.state!.isNotEmpty) {
+        // search state only
         filteredReviews = allReviews.where((review) => (review["state"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.state!.toLowerCase())).toList();
       } else {
-        if (widget.searchQuery.isNotEmpty) {
-          filteredReviews = allReviews.where((review) => (review["state"]?.toString().toLowerCase() ?? "").contains(widget.searchQuery.toLowerCase()) || (review["city"]?.toString().toLowerCase() ?? "").contains(widget.searchQuery.toLowerCase())).toList();
-        } else {
-          filteredReviews = List.from(allReviews);
-        }
+        filteredReviews = List.from(allReviews);
       }
 
       // Apply landlord or property filtering at the end
@@ -498,7 +494,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                             context,
                             MaterialPageRoute(
                               builder: (context) => ReviewsPage(
-                                searchQuery: widget.searchQuery,
+                                //searchQuery: widget.searchQuery,
                                 searchQueryAddress: widget.searchQueryAddress,
                                 searchQueryLandlord: widget.searchQueryLandlord,
                                 defaultCountryCode: widget.defaultCountryCode,
@@ -621,7 +617,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
           const SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: () {
-              Navigator.pushReplacementNamed(context, '/submit');
+              context.go('/submit');
             },
             icon: const Icon(Icons.add, size: 18),
             label: Text(local.empty_reviews_write_review),
@@ -707,16 +703,6 @@ class _ReviewsPageState extends State<ReviewsPage> {
                   ),
                 ),
                 // 📌 Column 2: Created At (Right-Aligned & Top)
-                // Column(
-                //   mainAxisSize: MainAxisSize.min, // Prevents stretching
-                //   crossAxisAlignment: CrossAxisAlignment.end, // Ensures full right alignment
-                //   children: [
-                //     Text(
-                //       formatDateTime(review['created_at']),
-                //       style: const TextStyle(fontSize: 12, color: Colors.black54),
-                //     ),
-                //   ],
-                // ),
                 Column(
                   mainAxisSize: MainAxisSize.min, // Prevents unnecessary vertical stretching
                   crossAxisAlignment: CrossAxisAlignment.end, // Ensures right alignment
