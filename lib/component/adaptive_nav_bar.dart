@@ -154,17 +154,20 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
   }
 
   Widget _buildCountryDropdown(localeProvider, String initialCountryName) {
-    return SizedBox(
-      height: 32, // Match the height of other menu items
-      width: widget.screenWidth * 0.1,
-      child: CountryDropdownSearch(
-        localeProvider: localeProvider,
-        initialCountryName: initialCountryName,
-        onChanged: (String? newValue, String? countryName) {
-          if (newValue != null) {
-            localeProvider.setCountry(newValue, countryName!);
-          }
-        },
+    return ConstrainedBox(
+      constraints: BoxConstraints(minWidth: 150), // ✅ Set minimum width
+      child: SizedBox(
+        height: 32,
+        width: widget.screenWidth * 0.12, // ✅ Dynamic max width
+        child: CountryDropdownSearch(
+          localeProvider: localeProvider,
+          initialCountryName: initialCountryName,
+          onChanged: (String? newValue, String? countryName) {
+            if (newValue != null) {
+              localeProvider.setCountry(newValue, countryName!);
+            }
+          },
+        ),
       ),
     );
   }
@@ -203,7 +206,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         width: widget.screenWidth * 0.25,
         child: AddressAutocompleteField(
           localeProvider: localeProvider,
-          onChanged: (Address address) {
+          onChangedAddress: (Address address) {
             //FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
             widget.onSearch(address);
           },

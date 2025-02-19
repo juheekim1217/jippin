@@ -10,12 +10,12 @@ import 'package:jippin/models/address.dart';
 
 class AddressAutocompleteField extends StatefulWidget {
   final dynamic localeProvider;
-  final Function(Address) onChanged;
+  final Function(Address) onChangedAddress;
 
   const AddressAutocompleteField({
     super.key,
     required this.localeProvider,
-    required this.onChanged,
+    required this.onChangedAddress,
   });
 
   @override
@@ -82,7 +82,7 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
         // Tab key pressed
         onSelected: (Address selection) {
           debugPrint('onSelected $selection');
-          widget.onChanged(selection);
+          widget.onChangedAddress(selection);
         },
         moveFocusNext: false,
         fieldViewBuilder: (
