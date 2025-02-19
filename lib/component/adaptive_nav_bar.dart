@@ -5,11 +5,12 @@ import 'package:provider/provider.dart';
 import 'package:jippin/utilities/constants.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/models/nav_bar_item.dart';
-import 'package:jippin/component/test/country_autocomplete_field.dart';
 import 'package:jippin/component/country_dropdown_search.dart';
 import 'package:jippin/component/address_autocomplete_search.dart';
 import 'package:jippin/models/language.dart';
 import 'package:jippin/models/address.dart';
+
+import 'package:go_router/go_router.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
   final double screenWidth;
@@ -261,6 +262,8 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                 value: localeProvider.language,
                 onChanged: (Language? newLanguage) {
                   if (newLanguage != null) {
+                    String currentRoute = GoRouter.of(context).state.path ?? '/';
+                    localeProvider.setCurrentRoute(currentRoute); // ✅ Store the current route
                     localeProvider.setLocaleLanguage(newLanguage); // Update locale
                   }
                 },

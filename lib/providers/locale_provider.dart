@@ -8,12 +8,15 @@ class LocaleProvider extends ChangeNotifier {
   Locale _locale = languages.entries.first.value.locale; // Default language
   Language _language = languages.entries.first.value; // Default country
   Country _country = languages.entries.first.value.country; // Default country
+  String _currentRoute = "/"; // ✅ Store the current route (default is home)
 
   Locale get locale => _locale;
 
   Language get language => _language;
 
   Country get country => _country;
+
+  String get currentRoute => _currentRoute; // ✅ Getter for the stored route
 
   LocaleProvider() {
     /// Set default locale and country based on the user device on initialization
@@ -44,5 +47,10 @@ class LocaleProvider extends ChangeNotifier {
     }
     debugPrint("setDefaultCountry ${_country.code}");
     notifyListeners(); // Notify the UI about the change
+  }
+
+  void setCurrentRoute(String route) {
+    _currentRoute = route; // ✅ Store the current route before changing language
+    debugPrint("Stored current route: $_currentRoute");
   }
 }

@@ -11,6 +11,7 @@ import 'dart:convert';
 
 GoRouter createRouter(LocaleProvider localeProvider) {
   return GoRouter(
+    initialLocation: localeProvider.currentRoute, // ✅ Start from the stored route
     routes: [
       ShellRoute(
         builder: (context, state, child) {
