@@ -20,15 +20,18 @@ class LocaleProvider extends ChangeNotifier {
 
   LocaleProvider() {
     /// Set default locale and country based on the user device on initialization
-    Locale deviceLocal = PlatformDispatcher.instance.locale; // Get the user's default locale
-    if (languages.containsKey(deviceLocal.languageCode)) {
-      _locale = languages[deviceLocal.languageCode]!.locale;
-      _language = languages[deviceLocal.languageCode]!;
+    Locale deviceLocale = PlatformDispatcher.instance.locale; // Get the user's default locale
+    //Locale deviceLocale = ui.PlatformDispatcher.instance.locale;
+    //Locale deviceLocale = Localizations.localeOf(context);
+
+    if (languages.containsKey(deviceLocale.languageCode)) {
+      _locale = languages[deviceLocale.languageCode]!.locale;
+      _language = languages[deviceLocale.languageCode]!;
     }
-    if (countries.containsKey(deviceLocal.countryCode)) {
-      _country = countries[deviceLocal.countryCode]!;
+    if (countries.containsKey(deviceLocale.countryCode)) {
+      _country = countries[deviceLocale.countryCode]!;
     }
-    debugPrint("\ninit: $deviceLocal/${_language.code}/${_country.code}");
+    debugPrint("\ninit: $deviceLocale/${_language.code}/${_country.code}");
     notifyListeners(); // Notify UI of the locale change
   }
 
@@ -50,9 +53,4 @@ class LocaleProvider extends ChangeNotifier {
     debugPrint("setDefaultCountry ${_country.code}");
     notifyListeners(); // Notify the UI about the change
   }
-
-// void setCurrentRoute(String route) {
-//   _currentRoute = route; // ✅ Store the current route before changing language
-//   debugPrint("Stored current route: $_currentRoute");
-// }
 }

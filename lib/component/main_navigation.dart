@@ -62,12 +62,6 @@ class _MainNavigationState extends State<MainNavigation> {
   // }
 
   void _filterReviews(Address address) {
-    // setState(() {
-    //   _currentIndex = 1;
-    //   //_searchQuery = query.fullName;
-    //   _searchAddress = query;
-    //   debugPrint("_filterReviews $query;");
-    // });
     // Convert Address object to JSON string and encode it for the URL
     final encodedAddress = Uri.encodeComponent(jsonEncode(address.toJson()));
 

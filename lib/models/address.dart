@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class Address {
@@ -37,13 +35,26 @@ class Address {
   // Convert Address to JSON
   Map<String, dynamic> toJson() => {
         'name': name,
-        'latitude': latitude,
-        'longitude': longitude,
+        //'latitude': latitude,
+        //'longitude': longitude,
         'fullName': fullName,
         'stateCode': stateCode,
         'state': state,
         'city': city,
       };
+
+  // Convert Address to JSON
+  Address stateAddress() {
+    return Address(
+      name: state ?? '',
+      latitude: latitude,
+      longitude: longitude,
+      fullName: state ?? '',
+      stateCode: stateCode,
+      state: state,
+      city: "",
+    );
+  }
 
   // Deserialize JSON back to Address
   factory Address.fromJson(Map<String, dynamic> json) {
@@ -69,7 +80,6 @@ class Address {
       latitude: map["la"] ?? 0.0,
       longitude: map["lo"] ?? 0.0,
       fullName: map["fn"] ?? "",
-      //city: city,
       city: map["n"] ?? "",
       state: map["s"] ?? "",
       stateCode: "",
@@ -82,10 +92,7 @@ class Address {
       name: map["n"] ?? "",
       latitude: map["la"] ?? 0.0,
       longitude: map["lo"] ?? 0.0,
-      //latitude: double.tryParse(map["latitude"] ?? "0.0") ?? 0.0,
-      //longitude: double.tryParse(map["longitude"] ?? "0.0") ?? 0.0,
       fullName: map["n"] ?? "",
-      //city: city,
       city: "",
       state: map["n"] ?? "",
       stateCode: map["sc"] ?? "",

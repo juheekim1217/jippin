@@ -353,6 +353,18 @@ abstract class AppLocalizations {
   /// **'Created At'**
   String get created_at;
 
+  /// No description provided for @terms_and_conditions.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms & Conditions'**
+  String get terms_and_conditions;
+
+  /// No description provided for @privacy_policy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacy_policy;
+
   /// No description provided for @unknown.
   ///
   /// In en, this message translates to:
@@ -844,6 +856,294 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'By contributing to Rent Review, you’re helping other renters find reliable and respectful landlords and agents, creating a more transparent rental market for everyone.'**
   String get about_contribute_message;
+
+  /// No description provided for @termsAndConditions.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms and Conditions'**
+  String get termsAndConditions;
+
+  /// No description provided for @terms_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to JIPPIN'**
+  String get terms_title;
+
+  /// No description provided for @terms_description.
+  ///
+  /// In en, this message translates to:
+  /// **'By accessing this website and mobile application, you acknowledge and agree to comply with our terms and conditions.'**
+  String get terms_description;
+
+  /// No description provided for @terms_acceptanceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'1. Acceptance of Terms'**
+  String get terms_acceptanceTitle;
+
+  /// No description provided for @terms_acceptanceDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'By accessing or using JIPPIN, you enter into a legally binding agreement with JIPPIN and agree to be bound by these Terms and all applicable laws and regulations.'**
+  String get terms_acceptanceDescription;
+
+  /// No description provided for @terms_contentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'2. Use of Content'**
+  String get terms_contentTitle;
+
+  /// No description provided for @terms_contentDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'All content provided on JIPPIN, including but not limited to text, graphics, images, and other materials, is for informational purposes only.'**
+  String get terms_contentDescription;
+
+  /// No description provided for @terms_userContentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'3. User-Generated Content'**
+  String get terms_userContentTitle;
+
+  /// No description provided for @terms_userContentDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Users may submit reviews and other materials on JIPPIN, granting a worldwide license for JIPPIN to use them.'**
+  String get terms_userContentDescription;
+
+  /// No description provided for @terms_disclaimerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'4. Disclaimer of Warranties'**
+  String get terms_disclaimerTitle;
+
+  /// No description provided for @terms_disclaimerDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'JIPPIN PROVIDES THE PLATFORM AND CONTENT \'AS IS\' WITHOUT WARRANTIES OR REPRESENTATIONS, EXPRESS OR IMPLIED.'**
+  String get terms_disclaimerDescription;
+
+  /// No description provided for @terms_liabilityTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'5. Limitation of Liability'**
+  String get terms_liabilityTitle;
+
+  /// No description provided for @terms_liabilityDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'JIPPIN SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OR INABILITY TO USE THE PLATFORM.'**
+  String get terms_liabilityDescription;
+
+  /// No description provided for @terms_thirdPartyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'6. Links to Third-Party Websites'**
+  String get terms_thirdPartyTitle;
+
+  /// No description provided for @terms_thirdPartyDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'JIPPIN assumes no responsibility for third-party website content, policies, or practices.'**
+  String get terms_thirdPartyDescription;
+
+  /// No description provided for @terms_governingLawTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'7. Governing Law and Jurisdiction'**
+  String get terms_governingLawTitle;
+
+  /// No description provided for @terms_governingLawDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'These Terms shall be governed by the laws of the jurisdiction in which JIPPIN is registered.'**
+  String get terms_governingLawDescription;
+
+  /// No description provided for @terms_amendmentsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'8. Amendments'**
+  String get terms_amendmentsTitle;
+
+  /// No description provided for @terms_amendmentsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'JIPPIN reserves the right to modify or update these Terms at any time without prior notice.'**
+  String get terms_amendmentsDescription;
+
+  /// No description provided for @terms_contactTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'9. Contact Information'**
+  String get terms_contactTitle;
+
+  /// No description provided for @terms_contactDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'For any inquiries, please contact JIPPIN at support@jippin.com.'**
+  String get terms_contactDescription;
+
+  /// No description provided for @privacy_privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacy_privacyPolicy;
+
+  /// No description provided for @privacy_privacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy for JIPPIN'**
+  String get privacy_privacyTitle;
+
+  /// No description provided for @privacy_privacyDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'At JIPPIN, we value your privacy and are committed to maintaining the confidentiality of your information. This Privacy Policy outlines how we handle data on our platform.'**
+  String get privacy_privacyDescription;
+
+  /// No description provided for @privacy_informationCollectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'1. Information Collection'**
+  String get privacy_informationCollectionTitle;
+
+  /// No description provided for @privacy_informationCollectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We do not collect any personal information from visitors to our platform.'**
+  String get privacy_informationCollectionDescription;
+
+  /// No description provided for @privacy_cookiesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'2. Cookies and Tracking Technologies'**
+  String get privacy_cookiesTitle;
+
+  /// No description provided for @privacy_cookiesDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Our platform does not use cookies or other tracking technologies, except for analytics, security, and advertising services as outlined below.'**
+  String get privacy_cookiesDescription;
+
+  /// No description provided for @privacy_informationSharingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'3. Information Sharing'**
+  String get privacy_informationSharingTitle;
+
+  /// No description provided for @privacy_informationSharingDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We do not share any information with third parties, as we do not collect any information in the first place.'**
+  String get privacy_informationSharingDescription;
+
+  /// No description provided for @privacy_dataSecurityTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'4. Data Security'**
+  String get privacy_dataSecurityTitle;
+
+  /// No description provided for @privacy_dataSecurityDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'While we do not collect personal data, we implement appropriate security measures to protect against unauthorized access and ensure platform integrity.'**
+  String get privacy_dataSecurityDescription;
+
+  /// No description provided for @privacy_childrenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'5. Children\'s Privacy'**
+  String get privacy_childrenTitle;
+
+  /// No description provided for @privacy_childrenDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Our platform is not directed at children under 13, and we do not knowingly collect any personal information from children.'**
+  String get privacy_childrenDescription;
+
+  /// No description provided for @privacy_analyticsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'6. Analytics Services'**
+  String get privacy_analyticsTitle;
+
+  /// No description provided for @privacy_analyticsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We use PostHog to analyze user behavior. It collects device info, IP addresses, and browsing patterns to improve user experience.'**
+  String get privacy_analyticsDescription;
+
+  /// No description provided for @privacy_botDetectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'7. Bot Detection Services'**
+  String get privacy_botDetectionTitle;
+
+  /// No description provided for @privacy_botDetectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We use Google reCAPTCHA to detect and prevent automated abuse such as spam and bot traffic.'**
+  String get privacy_botDetectionDescription;
+
+  /// No description provided for @privacy_advertisingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'8. Advertising Services'**
+  String get privacy_advertisingTitle;
+
+  /// No description provided for @privacy_advertisingDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We use Google Ads to display advertisements. Google may collect user data for personalized ad experiences.'**
+  String get privacy_advertisingDescription;
+
+  /// No description provided for @privacy_gdprTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'9. GDPR Compliance'**
+  String get privacy_gdprTitle;
+
+  /// No description provided for @privacy_gdprDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We allow users to submit reviews about landlords, but ensure content aligns with GDPR policies.'**
+  String get privacy_gdprDescription;
+
+  /// No description provided for @privacy_dsaTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'10. DSA Compliance'**
+  String get privacy_dsaTitle;
+
+  /// No description provided for @privacy_dsaDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Landlord reviews are user-generated and do not necessarily reflect our views. Reviews are moderated per our guidelines.'**
+  String get privacy_dsaDescription;
+
+  /// No description provided for @privacy_policyChangesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'11. Changes to This Privacy Policy'**
+  String get privacy_policyChangesTitle;
+
+  /// No description provided for @privacy_policyChangesDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'We reserve the right to update this Privacy Policy. Changes will take effect immediately upon posting.'**
+  String get privacy_policyChangesDescription;
+
+  /// No description provided for @privacy_contactTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'12. Contact Information'**
+  String get privacy_contactTitle;
+
+  /// No description provided for @privacy_contactDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'If you have any questions, please contact us at support@jippin.com.'**
+  String get privacy_contactDescription;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

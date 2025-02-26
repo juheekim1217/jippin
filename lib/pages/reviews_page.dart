@@ -228,22 +228,11 @@ class _ReviewsPageState extends State<ReviewsPage> {
     // Total reviews for histogram
     int totalReviews = starCounts.values.reduce((a, b) => a + b);
 
-    String? countryName = widget.defaultCountryName;
-    String? searchQuery = widget.searchQueryAddress.fullName.isEmpty ? "" : "/ ${widget.searchQueryAddress.fullName}";
-    if (searchQueryLandlord!.isNotEmpty) searchQuery += "/ $searchQueryLandlord";
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // 🌍 **Header Section Above the Card**
-
-        Text(
-          "$countryName $searchQuery",
-          style: const TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        _buildAddressLink(),
 
         const SizedBox(height: 28),
 
@@ -440,150 +429,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          RichText(
-            text: TextSpan(
-              children: [
-                // Country search query
-                WidgetSpan(
-                  alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-                  baseline: TextBaseline.alphabetic,
-                  child: MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    child: GestureDetector(
-                      onTap: () {
-                        context.go('/reviews');
-                      },
-                      child: Text(
-                        widget.defaultCountryName,
-                        style: const TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.blueAccent,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-
-                // State search query
-                if (widget.searchQueryAddress.state!.isNotEmpty)
-                  WidgetSpan(
-                    alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
-                    baseline: TextBaseline.alphabetic,
-                    child: Text(
-                      " / ",
-                      style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueGrey,
-                      ),
-                    ),
-                  ),
-
-                if (widget.searchQueryAddress.state!.isNotEmpty)
-                  WidgetSpan(
-                    alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-                    baseline: TextBaseline.alphabetic,
-                    child: MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: GestureDetector(
-                        onTap: () {
-                          // Convert Address object to JSON string and encode it for the URL
-                          final encodedAddress = Uri.encodeComponent(jsonEncode(widget.searchQueryAddress.toJson()));
-                          context.go('/reviews?searchQueryAddress=$encodedAddress');
-                        },
-                        child: Text(
-                          widget.searchQueryAddress.state!,
-                          style: const TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.blueAccent,
-                            decoration: TextDecoration.none,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-
-                // City search query
-                if (widget.searchQueryAddress.city!.isNotEmpty)
-                  WidgetSpan(
-                    alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
-                    baseline: TextBaseline.alphabetic,
-                    child: Text(
-                      ", ",
-                      style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueGrey,
-                      ),
-                    ),
-                  ),
-
-                if (widget.searchQueryAddress.city!.isNotEmpty)
-                  WidgetSpan(
-                    alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-                    baseline: TextBaseline.alphabetic,
-                    child: MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: GestureDetector(
-                        onTap: () {
-                          context.go('/reviews');
-                        },
-                        child: Text(
-                          widget.searchQueryAddress.city!,
-                          style: const TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.blueAccent,
-                            decoration: TextDecoration.none,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-
-                // Landlord search query
-                if (widget.searchQueryLandlord.isNotEmpty)
-                  WidgetSpan(
-                    alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
-                    baseline: TextBaseline.alphabetic,
-                    child: Text(
-                      " / ",
-                      style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueGrey,
-                      ),
-                    ),
-                  ),
-
-                if (widget.searchQueryLandlord.isNotEmpty)
-                  WidgetSpan(
-                    alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-                    baseline: TextBaseline.alphabetic,
-                    child: MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: GestureDetector(
-                        onTap: () {
-                          context.go('/reviews');
-                        },
-                        child: Text(
-                          widget.searchQueryLandlord,
-                          style: const TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.blueAccent,
-                            decoration: TextDecoration.none,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-          ),
+          _buildAddressLink(),
           const SizedBox(height: 12),
           const Icon(Icons.rate_review, size: 64, color: Colors.grey),
           const SizedBox(height: 12),
@@ -612,6 +458,145 @@ class _ReviewsPageState extends State<ReviewsPage> {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             ),
           ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAddressLink() {
+    return RichText(
+      text: TextSpan(
+        children: [
+          // Country search query
+          WidgetSpan(
+            alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+            baseline: TextBaseline.alphabetic,
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  // Convert Address object to JSON string and encode it for the URL
+                  final emptyAddress = Address.defaultAddress(); // empty address
+                  final encodedAddress = Uri.encodeComponent(jsonEncode(emptyAddress.toJson()));
+                  context.go('/reviews?searchQueryAddress=$encodedAddress');
+                },
+                child: Text(
+                  widget.defaultCountryName,
+                  style: const TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueAccent,
+                    decoration: TextDecoration.none,
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          // State search query
+          if (widget.searchQueryAddress.state!.isNotEmpty)
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+              baseline: TextBaseline.alphabetic,
+              child: Text(
+                " / ",
+                style: const TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blueGrey,
+                ),
+              ),
+            ),
+
+          if (widget.searchQueryAddress.state!.isNotEmpty)
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+              baseline: TextBaseline.alphabetic,
+              child: MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {
+                    // Convert Address object to JSON string and encode it for the URL
+                    final stateAddress = widget.searchQueryAddress.stateAddress();
+                    final encodedAddress = Uri.encodeComponent(jsonEncode(stateAddress.toJson()));
+                    context.go('/reviews?searchQueryAddress=$encodedAddress');
+                  },
+                  child: Text(
+                    widget.searchQueryAddress.state!,
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blueAccent,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+          // City search query
+          if (widget.searchQueryAddress.city!.isNotEmpty)
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+              baseline: TextBaseline.alphabetic,
+              child: Text(
+                ", ",
+                style: const TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blueGrey,
+                ),
+              ),
+            ),
+
+          if (widget.searchQueryAddress.city!.isNotEmpty)
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+              baseline: TextBaseline.alphabetic,
+              child: MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {
+                    // Convert Address object to JSON string and encode it for the URL
+                    final encodedAddress = Uri.encodeComponent(jsonEncode(widget.searchQueryAddress.toJson()));
+                    context.go('/reviews?searchQueryAddress=$encodedAddress');
+                  },
+                  child: Text(
+                    widget.searchQueryAddress.city!,
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blueAccent,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+          // Landlord search query
+          if (widget.searchQueryLandlord.isNotEmpty)
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+              baseline: TextBaseline.alphabetic,
+              child: MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {
+                    context.go('/reviews?searchQueryLandlord=${widget.searchQueryLandlord}');
+                  },
+                  child: Text(
+                    ' [${widget.searchQueryLandlord}]',
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blueAccent,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+              ),
+            ),
         ],
       ),
     );
@@ -675,13 +660,38 @@ class _ReviewsPageState extends State<ReviewsPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       if (review['landlord'] != null && review['landlord'] != "")
-                        Text(
-                          "${AppLocalizations.of(context).landlord}: ${review['landlord']}",
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
-                          ),
+                        Row(
+                          children: [
+                            const Icon(
+                              Icons.person,
+                              size: 30,
+                              color: Colors.blueAccent,
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    review['landlord'],
+                                    style: const TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 0),
+                                  Text(
+                                    AppLocalizations.of(context).landlord,
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey[600],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                     ],
                   ),

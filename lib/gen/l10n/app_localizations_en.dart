@@ -138,6 +138,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get created_at => 'Created At';
 
   @override
+  String get terms_and_conditions => 'Terms & Conditions';
+
+  @override
+  String get privacy_policy => 'Privacy Policy';
+
+  @override
   String get unknown => 'Unknown';
 
   @override
@@ -382,4 +388,148 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get about_contribute_message => 'By contributing to Rent Review, you’re helping other renters find reliable and respectful landlords and agents, creating a more transparent rental market for everyone.';
+
+  @override
+  String get termsAndConditions => 'Terms and Conditions';
+
+  @override
+  String get terms_title => 'Welcome to JIPPIN';
+
+  @override
+  String get terms_description => 'By accessing this website and mobile application, you acknowledge and agree to comply with our terms and conditions.';
+
+  @override
+  String get terms_acceptanceTitle => '1. Acceptance of Terms';
+
+  @override
+  String get terms_acceptanceDescription => 'By accessing or using JIPPIN, you enter into a legally binding agreement with JIPPIN and agree to be bound by these Terms and all applicable laws and regulations.';
+
+  @override
+  String get terms_contentTitle => '2. Use of Content';
+
+  @override
+  String get terms_contentDescription => 'All content provided on JIPPIN, including but not limited to text, graphics, images, and other materials, is for informational purposes only.';
+
+  @override
+  String get terms_userContentTitle => '3. User-Generated Content';
+
+  @override
+  String get terms_userContentDescription => 'Users may submit reviews and other materials on JIPPIN, granting a worldwide license for JIPPIN to use them.';
+
+  @override
+  String get terms_disclaimerTitle => '4. Disclaimer of Warranties';
+
+  @override
+  String get terms_disclaimerDescription => 'JIPPIN PROVIDES THE PLATFORM AND CONTENT \'AS IS\' WITHOUT WARRANTIES OR REPRESENTATIONS, EXPRESS OR IMPLIED.';
+
+  @override
+  String get terms_liabilityTitle => '5. Limitation of Liability';
+
+  @override
+  String get terms_liabilityDescription => 'JIPPIN SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OR INABILITY TO USE THE PLATFORM.';
+
+  @override
+  String get terms_thirdPartyTitle => '6. Links to Third-Party Websites';
+
+  @override
+  String get terms_thirdPartyDescription => 'JIPPIN assumes no responsibility for third-party website content, policies, or practices.';
+
+  @override
+  String get terms_governingLawTitle => '7. Governing Law and Jurisdiction';
+
+  @override
+  String get terms_governingLawDescription => 'These Terms shall be governed by the laws of the jurisdiction in which JIPPIN is registered.';
+
+  @override
+  String get terms_amendmentsTitle => '8. Amendments';
+
+  @override
+  String get terms_amendmentsDescription => 'JIPPIN reserves the right to modify or update these Terms at any time without prior notice.';
+
+  @override
+  String get terms_contactTitle => '9. Contact Information';
+
+  @override
+  String get terms_contactDescription => 'For any inquiries, please contact JIPPIN at support@jippin.com.';
+
+  @override
+  String get privacy_privacyPolicy => 'Privacy Policy';
+
+  @override
+  String get privacy_privacyTitle => 'Privacy Policy for JIPPIN';
+
+  @override
+  String get privacy_privacyDescription => 'At JIPPIN, we value your privacy and are committed to maintaining the confidentiality of your information. This Privacy Policy outlines how we handle data on our platform.';
+
+  @override
+  String get privacy_informationCollectionTitle => '1. Information Collection';
+
+  @override
+  String get privacy_informationCollectionDescription => 'We do not collect any personal information from visitors to our platform.';
+
+  @override
+  String get privacy_cookiesTitle => '2. Cookies and Tracking Technologies';
+
+  @override
+  String get privacy_cookiesDescription => 'Our platform does not use cookies or other tracking technologies, except for analytics, security, and advertising services as outlined below.';
+
+  @override
+  String get privacy_informationSharingTitle => '3. Information Sharing';
+
+  @override
+  String get privacy_informationSharingDescription => 'We do not share any information with third parties, as we do not collect any information in the first place.';
+
+  @override
+  String get privacy_dataSecurityTitle => '4. Data Security';
+
+  @override
+  String get privacy_dataSecurityDescription => 'While we do not collect personal data, we implement appropriate security measures to protect against unauthorized access and ensure platform integrity.';
+
+  @override
+  String get privacy_childrenTitle => '5. Children\'s Privacy';
+
+  @override
+  String get privacy_childrenDescription => 'Our platform is not directed at children under 13, and we do not knowingly collect any personal information from children.';
+
+  @override
+  String get privacy_analyticsTitle => '6. Analytics Services';
+
+  @override
+  String get privacy_analyticsDescription => 'We use PostHog to analyze user behavior. It collects device info, IP addresses, and browsing patterns to improve user experience.';
+
+  @override
+  String get privacy_botDetectionTitle => '7. Bot Detection Services';
+
+  @override
+  String get privacy_botDetectionDescription => 'We use Google reCAPTCHA to detect and prevent automated abuse such as spam and bot traffic.';
+
+  @override
+  String get privacy_advertisingTitle => '8. Advertising Services';
+
+  @override
+  String get privacy_advertisingDescription => 'We use Google Ads to display advertisements. Google may collect user data for personalized ad experiences.';
+
+  @override
+  String get privacy_gdprTitle => '9. GDPR Compliance';
+
+  @override
+  String get privacy_gdprDescription => 'We allow users to submit reviews about landlords, but ensure content aligns with GDPR policies.';
+
+  @override
+  String get privacy_dsaTitle => '10. DSA Compliance';
+
+  @override
+  String get privacy_dsaDescription => 'Landlord reviews are user-generated and do not necessarily reflect our views. Reviews are moderated per our guidelines.';
+
+  @override
+  String get privacy_policyChangesTitle => '11. Changes to This Privacy Policy';
+
+  @override
+  String get privacy_policyChangesDescription => 'We reserve the right to update this Privacy Policy. Changes will take effect immediately upon posting.';
+
+  @override
+  String get privacy_contactTitle => '12. Contact Information';
+
+  @override
+  String get privacy_contactDescription => 'If you have any questions, please contact us at support@jippin.com.';
 }

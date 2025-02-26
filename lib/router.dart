@@ -2,6 +2,8 @@ import 'package:jippin/pages/about_page.dart';
 import 'package:jippin/pages/home_page.dart';
 import 'package:jippin/pages/reviews_page.dart';
 import 'package:jippin/pages/submit_review_page.dart';
+import 'package:jippin/pages/terms_and_conditions_page.dart';
+import 'package:jippin/pages/privacy_policy.dart';
 import 'package:jippin/models/address.dart';
 
 import 'package:go_router/go_router.dart';
@@ -52,6 +54,14 @@ GoRouter createRouter(LocaleProvider localeProvider) {
           GoRoute(
             path: '/about',
             builder: (context, state) => const AboutPage(),
+          ),
+          GoRoute(
+            path: '/terms',
+            builder: (context, state) => const TermsAndConditionsPage(),
+          ),
+          GoRoute(
+            path: '/privacy',
+            builder: (context, state) => const PrivacyPolicyPage(),
           ),
         ],
       ),

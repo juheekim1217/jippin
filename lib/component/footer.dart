@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 
 class AppFooter extends StatelessWidget {
   const AppFooter({super.key});
@@ -23,8 +24,8 @@ class AppFooter extends StatelessWidget {
             alignment: WrapAlignment.center,
             spacing: 20,
             children: [
-              _buildFooterLink("Terms & Conditions", "/terms"),
-              _buildFooterLink("Privacy Policy", "/privacy"),
+              _buildFooterLink(context, localizations.terms_and_conditions, "/terms"),
+              _buildFooterLink(context, localizations.privacy_policy, "/privacy"),
             ],
           ),
           const SizedBox(height: 16),
@@ -61,16 +62,19 @@ class AppFooter extends StatelessWidget {
   }
 
   // 🔗 Footer Link Helper
-  Widget _buildFooterLink(String text, String route) {
-    return GestureDetector(
-      onTap: () => debugPrint("Navigate to $route"), // Replace with actual navigation logic
-      child: Text(
-        text,
-        style: GoogleFonts.notoSans(
-          fontSize: 14,
-          fontWeight: FontWeight.w500,
-          color: Colors.black87,
-          decoration: TextDecoration.underline,
+  Widget _buildFooterLink(BuildContext context, String text, String route) {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click, // Changes cursor to pointer on hover
+      child: GestureDetector(
+        onTap: () => context.go(route),
+        child: Text(
+          text,
+          style: GoogleFonts.notoSans(
+            fontSize: 12,
+            fontWeight: FontWeight.w500,
+            color: Colors.black87,
+            decoration: TextDecoration.underline,
+          ),
         ),
       ),
     );
