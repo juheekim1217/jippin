@@ -63,17 +63,19 @@ class AppFooter extends StatelessWidget {
 
   // 🔗 Footer Link Helper
   Widget _buildFooterLink(BuildContext context, String text, String route) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click, // Changes cursor to pointer on hover
-      child: GestureDetector(
-        onTap: () => context.go(route),
-        child: Text(
-          text,
-          style: GoogleFonts.notoSans(
-            fontSize: 12,
-            fontWeight: FontWeight.w500,
-            color: Colors.black87,
-            decoration: TextDecoration.underline,
+    return SelectionContainer.disabled(
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click, // Changes cursor to pointer on hover
+        child: GestureDetector(
+          onTap: () => context.go(route),
+          child: Text(
+            text,
+            style: GoogleFonts.notoSans(
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+              color: Colors.black87,
+              decoration: TextDecoration.underline,
+            ),
           ),
         ),
       ),

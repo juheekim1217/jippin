@@ -8,6 +8,11 @@ class Address {
   final String? stateCode;
   final String? state;
   final String? city;
+  final String? district;
+  final String? street;
+  final String? streetNum;
+  final String? unit;
+  final String? zip;
 
   Address({
     required this.name,
@@ -17,6 +22,11 @@ class Address {
     this.stateCode,
     this.state,
     this.city,
+    this.district,
+    this.street,
+    this.streetNum,
+    this.unit,
+    this.zip,
   });
 
   // Factory constructor for empty Address

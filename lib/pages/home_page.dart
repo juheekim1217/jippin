@@ -4,17 +4,18 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/component/footer.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 
 class HomePage extends StatefulWidget {
   final String defaultCountryCode;
   final String defaultCountryName;
-  final ValueChanged<String> onSearchLandlord;
+  final ValueChanged<String> onSearchDetails;
 
   const HomePage({
     super.key,
     required this.defaultCountryCode,
     required this.defaultCountryName,
-    required this.onSearchLandlord,
+    required this.onSearchDetails,
   });
 
   @override
@@ -41,7 +42,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _handleSearch() {
-    widget.onSearchLandlord(searchController.text);
+    widget.onSearchDetails(searchController.text);
   }
 
   // Fetch reviews from Supabase by Selected Country
@@ -85,33 +86,35 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
-    return SingleChildScrollView(
-      child: Center(
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40),
-          constraints: const BoxConstraints(maxWidth: 1000),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // 🔥 Hero Section
-              _buildHeroSection(localizations, context),
-              const SizedBox(height: 40),
+    return GlobalPageLayoutScaffold(
+      body: SingleChildScrollView(
+        child: Center(
+          child: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40),
+            constraints: const BoxConstraints(maxWidth: 1000),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // 🔥 Hero Section
+                _buildHeroSection(localizations, context),
+                const SizedBox(height: 40),
 
-              // 🔒 Anonymous Review Notice
-              _buildAnonymousSection(localizations),
-              const SizedBox(height: 50),
+                // 🔒 Anonymous Review Notice
+                _buildAnonymousSection(localizations),
+                const SizedBox(height: 50),
 
-              // 🏡 Recent Reviews
-              _buildRecentReviews(localizations, context),
-              const SizedBox(height: 50),
+                // 🏡 Recent Reviews
+                _buildRecentReviews(localizations, context),
+                const SizedBox(height: 50),
 
-              // 🔄 How It Works
-              _buildHowItWorksSection(localizations, context),
-              const SizedBox(height: 40),
+                // 🔄 How It Works
+                _buildHowItWorksSection(localizations, context),
+                const SizedBox(height: 40),
 
-              // 📌 Footer (Not Sticky, Appears After All Content)
-              const AppFooter(),
-            ],
+                // 📌 Footer (Not Sticky, Appears After All Content)
+                const AppFooter(),
+              ],
+            ),
           ),
         ),
       ),
@@ -237,6 +240,7 @@ class _HomePageState extends State<HomePage> {
         ...recentReviews.map((review) => _buildReviewCard(
               localizations,
               review['country'] ?? localizations.unknown_country,
+              review['state'] ?? '',
               review['city'] ?? localizations.unknown_city,
               review['landlord'] ?? '',
               review['property'] ?? '',
@@ -257,7 +261,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   // 🏡 Review Card
-  Widget _buildReviewCard(AppLocalizations localizations, String country, String city, String landlord, String property, double rating, String title, String review) {
+  Widget _buildReviewCard(AppLocalizations localizations, String country, String state, String city, String landlord, String property, double rating, String title, String review) {
+    String address = (city.isEmpty ? "" : "$city, ") + (state.isEmpty ? "" : "$state, ") + country;
     return Card(
       elevation: 1,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
@@ -274,7 +279,7 @@ class _HomePageState extends State<HomePage> {
 
             // 📍 Country & City (Smaller Font)
             Text(
-              "$city, $country",
+              address,
               style: const TextStyle(fontSize: 12, color: Colors.black54),
             ),
 

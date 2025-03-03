@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:jippin/pages/about_page.dart';
 import 'package:jippin/pages/home_page.dart';
 import 'package:jippin/pages/reviews_page.dart';
@@ -25,25 +26,39 @@ GoRouter createRouter(LocaleProvider localeProvider) {
             builder: (context, state) => HomePage(
               defaultCountryCode: localeProvider.country.code,
               defaultCountryName: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
-              onSearchLandlord: (String query) {
-                // Navigate to the reviews page with searchQueryLandlord as a query parameter
-                context.go('/reviews?searchQueryLandlord=$query');
+              onSearchDetails: (String query) {
+                context.go('/reviews?qD=$query');
               }, // Empty callback
             ),
           ),
           GoRoute(
             path: '/reviews',
             builder: (context, state) {
-              final String searchQueryLandlord = state.uri.queryParameters['searchQueryLandlord'] ?? "";
-              final String? searchQueryAddressStr = state.uri.queryParameters['searchQueryAddress'];
+              final String qDetails = state.uri.queryParameters['qD'] ?? "";
+              final String qLandlord = state.uri.queryParameters['qL'] ?? "";
+              final String qProperty = state.uri.queryParameters['qP'] ?? "";
+              final String qRealtor = state.uri.queryParameters['qR'] ?? "";
+
+              // final String qState = state.uri.queryParameters['qSta'] ?? "";
+              // final String qCity = state.uri.queryParameters['qCi'] ?? "";
+              // final String qDistrict = state.uri.queryParameters['qDi'] ?? "";
+              // final String qStreet = state.uri.queryParameters['qStr'] ?? "";
+              // final String qZip = state.uri.queryParameters['qZ'] ?? "";
+
+              final String qAddressStr = state.uri.queryParameters['qA'] ?? "";
               // Decode JSON from URL-safe format & parse into Address object
-              final Address searchQueryAddress = (searchQueryAddressStr != null && searchQueryAddressStr.isNotEmpty) ? Address.fromJson(jsonDecode(Uri.decodeComponent(searchQueryAddressStr))) : Address.defaultAddress();
+              final Address qAddress = qAddressStr.isNotEmpty ? Address.fromJson(jsonDecode(Uri.decodeComponent(qAddressStr))) : Address.defaultAddress();
 
               return ReviewsPage(
-                searchQueryLandlord: searchQueryLandlord,
-                searchQueryAddress: searchQueryAddress,
+                key: ValueKey(Object.hash(qDetails, qLandlord, qProperty, qRealtor, qAddressStr, localeProvider.country.code, localeProvider.country.getCountryName(localeProvider.locale.languageCode).hashCode)),
+                // 👈 Includes all params to force rebuild. Generates a unique but shorter key
                 defaultCountryCode: localeProvider.country.code,
                 defaultCountryName: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
+                qDetails: qDetails,
+                qLandlord: qLandlord,
+                qProperty: qProperty,
+                qRealtor: qRealtor,
+                qAddress: qAddress,
               );
             },
           ),

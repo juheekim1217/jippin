@@ -11,9 +11,11 @@ import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/models/language.dart';
 
 import 'package:jippin/router.dart';
+import 'package:flutter/gestures.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  GestureBinding.instance.resamplingEnabled = true;
 
   try {
     await dotenv.load(fileName: ".env"); // This works for assets if configured properly in pubspec.yaml

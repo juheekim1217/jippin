@@ -11,15 +11,18 @@ class GlobalPageLayoutScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Center(
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 30.0), // Add margins
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 1000, // Set your desired maximum width here
+    return SelectionArea(
+      // Enables selecting all text by mouse dragging on the page
+      child: SingleChildScrollView(
+        child: Center(
+          child: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 30.0), // Add margins
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(
+                maxWidth: 1000, // Set your desired maximum width here
+              ),
+              child: body, // Pass the page body
             ),
-            child: body, // Pass the page body
           ),
         ),
       ),

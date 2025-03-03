@@ -10,17 +10,23 @@ import 'package:jippin/models/address.dart';
 import 'dart:convert'; // Required for router JSON encoding
 
 class ReviewsPage extends StatefulWidget {
-  final Address searchQueryAddress;
-  final String searchQueryLandlord;
   final String defaultCountryCode;
   final String defaultCountryName;
+  final String qDetails;
+  final String qLandlord;
+  final String qProperty;
+  final String qRealtor;
+  final Address qAddress;
 
   const ReviewsPage({
     super.key,
-    required this.searchQueryAddress,
-    required this.searchQueryLandlord,
     required this.defaultCountryCode,
     required this.defaultCountryName,
+    required this.qDetails,
+    required this.qLandlord,
+    required this.qProperty,
+    required this.qRealtor,
+    required this.qAddress,
   });
 
   @override
@@ -34,12 +40,13 @@ class _ReviewsPageState extends State<ReviewsPage> {
   bool isLoading = true;
   String errorMessage = '';
   String? selectedSort;
-  String? searchQueryLandlord = ''; // Store landlord search query in state
+
+  //String? searchQueryLandlord = ''; // Store landlord search query in state
 
   @override
   void initState() {
     super.initState();
-    searchQueryLandlord = widget.searchQueryLandlord; // Initialize it with widget value
+    //searchQueryLandlord = widget.qLandlord; // Initialize it with widget value
     _fetchAllReviews();
   }
 
@@ -50,7 +57,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
     if (widget.defaultCountryCode.isNotEmpty && widget.defaultCountryCode != oldWidget.defaultCountryCode) {
       _fetchAllReviews();
     }
-    if (widget.searchQueryAddress.fullName != oldWidget.searchQueryAddress.fullName) {
+    if (widget.qAddress.fullName != oldWidget.qAddress.fullName) {
       _applySearchFilter();
     }
   }
@@ -91,27 +98,40 @@ class _ReviewsPageState extends State<ReviewsPage> {
   // Search filtering logic
   void _applySearchFilter() {
     setState(() {
-      debugPrint("_applySearchFilter ${widget.searchQueryAddress.fullName}");
+      debugPrint("_applySearchFilter ${widget.qAddress.fullName}");
 
-      // State+City Search bar filter
-      if (widget.searchQueryAddress.state!.isNotEmpty && widget.searchQueryAddress.city!.isNotEmpty) {
-        filteredReviews = allReviews.where((review) => (review["state"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.state!.toLowerCase()) && (review["city"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.city!.toLowerCase())).toList();
-      } else if (widget.searchQueryAddress.state!.isNotEmpty) {
-        // search state only
-        filteredReviews = allReviews.where((review) => (review["state"]?.toString().toLowerCase() ?? "").contains(widget.searchQueryAddress.state!.toLowerCase())).toList();
-      } else {
-        filteredReviews = List.from(allReviews);
-      }
+      // Filtering Address
+      final String state = widget.qAddress.state?.toLowerCase() ?? "";
+      final String city = widget.qAddress.city?.toLowerCase() ?? "";
+      final String district = widget.qAddress.district?.toLowerCase() ?? "";
+      final String street = widget.qAddress.street?.toLowerCase() ?? "";
+      filteredReviews = allReviews.where((review) {
+        // Extract values safely (avoid null issues)
+        String reviewState = review["state"]?.toString().toLowerCase() ?? "";
+        String reviewCity = review["city"]?.toString().toLowerCase() ?? "";
+        String reviewDistrict = review["district"]?.toString().toLowerCase() ?? "";
+        String reviewStreet = review["street"]?.toString().toLowerCase() ?? "";
+        // Apply exact match filtering (if the search field is not empty, it must match exactly)
+        return (state.isEmpty || reviewState == state) && (city.isEmpty || reviewCity == city) && (district.isEmpty || reviewDistrict == district) && (street.isEmpty || reviewStreet == street);
+      }).toList();
 
-      // Apply landlord or property filtering at the end
-      if (searchQueryLandlord!.isNotEmpty) {
-        filteredReviews = filteredReviews
-            .where((review) =>
-                (review["landlord"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()) ||
-                (review["property"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()) ||
-                (review["realtor"]?.toString().toLowerCase() ?? "").contains(searchQueryLandlord!.toLowerCase()))
-            .toList();
-      }
+      // Filtering Landlord, Property, Realtor
+      final String qDetails = widget.qDetails.toLowerCase();
+      final String qLandlord = widget.qLandlord.toLowerCase();
+      final String qProperty = widget.qProperty.toLowerCase();
+      final String qRealtor = widget.qRealtor.toLowerCase();
+      filteredReviews = filteredReviews.where((review) {
+        String landlord = review["landlord"]?.toString().toLowerCase() ?? "";
+        String property = review["property"]?.toString().toLowerCase() ?? "";
+        String realtor = review["realtor"]?.toString().toLowerCase() ?? "";
+        // contains match: Apply filtering dynamically
+        bool matchesDetails = qDetails.isEmpty || landlord.contains(qDetails) || property.contains(qDetails) || realtor.contains(qDetails);
+        // exact match
+        bool matchesLandlord = qLandlord.isEmpty || landlord == qLandlord;
+        bool matchesProperty = qProperty.isEmpty || property == qProperty;
+        bool matchesRealtor = qRealtor.isEmpty || realtor == qRealtor;
+        return matchesDetails && matchesLandlord && matchesProperty && matchesRealtor;
+      }).toList();
     });
   }
 
@@ -471,22 +491,24 @@ class _ReviewsPageState extends State<ReviewsPage> {
           WidgetSpan(
             alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
             baseline: TextBaseline.alphabetic,
-            child: MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: GestureDetector(
-                onTap: () {
-                  // Convert Address object to JSON string and encode it for the URL
-                  final emptyAddress = Address.defaultAddress(); // empty address
-                  final encodedAddress = Uri.encodeComponent(jsonEncode(emptyAddress.toJson()));
-                  context.go('/reviews?searchQueryAddress=$encodedAddress');
-                },
-                child: Text(
-                  widget.defaultCountryName,
-                  style: const TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blueAccent,
-                    decoration: TextDecoration.none,
+            child: SelectionContainer.disabled(
+              child: MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {
+                    // Convert Address object to JSON string and encode it for the URL
+                    final emptyAddress = Address.defaultAddress(); // empty address
+                    final encodedAddress = Uri.encodeComponent(jsonEncode(emptyAddress.toJson()));
+                    context.go('/reviews?qA=$encodedAddress');
+                  },
+                  child: Text(
+                    widget.defaultCountryName,
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blueAccent,
+                      decoration: TextDecoration.none,
+                    ),
                   ),
                 ),
               ),
@@ -494,40 +516,42 @@ class _ReviewsPageState extends State<ReviewsPage> {
           ),
 
           // State search query
-          if (widget.searchQueryAddress.state!.isNotEmpty)
+          if (widget.qAddress.state!.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
               baseline: TextBaseline.alphabetic,
               child: Text(
                 " / ",
                 style: const TextStyle(
-                  fontSize: 22,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: Colors.blueGrey,
                 ),
               ),
             ),
 
-          if (widget.searchQueryAddress.state!.isNotEmpty)
+          if (widget.qAddress.state!.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
               baseline: TextBaseline.alphabetic,
-              child: MouseRegion(
-                cursor: SystemMouseCursors.click,
-                child: GestureDetector(
-                  onTap: () {
-                    // Convert Address object to JSON string and encode it for the URL
-                    final stateAddress = widget.searchQueryAddress.stateAddress();
-                    final encodedAddress = Uri.encodeComponent(jsonEncode(stateAddress.toJson()));
-                    context.go('/reviews?searchQueryAddress=$encodedAddress');
-                  },
-                  child: Text(
-                    widget.searchQueryAddress.state!,
-                    style: const TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blueAccent,
-                      decoration: TextDecoration.none,
+              child: SelectionContainer.disabled(
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () {
+                      // Convert Address object to JSON string and encode it for the URL
+                      final stateAddress = widget.qAddress.stateAddress();
+                      final encodedAddress = Uri.encodeComponent(jsonEncode(stateAddress.toJson()));
+                      context.go('/reviews?qA=$encodedAddress');
+                    },
+                    child: Text(
+                      widget.qAddress.state!,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueAccent,
+                        decoration: TextDecoration.none,
+                      ),
                     ),
                   ),
                 ),
@@ -535,39 +559,83 @@ class _ReviewsPageState extends State<ReviewsPage> {
             ),
 
           // City search query
-          if (widget.searchQueryAddress.city!.isNotEmpty)
+          if (widget.qAddress.city!.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
               baseline: TextBaseline.alphabetic,
               child: Text(
                 ", ",
                 style: const TextStyle(
-                  fontSize: 22,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: Colors.blueGrey,
                 ),
               ),
             ),
 
-          if (widget.searchQueryAddress.city!.isNotEmpty)
+          if (widget.qAddress.city!.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
               baseline: TextBaseline.alphabetic,
-              child: MouseRegion(
-                cursor: SystemMouseCursors.click,
-                child: GestureDetector(
-                  onTap: () {
-                    // Convert Address object to JSON string and encode it for the URL
-                    final encodedAddress = Uri.encodeComponent(jsonEncode(widget.searchQueryAddress.toJson()));
-                    context.go('/reviews?searchQueryAddress=$encodedAddress');
-                  },
-                  child: Text(
-                    widget.searchQueryAddress.city!,
-                    style: const TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blueAccent,
-                      decoration: TextDecoration.none,
+              child: SelectionContainer.disabled(
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () {
+                      // Convert Address object to JSON string and encode it for the URL
+                      final encodedAddress = Uri.encodeComponent(jsonEncode(widget.qAddress.toJson()));
+                      context.go('/reviews?qA=$encodedAddress');
+                    },
+                    child: Text(
+                      widget.qAddress.city!,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueAccent,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+          // City search query
+          if (widget.qAddress.district != null && widget.qAddress.district!.isNotEmpty)
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+              baseline: TextBaseline.alphabetic,
+              child: Text(
+                ", ",
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blueGrey,
+                ),
+              ),
+            ),
+
+          if (widget.qAddress.district != null && widget.qAddress.district!.isNotEmpty)
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
+              baseline: TextBaseline.alphabetic,
+              child: SelectionContainer.disabled(
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () {
+                      // Convert Address object to JSON string and encode it for the URL
+                      final encodedAddress = Uri.encodeComponent(jsonEncode(widget.qAddress.toJson()));
+                      context.go('/reviews?qA=$encodedAddress');
+                    },
+                    child: Text(
+                      widget.qAddress.district!,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueAccent,
+                        decoration: TextDecoration.none,
+                      ),
                     ),
                   ),
                 ),
@@ -575,23 +643,25 @@ class _ReviewsPageState extends State<ReviewsPage> {
             ),
 
           // Landlord search query
-          if (widget.searchQueryLandlord.isNotEmpty)
+          if (widget.qLandlord.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
               baseline: TextBaseline.alphabetic,
-              child: MouseRegion(
-                cursor: SystemMouseCursors.click,
-                child: GestureDetector(
-                  onTap: () {
-                    context.go('/reviews?searchQueryLandlord=${widget.searchQueryLandlord}');
-                  },
-                  child: Text(
-                    ' [${widget.searchQueryLandlord}]',
-                    style: const TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blueAccent,
-                      decoration: TextDecoration.none,
+              child: SelectionContainer.disabled(
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () {
+                      context.go('/reviews?qL=${widget.qLandlord}');
+                    },
+                    child: Text(
+                      ' [${widget.qLandlord}]',
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueAccent,
+                        decoration: TextDecoration.none,
+                      ),
                     ),
                   ),
                 ),
@@ -634,6 +704,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
       address = '${review['street']}, ${review['city']}, '
           '${review['state'] == null ? '' : '${review['state']}, '}'
           '${review['country']}, ${review['postal_code']}';
+
       rent = '$currency ${review['rent'].toString()} ';
       deposit = '$currency ${review['deposit'].toString()}';
       otherFees = '$currency ${review['other_fees'].toString()}';
@@ -672,12 +743,22 @@ class _ReviewsPageState extends State<ReviewsPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
-                                    review['landlord'],
-                                    style: const TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.black,
+                                  SelectionContainer.disabled(
+                                    child: MouseRegion(
+                                      cursor: SystemMouseCursors.click,
+                                      child: GestureDetector(
+                                        onTap: () {
+                                          context.go('/reviews?qL=${review['landlord']}');
+                                        },
+                                        child: Text(
+                                          review['landlord'],
+                                          style: const TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black,
+                                          ),
+                                        ),
+                                      ),
                                     ),
                                   ),
                                   const SizedBox(height: 0),
@@ -737,11 +818,21 @@ class _ReviewsPageState extends State<ReviewsPage> {
                         // 📌 Property Text (Ensures it stays in one line)
                         if (review['property'] != null && review['property'] != "")
                           Expanded(
-                            child: Text(
-                              review['property'],
-                              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
-                              overflow: TextOverflow.ellipsis, // Ensures text truncates instead of wrapping
-                              maxLines: 1, // Restricts text to a single line
+                            child: SelectionContainer.disabled(
+                              child: MouseRegion(
+                                cursor: SystemMouseCursors.click,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    context.go('/reviews?qP=${review['property']}');
+                                  },
+                                  child: Text(
+                                    review['property'],
+                                    style: const TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
+                                    overflow: TextOverflow.ellipsis, // Ensures text truncates instead of wrapping
+                                    maxLines: 1, // Restricts text to a single line
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
                       ],
@@ -773,14 +864,81 @@ class _ReviewsPageState extends State<ReviewsPage> {
                     child: Icon(Icons.location_on, size: 20, color: Colors.black87),
                   ),
                   const SizedBox(width: 8),
-                  Flexible(
-                    // Allows the text to wrap instead of overflowing
-                    child: Text(
-                      address,
-                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
-                      softWrap: true, // Enables wrapping
-                    ),
-                  ),
+                  Wrap(
+                    spacing: 8.0, // Space between links
+                    children: [
+                      Text(
+                        review['country'],
+                        style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+                      ),
+                      if (review['state'] != null && review['state'].toString().isNotEmpty)
+                        SelectionContainer.disabled(
+                          child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: GestureDetector(
+                              onTap: () {
+                                Address stateAddress = Address(name: review['state'], latitude: 0.0, longitude: 0.0, fullName: review['state'], stateCode: '', state: review['state']);
+                                final encodedAddress = Uri.encodeComponent(jsonEncode(stateAddress.toJson()));
+                                context.go('/reviews?qA=$encodedAddress');
+                              },
+                              child: Text(
+                                review['state'],
+                                style: TextStyle(fontSize: 14, decoration: TextDecoration.underline),
+                              ),
+                            ),
+                          ),
+                        ),
+                      if (review['city'] != null && review['city'].toString().isNotEmpty)
+                        SelectionContainer.disabled(
+                          child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: GestureDetector(
+                              onTap: () {
+                                Address stateAddress = Address(name: review['state'], latitude: 0.0, longitude: 0.0, fullName: review['state'], stateCode: '', state: review['state'], city: review['city']);
+                                final encodedAddress = Uri.encodeComponent(jsonEncode(stateAddress.toJson()));
+                                context.go('/reviews?qA=$encodedAddress');
+                              },
+                              child: Text(
+                                review['city'],
+                                style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
+                              ),
+                            ),
+                          ),
+                        ),
+                      if (review['district'] != null && review['district'].toString().isNotEmpty)
+                        SelectionContainer.disabled(
+                          child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: GestureDetector(
+                              onTap: () {
+                                Address stateAddress = Address(name: review['state'], latitude: 0.0, longitude: 0.0, fullName: review['state'], stateCode: '', state: review['state'], city: review['city'], district: review['district']);
+                                final encodedAddress = Uri.encodeComponent(jsonEncode(stateAddress.toJson()));
+                                context.go('/reviews?qA=$encodedAddress');
+                              },
+                              child: Text(
+                                review['district'],
+                                style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
+                              ),
+                            ),
+                          ),
+                        ),
+                      if (review['street'] != null && review['street'].toString().isNotEmpty)
+                        Text(
+                          review['street'],
+                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+                        ),
+                      if (review['street_number'] != null && review['street_number'].toString().isNotEmpty)
+                        Text(
+                          review['street_number'],
+                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+                        ),
+                      if (review['postal_code'] != null && review['postal_code'].toString().isNotEmpty)
+                        Text(
+                          review['postal_code'],
+                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+                        ),
+                    ],
+                  )
                 ],
               ),
             ),
@@ -797,10 +955,20 @@ class _ReviewsPageState extends State<ReviewsPage> {
                       child: Icon(Icons.supervised_user_circle_outlined, size: 20, color: Colors.black87),
                     ),
                     const SizedBox(width: 8),
-                    Text(
-                      '${review['realtor']}',
-                      style: TextStyle(fontSize: 14, color: Colors.black87),
-                    ),
+                    SelectionContainer.disabled(
+                      child: MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: GestureDetector(
+                          onTap: () {
+                            context.go('/reviews?qR=${review['realtor']}');
+                          },
+                          child: Text(
+                            '${review['realtor']}',
+                            style: TextStyle(fontSize: 14, color: Colors.black87),
+                          ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),

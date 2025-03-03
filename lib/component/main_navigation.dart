@@ -26,46 +26,11 @@ class MainNavigation extends StatefulWidget {
 class _MainNavigationState extends State<MainNavigation> {
   late int _currentIndex;
 
-  // String _searchQuery = "";
-  // Address _searchAddress = Address.defaultAddress();
-
-  //String _searchQueryLandlord = "";
-  // List<Widget> get _pages => [
-  //       HomePage(
-  //         //key: ValueKey(_searchQuery),
-  //         defaultCountryCode: widget.localeProvider.country.code,
-  //         defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
-  //         onSearchLandlord: (query) => _filterReviewsLandlord(query),
-  //       ),
-  //       ReviewsPage(
-  //         key: ValueKey(_searchQuery),
-  //         searchQuery: _searchQuery,
-  //         searchQueryAddress: _searchAddress,
-  //         searchQueryLandlord: _searchQueryLandlord,
-  //         defaultCountryCode: widget.localeProvider.country.code,
-  //         defaultCountryName: widget.localeProvider.country.getCountryName(widget.localeProvider.locale.languageCode),
-  //       ),
-  //       SubmitReviewPage(),
-  //       AboutPage(),
-  //     ];
-
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   _currentIndex = widget.currentIndex;
-  // }
-
-  // void _navigateTo(int index) {
-  //   setState(() {
-  //     _currentIndex = index;
-  //   });
-  // }
-
   void _filterReviews(Address address) {
     // Convert Address object to JSON string and encode it for the URL
     final encodedAddress = Uri.encodeComponent(jsonEncode(address.toJson()));
 
-    context.go('/reviews?searchQueryAddress=$encodedAddress');
+    context.go('/reviews?qA=$encodedAddress');
   }
 
   // void _filterReviewsFieldSubmitted(String query) {
