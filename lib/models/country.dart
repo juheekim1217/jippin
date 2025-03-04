@@ -3,7 +3,7 @@ final Map<String, Country> countries = {
   "CA": Country("CA", "Canada", "캐나다"),
   "KR": Country("KR", "South Korea", "대한민국"),
   "US": Country("US", "United States", "미국"),
-  // "AU": Country("AU", "Australia", "호주"),
+  "AU": Country("AU", "Australia", "호주"),
   // "NZ": Country("NZ", "New Zealand", "뉴질랜드"),
   // "GB": Country("GB", "United Kingdom", "영국"),
   // "IE": Country("IE", "Ireland", "아일랜드"),

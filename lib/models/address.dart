@@ -39,32 +39,21 @@ class Address {
       stateCode: "",
       state: "",
       city: "",
+      district: "",
+      street: "",
     );
   }
 
   // Convert Address to JSON
   Map<String, dynamic> toJson() => {
         'name': name,
-        //'latitude': latitude,
-        //'longitude': longitude,
         'fullName': fullName,
         'stateCode': stateCode,
         'state': state,
         'city': city,
+        'district': district,
+        'street': street,
       };
-
-  // Convert Address to JSON
-  Address stateAddress() {
-    return Address(
-      name: state ?? '',
-      latitude: latitude,
-      longitude: longitude,
-      fullName: state ?? '',
-      stateCode: stateCode,
-      state: state,
-      city: "",
-    );
-  }
 
   // Deserialize JSON back to Address
   factory Address.fromJson(Map<String, dynamic> json) {
@@ -77,13 +66,14 @@ class Address {
         stateCode: json['stateCode'] ?? "",
         state: json['state'] ?? "",
         city: json['city'] ?? "",
+        street: json['street'] ?? "",
       );
     } catch (e) {
       return Address.defaultAddress(); // Fallback if parsing fails
     }
   }
 
-  // deserialize City JSON into an Address object
+  // from top nav bar: deserialize City JSON into an Address object
   factory Address.fromMapCity(Map<String, dynamic> map) {
     return Address(
       name: map["n"] ?? "",
@@ -96,7 +86,7 @@ class Address {
     );
   }
 
-  // deserialize State JSON into an Address object
+  // from top nav bar: deserialize State JSON into an Address object
   factory Address.fromMapState(Map<String, dynamic> map) {
     return Address(
       name: map["n"] ?? "",
@@ -106,6 +96,20 @@ class Address {
       city: "",
       state: map["n"] ?? "",
       stateCode: map["sc"] ?? "",
+    );
+  }
+
+  Address getCurrentAddress(bool isState, bool isCity, bool isDistrict, bool isStreet) {
+    return Address(
+      name: state ?? '',
+      latitude: latitude,
+      longitude: longitude,
+      fullName: state ?? '',
+      stateCode: stateCode,
+      state: isState ? state : '',
+      city: isCity ? city : '',
+      district: isDistrict ? district : '',
+      street: isStreet ? street : '',
     );
   }
 }
