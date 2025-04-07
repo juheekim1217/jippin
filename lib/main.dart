@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jippin/providers/review_query_provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -31,8 +32,15 @@ Future<void> main() async {
   );
 
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => LocaleProvider(),
+    // ChangeNotifierProvider(
+    //   create: (context) => LocaleProvider(),
+    //   child: const MyApp(),
+    // ),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => LocaleProvider()),
+        ChangeNotifierProvider(create: (_) => ReviewQueryProvider()),
+      ],
       child: const MyApp(),
     ),
   );
