@@ -240,7 +240,7 @@ class ReviewCard extends StatelessWidget {
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            Address address = Address(name: review['state'], latitude: 0.0, longitude: 0.0, fullName: review['state'], stateCode: '', state: review['state']);
+                            Address address = Address(name: review['state'], fullName: review['state'], stateCode: '', state: review['state']);
                             final encodedAddress = encodeAddressUri(address);
                             context.go('/reviews?qA=$encodedAddress');
                           },
@@ -257,7 +257,7 @@ class ReviewCard extends StatelessWidget {
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            Address address = Address(name: review['state'], latitude: 0.0, longitude: 0.0, fullName: review['state'], stateCode: '', state: review['state'], city: review['city']);
+                            Address address = Address(name: review['state'], fullName: review['state'], stateCode: '', state: review['state'], city: review['city']);
                             final encodedAddress = encodeAddressUri(address);
                             context.go('/reviews?qA=$encodedAddress');
                           },
@@ -274,7 +274,7 @@ class ReviewCard extends StatelessWidget {
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            Address address = Address(name: review['state'], latitude: 0.0, longitude: 0.0, fullName: review['state'], stateCode: '', state: review['state'], city: review['city'], district: review['district']);
+                            Address address = Address(name: review['state'], fullName: review['state'], stateCode: '', state: review['state'], city: review['city']);
                             final encodedAddress = encodeAddressUri(address);
                             context.go('/reviews?qA=$encodedAddress');
                           },
@@ -291,7 +291,7 @@ class ReviewCard extends StatelessWidget {
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            Address address = Address(name: review['state'], latitude: 0.0, longitude: 0.0, fullName: review['state'], stateCode: '', state: review['state'], city: review['city'], district: review['district'], street: review['street']);
+                            Address address = Address(name: review['state'], fullName: review['state'], stateCode: '', state: review['state'], city: review['city'], street: review['street']);
                             final encodedAddress = encodeAddressUri(address);
                             context.go('/reviews?qA=$encodedAddress');
                           },

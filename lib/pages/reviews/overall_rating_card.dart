@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/pages/reviews/address_link.dart';
+import 'package:jippin/pages/reviews/review_filters.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
-import 'package:jippin/models/address.dart';
+import 'package:provider/provider.dart';
+import 'package:jippin/providers/locale_provider.dart';
 
 class OverallRatingCard extends StatefulWidget {
   final List<Map<String, dynamic>> reviews;
@@ -18,9 +20,10 @@ class OverallRatingCard extends StatefulWidget {
 class _OverallRatingCardState extends State<OverallRatingCard> {
   @override
   Widget build(BuildContext context) {
-    if (widget.reviews.isEmpty) {
-      return const SizedBox.shrink();
-    }
+    // If there are no reviews, don’t build or show anything — just render an invisible placeholder.
+    // if (widget.reviews.isEmpty) {
+    //   return const SizedBox.shrink();
+    // }
 
     final starCounts = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0};
     double totalTrust = 0, totalPrice = 0, totalLocation = 0, totalCondition = 0, totalSafety = 0;
@@ -54,23 +57,26 @@ class _OverallRatingCardState extends State<OverallRatingCard> {
       children: [
         AddressLink(),
         const SizedBox(height: 28),
-        Card(
-          elevation: 4,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                _buildOverallRatingDisplay(overallRating),
-                const SizedBox(height: 16),
-                _buildStarHistogram(starCounts, totalReviews),
-                const SizedBox(height: 20),
-                _buildCategoryRatings(context, avgTrust, avgPrice, avgLocation, avgCondition, avgSafety),
-              ],
+        ReviewFilters(localeProvider: Provider.of<LocaleProvider>(context), reviews: widget.reviews),
+        const SizedBox(height: 28),
+        if (widget.reviews.isNotEmpty)
+          Card(
+            elevation: 4,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _buildOverallRatingDisplay(overallRating),
+                  const SizedBox(height: 16),
+                  _buildStarHistogram(starCounts, totalReviews),
+                  const SizedBox(height: 20),
+                  _buildCategoryRatings(context, avgTrust, avgPrice, avgLocation, avgCondition, avgSafety),
+                ],
+              ),
             ),
           ),
-        ),
       ],
     );
   }

@@ -76,7 +76,7 @@ class _AddressLinkState extends State<AddressLink> {
                   child: GestureDetector(
                     onTap: () {
                       // Convert Address object to JSON string and encode it for the URL
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, false, false, false));
+                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, false, false));
                       context.go('/reviews?qA=$encodedAddress');
                     },
                     child: Text(
@@ -117,52 +117,11 @@ class _AddressLinkState extends State<AddressLink> {
                   cursor: SystemMouseCursors.click,
                   child: GestureDetector(
                     onTap: () {
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, true, false, false));
+                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, true, false));
                       context.go('/reviews?qA=$encodedAddress');
                     },
                     child: Text(
                       query.qAddress.city!,
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
-                        decoration: TextDecoration.none,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-          // district search query
-          if (query.qAddress.district != null && query.qAddress.district!.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
-              baseline: TextBaseline.alphabetic,
-              child: Text(
-                ", ",
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blueGrey,
-                ),
-              ),
-            ),
-
-          if (query.qAddress.district != null && query.qAddress.district!.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-              baseline: TextBaseline.alphabetic,
-              child: SelectionContainer.disabled(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, true, true, false));
-                      context.go('/reviews?qA=$encodedAddress');
-                    },
-                    child: Text(
-                      query.qAddress.district!,
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -199,7 +158,7 @@ class _AddressLinkState extends State<AddressLink> {
                   cursor: SystemMouseCursors.click,
                   child: GestureDetector(
                     onTap: () {
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, true, true, true));
+                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, true, true));
                       context.go('/reviews?qA=$encodedAddress');
                     },
                     child: Text(

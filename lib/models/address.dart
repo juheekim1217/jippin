@@ -2,13 +2,10 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 class Address {
   final String name;
-  final double latitude;
-  final double longitude;
   final String fullName;
   final String? stateCode;
   final String? state;
   final String? city;
-  final String? district;
   final String? street;
   final String? streetNum;
   final String? unit;
@@ -16,13 +13,10 @@ class Address {
 
   Address({
     required this.name,
-    required this.latitude,
-    required this.longitude,
     required this.fullName,
     this.stateCode,
     this.state,
     this.city,
-    this.district,
     this.street,
     this.streetNum,
     this.unit,
@@ -33,13 +27,10 @@ class Address {
   factory Address.defaultAddress() {
     return Address(
       name: "",
-      latitude: 0.0,
-      longitude: 0.0,
       fullName: "",
       stateCode: "",
       state: "",
       city: "",
-      district: "",
       street: "",
     );
   }
@@ -51,7 +42,6 @@ class Address {
         'stateCode': stateCode,
         'state': state,
         'city': city,
-        'district': district,
         'street': street,
       };
 
@@ -60,8 +50,6 @@ class Address {
     try {
       return Address(
         name: json['name'] ?? "",
-        latitude: toDouble(['latitude']) ?? 0.0,
-        longitude: toDouble(['longitude']) ?? 0.0,
         fullName: json['fullName'] ?? "",
         stateCode: json['stateCode'] ?? "",
         state: json['state'] ?? "",
@@ -74,41 +62,42 @@ class Address {
   }
 
   // from top nav bar: deserialize City JSON into an Address object
-  factory Address.fromMapCity(Map<String, dynamic> map) {
+  factory Address.fromMapCity(Map<String, dynamic> map, String langCode) {
+    String state = map["s_en"];
+    String city = map[langCode];
+    String fn = "$city, $state";
+    if (langCode == "ko") {
+      state = map["s_ko"];
+      fn = "$state $city";
+    }
     return Address(
-      name: map["n"] ?? "",
-      latitude: map["la"] ?? 0.0,
-      longitude: map["lo"] ?? 0.0,
-      fullName: map["fn"] ?? "",
-      city: map["n"] ?? "",
-      state: map["s"] ?? "",
+      name: city,
+      fullName: fn,
+      city: city,
+      state: state,
       stateCode: "",
     );
   }
 
   // from top nav bar: deserialize State JSON into an Address object
-  factory Address.fromMapState(Map<String, dynamic> map) {
+  factory Address.fromMapState(Map<String, dynamic> map, String languageName) {
+    String state = map[languageName];
     return Address(
-      name: map["n"] ?? "",
-      latitude: map["la"] ?? 0.0,
-      longitude: map["lo"] ?? 0.0,
-      fullName: map["n"] ?? "",
+      name: state,
+      fullName: state,
       city: "",
-      state: map["n"] ?? "",
+      state: state,
       stateCode: map["sc"] ?? "",
     );
   }
 
-  Address getCurrentAddress(bool isState, bool isCity, bool isDistrict, bool isStreet) {
+  Address getCurrentAddress(bool isState, bool isCity, bool isStreet) {
     return Address(
       name: state ?? '',
-      latitude: latitude,
-      longitude: longitude,
       fullName: state ?? '',
       stateCode: stateCode,
       state: isState ? state : '',
       city: isCity ? city : '',
-      district: isDistrict ? district : '',
       street: isStreet ? street : '',
     );
   }

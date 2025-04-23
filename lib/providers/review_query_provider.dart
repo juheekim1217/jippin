@@ -9,6 +9,14 @@ class ReviewQueryProvider with ChangeNotifier {
   Address qAddress = Address.defaultAddress();
   String defaultCountryName = '';
 
+  void setQuery({String? landlord, String? property, String? realtor, Address? address}) {
+    qLandlord = landlord ?? '';
+    qProperty = property ?? '';
+    qRealtor = realtor ?? '';
+    qAddress = address ?? Address.defaultAddress();
+    notifyListeners();
+  }
+
   void updateQuery({
     String? qDetail,
     String? qLandlord,

@@ -26,8 +26,8 @@ class EmptyReviewsPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          AddressLink(),
-          const SizedBox(height: 12),
+          //AddressLink(),
+          //const SizedBox(height: 12),
           const Icon(Icons.rate_review, size: 64, color: Colors.grey),
           const SizedBox(height: 12),
           Text(

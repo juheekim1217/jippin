@@ -12,7 +12,7 @@ class LocaleProvider extends ChangeNotifier {
 
   Locale get locale => _locale;
 
-  Language get language => _language;
+  Language get language => _language; // en, ko
 
   Country get country => _country;
 

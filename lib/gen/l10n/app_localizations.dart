@@ -197,6 +197,30 @@ abstract class AppLocalizations {
   /// **'Search for a State or City'**
   String get search_location;
 
+  /// No description provided for @state.
+  ///
+  /// In en, this message translates to:
+  /// **'Province/State'**
+  String get state;
+
+  /// No description provided for @city.
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get city;
+
+  /// No description provided for @street.
+  ///
+  /// In en, this message translates to:
+  /// **'Street'**
+  String get street;
+
+  /// No description provided for @all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
+
   /// No description provided for @sortBy.
   ///
   /// In en, this message translates to:

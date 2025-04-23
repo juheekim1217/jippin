@@ -28,18 +28,9 @@ class _MainNavigationState extends State<MainNavigation> {
 
   void _filterReviews(Address address) {
     // Convert Address object to JSON string and encode it for the URL
-    final encodedAddress = Uri.encodeComponent(jsonEncode(address.toJson()));
-
+    final encodedAddress = base64Url.encode(utf8.encode(jsonEncode(address)));
     context.go('/reviews?qA=$encodedAddress');
   }
-
-  // void _filterReviewsFieldSubmitted(String query) {
-  //   setState(() {
-  //     _currentIndex = 1;
-  //     _searchQuery = query;
-  //     debugPrint("_filterReviewsString $query;");
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {

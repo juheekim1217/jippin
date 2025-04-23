@@ -97,16 +97,14 @@ class _ReviewsPageState extends State<ReviewsPage> {
       // Filtering Address
       final String state = widget.qAddress.state ?? "";
       final String city = widget.qAddress.city ?? "";
-      final String district = widget.qAddress.district ?? "";
       final String street = widget.qAddress.street ?? "";
       filteredReviews = allReviews.where((review) {
         // Extract values safely (avoid null issues)
         String reviewState = review["state"]?.toString() ?? "";
         String reviewCity = review["city"]?.toString() ?? "";
-        String reviewDistrict = review["district"]?.toString() ?? "";
         String reviewStreet = review["street"]?.toString() ?? "";
         // Apply exact match filtering (if the search field is not empty, it must match exactly)
-        return (state.isEmpty || equalsIgnoreCase(reviewState, state)) && (city.isEmpty || equalsIgnoreCase(reviewCity, city)) && (district.isEmpty || equalsIgnoreCase(reviewDistrict, district)) && (street.isEmpty || equalsIgnoreCase(reviewStreet, street));
+        return (state.isEmpty || equalsIgnoreCase(reviewState, state)) && (city.isEmpty || equalsIgnoreCase(reviewCity, city)) && (street.isEmpty || containsIgnoreCase(reviewStreet, street));
       }).toList();
 
       // Filtering Landlord, Property, Realtor
@@ -121,9 +119,9 @@ class _ReviewsPageState extends State<ReviewsPage> {
         // contains match: Apply filtering dynamically
         bool matchesDetails = qDetails.isEmpty || landlord.contains(qDetails) || property.contains(qDetails) || realtor.contains(qDetails);
         // exact match
-        bool matchesLandlord = qLandlord.isEmpty || equalsIgnoreCase(landlord, qLandlord);
-        bool matchesProperty = qProperty.isEmpty || equalsIgnoreCase(property, qProperty);
-        bool matchesRealtor = qRealtor.isEmpty || equalsIgnoreCase(realtor, qRealtor);
+        bool matchesLandlord = qLandlord.isEmpty || equalsIgnoreCase(landlord, qLandlord) || landlord.contains(qLandlord);
+        bool matchesProperty = qProperty.isEmpty || equalsIgnoreCase(property, qProperty) || property.contains(qProperty);
+        bool matchesRealtor = qRealtor.isEmpty || equalsIgnoreCase(realtor, qRealtor) || realtor.contains(qRealtor);
         return matchesDetails && matchesLandlord && matchesProperty && matchesRealtor;
       }).toList();
     });

@@ -64,6 +64,7 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
 
   @override
   Widget build(BuildContext context) {
+    final langCode = widget.localeProvider.language.code;
     return Form(
       key: formKey,
       child: AdvancedBehaviorAutocomplete<Address>(
@@ -73,8 +74,8 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
           if (textEditingValue.text.isEmpty) {
             return const Iterable<Address>.empty();
           }
-          Iterable<Address> resultStates = states.where((item) => item["n"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapState(item));
-          Iterable<Address> resultCities = cities.where((item) => item["n"]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapCity(item));
+          Iterable<Address> resultStates = states.where((item) => item[langCode]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapState(item, langCode));
+          Iterable<Address> resultCities = cities.where((item) => item[langCode]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapCity(item, langCode));
           List<Address> combinedResults = [...resultStates, ...resultCities];
           return combinedResults;
         },
