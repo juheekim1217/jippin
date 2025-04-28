@@ -194,7 +194,7 @@ abstract class AppLocalizations {
   /// No description provided for @search_location.
   ///
   /// In en, this message translates to:
-  /// **'Search for a State or City'**
+  /// **'Search for a Province/State or City'**
   String get search_location;
 
   /// No description provided for @state.

@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:jippin/models/country.dart';
 import 'package:jippin/models/language.dart';
+import 'package:jippin/services/country_data_service.dart';
 
 /// Set Locale(default language) and default country
 class LocaleProvider extends ChangeNotifier {
@@ -18,11 +19,28 @@ class LocaleProvider extends ChangeNotifier {
 
   String get currentRoute => _currentRoute; // ✅ Getter for the stored route
 
+  // LocaleProvider() {
+  //   /// Set default locale and country based on the user device on initialization
+  //   Locale deviceLocale = PlatformDispatcher.instance.locale; // Get the user's default locale
+  //
+  //   if (languages.containsKey(deviceLocale.languageCode)) {
+  //     _locale = languages[deviceLocale.languageCode]!.locale;
+  //     _language = languages[deviceLocale.languageCode]!;
+  //   }
+  //   if (countries.containsKey(deviceLocale.countryCode)) {
+  //     _country = countries[deviceLocale.countryCode]!;
+  //   }
+  //
+  //   debugPrint("\ninit: $deviceLocale/${_language.code}/${_country.code}");
+  //   notifyListeners(); // Notify UI of the locale change
+  // }
+
   LocaleProvider() {
-    /// Set default locale and country based on the user device on initialization
-    Locale deviceLocale = PlatformDispatcher.instance.locale; // Get the user's default locale
-    //Locale deviceLocale = ui.PlatformDispatcher.instance.locale;
-    //Locale deviceLocale = Localizations.localeOf(context);
+    _initializeLocale();
+  }
+
+  Future<void> _initializeLocale() async {
+    Locale deviceLocale = PlatformDispatcher.instance.locale;
 
     if (languages.containsKey(deviceLocale.languageCode)) {
       _locale = languages[deviceLocale.languageCode]!.locale;
@@ -31,8 +49,18 @@ class LocaleProvider extends ChangeNotifier {
     if (countries.containsKey(deviceLocale.countryCode)) {
       _country = countries[deviceLocale.countryCode]!;
     }
+
     debugPrint("\ninit: $deviceLocale/${_language.code}/${_country.code}");
-    notifyListeners(); // Notify UI of the locale change
+
+    // 🔥 Load country JSON here
+    try {
+      await CountryDataService().loadCountryData(_country.code);
+      debugPrint("✅ Loaded country data for ${_country.code}");
+    } catch (e) {
+      debugPrint("❌ Failed to load country data: $e");
+    }
+
+    notifyListeners(); // Notify UI after loading
   }
 
   void setLocaleLanguage(Language language, String route) {
@@ -45,7 +73,10 @@ class LocaleProvider extends ChangeNotifier {
     notifyListeners(); // Notify the UI about the change
   }
 
-  void setCountry(String countryCode, String countryName, String route) {
+  Future<void> setCountry(String countryCode, String countryName, String route) async {
+    // load country json first
+    await CountryDataService().loadCountryData(countryCode);
+
     _currentRoute = route; // ✅ Store the current route before changing language
     if (countryCode.isNotEmpty && countries.containsKey(countryCode)) {
       _country = countries[countryCode]!;

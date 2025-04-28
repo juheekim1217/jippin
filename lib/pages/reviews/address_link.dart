@@ -3,7 +3,7 @@ import 'package:jippin/models/address.dart';
 import 'package:go_router/go_router.dart';
 import 'package:jippin/utilities/common_helper.dart';
 import 'package:provider/provider.dart';
-
+import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/providers/review_query_provider.dart';
 
 class AddressLink extends StatefulWidget {
@@ -19,7 +19,8 @@ class _AddressLinkState extends State<AddressLink> {
   @override
   Widget build(BuildContext context) {
     final query = context.watch<ReviewQueryProvider>();
-
+    final localeProvider = Provider.of<LocaleProvider>(context);
+    final langCode = localeProvider.language.code;
     return RichText(
       text: TextSpan(
         children: [
@@ -38,7 +39,7 @@ class _AddressLinkState extends State<AddressLink> {
                     context.go('/reviews?qA=$encodedAddress');
                   },
                   child: Text(
-                    query.defaultCountryName,
+                    query.qCountry,
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -52,7 +53,7 @@ class _AddressLinkState extends State<AddressLink> {
           ),
 
           // State search query
-          if (query.qAddress.state!.isNotEmpty)
+          if (query.qAddress.province.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
               baseline: TextBaseline.alphabetic,
@@ -66,7 +67,7 @@ class _AddressLinkState extends State<AddressLink> {
               ),
             ),
 
-          if (query.qAddress.state!.isNotEmpty)
+          if (query.qAddress.province.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
               baseline: TextBaseline.alphabetic,
@@ -76,11 +77,11 @@ class _AddressLinkState extends State<AddressLink> {
                   child: GestureDetector(
                     onTap: () {
                       // Convert Address object to JSON string and encode it for the URL
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, false, false));
+                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(langCode, true, false, false));
                       context.go('/reviews?qA=$encodedAddress');
                     },
                     child: Text(
-                      query.qAddress.state!,
+                      query.qProvince,
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -94,7 +95,7 @@ class _AddressLinkState extends State<AddressLink> {
             ),
 
           // City search query
-          if (query.qAddress.city!.isNotEmpty)
+          if (query.qAddress.city != null && query.qAddress.city!.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
               baseline: TextBaseline.alphabetic,
@@ -108,7 +109,7 @@ class _AddressLinkState extends State<AddressLink> {
               ),
             ),
 
-          if (query.qAddress.city!.isNotEmpty)
+          if (query.qAddress.city != null && query.qAddress.city!.isNotEmpty)
             WidgetSpan(
               alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
               baseline: TextBaseline.alphabetic,
@@ -117,7 +118,7 @@ class _AddressLinkState extends State<AddressLink> {
                   cursor: SystemMouseCursors.click,
                   child: GestureDetector(
                     onTap: () {
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, true, false));
+                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(langCode, true, true, false));
                       context.go('/reviews?qA=$encodedAddress');
                     },
                     child: Text(
@@ -158,7 +159,7 @@ class _AddressLinkState extends State<AddressLink> {
                   cursor: SystemMouseCursors.click,
                   child: GestureDetector(
                     onTap: () {
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(true, true, true));
+                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(langCode, true, true, true));
                       context.go('/reviews?qA=$encodedAddress');
                     },
                     child: Text(

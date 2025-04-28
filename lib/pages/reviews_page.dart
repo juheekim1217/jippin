@@ -8,7 +8,7 @@ import 'package:jippin/pages/reviews/overall_rating_card.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String defaultCountryCode;
-  final String defaultCountryName;
+  final String qCountry;
   final String qDetails;
   final String qLandlord;
   final String qProperty;
@@ -18,7 +18,7 @@ class ReviewsPage extends StatefulWidget {
   const ReviewsPage({
     super.key,
     required this.defaultCountryCode,
-    required this.defaultCountryName,
+    required this.qCountry,
     required this.qDetails,
     required this.qLandlord,
     required this.qProperty,
@@ -51,7 +51,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
     if (widget.defaultCountryCode.isNotEmpty && widget.defaultCountryCode != oldWidget.defaultCountryCode) {
       _fetchAllReviews();
     }
-    if (widget.qAddress.fullName != oldWidget.qAddress.fullName) {
+    if (widget.qAddress.city != oldWidget.qAddress.city || widget.qAddress.province != oldWidget.qAddress.province) {
       _applySearchFilter();
     }
   }
@@ -92,19 +92,17 @@ class _ReviewsPageState extends State<ReviewsPage> {
   // Search filtering logic
   void _applySearchFilter() {
     setState(() {
-      debugPrint("_applySearchFilter ${widget.qAddress.fullName}");
-
       // Filtering Address
-      final String state = widget.qAddress.state ?? "";
+      final String province = widget.qAddress.province ?? "";
       final String city = widget.qAddress.city ?? "";
       final String street = widget.qAddress.street ?? "";
       filteredReviews = allReviews.where((review) {
         // Extract values safely (avoid null issues)
-        String reviewState = review["state"]?.toString() ?? "";
+        String reviewProvince = review["province"]?.toString() ?? "";
         String reviewCity = review["city"]?.toString() ?? "";
         String reviewStreet = review["street"]?.toString() ?? "";
         // Apply exact match filtering (if the search field is not empty, it must match exactly)
-        return (state.isEmpty || equalsIgnoreCase(reviewState, state)) && (city.isEmpty || equalsIgnoreCase(reviewCity, city)) && (street.isEmpty || containsIgnoreCase(reviewStreet, street));
+        return (province.isEmpty || equalsIgnoreCase(reviewProvince, province)) && (city.isEmpty || equalsIgnoreCase(reviewCity, city)) && (street.isEmpty || containsIgnoreCase(reviewStreet, street));
       }).toList();
 
       // Filtering Landlord, Property, Realtor
@@ -182,7 +180,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                                         reviews: filteredReviews,
                                         onSortSelected: _applySortingReviews,
                                         // Ensure this method is defined in ReviewsPage
-                                        defaultCountryName: widget.defaultCountryName,
+                                        qCountry: widget.qCountry,
                                         qLandlord: widget.qLandlord,
                                         qAddress: widget.qAddress,
                                       ),
@@ -206,7 +204,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
                                   reviews: filteredReviews,
                                   onSortSelected: _applySortingReviews,
                                   // Ensure this method is defined in ReviewsPage
-                                  defaultCountryName: widget.defaultCountryName,
+                                  qCountry: widget.qCountry,
                                   qLandlord: widget.qLandlord,
                                   qAddress: widget.qAddress,
                                 ),

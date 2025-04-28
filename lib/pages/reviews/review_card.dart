@@ -5,6 +5,10 @@ import 'package:jippin/utilities/constants.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/models/address.dart';
 import 'package:jippin/utilities/common_helper.dart';
+import 'package:provider/provider.dart';
+import 'package:jippin/providers/locale_provider.dart';
+
+import 'package:jippin/services/country_data_service.dart';
 
 class ReviewCard extends StatelessWidget {
   final Map<String, dynamic> review;
@@ -163,6 +167,10 @@ class ReviewCard extends StatelessWidget {
   /// Address
   /// Realtor
   Widget _buildReviewDetails(BuildContext context) {
+    final langCode = Provider.of<LocaleProvider>(context).language.code;
+    String provinceName = CountryDataService().findProvinceNameByKey(langCode, review['province']);
+    String cityName = CountryDataService().findCityNameByKey(langCode, review['province'], review['city']);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -234,18 +242,18 @@ class ReviewCard extends StatelessWidget {
               Wrap(
                 spacing: 8.0, // Space between links
                 children: [
-                  if (review['state'] != null && review['state'].toString().isNotEmpty)
+                  if (review['province'] != null && review['province'].toString().isNotEmpty)
                     SelectionContainer.disabled(
                       child: MouseRegion(
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            Address address = Address(name: review['state'], fullName: review['state'], stateCode: '', state: review['state']);
+                            Address address = Address(province: review['province']);
                             final encodedAddress = encodeAddressUri(address);
                             context.go('/reviews?qA=$encodedAddress');
                           },
                           child: Text(
-                            review['state'],
+                            provinceName,
                             style: TextStyle(fontSize: 14, decoration: TextDecoration.underline),
                           ),
                         ),
@@ -257,12 +265,12 @@ class ReviewCard extends StatelessWidget {
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            Address address = Address(name: review['state'], fullName: review['state'], stateCode: '', state: review['state'], city: review['city']);
+                            Address address = Address(province: review['province'], city: review['city']);
                             final encodedAddress = encodeAddressUri(address);
                             context.go('/reviews?qA=$encodedAddress');
                           },
                           child: Text(
-                            review['city'],
+                            cityName,
                             style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
                           ),
                         ),
@@ -274,7 +282,7 @@ class ReviewCard extends StatelessWidget {
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            Address address = Address(name: review['state'], fullName: review['state'], stateCode: '', state: review['state'], city: review['city']);
+                            Address address = Address(province: review['province'], city: review['city']);
                             final encodedAddress = encodeAddressUri(address);
                             context.go('/reviews?qA=$encodedAddress');
                           },
@@ -291,7 +299,7 @@ class ReviewCard extends StatelessWidget {
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            Address address = Address(name: review['state'], fullName: review['state'], stateCode: '', state: review['state'], city: review['city'], street: review['street']);
+                            Address address = Address(province: review['province'], city: review['city'], street: review['street']);
                             final encodedAddress = encodeAddressUri(address);
                             context.go('/reviews?qA=$encodedAddress');
                           },

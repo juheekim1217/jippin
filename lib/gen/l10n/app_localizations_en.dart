@@ -57,7 +57,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get search_country => 'Find a Country';
 
   @override
-  String get search_location => 'Search for a State or City';
+  String get search_location => 'Search for a Province/State or City';
 
   @override
   String get state => 'Province/State';

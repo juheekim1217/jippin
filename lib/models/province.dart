@@ -1,10 +1,10 @@
-class StateRegion {
+class Province {
   final String nameEn;
   final String nameKo;
   final String type;
   final Map<String, dynamic> cities;
 
-  StateRegion({
+  Province({
     required this.nameEn,
     required this.nameKo,
     required this.type,
@@ -17,7 +17,7 @@ class StateRegion {
   String toString() => nameEn;
 
   @override
-  bool operator ==(Object other) => identical(this, other) || other is StateRegion && runtimeType == other.runtimeType && nameEn == other.nameEn;
+  bool operator ==(Object other) => identical(this, other) || other is Province && runtimeType == other.runtimeType && nameEn == other.nameEn;
 
   @override
   int get hashCode => nameEn.hashCode;

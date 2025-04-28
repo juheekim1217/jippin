@@ -5,8 +5,9 @@ import 'package:jippin/component/custom/advanced_behavior_autocomplete.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:jippin/providers/locale_provider.dart';
-
 import 'package:jippin/models/address.dart';
+import 'package:jippin/utilities/common_helper.dart';
+import 'package:jippin/services/country_data_service.dart';
 
 class AddressAutocompleteField extends StatefulWidget {
   final dynamic localeProvider;
@@ -31,36 +32,36 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
   @override
   void initState() {
     super.initState();
-    _loadCities(widget.localeProvider.country.code);
+    //_loadCities(widget.localeProvider.country.code);
   }
 
   /// Detect changes in `localeProvider` and reload the cities
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _loadCities(Provider.of<LocaleProvider>(context).country.code);
+    //_loadCities(Provider.of<LocaleProvider>(context).country.code);
   }
 
   /// Loads city data based on localeProvider
-  Future<void> _loadCities(String countryCode) async {
-    try {
-      debugPrint("loadcities");
-      final String jsonString = await rootBundle.loadString('assets/json/country/$countryCode.json');
-      final Map<String, dynamic> jsonData = json.decode(jsonString);
-
-      setState(() {
-        states = List<Map<String, dynamic>>.from(jsonData["states"]);
-        cities.clear(); // Clear previous city data before adding new ones
-
-        for (var state in states) {
-          var stateCities = List<Map<String, dynamic>>.from(state["cities"]);
-          cities.addAll(stateCities);
-        }
-      });
-    } catch (e) {
-      debugPrint("Error loading cities: $e");
-    }
-  }
+  // Future<void> _loadCities(String countryCode) async {
+  //   try {
+  //     final langCode = Provider.of<LocaleProvider>(context).language.code;
+  //     String provinceName = CountryDataService().findProvinceNameByKey(langCode, review['province']);
+  //     String cityName = CountryDataService().findCityNameByKey(langCode, review['province'], review['city']);
+  //
+  //     setState(() {
+  //       states = List<Map<String, dynamic>>.from(jsonData["states"]);
+  //       cities.clear(); // Clear previous city data before adding new ones
+  //
+  //       for (var state in states) {
+  //         var stateCities = List<Map<String, dynamic>>.from(state["cities"]);
+  //         cities.addAll(stateCities);
+  //       }
+  //     });
+  //   } catch (e) {
+  //     debugPrint("Error loading cities: $e");
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -74,12 +75,18 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
           if (textEditingValue.text.isEmpty) {
             return const Iterable<Address>.empty();
           }
-          Iterable<Address> resultStates = states.where((item) => item[langCode]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapState(item, langCode));
-          Iterable<Address> resultCities = cities.where((item) => item[langCode]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapCity(item, langCode));
-          List<Address> combinedResults = [...resultStates, ...resultCities];
-          return combinedResults;
+          //String provinceName = CountryDataService().findProvinceNameByKey(langCode, review['province']);
+          //String cityName = CountryDataService().findCityNameByKey(langCode, review['province'], review['city']);
+          String searchKey = textEditingValue.text.toLowerCase();
+          List<Address> result = CountryDataService().getAddressListByKey(langCode, searchKey) ?? [];
+
+          //Iterable<Address> resultProvinces = states.where((item) => item[langCode]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapState(item, langCode));
+          //Iterable<Address> resultCities = cities.where((item) => item[langCode]!.toLowerCase().contains(textEditingValue.text.toLowerCase())).map((item) => Address.fromMapCity(item, langCode));
+
+          //List<Address> combinedResults = [...resultProvinces, ...resultCities];
+          return result;
         },
-        displayStringForOption: (Address address) => address.fullName,
+        displayStringForOption: (Address address) => getFormattedAddress(langCode, address.city, address.province),
         // Tab key pressed
         onSelected: (Address selection) {
           debugPrint('onSelected $selection');

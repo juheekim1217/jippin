@@ -19,3 +19,17 @@ bool containsIgnoreCase(String? text, String? query) {
 String encodeAddressUri(Address address) {
   return base64Url.encode(utf8.encode(jsonEncode(address)));
 }
+
+/// Returns a formatted address string based on the given language code.
+String getFormattedAddress(String langCode, String? provinceDisplay, String? cityDisplay) {
+  String name = provinceDisplay!;
+
+  if (cityDisplay!.isNotEmpty) {
+    if (langCode == "ko") {
+      name = "$provinceDisplay $cityDisplay";
+    } else {
+      name = "$cityDisplay, $provinceDisplay"; // English address format
+    }
+  }
+  return name;
+}

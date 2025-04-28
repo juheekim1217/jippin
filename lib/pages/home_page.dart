@@ -6,15 +6,17 @@ import 'package:jippin/component/footer.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 
+import 'package:jippin/services/review_service.dart';
+
 class HomePage extends StatefulWidget {
   final String defaultCountryCode;
-  final String defaultCountryName;
+  final String qCountry;
   final ValueChanged<String> onSearchDetails;
 
   const HomePage({
     super.key,
     required this.defaultCountryCode,
-    required this.defaultCountryName,
+    required this.qCountry,
     required this.onSearchDetails,
   });
 
@@ -23,7 +25,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final supabase = Supabase.instance.client;
   List<Map<String, dynamic>> recentReviews = [];
   bool isLoading = true;
   String errorMessage = '';
@@ -32,7 +33,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    _fetchRecentReviews();
+    _fetchRecentReviewsForMainPage();
   }
 
   @override
@@ -46,22 +47,18 @@ class _HomePageState extends State<HomePage> {
   }
 
   // Fetch reviews from Supabase by Selected Country
-  Future<void> _fetchRecentReviews() async {
+  Future<void> _fetchRecentReviewsForMainPage() async {
     try {
-      var response = await supabase
-          .from('review')
-          .select('*') // Fetch all columns or specify required ones
-          .eq('country_code', widget.defaultCountryCode)
-          .order('created_at', ascending: false) // Order by latest first
-          .limit(3); // Get only the most recent 3 reviews
+      var response = await ReviewService.fetchRecentReviews(
+        countryCode: widget.defaultCountryCode,
+        limit: 3,
+      );
 
       if (response.isEmpty) {
-        response = await supabase
-            .from('review')
-            .select('*') // Fetch all columns or specify required ones
-            .order('created_at', ascending: false) // Order by latest first
-            .limit(3); // Get only the most recent 3 reviews
+        // fallback without country filter
+        response = await ReviewService.fetchRecentReviews(limit: 3);
       }
+
       debugPrint("_fetchedRecent3Reviews ${response.length}");
 
       if (response.isEmpty) {
@@ -240,7 +237,7 @@ class _HomePageState extends State<HomePage> {
         ...recentReviews.map((review) => _buildReviewCard(
               localizations,
               review['country'] ?? localizations.unknown_country,
-              review['state'] ?? '',
+              review['province'] ?? '',
               review['city'] ?? localizations.unknown_city,
               review['landlord'] ?? '',
               review['property'] ?? '',

@@ -28,7 +28,7 @@ GoRouter createRouter(LocaleProvider localeProvider) {
             path: '/',
             builder: (context, state) => HomePage(
               defaultCountryCode: localeProvider.country.code,
-              defaultCountryName: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
+              qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
               onSearchDetails: (String query) {
                 context.go('/reviews?qD=$query');
               }, // Empty callback
@@ -56,13 +56,15 @@ GoRouter createRouter(LocaleProvider localeProvider) {
                 qProperty: qProperty,
                 qRealtor: qRealtor,
                 qAddress: qAddress,
-                defaultCountryName: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
+                qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
+                qProvince: queryModel.qAddress.getName(localeProvider.locale.languageCode, "Province"),
+                //qCity: queryModel.getCityName(localeProvider.locale.languageCode),
               );
               return ReviewsPage(
                 key: ValueKey(Object.hash(qDetails, qLandlord, qProperty, qRealtor, qAddressStr, localeProvider.country.code, localeProvider.country.getCountryName(localeProvider.locale.languageCode).hashCode)),
                 // 👈 Includes all params to force rebuild. Generates a unique but shorter key
                 defaultCountryCode: localeProvider.country.code,
-                defaultCountryName: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
+                qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
                 qDetails: qDetails,
                 qLandlord: qLandlord,
                 qProperty: qProperty,

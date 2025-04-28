@@ -1,10 +1,10 @@
-class CityRegion {
+class City {
   final String nameEn;
   final String nameKo;
   final String stateEn;
   final String stateKo;
 
-  CityRegion({
+  City({
     required this.nameEn,
     required this.nameKo,
     required this.stateEn,
@@ -17,7 +17,7 @@ class CityRegion {
   String toString() => nameEn; // For debugging or default printing
 
   @override
-  bool operator ==(Object other) => identical(this, other) || other is CityRegion && runtimeType == other.runtimeType && nameEn == other.nameEn && stateEn == other.stateEn;
+  bool operator ==(Object other) => identical(this, other) || other is City && runtimeType == other.runtimeType && nameEn == other.nameEn && stateEn == other.stateEn;
 
   @override
   int get hashCode => nameEn.hashCode ^ stateEn.hashCode;

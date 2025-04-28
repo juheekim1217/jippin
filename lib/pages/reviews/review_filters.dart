@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:jippin/models/address.dart';
-import 'package:jippin/models/state_region.dart';
-import 'package:jippin/models/city_region.dart';
+import 'package:jippin/models/province.dart';
+import 'package:jippin/models/city.dart';
 import 'package:go_router/go_router.dart';
 import 'package:jippin/utilities/common_helper.dart';
 import 'package:provider/provider.dart';
@@ -27,8 +27,8 @@ class ReviewFilters extends StatefulWidget {
 
 class _ReviewFiltersState extends State<ReviewFilters> {
   String? selectedSort;
-  StateRegion? selectedState;
-  CityRegion? selectedCity;
+  Province? selectedProvince;
+  City? selectedCity;
   String? selectedStreet;
   String? selectedLandlord;
   String? selectedProperty;
@@ -36,8 +36,8 @@ class _ReviewFiltersState extends State<ReviewFilters> {
 
   List<Map<String, dynamic>> states = [];
   List<Map<String, dynamic>> cities = [];
-  List<StateRegion> stateList = [];
-  List<CityRegion> cityList = [];
+  List<Province> stateList = [];
+  List<City> cityList = [];
 
   late final TextEditingController streetController;
   late final TextEditingController landlordController;
@@ -61,8 +61,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
       final address = query.qAddress;
 
       setState(() {
-        //selectedState = address.state;
-        //selectedCity = address.city;
         selectedStreet = address.street;
         selectedLandlord = query.qLandlord;
         selectedProperty = query.qProperty;
@@ -74,10 +72,10 @@ class _ReviewFiltersState extends State<ReviewFilters> {
         propertyController.text = selectedProperty ?? '';
         realtorController.text = selectedRealtor ?? '';
 
-        if (selectedState != null) {
+        if (selectedProvince != null) {
           final langCode = widget.localeProvider.language.code;
           final stateData = states.firstWhere(
-            (state) => state[langCode] == selectedState,
+            (state) => state[langCode] == selectedProvince,
             orElse: () => {},
           );
           //final filteredCities = List<Map<String, dynamic>>.from(stateData["cities"] ?? []);
@@ -86,8 +84,8 @@ class _ReviewFiltersState extends State<ReviewFilters> {
           //cityList = filteredCities.map((city) => city[langCode] as String).toList();
           // Convert city entries to a list of City objects
           cityList = citiesMap.entries
-              .where((entry) => entry.value["s_$langCode"] == selectedState)
-              .map((entry) => CityRegion(
+              .where((entry) => entry.value["s_$langCode"] == selectedProvince)
+              .map((entry) => City(
                     nameEn: entry.value["en"] ?? '',
                     nameKo: entry.value["ko"] ?? '',
                     stateEn: entry.value["s_en"] ?? '',
@@ -124,7 +122,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
       final statesMap = jsonData["states"] as Map<String, dynamic>;
       stateList = statesMap.entries.map((entry) {
         final data = entry.value;
-        return StateRegion(
+        return Province(
           nameEn: data["en"] ?? '',
           nameKo: data["ko"] ?? '',
           type: data["type"] ?? '',
@@ -140,11 +138,10 @@ class _ReviewFiltersState extends State<ReviewFilters> {
     final query = context.read<ReviewQueryProvider>();
 
     final address = Address(
-      name: selectedCity?.nameEn ?? selectedState?.nameEn ?? '',
-      fullName: selectedStreet ?? selectedCity?.nameEn ?? selectedState?.nameEn ?? '',
-      stateCode: '',
-      state: selectedState?.nameEn,
+      province: selectedProvince!.nameEn,
       city: selectedCity?.nameEn,
+      province_ko: selectedProvince?.nameKo,
+      city_ko: selectedCity?.nameKo,
       street: selectedStreet,
     );
 
@@ -156,7 +153,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
     );
 
     final encodedAddress = encodeAddressUri(address);
-
     context.go('/reviews?qA=$encodedAddress'
         '&qL=${selectedLandlord ?? ''}'
         '&qP=${selectedProperty ?? ''}'
@@ -235,7 +231,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
     List<String> items,
     ValueChanged<String?> onChanged,
   ) {
-    final safeValue = items.contains(selectedValue) ? selectedValue : null;
+    //final safeValue = items.contains(selectedValue) ? selectedValue : null;
 
     return SizedBox(
         width: 160,
@@ -255,7 +251,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
         //   }).toList(),
         //   onChanged: onChanged,
         // ),
-        child: DropdownButtonFormField<CityRegion>(
+        child: DropdownButtonFormField<City>(
           isExpanded: true,
           value: selectedCity,
           decoration: InputDecoration(
@@ -264,7 +260,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
           ),
           items: [null, ...cityList].map((city) {
-            return DropdownMenuItem<CityRegion>(
+            return DropdownMenuItem<City>(
               value: city,
               child: Text(
                 city?.getName(widget.localeProvider.language.code) ?? AppLocalizations.of(context).all,
@@ -272,7 +268,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
               ),
             );
           }).toList(),
-          onChanged: (CityRegion? newCity) {
+          onChanged: (City? newCity) {
             setState(() {
               selectedCity = newCity;
             });
@@ -285,16 +281,16 @@ class _ReviewFiltersState extends State<ReviewFilters> {
 
     return SizedBox(
       width: 160,
-      child: DropdownButtonFormField<StateRegion>(
+      child: DropdownButtonFormField<Province>(
         isExpanded: true,
-        value: selectedState,
+        value: selectedProvince,
         decoration: InputDecoration(
           labelText: label,
           contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
         ),
         items: [null, ...stateList].map((state) {
-          return DropdownMenuItem<StateRegion>(
+          return DropdownMenuItem<Province>(
             value: state,
             child: Text(
               state?.getName(langCode) ?? AppLocalizations.of(context).all,
@@ -302,14 +298,14 @@ class _ReviewFiltersState extends State<ReviewFilters> {
             ),
           );
         }).toList(),
-        onChanged: (StateRegion? selected) {
+        onChanged: (Province? selected) {
           setState(() {
-            selectedState = selected;
+            selectedProvince = selected;
             selectedCity = null;
 
             final citiesMap = selected?.cities ?? {};
             cityList = citiesMap.entries
-                .map((entry) => CityRegion(
+                .map((entry) => City(
                       nameEn: entry.value["en"] ?? '',
                       nameKo: entry.value["ko"] ?? '',
                       stateEn: selected?.nameEn ?? '',
@@ -327,7 +323,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
 
     return SizedBox(
       width: 160,
-      child: DropdownButtonFormField<CityRegion>(
+      child: DropdownButtonFormField<City>(
         isExpanded: true,
         value: selectedCity,
         decoration: InputDecoration(
@@ -336,7 +332,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
         ),
         items: [null, ...cityList].map((city) {
-          return DropdownMenuItem<CityRegion>(
+          return DropdownMenuItem<City>(
             value: city,
             child: Text(
               city?.getName(langCode) ?? AppLocalizations.of(context).all,
@@ -344,7 +340,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
             ),
           );
         }).toList(),
-        onChanged: (CityRegion? selected) {
+        onChanged: (City? selected) {
           setState(() {
             selectedCity = selected;
           });

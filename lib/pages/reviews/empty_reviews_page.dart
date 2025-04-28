@@ -5,13 +5,13 @@ import 'package:go_router/go_router.dart';
 import 'package:jippin/models/address.dart';
 
 class EmptyReviewsPage extends StatelessWidget {
-  final String defaultCountryName;
+  final String qCountry;
   final String qLandlord;
   final Address qAddress;
 
   const EmptyReviewsPage({
     super.key,
-    required this.defaultCountryName,
+    required this.qCountry,
     required this.qLandlord,
     required this.qAddress,
   });

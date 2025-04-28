@@ -14,6 +14,8 @@ import 'package:jippin/models/language.dart';
 import 'package:jippin/router.dart';
 import 'package:flutter/gestures.dart';
 
+import 'package:jippin/services/country_data_service.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   GestureBinding.instance.resamplingEnabled = true;
@@ -32,10 +34,6 @@ Future<void> main() async {
   );
 
   runApp(
-    // ChangeNotifierProvider(
-    //   create: (context) => LocaleProvider(),
-    //   child: const MyApp(),
-    // ),
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => LocaleProvider()),

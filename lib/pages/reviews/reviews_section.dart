@@ -7,7 +7,7 @@ import 'package:jippin/models/address.dart';
 class ReviewsSection extends StatefulWidget {
   final List<Map<String, dynamic>> reviews;
   final Function(String) onSortSelected;
-  final String defaultCountryName;
+  final String qCountry;
   final String qLandlord;
   final Address qAddress;
 
@@ -15,7 +15,7 @@ class ReviewsSection extends StatefulWidget {
     super.key,
     required this.reviews,
     required this.onSortSelected,
-    required this.defaultCountryName,
+    required this.qCountry,
     required this.qLandlord,
     required this.qAddress,
   });
@@ -97,7 +97,7 @@ class _ReviewsSectionState extends State<ReviewsSection> {
         // 📌 **Handle Empty Reviews**
         if (widget.reviews.isEmpty)
           EmptyReviewsPage(
-            defaultCountryName: widget.defaultCountryName,
+            qCountry: widget.qCountry,
             qLandlord: widget.qLandlord,
             qAddress: widget.qAddress,
           ), //buildEmptyReviewsPage(context),

@@ -1,22 +1,20 @@
-import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:jippin/utilities/common_helper.dart';
 
 class Address {
-  final String name;
-  final String fullName;
-  final String? stateCode;
-  final String? state;
+  final String province;
   final String? city;
+  final String? province_ko;
+  final String? city_ko;
   final String? street;
   final String? streetNum;
   final String? unit;
   final String? zip;
 
   Address({
-    required this.name,
-    required this.fullName,
-    this.stateCode,
-    this.state,
+    required this.province,
     this.city,
+    this.province_ko,
+    this.city_ko,
     this.street,
     this.streetNum,
     this.unit,
@@ -26,22 +24,20 @@ class Address {
   // Factory constructor for empty Address
   factory Address.defaultAddress() {
     return Address(
-      name: "",
-      fullName: "",
-      stateCode: "",
-      state: "",
+      province: "",
       city: "",
+      province_ko: "",
+      city_ko: "",
       street: "",
     );
   }
 
   // Convert Address to JSON
   Map<String, dynamic> toJson() => {
-        'name': name,
-        'fullName': fullName,
-        'stateCode': stateCode,
-        'state': state,
+        'province': province,
         'city': city,
+        'province_ko': province_ko,
+        'city_ko': city_ko,
         'street': street,
       };
 
@@ -49,11 +45,10 @@ class Address {
   factory Address.fromJson(Map<String, dynamic> json) {
     try {
       return Address(
-        name: json['name'] ?? "",
-        fullName: json['fullName'] ?? "",
-        stateCode: json['stateCode'] ?? "",
-        state: json['state'] ?? "",
+        province: json['province'] ?? "",
         city: json['city'] ?? "",
+        province_ko: json['province_ko'] ?? "",
+        city_ko: json['city_ko'] ?? "",
         street: json['street'] ?? "",
       );
     } catch (e) {
@@ -63,42 +58,54 @@ class Address {
 
   // from top nav bar: deserialize City JSON into an Address object
   factory Address.fromMapCity(Map<String, dynamic> map, String langCode) {
-    String state = map["s_en"];
-    String city = map[langCode];
-    String fn = "$city, $state";
-    if (langCode == "ko") {
-      state = map["s_ko"];
-      fn = "$state $city";
-    }
+    String pKey = "s_$langCode";
+    final name = getFormattedAddress(langCode, map[pKey], map[langCode]);
     return Address(
-      name: city,
-      fullName: fn,
-      city: city,
-      state: state,
-      stateCode: "",
+      province: map["s_en"],
+      city: map["en"],
+      province_ko: map["s_ko"],
+      city_ko: map["ko"],
     );
   }
 
   // from top nav bar: deserialize State JSON into an Address object
   factory Address.fromMapState(Map<String, dynamic> map, String languageName) {
-    String state = map[languageName];
+    String provinceName = map[languageName];
     return Address(
-      name: state,
-      fullName: state,
+      province: map["en"],
       city: "",
-      state: state,
-      stateCode: map["sc"] ?? "",
+      province_ko: map["s_ko"],
+      city_ko: "",
     );
   }
 
-  Address getCurrentAddress(bool isState, bool isCity, bool isStreet) {
+  Address getCurrentAddress(String langCode, bool isState, bool isCity, bool isStreet) {
     return Address(
-      name: state ?? '',
-      fullName: state ?? '',
-      stateCode: stateCode,
-      state: isState ? state : '',
+      province: isState ? province : '',
       city: isCity ? city : '',
       street: isStreet ? street : '',
     );
+  }
+
+  String getName(String languageCode, String type) {
+    if (type == "Province") {
+      switch (languageCode) {
+        case 'en':
+          return province;
+        case 'ko':
+          return province_ko!;
+        default:
+          return province;
+      }
+    } else {
+      switch (languageCode) {
+        case 'en':
+          return city!;
+        case 'ko':
+          return city_ko!;
+        default:
+          return city!;
+      }
+    }
   }
 }

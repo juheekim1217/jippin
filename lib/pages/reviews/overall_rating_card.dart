@@ -20,11 +20,6 @@ class OverallRatingCard extends StatefulWidget {
 class _OverallRatingCardState extends State<OverallRatingCard> {
   @override
   Widget build(BuildContext context) {
-    // If there are no reviews, don’t build or show anything — just render an invisible placeholder.
-    // if (widget.reviews.isEmpty) {
-    //   return const SizedBox.shrink();
-    // }
-
     final starCounts = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0};
     double totalTrust = 0, totalPrice = 0, totalLocation = 0, totalCondition = 0, totalSafety = 0;
     int count = 0;
@@ -59,6 +54,7 @@ class _OverallRatingCardState extends State<OverallRatingCard> {
         const SizedBox(height: 28),
         ReviewFilters(localeProvider: Provider.of<LocaleProvider>(context), reviews: widget.reviews),
         const SizedBox(height: 28),
+        // hide overall rating card if reviews are empty
         if (widget.reviews.isNotEmpty)
           Card(
             elevation: 4,
