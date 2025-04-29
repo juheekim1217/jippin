@@ -100,8 +100,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
   }
 
   void _onSearch() {
-    final query = context.read<ReviewQueryProvider>();
-
     final address = Address(
       province: selectedProvince?.en ?? '',
       city: selectedCity?.en,
@@ -110,12 +108,15 @@ class _ReviewFiltersState extends State<ReviewFilters> {
       street: selectedStreet,
     );
 
-    query.setQuery(
-      landlord: selectedLandlord,
-      property: selectedProperty,
-      realtor: selectedRealtor,
-      address: address,
-    );
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final query = context.read<ReviewQueryProvider>();
+      query.setQuery(
+        landlord: selectedLandlord,
+        property: selectedProperty,
+        realtor: selectedRealtor,
+        address: address,
+      );
+    });
 
     final encodedAddress = encodeAddressUri(address);
     context.go('/reviews?qA=$encodedAddress'
