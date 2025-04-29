@@ -60,3 +60,49 @@ coverage/
 # security
 .env
 
+/android/app/.cxx/Debug/3j127731/armeabi-v7a/additional_project_files.txt
+
+
+
+
+android/app/.cxx/
+
+# Gradle files
+.gradle/
+
+# Local configuration files
+local.properties
+
+# Android Studio cache
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/httpRequests/
+
+# Keystore files
+*.jks
+*.keystore
+
+
+# OS-specific files
+Thumbs.db
+
+# Build directories
+app/build/
+*/build/
+
+# Proguard configuration files
+proguard-rules.pro
+
+# Miscellaneous
+*.apk
+*.ap_
+*.dex
+
+# Android NDK
+ndkBuild/
+
