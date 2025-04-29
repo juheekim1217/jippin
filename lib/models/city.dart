@@ -1,24 +1,21 @@
 class City {
-  final String nameEn;
-  final String nameKo;
-  final String stateEn;
-  final String stateKo;
+  final String en;
+  final String ko;
+  final String? stateEn;
+  final String? stateKo;
 
   City({
-    required this.nameEn,
-    required this.nameKo,
-    required this.stateEn,
-    required this.stateKo,
+    required this.en,
+    required this.ko,
+    this.stateEn,
+    this.stateKo,
   });
 
-  String getName(String langCode) => langCode == 'ko' ? nameKo : nameEn;
+  String getName(String langCode) => langCode == 'ko' ? ko : en;
 
   @override
-  String toString() => nameEn; // For debugging or default printing
+  bool operator ==(Object other) => identical(this, other) || other is City && runtimeType == other.runtimeType && en == other.en && stateEn == other.stateEn;
 
   @override
-  bool operator ==(Object other) => identical(this, other) || other is City && runtimeType == other.runtimeType && nameEn == other.nameEn && stateEn == other.stateEn;
-
-  @override
-  int get hashCode => nameEn.hashCode ^ stateEn.hashCode;
+  int get hashCode => en.hashCode ^ stateEn.hashCode;
 }

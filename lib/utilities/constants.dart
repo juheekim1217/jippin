@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
-
-/// Supabase client
-final supabase = Supabase.instance.client;
 
 /// Simple preloader inside a Center widget
 const preloader = Center(child: CircularProgressIndicator(color: Colors.orange));

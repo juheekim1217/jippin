@@ -7,7 +7,6 @@ import 'package:jippin/models/address.dart';
 import 'package:jippin/utilities/common_helper.dart';
 import 'package:provider/provider.dart';
 import 'package:jippin/providers/locale_provider.dart';
-
 import 'package:jippin/services/country_data_service.dart';
 
 class ReviewCard extends StatelessWidget {
@@ -44,7 +43,6 @@ class ReviewCard extends StatelessWidget {
             // Landlord name && Created_at section
             _buildReviewHeader(context),
 
-            //
             const SizedBox(height: 8),
             _buildReviewDetails(context),
 
@@ -89,7 +87,7 @@ class ReviewCard extends StatelessWidget {
   Widget _buildReviewHeader(BuildContext context) {
     return Row(
       children: [
-        // 📌 Column 1: Landlord Info (Left-Aligned)
+        // Column 1: Landlord Info (Left-Aligned)
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -141,7 +139,7 @@ class ReviewCard extends StatelessWidget {
             ],
           ),
         ),
-        // 📌 Column 2: Created At (Right-Aligned & Top)
+        // Column 2: Created At (Right-Aligned & Top)
         Column(
           mainAxisSize: MainAxisSize.min, // Prevents unnecessary vertical stretching
           crossAxisAlignment: CrossAxisAlignment.end, // Ensures right alignment
@@ -183,14 +181,14 @@ class ReviewCard extends StatelessWidget {
                   // Use Row instead of Column to keep elements in one line
                   crossAxisAlignment: CrossAxisAlignment.center, // Ensures proper alignment
                   children: [
-                    // 📌 Property Icon with Tooltip
+                    // Property Icon with Tooltip
                     if (review['property'] != null && review['property'] != "")
                       Tooltip(
                         message: AppLocalizations.of(context).property,
                         child: Icon(Icons.apartment_outlined, size: 20, color: Colors.black87),
                       ),
                     const SizedBox(width: 8), // Spacing between icon and text
-                    // 📌 Property Text (Ensures it stays in one line)
+                    // Property Text (Ensures it stays in one line)
                     if (review['property'] != null && review['property'] != "")
                       Expanded(
                         child: SelectionContainer.disabled(
@@ -213,7 +211,7 @@ class ReviewCard extends StatelessWidget {
                   ],
                 ),
               ),
-              // 📌 Column 2: Alerts (Right-Aligned)
+              // Column 2: Alerts (Right-Aligned)
               if (review['fraud'] != null && review['fraud'])
                 Column(
                   mainAxisSize: MainAxisSize.min, // Prevents stretching
@@ -239,89 +237,8 @@ class ReviewCard extends StatelessWidget {
                 child: Icon(Icons.location_on, size: 20, color: Colors.black87),
               ),
               const SizedBox(width: 8),
-              Wrap(
-                spacing: 8.0, // Space between links
-                children: [
-                  if (review['province'] != null && review['province'].toString().isNotEmpty)
-                    SelectionContainer.disabled(
-                      child: MouseRegion(
-                        cursor: SystemMouseCursors.click,
-                        child: GestureDetector(
-                          onTap: () {
-                            Address address = Address(province: review['province']);
-                            final encodedAddress = encodeAddressUri(address);
-                            context.go('/reviews?qA=$encodedAddress');
-                          },
-                          child: Text(
-                            provinceName,
-                            style: TextStyle(fontSize: 14, decoration: TextDecoration.underline),
-                          ),
-                        ),
-                      ),
-                    ),
-                  if (review['city'] != null && review['city'].toString().isNotEmpty)
-                    SelectionContainer.disabled(
-                      child: MouseRegion(
-                        cursor: SystemMouseCursors.click,
-                        child: GestureDetector(
-                          onTap: () {
-                            Address address = Address(province: review['province'], city: review['city']);
-                            final encodedAddress = encodeAddressUri(address);
-                            context.go('/reviews?qA=$encodedAddress');
-                          },
-                          child: Text(
-                            cityName,
-                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
-                          ),
-                        ),
-                      ),
-                    ),
-                  if (review['district'] != null && review['district'].toString().isNotEmpty)
-                    SelectionContainer.disabled(
-                      child: MouseRegion(
-                        cursor: SystemMouseCursors.click,
-                        child: GestureDetector(
-                          onTap: () {
-                            Address address = Address(province: review['province'], city: review['city']);
-                            final encodedAddress = encodeAddressUri(address);
-                            context.go('/reviews?qA=$encodedAddress');
-                          },
-                          child: Text(
-                            review['district'],
-                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
-                          ),
-                        ),
-                      ),
-                    ),
-                  if (review['street'] != null && review['street'].toString().isNotEmpty)
-                    SelectionContainer.disabled(
-                      child: MouseRegion(
-                        cursor: SystemMouseCursors.click,
-                        child: GestureDetector(
-                          onTap: () {
-                            Address address = Address(province: review['province'], city: review['city'], street: review['street']);
-                            final encodedAddress = encodeAddressUri(address);
-                            context.go('/reviews?qA=$encodedAddress');
-                          },
-                          child: Text(
-                            review['street'],
-                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
-                          ),
-                        ),
-                      ),
-                    ),
-                  if (review['street_number'] != null && review['street_number'].toString().isNotEmpty)
-                    Text(
-                      review['street_number'],
-                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
-                    ),
-                  if (review['postal_code'] != null && review['postal_code'].toString().isNotEmpty)
-                    Text(
-                      review['postal_code'],
-                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
-                    ),
-                ],
-              )
+              if (langCode == 'ko') _buildAddressRowKo(context, provinceName, cityName),
+              if (langCode != 'ko') _buildAddressRow(context, provinceName, cityName),
             ],
           ),
         ),
@@ -354,6 +271,168 @@ class ReviewCard extends StatelessWidget {
                 )
               ],
             ),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildAddressRow(BuildContext context, String provinceName, String cityName) {
+    return Wrap(
+      spacing: 8.0, // Space between links
+      children: [
+        if (review['street_number'] != null && review['street_number'].toString().isNotEmpty)
+          Text(
+            review['street_number'],
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+          ),
+        if (review['street'] != null && review['street'].toString().isNotEmpty)
+          SelectionContainer.disabled(
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  Address address = Address(province: review['province'], city: review['city'], street: review['street']);
+                  final encodedAddress = encodeAddressUri(address);
+                  context.go('/reviews?qA=$encodedAddress');
+                },
+                child: Text(
+                  '${review['street']},',
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+        if (review['district'] != null && review['district'].toString().isNotEmpty)
+          SelectionContainer.disabled(
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  Address address = Address(province: review['province'], city: review['city']);
+                  final encodedAddress = encodeAddressUri(address);
+                  context.go('/reviews?qA=$encodedAddress');
+                },
+                child: Text(
+                  '${review['district']},',
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+        if (review['city'] != null && review['city'].toString().isNotEmpty)
+          SelectionContainer.disabled(
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  Address address = Address(province: review['province'], city: review['city']);
+                  final encodedAddress = encodeAddressUri(address);
+                  context.go('/reviews?qA=$encodedAddress');
+                },
+                child: Text(
+                  '$cityName,',
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+        if (review['province'] != null && review['province'].toString().isNotEmpty)
+          SelectionContainer.disabled(
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  Address address = Address(province: review['province']);
+                  final encodedAddress = encodeAddressUri(address);
+                  context.go('/reviews?qA=$encodedAddress');
+                },
+                child: Text(
+                  provinceName,
+                  style: TextStyle(fontSize: 14, decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildAddressRowKo(BuildContext context, String provinceName, String cityName) {
+    return Wrap(
+      spacing: 8.0, // Space between links
+      children: [
+        if (review['province'] != null && review['province'].toString().isNotEmpty)
+          SelectionContainer.disabled(
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  Address address = Address(province: review['province']);
+                  final encodedAddress = encodeAddressUri(address);
+                  context.go('/reviews?qA=$encodedAddress');
+                },
+                child: Text(
+                  provinceName,
+                  style: TextStyle(fontSize: 14, decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+        if (review['city'] != null && review['city'].toString().isNotEmpty)
+          SelectionContainer.disabled(
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  Address address = Address(province: review['province'], city: review['city']);
+                  final encodedAddress = encodeAddressUri(address);
+                  context.go('/reviews?qA=$encodedAddress');
+                },
+                child: Text(
+                  cityName,
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+        if (review['district'] != null && review['district'].toString().isNotEmpty)
+          SelectionContainer.disabled(
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  Address address = Address(province: review['province'], city: review['city']);
+                  final encodedAddress = encodeAddressUri(address);
+                  context.go('/reviews?qA=$encodedAddress');
+                },
+                child: Text(
+                  review['district'],
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+        if (review['street'] != null && review['street'].toString().isNotEmpty)
+          SelectionContainer.disabled(
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  Address address = Address(province: review['province'], city: review['city'], street: review['street']);
+                  final encodedAddress = encodeAddressUri(address);
+                  context.go('/reviews?qA=$encodedAddress');
+                },
+                child: Text(
+                  review['street'],
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+        if (review['street_number'] != null && review['street_number'].toString().isNotEmpty)
+          Text(
+            review['street_number'],
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
           ),
       ],
     );

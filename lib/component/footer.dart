@@ -12,14 +12,13 @@ class AppFooter extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
-      //color: Colors.grey.shade50, // Soft background for a clean look
       child: Column(
         children: [
-          // 📜 Soft Divider
+          // Soft Divider
           Divider(color: Colors.grey.shade300, thickness: 1, height: 1),
           const SizedBox(height: 12),
 
-          // 🔒 Legal Links (Privacy & Terms)
+          // Legal Links (Privacy & Terms)
           Wrap(
             alignment: WrapAlignment.center,
             spacing: 20,
@@ -30,7 +29,7 @@ class AppFooter extends StatelessWidget {
           ),
           const SizedBox(height: 16),
 
-          // 📍 Privacy Notice
+          // Privacy Notice
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -51,7 +50,7 @@ class AppFooter extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 16),
-          // ⚖️ Copyright & Branding
+          // Copyright & Branding
           Text(
             "© 2025 JIPPIN. All rights reserved.",
             style: GoogleFonts.notoSans(fontSize: 10, color: Colors.black54, fontWeight: FontWeight.bold),
@@ -61,7 +60,7 @@ class AppFooter extends StatelessWidget {
     );
   }
 
-  // 🔗 Footer Link Helper
+  // Footer Link Helper
   Widget _buildFooterLink(BuildContext context, String text, String route) {
     return SelectionContainer.disabled(
       child: MouseRegion(

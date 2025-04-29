@@ -53,7 +53,7 @@ class PrivacyPolicyPage extends StatelessWidget {
             _buildSectionTitle(AppLocalizations.of(context).privacy_contactTitle),
             _buildParagraph(AppLocalizations.of(context).privacy_contactDescription),
 
-            // 📌 Footer (Not Sticky, Appears After All Content)
+            // Footer (Not Sticky, Appears After All Content)
             const AppFooter(),
           ],
         ),

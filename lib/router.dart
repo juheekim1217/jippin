@@ -6,18 +6,16 @@ import 'package:jippin/pages/submit_review_page.dart';
 import 'package:jippin/pages/terms_and_conditions_page.dart';
 import 'package:jippin/pages/privacy_policy.dart';
 import 'package:jippin/models/address.dart';
-
 import 'package:go_router/go_router.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/component/main_navigation.dart';
 import 'package:jippin/providers/review_query_provider.dart';
 import 'dart:convert';
-
 import 'package:provider/provider.dart';
 
 GoRouter createRouter(LocaleProvider localeProvider) {
   return GoRouter(
-    initialLocation: localeProvider.currentRoute, // ✅ Start from the stored route
+    initialLocation: localeProvider.currentRoute, // Start from the stored route
     routes: [
       ShellRoute(
         builder: (context, state, child) {
@@ -45,10 +43,10 @@ GoRouter createRouter(LocaleProvider localeProvider) {
               final String qAddressStr = state.uri.queryParameters['qA'] ?? "";
               final Address qAddress = qAddressStr.isNotEmpty ? Address.fromJson(jsonDecode(utf8.decode(base64Url.decode(qAddressStr)))) : Address.defaultAddress();
 
-              // ✅ Get the localeProvider
+              // Get the localeProvider
               final localeProvider = context.read<LocaleProvider>();
 
-              // ✅ Update the ReviewQueryModel provider
+              // Update the ReviewQueryModel provider
               final queryModel = context.read<ReviewQueryProvider>();
               queryModel.updateQuery(
                 qDetail: qDetails,
@@ -57,12 +55,12 @@ GoRouter createRouter(LocaleProvider localeProvider) {
                 qRealtor: qRealtor,
                 qAddress: qAddress,
                 qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
-                qProvince: queryModel.qAddress.getName(localeProvider.locale.languageCode, "Province"),
+                //qProvince: queryModel.qAddress.getName(localeProvider.locale.languageCode, "Province"),
                 //qCity: queryModel.getCityName(localeProvider.locale.languageCode),
               );
               return ReviewsPage(
                 key: ValueKey(Object.hash(qDetails, qLandlord, qProperty, qRealtor, qAddressStr, localeProvider.country.code, localeProvider.country.getCountryName(localeProvider.locale.languageCode).hashCode)),
-                // 👈 Includes all params to force rebuild. Generates a unique but shorter key
+                // Includes all params to force rebuild. Generates a unique but shorter key
                 defaultCountryCode: localeProvider.country.code,
                 qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
                 qDetails: qDetails,

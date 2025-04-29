@@ -3,10 +3,11 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/component/footer.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
-
 import 'package:jippin/services/review_service.dart';
+import 'package:provider/provider.dart';
+import 'package:jippin/providers/locale_provider.dart';
+import 'package:jippin/services/country_data_service.dart';
 
 class HomePage extends StatefulWidget {
   final String defaultCountryCode;
@@ -38,7 +39,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void dispose() {
-    searchController.dispose(); // ✅ Prevent memory leaks
+    searchController.dispose(); // Prevent memory leaks
     super.dispose();
   }
 
@@ -53,12 +54,10 @@ class _HomePageState extends State<HomePage> {
         countryCode: widget.defaultCountryCode,
         limit: 3,
       );
-
+      // fallback without country filter
       if (response.isEmpty) {
-        // fallback without country filter
         response = await ReviewService.fetchRecentReviews(limit: 3);
       }
-
       debugPrint("_fetchedRecent3Reviews ${response.length}");
 
       if (response.isEmpty) {
@@ -92,23 +91,23 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // 🔥 Hero Section
+                // Hero Section
                 _buildHeroSection(localizations, context),
                 const SizedBox(height: 40),
 
-                // 🔒 Anonymous Review Notice
+                // Anonymous Review Notice
                 _buildAnonymousSection(localizations),
                 const SizedBox(height: 50),
 
-                // 🏡 Recent Reviews
+                // Recent Reviews
                 _buildRecentReviews(localizations, context),
                 const SizedBox(height: 50),
 
-                // 🔄 How It Works
+                // How It Works
                 _buildHowItWorksSection(localizations, context),
                 const SizedBox(height: 40),
 
-                // 📌 Footer (Not Sticky, Appears After All Content)
+                // Footer (Not Sticky, Appears After All Content)
                 const AppFooter(),
               ],
             ),
@@ -118,7 +117,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // 🎯 Hero Section
+  // Hero Section
   Widget _buildHeroSection(AppLocalizations localizations, BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -140,7 +139,7 @@ class _HomePageState extends State<HomePage> {
         ),
         const SizedBox(height: 30),
 
-        // 🔍 Search Bar
+        // Search Bar
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: TextField(
@@ -161,7 +160,7 @@ class _HomePageState extends State<HomePage> {
 
         const SizedBox(height: 20),
 
-        // ⚡ CTA Buttons
+        // CTA Buttons
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -181,7 +180,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // 🎨 Custom Button
+  // Custom Button
   Widget _buildButton({required String text, required VoidCallback onTap, bool isOutlined = false}) {
     return ElevatedButton(
       onPressed: onTap,
@@ -198,7 +197,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // 🔒 Anonymous Review Section
+  // Anonymous Review Section
   Widget _buildAnonymousSection(AppLocalizations localizations) {
     return Container(
       width: double.infinity,
@@ -233,7 +232,7 @@ class _HomePageState extends State<HomePage> {
         ),
         const SizedBox(height: 10),
 
-        // 🏡 Dynamically Build Review Cards
+        // Dynamically Build Review Cards
         ...recentReviews.map((review) => _buildReviewCard(
               localizations,
               review['country'] ?? localizations.unknown_country,
@@ -248,7 +247,7 @@ class _HomePageState extends State<HomePage> {
 
         const SizedBox(height: 10),
 
-        // 🔗 "See More Reviews" Button
+        // "See More Reviews" Button
         TextButton(
           onPressed: () => context.go('/reviews'),
           child: Text(localizations.home_seeMoreReviews),
@@ -257,9 +256,10 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // 🏡 Review Card
-  Widget _buildReviewCard(AppLocalizations localizations, String country, String state, String city, String landlord, String property, double rating, String title, String review) {
-    String address = (city.isEmpty ? "" : "$city, ") + (state.isEmpty ? "" : "$state, ") + country;
+  // Review Card
+  Widget _buildReviewCard(AppLocalizations localizations, String country, String province, String city, String landlord, String property, double rating, String title, String review) {
+    final langCode = Provider.of<LocaleProvider>(context).language.code;
+    String fullAddress = CountryDataService().getFullAddress(langCode, province, city);
     return Card(
       elevation: 1,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
@@ -267,27 +267,27 @@ class _HomePageState extends State<HomePage> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 🏡 Landlord Name (Bold)
+            // Landlord Name (Bold)
             if (landlord.isNotEmpty)
               Text(
                 "${localizations.landlord}: $landlord",
                 style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
               ),
 
-            // 📍 Country & City (Smaller Font)
+            // Country & City (Smaller Font)
             Text(
-              address,
+              fullAddress,
               style: const TextStyle(fontSize: 12, color: Colors.black54),
             ),
 
-            // 🏠 Property Name
+            // Property Name
             if (property.isNotEmpty)
               Text(
                 property,
                 style: const TextStyle(fontSize: 12, color: Colors.black87, fontWeight: FontWeight.w500),
               ),
 
-            // 🏠 Review Title
+            // Review Title
             if (title.isNotEmpty)
               Text(
                 title,
@@ -295,11 +295,11 @@ class _HomePageState extends State<HomePage> {
               ),
           ],
         ),
-        // 💬 Review Title Text
-        // 💬 Review Text
+        // Review Title Text
+        // Review Text
         subtitle: Text(review, maxLines: 2, overflow: TextOverflow.ellipsis),
 
-        // ⭐ Rating Stars
+        // Rating Stars
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: List.generate(5, (index) {
@@ -310,10 +310,9 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // 🔄 How It Works Section
+  // How It Works Section
   Widget _buildHowItWorksSection(AppLocalizations localizations, BuildContext context) {
     return Container(
-      //padding: const EdgeInsets.all(16),
       color: Colors.grey.shade50,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -362,7 +361,7 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(12.0), // Ensures clickable area is large
             child: Row(
               children: [
-                // 🔵 Clickable CircleAvatar
+                // Clickable CircleAvatar
                 MouseRegion(
                   cursor: SystemMouseCursors.click, // Changes cursor on hover
                   child: Material(
@@ -380,7 +379,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 const SizedBox(width: 16), // Spacing between avatar and text
 
-                // 📄 Text Content
+                // Text Content
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

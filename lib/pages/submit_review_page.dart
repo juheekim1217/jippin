@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
+import 'package:jippin/services/review_service.dart';
 
 class SubmitReviewPage extends StatefulWidget {
   const SubmitReviewPage({super.key});
@@ -22,7 +22,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   int _ratingCondition = 0;
   int _ratingSafety = 0;
 
-  // Function to handle form submission and save review to Supabase
+  // Function to handle form submission and save review
   Future<void> _submitReview() async {
     final AppLocalizations local = AppLocalizations.of(context);
 
@@ -30,7 +30,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
       _formKey.currentState!.save(); // Save the form values
 
       try {
-        final response = await Supabase.instance.client.from('review').insert({
+        await ReviewService.createReview({
           'title': _title,
           'review': _content,
           'landlord': _landlord,
@@ -44,16 +44,10 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
         if (!mounted) return; // Ensure widget is still in the tree
 
-        if (response.error == null) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('${local.submit_review_success}: $_title')),
-          );
-          _formKey.currentState!.reset(); // Reset form after submission
-        } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('${local.submit_review_error}: ${response.error!.message}')),
-          );
-        }
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('${local.submit_review_success}: $_title')),
+        );
+        _formKey.currentState!.reset(); // Reset form after success
       } catch (e) {
         if (!mounted) return; // Prevent calling context if widget is disposed
 

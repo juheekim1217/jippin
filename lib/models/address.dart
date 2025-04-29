@@ -1,10 +1,8 @@
-import 'package:jippin/utilities/common_helper.dart';
-
 class Address {
   final String province;
   final String? city;
-  final String? province_ko;
-  final String? city_ko;
+  final String? provinceKo;
+  final String? cityKo;
   final String? street;
   final String? streetNum;
   final String? unit;
@@ -13,8 +11,8 @@ class Address {
   Address({
     required this.province,
     this.city,
-    this.province_ko,
-    this.city_ko,
+    this.provinceKo,
+    this.cityKo,
     this.street,
     this.streetNum,
     this.unit,
@@ -26,8 +24,8 @@ class Address {
     return Address(
       province: "",
       city: "",
-      province_ko: "",
-      city_ko: "",
+      provinceKo: "",
+      cityKo: "",
       street: "",
     );
   }
@@ -36,8 +34,8 @@ class Address {
   Map<String, dynamic> toJson() => {
         'province': province,
         'city': city,
-        'province_ko': province_ko,
-        'city_ko': city_ko,
+        'provinceKo': provinceKo,
+        'cityKo': cityKo,
         'street': street,
       };
 
@@ -47,36 +45,13 @@ class Address {
       return Address(
         province: json['province'] ?? "",
         city: json['city'] ?? "",
-        province_ko: json['province_ko'] ?? "",
-        city_ko: json['city_ko'] ?? "",
+        provinceKo: json['provinceKo'] ?? "",
+        cityKo: json['cityKo'] ?? "",
         street: json['street'] ?? "",
       );
     } catch (e) {
       return Address.defaultAddress(); // Fallback if parsing fails
     }
-  }
-
-  // from top nav bar: deserialize City JSON into an Address object
-  factory Address.fromMapCity(Map<String, dynamic> map, String langCode) {
-    String pKey = "s_$langCode";
-    final name = getFormattedAddress(langCode, map[pKey], map[langCode]);
-    return Address(
-      province: map["s_en"],
-      city: map["en"],
-      province_ko: map["s_ko"],
-      city_ko: map["ko"],
-    );
-  }
-
-  // from top nav bar: deserialize State JSON into an Address object
-  factory Address.fromMapState(Map<String, dynamic> map, String languageName) {
-    String provinceName = map[languageName];
-    return Address(
-      province: map["en"],
-      city: "",
-      province_ko: map["s_ko"],
-      city_ko: "",
-    );
   }
 
   Address getCurrentAddress(String langCode, bool isState, bool isCity, bool isStreet) {
@@ -93,7 +68,7 @@ class Address {
         case 'en':
           return province;
         case 'ko':
-          return province_ko!;
+          return provinceKo!;
         default:
           return province;
       }
@@ -102,10 +77,24 @@ class Address {
         case 'en':
           return city!;
         case 'ko':
-          return city_ko!;
+          return cityKo!;
         default:
           return city!;
       }
     }
+  }
+
+  /// Returns a formatted address string based on the given language code.
+  String getFullAddress(String langCode) {
+    String name = langCode == "ko" ? provinceKo ?? province : province;
+
+    if (city != null) {
+      if (langCode == "ko") {
+        name = "$provinceKo $cityKo";
+      } else {
+        name = "$city, $province";
+      }
+    }
+    return name;
   }
 }

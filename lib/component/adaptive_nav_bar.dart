@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
-
 import 'package:jippin/utilities/constants.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/models/nav_bar_item.dart';
@@ -9,7 +8,6 @@ import 'package:jippin/component/country_dropdown_search.dart';
 import 'package:jippin/component/address_autocomplete_search.dart';
 import 'package:jippin/models/language.dart';
 import 'package:jippin/models/address.dart';
-
 import 'package:go_router/go_router.dart';
 
 class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
@@ -38,16 +36,6 @@ class AdaptiveNavBar extends StatefulWidget implements PreferredSizeWidget {
 }
 
 class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
-  // final TextEditingController searchController = TextEditingController();
-  // final FocusNode searchFocusNode = FocusNode(); // ✅ Added for better focus handling
-
-  // @override
-  // void dispose() {
-  //   searchController.dispose(); // ✅ Prevent memory leaks
-  //   searchFocusNode.dispose(); // ✅ Properly dispose of the focus node
-  //   super.dispose();
-  // }
-
   @override
   Widget build(BuildContext context) {
     final localeProvider = Provider.of<LocaleProvider>(context);
@@ -106,10 +94,10 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
 
   Widget _buildCountryDropdown(localeProvider, String initialCountryName) {
     return ConstrainedBox(
-      constraints: BoxConstraints(minWidth: 120), // ✅ Set minimum width
+      constraints: BoxConstraints(minWidth: 120), // Set minimum width
       child: SizedBox(
         height: 32,
-        width: widget.screenWidth * 0.12, // ✅ Dynamic max width
+        width: widget.screenWidth * 0.12, // Dynamic max width
         child: _buildCountryDropdownSearch(localeProvider, initialCountryName),
       ),
     );
@@ -117,8 +105,8 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
 
   Widget _buildCountryDropdownButton(localeProvider, Locale currentLocale, Color navbarBackgroundColor, String initialCountryName) {
     return IconButton(
-      padding: EdgeInsets.zero, // ✅ Removes default padding
-      constraints: BoxConstraints(), // ✅ Prevents extra space
+      padding: EdgeInsets.zero, // Removes default padding
+      constraints: BoxConstraints(), // Prevents extra space
       icon: Icon(Icons.location_on, color: Colors.grey),
       onPressed: () {
         showDialog(
@@ -131,7 +119,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                 TextButton(
                   onPressed: () {
                     if (mounted) {
-                      Navigator.pop(context); // ✅ Safely closes the dialog
+                      Navigator.pop(context); // Safely closes the dialog
                     }
                   },
                   child: Text(AppLocalizations.of(context).close),
@@ -140,7 +128,6 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
             );
           },
         );
-        //_showCountryDialog(context, localeProvider, currentLocale, navbarBackgroundColor);
       },
     );
   }
@@ -161,7 +148,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
   // AutoComplete searchbar
   Widget _buildSearchBar(localeProvider) {
     return ConstrainedBox(
-      constraints: BoxConstraints(minWidth: 220), // ✅ Set minimum width
+      constraints: BoxConstraints(minWidth: 220), // Set minimum width
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
         child: SizedBox(
@@ -170,7 +157,6 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
           child: AddressAutocompleteField(
             localeProvider: localeProvider,
             onChangedAddress: (Address address) {
-              //FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
               widget.onSearch(address);
             },
           ), // Only the address search field
@@ -191,10 +177,10 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
               content: AddressAutocompleteField(
                 localeProvider: localeProvider,
                 onChangedAddress: (Address address) {
-                  FocusScope.of(context).unfocus(); // ✅ Ensure keyboard closes
+                  FocusScope.of(context).unfocus(); // Ensure keyboard closes
                   widget.onSearch(address);
                   if (mounted) {
-                    Navigator.pop(context); // ✅ Safely closes the dialog
+                    Navigator.pop(context); // Safely closes the dialog
                   }
                 },
               ), // Only the address search field,
@@ -202,7 +188,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
                 TextButton(
                   onPressed: () {
                     if (mounted) {
-                      Navigator.pop(context); // ✅ Safely closes the dialog
+                      Navigator.pop(context); // Safely closes the dialog
                     }
                   },
                   child: Text(AppLocalizations.of(context).close),
@@ -222,7 +208,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         onPressed: widget.onSubmitReview,
         style: ElevatedButton.styleFrom(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0), // Reduce internal padding
-          backgroundColor: Colors.blueGrey, //Colors.grey[200], // Light gray background
+          backgroundColor: Colors.blueGrey,
           elevation: 0, // Remove button shadow for a flat look
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24.0), // More rounded corners

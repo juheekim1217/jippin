@@ -55,7 +55,7 @@ class _AddressLinkState extends State<AddressLink> {
           // State search query
           if (query.qAddress.province.isNotEmpty)
             WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+              alignment: PlaceholderAlignment.baseline, // Aligns with text
               baseline: TextBaseline.alphabetic,
               child: Text(
                 " / ",
@@ -81,7 +81,7 @@ class _AddressLinkState extends State<AddressLink> {
                       context.go('/reviews?qA=$encodedAddress');
                     },
                     child: Text(
-                      query.qProvince,
+                      query.qAddress.province,
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -97,7 +97,7 @@ class _AddressLinkState extends State<AddressLink> {
           // City search query
           if (query.qAddress.city != null && query.qAddress.city!.isNotEmpty)
             WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+              alignment: PlaceholderAlignment.baseline, // Aligns with text
               baseline: TextBaseline.alphabetic,
               child: Text(
                 ", ",
@@ -138,7 +138,7 @@ class _AddressLinkState extends State<AddressLink> {
           // street search query
           if (query.qAddress.street != null && query.qAddress.street!.isNotEmpty)
             WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // ✅ Aligns with text
+              alignment: PlaceholderAlignment.baseline, // Aligns with text
               baseline: TextBaseline.alphabetic,
               child: Text(
                 ", ",

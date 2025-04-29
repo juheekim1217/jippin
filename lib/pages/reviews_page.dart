@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:jippin/pages/reviews/reviews_section.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:jippin/models/address.dart';
 import 'package:jippin/utilities/common_helper.dart';
 import 'package:jippin/pages/reviews/overall_rating_card.dart';
+import 'package:jippin/services/review_service.dart';
 
 class ReviewsPage extends StatefulWidget {
   final String defaultCountryCode;
@@ -31,7 +31,6 @@ class ReviewsPage extends StatefulWidget {
 }
 
 class _ReviewsPageState extends State<ReviewsPage> {
-  final supabase = Supabase.instance.client;
   List<Map<String, dynamic>> allReviews = [];
   List<Map<String, dynamic>> filteredReviews = [];
   bool isLoading = true;
@@ -59,11 +58,9 @@ class _ReviewsPageState extends State<ReviewsPage> {
   // Fetch reviews from Supabase by Selected Country
   Future<void> _fetchAllReviews() async {
     try {
-      final response = await supabase
-          .from('review')
-          .select('*') // ✅ Fetch all columns, or specify only required ones
-          .eq('country_code', widget.defaultCountryCode)
-          .order('created_at', ascending: false);
+      final response = await ReviewService.fetchAllReviews(
+        countryCode: widget.defaultCountryCode,
+      );
       debugPrint("_fetchAllReviews ${response.length}");
 
       if (response.isEmpty) {
@@ -93,7 +90,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
   void _applySearchFilter() {
     setState(() {
       // Filtering Address
-      final String province = widget.qAddress.province ?? "";
+      final String province = widget.qAddress.province;
       final String city = widget.qAddress.city ?? "";
       final String street = widget.qAddress.street ?? "";
       filteredReviews = allReviews.where((review) {

@@ -7,9 +7,8 @@ class ReviewQueryProvider with ChangeNotifier {
   String qProperty = '';
   String qRealtor = '';
   Address qAddress = Address.defaultAddress();
+
   String qCountry = '';
-  String qProvince = '';
-  String qCity = '';
 
   void setQuery({String? landlord, String? property, String? realtor, Address? address}) {
     qLandlord = landlord ?? '';
@@ -26,7 +25,6 @@ class ReviewQueryProvider with ChangeNotifier {
     String? qRealtor,
     Address? qAddress,
     String? qCountry,
-    String? qProvince,
   }) {
     this.qDetail = qDetail ?? this.qDetail;
     this.qLandlord = qLandlord ?? this.qLandlord;
@@ -34,7 +32,6 @@ class ReviewQueryProvider with ChangeNotifier {
     this.qRealtor = qRealtor ?? this.qRealtor;
     this.qAddress = qAddress ?? this.qAddress;
     this.qCountry = qCountry ?? this.qCountry;
-    this.qProvince = qProvince ?? this.qProvince;
     notifyListeners();
   }
 }

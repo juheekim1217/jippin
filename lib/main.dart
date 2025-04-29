@@ -6,15 +6,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:jippin/theme/theme.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/models/language.dart';
-
 import 'package:jippin/router.dart';
 import 'package:flutter/gestures.dart';
-
-import 'package:jippin/services/country_data_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -71,7 +67,7 @@ class _MyAppState extends State<MyApp> {
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       theme: materialTheme.lightHighContrast(),
       darkTheme: materialTheme.darkHighContrast(),
-      routerConfig: createRouter(localeProvider), // ✅ Use the external router function
+      routerConfig: createRouter(localeProvider), // Use the external router function
     );
   }
 }

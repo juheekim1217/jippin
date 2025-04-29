@@ -37,7 +37,7 @@ class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
         hoverColor: Colors.transparent,
       ),
       child: Tooltip(
-        message: getCountry(widget.initialCountryName).getCountryName(widget.localeProvider.locale.languageCode), // ✅ Tooltip shows selected country name
+        message: getCountry(widget.initialCountryName).getCountryName(widget.localeProvider.locale.languageCode), // Tooltip shows selected country name
         waitDuration: const Duration(milliseconds: 500), // Optional: Delay before showing
         child: DropdownSearch<Country>(
           //mode: Mode.custom,

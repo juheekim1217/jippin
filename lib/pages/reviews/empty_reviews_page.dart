@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
-import 'package:jippin/pages/reviews/address_link.dart';
 import 'package:go_router/go_router.dart';
 import 'package:jippin/models/address.dart';
 
@@ -26,8 +25,6 @@ class EmptyReviewsPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          //AddressLink(),
-          //const SizedBox(height: 12),
           const Icon(Icons.rate_review, size: 64, color: Colors.grey),
           const SizedBox(height: 12),
           Text(

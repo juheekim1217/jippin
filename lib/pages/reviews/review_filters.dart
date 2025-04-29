@@ -1,15 +1,14 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+
 import 'package:jippin/models/address.dart';
 import 'package:jippin/models/province.dart';
 import 'package:jippin/models/city.dart';
-import 'package:go_router/go_router.dart';
 import 'package:jippin/utilities/common_helper.dart';
-import 'package:provider/provider.dart';
 import 'package:jippin/providers/review_query_provider.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
+import 'package:jippin/services/country_data_service.dart';
 
 class ReviewFilters extends StatefulWidget {
   final dynamic localeProvider;
@@ -34,19 +33,13 @@ class _ReviewFiltersState extends State<ReviewFilters> {
   String? selectedProperty;
   String? selectedRealtor;
 
-  List<Map<String, dynamic>> states = [];
-  List<Map<String, dynamic>> cities = [];
-  List<Province> stateList = [];
+  List<Province> provinceList = CountryDataService().provinceMap.values.toList();
   List<City> cityList = [];
 
   late final TextEditingController streetController;
   late final TextEditingController landlordController;
   late final TextEditingController propertyController;
   late final TextEditingController realtorController;
-
-  List<String> getDistinctValues(String key) {
-    return widget.reviews.map((review) => review[key]).whereType<String>().toSet().toList()..sort();
-  }
 
   @override
   void initState() {
@@ -56,45 +49,8 @@ class _ReviewFiltersState extends State<ReviewFilters> {
     landlordController = TextEditingController();
     propertyController = TextEditingController();
     realtorController = TextEditingController();
-    _loadStateCities(widget.localeProvider.country.code).then((_) {
-      final query = context.read<ReviewQueryProvider>();
-      final address = query.qAddress;
 
-      setState(() {
-        selectedStreet = address.street;
-        selectedLandlord = query.qLandlord;
-        selectedProperty = query.qProperty;
-        selectedRealtor = query.qRealtor;
-
-        // Set controller values
-        streetController.text = selectedStreet ?? '';
-        landlordController.text = selectedLandlord ?? '';
-        propertyController.text = selectedProperty ?? '';
-        realtorController.text = selectedRealtor ?? '';
-
-        if (selectedProvince != null) {
-          final langCode = widget.localeProvider.language.code;
-          final stateData = states.firstWhere(
-            (state) => state[langCode] == selectedProvince,
-            orElse: () => {},
-          );
-          //final filteredCities = List<Map<String, dynamic>>.from(stateData["cities"] ?? []);
-          final Map<String, dynamic> citiesMap = stateData["cities"];
-          final filteredCities = citiesMap.values.map((s) => s as Map<String, dynamic>).toList();
-          //cityList = filteredCities.map((city) => city[langCode] as String).toList();
-          // Convert city entries to a list of City objects
-          cityList = citiesMap.entries
-              .where((entry) => entry.value["s_$langCode"] == selectedProvince)
-              .map((entry) => City(
-                    nameEn: entry.value["en"] ?? '',
-                    nameKo: entry.value["ko"] ?? '',
-                    stateEn: entry.value["s_en"] ?? '',
-                    stateKo: entry.value["s_ko"] ?? '',
-                  ))
-              .toList();
-        }
-      });
-    });
+    _initializeFilters();
   }
 
   @override
@@ -106,42 +62,51 @@ class _ReviewFiltersState extends State<ReviewFilters> {
     super.dispose();
   }
 
-  /// Loads state and city data based on localeProvider
-  Future<void> _loadStateCities(String countryCode) async {
-    try {
-      debugPrint("loadcities $countryCode");
-      final String jsonString = await rootBundle.loadString('assets/json/country/$countryCode.json');
-      final Map<String, dynamic> jsonData = json.decode(jsonString);
-      //final Map<String, dynamic> statesMap = jsonData["states"];
-      // setState(() {
-      //   states = statesMap.values.map((s) => s as Map<String, dynamic>).toList();
-      //   final langCode = widget.localeProvider.language.code;
-      //   stateList = states.map((state) => state[langCode] as String).toList();
-      // });
+  // set selected values to each filters after search
+  Future<void> _initializeFilters() async {
+    if (!mounted) return;
 
-      final statesMap = jsonData["states"] as Map<String, dynamic>;
-      stateList = statesMap.entries.map((entry) {
-        final data = entry.value;
-        return Province(
-          nameEn: data["en"] ?? '',
-          nameKo: data["ko"] ?? '',
-          type: data["type"] ?? '',
-          cities: data["cities"] ?? {},
+    final query = context.read<ReviewQueryProvider>();
+    final address = query.qAddress;
+
+    setState(() {
+      selectedStreet = address.street;
+      selectedLandlord = query.qLandlord;
+      selectedProperty = query.qProperty;
+      selectedRealtor = query.qRealtor;
+
+      streetController.text = selectedStreet ?? '';
+      landlordController.text = selectedLandlord ?? '';
+      propertyController.text = selectedProperty ?? '';
+      realtorController.text = selectedRealtor ?? '';
+
+      // ✅ Set selectedProvince
+      if (address.province.isNotEmpty) {
+        selectedProvince = provinceList.firstWhere(
+          (p) => p.en == address.province,
+          //orElse: () => provinceList.first,
         );
-      }).toList();
-    } catch (e) {
-      debugPrint("Error loading cities: $e");
-    }
+        cityList = selectedProvince?.cityMap.values.toList() ?? [];
+      }
+
+      // ✅ Set selectedCity
+      if (address.city!.isNotEmpty) {
+        selectedCity = cityList.firstWhere(
+          (c) => c.en == address.city,
+          //orElse: () => null,
+        );
+      }
+    });
   }
 
   void _onSearch() {
     final query = context.read<ReviewQueryProvider>();
 
     final address = Address(
-      province: selectedProvince!.nameEn,
-      city: selectedCity?.nameEn,
-      province_ko: selectedProvince?.nameKo,
-      city_ko: selectedCity?.nameKo,
+      province: selectedProvince?.en ?? '',
+      city: selectedCity?.en,
+      provinceKo: selectedProvince?.ko,
+      cityKo: selectedCity?.ko,
       street: selectedStreet,
     );
 
@@ -161,7 +126,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
 
   @override
   Widget build(BuildContext context) {
-    //final query = context.watch<ReviewQueryProvider>();
+    final local = AppLocalizations.of(context);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -170,52 +135,19 @@ class _ReviewFiltersState extends State<ReviewFilters> {
           spacing: 12,
           runSpacing: 12,
           children: [
-            // _buildFilterDropdown(AppLocalizations.of(context).state, selectedState, stateList, (val) {
-            //   setState(() {
-            //     final langCode = widget.localeProvider.language.code;
-            //     selectedState = val;
-            //     selectedCity = null;
-            //
-            //     if (val != null) {
-            //       // Find the state object
-            //       final stateData = states.firstWhere(
-            //         (state) => state[langCode] == val,
-            //         orElse: () => {},
-            //       );
-            //       final Map<String, dynamic> citiesMap = stateData["cities"];
-            //       final filteredCities = citiesMap.values.map((s) => s as Map<String, dynamic>).toList();
-            //       //cityList = filteredCities.map((city) => city[langCode] as String).toList();
-            //
-            //       cityList = citiesMap.entries
-            //           .where((entry) => entry.value["s_$langCode"] == selectedState)
-            //           .map((entry) => City(
-            //                 nameEn: entry.value["en"] ?? '',
-            //                 nameKo: entry.value["ko"] ?? '',
-            //                 stateEn: entry.value["s_en"] ?? '',
-            //                 stateKo: entry.value["s_ko"] ?? '',
-            //               ))
-            //           .toList();
-            //     } else {
-            //       cityList.clear();
-            //     }
-            //   });
-            // }),
-            //_buildFilterDropdown(AppLocalizations.of(context).city, selectedCity as String?, cityList.cast<String>(), (val) => setState(() => selectedCity = val as City?)),
-            _buildStateDropdown(AppLocalizations.of(context).state),
-            _buildCityDropdown(AppLocalizations.of(context).city),
-            _buildTextInput(AppLocalizations.of(context).street, streetController, (val) => setState(() => selectedStreet = val)),
-
-            // Now text inputs
-            _buildTextInput(AppLocalizations.of(context).landlord, landlordController, (val) => setState(() => selectedLandlord = val)),
-            _buildTextInput(AppLocalizations.of(context).property, propertyController, (val) => setState(() => selectedProperty = val)),
-            _buildTextInput(AppLocalizations.of(context).realtor, realtorController, (val) => setState(() => selectedRealtor = val)),
+            _buildStateDropdown(local.state),
+            _buildCityDropdown(local.city),
+            _buildTextInput(local.street, streetController, (val) => setState(() => selectedStreet = val)),
+            _buildTextInput(local.landlord, landlordController, (val) => setState(() => selectedLandlord = val)),
+            _buildTextInput(local.property, propertyController, (val) => setState(() => selectedProperty = val)),
+            _buildTextInput(local.realtor, realtorController, (val) => setState(() => selectedRealtor = val)),
           ],
         ),
         const SizedBox(height: 16),
         ElevatedButton.icon(
           onPressed: _onSearch,
           icon: const Icon(Icons.search),
-          label: Text(AppLocalizations.of(context).search),
+          label: Text(local.search),
           style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -225,60 +157,8 @@ class _ReviewFiltersState extends State<ReviewFilters> {
     );
   }
 
-  Widget _buildFilterDropdown(
-    String label,
-    String? selectedValue,
-    List<String> items,
-    ValueChanged<String?> onChanged,
-  ) {
-    //final safeValue = items.contains(selectedValue) ? selectedValue : null;
-
-    return SizedBox(
-        width: 160,
-        // child: DropdownButtonFormField<String>(
-        //   isExpanded: true,
-        //   value: safeValue,
-        //   decoration: InputDecoration(
-        //     labelText: label,
-        //     contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        //     border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-        //   ),
-        //   items: [null, ...items].map((val) {
-        //     return DropdownMenuItem(
-        //       value: val,
-        //       child: Text(val ?? AppLocalizations.of(context).all, overflow: TextOverflow.ellipsis),
-        //     );
-        //   }).toList(),
-        //   onChanged: onChanged,
-        // ),
-        child: DropdownButtonFormField<City>(
-          isExpanded: true,
-          value: selectedCity,
-          decoration: InputDecoration(
-            labelText: label,
-            contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-          ),
-          items: [null, ...cityList].map((city) {
-            return DropdownMenuItem<City>(
-              value: city,
-              child: Text(
-                city?.getName(widget.localeProvider.language.code) ?? AppLocalizations.of(context).all,
-                overflow: TextOverflow.ellipsis,
-              ),
-            );
-          }).toList(),
-          onChanged: (City? newCity) {
-            setState(() {
-              selectedCity = newCity;
-            });
-          },
-        ));
-  }
-
   Widget _buildStateDropdown(String label) {
     final langCode = widget.localeProvider.language.code;
-
     return SizedBox(
       width: 160,
       child: DropdownButtonFormField<Province>(
@@ -289,11 +169,11 @@ class _ReviewFiltersState extends State<ReviewFilters> {
           contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
         ),
-        items: [null, ...stateList].map((state) {
+        items: [null, ...provinceList].map((province) {
           return DropdownMenuItem<Province>(
-            value: state,
+            value: province,
             child: Text(
-              state?.getName(langCode) ?? AppLocalizations.of(context).all,
+              province?.getName(langCode) ?? AppLocalizations.of(context).all,
               overflow: TextOverflow.ellipsis,
             ),
           );
@@ -303,15 +183,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
             selectedProvince = selected;
             selectedCity = null;
 
-            final citiesMap = selected?.cities ?? {};
-            cityList = citiesMap.entries
-                .map((entry) => City(
-                      nameEn: entry.value["en"] ?? '',
-                      nameKo: entry.value["ko"] ?? '',
-                      stateEn: selected?.nameEn ?? '',
-                      stateKo: selected?.nameKo ?? '',
-                    ))
-                .toList();
+            cityList = selected!.cityMap.values.toList();
           });
         },
       ),
@@ -320,7 +192,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
 
   Widget _buildCityDropdown(String label) {
     final langCode = widget.localeProvider.language.code;
-
     return SizedBox(
       width: 160,
       child: DropdownButtonFormField<City>(
@@ -359,7 +230,7 @@ class _ReviewFiltersState extends State<ReviewFilters> {
       child: TextFormField(
         controller: controller,
         onChanged: onChanged,
-        onFieldSubmitted: (_) => _onSearch(), // 👈 triggers search on Enter
+        onFieldSubmitted: (_) => _onSearch(),
         decoration: InputDecoration(
           labelText: label,
           contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),

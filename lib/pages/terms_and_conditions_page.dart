@@ -35,7 +35,7 @@ class TermsAndConditionsPage extends StatelessWidget {
             _buildSectionTitle(AppLocalizations.of(context).terms_contactTitle),
             _buildParagraph(AppLocalizations.of(context).terms_contactDescription),
 
-            // 📌 Footer (Not Sticky, Appears After All Content)
+            // Footer (Not Sticky, Appears After All Content)
             const AppFooter(),
           ],
         ),

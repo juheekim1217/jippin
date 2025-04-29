@@ -48,7 +48,7 @@ class AboutPage extends StatelessWidget {
             const SizedBox(height: 30),
             _buildContributionMessage(local.about_contribute_message),
 
-            // 📌 Footer (Not Sticky, Appears After All Content)
+            // Footer (Not Sticky, Appears After All Content)
             const SizedBox(height: 30),
             const AppFooter(),
           ],

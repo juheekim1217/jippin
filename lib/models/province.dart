@@ -1,24 +1,33 @@
+import 'package:jippin/models/city.dart';
+
 class Province {
-  final String nameEn;
-  final String nameKo;
+  final String en;
+  final String ko;
   final String type;
   final Map<String, dynamic> cities;
+  final Map<String, City> cityMap;
 
   Province({
-    required this.nameEn,
-    required this.nameKo,
+    required this.en,
+    required this.ko,
     required this.type,
     required this.cities,
-  });
+  }) : cityMap = {
+          for (var entry in cities.entries)
+            entry.key: City(
+              en: entry.value['en'] ?? '',
+              ko: entry.value['ko'] ?? '',
+            )
+        };
 
-  String getName(String langCode) => langCode == 'ko' ? nameKo : nameEn;
+  String getName(String langCode) => langCode == 'ko' ? ko : en;
 
   @override
-  String toString() => nameEn;
+  String toString() => en;
 
   @override
-  bool operator ==(Object other) => identical(this, other) || other is Province && runtimeType == other.runtimeType && nameEn == other.nameEn;
+  bool operator ==(Object other) => identical(this, other) || other is Province && runtimeType == other.runtimeType && en == other.en;
 
   @override
-  int get hashCode => nameEn.hashCode;
+  int get hashCode => en.hashCode;
 }

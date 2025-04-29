@@ -6,17 +6,14 @@ import 'package:jippin/models/nav_bar_item.dart';
 import 'package:jippin/component/adaptive_nav_bar.dart';
 import 'package:jippin/utilities/constants.dart';
 import 'package:jippin/models/address.dart';
-
 import 'package:go_router/go_router.dart';
-import 'dart:convert'; // Required for router JSON encoding
+import 'dart:convert';
 
 class MainNavigation extends StatefulWidget {
-  //final int currentIndex;
   final dynamic localeProvider;
 
   final Widget child;
 
-  //const MainNavigation({super.key, required this.currentIndex, required this.localeProvider});
   const MainNavigation({super.key, required this.localeProvider, required this.child});
 
   @override
@@ -104,11 +101,10 @@ class _MainNavigationState extends State<MainNavigation> {
               onSubmitReview: () => context.go('/submit'),
               onSearch: (query) => _filterReviews(query),
             ),
-      body: widget.child, //_pages[_currentIndex],
+      body: widget.child,
       bottomNavigationBar: isAndroid
           ? BottomNavigationBar(
               currentIndex: _currentIndex,
-              //onTap: _navigateTo,
               onTap: (index) {
                 if (index == 0) context.go('/');
                 if (index == 1) context.go('/reviews');

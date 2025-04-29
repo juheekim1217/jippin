@@ -38,7 +38,7 @@ class _ReviewsSectionState extends State<ReviewsSection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // 📌 **Reviews Section Header**
+        // **Reviews Section Header**
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 8.0),
           child: Row(
@@ -94,7 +94,7 @@ class _ReviewsSectionState extends State<ReviewsSection> {
         ),
         const SizedBox(height: 16),
 
-        // 📌 **Handle Empty Reviews**
+        // **Handle Empty Reviews**
         if (widget.reviews.isEmpty)
           EmptyReviewsPage(
             qCountry: widget.qCountry,
@@ -102,7 +102,7 @@ class _ReviewsSectionState extends State<ReviewsSection> {
             qAddress: widget.qAddress,
           ), //buildEmptyReviewsPage(context),
 
-        // 📌 **Reviews List**
+        // **Reviews List**
         if (widget.reviews.isNotEmpty)
           ListView.builder(
             shrinkWrap: true,
