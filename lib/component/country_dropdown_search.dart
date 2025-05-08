@@ -23,7 +23,6 @@ class _CountryDropdownSearchState extends State<CountryDropdownSearch> {
 
   void _onChanged(Country? data, String name) {
     if (data != null) {
-      debugPrint('onSelected $name');
       widget.onChanged(data.code, name);
     }
   }

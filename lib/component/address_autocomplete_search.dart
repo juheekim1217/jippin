@@ -43,7 +43,6 @@ class _AddressAutocompleteFieldState extends State<AddressAutocompleteField> {
         displayStringForOption: (Address address) => address.getFullAddress(langCode),
         // Tab key pressed
         onSelected: (Address selection) {
-          debugPrint('onSelected $selection');
           widget.onChangedAddress(selection);
         },
         moveFocusNext: false,

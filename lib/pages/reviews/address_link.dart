@@ -14,273 +14,117 @@ class AddressLink extends StatefulWidget {
 }
 
 class _AddressLinkState extends State<AddressLink> {
-  String? selectedSort;
+  WidgetSpan _linkSpan(String label, VoidCallback onTap) {
+    return WidgetSpan(
+      alignment: PlaceholderAlignment.baseline,
+      baseline: TextBaseline.alphabetic,
+      child: SelectionContainer.disabled(
+        child: MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: () => WidgetsBinding.instance.addPostFrameCallback((_) => onTap()),
+            child: Text(
+              label,
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.blueAccent,
+                decoration: TextDecoration.none,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  WidgetSpan _separatorSpan(String symbol) {
+    return WidgetSpan(
+      alignment: PlaceholderAlignment.baseline,
+      baseline: TextBaseline.alphabetic,
+      child: Text(
+        symbol,
+        style: const TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+          color: Colors.blueGrey,
+        ),
+      ),
+    );
+  }
+
+  String _safe(String? value) => Uri.encodeComponent(value ?? '');
 
   @override
   Widget build(BuildContext context) {
     final query = context.watch<ReviewQueryProvider>();
     final localeProvider = Provider.of<LocaleProvider>(context);
     final langCode = localeProvider.language.code;
-    return RichText(
-      text: TextSpan(
-        children: [
-          // Country search query
-          WidgetSpan(
-            alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-            baseline: TextBaseline.alphabetic,
-            child: SelectionContainer.disabled(
-              child: MouseRegion(
-                cursor: SystemMouseCursors.click,
-                child: GestureDetector(
-                  onTap: () {
-                    // Convert Address object to JSON string and encode it for the URL
-                    final address = Address.defaultAddress(); // empty address
-                    final encodedAddress = encodeAddressUri(address);
-                    context.go('/reviews?qA=$encodedAddress');
-                  },
-                  child: Text(
-                    query.qCountry,
-                    style: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blueAccent,
-                      decoration: TextDecoration.none,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
+    final address = query.qAddress;
 
-          // State search query
-          if (query.qAddress.province.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Aligns with text
-              baseline: TextBaseline.alphabetic,
-              child: Text(
-                " / ",
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blueGrey,
-                ),
-              ),
-            ),
+    final List<InlineSpan> spans = [];
 
-          if (query.qAddress.province.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-              baseline: TextBaseline.alphabetic,
-              child: SelectionContainer.disabled(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      // Convert Address object to JSON string and encode it for the URL
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(langCode, true, false, false));
-                      context.go('/reviews?qA=$encodedAddress');
-                    },
-                    child: Text(
-                      query.qAddress.province,
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
-                        decoration: TextDecoration.none,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+    // Country
+    spans.add(_linkSpan(query.qCountry, () {
+      final encoded = encodeAddressUri(Address.defaultAddress());
+      context.go('/reviews?qA=$encoded');
+    }));
 
-          // City search query
-          if (query.qAddress.city != null && query.qAddress.city!.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Aligns with text
-              baseline: TextBaseline.alphabetic,
-              child: Text(
-                ", ",
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blueGrey,
-                ),
-              ),
-            ),
+    // Province
+    if (address.province.isNotEmpty) {
+      spans.add(_separatorSpan(" / "));
+      spans.add(_linkSpan(address.province, () {
+        final encoded = encodeAddressUri(address.getCurrentAddress(langCode, true, false, false));
+        context.go('/reviews?qA=$encoded');
+      }));
+    }
 
-          if (query.qAddress.city != null && query.qAddress.city!.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-              baseline: TextBaseline.alphabetic,
-              child: SelectionContainer.disabled(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(langCode, true, true, false));
-                      context.go('/reviews?qA=$encodedAddress');
-                    },
-                    child: Text(
-                      query.qAddress.city!,
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
-                        decoration: TextDecoration.none,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+    // City
+    if (address.city?.isNotEmpty == true) {
+      spans.add(_separatorSpan(", "));
+      spans.add(_linkSpan(address.city!, () {
+        final encoded = encodeAddressUri(address.getCurrentAddress(langCode, true, true, false));
+        context.go('/reviews?qA=$encoded');
+      }));
+    }
 
-          // street search query
-          if (query.qAddress.street != null && query.qAddress.street!.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Aligns with text
-              baseline: TextBaseline.alphabetic,
-              child: Text(
-                ", ",
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blueGrey,
-                ),
-              ),
-            ),
+    // Street
+    if (address.street?.isNotEmpty == true) {
+      spans.add(_separatorSpan(", "));
+      spans.add(_linkSpan(address.street!, () {
+        final encoded = encodeAddressUri(address.getCurrentAddress(langCode, true, true, true));
+        context.go('/reviews?qA=$encoded');
+      }));
+    }
 
-          if (query.qAddress.street != null && query.qAddress.street!.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-              baseline: TextBaseline.alphabetic,
-              child: SelectionContainer.disabled(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      final encodedAddress = encodeAddressUri(query.qAddress.getCurrentAddress(langCode, true, true, true));
-                      context.go('/reviews?qA=$encodedAddress');
-                    },
-                    child: Text(
-                      query.qAddress.street!,
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
-                        decoration: TextDecoration.none,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+    // Landlord
+    if (query.qLandlord.isNotEmpty) {
+      spans.add(_linkSpan(' [${query.qLandlord}]', () {
+        context.go('/reviews?qL=${_safe(query.qLandlord)}');
+      }));
+    }
 
-          // Landlord search query
-          if (query.qLandlord.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-              baseline: TextBaseline.alphabetic,
-              child: SelectionContainer.disabled(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      context.go('/reviews?qL=${query.qLandlord}');
-                    },
-                    child: Text(
-                      ' [${query.qLandlord}]',
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
-                        decoration: TextDecoration.none,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+    // Property
+    if (query.qProperty.isNotEmpty) {
+      spans.add(_linkSpan(' [${query.qProperty}]', () {
+        context.go('/reviews?qP=${_safe(query.qProperty)}');
+      }));
+    }
 
-          // Property
-          if (query.qProperty.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-              baseline: TextBaseline.alphabetic,
-              child: SelectionContainer.disabled(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      context.go('/reviews?qP=${query.qProperty}');
-                    },
-                    child: Text(
-                      ' [${query.qProperty}]',
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
-                        decoration: TextDecoration.none,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+    // Realtor
+    if (query.qRealtor.isNotEmpty) {
+      spans.add(_linkSpan(' [${query.qRealtor}]', () {
+        context.go('/reviews?qR=${_safe(query.qRealtor)}');
+      }));
+    }
 
-          // Realtor
-          if (query.qRealtor.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-              baseline: TextBaseline.alphabetic,
-              child: SelectionContainer.disabled(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      context.go('/reviews?qR=${query.qRealtor}');
-                    },
-                    child: Text(
-                      ' [${query.qRealtor}]',
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
-                        decoration: TextDecoration.none,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+    // Detail
+    if (query.qDetail.isNotEmpty) {
+      spans.add(_linkSpan(' [${query.qDetail}]', () {
+        context.go('/reviews?qD=${_safe(query.qDetail)}');
+      }));
+    }
 
-          // Detail search query
-          if (query.qDetail.isNotEmpty)
-            WidgetSpan(
-              alignment: PlaceholderAlignment.baseline, // Ensures proper alignment
-              baseline: TextBaseline.alphabetic,
-              child: SelectionContainer.disabled(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      context.go('/reviews?qD=${query.qDetail}');
-                    },
-                    child: Text(
-                      ' [${query.qDetail}]',
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
-                        decoration: TextDecoration.none,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-        ],
-      ),
-    );
+    return RichText(text: TextSpan(children: spans));
   }
 }

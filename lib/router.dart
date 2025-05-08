@@ -46,18 +46,18 @@ GoRouter createRouter(LocaleProvider localeProvider) {
               // Get the localeProvider
               final localeProvider = context.read<LocaleProvider>();
 
-              // Update the ReviewQueryModel provider
-              final queryModel = context.read<ReviewQueryProvider>();
-              queryModel.updateQuery(
-                qDetail: qDetails,
-                qLandlord: qLandlord,
-                qProperty: qProperty,
-                qRealtor: qRealtor,
-                qAddress: qAddress,
-                qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
-                //qProvince: queryModel.qAddress.getName(localeProvider.locale.languageCode, "Province"),
-                //qCity: queryModel.getCityName(localeProvider.locale.languageCode),
-              );
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                final queryModel = context.read<ReviewQueryProvider>();
+                queryModel.updateQuery(
+                  qDetail: qDetails,
+                  qLandlord: qLandlord,
+                  qProperty: qProperty,
+                  qRealtor: qRealtor,
+                  qAddress: qAddress,
+                  qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
+                );
+              });
+
               return ReviewsPage(
                 key: ValueKey(Object.hash(qDetails, qLandlord, qProperty, qRealtor, qAddressStr, localeProvider.country.code, localeProvider.country.getCountryName(localeProvider.locale.languageCode).hashCode)),
                 // Includes all params to force rebuild. Generates a unique but shorter key

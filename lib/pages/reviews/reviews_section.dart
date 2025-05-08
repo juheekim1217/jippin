@@ -27,6 +27,29 @@ class ReviewsSection extends StatefulWidget {
 class _ReviewsSectionState extends State<ReviewsSection> {
   String? selectedSort;
 
+  // review card list pagination
+  int _currentPage = 0;
+  final int _itemsPerPage = 10;
+
+  List<Map<String, dynamic>> get _pagedReviews {
+    final start = _currentPage * _itemsPerPage;
+    final end = (start + _itemsPerPage).clamp(0, widget.reviews.length);
+    return widget.reviews.sublist(start, end);
+  }
+
+  List<int> get _visiblePageNumbers {
+    const windowSize = 5;
+    final totalPages = (widget.reviews.length / _itemsPerPage).ceil();
+
+    if (totalPages == 0) return [];
+
+    final maxStart = (totalPages - windowSize).clamp(0, totalPages);
+    int start = (_currentPage - (windowSize ~/ 2)).clamp(0, maxStart);
+    int end = (start + windowSize).clamp(0, totalPages);
+
+    return List.generate(end - start, (i) => start + i);
+  }
+
   @override
   Widget build(BuildContext context) {
     final Map<String, String> sortOptions = {
@@ -100,19 +123,106 @@ class _ReviewsSectionState extends State<ReviewsSection> {
             qCountry: widget.qCountry,
             qLandlord: widget.qLandlord,
             qAddress: widget.qAddress,
-          ), //buildEmptyReviewsPage(context),
+          ),
 
         // **Reviews List**
-        if (widget.reviews.isNotEmpty)
+        // if (widget.reviews.isNotEmpty)
+        //   ListView.builder(
+        //     shrinkWrap: true,
+        //     physics: const NeverScrollableScrollPhysics(),
+        //     itemCount: widget.reviews.length,
+        //     itemBuilder: (context, index) {
+        //       final review = widget.reviews[index];
+        //       return ReviewCard(review: review);
+        //     },
+        //   ),
+        // **Reviews List**
+        if (widget.reviews.isNotEmpty) ...[
           ListView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
-            itemCount: widget.reviews.length,
+            itemCount: _pagedReviews.length,
             itemBuilder: (context, index) {
-              final review = widget.reviews[index];
+              final review = _pagedReviews[index];
               return ReviewCard(review: review);
             },
           ),
+          const SizedBox(height: 12),
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: 6,
+            children: [
+              // First
+              if (_currentPage > 0)
+                TextButton(
+                  onPressed: () => setState(() => _currentPage = 0),
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                    foregroundColor: Colors.black87,
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                  child: Icon(Icons.first_page, size: 16), //const Text('«', style: TextStyle(fontSize: 14)),
+                ),
+              // Previous
+              if (_currentPage > 0)
+                TextButton(
+                  onPressed: () => setState(() => _currentPage -= 1),
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                    foregroundColor: Colors.black87,
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                  child: Icon(Icons.chevron_left, size: 16), //const Text('<', style: TextStyle(fontSize: 13)),
+                ),
+
+              // Page buttons
+              ..._visiblePageNumbers.map(
+                (i) => TextButton(
+                  onPressed: () => setState(() => _currentPage = i),
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    backgroundColor: _currentPage == i ? Colors.blue : Colors.transparent,
+                    foregroundColor: _currentPage == i ? Colors.white : Colors.black87,
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    // shape: RoundedRectangleBorder(
+                    //   borderRadius: BorderRadius.circular(6),
+                    //   side: _currentPage == i ? BorderSide.none : const BorderSide(color: Colors.grey),
+                    // ),
+                  ),
+                  child: Text('${i + 1}', style: const TextStyle(fontSize: 11)),
+                ),
+              ),
+
+              // Next
+              if (_currentPage < (widget.reviews.length / _itemsPerPage).ceil() - 1)
+                TextButton(
+                  onPressed: () => setState(() => _currentPage += 1),
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                    foregroundColor: Colors.black87,
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                  child: Icon(Icons.chevron_right, size: 16), //const Text('>', style: TextStyle(fontSize: 13)),
+                ),
+              // Last
+              if (_currentPage < (widget.reviews.length / _itemsPerPage).ceil() - 1)
+                TextButton(
+                  onPressed: () => setState(() => _currentPage = (widget.reviews.length / _itemsPerPage).ceil() - 1),
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                    foregroundColor: Colors.black87,
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                  child: Icon(Icons.last_page, size: 16), //const Text('»', style: TextStyle(fontSize: 13)),
+                ),
+            ],
+          ),
+        ],
       ],
     );
   }

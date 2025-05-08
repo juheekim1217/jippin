@@ -99,6 +99,33 @@ class _ReviewFiltersState extends State<ReviewFilters> {
     });
   }
 
+  // void _onSearch() {
+  //   final address = Address(
+  //     province: selectedProvince?.en ?? '',
+  //     city: selectedCity?.en,
+  //     provinceKo: selectedProvince?.ko,
+  //     cityKo: selectedCity?.ko,
+  //     street: selectedStreet,
+  //   );
+  //
+  //   final encodedAddress = encodeAddressUri(address);
+  //
+  //   WidgetsBinding.instance.addPostFrameCallback((_) {
+  //     final query = context.read<ReviewQueryProvider>();
+  //     query.setQuery(
+  //       landlord: selectedLandlord,
+  //       property: selectedProperty,
+  //       realtor: selectedRealtor,
+  //       address: address,
+  //     );
+  //   });
+  //
+  //   context.go('/reviews?qA=$encodedAddress'
+  //       '&qL=${selectedLandlord ?? ''}'
+  //       '&qP=${selectedProperty ?? ''}'
+  //       '&qR=${selectedRealtor ?? ''}');
+  // }
+
   void _onSearch() {
     final address = Address(
       province: selectedProvince?.en ?? '',
@@ -108,6 +135,8 @@ class _ReviewFiltersState extends State<ReviewFilters> {
       street: selectedStreet,
     );
 
+    final encodedAddress = encodeAddressUri(address);
+
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final query = context.read<ReviewQueryProvider>();
       query.setQuery(
@@ -116,13 +145,12 @@ class _ReviewFiltersState extends State<ReviewFilters> {
         realtor: selectedRealtor,
         address: address,
       );
-    });
 
-    final encodedAddress = encodeAddressUri(address);
-    context.go('/reviews?qA=$encodedAddress'
-        '&qL=${selectedLandlord ?? ''}'
-        '&qP=${selectedProperty ?? ''}'
-        '&qR=${selectedRealtor ?? ''}');
+      context.go('/reviews?qA=$encodedAddress'
+          '&qL=${selectedLandlord ?? ''}'
+          '&qP=${selectedProperty ?? ''}'
+          '&qR=${selectedRealtor ?? ''}');
+    });
   }
 
   @override
