@@ -25,7 +25,13 @@ class _OverallRatingCardState extends State<OverallRatingCard> {
     int count = 0;
 
     for (var review in widget.reviews) {
-      if (review.values.every((value) => value != null)) {
+      if ([
+        review['rating_trust'],
+        review['rating_price'],
+        review['rating_location'],
+        review['rating_condition'],
+        review['rating_safety'],
+      ].every((value) => value != null)) {
         double reviewAvg = (review['rating_trust'] + review['rating_price'] + review['rating_location'] + review['rating_condition'] + review['rating_safety']) / 5;
         int roundedStar = reviewAvg.round().clamp(1, 5);
         starCounts[roundedStar] = starCounts[roundedStar]! + 1;
