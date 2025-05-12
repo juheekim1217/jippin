@@ -458,26 +458,26 @@ abstract class AppLocalizations {
   /// No description provided for @submit_review_landlord_label.
   ///
   /// In en, this message translates to:
-  /// **'Landlord or Building Name'**
+  /// **'Landlord'**
   String get submit_review_landlord_label;
 
   /// No description provided for @submit_review_landlord_error.
   ///
   /// In en, this message translates to:
-  /// **'Please enter the landlord or building name'**
+  /// **'Please enter the landlord name'**
   String get submit_review_landlord_error;
 
-  /// No description provided for @submit_review_address_label.
+  /// No description provided for @submit_review_realtor_label.
   ///
   /// In en, this message translates to:
-  /// **'Address or Location'**
-  String get submit_review_address_label;
+  /// **'Realtor'**
+  String get submit_review_realtor_label;
 
-  /// No description provided for @submit_review_address_error.
+  /// No description provided for @submit_review_realtor_error.
   ///
   /// In en, this message translates to:
-  /// **'Please enter the address or location'**
-  String get submit_review_address_error;
+  /// **'Please enter the realtor'**
+  String get submit_review_realtor_error;
 
   /// No description provided for @submit_review_trustworthiness.
   ///

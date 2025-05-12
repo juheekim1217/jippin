@@ -208,7 +208,7 @@ class _AdaptiveNavBarState extends State<AdaptiveNavBar> {
         onPressed: widget.onSubmitReview,
         style: ElevatedButton.styleFrom(
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0), // Reduce internal padding
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.teal,
           elevation: 0, // Remove button shadow for a flat look
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24.0), // More rounded corners

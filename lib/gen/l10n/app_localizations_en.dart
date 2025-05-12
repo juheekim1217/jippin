@@ -189,16 +189,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get submit_review_review_content_error => 'Please enter some content for your review';
 
   @override
-  String get submit_review_landlord_label => 'Landlord or Building Name';
+  String get submit_review_landlord_label => 'Landlord';
 
   @override
-  String get submit_review_landlord_error => 'Please enter the landlord or building name';
+  String get submit_review_landlord_error => 'Please enter the landlord name';
 
   @override
-  String get submit_review_address_label => 'Address or Location';
+  String get submit_review_realtor_label => 'Realtor';
 
   @override
-  String get submit_review_address_error => 'Please enter the address or location';
+  String get submit_review_realtor_error => 'Please enter the realtor';
 
   @override
   String get submit_review_trustworthiness => 'Trustworthiness';
