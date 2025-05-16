@@ -241,7 +241,6 @@ class _HomePageState extends State<HomePage> {
               review['landlord'] ?? '',
               review['property'] ?? '',
               review['overall_rating'] ?? 0,
-              review['title'] ?? '',
               review['review'] ?? localizations.no_review_available,
             )),
 
@@ -257,7 +256,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   // Review Card
-  Widget _buildReviewCard(AppLocalizations localizations, String country, String province, String city, String landlord, String property, double rating, String title, String review) {
+  Widget _buildReviewCard(AppLocalizations localizations, String country, String province, String city, String landlord, String property, double rating, String review) {
     final langCode = Provider.of<LocaleProvider>(context).language.code;
     String fullAddress = CountryDataService().getFullAddress(langCode, province, city);
     return Card(
@@ -285,13 +284,6 @@ class _HomePageState extends State<HomePage> {
               Text(
                 property,
                 style: const TextStyle(fontSize: 12, color: Colors.black87, fontWeight: FontWeight.w500),
-              ),
-
-            // Review Title
-            if (title.isNotEmpty)
-              Text(
-                title,
-                style: const TextStyle(fontSize: 12, color: Colors.black87, fontWeight: FontWeight.bold),
               ),
           ],
         ),

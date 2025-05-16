@@ -20,8 +20,8 @@ class OverallRatingCard extends StatefulWidget {
 class _OverallRatingCardState extends State<OverallRatingCard> {
   @override
   Widget build(BuildContext context) {
-    final starCounts = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0};
-    double totalTrust = 0, totalPrice = 0, totalLocation = 0, totalCondition = 0, totalSafety = 0;
+    final starCounts = {1: 0, 2: 0, 3: 0, 4: 0};
+    double totalTrust = 0, totalPrice = 0, totalLocation = 0, totalCondition = 0;
     int count = 0;
 
     for (var review in widget.reviews) {
@@ -30,17 +30,14 @@ class _OverallRatingCardState extends State<OverallRatingCard> {
         review['rating_price'],
         review['rating_location'],
         review['rating_condition'],
-        review['rating_safety'],
+        review['overall_rating'],
       ].every((value) => value != null)) {
-        double reviewAvg = (review['rating_trust'] + review['rating_price'] + review['rating_location'] + review['rating_condition'] + review['rating_safety']) / 5;
-        int roundedStar = reviewAvg.round().clamp(1, 5);
+        int roundedStar = review['overall_rating'].round().clamp(1, 4);
         starCounts[roundedStar] = starCounts[roundedStar]! + 1;
-
         totalTrust += review['rating_trust'];
         totalPrice += review['rating_price'];
         totalLocation += review['rating_location'];
         totalCondition += review['rating_condition'];
-        totalSafety += review['rating_safety'];
         count++;
       }
     }
@@ -49,8 +46,7 @@ class _OverallRatingCardState extends State<OverallRatingCard> {
     double avgPrice = count > 0 ? totalPrice / count : 0.0;
     double avgLocation = count > 0 ? totalLocation / count : 0.0;
     double avgCondition = count > 0 ? totalCondition / count : 0.0;
-    double avgSafety = count > 0 ? totalSafety / count : 0.0;
-    double overallRating = count > 0 ? (avgTrust + avgPrice + avgLocation + avgCondition + avgSafety) / 5 : 0.0;
+    double overallRating = count > 0 ? (avgTrust + avgPrice + avgLocation + avgCondition) / 4 : 0.0;
     int totalReviews = starCounts.values.reduce((a, b) => a + b);
 
     return Column(
@@ -74,7 +70,7 @@ class _OverallRatingCardState extends State<OverallRatingCard> {
                   const SizedBox(height: 16),
                   _buildStarHistogram(starCounts, totalReviews),
                   const SizedBox(height: 20),
-                  _buildCategoryRatings(context, avgTrust, avgPrice, avgLocation, avgCondition, avgSafety),
+                  _buildCategoryRatings(context, avgTrust, avgPrice, avgLocation, avgCondition),
                 ],
               ),
             ),
@@ -110,8 +106,8 @@ class _OverallRatingCardState extends State<OverallRatingCard> {
 
   Widget _buildStarHistogram(Map<int, int> starCounts, int totalReviews) {
     return Column(
-      children: List.generate(5, (index) {
-        int starValue = 5 - index;
+      children: List.generate(4, (index) {
+        int starValue = 4 - index;
         double percentage = totalReviews > 0 ? starCounts[starValue]! / totalReviews : 0.0;
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 4),
@@ -139,14 +135,13 @@ class _OverallRatingCardState extends State<OverallRatingCard> {
     );
   }
 
-  Widget _buildCategoryRatings(BuildContext context, double avgTrust, double avgPrice, double avgLocation, double avgCondition, double avgSafety) {
+  Widget _buildCategoryRatings(BuildContext context, double avgTrust, double avgPrice, double avgLocation, double avgCondition) {
     return Column(
       children: [
         _buildRatingCategory(AppLocalizations.of(context).trustworthiness, avgTrust, Icons.check_circle_outline),
         _buildRatingCategory(AppLocalizations.of(context).price, avgPrice, Icons.sell_outlined),
         _buildRatingCategory(AppLocalizations.of(context).location, avgLocation, Icons.map_outlined),
         _buildRatingCategory(AppLocalizations.of(context).condition, avgCondition, Icons.other_houses_outlined),
-        _buildRatingCategory(AppLocalizations.of(context).safety, avgSafety, Icons.shield_outlined),
       ],
     );
   }

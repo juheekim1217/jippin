@@ -3,7 +3,10 @@ import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/services/review_service.dart';
 import 'package:jippin/component/footer.dart';
-import 'package:jippin/component/custom_dropdown_search.dart';
+import 'package:jippin/component/country_dropdown.dart';
+import 'package:jippin/models/province.dart';
+import 'package:jippin/services/country_data_service.dart';
+import 'package:jippin/component/province_dropdown.dart';
 
 class SubmitReviewPage extends StatefulWidget {
   const SubmitReviewPage({super.key});
@@ -14,6 +17,7 @@ class SubmitReviewPage extends StatefulWidget {
 
 class _SubmitReviewPageState extends State<SubmitReviewPage> {
   final _formKey = GlobalKey<FormState>();
+  List<Province> provinceList = CountryDataService().provinceMap.values.toList();
 
   // Required fields
   String _content = '';
@@ -27,20 +31,17 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   int _ratingPrice = 0;
   int _ratingLocation = 0;
   int _ratingCondition = 0;
-  int _ratingSafety = 0;
 
   // Optional fields
   String? _realtor;
   String? _rentalType;
   int? _rent;
   int? _deposit;
-  int? _otherFees;
   int? _occupiedYear;
   bool _fraud = false;
   String? _province;
   String? _postalCode;
   String? _countryCode;
-  String? _property;
   String? _street;
 
   Future<void> _submitReview() async {
@@ -54,17 +55,14 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
           'review': _content,
           'landlord': _landlord,
           'realtor': _realtor,
-          'property': _property,
           'rating_trust': _ratingTrust,
           'rating_price': _ratingPrice,
           'rating_location': _ratingLocation,
           'rating_condition': _ratingCondition,
-          'rating_safety': _ratingSafety,
-          'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition + _ratingSafety) / 5,
+          'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition) / 5,
           'rental_type': _rentalType,
           'rent': _rent,
           'deposit': _deposit,
-          'other_fees': _otherFees,
           'occupied_year': _occupiedYear,
           'fraud': _fraud,
           'country': _country,
@@ -159,9 +157,9 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
   List<Widget> _buildPropertyFormFields(AppLocalizations local) {
     return [
-      _buildSearchDropdown('Country', true, (val) => _country = val!),
-      _buildSearchDropdown('Province/State', false, (val) => _province = val),
-      _buildSearchDropdown('City', true, (val) => _city = val!),
+      _buildSearchDropdown(AppLocalizations.of(context).country, local, true, (val) => _country = val!),
+      _buildProvinceSearchDropdown(AppLocalizations.of(context).state, local, false, (val) => _province = val),
+      //_buildSearchDropdown(AppLocalizations.of(context).city, local, true, (val) => _city = val!),
       _buildTextField('Street', false, (val) => _street = val),
       _buildTextField('Postal Code', false, (val) => _postalCode = val),
       _buildTextField(local.submit_review_landlord_label, true, (val) => _landlord = val!),
@@ -169,7 +167,6 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
       _buildTextField('Rental Type', false, (val) => _rentalType = val),
       _buildIntField('Rent', (val) => _rent = val),
       _buildIntField('Deposit', (val) => _deposit = val),
-      _buildIntField('Other Fees', (val) => _otherFees = val),
       _buildIntField('Occupied Year', (val) => _occupiedYear = val),
     ];
   }
@@ -186,12 +183,41 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
       _buildRatingField("Price", _ratingPrice, (val) => _ratingPrice = val),
       _buildRatingField("Location", _ratingLocation, (val) => _ratingLocation = val),
       _buildRatingField("Condition", _ratingCondition, (val) => _ratingCondition = val),
-      _buildRatingField("Safety", _ratingSafety, (val) => _ratingSafety = val),
     ];
   }
 
-  Widget _buildSearchDropdown(String label, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
-    return CustomDropdownSearch();
+  Widget _buildSearchDropdown(String label, AppLocalizations local, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
+    // List<Country> itemList = [null, ...provinceList].map((country) {
+    //   return DropdownMenuItem<Country>(
+    //     value: province,
+    //     child: Text(
+    //       province?.getName(local.language) ?? AppLocalizations.of(context).all,
+    //       overflow: TextOverflow.ellipsis,
+    //     ),
+    //   );
+    // }).toList();
+    //return CountryDropdown(label: label);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: CountryDropdown(label: label),
+    );
+  }
+
+  Widget _buildProvinceSearchDropdown(String label, AppLocalizations local, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
+    // List<Country> itemList = [null, ...provinceList].map((country) {
+    //   return DropdownMenuItem<Country>(
+    //     value: province,
+    //     child: Text(
+    //       province?.getName(local.language) ?? AppLocalizations.of(context).all,
+    //       overflow: TextOverflow.ellipsis,
+    //     ),
+    //   );
+    // }).toList();
+    //return CountryDropdown(label: label);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: ProvinceDropdown(label: label),
+    );
   }
 
   Widget _buildTextField(String label, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
@@ -236,21 +262,4 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
       ),
     );
   }
-
-// int _getRating(String label) {
-//   switch (label) {
-//     case "Trustworthiness":
-//       return _ratingTrust;
-//     case "Price":
-//       return _ratingPrice;
-//     case "Location":
-//       return _ratingLocation;
-//     case "Condition":
-//       return _ratingCondition;
-//     case "Safety":
-//       return _ratingSafety;
-//     default:
-//       return 0;
-//   }
-// }
 }

@@ -24,14 +24,12 @@ class ReviewCard extends StatelessWidget {
       review['rating_price'] ?? 0,
       review['rating_location'] ?? 0,
       review['rating_condition'] ?? 0,
-      review['rating_safety'] ?? 0,
     ];
     final overallRating = ratings.where((rating) => rating > 0).isNotEmpty ? ratings.reduce((a, b) => a + b) / ratings.length : 0.0;
 
     String currency = review['country_code'] == 'KR' ? '만원' : '\$';
     String rent = '${review['rent'] ?? ''} $currency';
     String deposit = '${review['deposit'] ?? ''} $currency';
-    String otherFees = '${review['other_fees'] ?? ''} $currency';
 
     return Card(
       margin: const EdgeInsets.only(bottom: 16.0),
@@ -60,17 +58,10 @@ class ReviewCard extends StatelessWidget {
             if (review['rental_type'] != null) _buildRentDetailRow(AppLocalizations.of(context).type, review['rental_type']),
             if (review['deposit'] != null) _buildRentDetailRow(AppLocalizations.of(context).deposit, deposit),
             if (review['rent'] != null) _buildRentDetailRow(AppLocalizations.of(context).rent, rent),
-            if (review['other_fees'] != null) _buildRentDetailRow(AppLocalizations.of(context).otherFees, otherFees),
 
             // Review section
             const SizedBox(height: 8),
             Divider(color: Colors.grey.shade300),
-            const SizedBox(height: 8),
-            if (review['title'] != null)
-              Text(
-                review['title'],
-                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
             const SizedBox(height: 8),
             if (review['review'] != null)
               Text(
@@ -467,7 +458,6 @@ class ReviewCard extends StatelessWidget {
               _buildRatingRow(AppLocalizations.of(context).price, review['rating_price']),
               _buildRatingRow(AppLocalizations.of(context).location, review['rating_location']),
               _buildRatingRow(AppLocalizations.of(context).condition, review['rating_condition']),
-              _buildRatingRow(AppLocalizations.of(context).safety, review['rating_safety']),
             ],
           ),
         ),

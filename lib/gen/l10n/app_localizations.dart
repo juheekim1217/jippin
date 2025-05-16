@@ -197,6 +197,12 @@ abstract class AppLocalizations {
   /// **'Search for a Province/State or City'**
   String get search_location;
 
+  /// No description provided for @country.
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get country;
+
   /// No description provided for @state.
   ///
   /// In en, this message translates to:

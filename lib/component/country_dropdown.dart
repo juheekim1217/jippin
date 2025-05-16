@@ -1,18 +1,21 @@
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
-import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/models/country.dart';
 import 'package:provider/provider.dart';
 import 'package:jippin/providers/locale_provider.dart';
 
-class CustomDropdownSearch extends StatefulWidget {
-  const CustomDropdownSearch({super.key});
+class CountryDropdown extends StatefulWidget {
+  final String label;
+
+  //final List<Country> itemList;
+
+  const CountryDropdown({super.key, required this.label});
 
   @override
-  State<CustomDropdownSearch> createState() => _CustomDropdownSearchState();
+  State<CountryDropdown> createState() => _CountryDropdownState();
 }
 
-class _CustomDropdownSearchState extends State<CustomDropdownSearch> {
+class _CountryDropdownState extends State<CountryDropdown> {
   final dropDownKey = GlobalKey<DropdownSearchState>();
 
   Future<List<Country>> _onFind(BuildContext context, String query) {
@@ -51,14 +54,12 @@ class _CustomDropdownSearchState extends State<CustomDropdownSearch> {
           selectedItem: getCountry(initialCountryName),
           // Optional: Set initial selection
           items: (query, infiniteScrollProps) => _onFind(context, query),
+          //items: widget.itemList,
           itemAsString: (Country country) => country.getCountryName(localeProvider.locale.languageCode),
           compareFn: (Country? item, Country? selectedItem) => item?.code == selectedItem?.code,
           onChanged: (Country? selectedCountry) {
             if (selectedCountry != null) {
               String selectedName = selectedCountry.getCountryName(localeProvider.locale.languageCode);
-              // Now you can use selectedName as the selected string
-              debugPrint("Selected Country: $selectedName");
-              // Call your custom logic if needed
               _onChanged(selectedCountry, selectedName);
             }
           },
@@ -71,7 +72,7 @@ class _CustomDropdownSearchState extends State<CustomDropdownSearch> {
             ),
             decoration: InputDecoration(
               suffixIcon: Visibility(visible: false, child: Icon(Icons.arrow_downward)),
-              labelText: AppLocalizations.of(context).selectCountry,
+              labelText: widget.label,
               labelStyle: TextStyle(fontSize: 14, color: Colors.grey),
               // Center text vertically inside the TextFormField
               contentPadding: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
@@ -89,7 +90,7 @@ class _CustomDropdownSearchState extends State<CustomDropdownSearch> {
             showSelectedItems: true,
             searchFieldProps: TextFieldProps(
               decoration: InputDecoration(
-                hintText: AppLocalizations.of(context).search_country,
+                hintText: widget.label,
                 //border: OutlineInputBorder(),
               ),
             ),

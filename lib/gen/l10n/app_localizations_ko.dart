@@ -60,6 +60,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get search_location => '도시 검색';
 
   @override
+  String get country => '국가';
+
+  @override
   String get state => '시/도';
 
   @override
