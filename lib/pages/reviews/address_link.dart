@@ -5,6 +5,7 @@ import 'package:jippin/utilities/common_helper.dart';
 import 'package:provider/provider.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/providers/review_query_provider.dart';
+import 'package:jippin/services/country_data_service.dart';
 
 class AddressLink extends StatefulWidget {
   const AddressLink({super.key});
@@ -14,7 +15,16 @@ class AddressLink extends StatefulWidget {
 }
 
 class _AddressLinkState extends State<AddressLink> {
-  WidgetSpan _linkSpan(String label, VoidCallback onTap) {
+  WidgetSpan _linkSpan(Address address, String label, String type, String langCode, VoidCallback onTap) {
+    String displayLabel = label;
+    if (langCode != 'en') {
+      if (type == "Province") {
+        displayLabel = CountryDataService().findProvinceNameByKey(langCode, label);
+      } else if (type == "City") {
+        displayLabel = CountryDataService().findCityNameByKey(langCode, address.province, label);
+      }
+    }
+
     return WidgetSpan(
       alignment: PlaceholderAlignment.baseline,
       baseline: TextBaseline.alphabetic,
@@ -24,7 +34,7 @@ class _AddressLinkState extends State<AddressLink> {
           child: GestureDetector(
             onTap: () => WidgetsBinding.instance.addPostFrameCallback((_) => onTap()),
             child: Text(
-              label,
+              displayLabel,
               style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -61,11 +71,10 @@ class _AddressLinkState extends State<AddressLink> {
     final localeProvider = Provider.of<LocaleProvider>(context);
     final langCode = localeProvider.language.code;
     final address = query.qAddress;
-
     final List<InlineSpan> spans = [];
 
     // Country
-    spans.add(_linkSpan(query.qCountry, () {
+    spans.add(_linkSpan(address, query.qCountry, "Country", langCode, () {
       final encoded = encodeAddressUri(Address.defaultAddress());
       context.go('/reviews?qA=$encoded');
     }));
@@ -73,7 +82,7 @@ class _AddressLinkState extends State<AddressLink> {
     // Province
     if (address.province.isNotEmpty) {
       spans.add(_separatorSpan(" / "));
-      spans.add(_linkSpan(address.province, () {
+      spans.add(_linkSpan(address, address.province, "Province", langCode, () {
         final encoded = encodeAddressUri(address.getCurrentAddress(langCode, true, false, false));
         context.go('/reviews?qA=$encoded');
       }));
@@ -82,7 +91,7 @@ class _AddressLinkState extends State<AddressLink> {
     // City
     if (address.city?.isNotEmpty == true) {
       spans.add(_separatorSpan(", "));
-      spans.add(_linkSpan(address.city!, () {
+      spans.add(_linkSpan(address, address.city!, "City", langCode, () {
         final encoded = encodeAddressUri(address.getCurrentAddress(langCode, true, true, false));
         context.go('/reviews?qA=$encoded');
       }));
@@ -91,7 +100,7 @@ class _AddressLinkState extends State<AddressLink> {
     // Street
     if (address.street?.isNotEmpty == true) {
       spans.add(_separatorSpan(", "));
-      spans.add(_linkSpan(address.street!, () {
+      spans.add(_linkSpan(address, address.street!, "Street", langCode, () {
         final encoded = encodeAddressUri(address.getCurrentAddress(langCode, true, true, true));
         context.go('/reviews?qA=$encoded');
       }));
@@ -99,28 +108,21 @@ class _AddressLinkState extends State<AddressLink> {
 
     // Landlord
     if (query.qLandlord.isNotEmpty) {
-      spans.add(_linkSpan(' [${query.qLandlord}]', () {
+      spans.add(_linkSpan(address, ' [${query.qLandlord}]', "Landlord", langCode, () {
         context.go('/reviews?qL=${_safe(query.qLandlord)}');
-      }));
-    }
-
-    // Property
-    if (query.qProperty.isNotEmpty) {
-      spans.add(_linkSpan(' [${query.qProperty}]', () {
-        context.go('/reviews?qP=${_safe(query.qProperty)}');
       }));
     }
 
     // Realtor
     if (query.qRealtor.isNotEmpty) {
-      spans.add(_linkSpan(' [${query.qRealtor}]', () {
+      spans.add(_linkSpan(address, ' [${query.qRealtor}]', "Realtor", langCode, () {
         context.go('/reviews?qR=${_safe(query.qRealtor)}');
       }));
     }
 
     // Detail
     if (query.qDetail.isNotEmpty) {
-      spans.add(_linkSpan(' [${query.qDetail}]', () {
+      spans.add(_linkSpan(address, ' [${query.qDetail}]', "Detail", langCode, () {
         context.go('/reviews?qD=${_safe(query.qDetail)}');
       }));
     }

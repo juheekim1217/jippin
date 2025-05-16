@@ -6,10 +6,11 @@ import 'package:jippin/providers/locale_provider.dart';
 
 class CountryDropdown extends StatefulWidget {
   final String label;
+  final void Function(Country?)? onChanged;
 
   //final List<Country> itemList;
 
-  const CountryDropdown({super.key, required this.label});
+  const CountryDropdown({super.key, required this.label, this.onChanged});
 
   @override
   State<CountryDropdown> createState() => _CountryDropdownState();
@@ -61,6 +62,7 @@ class _CountryDropdownState extends State<CountryDropdown> {
             if (selectedCountry != null) {
               String selectedName = selectedCountry.getCountryName(localeProvider.locale.languageCode);
               _onChanged(selectedCountry, selectedName);
+              widget.onChanged?.call(selectedCountry); // 👈 send back province code
             }
           },
           // Display country names in English

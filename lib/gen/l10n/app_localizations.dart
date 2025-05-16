@@ -644,7 +644,7 @@ abstract class AppLocalizations {
   /// No description provided for @home_searchHint.
   ///
   /// In en, this message translates to:
-  /// **'Search landlord, property or realtor...'**
+  /// **'Search landlord or realtor...'**
   String get home_searchHint;
 
   /// No description provided for @home_readReviews.

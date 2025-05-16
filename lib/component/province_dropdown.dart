@@ -5,10 +5,14 @@ import 'package:provider/provider.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/services/country_data_service.dart';
 
+import 'package:jippin/models/country.dart';
+
 class ProvinceDropdown extends StatefulWidget {
   final String label;
+  final Country? country;
+  final void Function(Province?)? onChanged;
 
-  const ProvinceDropdown({super.key, required this.label});
+  const ProvinceDropdown({super.key, required this.label, this.country, this.onChanged});
 
   @override
   State<ProvinceDropdown> createState() => _ProvinceDropdownState();
@@ -21,6 +25,15 @@ class _ProvinceDropdownState extends State<ProvinceDropdown> {
   Province? selectedItem;
 
   Future<List<Province>> _onFind(String filter, String languageCode) async {
+    if (widget.country != null) {
+      try {
+        await CountryDataService().loadCountryData(widget.country!.code);
+        itemList = CountryDataService().provinceMap.values.toList();
+        debugPrint("Loaded country data for ${widget.country!.code}");
+      } catch (e) {
+        debugPrint("Failed to load country data: $e");
+      }
+    }
     return itemList.where((p) => p.getName(languageCode).toLowerCase().contains(filter.toLowerCase())).toList();
   }
 
@@ -53,6 +66,7 @@ class _ProvinceDropdownState extends State<ProvinceDropdown> {
               });
               String selectedName = selected.getName(localeProvider.locale.languageCode);
               _onChanged(selected, selectedName);
+              widget.onChanged?.call(selectedItem); // 👈 send back province code
             }
           },
           decoratorProps: DropDownDecoratorProps(

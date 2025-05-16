@@ -282,7 +282,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get home_heroSubtitle => 'Rental fraud, lease scam, 🔊 noisy neighbors, 😡 ruthless landlords, and real estate agents who deceive tenants 🤯... Tired of it all? Read honest reviews from real tenants and protect yourself from abuse! 🤝 Share your experience to help not only tenants in your city but also renters around the world.';
 
   @override
-  String get home_searchHint => 'Search landlord, property or realtor...';
+  String get home_searchHint => 'Search landlord or realtor...';
 
   @override
   String get home_readReviews => 'Read Reviews';

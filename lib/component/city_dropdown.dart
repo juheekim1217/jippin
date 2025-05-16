@@ -6,10 +6,13 @@ import 'package:jippin/services/country_data_service.dart';
 
 import 'package:jippin/models/city.dart';
 
+import 'package:jippin/models/province.dart';
+
 class CityDropdown extends StatefulWidget {
   final String label;
+  final Province? province;
 
-  const CityDropdown({super.key, required this.label});
+  const CityDropdown({super.key, required this.label, this.province});
 
   @override
   State<CityDropdown> createState() => _CityDropdownState();
@@ -17,11 +20,10 @@ class CityDropdown extends StatefulWidget {
 
 class _CityDropdownState extends State<CityDropdown> {
   final dropDownKey = GlobalKey<DropdownSearchState>();
-
-  List<City> itemList = [];
   City? selectedItem;
 
   Future<List<City>> _onFind(String filter, String languageCode) async {
+    List<City> itemList = widget.province?.cityMap.values.toList() ?? [];
     return itemList.where((p) => p.getName(languageCode).toLowerCase().contains(filter.toLowerCase())).toList();
   }
 

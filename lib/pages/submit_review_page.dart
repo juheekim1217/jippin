@@ -7,6 +7,9 @@ import 'package:jippin/component/country_dropdown.dart';
 import 'package:jippin/models/province.dart';
 import 'package:jippin/services/country_data_service.dart';
 import 'package:jippin/component/province_dropdown.dart';
+import 'package:jippin/component/city_dropdown.dart';
+
+import 'package:jippin/models/country.dart';
 
 class SubmitReviewPage extends StatefulWidget {
   const SubmitReviewPage({super.key});
@@ -43,6 +46,9 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   String? _postalCode;
   String? _countryCode;
   String? _street;
+
+  Country? _selectedCountry;
+  Province? _selectedProvince;
 
   Future<void> _submitReview() async {
     final local = AppLocalizations.of(context);
@@ -155,22 +161,6 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
     );
   }
 
-  List<Widget> _buildPropertyFormFields(AppLocalizations local) {
-    return [
-      _buildSearchDropdown(AppLocalizations.of(context).country, local, true, (val) => _country = val!),
-      _buildProvinceSearchDropdown(AppLocalizations.of(context).state, local, false, (val) => _province = val),
-      //_buildSearchDropdown(AppLocalizations.of(context).city, local, true, (val) => _city = val!),
-      _buildTextField('Street', false, (val) => _street = val),
-      _buildTextField('Postal Code', false, (val) => _postalCode = val),
-      _buildTextField(local.submit_review_landlord_label, true, (val) => _landlord = val!),
-      _buildTextField(local.submit_review_realtor_label, true, (val) => _address = val!),
-      _buildTextField('Rental Type', false, (val) => _rentalType = val),
-      _buildIntField('Rent', (val) => _rent = val),
-      _buildIntField('Deposit', (val) => _deposit = val),
-      _buildIntField('Occupied Year', (val) => _occupiedYear = val),
-    ];
-  }
-
   List<Widget> _buildReviewFormFields(AppLocalizations local) {
     return [
       CheckboxListTile(
@@ -186,37 +176,56 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
     ];
   }
 
-  Widget _buildSearchDropdown(String label, AppLocalizations local, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
-    // List<Country> itemList = [null, ...provinceList].map((country) {
-    //   return DropdownMenuItem<Country>(
-    //     value: province,
-    //     child: Text(
-    //       province?.getName(local.language) ?? AppLocalizations.of(context).all,
-    //       overflow: TextOverflow.ellipsis,
-    //     ),
-    //   );
-    // }).toList();
-    //return CountryDropdown(label: label);
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 16),
-      child: CountryDropdown(label: label),
-    );
+  List<Widget> _buildPropertyFormFields(AppLocalizations local) {
+    return [
+      _buildSearchDropdown(AppLocalizations.of(context).country, "Country", local, true, (val) => _country = val!),
+      _buildSearchDropdown(AppLocalizations.of(context).state, "Province", local, false, (val) => _province = val),
+      _buildSearchDropdown(AppLocalizations.of(context).city, "City", local, true, (val) => _city = val!),
+      _buildTextField('Street', false, (val) => _street = val),
+      _buildTextField('Postal Code', false, (val) => _postalCode = val),
+      _buildTextField(local.submit_review_landlord_label, true, (val) => _landlord = val!),
+      _buildTextField(local.submit_review_realtor_label, true, (val) => _address = val!),
+      _buildTextField('Rental Type', false, (val) => _rentalType = val),
+      _buildIntField('Rent', (val) => _rent = val),
+      _buildIntField('Deposit', (val) => _deposit = val),
+      _buildIntField('Occupied Year', (val) => _occupiedYear = val),
+    ];
   }
 
-  Widget _buildProvinceSearchDropdown(String label, AppLocalizations local, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
-    // List<Country> itemList = [null, ...provinceList].map((country) {
-    //   return DropdownMenuItem<Country>(
-    //     value: province,
-    //     child: Text(
-    //       province?.getName(local.language) ?? AppLocalizations.of(context).all,
-    //       overflow: TextOverflow.ellipsis,
-    //     ),
-    //   );
-    // }).toList();
-    //return CountryDropdown(label: label);
+  Widget _buildSearchDropdown(String label, String type, AppLocalizations local, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
+    if (type == "Province") {
+      return Padding(
+        padding: const EdgeInsets.only(bottom: 16),
+        child: ProvinceDropdown(
+          label: label,
+          country: _selectedCountry, // 👈 Pass selected province
+          onChanged: (province) {
+            setState(() {
+              _selectedProvince = province;
+            });
+          },
+        ),
+      );
+    } else if (type == "City") {
+      return Padding(
+        padding: const EdgeInsets.only(bottom: 16),
+        child: CityDropdown(
+          label: label,
+          province: _selectedProvince, // 👈 Pass selected province
+        ),
+      );
+    }
+
     return Padding(
       padding: const EdgeInsets.only(bottom: 16),
-      child: ProvinceDropdown(label: label),
+      child: CountryDropdown(
+        label: label,
+        onChanged: (selected) {
+          setState(() {
+            _selectedCountry = selected;
+          });
+        },
+      ),
     );
   }
 

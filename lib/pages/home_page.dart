@@ -239,7 +239,6 @@ class _HomePageState extends State<HomePage> {
               review['province'] ?? '',
               review['city'] ?? localizations.unknown_city,
               review['landlord'] ?? '',
-              review['property'] ?? '',
               review['overall_rating'] ?? 0,
               review['review'] ?? localizations.no_review_available,
             )),
@@ -256,7 +255,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   // Review Card
-  Widget _buildReviewCard(AppLocalizations localizations, String country, String province, String city, String landlord, String property, double rating, String review) {
+  Widget _buildReviewCard(AppLocalizations localizations, String country, String province, String city, String landlord, double rating, String review) {
     final langCode = Provider.of<LocaleProvider>(context).language.code;
     String fullAddress = CountryDataService().getFullAddress(langCode, province, city);
     return Card(
@@ -267,24 +266,39 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Landlord Name (Bold)
+            // if (landlord.isNotEmpty)
+            //   Text(
+            //     "${localizations.landlord}: $landlord",
+            //     style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+            //   ),
             if (landlord.isNotEmpty)
-              Text(
-                "${localizations.landlord}: $landlord",
-                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+              RichText(
+                text: TextSpan(
+                  style: DefaultTextStyle.of(context).style,
+                  children: [
+                    TextSpan(
+                      text: "${localizations.landlord} ",
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    TextSpan(
+                      text: landlord,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
               ),
 
             // Country & City (Smaller Font)
             Text(
               fullAddress,
-              style: const TextStyle(fontSize: 12, color: Colors.black54),
+              style: const TextStyle(fontSize: 12, color: Colors.black87),
             ),
-
-            // Property Name
-            if (property.isNotEmpty)
-              Text(
-                property,
-                style: const TextStyle(fontSize: 12, color: Colors.black87, fontWeight: FontWeight.w500),
-              ),
           ],
         ),
         // Review Title Text

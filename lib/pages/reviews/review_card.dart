@@ -152,9 +152,8 @@ class ReviewCard extends StatelessWidget {
     );
   }
 
-  /// Property name and Alerts
   /// Address
-  /// Realtor
+  /// Realtor and Alerts
   Widget _buildReviewDetails(BuildContext context) {
     final langCode = Provider.of<LocaleProvider>(context).language.code;
     String provinceName = CountryDataService().findProvinceNameByKey(langCode, review['province']);
@@ -163,60 +162,6 @@ class ReviewCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Property name and alerts section
-        if (review['property'] != null || (review['fraud'] != null && review['fraud']))
-          Row(
-            children: [
-              Expanded(
-                child: Row(
-                  // Use Row instead of Column to keep elements in one line
-                  crossAxisAlignment: CrossAxisAlignment.center, // Ensures proper alignment
-                  children: [
-                    // Property Icon with Tooltip
-                    if (review['property'] != null && review['property'] != "")
-                      Tooltip(
-                        message: AppLocalizations.of(context).property,
-                        child: Icon(Icons.apartment_outlined, size: 20, color: Colors.black87),
-                      ),
-                    const SizedBox(width: 8), // Spacing between icon and text
-                    // Property Text (Ensures it stays in one line)
-                    if (review['property'] != null && review['property'] != "")
-                      Expanded(
-                        child: SelectionContainer.disabled(
-                          child: MouseRegion(
-                            cursor: SystemMouseCursors.click,
-                            child: GestureDetector(
-                              onTap: () {
-                                context.go('/reviews?qP=${review['property']}');
-                              },
-                              child: Text(
-                                review['property'],
-                                style: const TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
-                                overflow: TextOverflow.ellipsis, // Ensures text truncates instead of wrapping
-                                maxLines: 1, // Restricts text to a single line
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-              // Column 2: Alerts (Right-Aligned)
-              if (review['fraud'] != null && review['fraud'])
-                Column(
-                  mainAxisSize: MainAxisSize.min, // Prevents stretching
-                  crossAxisAlignment: CrossAxisAlignment.end, // Ensures full right alignment
-                  children: [
-                    Tooltip(
-                      message: AppLocalizations.of(context).landlord_fraud,
-                      child: Icon(Icons.gavel, size: 20, color: Colors.red),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-
         // Address section
         Padding(
           padding: const EdgeInsets.only(top: 4.0),
@@ -234,35 +179,86 @@ class ReviewCard extends StatelessWidget {
           ),
         ),
 
-        // Realtor section
-        if (review['realtor'] != null)
-          Padding(
-            padding: const EdgeInsets.only(top: 4.0),
-            // Adds a top margin of 16 pixels
-            child: Row(
-              children: [
-                Tooltip(
-                  message: AppLocalizations.of(context).realtor,
-                  child: Icon(Icons.supervised_user_circle_outlined, size: 20, color: Colors.black87),
-                ),
-                const SizedBox(width: 8),
-                SelectionContainer.disabled(
-                  child: MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    child: GestureDetector(
-                      onTap: () {
-                        context.go('/reviews?qR=${review['realtor']}');
-                      },
-                      child: Text(
-                        '${review['realtor']}',
-                        style: TextStyle(fontSize: 14, color: Colors.black87),
+        // Realtor name and alerts section
+        Row(
+          children: [
+            Expanded(
+              child: Row(
+                // Use Row instead of Column to keep elements in one line
+                crossAxisAlignment: CrossAxisAlignment.center, // Ensures proper alignment
+                children: [
+                  if (review['realtor'] != null)
+                    Tooltip(
+                      message: AppLocalizations.of(context).realtor,
+                      child: Icon(Icons.supervised_user_circle_outlined, size: 20, color: Colors.black87),
+                    ),
+                  const SizedBox(width: 8), // Spacing between icon and text
+                  if (review['realtor'] != null)
+                    Expanded(
+                      child: SelectionContainer.disabled(
+                        child: MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: GestureDetector(
+                            onTap: () {
+                              context.go('/reviews?qR=${review['realtor']}');
+                            },
+                            child: Text(
+                              review['realtor'],
+                              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.black87),
+                              overflow: TextOverflow.ellipsis, // Ensures text truncates instead of wrapping
+                              maxLines: 1, // Restricts text to a single line
+                            ),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                )
-              ],
+                ],
+              ),
             ),
-          ),
+            // Column 2: Alerts (Right-Aligned)
+            if (review['fraud'] != null && review['fraud'])
+              Column(
+                mainAxisSize: MainAxisSize.min, // Prevents stretching
+                crossAxisAlignment: CrossAxisAlignment.end, // Ensures full right alignment
+                children: [
+                  Tooltip(
+                    message: AppLocalizations.of(context).landlord_fraud,
+                    child: Icon(Icons.gavel, size: 20, color: Colors.red),
+                  ),
+                ],
+              ),
+          ],
+        ),
+
+        // Realtor section
+        // if (review['realtor'] != null)
+        //   Padding(
+        //     padding: const EdgeInsets.only(top: 4.0),
+        //     // Adds a top margin of 16 pixels
+        //     child: Row(
+        //       children: [
+        //         Tooltip(
+        //           message: AppLocalizations.of(context).realtor,
+        //           child: Icon(Icons.supervised_user_circle_outlined, size: 20, color: Colors.black87),
+        //         ),
+        //         const SizedBox(width: 8),
+        //         SelectionContainer.disabled(
+        //           child: MouseRegion(
+        //             cursor: SystemMouseCursors.click,
+        //             child: GestureDetector(
+        //               onTap: () {
+        //                 context.go('/reviews?qR=${review['realtor']}');
+        //               },
+        //               child: Text(
+        //                 '${review['realtor']}',
+        //                 style: TextStyle(fontSize: 14, color: Colors.black87),
+        //               ),
+        //             ),
+        //           ),
+        //         )
+        //       ],
+        //     ),
+        //   ),
       ],
     );
   }

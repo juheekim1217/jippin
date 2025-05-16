@@ -37,7 +37,6 @@ GoRouter createRouter(LocaleProvider localeProvider) {
             builder: (context, state) {
               final String qDetails = state.uri.queryParameters['qD'] ?? ""; // from main page, query landlord or building or realtor
               final String qLandlord = state.uri.queryParameters['qL'] ?? "";
-              final String qProperty = state.uri.queryParameters['qP'] ?? "";
               final String qRealtor = state.uri.queryParameters['qR'] ?? "";
 
               final String qAddressStr = state.uri.queryParameters['qA'] ?? "";
@@ -51,7 +50,6 @@ GoRouter createRouter(LocaleProvider localeProvider) {
                 queryModel.updateQuery(
                   qDetail: qDetails,
                   qLandlord: qLandlord,
-                  qProperty: qProperty,
                   qRealtor: qRealtor,
                   qAddress: qAddress,
                   qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
@@ -59,13 +57,12 @@ GoRouter createRouter(LocaleProvider localeProvider) {
               });
 
               return ReviewsPage(
-                key: ValueKey(Object.hash(qDetails, qLandlord, qProperty, qRealtor, qAddressStr, localeProvider.country.code, localeProvider.country.getCountryName(localeProvider.locale.languageCode).hashCode)),
+                key: ValueKey(Object.hash(qDetails, qLandlord, qRealtor, qAddressStr, localeProvider.country.code, localeProvider.country.getCountryName(localeProvider.locale.languageCode).hashCode)),
                 // Includes all params to force rebuild. Generates a unique but shorter key
                 defaultCountryCode: localeProvider.country.code,
                 qCountry: localeProvider.country.getCountryName(localeProvider.locale.languageCode),
                 qDetails: qDetails,
                 qLandlord: qLandlord,
-                qProperty: qProperty,
                 qRealtor: qRealtor,
                 qAddress: qAddress,
               );

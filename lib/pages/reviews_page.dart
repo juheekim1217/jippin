@@ -11,7 +11,6 @@ class ReviewsPage extends StatefulWidget {
   final String qCountry;
   final String qDetails;
   final String qLandlord;
-  final String qProperty;
   final String qRealtor;
   final Address qAddress;
 
@@ -21,7 +20,6 @@ class ReviewsPage extends StatefulWidget {
     required this.qCountry,
     required this.qDetails,
     required this.qLandlord,
-    required this.qProperty,
     required this.qRealtor,
     required this.qAddress,
   });
@@ -102,22 +100,19 @@ class _ReviewsPageState extends State<ReviewsPage> {
         return (province.isEmpty || equalsIgnoreCase(reviewProvince, province)) && (city.isEmpty || equalsIgnoreCase(reviewCity, city)) && (street.isEmpty || containsIgnoreCase(reviewStreet, street));
       }).toList();
 
-      // Filtering Landlord, Property, Realtor
+      // Filtering Landlord, Realtor
       final String qDetails = widget.qDetails;
       final String qLandlord = widget.qLandlord;
-      final String qProperty = widget.qProperty;
       final String qRealtor = widget.qRealtor;
       filteredReviews = filteredReviews.where((review) {
         String landlord = review["landlord"]?.toString() ?? "";
-        String property = review["property"]?.toString() ?? "";
         String realtor = review["realtor"]?.toString() ?? "";
         // contains match: Apply filtering dynamically
-        bool matchesDetails = qDetails.isEmpty || landlord.contains(qDetails) || property.contains(qDetails) || realtor.contains(qDetails);
+        bool matchesDetails = qDetails.isEmpty || landlord.contains(qDetails) || realtor.contains(qDetails);
         // exact match
         bool matchesLandlord = qLandlord.isEmpty || equalsIgnoreCase(landlord, qLandlord) || landlord.contains(qLandlord);
-        bool matchesProperty = qProperty.isEmpty || equalsIgnoreCase(property, qProperty) || property.contains(qProperty);
         bool matchesRealtor = qRealtor.isEmpty || equalsIgnoreCase(realtor, qRealtor) || realtor.contains(qRealtor);
-        return matchesDetails && matchesLandlord && matchesProperty && matchesRealtor;
+        return matchesDetails && matchesLandlord && matchesRealtor;
       }).toList();
     });
   }

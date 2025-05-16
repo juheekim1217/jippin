@@ -30,7 +30,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
   City? selectedCity;
   String? selectedStreet;
   String? selectedLandlord;
-  String? selectedProperty;
   String? selectedRealtor;
 
   List<Province> provinceList = CountryDataService().provinceMap.values.toList();
@@ -38,7 +37,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
 
   late final TextEditingController streetController;
   late final TextEditingController landlordController;
-  late final TextEditingController propertyController;
   late final TextEditingController realtorController;
 
   @override
@@ -47,7 +45,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
 
     streetController = TextEditingController();
     landlordController = TextEditingController();
-    propertyController = TextEditingController();
     realtorController = TextEditingController();
 
     _initializeFilters();
@@ -57,7 +54,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
   void dispose() {
     streetController.dispose();
     landlordController.dispose();
-    propertyController.dispose();
     realtorController.dispose();
     super.dispose();
   }
@@ -72,12 +68,10 @@ class _ReviewFiltersState extends State<ReviewFilters> {
     setState(() {
       selectedStreet = address.street;
       selectedLandlord = query.qLandlord;
-      selectedProperty = query.qProperty;
       selectedRealtor = query.qRealtor;
 
       streetController.text = selectedStreet ?? '';
       landlordController.text = selectedLandlord ?? '';
-      propertyController.text = selectedProperty ?? '';
       realtorController.text = selectedRealtor ?? '';
 
       // ✅ Set selectedProvince
@@ -114,14 +108,12 @@ class _ReviewFiltersState extends State<ReviewFilters> {
       final query = context.read<ReviewQueryProvider>();
       query.setQuery(
         landlord: selectedLandlord,
-        property: selectedProperty,
         realtor: selectedRealtor,
         address: address,
       );
 
       context.go('/reviews?qA=$encodedAddress'
           '&qL=${selectedLandlord ?? ''}'
-          '&qP=${selectedProperty ?? ''}'
           '&qR=${selectedRealtor ?? ''}');
     });
   }
@@ -141,7 +133,6 @@ class _ReviewFiltersState extends State<ReviewFilters> {
             _buildCityDropdown(local.city),
             _buildTextInput(local.street, streetController, (val) => setState(() => selectedStreet = val)),
             _buildTextInput(local.landlord, landlordController, (val) => setState(() => selectedLandlord = val)),
-            _buildTextInput(local.property, propertyController, (val) => setState(() => selectedProperty = val)),
             _buildTextInput(local.realtor, realtorController, (val) => setState(() => selectedRealtor = val)),
           ],
         ),
