@@ -41,7 +41,8 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   int? _rent;
   int? _deposit;
   int? _occupiedYear;
-  bool _fraud = false;
+
+  //bool _fraud = false;
   String? _province;
   String? _postalCode;
   String? _countryCode;
@@ -70,7 +71,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
           'rent': _rent,
           'deposit': _deposit,
           'occupied_year': _occupiedYear,
-          'fraud': _fraud,
+          //'fraud': _fraud,
           'country': _country,
           'province': _province,
           'city': _city,
@@ -163,36 +164,37 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
   List<Widget> _buildReviewFormFields(AppLocalizations local) {
     return [
-      CheckboxListTile(
-        title: const Text('Was this rental a scam or fraud?'),
-        value: _fraud,
-        onChanged: (val) => setState(() => _fraud = val ?? false),
-      ),
-      _buildTextField(local.submit_review_review_content_label, true, (val) => _content = val!, maxLines: 5),
-      _buildRatingField("Trustworthiness", _ratingTrust, (val) => _ratingTrust = val),
-      _buildRatingField("Price", _ratingPrice, (val) => _ratingPrice = val),
-      _buildRatingField("Location", _ratingLocation, (val) => _ratingLocation = val),
-      _buildRatingField("Condition", _ratingCondition, (val) => _ratingCondition = val),
+      // CheckboxListTile(
+      //   title: const Text('Was this rental a scam or fraud?'),
+      //   value: _fraud,
+      //   onChanged: (val) => setState(() => _fraud = val ?? false),
+      // ),
+      //const SizedBox(height: 16),
+      _buildTextField(local.submit_review_review_content_label, local, true, (val) => _content = val!, maxLines: 5),
+      _buildRatingField(local.trustworthiness, _ratingTrust, (val) => _ratingTrust = val),
+      _buildRatingField(local.price, _ratingPrice, (val) => _ratingPrice = val),
+      _buildRatingField(local.location, _ratingLocation, (val) => _ratingLocation = val),
+      _buildRatingField(local.condition, _ratingCondition, (val) => _ratingCondition = val),
     ];
   }
 
   List<Widget> _buildPropertyFormFields(AppLocalizations local) {
     return [
-      _buildSearchDropdown(AppLocalizations.of(context).country, "Country", local, true, (val) => _country = val!),
-      _buildSearchDropdown(AppLocalizations.of(context).state, "Province", local, false, (val) => _province = val),
-      _buildSearchDropdown(AppLocalizations.of(context).city, "City", local, true, (val) => _city = val!),
-      _buildTextField('Street', false, (val) => _street = val),
-      _buildTextField('Postal Code', false, (val) => _postalCode = val),
-      _buildTextField(local.submit_review_landlord_label, true, (val) => _landlord = val!),
-      _buildTextField(local.submit_review_realtor_label, true, (val) => _address = val!),
-      _buildTextField('Rental Type', false, (val) => _rentalType = val),
-      _buildIntField('Rent', (val) => _rent = val),
-      _buildIntField('Deposit', (val) => _deposit = val),
-      _buildIntField('Occupied Year', (val) => _occupiedYear = val),
+      _buildSearchDropdown(local.country, "Country", local, true, (val) => _country = val!),
+      _buildSearchDropdown(local.state, "Province", local, true, (val) => _province = val),
+      _buildSearchDropdown(local.city, "City", local, true, (val) => _city = val!),
+      _buildTextField(local.street, local, true, (val) => _street = val),
+      _buildTextField(local.zip, local, true, (val) => _postalCode = val),
+      _buildTextField(local.submit_review_landlord_label, local, true, (val) => _landlord = val!),
+      _buildTextField(local.submit_review_realtor_label, local, true, (val) => _address = val!),
+      _buildTextField(local.rental_type, local, true, (val) => _rentalType = val),
+      _buildIntField(local.rent, local, true, (val) => _rent = val),
+      _buildIntField(local.deposit, local, true, (val) => _deposit = val),
+      _buildIntField(local.occupiedYear, local, true, (val) => _occupiedYear = val),
     ];
   }
 
-  Widget _buildSearchDropdown(String label, String type, AppLocalizations local, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
+  Widget _buildSearchDropdown(String label, String type, AppLocalizations local, bool required, FormFieldSetter<String?> onSaved) {
     if (type == "Province") {
       return Padding(
         padding: const EdgeInsets.only(bottom: 16),
@@ -204,6 +206,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
               _selectedProvince = province;
             });
           },
+          required: required,
         ),
       );
     } else if (type == "City") {
@@ -212,6 +215,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
         child: CityDropdown(
           label: label,
           province: _selectedProvince, // 👈 Pass selected province
+          required: required,
         ),
       );
     }
@@ -225,24 +229,25 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
             _selectedCountry = selected;
           });
         },
+        required: required,
       ),
     );
   }
 
-  Widget _buildTextField(String label, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
+  Widget _buildTextField(String label, AppLocalizations local, bool required, FormFieldSetter<String?> onSaved, {int maxLines = 1}) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16),
       child: TextFormField(
         decoration: InputDecoration(labelText: label, border: const OutlineInputBorder()),
         maxLines: maxLines,
-        validator: required ? (val) => (val == null || val.isEmpty) ? 'Required' : null : null,
+        validator: required ? (val) => (val == null || val.isEmpty) ? local.required : null : null,
         onSaved: onSaved,
       ),
     );
   }
 
-  Widget _buildIntField(String label, void Function(int?) onSaved) {
-    return _buildTextField(label, false, (val) => onSaved(int.tryParse(val ?? '')));
+  Widget _buildIntField(String label, AppLocalizations local, bool required, void Function(int?) onSaved) {
+    return _buildTextField(label, local, required, (val) => onSaved(int.tryParse(val ?? '')));
   }
 
   Widget _buildRatingField(String label, int rating, ValueChanged<int> onChanged) {

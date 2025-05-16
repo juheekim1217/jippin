@@ -72,7 +72,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get street => 'Street';
 
   @override
+  String get zip => 'Postal Code';
+
+  @override
   String get all => 'All';
+
+  @override
+  String get required => 'Required';
 
   @override
   String get sortBy => 'Sort by';
@@ -105,7 +111,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get safety => 'Safety';
 
   @override
-  String get type => 'Type';
+  String get rental_type => 'Rental Type';
 
   @override
   String get occupiedYear => 'Occupied Year';

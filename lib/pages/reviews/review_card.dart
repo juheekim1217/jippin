@@ -55,7 +55,7 @@ class ReviewCard extends StatelessWidget {
             Divider(color: Colors.grey.shade300),
             const SizedBox(height: 8),
             if (review['occupied_year'] != null) _buildRentDetailRow(AppLocalizations.of(context).occupiedYear, review['occupied_year'].toString()),
-            if (review['rental_type'] != null) _buildRentDetailRow(AppLocalizations.of(context).type, review['rental_type']),
+            if (review['rental_type'] != null) _buildRentDetailRow(AppLocalizations.of(context).rental_type, review['rental_type']),
             if (review['deposit'] != null) _buildRentDetailRow(AppLocalizations.of(context).deposit, deposit),
             if (review['rent'] != null) _buildRentDetailRow(AppLocalizations.of(context).rent, rent),
 
@@ -216,17 +216,17 @@ class ReviewCard extends StatelessWidget {
               ),
             ),
             // Column 2: Alerts (Right-Aligned)
-            if (review['fraud'] != null && review['fraud'])
-              Column(
-                mainAxisSize: MainAxisSize.min, // Prevents stretching
-                crossAxisAlignment: CrossAxisAlignment.end, // Ensures full right alignment
-                children: [
-                  Tooltip(
-                    message: AppLocalizations.of(context).landlord_fraud,
-                    child: Icon(Icons.gavel, size: 20, color: Colors.red),
-                  ),
-                ],
-              ),
+            // if (review['fraud'] != null && review['fraud'])
+            //   Column(
+            //     mainAxisSize: MainAxisSize.min, // Prevents stretching
+            //     crossAxisAlignment: CrossAxisAlignment.end, // Ensures full right alignment
+            //     children: [
+            //       Tooltip(
+            //         message: AppLocalizations.of(context).landlord_fraud,
+            //         child: Icon(Icons.gavel, size: 20, color: Colors.red),
+            //       ),
+            //     ],
+            //   ),
           ],
         ),
 

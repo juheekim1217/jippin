@@ -221,11 +221,23 @@ abstract class AppLocalizations {
   /// **'Street'**
   String get street;
 
+  /// No description provided for @zip.
+  ///
+  /// In en, this message translates to:
+  /// **'Postal Code'**
+  String get zip;
+
   /// No description provided for @all.
   ///
   /// In en, this message translates to:
   /// **'All'**
   String get all;
+
+  /// No description provided for @required.
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get required;
 
   /// No description provided for @sortBy.
   ///
@@ -287,11 +299,11 @@ abstract class AppLocalizations {
   /// **'Safety'**
   String get safety;
 
-  /// No description provided for @type.
+  /// No description provided for @rental_type.
   ///
   /// In en, this message translates to:
-  /// **'Type'**
-  String get type;
+  /// **'Rental Type'**
+  String get rental_type;
 
   /// No description provided for @occupiedYear.
   ///

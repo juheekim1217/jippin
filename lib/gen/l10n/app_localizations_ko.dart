@@ -72,7 +72,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get street => '상세 주소';
 
   @override
+  String get zip => '우편번호';
+
+  @override
   String get all => '전체';
+
+  @override
+  String get required => '필수 항목입니다';
 
   @override
   String get sortBy => '정렬';
@@ -105,7 +111,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get safety => '안전';
 
   @override
-  String get type => '임대종류';
+  String get rental_type => '임대종류';
 
   @override
   String get occupiedYear => '거주연도';
