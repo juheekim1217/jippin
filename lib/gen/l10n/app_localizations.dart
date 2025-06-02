@@ -488,7 +488,7 @@ abstract class AppLocalizations {
   /// No description provided for @submit_review_realtor_label.
   ///
   /// In en, this message translates to:
-  /// **'Realtor'**
+  /// **'Realtor / Rental Platform'**
   String get submit_review_realtor_label;
 
   /// No description provided for @submit_review_realtor_error.
@@ -526,6 +526,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Safety'**
   String get submit_review_safety;
+
+  /// No description provided for @invalid_number.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid number'**
+  String get invalid_number;
 
   /// No description provided for @submit_review_submit_button.
   ///

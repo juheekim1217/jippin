@@ -8,8 +8,10 @@ import 'package:jippin/models/province.dart';
 import 'package:jippin/services/country_data_service.dart';
 import 'package:jippin/component/province_dropdown.dart';
 import 'package:jippin/component/city_dropdown.dart';
-
 import 'package:jippin/models/country.dart';
+import 'package:jippin/models/rental_types.dart';
+import 'package:provider/provider.dart';
+import 'package:jippin/providers/locale_provider.dart';
 
 class SubmitReviewPage extends StatefulWidget {
   const SubmitReviewPage({super.key});
@@ -26,8 +28,12 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   String _content = '';
   String _landlord = '';
   String _country = '';
+  String _province = '';
   String _city = '';
-  String _address = '';
+
+  String? _postalCode;
+  String? _countryCode;
+  String? _street;
 
   // Ratings
   int _ratingTrust = 0;
@@ -40,19 +46,15 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   String? _rentalType;
   int? _rent;
   int? _deposit;
-  int? _occupiedYear;
 
+  //int? _occupiedYear;
   //bool _fraud = false;
-  String? _province;
-  String? _postalCode;
-  String? _countryCode;
-  String? _street;
 
   Country? _selectedCountry;
   Province? _selectedProvince;
 
-  Future<void> _submitReview() async {
-    final local = AppLocalizations.of(context);
+  Future<void> _submitReview(AppLocalizations local) async {
+    //final local = AppLocalizations.of(context);
 
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
@@ -66,19 +68,18 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
           'rating_price': _ratingPrice,
           'rating_location': _ratingLocation,
           'rating_condition': _ratingCondition,
-          'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition) / 5,
+          'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition) / 4,
           'rental_type': _rentalType,
           'rent': _rent,
           'deposit': _deposit,
-          'occupied_year': _occupiedYear,
+          //'occupied_year': _occupiedYear,
           //'fraud': _fraud,
           'country': _country,
           'province': _province,
           'city': _city,
           'postal_code': _postalCode,
           'country_code': _countryCode,
-          'street': _address,
-          'street_number': _street,
+          'street': _street,
         });
 
         if (!mounted) return;
@@ -99,6 +100,9 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   @override
   Widget build(BuildContext context) {
     final local = AppLocalizations.of(context);
+    final localeProvider = Provider.of<LocaleProvider>(context);
+    _country = localeProvider.country.nameEn;
+    _countryCode = localeProvider.country.code;
 
     return GlobalPageLayoutScaffold(
       body: SingleChildScrollView(
@@ -122,7 +126,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: _buildPropertyFormFields(local),
+                                  children: _buildPropertyFormFields(local, localeProvider),
                                 ),
                               ),
                               const SizedBox(width: 24),
@@ -137,7 +141,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
                           )
                         : Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: _buildPropertyFormFields(local) + _buildReviewFormFields(local),
+                            children: _buildPropertyFormFields(local, localeProvider) + _buildReviewFormFields(local),
                           ),
                   );
                 },
@@ -149,7 +153,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
             // ✅ Submit Button
             Center(
               child: ElevatedButton(
-                onPressed: _submitReview,
+                onPressed: () => _submitReview(local),
                 child: Text(local.submit_review_submit_button),
               ),
             ),
@@ -178,19 +182,18 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
     ];
   }
 
-  List<Widget> _buildPropertyFormFields(AppLocalizations local) {
+  List<Widget> _buildPropertyFormFields(AppLocalizations local, LocaleProvider localeProvider) {
     return [
       _buildSearchDropdown(local.country, "Country", local, true, (val) => _country = val!),
-      _buildSearchDropdown(local.state, "Province", local, true, (val) => _province = val),
+      _buildSearchDropdown(local.state, "Province", local, true, (val) => _province = val!),
       _buildSearchDropdown(local.city, "City", local, true, (val) => _city = val!),
       _buildTextField(local.street, local, true, (val) => _street = val),
       _buildTextField(local.zip, local, true, (val) => _postalCode = val),
       _buildTextField(local.submit_review_landlord_label, local, true, (val) => _landlord = val!),
-      _buildTextField(local.submit_review_realtor_label, local, true, (val) => _address = val!),
-      _buildTextField(local.rental_type, local, true, (val) => _rentalType = val),
-      _buildIntField(local.rent, local, true, (val) => _rent = val),
-      _buildIntField(local.deposit, local, true, (val) => _deposit = val),
-      _buildIntField(local.occupiedYear, local, true, (val) => _occupiedYear = val),
+      _buildTextField(local.submit_review_realtor_label, local, false, (val) => _realtor = val!),
+      _buildRentalTypeDropdown(local.rental_type, local, true, (val) => _rentalType = val),
+      _buildIntField('${local.rent} (${localeProvider.country.getCountryCurrency(localeProvider.language.code)})', local, true, (val) => _rent = val),
+      _buildIntField('${local.deposit} (${localeProvider.country.getCountryCurrency(localeProvider.language.code)})', local, true, (val) => _deposit = val),
     ];
   }
 
@@ -204,6 +207,7 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
           onChanged: (province) {
             setState(() {
               _selectedProvince = province;
+              _province = province!.en;
             });
           },
           required: required,
@@ -215,6 +219,11 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
         child: CityDropdown(
           label: label,
           province: _selectedProvince, // 👈 Pass selected province
+          onChanged: (city) {
+            setState(() {
+              _city = city!.en;
+            });
+          },
           required: required,
         ),
       );
@@ -227,6 +236,8 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
         onChanged: (selected) {
           setState(() {
             _selectedCountry = selected;
+            _country = selected!.nameEn;
+            _countryCode = selected.code;
           });
         },
         required: required,
@@ -246,8 +257,29 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
     );
   }
 
-  Widget _buildIntField(String label, AppLocalizations local, bool required, void Function(int?) onSaved) {
-    return _buildTextField(label, local, required, (val) => onSaved(int.tryParse(val ?? '')));
+  Widget _buildIntField(
+    String label,
+    AppLocalizations local,
+    bool required,
+    void Function(int?) onSaved,
+  ) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: TextFormField(
+        decoration: InputDecoration(labelText: label, border: const OutlineInputBorder()),
+        keyboardType: TextInputType.number,
+        validator: (val) {
+          if (required && (val == null || val.trim().isEmpty)) {
+            return local.required;
+          }
+          if (val != null && val.trim().isNotEmpty && int.tryParse(val.trim()) == null) {
+            return local.invalid_number; // Add this key to your localization ARB files
+          }
+          return null;
+        },
+        onSaved: (val) => onSaved(int.tryParse(val?.trim() ?? '')),
+      ),
+    );
   }
 
   Widget _buildRatingField(String label, int rating, ValueChanged<int> onChanged) {
@@ -273,6 +305,35 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
             ],
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildRentalTypeDropdown(
+    String label,
+    AppLocalizations local,
+    bool required,
+    void Function(String?) onSaved,
+  ) {
+    final localeCode = Localizations.localeOf(context).languageCode;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: DropdownButtonFormField<String>(
+        decoration: InputDecoration(
+          labelText: label,
+          border: const OutlineInputBorder(),
+        ),
+        value: _rentalType,
+        items: rentalTypes
+            .map((type) => DropdownMenuItem<String>(
+                  value: type.key,
+                  child: Text(type.getLabel(localeCode)),
+                ))
+            .toList(),
+        onChanged: (value) => setState(() => _rentalType = value),
+        validator: required ? (val) => (val == null || val.isEmpty) ? local.required : null : null,
+        onSaved: onSaved,
       ),
     );
   }

@@ -36,9 +36,10 @@ class ReviewService {
 
   /// Submit a new review Use: submit_review_page
   static Future<void> createReview(Map<String, dynamic> reviewData) async {
-    final response = await supabase.from('review').insert(reviewData);
-    if (response.error != null) {
-      throw Exception(response.error!.message);
+    try {
+      final response = await supabase.from('review').insert(reviewData);
+    } catch (error) {
+      throw Exception('Error fetching reviews: $error');
     }
   }
 }

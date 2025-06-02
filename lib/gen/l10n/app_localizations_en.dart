@@ -204,7 +204,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get submit_review_landlord_error => 'Please enter the landlord name';
 
   @override
-  String get submit_review_realtor_label => 'Realtor';
+  String get submit_review_realtor_label => 'Realtor / Rental Platform';
 
   @override
   String get submit_review_realtor_error => 'Please enter the realtor';
@@ -223,6 +223,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get submit_review_safety => 'Safety';
+
+  @override
+  String get invalid_number => 'Please enter a valid number';
 
   @override
   String get submit_review_submit_button => 'Submit Review';

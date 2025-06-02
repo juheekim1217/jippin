@@ -9,6 +9,8 @@ import 'package:provider/provider.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/services/country_data_service.dart';
 
+import 'package:jippin/models/rental_types.dart';
+
 class ReviewCard extends StatelessWidget {
   final Map<String, dynamic> review;
 
@@ -16,6 +18,10 @@ class ReviewCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localeProvider = Provider.of<LocaleProvider>(context);
+    String languageCode = localeProvider.language.code;
+    String currency = localeProvider.country.getCountryCurrency(languageCode);
+
     double screenWidth = MediaQuery.of(context).size.width;
     bool isSmallScreen = screenWidth < smallScreenWidth;
 
@@ -27,9 +33,8 @@ class ReviewCard extends StatelessWidget {
     ];
     final overallRating = ratings.where((rating) => rating > 0).isNotEmpty ? ratings.reduce((a, b) => a + b) / ratings.length : 0.0;
 
-    String currency = review['country_code'] == 'KR' ? '만원' : '\$';
-    String rent = '${review['rent'] ?? ''} $currency';
-    String deposit = '${review['deposit'] ?? ''} $currency';
+    String rent = review['rent'].toString() ?? '';
+    String deposit = review['deposit'].toString() ?? '';
 
     return Card(
       margin: const EdgeInsets.only(bottom: 16.0),
@@ -54,10 +59,10 @@ class ReviewCard extends StatelessWidget {
             const SizedBox(height: 8),
             Divider(color: Colors.grey.shade300),
             const SizedBox(height: 8),
-            if (review['occupied_year'] != null) _buildRentDetailRow(AppLocalizations.of(context).occupiedYear, review['occupied_year'].toString()),
-            if (review['rental_type'] != null) _buildRentDetailRow(AppLocalizations.of(context).rental_type, review['rental_type']),
-            if (review['deposit'] != null) _buildRentDetailRow(AppLocalizations.of(context).deposit, deposit),
-            if (review['rent'] != null) _buildRentDetailRow(AppLocalizations.of(context).rent, rent),
+            //if (review['occupied_year'] != null) _buildRentDetailRow(AppLocalizations.of(context).occupiedYear, review['occupied_year'].toString()),
+            if (review['rental_type'] != null) _buildRentDetailRow(AppLocalizations.of(context).rental_type, getRentalTypeLabel(review['rental_type'], languageCode) ?? ''),
+            if (review['deposit'] != null) _buildRentDetailRow('${AppLocalizations.of(context).deposit} ($currency)', deposit),
+            if (review['rent'] != null) _buildRentDetailRow('${AppLocalizations.of(context).rent} ($currency)', rent),
 
             // Review section
             const SizedBox(height: 8),
@@ -267,11 +272,6 @@ class ReviewCard extends StatelessWidget {
     return Wrap(
       spacing: 8.0, // Space between links
       children: [
-        if (review['street_number'] != null && review['street_number'].toString().isNotEmpty)
-          Text(
-            review['street_number'],
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
-          ),
         if (review['street'] != null && review['street'].toString().isNotEmpty)
           SelectionContainer.disabled(
             child: MouseRegion(
@@ -415,11 +415,6 @@ class ReviewCard extends StatelessWidget {
                 ),
               ),
             ),
-          ),
-        if (review['street_number'] != null && review['street_number'].toString().isNotEmpty)
-          Text(
-            review['street_number'],
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
           ),
       ],
     );

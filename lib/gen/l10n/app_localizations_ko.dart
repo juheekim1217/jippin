@@ -138,7 +138,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get address => '주소';
 
   @override
-  String get realtor => '부동산';
+  String get realtor => '부동산업체';
 
   @override
   String get empty_reviews_no_reviews => '아직 리뷰가 없습니다.';
@@ -204,7 +204,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get submit_review_landlord_error => '집주인을 입력해주세요';
 
   @override
-  String get submit_review_realtor_label => '부동산';
+  String get submit_review_realtor_label => '부동산/임대 플랫폼';
 
   @override
   String get submit_review_realtor_error => '부동산 이름을 입력해주세요';
@@ -223,6 +223,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get submit_review_safety => '안전성';
+
+  @override
+  String get invalid_number => '숫자만 입력해주세요';
 
   @override
   String get submit_review_submit_button => '리뷰 제출';
