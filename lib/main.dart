@@ -11,6 +11,7 @@ import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/models/language.dart';
 import 'package:jippin/router.dart';
 import 'package:flutter/gestures.dart';
+import 'package:g_recaptcha_v3/g_recaptcha_v3.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,6 +29,8 @@ Future<void> main() async {
     url: supabaseUrl,
     anonKey: supabaseAnonKey,
   );
+
+  await GRecaptchaV3.ready(dotenv.env['GOOGLE_RECAPTCHA_SITE_KEY']!);
 
   runApp(
     MultiProvider(

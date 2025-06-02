@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:g_recaptcha_v3/g_recaptcha_v3.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/services/review_service.dart';
@@ -53,13 +54,66 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   Country? _selectedCountry;
   Province? _selectedProvince;
 
-  Future<void> _submitReview(AppLocalizations local) async {
-    //final local = AppLocalizations.of(context);
+  // Future<void> _submitReview(AppLocalizations local) async {
+  //   if (_formKey.currentState!.validate()) {
+  //     _formKey.currentState!.save();
+  //
+  //     try {
+  //       await ReviewService.createReview({
+  //         'review': _content,
+  //         'landlord': _landlord,
+  //         'realtor': _realtor,
+  //         'rating_trust': _ratingTrust,
+  //         'rating_price': _ratingPrice,
+  //         'rating_location': _ratingLocation,
+  //         'rating_condition': _ratingCondition,
+  //         'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition) / 4,
+  //         'rental_type': _rentalType,
+  //         'rent': _rent,
+  //         'deposit': _deposit,
+  //         //'occupied_year': _occupiedYear,
+  //         //'fraud': _fraud,
+  //         'country': _country,
+  //         'province': _province,
+  //         'city': _city,
+  //         'postal_code': _postalCode,
+  //         'country_code': _countryCode,
+  //         'street': _street,
+  //       });
+  //
+  //       if (!mounted) return;
+  //
+  //       ScaffoldMessenger.of(context).showSnackBar(
+  //         SnackBar(content: Text(local.submit_review_success)),
+  //       );
+  //       _formKey.currentState!.reset();
+  //     } catch (e) {
+  //       if (!mounted) return;
+  //       ScaffoldMessenger.of(context).showSnackBar(
+  //         SnackBar(content: Text('${local.submit_review_error}: $e')),
+  //       );
+  //     }
+  //   }
+  // }
 
+  Future<void> _submitReview(AppLocalizations local) async {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
 
       try {
+        // Step 1: Run reCAPTCHA
+        final token = await GRecaptchaV3.execute('submit_review');
+
+        if (token == null || token.isEmpty) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(local.submit_review_error)),
+          );
+          return;
+        }
+
+        // Step 2: Optionally send `token` to your backend to verify it with Google
+
+        // Step 3: Submit review
         await ReviewService.createReview({
           'review': _content,
           'landlord': _landlord,
@@ -72,14 +126,13 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
           'rental_type': _rentalType,
           'rent': _rent,
           'deposit': _deposit,
-          //'occupied_year': _occupiedYear,
-          //'fraud': _fraud,
           'country': _country,
           'province': _province,
           'city': _city,
           'postal_code': _postalCode,
           'country_code': _countryCode,
           'street': _street,
+          'captcha_token': token, // Optional: store for audit
         });
 
         if (!mounted) return;
