@@ -117,7 +117,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get occupiedYear => '거주연도';
 
   @override
-  String get rent => '월세';
+  String get rent => '월세/임대료';
 
   @override
   String get deposit => '보증금';

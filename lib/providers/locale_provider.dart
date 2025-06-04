@@ -30,11 +30,15 @@ class LocaleProvider extends ChangeNotifier {
       _locale = languages[deviceLocale.languageCode]!.locale;
       _language = languages[deviceLocale.languageCode]!;
     }
+
     if (countries.containsKey(deviceLocale.countryCode)) {
       _country = countries[deviceLocale.countryCode]!;
+    } else if (languages.containsKey(deviceLocale.languageCode)) {
+      _country = countriesByLanguage[deviceLocale.languageCode]!;
     }
 
-    debugPrint("\ninit: $deviceLocale/${_language.code}/${_country.code}");
+    debugPrint("\n_initializeLocale deviceLocale, languageCode, countryCode: $deviceLocale | ${deviceLocale.languageCode} | ${deviceLocale.countryCode}");
+    debugPrint("\n_initializeLocale _language, _country: ${_language.code} | ${_country.code}");
 
     // Load country JSON here
     try {

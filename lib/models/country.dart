@@ -11,6 +11,18 @@ final Map<String, Country> countries = {
   // "CN": Country("CN", "China", "중국"),
 };
 
+final Map<String, Country> countriesByLanguage = {
+  "en": Country("CA", "Canada", "캐나다", "\$", "달러"),
+  "ko": Country("KR", "South Korea", "대한민국", "₩", "원"),
+  // "US": Country("US", "United States", "미국"),
+  // "AU": Country("AU", "Australia", "호주"),
+  // "NZ": Country("NZ", "New Zealand", "뉴질랜드"),
+  // "GB": Country("GB", "United Kingdom", "영국"),
+  // "IE": Country("IE", "Ireland", "아일랜드"),
+  // "JP": Country("JP", "Japan", "일본"),
+  // "CN": Country("CN", "China", "중국"),
+};
+
 class Country {
   final String code;
   final String nameEn;

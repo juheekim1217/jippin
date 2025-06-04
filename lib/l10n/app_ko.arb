@@ -36,7 +36,7 @@
   "safety": "안전",
   "rental_type": "임대종류",
   "occupiedYear": "거주연도",
-  "rent": "월세",
+  "rent": "월세/임대료",
   "deposit": "보증금",
   "otherFees": "관리비",
   "landlord": "집주인",
