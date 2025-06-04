@@ -106,3 +106,4 @@ proguard-rules.pro
 # Android NDK
 ndkBuild/
 
+.vercel
