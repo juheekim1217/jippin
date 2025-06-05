@@ -32,8 +32,8 @@ class ReviewCard extends StatelessWidget {
     ];
     final overallRating = ratings.where((rating) => rating > 0).isNotEmpty ? ratings.reduce((a, b) => a + b) / ratings.length : 0.0;
 
-    String rent = review['rent'].toString() ?? '';
-    String deposit = review['deposit'].toString() ?? '';
+    String rent = review['rent'].toString();
+    String deposit = review['deposit'].toString();
 
     return Card(
       margin: const EdgeInsets.only(bottom: 16.0),
