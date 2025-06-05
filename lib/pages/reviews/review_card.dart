@@ -8,7 +8,6 @@ import 'package:jippin/utilities/common_helper.dart';
 import 'package:provider/provider.dart';
 import 'package:jippin/providers/locale_provider.dart';
 import 'package:jippin/services/country_data_service.dart';
-
 import 'package:jippin/models/rental_types.dart';
 
 class ReviewCard extends StatelessWidget {
@@ -44,7 +43,8 @@ class ReviewCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Landlord name && Created_at section
-            _buildReviewHeader(context),
+            if (!isSmallScreen) _buildReviewHeader(context),
+            if (isSmallScreen) _buildReviewHeaderSmallWindow(context),
 
             const SizedBox(height: 8),
             _buildReviewDetails(context),
@@ -157,6 +157,73 @@ class ReviewCard extends StatelessWidget {
     );
   }
 
+  Widget _buildReviewHeaderSmallWindow(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Line 1: Created At
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Icon(Icons.edit_calendar_outlined, size: 12, color: Colors.black54),
+            const SizedBox(width: 4),
+            Text(
+              DateFormat('yyyy-MM-dd HH:mm').format(DateTime.parse(review['created_at'])),
+              style: const TextStyle(fontSize: 12, color: Colors.black54),
+            ),
+          ],
+        ),
+        const SizedBox(height: 4),
+        // Line 2: Landlord Info
+        if (review['landlord'] != null && review['landlord'] != "")
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Icon(
+                Icons.person,
+                size: 30,
+                color: Colors.blueAccent,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SelectionContainer.disabled(
+                      child: MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: GestureDetector(
+                          onTap: () {
+                            context.go('/reviews?qL=${review['landlord']}');
+                          },
+                          child: Text(
+                            review['landlord'] ?? '',
+                            style: const TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 0),
+                    Text(
+                      AppLocalizations.of(context).landlord,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.grey[600],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+      ],
+    );
+  }
+
   /// Address
   /// Realtor and Alerts
   Widget _buildReviewDetails(BuildContext context) {
@@ -178,8 +245,15 @@ class ReviewCard extends StatelessWidget {
                 child: Icon(Icons.location_on, size: 20, color: Colors.black87),
               ),
               const SizedBox(width: 8),
-              if (langCode == 'ko') _buildAddressRowKo(context, provinceName, cityName),
-              if (langCode != 'ko') _buildAddressRow(context, provinceName, cityName),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (langCode == 'ko') _buildAddressRowKo(context, provinceName, cityName),
+                    if (langCode != 'ko') _buildAddressRow(context, provinceName, cityName),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
@@ -220,50 +294,8 @@ class ReviewCard extends StatelessWidget {
                 ],
               ),
             ),
-            // Column 2: Alerts (Right-Aligned)
-            // if (review['fraud'] != null && review['fraud'])
-            //   Column(
-            //     mainAxisSize: MainAxisSize.min, // Prevents stretching
-            //     crossAxisAlignment: CrossAxisAlignment.end, // Ensures full right alignment
-            //     children: [
-            //       Tooltip(
-            //         message: AppLocalizations.of(context).landlord_fraud,
-            //         child: Icon(Icons.gavel, size: 20, color: Colors.red),
-            //       ),
-            //     ],
-            //   ),
           ],
         ),
-
-        // Realtor section
-        // if (review['realtor'] != null)
-        //   Padding(
-        //     padding: const EdgeInsets.only(top: 4.0),
-        //     // Adds a top margin of 16 pixels
-        //     child: Row(
-        //       children: [
-        //         Tooltip(
-        //           message: AppLocalizations.of(context).realtor,
-        //           child: Icon(Icons.supervised_user_circle_outlined, size: 20, color: Colors.black87),
-        //         ),
-        //         const SizedBox(width: 8),
-        //         SelectionContainer.disabled(
-        //           child: MouseRegion(
-        //             cursor: SystemMouseCursors.click,
-        //             child: GestureDetector(
-        //               onTap: () {
-        //                 context.go('/reviews?qR=${review['realtor']}');
-        //               },
-        //               child: Text(
-        //                 '${review['realtor']}',
-        //                 style: TextStyle(fontSize: 14, color: Colors.black87),
-        //               ),
-        //             ),
-        //           ),
-        //         )
-        //       ],
-        //     ),
-        //   ),
       ],
     );
   }
