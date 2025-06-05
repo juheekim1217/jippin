@@ -70,6 +70,8 @@ class _MyAppState extends State<MyApp> {
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       theme: materialTheme.lightHighContrast(),
       //darkTheme: materialTheme.darkHighContrast(),
+      themeMode: ThemeMode.light,
+      // Disables dark mode
       routerConfig: createRouter(localeProvider), // Use the external router function
     );
   }
