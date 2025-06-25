@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/component/footer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
@@ -16,39 +17,37 @@ class AboutPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            _buildHeaderSection(context, local.about_title, local.about_description),
-            _buildSectionTitle(local.about_review_fields_title),
-            _buildReviewCriteriaSection(
-              context,
+            _buildHeaderSection(local),
+            _buildPersonalStorySection(local),
+            _buildSectionTitle(local.about_section_what_you_can_share),
+            _buildWhatYouCanShareSection(local),
+            _buildSectionTitle(local.about_section_ratings),
+            _buildRatingSection(
               icon: Icons.shield_outlined,
-              title: local.about_trustworthiness_title,
-              description: local.about_trustworthiness_description,
-              ratingLabels: [
-                local.about_trustworthiness_1_star,
-                local.about_trustworthiness_2_star,
-                local.about_trustworthiness_3_star,
-                local.about_trustworthiness_4_star,
-                local.about_trustworthiness_5_star,
-              ],
+              title: local.about_rating_trust_title,
+              description: local.about_rating_trust_description,
             ),
-            _buildReviewCriteriaSection(
-              context,
-              icon: Icons.emoji_people_outlined,
-              title: local.about_respect_title,
-              description: local.about_respect_description,
-              ratingLabels: [
-                local.about_respect_1_star,
-                local.about_respect_2_star,
-                local.about_respect_3_star,
-                local.about_respect_4_star,
-                local.about_respect_5_star,
-              ],
+            _buildRatingSection(
+              icon: Icons.attach_money_outlined,
+              title: local.about_rating_price_title,
+              description: local.about_rating_price_description,
             ),
-            _buildAdditionalDetailsSection(local),
+            _buildRatingSection(
+              icon: Icons.location_on_outlined,
+              title: local.about_rating_location_title,
+              description: local.about_rating_location_description,
+            ),
+            _buildRatingSection(
+              icon: Icons.home_repair_service_outlined,
+              title: local.about_rating_condition_title,
+              description: local.about_rating_condition_description,
+            ),
+            _buildSectionTitle(local.about_section_why_it_matters),
+            _buildWhyItMattersSection(local),
             const SizedBox(height: 30),
-            _buildContributionMessage(local.about_contribute_message),
-
-            // Footer (Not Sticky, Appears After All Content)
+            _buildContributionMessage(local.about_contribution_message),
+            const SizedBox(height: 20),
+            _buildContactSection(local),
             const SizedBox(height: 30),
             const AppFooter(),
           ],
@@ -57,22 +56,20 @@ class AboutPage extends StatelessWidget {
     );
   }
 
-  Widget _buildHeaderSection(BuildContext context, String title, String description) {
+  Widget _buildHeaderSection(AppLocalizations local) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
-        ),
+        Text(local.about_title, style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
         const SizedBox(height: 10),
-        Text(
-          description,
-          style: const TextStyle(fontSize: 16, color: Colors.black87),
-        ),
+        Text(local.about_subtitle, style: const TextStyle(fontSize: 16, color: Colors.black87)),
         const SizedBox(height: 20),
       ],
     );
+  }
+
+  Widget _buildPersonalStorySection(AppLocalizations local) {
+    return Text(local.about_personal_story, style: const TextStyle(fontSize: 16));
   }
 
   Widget _buildSectionTitle(String title) {
@@ -81,21 +78,31 @@ class AboutPage extends StatelessWidget {
       children: [
         const Divider(thickness: 1),
         const SizedBox(height: 15),
-        Text(
-          title,
-          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-        ),
+        Text(title, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
         const SizedBox(height: 10),
       ],
     );
   }
 
-  Widget _buildReviewCriteriaSection(
-    BuildContext context, {
+  Widget _buildWhatYouCanShareSection(AppLocalizations local) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(local.about_what_rental_title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 6),
+        Text(local.about_what_rental_body, style: const TextStyle(fontSize: 16)),
+        const SizedBox(height: 12),
+        Text(local.about_what_who_title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 6),
+        Text(local.about_what_who_body, style: const TextStyle(fontSize: 16)),
+      ],
+    );
+  }
+
+  Widget _buildRatingSection({
     required IconData icon,
     required String title,
     required String description,
-    required List<String> ratingLabels,
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -105,73 +112,17 @@ class AboutPage extends StatelessWidget {
           children: [
             Icon(icon, size: 30, color: Colors.blueAccent),
             const SizedBox(width: 10),
-            Expanded(
-              child: Text(
-                title,
-                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-            ),
+            Expanded(child: Text(title, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold))),
           ],
         ),
         const SizedBox(height: 8),
         Text(description, style: const TextStyle(fontSize: 16)),
-        _buildRatingList(ratingLabels),
       ],
     );
   }
 
-  Widget _buildRatingList(List<String> ratings) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: ratings.map((rating) {
-        return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Icon(Icons.star, size: 20, color: Colors.amber),
-              const SizedBox(width: 8),
-              Expanded(child: Text(rating, style: const TextStyle(fontSize: 16))),
-            ],
-          ),
-        );
-      }).toList(),
-    );
-  }
-
-  Widget _buildAdditionalDetailsSection(AppLocalizations local) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _buildSectionTitle(local.about_additional_details_title),
-        Text(
-          local.about_additional_details_description,
-          style: const TextStyle(fontSize: 16),
-        ),
-        const SizedBox(height: 10),
-        _buildQuestionItem(Icons.assignment_late_outlined, local.about_question_contract_dispute),
-        _buildQuestionItem(Icons.info_outline, local.about_question_accurate_info),
-        _buildQuestionItem(Icons.gavel_outlined, local.about_question_discriminatory_behavior),
-      ],
-    );
-  }
-
-  Widget _buildQuestionItem(IconData icon, String text) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 5),
-      child: Row(
-        children: [
-          Icon(icon, size: 24, color: Colors.blueGrey),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Text(
-              text,
-              style: const TextStyle(fontSize: 16),
-            ),
-          ),
-        ],
-      ),
-    );
+  Widget _buildWhyItMattersSection(AppLocalizations local) {
+    return Text(local.about_why_it_matters, style: const TextStyle(fontSize: 16));
   }
 
   Widget _buildContributionMessage(String message) {
@@ -185,14 +136,40 @@ class AboutPage extends StatelessWidget {
         children: [
           const Icon(Icons.handshake_outlined, size: 30, color: Colors.blueAccent),
           const SizedBox(width: 10),
-          Expanded(
-            child: Text(
-              message,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blueAccent),
-            ),
-          ),
+          Expanded(child: Text(message, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blueAccent))),
         ],
       ),
+    );
+  }
+
+  Widget _buildContactSection(AppLocalizations local) {
+    final Uri emailUri = Uri(
+      scheme: 'mailto',
+      path: 'icecreambears1@gmail.com',
+    );
+
+    return Row(
+      children: [
+        const Icon(Icons.email_outlined, size: 24, color: Colors.black54),
+        const SizedBox(width: 8),
+        Text(local.about_contact_label, style: const TextStyle(fontSize: 16)),
+        const SizedBox(width: 4),
+        GestureDetector(
+          onTap: () async {
+            if (await canLaunchUrl(emailUri)) {
+              await launchUrl(emailUri);
+            }
+          },
+          child: Text(
+            emailUri.path,
+            style: const TextStyle(
+              fontSize: 16,
+              color: Colors.blue,
+              decoration: TextDecoration.underline,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

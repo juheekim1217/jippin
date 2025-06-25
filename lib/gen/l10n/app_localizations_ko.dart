@@ -348,212 +348,215 @@ class AppLocalizationsKo extends AppLocalizations {
   String get about_title => '집핀 소개';
 
   @override
-  String get about_description => '집핀 렌트 리뷰 앱은 세입자들이 집주인과 부동산 중개인에 대한 경험을 공유하여 투명성을 높이고, 미래의 임차인이 더 나은 결정을 내릴 수 있도록 돕습니다.';
+  String get about_subtitle => '세입자가 더 안전하게 집을 고를 수 있고 더 나아가 전세 사기를 피하도록 돕습니다.';
 
   @override
-  String get about_review_fields_title => '리뷰 항목 및 평가 기준';
+  String get about_personal_story => '저는 한국에서 전세 사기로 인해 청년들이 극단적인 선택을 했다는 뉴스를 보고 집핀을 처음 만들게 되었습니다.\n\n누구도 사기로 인해 고통받아서는 안 됩니다. 세입자들이 겪은 이야기를 익명으로 공유함으로써 서로를 지킬 수 있습니다.\n\n누구나 참여할 수 있고, 함께하면 이런 사기를 예방할 수 있습니다. 집핀은 앞으로 지속적으로 사이트를 보완할 예정이고 더 많은 나라로 확장할 예정입니다. 전 세계 세입자들이 정보를 나누고 서로를 도울 수 있도록 만들겠습니다.';
 
   @override
-  String get about_trustworthiness_title => '1. 신뢰도 평가';
+  String get about_section_what_you_can_share => '공유할 수 있는 내용';
 
   @override
-  String get about_trustworthiness_description => '신뢰도 평가는 집주인 또는 부동산 중개인의 신뢰성과 정직성을 반영합니다. 투명성, 윤리적 관행, 약속 이행 여부 등을 기준으로 평가하세요.';
+  String get about_what_rental_title => '🏡 임대 부동산 정보 (모르면 “모름”으로 작성하세요)';
 
   @override
-  String get about_trustworthiness_1_star => '1점: 매우 신뢰할 수 없음 – 심각한 거짓말 또는 약속을 지키지 않는 문제 발생.';
+  String get about_what_rental_body => '• 국가, 도/주, 도시\n• 도로명 주소 및 우편번호\n• 임대 유형: 단기, 장기, 전세, 일일 임대, 휴가용 임대, 기타\n• 월세 및 보증금';
 
   @override
-  String get about_trustworthiness_2_star => '2점: 신뢰할 수 없음 – 투명성 부족 또는 신뢰 문제 발생.';
+  String get about_what_who_title => '👤 임대 관련 인물 (모르면 “모름”으로 작성하세요)';
 
   @override
-  String get about_trustworthiness_3_star => '3점: 보통 – 큰 문제는 없지만 특별히 신뢰할 만하지도 않음.';
+  String get about_what_who_body => '• 집주인 이름 \n• 부동산 중개인 또는 플랫폼 이름';
 
   @override
-  String get about_trustworthiness_4_star => '4점: 신뢰할 수 있음 – 대체로 신뢰할 수 있으며, 약간의 문제만 있음.';
+  String get about_section_ratings => '상태 및 경험 평가';
 
   @override
-  String get about_trustworthiness_5_star => '5점: 매우 신뢰할 수 있음 – 모든 거래에서 완전히 투명하고 믿을 수 있음.';
+  String get about_rating_trust_title => '신뢰도';
 
   @override
-  String get about_respect_title => '2. 존중도 평가';
+  String get about_rating_trust_description => '집주인 또는 중개인이 약속을 지키고 정직하게 행동했나요?';
 
   @override
-  String get about_respect_description => '존중도 평가는 집주인 또는 부동산 중개인이 세입자를 어떻게 대하는지를 반영합니다. 예의 바름, 문제 해결 태도, 전반적인 전문성을 평가합니다.';
+  String get about_rating_price_title => '가격';
 
   @override
-  String get about_respect_1_star => '1점: 매우 불친절함 – 무례하거나 무관심한 태도.';
+  String get about_rating_price_description => '가격이 제공된 가치에 비해 합리적이었나요?';
 
   @override
-  String get about_respect_2_star => '2점: 불친절함 – 가끔 비전문적이거나 예의가 부족한 경우 발생.';
+  String get about_rating_location_title => '위치';
 
   @override
-  String get about_respect_3_star => '3점: 보통 – 특별히 예의 바르지도, 무례하지도 않음.';
+  String get about_rating_location_description => '지역이 편리하고 안전하며 접근성이 좋았나요?';
 
   @override
-  String get about_respect_4_star => '4점: 존중함 – 대체로 친절하고 신경 써줌, 약간의 문제 있음.';
+  String get about_rating_condition_title => '상태';
 
   @override
-  String get about_respect_5_star => '5점: 매우 존중함 – 항상 배려심 있고 예의 바르며 전문적임.';
+  String get about_rating_condition_description => '집 상태가 청결하고 안전하며 잘 관리되고 있었나요?';
 
   @override
-  String get about_additional_details_title => '추가 리뷰 세부 정보';
+  String get about_section_why_it_matters => '왜 중요한가요?';
 
   @override
-  String get about_additional_details_description => '신뢰도 및 존중도 평가 외에도, 사용자는 경험에 대한 추가적인 의견을 남길 수 있습니다. 또한, 다음과 같은 선택 질문에 답변할 수 있습니다:';
+  String get about_why_it_matters => '리뷰 하나하나가 더 안전하고 투명한 임대 시장을 만듭니다:\n\n• 사기 및 차별 행위를 드러냅니다\n• 믿을 수 있고 존중하는 집주인과 중개인을 알려줍니다\n• 신입 세입자, 학생, 취약 계층을 보호합니다\n• 집단의 경험을 바탕으로 사기를 예방합니다';
 
   @override
-  String get about_question_contract_dispute => '• 계약 관련 분쟁이 있었나요? – 임대 계약과 관련된 문제를 겪었는지 알려주세요.';
+  String get about_contribution_message => '모든 리뷰는 익명으로 처리됩니다. 당신의 경험 공유는 다른 이들이 나쁜 임대를 피하고 더 나은 집을 찾는 데 큰 도움이 됩니다.';
 
   @override
-  String get about_question_accurate_info => '• 집주인/중개인이 정확한 정보를 제공했나요? – 정보의 진실성과 명확성을 평가하세요.';
+  String get about_contact_label => '개발자 문의 이메일:';
 
   @override
-  String get about_question_discriminatory_behavior => '• 차별적인 행동을 경험한 적이 있나요? – 선택 사항으로, 집주인/중개인의 포용성을 평가합니다.';
+  String get terms_title => '이용약관';
 
   @override
-  String get about_contribute_message => '렌트 리뷰에 기여함으로써, 세입자들이 신뢰할 수 있고 존중받을 수 있는 집주인과 중개인을 찾을 수 있도록 도와 투명한 임대 시장을 만드는 데 기여할 수 있습니다.';
+  String get terms_effective_date => '시행일: 2025-06-24';
 
   @override
-  String get termsAndConditions => '이용 약관';
+  String get terms_intro => 'JIPPIN에 오신 것을 환영합니다. 본 약관은 웹사이트 및 모바일 앱(이하 \'플랫폼\')의 이용에 적용됩니다. 플랫폼에 접근하거나 사용하는 경우, 본 약관에 동의하는 것으로 간주됩니다.';
 
   @override
-  String get terms_title => 'JIPPIN에 오신 것을 환영합니다';
+  String get terms_section1_title => '1. 플랫폼의 목적';
 
   @override
-  String get terms_description => '이 웹사이트 및 모바일 애플리케이션에 액세스함으로써 귀하는 당사의 이용 약관을 준수하고 따를 것에 동의합니다.';
+  String get terms_section1_body => 'JIPPIN은 세입자가 집주인, 임대 경험, 주거 환경에 대한 정보를 공유할 수 있도록 지원하는 커뮤니티 기반 플랫폼입니다. 이 플랫폼은 투명성을 높이고 사용자 리뷰를 통해 임대 사기를 줄이는 것을 목적으로 합니다.';
 
   @override
-  String get terms_acceptanceTitle => '1. 약관의 수락';
+  String get terms_section2_title => '2. 사용자 동의';
 
   @override
-  String get terms_acceptanceDescription => 'JIPPIN을 사용함으로써 귀하는 JIPPIN과 법적으로 구속되는 계약을 체결하며, 본 약관 및 적용 가능한 모든 법률을 준수할 것에 동의합니다.';
+  String get terms_section2_body => 'JIPPIN에 접근하거나 사용하는 경우, 귀하는 만 18세 이상이거나 법적 보호자의 동의를 받았음을 확인하며 본 약관 및 관련 법률에 동의합니다. 동의하지 않으시면 플랫폼을 사용하지 마십시오.';
 
   @override
-  String get terms_contentTitle => '2. 콘텐츠 사용';
+  String get terms_section3_title => '3. 사용자 콘텐츠';
 
   @override
-  String get terms_contentDescription => 'JIPPIN이 제공하는 모든 콘텐츠(텍스트, 그래픽, 이미지 포함)는 정보 제공 목적으로만 사용됩니다.';
+  String get terms_section3_body => '귀하는 플랫폼에 제출한 모든 콘텐츠(예: 리뷰, 댓글, 평점)에 대해 책임을 집니다.\n콘텐츠를 제출함으로써, 귀하는 JIPPIN이 이를 운영 및 홍보 목적을 위해 사용, 표시, 저장 및 공유할 수 있는 전 세계적이며 로열티 없는 라이선스를 부여하게 됩니다.\n\n다음과 같은 콘텐츠는 제출할 수 없습니다:\n• 허위 또는 오해의 소지가 있는 정보\n• 괴롭힘, 차별, 혐오 표현\n• 법률 또는 제3자 권리를 침해하는 내용\n\nJIPPIN은 본 약관을 위반하거나 플랫폼의 신뢰성을 해치는 콘텐츠를 삭제할 수 있는 권리를 보유합니다.';
 
   @override
-  String get terms_userContentTitle => '3. 사용자 생성 콘텐츠';
+  String get terms_section4_title => '4. 개인정보 보호';
 
   @override
-  String get terms_userContentDescription => '사용자는 JIPPIN에 리뷰 및 기타 자료를 제출하며, JIPPIN은 해당 콘텐츠를 사용할 수 있는 권리를 갖습니다.';
+  String get terms_section4_body => '우리는 사용자의 개인정보 보호를 중요하게 생각합니다. 리뷰는 익명으로 공개되며, 개인정보는 개인정보 처리방침에 따라 관리됩니다.';
 
   @override
-  String get terms_disclaimerTitle => '4. 보증의 부인';
+  String get terms_section5_title => '5. 플랫폼 제공';
 
   @override
-  String get terms_disclaimerDescription => 'JIPPIN은 플랫폼 및 콘텐츠를 \'있는 그대로\' 제공하며, 어떠한 명시적 또는 묵시적인 보증도 하지 않습니다.';
+  String get terms_section5_body => 'JIPPIN은 \'있는 그대로\' 제공됩니다. 플랫폼의 연속적인 접근 또는 오류 없는 사용을 보장하지 않으며, 예고 없이 일부 기능이 변경되거나 중단될 수 있습니다.';
 
   @override
-  String get terms_liabilityTitle => '5. 책임 제한';
+  String get terms_section6_title => '6. 책임의 제한';
 
   @override
-  String get terms_liabilityDescription => 'JIPPIN은 플랫폼 사용 또는 사용 불능으로 인해 발생하는 모든 손해에 대해 책임을 지지 않습니다.';
+  String get terms_section6_body => '관련 법률이 허용하는 최대 한도 내에서, JIPPIN 및 운영자는 플랫폼 사용 또는 사용 불가로 인해 발생하는 모든 직간접적 또는 부수적인 손해에 대해 책임지지 않습니다.';
 
   @override
-  String get terms_thirdPartyTitle => '6. 제3자 웹사이트 링크';
+  String get terms_section7_title => '7. 외부 링크';
 
   @override
-  String get terms_thirdPartyDescription => 'JIPPIN은 제3자 웹사이트의 콘텐츠, 정책, 관행에 대해 책임을 지지 않습니다.';
+  String get terms_section7_body => 'JIPPIN은 제3자 웹사이트나 서비스에 대한 링크를 포함할 수 있습니다. 당사는 해당 외부 사이트의 콘텐츠나 정책에 대해 책임지지 않습니다.';
 
   @override
-  String get terms_governingLawTitle => '7. 준거법 및 관할권';
+  String get terms_section8_title => '8. 약관 변경';
 
   @override
-  String get terms_governingLawDescription => '본 약관은 JIPPIN이 등록된 관할권의 법률에 따라 해석 및 규율됩니다.';
+  String get terms_section8_body => '우리는 언제든지 본 약관을 수정할 수 있습니다. 업데이트 후 플랫폼을 계속 사용하는 경우, 수정된 약관에 동의한 것으로 간주됩니다. 본 페이지를 주기적으로 확인해 주세요.';
 
   @override
-  String get terms_amendmentsTitle => '8. 변경 사항';
+  String get terms_section9_title => '9. 문의';
 
   @override
-  String get terms_amendmentsDescription => 'JIPPIN은 사전 공지 없이 본 약관을 수정할 권리를 보유합니다.';
+  String get terms_section9_body => '약관에 대한 문의사항이 있으시면 아래로 연락해 주세요:\n📧 icecreambears1@gmail.com';
 
   @override
-  String get terms_contactTitle => '9. 문의 사항';
+  String get terms_section10_title => '10. 준거법';
 
   @override
-  String get terms_contactDescription => '문의 사항이 있으면 support@jippin.com으로 연락해 주세요.';
+  String get terms_section10_body => '본 약관은 JIPPIN이 운영되는 국가의 법률에 따라 해석됩니다. 캐나다 사용자의 경우 PIPEDA, 한국 사용자의 경우 PIPA가 적용됩니다. 모든 법적 분쟁은 해당 관할 법원에서 해결됩니다.';
 
   @override
-  String get privacy_privacyPolicy => '개인정보 보호정책';
+  String get terms_section11_title => '11. 콘텐츠 검토';
 
   @override
-  String get privacy_privacyTitle => 'JIPPIN 개인정보 보호정책';
+  String get terms_section11_body => '사용자 생성 콘텐츠는 검토 및 관리될 수 있으며, 법률 위반, 커뮤니티 가이드라인 위반 또는 플랫폼 신뢰성 저해 시 삭제될 수 있습니다.';
 
   @override
-  String get privacy_privacyDescription => 'JIPPIN은 사용자의 개인정보 보호를 중요하게 생각하며, 정보의 기밀성을 유지하기 위해 최선을 다하고 있습니다. 본 개인정보 보호정책은 플랫폼에서 데이터를 처리하는 방식에 대해 설명합니다.';
+  String get privacy_privacyTitle => 'JIPPIN 개인정보 처리방침';
 
   @override
-  String get privacy_informationCollectionTitle => '1. 정보 수집';
+  String get privacy_privacyDescription => '시행일: 2025-06-24\n\nJIPPIN은 귀하의 개인정보 보호를 중요하게 생각합니다. 본 개인정보 처리방침은 웹사이트 및 모바일 애플리케이션(이하 \"플랫폼\")에서 정보를 어떻게 처리하는지 설명합니다.';
 
   @override
-  String get privacy_informationCollectionDescription => 'JIPPIN은 방문자로부터 어떠한 개인 정보도 수집하지 않습니다.';
+  String get privacy_informationCollectionTitle => '1. 수집하는 정보';
+
+  @override
+  String get privacy_informationCollectionDescription => '플랫폼을 사용하는 사용자로부터 어떠한 개인정보도 수집하지 않습니다.';
 
   @override
   String get privacy_cookiesTitle => '2. 쿠키 및 추적 기술';
 
   @override
-  String get privacy_cookiesDescription => '플랫폼은 분석, 보안 및 광고 서비스(아래에 설명됨)를 제외하고 쿠키 또는 기타 추적 기술을 사용하지 않습니다.';
+  String get privacy_cookiesDescription => 'JIPPIN은 사용자 프로파일링을 위한 쿠키나 추적 기술을 사용하지 않습니다. 다만, 다음과 같은 필수 기술은 사용할 수 있습니다:\n• 분석 (예: 방문 통계)\n• 보안 (예: 스팸 방지)\n• 광고 (예: 광고 노출)';
 
   @override
   String get privacy_informationSharingTitle => '3. 정보 공유';
 
   @override
-  String get privacy_informationSharingDescription => 'JIPPIN은 어떠한 정보를 수집하지 않으므로, 제3자와 정보를 공유하지 않습니다.';
+  String get privacy_informationSharingDescription => '개인정보를 수집하지 않기 때문에 제3자와 정보를 공유하지도 않습니다.';
 
   @override
   String get privacy_dataSecurityTitle => '4. 데이터 보안';
 
   @override
-  String get privacy_dataSecurityDescription => '개인 데이터를 수집하지 않지만, 무단 액세스를 방지하고 플랫폼의 무결성을 유지하기 위해 적절한 보안 조치를 시행합니다.';
+  String get privacy_dataSecurityDescription => 'JIPPIN은 사용자 신원을 저장하지 않지만, 무단 접근을 방지하고 플랫폼의 신뢰성을 유지하기 위한 강력한 보안 조치를 시행합니다.';
 
   @override
-  String get privacy_childrenTitle => '5. 아동 개인정보 보호';
+  String get privacy_childrenTitle => '5. 아동의 개인정보 보호';
 
   @override
-  String get privacy_childrenDescription => '우리의 플랫폼은 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인 정보를 의도적으로 수집하지 않습니다.';
+  String get privacy_childrenDescription => 'JIPPIN은 만 13세 미만 아동을 대상으로 하지 않으며, 해당 아동의 정보를 고의로 수집하지 않습니다.';
 
   @override
-  String get privacy_analyticsTitle => '6. 분석 서비스';
+  String get privacy_botDetectionTitle => '6. 봇 탐지';
 
   @override
-  String get privacy_analyticsDescription => '우리는 PostHog을 사용하여 사용자 행동을 분석합니다. 이 서비스는 사용자 경험을 개선하기 위해 장치 정보, IP 주소 및 브라우징 패턴을 수집합니다.';
+  String get privacy_botDetectionDescription => '스팸, 가짜 리뷰, 자동화된 트래픽을 방지하기 위해 Google reCAPTCHA를 사용합니다. 이 과정에서 Google은 기기 정보와 상호작용 데이터를 수집할 수 있습니다.';
 
   @override
-  String get privacy_botDetectionTitle => '7. 봇 감지 서비스';
+  String get privacy_advertisingTitle => '7. 광고 서비스';
 
   @override
-  String get privacy_botDetectionDescription => '우리는 Google reCAPTCHA를 사용하여 스팸 및 자동화된 악성 활동을 방지합니다.';
+  String get privacy_advertisingDescription => 'JIPPIN은 Google Ads를 사용하여 관련 광고를 표시합니다. Google은 광고 맞춤화를 위해 사용자 데이터를 수집할 수 있습니다. 자세한 내용은 Google 광고 정책을 참고하세요.';
 
   @override
-  String get privacy_advertisingTitle => '8. 광고 서비스';
+  String get privacy_thirdPartyCollectionTitle => '8. 제3자 데이터 수집';
 
   @override
-  String get privacy_advertisingDescription => '우리의 플랫폼은 Google Ads를 사용하여 광고를 표시합니다. Google은 맞춤형 광고 경험을 제공하기 위해 사용자 데이터를 수집할 수 있습니다.';
+  String get privacy_thirdPartyCollectionDescription => 'JIPPIN은 사용자 개인정보를 직접 수집하거나 저장하지 않지만, Google Ads 및 reCAPTCHA와 같은 제3자 서비스를 사용합니다. 이들 서비스는 사용자의 IP 주소, 브라우저 메타데이터 등의 정보를 수집할 수 있습니다. 본 플랫폼을 이용함으로써 이러한 제3자 서비스의 데이터 처리 방식에 동의하는 것으로 간주됩니다. 자세한 내용은 각 서비스의 개인정보 처리방침을 참고해 주세요.';
 
   @override
   String get privacy_gdprTitle => '9. GDPR 준수';
 
   @override
-  String get privacy_gdprDescription => '사용자가 임대인에 대한 리뷰를 제출할 수 있도록 허용하지만, GDPR 정책을 준수하도록 콘텐츠를 관리합니다.';
+  String get privacy_gdprDescription => 'JIPPIN은 유럽 일반 개인정보 보호법(GDPR)의 원칙을 준수합니다. 사용자 콘텐츠는 익명으로 작성되며, 관련 기준에 따라 검토됩니다.';
 
   @override
   String get privacy_dsaTitle => '10. DSA 준수';
 
   @override
-  String get privacy_dsaDescription => '임대인 리뷰는 사용자 생성 콘텐츠이며 반드시 우리의 입장을 반영하는 것은 아닙니다. 리뷰는 가이드라인에 따라 검토됩니다.';
+  String get privacy_dsaDescription => '유럽 디지털서비스법(DSA)에 따라, JIPPIN의 집주인 리뷰는 다음을 보장합니다:\n• 사용자 생성 콘텐츠로 명확히 표시됨\n• 커뮤니티 가이드라인에 따라 검토 및 관리됨\n\n우리는 사용자 리뷰의 정확성을 보증하거나 보장하지 않습니다.';
 
   @override
-  String get privacy_policyChangesTitle => '11. 개인정보 보호정책 변경';
+  String get privacy_policyChangesTitle => '11. 개인정보 처리방침 변경';
 
   @override
-  String get privacy_policyChangesDescription => 'JIPPIN은 개인정보 보호정책을 업데이트할 권리를 보유합니다. 변경 사항은 즉시 적용됩니다.';
+  String get privacy_policyChangesDescription => '본 정책은 언제든지 변경될 수 있으며, 게시 즉시 효력이 발생합니다. 정기적으로 이 페이지를 확인해 주세요.';
 
   @override
-  String get privacy_contactTitle => '12. 문의 사항';
+  String get privacy_contactTitle => '12. 문의';
 
   @override
-  String get privacy_contactDescription => '질문이 있으면 support@jippin.com으로 문의하세요.';
+  String get privacy_contactDescription => '본 개인정보 처리방침에 대해 궁금한 점이 있으시면 아래로 연락해 주세요:\n📧 icecreambears1@gmail.com';
 }

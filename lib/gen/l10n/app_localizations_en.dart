@@ -345,215 +345,218 @@ class AppLocalizationsEn extends AppLocalizations {
   String get home_writeReviewDesc => 'Help others by sharing your rental experience.';
 
   @override
-  String get about_title => 'Who we are?';
+  String get about_title => 'About Jippin';
 
   @override
-  String get about_description => 'The Jippin Rent Review app helps tenants share their experiences with landlords and real estate agents, providing transparency and helping future renters make informed decisions.';
+  String get about_subtitle => 'Helping Renters Make Smarter Choices — and Avoid Rental Scams!';
 
   @override
-  String get about_review_fields_title => 'Review Fields and Rating Technique';
+  String get about_personal_story => 'I created Jippin after watching a heartbreaking news story about young people in South Korea who took their lives after falling victim to rental scams.\n\nNo one should suffer alone or in silence. By sharing our stories, we can protect each other.\n\nAnyone can contribute — and together, we can prevent this crisis. I’m committed to expanding Jippin and adding more countries so renters everywhere can benefit from shared knowledge and support.';
 
   @override
-  String get about_trustworthiness_title => '1. Trustworthiness Rating';
+  String get about_section_what_you_can_share => 'What You Can Share';
 
   @override
-  String get about_trustworthiness_description => 'The Trustworthiness Rating reflects how reliable and honest the landlord or real estate agent is in their dealings. Rate the landlord/agent based on transparency, ethical practices, and whether promises are kept.';
+  String get about_what_rental_title => '🏡 Rental Property Details (If unknown, just write “unknown”)';
 
   @override
-  String get about_trustworthiness_1_star => '1 Star: Very untrustworthy – Major issues with dishonesty or failure to follow through on promises.';
+  String get about_what_rental_body => '• Country, Province/State, and City\n• Street Address and Postal Code\n• Rental Type: Short-term, Long-term, Lump-sum Lease, Daily Rental, Vacation Rental, or Other\n• Rent and Deposit';
 
   @override
-  String get about_trustworthiness_2_star => '2 Stars: Untrustworthy – Some issues with transparency or reliability.';
+  String get about_what_who_title => '👤 Who You Dealt With (If unknown, just write “unknown”)';
 
   @override
-  String get about_trustworthiness_3_star => '3 Stars: Neutral – No major issues, but not particularly reliable.';
+  String get about_what_who_body => '• Landlord Name\n• Realtor or Rental Platform';
 
   @override
-  String get about_trustworthiness_4_star => '4 Stars: Trustworthy – Generally reliable, with few issues.';
+  String get about_section_ratings => 'Condition & Experience Ratings';
 
   @override
-  String get about_trustworthiness_5_star => '5 Stars: Very trustworthy – Completely transparent and dependable in all dealings.';
+  String get about_rating_trust_title => 'Trustworthiness';
 
   @override
-  String get about_respect_title => '2. Respect Rating';
+  String get about_rating_trust_description => 'Did the landlord or agent follow through on promises and act with integrity?';
 
   @override
-  String get about_respect_description => 'The Respect Rating reflects how the landlord or real estate agent treats you. This includes politeness, attentiveness to concerns, and overall professionalism.';
+  String get about_rating_price_title => 'Price';
 
   @override
-  String get about_respect_1_star => '1 Star: Very disrespectful – Rude or dismissive communication.';
+  String get about_rating_price_description => 'Was the cost fair for what was offered?';
 
   @override
-  String get about_respect_2_star => '2 Stars: Disrespectful – Occasional unprofessional behavior or lack of courtesy.';
+  String get about_rating_location_title => 'Location';
 
   @override
-  String get about_respect_3_star => '3 Stars: Neutral – Adequate but not particularly respectful or disrespectful.';
+  String get about_rating_location_description => 'Was the area convenient, safe, and accessible?';
 
   @override
-  String get about_respect_4_star => '4 Stars: Respectful – Generally polite and attentive, with minor issues.';
+  String get about_rating_condition_title => 'Condition';
 
   @override
-  String get about_respect_5_star => '5 Stars: Very respectful – Always considerate, courteous, and professional.';
+  String get about_rating_condition_description => 'Was the property clean, safe, and well-maintained?';
 
   @override
-  String get about_additional_details_title => 'Additional Review Details';
+  String get about_section_why_it_matters => 'Why It Matters';
 
   @override
-  String get about_additional_details_description => 'In addition to the Trustworthiness and Respect Ratings, users can leave comments to provide more context on their experiences. They can also answer the following optional questions:';
+  String get about_why_it_matters => 'Every review helps build a safer, more transparent rental market:\n\n• Exposes dishonest or discriminatory practices\n• Highlights trustworthy and respectful landlords and agents\n• Helps protect newcomers, students, and vulnerable renters\n• Fights fraud and rental scams through shared knowledge';
 
   @override
-  String get about_question_contract_dispute => '• Was there a contract dispute? – Indicate if you encountered any issues with the lease agreement.';
+  String get about_contribution_message => 'All reviews are anonymous. Your voice matters — by sharing your experience, you’re helping others avoid bad rentals and find better housing.';
 
   @override
-  String get about_question_accurate_info => '• Did the landlord/agent provide accurate information? – Rate whether the information given was truthful and clear.';
+  String get about_contact_label => 'Developer Contact:';
 
   @override
-  String get about_question_discriminatory_behavior => '• Did you experience any discriminatory behavior? – Optional, to assess how inclusive the landlord/agent was.';
+  String get terms_title => 'Terms & Conditions';
 
   @override
-  String get about_contribute_message => 'By contributing to Rent Review, you’re helping other renters find reliable and respectful landlords and agents, creating a more transparent rental market for everyone.';
+  String get terms_effective_date => 'Effective Date: 2025-06-24';
 
   @override
-  String get termsAndConditions => 'Terms and Conditions';
+  String get terms_intro => 'Welcome to JIPPIN. These Terms & Conditions govern your use of our website and mobile application (the “Platform”). By accessing or using JIPPIN, you agree to be legally bound by the following terms.';
 
   @override
-  String get terms_title => 'Welcome to JIPPIN';
+  String get terms_section1_title => '1. Purpose of the Platform';
 
   @override
-  String get terms_description => 'By accessing this website and mobile application, you acknowledge and agree to comply with our terms and conditions.';
+  String get terms_section1_body => 'JIPPIN is a community-based platform designed to help renters share and discover information about landlords, rental experiences, and housing conditions. It exists to promote transparency and reduce rental fraud through user-generated reviews.';
 
   @override
-  String get terms_acceptanceTitle => '1. Acceptance of Terms';
+  String get terms_section2_title => '2. Your Agreement';
 
   @override
-  String get terms_acceptanceDescription => 'By accessing or using JIPPIN, you enter into a legally binding agreement with JIPPIN and agree to be bound by these Terms and all applicable laws and regulations.';
+  String get terms_section2_body => 'By accessing or using JIPPIN, you confirm that you are at least 18 years old (or have legal parental consent) and that you agree to these Terms and all applicable laws. If you do not agree, do not use the Platform.';
 
   @override
-  String get terms_contentTitle => '2. Use of Content';
+  String get terms_section3_title => '3. User Content';
 
   @override
-  String get terms_contentDescription => 'All content provided on JIPPIN, including but not limited to text, graphics, images, and other materials, is for informational purposes only.';
+  String get terms_section3_body => 'You are responsible for any content (e.g., reviews, comments, ratings) you submit.\nBy submitting content, you grant JIPPIN a worldwide, royalty-free license to use, display, store, and share your content for the purpose of operating and promoting the Platform.\n\nYou must not submit content that is:\n• False or misleading\n• Harassing, discriminatory, or offensive\n• In violation of any laws or third-party rights\n\nWe reserve the right to remove any content that violates these terms or harms the integrity of the platform.';
 
   @override
-  String get terms_userContentTitle => '3. User-Generated Content';
+  String get terms_section4_title => '4. Privacy';
 
   @override
-  String get terms_userContentDescription => 'Users may submit reviews and other materials on JIPPIN, granting a worldwide license for JIPPIN to use them.';
+  String get terms_section4_body => 'We take your privacy seriously. Reviews are published anonymously, and personal data is handled in accordance with our Privacy Policy.';
 
   @override
-  String get terms_disclaimerTitle => '4. Disclaimer of Warranties';
+  String get terms_section5_title => '5. Platform Availability';
 
   @override
-  String get terms_disclaimerDescription => 'JIPPIN PROVIDES THE PLATFORM AND CONTENT \'AS IS\' WITHOUT WARRANTIES OR REPRESENTATIONS, EXPRESS OR IMPLIED.';
+  String get terms_section5_body => 'JIPPIN is provided “as is.” We do not guarantee uninterrupted or error-free access. We may update, modify, or discontinue parts of the platform at any time without notice.';
 
   @override
-  String get terms_liabilityTitle => '5. Limitation of Liability';
+  String get terms_section6_title => '6. Limitation of Liability';
 
   @override
-  String get terms_liabilityDescription => 'JIPPIN SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OR INABILITY TO USE THE PLATFORM.';
+  String get terms_section6_body => 'To the fullest extent permitted by law, JIPPIN and its creators are not liable for any direct, indirect, or incidental damages related to your use (or inability to use) the platform or the accuracy of its content.';
 
   @override
-  String get terms_thirdPartyTitle => '6. Links to Third-Party Websites';
+  String get terms_section7_title => '7. External Links';
 
   @override
-  String get terms_thirdPartyDescription => 'JIPPIN assumes no responsibility for third-party website content, policies, or practices.';
+  String get terms_section7_body => 'JIPPIN may contain links to third-party websites or services. We are not responsible for the content, policies, or actions of those external sites.';
 
   @override
-  String get terms_governingLawTitle => '7. Governing Law and Jurisdiction';
+  String get terms_section8_title => '8. Changes to Terms';
 
   @override
-  String get terms_governingLawDescription => 'These Terms shall be governed by the laws of the jurisdiction in which JIPPIN is registered.';
+  String get terms_section8_body => 'We may update these Terms at any time. Continued use of JIPPIN after updates means you accept the revised terms. Please check this page periodically for changes.';
 
   @override
-  String get terms_amendmentsTitle => '8. Amendments';
+  String get terms_section9_title => '9. Contact Us';
 
   @override
-  String get terms_amendmentsDescription => 'JIPPIN reserves the right to modify or update these Terms at any time without prior notice.';
+  String get terms_section9_body => 'For any questions or concerns, please contact:\n📧 icecreambears1@gmail.com';
 
   @override
-  String get terms_contactTitle => '9. Contact Information';
+  String get terms_section10_title => '10. Governing Law';
 
   @override
-  String get terms_contactDescription => 'For any inquiries, please contact JIPPIN at support@jippin.com.';
+  String get terms_section10_body => 'These Terms shall be governed by the laws of the jurisdiction in which JIPPIN is operated. For Canadian users, this includes PIPEDA. For South Korean users, this includes PIPA. Legal disputes shall be resolved in the courts of the applicable jurisdiction.';
 
   @override
-  String get privacy_privacyPolicy => 'Privacy Policy';
+  String get terms_section11_title => '11. Content Moderation';
+
+  @override
+  String get terms_section11_body => 'User-generated content may be reviewed and moderated. We reserve the right to remove any content that violates applicable laws, our community guidelines, or the integrity of the platform.';
 
   @override
   String get privacy_privacyTitle => 'Privacy Policy for JIPPIN';
 
   @override
-  String get privacy_privacyDescription => 'At JIPPIN, we value your privacy and are committed to maintaining the confidentiality of your information. This Privacy Policy outlines how we handle data on our platform.';
+  String get privacy_privacyDescription => 'Effective Date: 2025-06-24\n\nAt JIPPIN, we are committed to protecting your privacy. This Privacy Policy explains how we handle information on our website and mobile application (collectively, the \"Platform\").';
 
   @override
-  String get privacy_informationCollectionTitle => '1. Information Collection';
+  String get privacy_informationCollectionTitle => '1. Information We Collect';
 
   @override
-  String get privacy_informationCollectionDescription => 'We do not collect any personal information from visitors to our platform.';
+  String get privacy_informationCollectionDescription => 'We do not collect any personal information from users who browse or use the Platform.';
 
   @override
-  String get privacy_cookiesTitle => '2. Cookies and Tracking Technologies';
+  String get privacy_cookiesTitle => '2. Cookies and Tracking';
 
   @override
-  String get privacy_cookiesDescription => 'Our platform does not use cookies or other tracking technologies, except for analytics, security, and advertising services as outlined below.';
+  String get privacy_cookiesDescription => 'JIPPIN does not use cookies or tracking technologies for user profiling. However, essential technologies may be used for:\n• Analytics (e.g., traffic statistics)\n• Security (e.g., spam protection)\n• Advertising (e.g., display ads)';
 
   @override
   String get privacy_informationSharingTitle => '3. Information Sharing';
 
   @override
-  String get privacy_informationSharingDescription => 'We do not share any information with third parties, as we do not collect any information in the first place.';
+  String get privacy_informationSharingDescription => 'Since we do not collect personal data, we also do not share any personal information with third parties.';
 
   @override
   String get privacy_dataSecurityTitle => '4. Data Security';
 
   @override
-  String get privacy_dataSecurityDescription => 'While we do not collect personal data, we implement appropriate security measures to protect against unauthorized access and ensure platform integrity.';
+  String get privacy_dataSecurityDescription => 'While JIPPIN does not store user identities, we implement strong security measures to protect the platform from unauthorized access and maintain its reliability and integrity.';
 
   @override
   String get privacy_childrenTitle => '5. Children\'s Privacy';
 
   @override
-  String get privacy_childrenDescription => 'Our platform is not directed at children under 13, and we do not knowingly collect any personal information from children.';
+  String get privacy_childrenDescription => 'JIPPIN is not intended for children under 13 years of age, and we do not knowingly collect any data from children.';
 
   @override
-  String get privacy_analyticsTitle => '6. Analytics Services';
+  String get privacy_botDetectionTitle => '6. Bot Detection';
 
   @override
-  String get privacy_analyticsDescription => 'We use PostHog to analyze user behavior. It collects device info, IP addresses, and browsing patterns to improve user experience.';
+  String get privacy_botDetectionDescription => 'We use Google reCAPTCHA to detect and prevent automated activity such as spam, fake reviews, or bot traffic. This may involve Google collecting device and interaction data in accordance with their privacy policy.';
 
   @override
-  String get privacy_botDetectionTitle => '7. Bot Detection Services';
+  String get privacy_advertisingTitle => '7. Advertising';
 
   @override
-  String get privacy_botDetectionDescription => 'We use Google reCAPTCHA to detect and prevent automated abuse such as spam and bot traffic.';
+  String get privacy_advertisingDescription => 'JIPPIN uses Google Ads to display relevant advertisements. Google may collect usage data to personalize ads. For more details, refer to Google’s Ad Policy.';
 
   @override
-  String get privacy_advertisingTitle => '8. Advertising Services';
+  String get privacy_thirdPartyCollectionTitle => '8. Third-Party Data Collection';
 
   @override
-  String get privacy_advertisingDescription => 'We use Google Ads to display advertisements. Google may collect user data for personalized ad experiences.';
+  String get privacy_thirdPartyCollectionDescription => 'While JIPPIN does not directly collect or store personal information, we use third-party services (such as Google Ads and reCAPTCHA) that may collect user data such as IP addresses or browser metadata. By using our platform, you consent to the data practices of these services. Please review their privacy policies for more details.';
 
   @override
   String get privacy_gdprTitle => '9. GDPR Compliance';
 
   @override
-  String get privacy_gdprDescription => 'We allow users to submit reviews about landlords, but ensure content aligns with GDPR policies.';
+  String get privacy_gdprDescription => 'JIPPIN supports data protection principles under the General Data Protection Regulation (GDPR). All user-generated content is anonymous and reviewed to ensure compliance with applicable privacy standards.';
 
   @override
   String get privacy_dsaTitle => '10. DSA Compliance';
 
   @override
-  String get privacy_dsaDescription => 'Landlord reviews are user-generated and do not necessarily reflect our views. Reviews are moderated per our guidelines.';
+  String get privacy_dsaDescription => 'Under the EU Digital Services Act (DSA), JIPPIN ensures that landlord reviews are:\n• Clearly marked as user-generated\n• Subject to moderation based on our community guidelines\n\nWe do not endorse or guarantee the accuracy of user reviews.';
 
   @override
   String get privacy_policyChangesTitle => '11. Changes to This Privacy Policy';
 
   @override
-  String get privacy_policyChangesDescription => 'We reserve the right to update this Privacy Policy. Changes will take effect immediately upon posting.';
+  String get privacy_policyChangesDescription => 'We may update this policy at any time. Changes take effect immediately once published on this page. We recommend reviewing it regularly.';
 
   @override
-  String get privacy_contactTitle => '12. Contact Information';
+  String get privacy_contactTitle => '12. Contact Us';
 
   @override
-  String get privacy_contactDescription => 'If you have any questions, please contact us at support@jippin.com.';
+  String get privacy_contactDescription => 'If you have questions or concerns about this Privacy Policy, please contact:\n📧 icecreambears1@gmail.com';
 }

@@ -770,272 +770,278 @@ abstract class AppLocalizations {
   /// No description provided for @about_title.
   ///
   /// In en, this message translates to:
-  /// **'Who we are?'**
+  /// **'About Jippin'**
   String get about_title;
 
-  /// No description provided for @about_description.
+  /// No description provided for @about_subtitle.
   ///
   /// In en, this message translates to:
-  /// **'The Jippin Rent Review app helps tenants share their experiences with landlords and real estate agents, providing transparency and helping future renters make informed decisions.'**
-  String get about_description;
+  /// **'Helping Renters Make Smarter Choices — and Avoid Rental Scams!'**
+  String get about_subtitle;
 
-  /// No description provided for @about_review_fields_title.
+  /// No description provided for @about_personal_story.
   ///
   /// In en, this message translates to:
-  /// **'Review Fields and Rating Technique'**
-  String get about_review_fields_title;
+  /// **'I created Jippin after watching a heartbreaking news story about young people in South Korea who took their lives after falling victim to rental scams.\n\nNo one should suffer alone or in silence. By sharing our stories, we can protect each other.\n\nAnyone can contribute — and together, we can prevent this crisis. I’m committed to expanding Jippin and adding more countries so renters everywhere can benefit from shared knowledge and support.'**
+  String get about_personal_story;
 
-  /// No description provided for @about_trustworthiness_title.
+  /// No description provided for @about_section_what_you_can_share.
   ///
   /// In en, this message translates to:
-  /// **'1. Trustworthiness Rating'**
-  String get about_trustworthiness_title;
+  /// **'What You Can Share'**
+  String get about_section_what_you_can_share;
 
-  /// No description provided for @about_trustworthiness_description.
+  /// No description provided for @about_what_rental_title.
   ///
   /// In en, this message translates to:
-  /// **'The Trustworthiness Rating reflects how reliable and honest the landlord or real estate agent is in their dealings. Rate the landlord/agent based on transparency, ethical practices, and whether promises are kept.'**
-  String get about_trustworthiness_description;
+  /// **'🏡 Rental Property Details (If unknown, just write “unknown”)'**
+  String get about_what_rental_title;
 
-  /// No description provided for @about_trustworthiness_1_star.
+  /// No description provided for @about_what_rental_body.
   ///
   /// In en, this message translates to:
-  /// **'1 Star: Very untrustworthy – Major issues with dishonesty or failure to follow through on promises.'**
-  String get about_trustworthiness_1_star;
+  /// **'• Country, Province/State, and City\n• Street Address and Postal Code\n• Rental Type: Short-term, Long-term, Lump-sum Lease, Daily Rental, Vacation Rental, or Other\n• Rent and Deposit'**
+  String get about_what_rental_body;
 
-  /// No description provided for @about_trustworthiness_2_star.
+  /// No description provided for @about_what_who_title.
   ///
   /// In en, this message translates to:
-  /// **'2 Stars: Untrustworthy – Some issues with transparency or reliability.'**
-  String get about_trustworthiness_2_star;
+  /// **'👤 Who You Dealt With (If unknown, just write “unknown”)'**
+  String get about_what_who_title;
 
-  /// No description provided for @about_trustworthiness_3_star.
+  /// No description provided for @about_what_who_body.
   ///
   /// In en, this message translates to:
-  /// **'3 Stars: Neutral – No major issues, but not particularly reliable.'**
-  String get about_trustworthiness_3_star;
+  /// **'• Landlord Name\n• Realtor or Rental Platform'**
+  String get about_what_who_body;
 
-  /// No description provided for @about_trustworthiness_4_star.
+  /// No description provided for @about_section_ratings.
   ///
   /// In en, this message translates to:
-  /// **'4 Stars: Trustworthy – Generally reliable, with few issues.'**
-  String get about_trustworthiness_4_star;
+  /// **'Condition & Experience Ratings'**
+  String get about_section_ratings;
 
-  /// No description provided for @about_trustworthiness_5_star.
+  /// No description provided for @about_rating_trust_title.
   ///
   /// In en, this message translates to:
-  /// **'5 Stars: Very trustworthy – Completely transparent and dependable in all dealings.'**
-  String get about_trustworthiness_5_star;
+  /// **'Trustworthiness'**
+  String get about_rating_trust_title;
 
-  /// No description provided for @about_respect_title.
+  /// No description provided for @about_rating_trust_description.
   ///
   /// In en, this message translates to:
-  /// **'2. Respect Rating'**
-  String get about_respect_title;
+  /// **'Did the landlord or agent follow through on promises and act with integrity?'**
+  String get about_rating_trust_description;
 
-  /// No description provided for @about_respect_description.
+  /// No description provided for @about_rating_price_title.
   ///
   /// In en, this message translates to:
-  /// **'The Respect Rating reflects how the landlord or real estate agent treats you. This includes politeness, attentiveness to concerns, and overall professionalism.'**
-  String get about_respect_description;
+  /// **'Price'**
+  String get about_rating_price_title;
 
-  /// No description provided for @about_respect_1_star.
+  /// No description provided for @about_rating_price_description.
   ///
   /// In en, this message translates to:
-  /// **'1 Star: Very disrespectful – Rude or dismissive communication.'**
-  String get about_respect_1_star;
+  /// **'Was the cost fair for what was offered?'**
+  String get about_rating_price_description;
 
-  /// No description provided for @about_respect_2_star.
+  /// No description provided for @about_rating_location_title.
   ///
   /// In en, this message translates to:
-  /// **'2 Stars: Disrespectful – Occasional unprofessional behavior or lack of courtesy.'**
-  String get about_respect_2_star;
+  /// **'Location'**
+  String get about_rating_location_title;
 
-  /// No description provided for @about_respect_3_star.
+  /// No description provided for @about_rating_location_description.
   ///
   /// In en, this message translates to:
-  /// **'3 Stars: Neutral – Adequate but not particularly respectful or disrespectful.'**
-  String get about_respect_3_star;
+  /// **'Was the area convenient, safe, and accessible?'**
+  String get about_rating_location_description;
 
-  /// No description provided for @about_respect_4_star.
+  /// No description provided for @about_rating_condition_title.
   ///
   /// In en, this message translates to:
-  /// **'4 Stars: Respectful – Generally polite and attentive, with minor issues.'**
-  String get about_respect_4_star;
+  /// **'Condition'**
+  String get about_rating_condition_title;
 
-  /// No description provided for @about_respect_5_star.
+  /// No description provided for @about_rating_condition_description.
   ///
   /// In en, this message translates to:
-  /// **'5 Stars: Very respectful – Always considerate, courteous, and professional.'**
-  String get about_respect_5_star;
+  /// **'Was the property clean, safe, and well-maintained?'**
+  String get about_rating_condition_description;
 
-  /// No description provided for @about_additional_details_title.
+  /// No description provided for @about_section_why_it_matters.
   ///
   /// In en, this message translates to:
-  /// **'Additional Review Details'**
-  String get about_additional_details_title;
+  /// **'Why It Matters'**
+  String get about_section_why_it_matters;
 
-  /// No description provided for @about_additional_details_description.
+  /// No description provided for @about_why_it_matters.
   ///
   /// In en, this message translates to:
-  /// **'In addition to the Trustworthiness and Respect Ratings, users can leave comments to provide more context on their experiences. They can also answer the following optional questions:'**
-  String get about_additional_details_description;
+  /// **'Every review helps build a safer, more transparent rental market:\n\n• Exposes dishonest or discriminatory practices\n• Highlights trustworthy and respectful landlords and agents\n• Helps protect newcomers, students, and vulnerable renters\n• Fights fraud and rental scams through shared knowledge'**
+  String get about_why_it_matters;
 
-  /// No description provided for @about_question_contract_dispute.
+  /// No description provided for @about_contribution_message.
   ///
   /// In en, this message translates to:
-  /// **'• Was there a contract dispute? – Indicate if you encountered any issues with the lease agreement.'**
-  String get about_question_contract_dispute;
+  /// **'All reviews are anonymous. Your voice matters — by sharing your experience, you’re helping others avoid bad rentals and find better housing.'**
+  String get about_contribution_message;
 
-  /// No description provided for @about_question_accurate_info.
+  /// No description provided for @about_contact_label.
   ///
   /// In en, this message translates to:
-  /// **'• Did the landlord/agent provide accurate information? – Rate whether the information given was truthful and clear.'**
-  String get about_question_accurate_info;
-
-  /// No description provided for @about_question_discriminatory_behavior.
-  ///
-  /// In en, this message translates to:
-  /// **'• Did you experience any discriminatory behavior? – Optional, to assess how inclusive the landlord/agent was.'**
-  String get about_question_discriminatory_behavior;
-
-  /// No description provided for @about_contribute_message.
-  ///
-  /// In en, this message translates to:
-  /// **'By contributing to Rent Review, you’re helping other renters find reliable and respectful landlords and agents, creating a more transparent rental market for everyone.'**
-  String get about_contribute_message;
-
-  /// No description provided for @termsAndConditions.
-  ///
-  /// In en, this message translates to:
-  /// **'Terms and Conditions'**
-  String get termsAndConditions;
+  /// **'Developer Contact:'**
+  String get about_contact_label;
 
   /// No description provided for @terms_title.
   ///
   /// In en, this message translates to:
-  /// **'Welcome to JIPPIN'**
+  /// **'Terms & Conditions'**
   String get terms_title;
 
-  /// No description provided for @terms_description.
+  /// No description provided for @terms_effective_date.
   ///
   /// In en, this message translates to:
-  /// **'By accessing this website and mobile application, you acknowledge and agree to comply with our terms and conditions.'**
-  String get terms_description;
+  /// **'Effective Date: 2025-06-24'**
+  String get terms_effective_date;
 
-  /// No description provided for @terms_acceptanceTitle.
+  /// No description provided for @terms_intro.
   ///
   /// In en, this message translates to:
-  /// **'1. Acceptance of Terms'**
-  String get terms_acceptanceTitle;
+  /// **'Welcome to JIPPIN. These Terms & Conditions govern your use of our website and mobile application (the “Platform”). By accessing or using JIPPIN, you agree to be legally bound by the following terms.'**
+  String get terms_intro;
 
-  /// No description provided for @terms_acceptanceDescription.
+  /// No description provided for @terms_section1_title.
   ///
   /// In en, this message translates to:
-  /// **'By accessing or using JIPPIN, you enter into a legally binding agreement with JIPPIN and agree to be bound by these Terms and all applicable laws and regulations.'**
-  String get terms_acceptanceDescription;
+  /// **'1. Purpose of the Platform'**
+  String get terms_section1_title;
 
-  /// No description provided for @terms_contentTitle.
+  /// No description provided for @terms_section1_body.
   ///
   /// In en, this message translates to:
-  /// **'2. Use of Content'**
-  String get terms_contentTitle;
+  /// **'JIPPIN is a community-based platform designed to help renters share and discover information about landlords, rental experiences, and housing conditions. It exists to promote transparency and reduce rental fraud through user-generated reviews.'**
+  String get terms_section1_body;
 
-  /// No description provided for @terms_contentDescription.
+  /// No description provided for @terms_section2_title.
   ///
   /// In en, this message translates to:
-  /// **'All content provided on JIPPIN, including but not limited to text, graphics, images, and other materials, is for informational purposes only.'**
-  String get terms_contentDescription;
+  /// **'2. Your Agreement'**
+  String get terms_section2_title;
 
-  /// No description provided for @terms_userContentTitle.
+  /// No description provided for @terms_section2_body.
   ///
   /// In en, this message translates to:
-  /// **'3. User-Generated Content'**
-  String get terms_userContentTitle;
+  /// **'By accessing or using JIPPIN, you confirm that you are at least 18 years old (or have legal parental consent) and that you agree to these Terms and all applicable laws. If you do not agree, do not use the Platform.'**
+  String get terms_section2_body;
 
-  /// No description provided for @terms_userContentDescription.
+  /// No description provided for @terms_section3_title.
   ///
   /// In en, this message translates to:
-  /// **'Users may submit reviews and other materials on JIPPIN, granting a worldwide license for JIPPIN to use them.'**
-  String get terms_userContentDescription;
+  /// **'3. User Content'**
+  String get terms_section3_title;
 
-  /// No description provided for @terms_disclaimerTitle.
+  /// No description provided for @terms_section3_body.
   ///
   /// In en, this message translates to:
-  /// **'4. Disclaimer of Warranties'**
-  String get terms_disclaimerTitle;
+  /// **'You are responsible for any content (e.g., reviews, comments, ratings) you submit.\nBy submitting content, you grant JIPPIN a worldwide, royalty-free license to use, display, store, and share your content for the purpose of operating and promoting the Platform.\n\nYou must not submit content that is:\n• False or misleading\n• Harassing, discriminatory, or offensive\n• In violation of any laws or third-party rights\n\nWe reserve the right to remove any content that violates these terms or harms the integrity of the platform.'**
+  String get terms_section3_body;
 
-  /// No description provided for @terms_disclaimerDescription.
+  /// No description provided for @terms_section4_title.
   ///
   /// In en, this message translates to:
-  /// **'JIPPIN PROVIDES THE PLATFORM AND CONTENT \'AS IS\' WITHOUT WARRANTIES OR REPRESENTATIONS, EXPRESS OR IMPLIED.'**
-  String get terms_disclaimerDescription;
+  /// **'4. Privacy'**
+  String get terms_section4_title;
 
-  /// No description provided for @terms_liabilityTitle.
+  /// No description provided for @terms_section4_body.
   ///
   /// In en, this message translates to:
-  /// **'5. Limitation of Liability'**
-  String get terms_liabilityTitle;
+  /// **'We take your privacy seriously. Reviews are published anonymously, and personal data is handled in accordance with our Privacy Policy.'**
+  String get terms_section4_body;
 
-  /// No description provided for @terms_liabilityDescription.
+  /// No description provided for @terms_section5_title.
   ///
   /// In en, this message translates to:
-  /// **'JIPPIN SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OR INABILITY TO USE THE PLATFORM.'**
-  String get terms_liabilityDescription;
+  /// **'5. Platform Availability'**
+  String get terms_section5_title;
 
-  /// No description provided for @terms_thirdPartyTitle.
+  /// No description provided for @terms_section5_body.
   ///
   /// In en, this message translates to:
-  /// **'6. Links to Third-Party Websites'**
-  String get terms_thirdPartyTitle;
+  /// **'JIPPIN is provided “as is.” We do not guarantee uninterrupted or error-free access. We may update, modify, or discontinue parts of the platform at any time without notice.'**
+  String get terms_section5_body;
 
-  /// No description provided for @terms_thirdPartyDescription.
+  /// No description provided for @terms_section6_title.
   ///
   /// In en, this message translates to:
-  /// **'JIPPIN assumes no responsibility for third-party website content, policies, or practices.'**
-  String get terms_thirdPartyDescription;
+  /// **'6. Limitation of Liability'**
+  String get terms_section6_title;
 
-  /// No description provided for @terms_governingLawTitle.
+  /// No description provided for @terms_section6_body.
   ///
   /// In en, this message translates to:
-  /// **'7. Governing Law and Jurisdiction'**
-  String get terms_governingLawTitle;
+  /// **'To the fullest extent permitted by law, JIPPIN and its creators are not liable for any direct, indirect, or incidental damages related to your use (or inability to use) the platform or the accuracy of its content.'**
+  String get terms_section6_body;
 
-  /// No description provided for @terms_governingLawDescription.
+  /// No description provided for @terms_section7_title.
   ///
   /// In en, this message translates to:
-  /// **'These Terms shall be governed by the laws of the jurisdiction in which JIPPIN is registered.'**
-  String get terms_governingLawDescription;
+  /// **'7. External Links'**
+  String get terms_section7_title;
 
-  /// No description provided for @terms_amendmentsTitle.
+  /// No description provided for @terms_section7_body.
   ///
   /// In en, this message translates to:
-  /// **'8. Amendments'**
-  String get terms_amendmentsTitle;
+  /// **'JIPPIN may contain links to third-party websites or services. We are not responsible for the content, policies, or actions of those external sites.'**
+  String get terms_section7_body;
 
-  /// No description provided for @terms_amendmentsDescription.
+  /// No description provided for @terms_section8_title.
   ///
   /// In en, this message translates to:
-  /// **'JIPPIN reserves the right to modify or update these Terms at any time without prior notice.'**
-  String get terms_amendmentsDescription;
+  /// **'8. Changes to Terms'**
+  String get terms_section8_title;
 
-  /// No description provided for @terms_contactTitle.
+  /// No description provided for @terms_section8_body.
   ///
   /// In en, this message translates to:
-  /// **'9. Contact Information'**
-  String get terms_contactTitle;
+  /// **'We may update these Terms at any time. Continued use of JIPPIN after updates means you accept the revised terms. Please check this page periodically for changes.'**
+  String get terms_section8_body;
 
-  /// No description provided for @terms_contactDescription.
+  /// No description provided for @terms_section9_title.
   ///
   /// In en, this message translates to:
-  /// **'For any inquiries, please contact JIPPIN at support@jippin.com.'**
-  String get terms_contactDescription;
+  /// **'9. Contact Us'**
+  String get terms_section9_title;
 
-  /// No description provided for @privacy_privacyPolicy.
+  /// No description provided for @terms_section9_body.
   ///
   /// In en, this message translates to:
-  /// **'Privacy Policy'**
-  String get privacy_privacyPolicy;
+  /// **'For any questions or concerns, please contact:\n📧 icecreambears1@gmail.com'**
+  String get terms_section9_body;
+
+  /// No description provided for @terms_section10_title.
+  ///
+  /// In en, this message translates to:
+  /// **'10. Governing Law'**
+  String get terms_section10_title;
+
+  /// No description provided for @terms_section10_body.
+  ///
+  /// In en, this message translates to:
+  /// **'These Terms shall be governed by the laws of the jurisdiction in which JIPPIN is operated. For Canadian users, this includes PIPEDA. For South Korean users, this includes PIPA. Legal disputes shall be resolved in the courts of the applicable jurisdiction.'**
+  String get terms_section10_body;
+
+  /// No description provided for @terms_section11_title.
+  ///
+  /// In en, this message translates to:
+  /// **'11. Content Moderation'**
+  String get terms_section11_title;
+
+  /// No description provided for @terms_section11_body.
+  ///
+  /// In en, this message translates to:
+  /// **'User-generated content may be reviewed and moderated. We reserve the right to remove any content that violates applicable laws, our community guidelines, or the integrity of the platform.'**
+  String get terms_section11_body;
 
   /// No description provided for @privacy_privacyTitle.
   ///
@@ -1046,31 +1052,31 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_privacyDescription.
   ///
   /// In en, this message translates to:
-  /// **'At JIPPIN, we value your privacy and are committed to maintaining the confidentiality of your information. This Privacy Policy outlines how we handle data on our platform.'**
+  /// **'Effective Date: 2025-06-24\n\nAt JIPPIN, we are committed to protecting your privacy. This Privacy Policy explains how we handle information on our website and mobile application (collectively, the \"Platform\").'**
   String get privacy_privacyDescription;
 
   /// No description provided for @privacy_informationCollectionTitle.
   ///
   /// In en, this message translates to:
-  /// **'1. Information Collection'**
+  /// **'1. Information We Collect'**
   String get privacy_informationCollectionTitle;
 
   /// No description provided for @privacy_informationCollectionDescription.
   ///
   /// In en, this message translates to:
-  /// **'We do not collect any personal information from visitors to our platform.'**
+  /// **'We do not collect any personal information from users who browse or use the Platform.'**
   String get privacy_informationCollectionDescription;
 
   /// No description provided for @privacy_cookiesTitle.
   ///
   /// In en, this message translates to:
-  /// **'2. Cookies and Tracking Technologies'**
+  /// **'2. Cookies and Tracking'**
   String get privacy_cookiesTitle;
 
   /// No description provided for @privacy_cookiesDescription.
   ///
   /// In en, this message translates to:
-  /// **'Our platform does not use cookies or other tracking technologies, except for analytics, security, and advertising services as outlined below.'**
+  /// **'JIPPIN does not use cookies or tracking technologies for user profiling. However, essential technologies may be used for:\n• Analytics (e.g., traffic statistics)\n• Security (e.g., spam protection)\n• Advertising (e.g., display ads)'**
   String get privacy_cookiesDescription;
 
   /// No description provided for @privacy_informationSharingTitle.
@@ -1082,7 +1088,7 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_informationSharingDescription.
   ///
   /// In en, this message translates to:
-  /// **'We do not share any information with third parties, as we do not collect any information in the first place.'**
+  /// **'Since we do not collect personal data, we also do not share any personal information with third parties.'**
   String get privacy_informationSharingDescription;
 
   /// No description provided for @privacy_dataSecurityTitle.
@@ -1094,7 +1100,7 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_dataSecurityDescription.
   ///
   /// In en, this message translates to:
-  /// **'While we do not collect personal data, we implement appropriate security measures to protect against unauthorized access and ensure platform integrity.'**
+  /// **'While JIPPIN does not store user identities, we implement strong security measures to protect the platform from unauthorized access and maintain its reliability and integrity.'**
   String get privacy_dataSecurityDescription;
 
   /// No description provided for @privacy_childrenTitle.
@@ -1106,44 +1112,44 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_childrenDescription.
   ///
   /// In en, this message translates to:
-  /// **'Our platform is not directed at children under 13, and we do not knowingly collect any personal information from children.'**
+  /// **'JIPPIN is not intended for children under 13 years of age, and we do not knowingly collect any data from children.'**
   String get privacy_childrenDescription;
-
-  /// No description provided for @privacy_analyticsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'6. Analytics Services'**
-  String get privacy_analyticsTitle;
-
-  /// No description provided for @privacy_analyticsDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'We use PostHog to analyze user behavior. It collects device info, IP addresses, and browsing patterns to improve user experience.'**
-  String get privacy_analyticsDescription;
 
   /// No description provided for @privacy_botDetectionTitle.
   ///
   /// In en, this message translates to:
-  /// **'7. Bot Detection Services'**
+  /// **'6. Bot Detection'**
   String get privacy_botDetectionTitle;
 
   /// No description provided for @privacy_botDetectionDescription.
   ///
   /// In en, this message translates to:
-  /// **'We use Google reCAPTCHA to detect and prevent automated abuse such as spam and bot traffic.'**
+  /// **'We use Google reCAPTCHA to detect and prevent automated activity such as spam, fake reviews, or bot traffic. This may involve Google collecting device and interaction data in accordance with their privacy policy.'**
   String get privacy_botDetectionDescription;
 
   /// No description provided for @privacy_advertisingTitle.
   ///
   /// In en, this message translates to:
-  /// **'8. Advertising Services'**
+  /// **'7. Advertising'**
   String get privacy_advertisingTitle;
 
   /// No description provided for @privacy_advertisingDescription.
   ///
   /// In en, this message translates to:
-  /// **'We use Google Ads to display advertisements. Google may collect user data for personalized ad experiences.'**
+  /// **'JIPPIN uses Google Ads to display relevant advertisements. Google may collect usage data to personalize ads. For more details, refer to Google’s Ad Policy.'**
   String get privacy_advertisingDescription;
+
+  /// No description provided for @privacy_thirdPartyCollectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'8. Third-Party Data Collection'**
+  String get privacy_thirdPartyCollectionTitle;
+
+  /// No description provided for @privacy_thirdPartyCollectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'While JIPPIN does not directly collect or store personal information, we use third-party services (such as Google Ads and reCAPTCHA) that may collect user data such as IP addresses or browser metadata. By using our platform, you consent to the data practices of these services. Please review their privacy policies for more details.'**
+  String get privacy_thirdPartyCollectionDescription;
 
   /// No description provided for @privacy_gdprTitle.
   ///
@@ -1154,7 +1160,7 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_gdprDescription.
   ///
   /// In en, this message translates to:
-  /// **'We allow users to submit reviews about landlords, but ensure content aligns with GDPR policies.'**
+  /// **'JIPPIN supports data protection principles under the General Data Protection Regulation (GDPR). All user-generated content is anonymous and reviewed to ensure compliance with applicable privacy standards.'**
   String get privacy_gdprDescription;
 
   /// No description provided for @privacy_dsaTitle.
@@ -1166,7 +1172,7 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_dsaDescription.
   ///
   /// In en, this message translates to:
-  /// **'Landlord reviews are user-generated and do not necessarily reflect our views. Reviews are moderated per our guidelines.'**
+  /// **'Under the EU Digital Services Act (DSA), JIPPIN ensures that landlord reviews are:\n• Clearly marked as user-generated\n• Subject to moderation based on our community guidelines\n\nWe do not endorse or guarantee the accuracy of user reviews.'**
   String get privacy_dsaDescription;
 
   /// No description provided for @privacy_policyChangesTitle.
@@ -1178,19 +1184,19 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_policyChangesDescription.
   ///
   /// In en, this message translates to:
-  /// **'We reserve the right to update this Privacy Policy. Changes will take effect immediately upon posting.'**
+  /// **'We may update this policy at any time. Changes take effect immediately once published on this page. We recommend reviewing it regularly.'**
   String get privacy_policyChangesDescription;
 
   /// No description provided for @privacy_contactTitle.
   ///
   /// In en, this message translates to:
-  /// **'12. Contact Information'**
+  /// **'12. Contact Us'**
   String get privacy_contactTitle;
 
   /// No description provided for @privacy_contactDescription.
   ///
   /// In en, this message translates to:
-  /// **'If you have any questions, please contact us at support@jippin.com.'**
+  /// **'If you have questions or concerns about this Privacy Policy, please contact:\n📧 icecreambears1@gmail.com'**
   String get privacy_contactDescription;
 }
 
