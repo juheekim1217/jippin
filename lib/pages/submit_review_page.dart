@@ -13,6 +13,7 @@ import 'package:jippin/models/country.dart';
 import 'package:jippin/models/rental_types.dart';
 import 'package:provider/provider.dart';
 import 'package:jippin/providers/locale_provider.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SubmitReviewPage extends StatefulWidget {
   const SubmitReviewPage({super.key});
@@ -54,48 +55,6 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
   Country? _selectedCountry;
   Province? _selectedProvince;
 
-  // Future<void> _submitReview(AppLocalizations local) async {
-  //   if (_formKey.currentState!.validate()) {
-  //     _formKey.currentState!.save();
-  //
-  //     try {
-  //       await ReviewService.createReview({
-  //         'review': _content,
-  //         'landlord': _landlord,
-  //         'realtor': _realtor,
-  //         'rating_trust': _ratingTrust,
-  //         'rating_price': _ratingPrice,
-  //         'rating_location': _ratingLocation,
-  //         'rating_condition': _ratingCondition,
-  //         'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition) / 4,
-  //         'rental_type': _rentalType,
-  //         'rent': _rent,
-  //         'deposit': _deposit,
-  //         //'occupied_year': _occupiedYear,
-  //         //'fraud': _fraud,
-  //         'country': _country,
-  //         'province': _province,
-  //         'city': _city,
-  //         'postal_code': _postalCode,
-  //         'country_code': _countryCode,
-  //         'street': _street,
-  //       });
-  //
-  //       if (!mounted) return;
-  //
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         SnackBar(content: Text(local.submit_review_success)),
-  //       );
-  //       _formKey.currentState!.reset();
-  //     } catch (e) {
-  //       if (!mounted) return;
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         SnackBar(content: Text('${local.submit_review_error}: $e')),
-  //       );
-  //     }
-  //   }
-  // }
-
   Future<void> _submitReview(AppLocalizations local) async {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
@@ -111,7 +70,18 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
           return;
         }
 
-        // Step 2: Optionally send `token` to your backend to verify it with Google
+        // Step 2: Optionally send `token` to your backend to verify it with Google - verifying the reCaptcha token server-side
+        // If there is CORS issue, add endpoint to allowedOrigins in Supabase/functions/verify-recaptcha/index.ts
+        final verifyResponse = await Supabase.instance.client.functions.invoke('verify-recaptcha', body: {
+          'token': token,
+        });
+        final decoded = verifyResponse.data as Map<String, dynamic>;
+        if (!(decoded['success'] as bool) || (decoded['score'] ?? 0.0) < 0.5) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(local.submit_review_error)),
+          );
+          return;
+        }
 
         // Step 3: Submit review
         await ReviewService.createReview({
