@@ -9,7 +9,7 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get appTitle => '집핀';
+  String get appTitle => '지핀';
 
   @override
   String get appMission => '모든 리뷰는 익명으로 보호됩니다. 안심하고 경험을 공유하며, 사기 없는 공정한 임대 시장을 함께 만들어가세요.';
@@ -240,7 +240,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get home_intro1_title => '안녕하세요, 세입자님!';
 
   @override
-  String get home_intro1_desc => '집핀은 신뢰할 수 있는 집주인 리뷰와 다양한 정보를 제공하여 최상의 임대 경험을 찾을 수 있도록 도와줍니다.';
+  String get home_intro1_desc => '지핀은 신뢰할 수 있는 집주인 리뷰와 다양한 정보를 제공하여 최상의 임대 경험을 찾을 수 있도록 도와줍니다.';
 
   @override
   String get home_intro2_title => '시작하기:';
@@ -255,7 +255,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get home_intro2_desc3 => '앱 소개';
 
   @override
-  String get home_intro3_title => '왜 집핀을 선택해야 할까요?';
+  String get home_intro3_title => '왜 지핀을 선택해야 할까요?';
 
   @override
   String get home_intro3_desc1_title => '리뷰';
@@ -345,13 +345,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get home_writeReviewDesc => '당신의 경험을 공유하여 다른 세입자들에게 도움을 주세요.';
 
   @override
-  String get about_title => '집핀 소개';
+  String get about_title => '지핀 소개';
 
   @override
   String get about_subtitle => '세입자가 더 안전하게 집을 고를 수 있고 더 나아가 전세 사기를 피하도록 돕습니다.';
 
   @override
-  String get about_personal_story => '저는 한국에서 전세 사기로 인해 청년들이 극단적인 선택을 했다는 뉴스를 보고 집핀을 처음 만들게 되었습니다.\n\n누구도 사기로 인해 고통받아서는 안 됩니다. 세입자들이 겪은 이야기를 익명으로 공유함으로써 서로를 지킬 수 있습니다.\n\n누구나 참여할 수 있고, 함께하면 이런 사기를 예방할 수 있습니다. 집핀은 앞으로 지속적으로 사이트를 보완할 예정이고 더 많은 나라로 확장할 예정입니다. 전 세계 세입자들이 정보를 나누고 서로를 도울 수 있도록 만들겠습니다.';
+  String get about_personal_story => '한국에서 전세 사기로 인해 청년들이 극단적인 선택을 했다는 뉴스를 보고 지핀을 처음 만들게 되었습니다.\n\n누구도 사기로 인해 고통받아서는 안 됩니다. 세입자들이 겪은 이야기를 익명으로 공유함으로써 서로를 지킬 수 있습니다.\n\n누구나 참여할 수 있고, 함께하면 이런 사기를 예방할 수 있습니다. 지핀은 앞으로 지속적으로 사이트를 보완할 예정이고 더 많은 나라로 확장할 예정입니다. 전 세계 세입자들이 정보를 나누고 서로를 도울 수 있도록 만들겠습니다.';
 
   @override
   String get about_section_what_you_can_share => '공유할 수 있는 내용';
@@ -432,7 +432,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get terms_section3_title => '3. 사용자 콘텐츠';
 
   @override
-  String get terms_section3_body => '귀하는 플랫폼에 제출한 모든 콘텐츠(예: 리뷰, 댓글, 평점)에 대해 책임을 집니다.\n콘텐츠를 제출함으로써, 귀하는 JIPPIN이 이를 운영 및 홍보 목적을 위해 사용, 표시, 저장 및 공유할 수 있는 전 세계적이며 로열티 없는 라이선스를 부여하게 됩니다.\n\n다음과 같은 콘텐츠는 제출할 수 없습니다:\n• 허위 또는 오해의 소지가 있는 정보\n• 괴롭힘, 차별, 혐오 표현\n• 법률 또는 제3자 권리를 침해하는 내용\n\nJIPPIN은 본 약관을 위반하거나 플랫폼의 신뢰성을 해치는 콘텐츠를 삭제할 수 있는 권리를 보유합니다.';
+  String get terms_section3_body =>
+      '귀하는 플랫폼에 제출한 모든 콘텐츠(예: 리뷰, 댓글, 평점)에 대해 책임을 집니다.\n콘텐츠를 제출함으로써, 귀하는 JIPPIN이 이를 운영 및 홍보 목적을 위해 사용, 표시, 저장 및 공유할 수 있는 전 세계적이며 로열티 없는 라이선스를 부여하게 됩니다.\n\n다음과 같은 콘텐츠는 제출할 수 없습니다:\n• 허위 또는 오해의 소지가 있는 정보\n• 괴롭힘, 차별, 혐오 표현\n• 법률 또는 제3자 권리를 침해하는 내용\n\nJIPPIN은 본 약관을 위반하거나 플랫폼의 신뢰성을 해치는 콘텐츠를 삭제할 수 있는 권리를 보유합니다.';
 
   @override
   String get terms_section4_title => '4. 개인정보 보호';
