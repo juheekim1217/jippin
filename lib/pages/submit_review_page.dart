@@ -73,38 +73,73 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
         // Step 2: Optionally send `token` to your backend to verify it with Google - verifying the reCaptcha token server-side
         // If there is CORS issue, add endpoint to allowedOrigins in Supabase/functions/verify-recaptcha/index.ts
-        final verifyResponse = await Supabase.instance.client.functions.invoke('verify-recaptcha', body: {
-          'token': token,
-        });
-        final decoded = verifyResponse.data as Map<String, dynamic>;
-        if (!(decoded['success'] as bool) || (decoded['score'] ?? 0.0) < 0.5) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(local.submit_review_error)),
-          );
-          return;
-        }
+        // final verifyResponse = await Supabase.instance.client.functions.invoke('verify-recaptcha', body: {
+        //   'token': token,
+        // });
+        // final decoded = verifyResponse.data as Map<String, dynamic>;
+        // if (!(decoded['success'] as bool) || (decoded['score'] ?? 0.0) < 0.5) {
+        //   ScaffoldMessenger.of(context).showSnackBar(
+        //     SnackBar(content: Text(local.submit_review_error)),
+        //   );
+        //   return;
+        // }
 
         // Step 3: Submit review
-        await ReviewService.createReview({
-          'review': _content,
-          'landlord': _landlord,
-          'realtor': _realtor,
-          'rating_trust': _ratingTrust,
-          'rating_price': _ratingPrice,
-          'rating_location': _ratingLocation,
-          'rating_condition': _ratingCondition,
-          'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition) / 4,
-          'rental_type': _rentalType,
-          'rent': _rent,
-          'deposit': _deposit,
-          'country': _country,
-          'province': _province,
-          'city': _city,
-          'postal_code': _postalCode,
-          'country_code': _countryCode,
-          'street': _street,
-          'captcha_token': token, // Optional: store for audit
-        });
+        // await ReviewService.createReview({
+        //   'review': _content,
+        //   'landlord': _landlord,
+        //   'realtor': _realtor,
+        //   'rating_trust': _ratingTrust,
+        //   'rating_price': _ratingPrice,
+        //   'rating_location': _ratingLocation,
+        //   'rating_condition': _ratingCondition,
+        //   'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition) / 4,
+        //   'rental_type': _rentalType,
+        //   'rent': _rent,
+        //   'deposit': _deposit,
+        //   'country': _country,
+        //   'province': _province,
+        //   'city': _city,
+        //   'postal_code': _postalCode,
+        //   'country_code': _countryCode,
+        //   'street': _street,
+        //   'captcha_token': token, // Optional: store for audit
+        // });
+
+        // Step 2: Call Edge Function (submit-review.ts)
+        final response = await Supabase.instance.client.functions.invoke(
+          'submit-review',
+          body: {
+            'review': _content,
+            'landlord': _landlord,
+            'realtor': _realtor,
+            'rating_trust': _ratingTrust,
+            'rating_price': _ratingPrice,
+            'rating_location': _ratingLocation,
+            'rating_condition': _ratingCondition,
+            'overall_rating': (_ratingTrust + _ratingPrice + _ratingLocation + _ratingCondition) / 4,
+            'rental_type': _rentalType,
+            'rent': _rent,
+            'deposit': _deposit,
+            'country': _country,
+            'province': _province,
+            'city': _city,
+            'postal_code': _postalCode,
+            'country_code': _countryCode,
+            'street': _street,
+            'captcha_token': token,
+          },
+        );
+
+        final data = response.data as Map<String, dynamic>?;
+
+        // if (response.status == 429) {
+        //   throw Exception(local.submit_rate_limit_exception);
+        // }
+
+        if (response.status != 200 || data == null || data['success'] != true) {
+          throw Exception(data?['error'] ?? 'Submission failed');
+        }
 
         if (!mounted) return;
 
@@ -116,9 +151,18 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
         context.go('/submitted');
       } catch (e) {
         if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${local.submit_review_error}: $e')),
-        );
+
+        final message = e.toString();
+
+        if (message.contains('RATE_LIMIT_429')) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(local.submit_rate_limit_exception)),
+          );
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('${local.submit_review_error}: $e')),
+          );
+        }
       }
     }
   }

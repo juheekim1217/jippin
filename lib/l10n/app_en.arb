@@ -212,6 +212,7 @@
 
     "submitted_review_success_title": "Your review has been successfully submitted!",
     "submitted_review_success_description": "Thank you for helping others by sharing your experience.",
-    "back_to_home": "Back to Home"
+    "back_to_home": "Back to Home",
+    "submit_rate_limit_exception": "To prevent spam, you cannot submit multiple reviews in a short period of time. Please try again later."
 
 }

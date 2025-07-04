@@ -568,4 +568,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get back_to_home => '홈으로 돌아가기';
+
+  @override
+  String get submit_rate_limit_exception => '스팸 제출을 방지하기 위해 리뷰는 짧은 시간 내에 여러 번 제출하실 수 없습니다. 잠시 후 다시 시도해 주세요.';
 }

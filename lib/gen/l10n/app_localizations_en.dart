@@ -568,4 +568,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get back_to_home => 'Back to Home';
+
+  @override
+  String get submit_rate_limit_exception => 'To prevent spam, you cannot submit multiple reviews in a short period of time. Please try again later.';
 }

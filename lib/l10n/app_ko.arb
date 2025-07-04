@@ -212,6 +212,7 @@
 
     "submitted_review_success_title": "리뷰가 성공적으로 제출되었습니다!",
     "submitted_review_success_description": "경험을 공유해 주셔서 감사합니다. 다른 사람들에게 큰 도움이 됩니다.",
-    "back_to_home": "홈으로 돌아가기"
+    "back_to_home": "홈으로 돌아가기",
+    "submit_rate_limit_exception": "스팸 제출을 방지하기 위해 리뷰는 짧은 시간 내에 여러 번 제출하실 수 없습니다. 잠시 후 다시 시도해 주세요."
 
 }
