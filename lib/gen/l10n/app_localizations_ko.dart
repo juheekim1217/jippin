@@ -559,4 +559,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get privacy_contactDescription => '본 개인정보 처리방침에 대해 궁금한 점이 있으시면 아래로 연락해 주세요:\n📧 icecreambears1@gmail.com';
+
+  @override
+  String get submitted_review_success_title => '리뷰가 성공적으로 제출되었습니다!';
+
+  @override
+  String get submitted_review_success_description => '경험을 공유해 주셔서 감사합니다. 다른 사람들에게 큰 도움이 됩니다.';
+
+  @override
+  String get back_to_home => '홈으로 돌아가기';
 }

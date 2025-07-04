@@ -1198,6 +1198,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'If you have questions or concerns about this Privacy Policy, please contact:\n📧 icecreambears1@gmail.com'**
   String get privacy_contactDescription;
+
+  /// No description provided for @submitted_review_success_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Your review has been successfully submitted!'**
+  String get submitted_review_success_title;
+
+  /// No description provided for @submitted_review_success_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for helping others by sharing your experience.'**
+  String get submitted_review_success_description;
+
+  /// No description provided for @back_to_home.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Home'**
+  String get back_to_home;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -208,6 +208,10 @@
   "privacy_policyChangesDescription": "본 정책은 언제든지 변경될 수 있으며, 게시 즉시 효력이 발생합니다. 정기적으로 이 페이지를 확인해 주세요.",
 
   "privacy_contactTitle": "12. 문의",
-  "privacy_contactDescription": "본 개인정보 처리방침에 대해 궁금한 점이 있으시면 아래로 연락해 주세요:\n📧 icecreambears1@gmail.com"
+  "privacy_contactDescription": "본 개인정보 처리방침에 대해 궁금한 점이 있으시면 아래로 연락해 주세요:\n📧 icecreambears1@gmail.com",
+
+    "submitted_review_success_title": "리뷰가 성공적으로 제출되었습니다!",
+    "submitted_review_success_description": "경험을 공유해 주셔서 감사합니다. 다른 사람들에게 큰 도움이 됩니다.",
+    "back_to_home": "홈으로 돌아가기"
 
 }

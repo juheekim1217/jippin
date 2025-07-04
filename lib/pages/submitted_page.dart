@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 
 class SubmittedPage extends StatelessWidget {
@@ -7,6 +8,8 @@ class SubmittedPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final local = AppLocalizations.of(context);
+
     return GlobalPageLayoutScaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -16,23 +19,23 @@ class SubmittedPage extends StatelessWidget {
             children: [
               const Icon(Icons.check_circle_outline, color: Colors.green, size: 80),
               const SizedBox(height: 24),
-              const Text(
-                'Your review has been successfully submitted!',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              Text(
+                local.submitted_review_success_title,
+                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 16),
-              const Text(
-                'Thank you for helping others by sharing your experience.',
-                style: TextStyle(fontSize: 16),
+              Text(
+                local.submitted_review_success_description,
+                style: const TextStyle(fontSize: 16),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 32),
               ElevatedButton(
                 onPressed: () {
-                  context.go('/'); // or your home or dashboard route
+                  context.go('/');
                 },
-                child: const Text('Back to Home'),
+                child: Text(local.back_to_home),
               ),
             ],
           ),

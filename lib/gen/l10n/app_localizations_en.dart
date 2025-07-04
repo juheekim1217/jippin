@@ -559,4 +559,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacy_contactDescription => 'If you have questions or concerns about this Privacy Policy, please contact:\n📧 icecreambears1@gmail.com';
+
+  @override
+  String get submitted_review_success_title => 'Your review has been successfully submitted!';
+
+  @override
+  String get submitted_review_success_description => 'Thank you for helping others by sharing your experience.';
+
+  @override
+  String get back_to_home => 'Back to Home';
 }
