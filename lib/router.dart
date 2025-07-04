@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:jippin/pages/about_page.dart';
+import 'package:jippin/pages/en/about.dart';
 import 'package:jippin/pages/home_page.dart';
+import 'package:jippin/pages/ko/about.dart';
 import 'package:jippin/pages/reviews_page.dart';
 import 'package:jippin/pages/submit_review_page.dart';
 import 'package:jippin/pages/submitted_page.dart';
@@ -80,6 +82,14 @@ GoRouter createRouter(LocaleProvider localeProvider) {
           GoRoute(
             path: '/about',
             builder: (context, state) => const AboutPage(),
+          ),
+          GoRoute(
+            path: '/en/about',
+            builder: (context, state) => const AboutPageEn(),
+          ),
+          GoRoute(
+            path: '/ko/about',
+            builder: (context, state) => const AboutPageKo(),
           ),
           GoRoute(
             path: '/terms',
