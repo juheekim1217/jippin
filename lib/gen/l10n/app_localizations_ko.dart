@@ -438,7 +438,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get terms_section4_title => '4. 개인정보 보호';
 
   @override
-  String get terms_section4_body => '우리는 사용자의 개인정보 보호를 중요하게 생각합니다. 리뷰는 익명으로 공개되며, 개인정보는 개인정보 처리방침에 따라 관리됩니다.';
+  String get terms_section4_body => '우리는 사용자의 개인정보 보호를 중요하게 생각합니다. 리뷰는 익명으로 공개되며, 개인정보는 개인정보 처리방침에 따라 관리됩니다. JIPPIN은 스팸, 자동화된 접근, 플랫폼 악용 행위 방지를 위해 사용자 IP 주소를 수집 및 저장할 수 있습니다. 이 정보는 식별 목적이 아닌 보안 유지 및 서비스 품질 확보를 위해 사용됩니다.';
 
   @override
   String get terms_section5_title => '5. 플랫폼 제공';
@@ -492,7 +492,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get privacy_informationCollectionTitle => '1. 수집하는 정보';
 
   @override
-  String get privacy_informationCollectionDescription => '플랫폼을 사용하는 사용자로부터 어떠한 개인정보도 수집하지 않습니다.';
+  String get privacy_informationCollectionDescription => 'JIPPIN은 사용자의 신원을 직접 식별할 수 있는 이름, 이메일, 전화번호 등 개인정보를 수집하지 않습니다. 단, 스팸 방지 및 보안 유지를 위해 사용자의 IP 주소는 저장됩니다.';
 
   @override
   String get privacy_cookiesTitle => '2. 쿠키 및 추적 기술';
@@ -534,7 +534,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get privacy_thirdPartyCollectionTitle => '8. 제3자 데이터 수집';
 
   @override
-  String get privacy_thirdPartyCollectionDescription => 'JIPPIN은 사용자 개인정보를 직접 수집하거나 저장하지 않지만, Google Ads 및 reCAPTCHA와 같은 제3자 서비스를 사용합니다. 이들 서비스는 사용자의 IP 주소, 브라우저 메타데이터 등의 정보를 수집할 수 있습니다. 본 플랫폼을 이용함으로써 이러한 제3자 서비스의 데이터 처리 방식에 동의하는 것으로 간주됩니다. 자세한 내용은 각 서비스의 개인정보 처리방침을 참고해 주세요.';
+  String get privacy_thirdPartyCollectionDescription => 'JIPPIN은 사용자 개인정보를 직접 수집하거나 저장하지 않지만, Google Ads 및 reCAPTCHA와 같은 제3자 서비스를 사용합니다. 이들 서비스는 사용자의 IP 주소, 브라우저 메타데이터 등의 정보를 수집할 수 있습니다. 본 플랫폼을 이용함으로써 이러한 제3자 서비스의 데이터 처리 방식에 동의하는 것으로 간주됩니다. 자세한 내용은 각 서비스의 개인정보 처리방침을 참고해 주세요. 또한, 보안 및 남용 방지를 위해 JIPPIN 자체적으로도 IP 주소를 기록할 수 있으며, 이는 익명성과 플랫폼 무결성을 유지하기 위한 목적으로만 사용됩니다.';
 
   @override
   String get privacy_gdprTitle => '9. GDPR 준수';

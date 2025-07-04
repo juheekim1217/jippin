@@ -438,7 +438,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get terms_section4_title => '4. Privacy';
 
   @override
-  String get terms_section4_body => 'We take your privacy seriously. Reviews are published anonymously, and personal data is handled in accordance with our Privacy Policy.';
+  String get terms_section4_body => 'We take your privacy seriously. Reviews are published anonymously, and personal data is handled in accordance with our Privacy Policy. To prevent spam, automated abuse, and security threats, JIPPIN may collect and log user IP addresses. This data is not used to identify individuals and is stored solely for security and service quality purposes.';
 
   @override
   String get terms_section5_title => '5. Platform Availability';
@@ -492,7 +492,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get privacy_informationCollectionTitle => '1. Information We Collect';
 
   @override
-  String get privacy_informationCollectionDescription => 'We do not collect any personal information from users who browse or use the Platform.';
+  String get privacy_informationCollectionDescription => 'JIPPIN does not collect personally identifiable information such as names, email addresses, or phone numbers. However, IP addresses are stored to prevent spam and maintain platform security.';
 
   @override
   String get privacy_cookiesTitle => '2. Cookies and Tracking';
@@ -534,7 +534,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get privacy_thirdPartyCollectionTitle => '8. Third-Party Data Collection';
 
   @override
-  String get privacy_thirdPartyCollectionDescription => 'While JIPPIN does not directly collect or store personal information, we use third-party services (such as Google Ads and reCAPTCHA) that may collect user data such as IP addresses or browser metadata. By using our platform, you consent to the data practices of these services. Please review their privacy policies for more details.';
+  String get privacy_thirdPartyCollectionDescription => 'JIPPIN does not directly collect or store personally identifiable information. However, it uses third-party services such as Google Ads and reCAPTCHA, which may collect your IP address, browser metadata, and other technical details. By using this platform, you consent to the data processing practices of these third-party services. Please refer to their respective privacy policies for more information. Additionally, JIPPIN may log IP addresses internally for security and abuse prevention purposes. This data is used solely to preserve anonymity and maintain the integrity of the platform.';
 
   @override
   String get privacy_gdprTitle => '9. GDPR Compliance';

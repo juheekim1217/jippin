@@ -148,7 +148,7 @@
   "terms_section3_body": "You are responsible for any content (e.g., reviews, comments, ratings) you submit.\nBy submitting content, you grant JIPPIN a worldwide, royalty-free license to use, display, store, and share your content for the purpose of operating and promoting the Platform.\n\nYou must not submit content that is:\n• False or misleading\n• Harassing, discriminatory, or offensive\n• In violation of any laws or third-party rights\n\nWe reserve the right to remove any content that violates these terms or harms the integrity of the platform.",
 
   "terms_section4_title": "4. Privacy",
-  "terms_section4_body": "We take your privacy seriously. Reviews are published anonymously, and personal data is handled in accordance with our Privacy Policy.",
+  "terms_section4_body": "We take your privacy seriously. Reviews are published anonymously, and personal data is handled in accordance with our Privacy Policy. To prevent spam, automated abuse, and security threats, JIPPIN may collect and log user IP addresses. This data is not used to identify individuals and is stored solely for security and service quality purposes.",
 
   "terms_section5_title": "5. Platform Availability",
   "terms_section5_body": "JIPPIN is provided “as is.” We do not guarantee uninterrupted or error-free access. We may update, modify, or discontinue parts of the platform at any time without notice.",
@@ -175,7 +175,7 @@
   "privacy_privacyDescription": "Effective Date: 2025-06-24\n\nAt JIPPIN, we are committed to protecting your privacy. This Privacy Policy explains how we handle information on our website and mobile application (collectively, the \"Platform\").",
 
   "privacy_informationCollectionTitle": "1. Information We Collect",
-  "privacy_informationCollectionDescription": "We do not collect any personal information from users who browse or use the Platform.",
+  "privacy_informationCollectionDescription": "JIPPIN does not collect personally identifiable information such as names, email addresses, or phone numbers. However, IP addresses are stored to prevent spam and maintain platform security.",
 
   "privacy_cookiesTitle": "2. Cookies and Tracking",
   "privacy_cookiesDescription": "JIPPIN does not use cookies or tracking technologies for user profiling. However, essential technologies may be used for:\n• Analytics (e.g., traffic statistics)\n• Security (e.g., spam protection)\n• Advertising (e.g., display ads)",
@@ -196,7 +196,7 @@
   "privacy_advertisingDescription": "JIPPIN uses Google Ads to display relevant advertisements. Google may collect usage data to personalize ads. For more details, refer to Google’s Ad Policy.",
 
   "privacy_thirdPartyCollectionTitle": "8. Third-Party Data Collection",
-  "privacy_thirdPartyCollectionDescription": "While JIPPIN does not directly collect or store personal information, we use third-party services (such as Google Ads and reCAPTCHA) that may collect user data such as IP addresses or browser metadata. By using our platform, you consent to the data practices of these services. Please review their privacy policies for more details.",
+  "privacy_thirdPartyCollectionDescription": "JIPPIN does not directly collect or store personally identifiable information. However, it uses third-party services such as Google Ads and reCAPTCHA, which may collect your IP address, browser metadata, and other technical details. By using this platform, you consent to the data processing practices of these third-party services. Please refer to their respective privacy policies for more information. Additionally, JIPPIN may log IP addresses internally for security and abuse prevention purposes. This data is used solely to preserve anonymity and maintain the integrity of the platform.",
 
   "privacy_gdprTitle": "9. GDPR Compliance",
   "privacy_gdprDescription": "JIPPIN supports data protection principles under the General Data Protection Regulation (GDPR). All user-generated content is anonymous and reviewed to ensure compliance with applicable privacy standards.",

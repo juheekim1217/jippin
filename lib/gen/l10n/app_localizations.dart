@@ -956,7 +956,7 @@ abstract class AppLocalizations {
   /// No description provided for @terms_section4_body.
   ///
   /// In en, this message translates to:
-  /// **'We take your privacy seriously. Reviews are published anonymously, and personal data is handled in accordance with our Privacy Policy.'**
+  /// **'We take your privacy seriously. Reviews are published anonymously, and personal data is handled in accordance with our Privacy Policy. To prevent spam, automated abuse, and security threats, JIPPIN may collect and log user IP addresses. This data is not used to identify individuals and is stored solely for security and service quality purposes.'**
   String get terms_section4_body;
 
   /// No description provided for @terms_section5_title.
@@ -1064,7 +1064,7 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_informationCollectionDescription.
   ///
   /// In en, this message translates to:
-  /// **'We do not collect any personal information from users who browse or use the Platform.'**
+  /// **'JIPPIN does not collect personally identifiable information such as names, email addresses, or phone numbers. However, IP addresses are stored to prevent spam and maintain platform security.'**
   String get privacy_informationCollectionDescription;
 
   /// No description provided for @privacy_cookiesTitle.
@@ -1148,7 +1148,7 @@ abstract class AppLocalizations {
   /// No description provided for @privacy_thirdPartyCollectionDescription.
   ///
   /// In en, this message translates to:
-  /// **'While JIPPIN does not directly collect or store personal information, we use third-party services (such as Google Ads and reCAPTCHA) that may collect user data such as IP addresses or browser metadata. By using our platform, you consent to the data practices of these services. Please review their privacy policies for more details.'**
+  /// **'JIPPIN does not directly collect or store personally identifiable information. However, it uses third-party services such as Google Ads and reCAPTCHA, which may collect your IP address, browser metadata, and other technical details. By using this platform, you consent to the data processing practices of these third-party services. Please refer to their respective privacy policies for more information. Additionally, JIPPIN may log IP addresses internally for security and abuse prevention purposes. This data is used solely to preserve anonymity and maintain the integrity of the platform.'**
   String get privacy_thirdPartyCollectionDescription;
 
   /// No description provided for @privacy_gdprTitle.
