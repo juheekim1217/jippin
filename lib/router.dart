@@ -3,6 +3,7 @@ import 'package:jippin/pages/about_page.dart';
 import 'package:jippin/pages/home_page.dart';
 import 'package:jippin/pages/reviews_page.dart';
 import 'package:jippin/pages/submit_review_page.dart';
+import 'package:jippin/pages/submitted_page.dart';
 import 'package:jippin/pages/terms_and_conditions_page.dart';
 import 'package:jippin/pages/privacy_policy.dart';
 import 'package:jippin/models/address.dart';
@@ -71,6 +72,10 @@ GoRouter createRouter(LocaleProvider localeProvider) {
           GoRoute(
             path: '/submit',
             builder: (context, state) => const SubmitReviewPage(),
+          ),
+          GoRoute(
+            path: '/submitted',
+            builder: (context, state) => const SubmittedPage(),
           ),
           GoRoute(
             path: '/about',

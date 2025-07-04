@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:g_recaptcha_v3/g_recaptcha_v3.dart';
+import 'package:go_router/go_router.dart';
 import 'package:jippin/component/layout/global_page_layout_scaffold.dart';
 import 'package:jippin/gen/l10n/app_localizations.dart';
 import 'package:jippin/services/review_service.dart';
@@ -107,10 +108,12 @@ class _SubmitReviewPageState extends State<SubmitReviewPage> {
 
         if (!mounted) return;
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(local.submit_review_success)),
-        );
+        // ScaffoldMessenger.of(context).showSnackBar(
+        //   SnackBar(content: Text(local.submit_review_success)),
+        // );
         _formKey.currentState!.reset();
+
+        context.go('/submitted');
       } catch (e) {
         if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
